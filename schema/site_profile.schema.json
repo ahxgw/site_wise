@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ahxgw/site_wise/schema/site_profile.schema.json",
+  "title": "Site Wise Profile",
+  "description": "Structured profile for a high-traffic website analyzed by Site Wise.",
+  "type": "object",
+  "required": [
+    "host",
+    "category",
+    "analysis_date",
+    "summary",
+    "business_model",
+    "user_intents",
+    "moat",
+    "risks",
+    "sources"
+  ],
+  "properties": {
+    "host": {
+      "type": "string",
+      "description": "Primary host, such as youtube.com."
+    },
+    "canonical_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "analysis_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary category, such as video platform, search engine, ecommerce, news, AI assistant, or sports media."
+    },
+    "subcategories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "summary": {
+      "type": "string",
+      "description": "One or two sentence explanation of what the site is and why it matters."
+    },
+    "owner": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "parent_company": { "type": "string" },
+        "country": { "type": "string" },
+        "ownership_notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "founding": {
+      "type": "object",
+      "properties": {
+        "launched_year": { "type": "integer" },
+        "founded_year": { "type": "integer" },
+        "founders": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "origin_story": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "markets": {
+      "type": "object",
+      "properties": {
+        "primary_regions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "primary_languages": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "market_notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "user_intents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["intent", "importance"],
+        "properties": {
+          "intent": { "type": "string" },
+          "importance": {
+            "type": "string",
+            "enum": ["primary", "secondary", "emerging"]
+          },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "traffic": {
+      "type": "object",
+      "properties": {
+        "traffic_score": { "type": "number" },
+        "authority_score": { "type": "number" },
+        "likely_sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["direct", "search", "social", "referral", "paid", "app", "email", "unknown"]
+          }
+        },
+        "distribution_notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "product": {
+      "type": "object",
+      "properties": {
+        "core_journeys": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "supply_side": { "type": "string" },
+        "demand_side": { "type": "string" },
+        "notable_features": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "business_model": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "advertising",
+          "subscription",
+          "commission",
+          "marketplace",
+          "ecommerce",
+          "licensing",
+          "enterprise",
+          "payments",
+          "affiliate",
+          "data",
+          "donation",
+          "unknown",
+          "other"
+        ]
+      }
+    },
+    "moat": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "network_effects",
+              "content_library",
+              "data",
+              "brand",
+              "distribution",
+              "technical",
+              "regulatory",
+              "trust",
+              "ecosystem",
+              "operations",
+              "other"
+            ]
+          },
+          "description": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "technical_signals": {
+      "type": "object",
+      "properties": {
+        "cdn": { "type": "string" },
+        "hosting": { "type": "string" },
+        "frontend": { "type": "string" },
+        "security": { "type": "string" },
+        "performance_notes": { "type": "string" },
+        "integration_notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["risk", "category"],
+        "properties": {
+          "risk": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["competition", "regulation", "platform_dependency", "security", "abuse", "business_model", "technology_shift", "reputation", "other"]
+          },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["audience", "lesson"],
+        "properties": {
+          "audience": {
+            "type": "string",
+            "enum": ["builder", "product", "engineering", "growth", "business", "investor", "general"]
+          },
+          "lesson": { "type": "string" }
+        },
+        "additionalProperties": false
+      },
+      "default": []
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "properties": {
+          "title": { "type": "string" },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "publisher": { "type": "string" },
+          "accessed_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["low", "medium", "high"],
+      "default": "medium"
+    }
+  },
+  "additionalProperties": false
+}
