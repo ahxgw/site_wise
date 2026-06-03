@@ -18,23 +18,35 @@ For each website, answer:
 
 ## Daily Output
 
-Each daily report should live under:
+Each daily report should live as a mobile-friendly HTML file under:
 
 ```text
-reports/YYYY-MM-DD/host.md
+reports/YYYY-MM-DD/host.html
 ```
 
 Example:
 
 ```text
-reports/2026-06-03/youtube.com.md
+reports/2026-06-03/youtube.com.html
 ```
 
-Reports should be readable as standalone essays, but structured enough that facts can later be extracted into JSON profiles.
+Reports should be readable as standalone web pages, but structured enough that facts can later be extracted into JSON profiles.
+
+## Mobile Reader
+
+The `docs/` directory contains the static reader for GitHub Pages. Build it with:
+
+```bash
+python3 scripts/build_site.py
+```
+
+This copies HTML reports into `docs/reports/`, copies shared CSS into `docs/assets/`, and writes `docs/index.html`.
+
+For phone viewing, publish the repository with GitHub Pages using `main` branch / `docs` folder. Once Pages is active, open the Pages URL on your phone and read reports from the index.
 
 ## Report Structure
 
-Use `reports/template.md` as the default outline. The main sections are:
+Use `reports/template.html` as the default outline. The main sections are:
 
 - One-sentence understanding
 - Basic profile
@@ -74,7 +86,7 @@ Possible selection strategies:
 ## Daily Workflow
 
 1. Pick one host from `top_site.jsonl`.
-2. Create `reports/YYYY-MM-DD/host.md` from `reports/template.md`.
+2. Create `reports/YYYY-MM-DD/host.html` from `reports/template.html`.
 3. Gather sources and technical observations.
 4. Fill the report with sourced facts, explicit inferences, and open questions.
 5. Optionally create or update a structured profile that conforms to `schema/site_profile.schema.json`.
@@ -90,6 +102,12 @@ Create a draft report for the selected site with:
 
 ```bash
 python3 scripts/select_site.py --create-draft
+```
+
+After writing or updating reports, rebuild the mobile reader:
+
+```bash
+python3 scripts/build_site.py
 ```
 
 Selection strategies:

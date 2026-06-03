@@ -12,7 +12,7 @@ from string import Template
 
 ROOT = Path(__file__).resolve().parents[1]
 TOP_SITE_PATH = ROOT / "top_site.jsonl"
-TEMPLATE_PATH = ROOT / "reports" / "template.md"
+TEMPLATE_PATH = ROOT / "reports" / "template.html"
 REPORTS_DIR = ROOT / "reports"
 AGGREGATED_HOSTS = {
     "wikipedia.org": {
@@ -37,7 +37,7 @@ def load_sites(path: Path) -> list[dict]:
 
 
 def report_exists(host: str) -> bool:
-    return any(REPORTS_DIR.glob(f"*/{host}.md"))
+    return any(REPORTS_DIR.glob(f"*/{host}.html"))
 
 
 def canonical_host(host: str) -> str:
@@ -113,7 +113,7 @@ def create_draft(site: dict, date: str) -> Path:
     report_dir = REPORTS_DIR / date
     report_dir.mkdir(parents=True, exist_ok=True)
 
-    path = report_dir / f"{site['host']}.md"
+    path = report_dir / f"{site['host']}.html"
     if path.exists():
         raise FileExistsError(f"Report already exists: {path}")
 
@@ -144,7 +144,7 @@ def main() -> int:
     parser.add_argument(
         "--create-draft",
         action="store_true",
-        help="Create reports/YYYY-MM-DD/host.md from the report template.",
+        help="Create reports/YYYY-MM-DD/host.html from the report template.",
     )
     args = parser.parse_args()
 
