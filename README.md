@@ -2,7 +2,7 @@
 
 Site Wise is a daily research project for understanding high-traffic websites in depth.
 
-Each day, the project selects one site from `top_site.jsonl` by traffic rank and produces a structured analysis of its origin, product, traffic, business model, technical signals, moat, risks, and lessons. The long-term goal is to build a practical map of how the web actually works: who owns the major destinations, why users go there, how traffic flows, where money is made, and what patterns repeat across categories.
+Each day, the project selects one site from a local private `top_site.jsonl` file by traffic rank and produces a structured analysis of its origin, product, traffic, business model, technical signals, moat, risks, and lessons. The long-term goal is to build a practical map of how the web actually works: who owns the major destinations, why users go there, how traffic flows, where money is made, and what patterns repeat across categories.
 
 ## Core Question
 
@@ -12,9 +12,15 @@ For each website, answer:
 
 ## Inputs
 
-- `top_site.jsonl`: candidate sites, one JSON object per line.
+- `top_site.jsonl`: local private candidate-site data, one JSON object per line. This file is intentionally ignored by Git and should not be committed.
 - Public web sources: official pages, company filings, help centers, news, product docs, historical records, and observable site behavior.
 - Technical observations: DNS, redirects, page structure, metadata, performance, security headers, CDN signals, and visible third-party integrations.
+
+To run site selection locally, create `top_site.jsonl` at the repository root with records like:
+
+```json
+{"host": "example.com", "traffic_score": 1.0, "authority_score": 2.0}
+```
 
 ## Daily Output
 
@@ -85,7 +91,7 @@ Possible selection strategies:
 
 ## Daily Workflow
 
-1. Pick one host from `top_site.jsonl`.
+1. Pick one host from the local private `top_site.jsonl`.
 2. Create `reports/YYYY-MM-DD/host.html` from `reports/template.html`.
 3. Gather sources and technical observations.
 4. Fill the report with sourced facts, explicit inferences, and open questions.
@@ -113,7 +119,7 @@ python3 scripts/build_site.py
 Selection strategies:
 
 - `traffic`: use the highest-traffic unreported site, aggregating configured variants such as Wikipedia language editions.
-- `order`: use the first unreported site in `top_site.jsonl`.
+- `order`: use the first unreported site in the local private `top_site.jsonl`.
 
 ## Research Principles
 

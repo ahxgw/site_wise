@@ -17,12 +17,21 @@
       <p class="eyebrow">Daily Site Profile</p>
       <h1>$host</h1>
       <p class="lede">$host is ...</p>
-      <dl class="metric-grid">
-        <div><dt>Traffic</dt><dd>$traffic_score</dd></div>
-        <div><dt>Authority</dt><dd>$authority_score</dd></div>
-        <div><dt>Status</dt><dd>draft</dd></div>
-      </dl>
+      <div class="tag-row">
+        <span class="tag">Category</span>
+      </div>
     </header>
+
+    <section class="section-card">
+      <h2>How To Read This Report</h2>
+      <p>Every claim is tagged with its evidence strength:</p>
+      <ul>
+        <li><span class="evidence verified">verified</span> Sourced to a primary or reliable secondary record. Link the source.</li>
+        <li><span class="evidence inferred">inferred</span> A reasoned interpretation from public signals; explain the basis.</li>
+        <li><span class="evidence open">open</span> Unknown, contested, or worth deeper digging.</li>
+      </ul>
+      <p class="muted">Numbers should always carry an <em>as-of</em> date and a source. Treat the absence of a date as a smell.</p>
+    </section>
 
     <section class="section-card">
       <h2>Basic Profile</h2>
@@ -41,8 +50,27 @@
     </section>
 
     <section class="section-card">
+      <h2>Key Metrics</h2>
+      <p class="muted">Every row needs: figure, as-of date, source. If no number is available, write <em>open</em> rather than leaving blank.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Metric</th><th>Value</th><th>As of</th><th>Source</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Monthly active users</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Daily active users</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Annual revenue (USD)</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Revenue mix</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Top regions / countries</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Content / inventory size</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Growth direction</td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
       <h2>Why This Site Matters</h2>
-      <p>Explain why this site is worth studying.</p>
+      <p>Explain why this site is worth studying. Focus on systemic importance, not popularity.</p>
     </section>
 
     <section class="section-card">
@@ -55,14 +83,167 @@
       </div>
     </section>
 
-    <section class="section-card"><h2>User Intent and Core Scenarios</h2></section>
-    <section class="section-card"><h2>Traffic and Distribution</h2></section>
-    <section class="section-card"><h2>Product Anatomy</h2></section>
-    <section class="section-card"><h2>Business Model</h2></section>
-    <section class="section-card"><h2>Moat</h2></section>
-    <section class="section-card"><h2>Technical Signals</h2></section>
-    <section class="section-card"><h2>Risks and Future</h2></section>
-    <section class="section-card"><h2>Lessons</h2></section>
+    <section class="section-card">
+      <h2>User Intent and Core Scenarios</h2>
+      <p>What jobs do users hire this site to do? Separate intent type and frequency.</p>
+      <ul>
+        <li><strong>Primary intents:</strong> </li>
+        <li><strong>Secondary / emerging intents:</strong> </li>
+        <li><strong>Repeat-use loop:</strong> </li>
+        <li><strong>What it replaces / displaces:</strong> </li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Traffic and Distribution</h2>
+      <ul>
+        <li><span class="evidence verified">verified</span> Channel mix (direct / search / social / app / referral): </li>
+        <li><span class="evidence inferred">inferred</span> Why those channels: </li>
+        <li><span class="evidence open">open</span> What we still need to standardize: </li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Product Anatomy</h2>
+      <ul>
+        <li><strong>First screen:</strong> </li>
+        <li><strong>Core journey:</strong> </li>
+        <li><strong>Discovery modes:</strong> </li>
+        <li><strong>Account / identity:</strong> </li>
+        <li><strong>Supply side:</strong> </li>
+        <li><strong>Demand side:</strong> </li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Business Model</h2>
+      <ul>
+        <li><strong>Revenue streams:</strong> </li>
+        <li><strong>Pricing / unit economics:</strong> </li>
+        <li><strong>Who pays whom:</strong> </li>
+        <li><strong>Strategic shape:</strong> </li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Moat</h2>
+      <p class="muted">For each moat: type, claim, evidence, fragility.</p>
+      <ul>
+        <li><span class="evidence verified">verified</span> </li>
+        <li><span class="evidence inferred">inferred</span> </li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Peers and Contrasts</h2>
+      <p class="muted">Compare against at least two peers. A claim about this site that doesn't survive a contrast probably isn't load-bearing.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Peer</th><th>Same as $host</th><th>Different from $host</th><th>What the difference teaches</th></tr></thead>
+          <tbody>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Technical Signals</h2>
+      <ul>
+        <li><strong>DNS / hosting / CDN:</strong> </li>
+        <li><strong>Frontend / framework clues:</strong> </li>
+        <li><strong>Security / headers:</strong> </li>
+        <li><strong>Performance / delivery:</strong> </li>
+        <li><strong>Notable integrations:</strong> </li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Search and Retrieval Perspective</h2>
+      <p class="muted">How would you treat this site if you were indexing it, building agent tools that call it, or training on its content? This is the lens that distinguishes <em>"high-traffic site"</em> from <em>"information source"</em>.</p>
+
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; canonical URL</h4>
+          <p>Stable IDs, URL aliases that resolve to the same resource, dedup rules.</p>
+        </div>
+        <div>
+          <h4>Crawl &amp; access policy</h4>
+          <p>robots.txt, paywall / login wall / geo wall / age wall, bot defenses, llms.txt or AI training policy.</p>
+        </div>
+        <div>
+          <h4>Official APIs &amp; feeds</h4>
+          <p>API surface, quota, RSS / Atom / sitemap, OpenSearch, oEmbed, JSON-LD / microdata / OG.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit (what is a "document"?)</h4>
+          <p>Page, post, transcript segment, message — which granularity is actually useful to retrieve.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>When title / description / body / transcript / OCR disagree, which one wins? Where does SEO distortion live?</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; decay</h4>
+          <p>Mutability, deletion rate, decay half-life, recrawl cadence implications.</p>
+        </div>
+        <div>
+          <h4>Quality signals &amp; spam patterns</h4>
+          <p>Official trust tiers (verified / authority), known spam / farm patterns, manipulation incentives.</p>
+        </div>
+        <div>
+          <h4>Licensing &amp; reuse</h4>
+          <p>What can a third-party search UI legally show? Snippets, thumbnails, embeds, transcripts.</p>
+        </div>
+        <div>
+          <h4>Personalization &amp; non-determinism</h4>
+          <p>Logged-out vs logged-in vs cookied differences; whether anonymous crawl reflects real "popular".</p>
+        </div>
+        <div>
+          <h4>Region / language splits</h4>
+          <p>Geo / language gating, parameters (gl, hl), copyright-territory differences.</p>
+        </div>
+        <div>
+          <h4>Internal search vs external</h4>
+          <p>How good is on-site search? Do users escape to Google with <code>site:</code>? Implication for retrieval strategy.</p>
+        </div>
+        <div>
+          <h4>Outbound vs inbound posture</h4>
+          <p>Hub or sink? Where it sits in the broader knowledge graph; embed footprint elsewhere.</p>
+        </div>
+        <div>
+          <h4>Anti-manipulation / ranking surface</h4>
+          <p>If someone wanted to be found here, what gates them in? Spam defenses, ranking factors, reverse-SEO risk.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>What does a typical query on this site look like? Which retrieval intents fit, which do not.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks and Future</h2>
+      <ul>
+        <li><strong>Competitive:</strong> </li>
+        <li><strong>Regulatory:</strong> </li>
+        <li><strong>Platform / supply:</strong> </li>
+        <li><strong>Abuse / safety:</strong> </li>
+        <li><strong>Technology shift (incl. AI):</strong> </li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Lessons</h2>
+      <ul>
+        <li><strong>Product:</strong> </li>
+        <li><strong>Growth / distribution:</strong> </li>
+        <li><strong>Business:</strong> </li>
+        <li><strong>Technical:</strong> </li>
+        <li><strong>For a retrieval / agent builder:</strong> </li>
+      </ul>
+    </section>
 
     <section class="section-card">
       <h2>Source Notes</h2>

@@ -15,6 +15,30 @@
     "risks",
     "sources"
   ],
+  "$defs": {
+    "evidence": {
+      "type": "string",
+      "enum": ["verified", "inferred", "open"],
+      "description": "Evidence strength for a claim. verified = primary or reliable secondary source; inferred = reasoned from public signals; open = unknown or contested."
+    },
+    "datedClaim": {
+      "type": "object",
+      "required": ["value", "as_of"],
+      "properties": {
+        "value": { "type": ["string", "number"] },
+        "as_of": {
+          "type": "string",
+          "format": "date",
+          "description": "When this number was true. Required because numbers decay."
+        },
+        "source": { "type": "string" },
+        "source_url": { "type": "string", "format": "uri" },
+        "evidence": { "$ref": "#/$defs/evidence" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
   "properties": {
     "host": {
       "type": "string",
@@ -111,6 +135,66 @@
       },
       "additionalProperties": false
     },
+    "key_metrics": {
+      "type": "object",
+      "description": "Quantitative anchors. Every entry must carry an as-of date.",
+      "properties": {
+        "monthly_active_users": { "$ref": "#/$defs/datedClaim" },
+        "daily_active_users": { "$ref": "#/$defs/datedClaim" },
+        "annual_revenue_usd": { "$ref": "#/$defs/datedClaim" },
+        "revenue_mix": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["stream", "share", "as_of"],
+            "properties": {
+              "stream": { "type": "string" },
+              "share": { "type": "string", "description": "Percentage or qualitative weight." },
+              "as_of": { "type": "string", "format": "date" },
+              "source": { "type": "string" },
+              "source_url": { "type": "string", "format": "uri" },
+              "evidence": { "$ref": "#/$defs/evidence" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "top_regions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["region", "as_of"],
+            "properties": {
+              "region": { "type": "string" },
+              "share": { "type": "string" },
+              "as_of": { "type": "string", "format": "date" },
+              "source": { "type": "string" },
+              "source_url": { "type": "string", "format": "uri" },
+              "evidence": { "$ref": "#/$defs/evidence" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "content_inventory": { "$ref": "#/$defs/datedClaim" },
+        "growth_direction": { "$ref": "#/$defs/datedClaim" },
+        "other": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "value", "as_of"],
+            "properties": {
+              "label": { "type": "string" },
+              "value": { "type": ["string", "number"] },
+              "as_of": { "type": "string", "format": "date" },
+              "source": { "type": "string" },
+              "source_url": { "type": "string", "format": "uri" },
+              "evidence": { "$ref": "#/$defs/evidence" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
     "product": {
       "type": "object",
       "properties": {
@@ -170,10 +254,35 @@
               "other"
             ]
           },
-          "description": { "type": "string" }
+          "description": { "type": "string" },
+          "evidence": { "$ref": "#/$defs/evidence" },
+          "fragility": {
+            "type": "string",
+            "description": "Conditions under which this moat could erode."
+          }
         },
         "additionalProperties": false
       }
+    },
+    "peers": {
+      "type": "array",
+      "description": "Comparable peers for contrast analysis. Each entry forces an explicit similarity and difference.",
+      "items": {
+        "type": "object",
+        "required": ["host", "similarity", "difference"],
+        "properties": {
+          "host": { "type": "string" },
+          "relation": {
+            "type": "string",
+            "enum": ["direct_competitor", "category_peer", "regional_analog", "successor", "predecessor", "adjacent", "other"]
+          },
+          "similarity": { "type": "string" },
+          "difference": { "type": "string" },
+          "lesson": { "type": "string", "description": "What the contrast teaches about this site." }
+        },
+        "additionalProperties": false
+      },
+      "default": []
     },
     "technical_signals": {
       "type": "object",
@@ -184,6 +293,114 @@
         "security": { "type": "string" },
         "performance_notes": { "type": "string" },
         "integration_notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "search_perspective": {
+      "type": "object",
+      "description": "How this site behaves when treated as an information source for indexing, retrieval, or agent tool use.",
+      "properties": {
+        "identifier_scheme": {
+          "type": "string",
+          "description": "Stable IDs (e.g., YouTube videoId) and URL aliases that resolve to the same resource."
+        },
+        "canonical_url_rules": { "type": "string" },
+        "crawl_policy": {
+          "type": "object",
+          "properties": {
+            "robots_txt": { "type": "string" },
+            "paywall": { "type": "boolean" },
+            "login_wall": { "type": "boolean" },
+            "geo_wall": { "type": "boolean" },
+            "age_wall": { "type": "boolean" },
+            "bot_defenses": { "type": "string", "description": "Cloudflare, Datadome, JS challenge, rate limiting, etc." },
+            "ai_training_policy": { "type": "string", "description": "llms.txt, public stance on AI training scrapes." }
+          },
+          "additionalProperties": false
+        },
+        "official_apis": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "url": { "type": "string", "format": "uri" },
+              "auth": { "type": "string" },
+              "quota": { "type": "string" },
+              "notes": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "structured_data": {
+          "type": "array",
+          "description": "Which of these the site exposes: rss, atom, sitemap, opensearch, oembed, jsonld, microdata, opengraph.",
+          "items": {
+            "type": "string",
+            "enum": ["rss", "atom", "sitemap", "opensearch", "oembed", "jsonld", "microdata", "opengraph", "other"]
+          },
+          "default": []
+        },
+        "retrieval_unit": {
+          "type": "string",
+          "description": "The granularity that is actually useful to retrieve: page, post, transcript segment, message, product, etc."
+        },
+        "authoritative_field": {
+          "type": "string",
+          "description": "When title, description, body, transcript, OCR disagree, which one carries the content signal? Where does SEO distortion live?"
+        },
+        "freshness": {
+          "type": "object",
+          "properties": {
+            "mutability": {
+              "type": "string",
+              "enum": ["immutable", "append_only", "editable", "ephemeral", "mixed", "unknown"]
+            },
+            "deletion_rate": { "type": "string" },
+            "decay_notes": { "type": "string" },
+            "recrawl_cadence_hint": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "quality_signals": {
+          "type": "object",
+          "properties": {
+            "official_trust_tiers": { "type": "string" },
+            "spam_patterns": { "type": "string" },
+            "manipulation_incentives": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "licensing_for_reuse": {
+          "type": "string",
+          "description": "What a third-party UI is allowed to show: snippets, thumbnails, embeds, transcripts."
+        },
+        "personalization": {
+          "type": "object",
+          "properties": {
+            "logged_out_vs_in_differs": { "type": "boolean" },
+            "anon_crawl_reflects_truth": { "type": "boolean" },
+            "notes": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "region_language_splits": { "type": "string" },
+        "internal_search_quality": { "type": "string" },
+        "knowledge_graph_position": {
+          "type": "string",
+          "enum": ["hub", "sink", "balanced", "isolated", "unknown"]
+        },
+        "ranking_surface": {
+          "type": "string",
+          "description": "If someone wanted their content to surface here, what factors decide? Implies manipulation resistance."
+        },
+        "user_query_profile": {
+          "type": "string",
+          "description": "What does a typical query on this site look like? Which retrieval intents fit, which do not."
+        },
+        "notes": { "type": "string" }
       },
       "additionalProperties": false
     },
@@ -198,6 +415,11 @@
             "type": "string",
             "enum": ["competition", "regulation", "platform_dependency", "security", "abuse", "business_model", "technology_shift", "reputation", "other"]
           },
+          "likelihood": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "materialized"]
+          },
+          "evidence": { "$ref": "#/$defs/evidence" },
           "notes": { "type": "string" }
         },
         "additionalProperties": false
@@ -211,9 +433,10 @@
         "properties": {
           "audience": {
             "type": "string",
-            "enum": ["builder", "product", "engineering", "growth", "business", "investor", "general"]
+            "enum": ["builder", "product", "engineering", "growth", "business", "investor", "retrieval", "general"]
           },
-          "lesson": { "type": "string" }
+          "lesson": { "type": "string" },
+          "evidence": { "$ref": "#/$defs/evidence" }
         },
         "additionalProperties": false
       },
@@ -235,6 +458,11 @@
             "type": "string",
             "format": "date"
           },
+          "tier": {
+            "type": "string",
+            "enum": ["primary", "official_secondary", "reputable_press", "analyst", "community", "self_published", "other"],
+            "description": "Source quality tier. Primary = SEC filing, court doc, company financial. Official secondary = company blog. Reputable press = mainstream journalism. Analyst = research firm. Community = user posts. Self_published = personal blog / tweet."
+          },
           "notes": { "type": "string" }
         },
         "additionalProperties": false
@@ -244,6 +472,11 @@
       "type": "string",
       "enum": ["low", "medium", "high"],
       "default": "medium"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the profile was last reviewed for staleness. Older than 6 months should prompt a revisit."
     }
   },
   "additionalProperties": false

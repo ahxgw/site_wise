@@ -120,8 +120,6 @@ def create_draft(site: dict, date: str) -> Path:
     content = template.safe_substitute(
         host=site["host"],
         date=date,
-        traffic_score=site.get("traffic_score", ""),
-        authority_score=site.get("authority_score", ""),
         grouped_hosts=", ".join(member["host"] for member in site.get("members", [])),
     )
     path.write_text(content, encoding="utf-8")
