@@ -347,6 +347,59 @@
           "type": "string",
           "description": "The granularity that is actually useful to retrieve: page, post, transcript segment, message, product, etc."
         },
+        "full_modal_inventory": {
+          "type": "array",
+          "description": "Indexable object counts by modality or object class.",
+          "items": {
+            "type": "object",
+            "required": ["object_type", "evidence"],
+            "properties": {
+              "object_type": { "type": "string", "description": "video, image, audio, article, product, review, comment, entity, file, transcript_segment, etc." },
+              "count": { "type": ["number", "string"] },
+              "data_volume": { "type": "string" },
+              "freshness": { "type": "string" },
+              "as_of": { "type": "string", "format": "date" },
+              "source": { "type": "string" },
+              "source_url": { "type": "string", "format": "uri" },
+              "evidence": { "$ref": "#/$defs/evidence" },
+              "notes": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "modality_mix": {
+          "type": "array",
+          "description": "Counts or shares by modality, with open gaps stated explicitly.",
+          "items": {
+            "type": "object",
+            "required": ["modality", "evidence"],
+            "properties": {
+              "modality": { "type": "string" },
+              "count": { "type": ["number", "string"] },
+              "share": { "type": "string" },
+              "as_of": { "type": "string", "format": "date" },
+              "source": { "type": "string" },
+              "source_url": { "type": "string", "format": "uri" },
+              "evidence": { "$ref": "#/$defs/evidence" },
+              "notes": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "cross_modal_joins": {
+          "type": "string",
+          "description": "Stable IDs and joins between text, media, entities, captions, transcripts, thumbnails, authors, licenses, and metadata."
+        },
+        "metadata_coverage": {
+          "type": "string",
+          "description": "Coverage of titles, descriptions, captions, transcripts, structured data, OpenGraph, EXIF/geodata, author, timestamp, language, category, tag, rating, and license fields."
+        },
+        "indexing_path": {
+          "type": "string",
+          "description": "Legitimate path for scale: crawl, sitemap, RSS, API, dump, firehose, partner feed, paid endpoint, browser rendering, or no legitimate bulk path."
+        },
         "authoritative_field": {
           "type": "string",
           "description": "When title, description, body, transcript, OCR disagree, which one carries the content signal? Where does SEO distortion live?"

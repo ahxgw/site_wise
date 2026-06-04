@@ -51,7 +51,7 @@
 
     <section class="section-card">
       <h2>Key Metrics</h2>
-      <p class="muted">Every row needs: figure, as-of date, source. If no number is available, write <em>open</em> rather than leaving blank.</p>
+      <p class="muted">Every row needs: figure, as-of date, source. If no number is available, write <em>open</em> rather than leaving blank. Be numerically sensitive: for index-building, object counts, modality split, update rate, size, and metadata coverage matter as much as traffic.</p>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Metric</th><th>Value</th><th>As of</th><th>Source</th><th>Notes</th></tr></thead>
@@ -62,6 +62,12 @@
             <tr><td>Revenue mix</td><td></td><td></td><td></td><td></td></tr>
             <tr><td>Top regions / countries</td><td></td><td></td><td></td><td></td></tr>
             <tr><td>Content / inventory size</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Indexable object count</td><td></td><td></td><td></td><td>Pages, posts, products, videos, images, files, entities, comments, listings, reviews, etc.</td></tr>
+            <tr><td>Modality mix</td><td></td><td></td><td></td><td>Text / image / video / audio / document / structured data percentages or counts.</td></tr>
+            <tr><td>Data volume</td><td></td><td></td><td></td><td>Total bytes, average object size, derivative vs original assets where available.</td></tr>
+            <tr><td>Freshness / update rate</td><td></td><td></td><td></td><td>New objects per day/month/year; edit/delete/churn rate.</td></tr>
+            <tr><td>Structured metadata coverage</td><td></td><td></td><td></td><td>Schema.org, OpenGraph, IDs, captions, EXIF, geotags, authors, license fields, APIs.</td></tr>
+            <tr><td>Licensing / reuse coverage</td><td></td><td></td><td></td><td>Public, Creative Commons, platform-licensed, unknown, restricted, paywalled.</td></tr>
             <tr><td>Growth direction</td><td></td><td></td><td></td><td></td></tr>
           </tbody>
         </table>
@@ -161,7 +167,7 @@
 
     <section class="section-card">
       <h2>Search and Retrieval Perspective</h2>
-      <p class="muted">How would you treat this site if you were indexing it, building agent tools that call it, or training on its content? This is the lens that distinguishes <em>"high-traffic site"</em> from <em>"information source"</em>.</p>
+      <p class="muted">Assume the task is to build a full-modal index over this site: text, images, video, audio, documents, structured records, comments, metadata, and entities. Quantify what can be indexed, how it should be keyed, how often it changes, which modalities are first-class, what reuse is allowed, and where official APIs or bulk exports are the correct path.</p>
 
       <div class="subgrid">
         <div>
@@ -178,7 +184,23 @@
         </div>
         <div>
           <h4>Retrieval unit (what is a "document"?)</h4>
-          <p>Page, post, transcript segment, message — which granularity is actually useful to retrieve.</p>
+          <p>Page, post, paragraph, transcript segment, image, video, audio clip, product, review, comment, file, table row, entity, or bounding region — which granularity is actually useful to retrieve.</p>
+        </div>
+        <div>
+          <h4>Full-modal object inventory</h4>
+          <p>Count indexable objects by modality: text records, image files, video files, audio files, documents, structured entities, tables, comments/reviews, and generated derivatives. Include bytes and growth rate when available.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>How text, media, entities, captions, transcripts, thumbnails, OCR, EXIF/geodata, authors, licenses, and canonical IDs connect. State the join key and whether it is stable.</p>
+        </div>
+        <div>
+          <h4>Metadata coverage</h4>
+          <p>Quantify or mark open: titles, descriptions, captions, alt text, transcripts, structured data, schema.org, OpenGraph, EXIF, geotags, authors, timestamps, language, categories, tags, ratings, and license fields.</p>
+        </div>
+        <div>
+          <h4>Indexing path</h4>
+          <p>Best path for scale: public crawl, sitemap, RSS, official API, bulk dump, firehose, partner feed, paid endpoint, browser rendering, or no legitimate bulk path.</p>
         </div>
         <div>
           <h4>Authoritative content field</h4>

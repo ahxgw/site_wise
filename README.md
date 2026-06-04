@@ -10,6 +10,10 @@ For each website, answer:
 
 > What is this site, why did it become important, how does it work, and what can we learn from it?
 
+For every report, also answer the index-builder version of the question:
+
+> If we had to build a full-modal index for this site, what exactly can be indexed, how many objects exist, which modalities dominate, how are objects keyed and joined, how fresh is the corpus, and what reuse is allowed?
+
 ## Inputs
 
 - `top_site.jsonl`: local private candidate-site data, one JSON object per line. This file is intentionally ignored by Git and should not be committed.
@@ -56,6 +60,7 @@ Use `reports/template.html` as the default outline. The main sections are:
 
 - One-sentence understanding
 - Basic profile
+- Key metrics, including traffic, revenue, object counts, modality mix, data volume, freshness, metadata coverage, and licensing coverage
 - Timeline
 - User intent and core scenarios
 - Traffic and distribution
@@ -63,6 +68,7 @@ Use `reports/template.html` as the default outline. The main sections are:
 - Business model
 - Moat
 - Technical signals
+- Search and retrieval perspective, written from the perspective of building a full-modal index
 - Risks and future
 - Lessons
 - Sources
@@ -126,6 +132,13 @@ Selection strategies:
 - Separate verified facts from inference.
 - Prefer primary sources when available.
 - Include dates for major events.
+- Be numerically sensitive. Treat object counts, modality split, data volume, freshness/update rate, structured metadata coverage, and licensing/reuse coverage as first-class facts, not appendix details.
+- For each quantitative claim, include the figure, as-of date, source, and whether the number is directly reported or calculated by Site Wise.
+- If a critical number is unavailable, write `open` and say what query, API, dump, panel, or measurement would be needed to standardize it.
+- Search/retrieval analysis must assume a full-modal index: text, images, video, audio, documents, structured records, comments/reviews, metadata, entities, generated derivatives, and cross-modal joins.
+- Define the indexable unit precisely. Examples: page, paragraph, post, video, transcript segment, frame/keyframe, thumbnail, audio track, comment, product, review, file, table row, entity, or bounding region.
+- Identify stable IDs and joins across modalities: canonical URL, internal ID, revision ID, creator/account ID, entity ID, media ID, transcript timestamp, caption language, thumbnail, EXIF/geodata, license, and structured metadata.
+- State the legitimate indexing path: public crawl, sitemap, RSS, official API, bulk dump, firehose, partner feed, paid endpoint, browser rendering, or no legitimate bulk path.
 - Record uncertainty instead of smoothing it away.
 - Look for the system behind the site: incentives, distribution, ownership, user behavior, and technical constraints.
 - End each report with reusable lessons, not just trivia.
