@@ -133,6 +133,7 @@ Selection strategies:
 - Prefer primary sources when available.
 - Include dates for major events.
 - Be numerically sensitive. Treat object counts, modality split, data volume, freshness/update rate, structured metadata coverage, and licensing/reuse coverage as first-class facts, not appendix details.
+- Format large numbers for reading. In report prose and tables, prefer compact units such as `70K`, `1.2M`, `20B`, `1.1PB`, and `987TiB`; do not display long raw integers unless the exact ID-like value is itself meaningful. Exact raw values can live in source notes or structured profiles when needed.
 - For each quantitative claim, include the figure, as-of date, source, and whether the number is directly reported or calculated by Site Wise.
 - If a critical number is unavailable, write `open` and say what query, API, dump, panel, or measurement would be needed to standardize it.
 - Search/retrieval analysis must assume a full-modal index: text, images, video, audio, documents, structured records, comments/reviews, metadata, entities, generated derivatives, and cross-modal joins.
