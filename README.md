@@ -48,7 +48,7 @@ python3 scripts/build_site.py
 
 This copies HTML reports into `docs/reports/`, copies shared CSS into `docs/assets/`, and writes `docs/index.html`.
 
-For phone viewing, publish the repository with GitHub Pages using `main` branch / `docs` folder. Once Pages is active, open the Pages URL on your phone and read reports from the index.
+For phone viewing, GitHub Pages is deployed by the `Deploy GitHub Pages` workflow in `.github/workflows/pages.yml`. The workflow publishes the built `docs/` directory from `main` whenever the reader, reports, assets, build script, or workflow changes. In the repository settings, set Pages to use GitHub Actions as the source.
 
 ## Report Structure
 
