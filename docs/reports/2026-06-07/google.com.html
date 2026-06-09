@@ -16,284 +16,212 @@
     <header class="report-hero">
       <p class="eyebrow">Daily Site Profile</p>
       <h1>google.com</h1>
-      <p class="lede">Google is the web's dominant intent router: a search box, answer engine, advertising marketplace, crawler, browser-default destination, local/navigation layer, and AI interface that turns the open web into ranked, monetized, increasingly synthesized responses.</p>
+      <p class="lede">Google is the web's index of record — 5T+ queries a year, ~90% share — yet offers no legitimate external path to its own SERPs.</p>
       <div class="tag-row">
         <span class="tag">Search</span>
-        <span class="tag">Advertising</span>
-        <span class="tag">AI Answers</span>
+        <span class="tag">Ads</span>
         <span class="tag">Web Index</span>
-        <span class="tag">Alphabet</span>
+        <span class="tag">AI Answers</span>
+        <span class="tag">Antitrust</span>
       </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
     </header>
 
     <section class="section-card">
-      <h2>How To Read This Report</h2>
-      <p>Every claim is tagged:</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> Sourced to a primary or reliable secondary record.</li>
-        <li><span class="evidence inferred">inferred</span> Reasoned from public signals.</li>
-        <li><span class="evidence open">open</span> Unknown, contested, or worth deeper digging.</li>
-      </ul>
-      <p class="muted">Google does not disclose Google Search MAU/DAU or web-index object counts. This report uses official Alphabet revenue disclosures, Google product statements, observed technical signals, and clearly marked inference.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Basic Profile</h2>
+      <h2>Context</h2>
+      <p>google.com fronts the dominant web index: 5T+ queries a year monetized by the world's largest ad business. For an index builder it is a paradox. Google's product <em>is</em> an index of everyone else's corpus, yet google.com exposes almost nothing of itself: <code>/search</code> is robots-disallowed for every agent, the logged-out SERP is a JavaScript wall (Probe Log), and the one general API — Custom Search JSON — is closed to new customers and dies Jan 1 2027. The rare hard numbers come from a courtroom: <em>US v. Google</em> put the index size (~400B documents) and default-payment economics ($26.3B in 2021) on the record, and the 2025 remedies order created the first compelled access path — index snapshots for "Qualified Competitors". <span class="evidence inferred">inferred</span> Google polices its SERP boundary with engineering rather than crawler bans. <em>Basis:</em> robots.txt observed 2026-06-10 has zero AI-crawler user-agent rules — <code>/search</code> is simply disallowed for all and the SERP requires JS (Probe Log).</p>
       <dl class="fact-list">
         <div><dt>Host</dt><dd><code>google.com</code></dd></div>
         <div><dt>Canonical URL</dt><dd><a href="https://www.google.com/">https://www.google.com/</a></dd></div>
-        <div><dt>Category</dt><dd>Search engine, answer engine, advertising marketplace, web index, local/maps entry point, account and product hub</dd></div>
-        <div><dt>Related hosts</dt><dd><code>www.google.com</code>, <code>google.[ccTLD]</code>, <code>accounts.google.com</code>, <code>ads.google.com</code>, <code>search.google.com</code>, <code>developers.google.com</code>, <code>googleusercontent.com</code>, <code>gstatic.com</code>, <code>youtube.com</code>, <code>googleapis.com</code></dd></div>
-        <div><dt>Parent company / owner</dt><dd>Google LLC, a subsidiary of Alphabet Inc. (NASDAQ: GOOG, GOOGL)</dd></div>
-        <div><dt>Country / region</dt><dd>United States; Google and Alphabet are headquartered in Mountain View, California; service is global with country and language variants</dd></div>
-        <div><dt>Founded / launched</dt><dd>Google Inc. was officially formed in 1998; Alphabet became Google's parent company in 2015</dd></div>
-        <div><dt>Founders</dt><dd>Larry Page and Sergey Brin</dd></div>
-        <div><dt>Current scale</dt><dd>Alphabet reported $109.9B Q1 2026 revenue, $60.4B from Google Search &amp; other, and 194,668 employees as of Mar 31 2026; Google said AI Overviews had 2B+ monthly users by 2025 and Search queries reached an all-time high in Q1 2026.</dd></div>
-        <div><dt>Primary languages / markets</dt><dd>Global, localized by language, country code, user location, query language, device, browser, account state, and regulatory region</dd></div>
+        <div><dt>Category</dt><dd>Web search engine, ads marketplace, answer engine</dd></div>
+        <div><dt>Grouped hosts</dt><dd>Scope is the search property. Maps, Scholar, News, Books, Patents, Trends live under google.com paths but are separate corpora; <code>accounts.google.com</code>, <code>gstatic.com</code> are plumbing; YouTube is its own report.</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC, subsidiary of Alphabet Inc. (NASDAQ: GOOG/GOOGL)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Google Inc. incorporated 1998; Alphabet holding structure since 2015</dd></div>
+        <div><dt>Business model</dt><dd>Search ads sold against query intent; traffic acquisition costs paid to distribution partners ($15.2B TAC in Q1 2026 alone)</dd></div>
+        <div><dt>Scale anchor</dt><dd>5T+ searches annually, disclosed Mar 3 2025 (<a href="https://blog.google/products/ads-commerce/ai-personalization-and-the-future-of-shopping/">Google blog</a>) — first update since "2T+" in 2016</dd></div>
       </dl>
     </section>
 
     <section class="section-card">
-      <h2>Key Metrics</h2>
-      <p class="muted">Numbers carry an as-of date. Search usage and index-size rows are marked open where Google does not publish a standard figure.</p>
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (current index size, zero-click share, AI Overview trigger rate) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Annual query volume</dt>
+          <dd>"More than 5 trillion searches on Google annually" — disclosed Mar 3 2025, internal Google data. <a href="https://blog.google/products/ads-commerce/ai-personalization-and-the-future-of-shopping/">Google blog</a>; context in <a href="https://searchengineland.com/google-5-trillion-searches-per-year-452928">Search Engine Land</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Web index size</dt>
+          <dd>~400B documents as of 2020 — testified by Search VP Pandu Nayak in <em>US v. Google</em>, Oct 18 2023; he could not say whether it had changed since. <a href="https://thecapitolforum.com/wp-content/uploads/2023/10/101823-USA-v-Google-PM.pdf">Trial transcript (PM session)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Google Search &amp; other revenue, FY2025</dt>
+          <dd>$224.5B (+13% YoY); Google advertising $294.7B; Alphabet total $402.8B — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm">Alphabet 2025 Form 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Q1 2026 momentum</dt>
+          <dd>Search &amp; other $60.4B (+19% YoY); TAC $15.2B; 194,668 employees; "queries at an all-time high" — as of Mar 31 2026. <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm">Q1 2026 earnings release (SEC exhibit 99.1)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>AI surfaces</dt>
+          <dd>AI Overviews 2B+ monthly users; AI Mode ~100M MAU (US + India) — stated on the Q2 2025 earnings call, Jul 23 2025. <a href="https://techcrunch.com/2025/07/23/googles-ai-overviews-have-2b-monthly-users-ai-mode-100m-in-the-us-and-india/">TechCrunch</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Search market share</dt>
+          <dd>90.39% worldwide — May 2026, StatCounter panel (referral share, not first-party query share). <a href="https://gs.statcounter.com/search-engine-market-share">StatCounter</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Default-placement payments</dt>
+          <dd>$26.3B paid to distribution partners in 2021 for default status — disclosed at trial, cited in Judge Mehta's Aug 5 2024 liability ruling. <a href="https://variety.com/2024/digital/news/google-illegal-search-monopoly-judge-ruling-doj-1236096055/">Variety on the ruling</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Custom Search JSON API quota</dt>
+          <dd>100 queries/day free, then $5 per 1K, hard cap 10K/day; closed to new customers, end-of-life Jan 1 2027 — as of Jun 10 2026. <a href="https://developers.google.com/custom-search/v1/overview">API docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Remedies data access</dt>
+          <dd>One-time search-index snapshot plus defined user-interaction datasets to court-approved "Qualified Competitors"; search/text-ads syndication on commercial terms — remedies opinion Sep 2 2025, final judgment Dec 5 2025. <a href="https://www.cnbc.com/2025/12/05/judge-finalize-remedies-in-google-antitrust-case.html">CNBC</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-10 (this regeneration's probe date), desktop browser user agent unless noted.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Metric</th><th>Value</th><th>As of</th><th>Source / Tag</th><th>Notes</th></tr></thead>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
           <tbody>
-            <tr><td data-label="Metric">Monthly active users</td><td data-label="Value">Open for Google Search; AI Overviews reached 2B+ monthly users</td><td data-label="As of">2025 / 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Google / Alphabet remarks</td><td data-label="Notes">Google does not publish Search MAU. AI Overviews is a Search feature, not the whole product.</td></tr>
-            <tr><td data-label="Metric">Daily active users</td><td data-label="Value">Open</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Need first-party DAU by Search surface: web, app, Chrome omnibox, Android widget, Assistant/Gemini, Maps/local, and voice.</td></tr>
-            <tr><td data-label="Metric">Quarterly revenue</td><td data-label="Value">$109.9B Alphabet total; $89.6B Google Services; $60.4B Google Search &amp; other</td><td data-label="As of">Q1 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Alphabet Q1 2026 results</td><td data-label="Notes">Search &amp; other grew 19% year over year.</td></tr>
-            <tr><td data-label="Metric">Annual revenue</td><td data-label="Value">$402.8B Alphabet total; $342.7B Google Services; $224.5B Google Search &amp; other</td><td data-label="As of">FY2025</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Alphabet 2025 Form 10-K</td><td data-label="Notes">Google advertising revenue was $294.7B in FY2025.</td></tr>
-            <tr><td data-label="Metric">Revenue mix</td><td data-label="Value">Search ads dominate; YouTube ads, Google Network, subscriptions/platforms/devices, Google Cloud, and Other Bets are separate reported lines</td><td data-label="As of">FY2025 / Q1 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Alphabet filings</td><td data-label="Notes">Google Services generates revenue primarily from ads plus subscriptions, apps, purchases, and devices.</td></tr>
-            <tr><td data-label="Metric">Top regions / countries</td><td data-label="Value">Q1 2026 revenue by customer address: U.S. $54.0B, EMEA $31.5B, APAC $18.3B, Other Americas $6.3B</td><td data-label="As of">Q1 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Alphabet Q1 2026 results</td><td data-label="Notes">Revenue geography is customer address, not query origin.</td></tr>
-            <tr><td data-label="Metric">Search market share</td><td data-label="Value">About 90% global search-engine referral share</td><td data-label="As of">Apr-May 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> StatCounter / Statista summaries</td><td data-label="Notes">Panel/referral share is not the same as first-party query share, but it is the best public market-share proxy.</td></tr>
-            <tr><td data-label="Metric">Content / inventory size</td><td data-label="Value">Open</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Google does not disclose current indexed URL count, media count, entity count, or byte volume.</td></tr>
-            <tr><td data-label="Metric">Indexable object count</td><td data-label="Value">Open; object classes include web pages, passages, images, videos, news articles, local places, products, books, patents, scholarly records, ads, entities, query logs, and generated answers</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">The useful index is not one corpus. It is a federation of web, local, shopping, media, knowledge graph, ads, and AI retrieval systems.</td></tr>
-            <tr><td data-label="Metric">Modality mix</td><td data-label="Value">Text-first for classic web; image, video, local/entity, shopping, map, news, document, audio/voice, and generated-answer modalities are first-class</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Search result pages mix ranked links, snippets, ads, AI Overviews, local packs, images, videos, shopping modules, and direct answers.</td></tr>
-            <tr><td data-label="Metric">Data volume</td><td data-label="Value">Open</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Need first-party bytes for crawled documents, rendered pages, images, videos, embeddings, link graph, knowledge graph, logs, spam models, and serving indices.</td></tr>
-            <tr><td data-label="Metric">Freshness / update rate</td><td data-label="Value">Open; recrawl cadence varies from minutes to months by URL and vertical</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Google crawler docs say crawl rate depends on site capacity and system need; news/trends/local inventory require much faster refresh than evergreen pages.</td></tr>
-            <tr><td data-label="Metric">Structured metadata coverage</td><td data-label="Value">High but uneven</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Coverage comes from HTML, links, sitemaps, structured data, feeds, Merchant Center, Business Profile, publisher metadata, APIs, and Google-owned vertical datasets.</td></tr>
-            <tr><td data-label="Metric">Licensing / reuse coverage</td><td data-label="Value">Mixed and policy-bound</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Google Search docs</td><td data-label="Notes">Publishers manage Search crawling with Googlebot/robots controls and can limit previews with nosnippet, data-nosnippet, max-snippet, or noindex; Google-Extended is for some other AI uses.</td></tr>
-            <tr><td data-label="Metric">Growth direction</td><td data-label="Value">Search revenue +19% YoY; queries at all-time high; Google Cloud +63% YoY</td><td data-label="As of">Q1 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Alphabet Q1 2026 results</td><td data-label="Notes">Management attributes Search strength partly to AI experiences driving usage.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>dig +short google.com</code> + reverse</td><td data-label="Observation">Six A records in 74.125.200.0/24; PTRs resolve to <code>sa-in-f*.1e100.net</code> — Google's own serving network, no third-party CDN. Authoritative NS are <code>ns1–ns4.google.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -sI https://www.google.com/</code></td><td data-label="Observation">HTTP/2 200, <code>server: gws</code>, <code>alt-svc</code> advertises HTTP/3, report-only CSP to <code>csp.withgoogle.com</code>, <code>cache-control: private</code>. First anonymous hit already sets <code>AEC</code> and <code>NID</code> cookies (~6-month expiry).</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl https://www.google.com/robots.txt</code></td><td data-label="Observation">261 lines. <code>Disallow: /search</code> for all agents, with <code>Allow: /search/about</code> and <code>/search/howsearchworks</code>. No AI-crawler rules at all — no GPTBot/ClaudeBot/CCBot entries. Only named UAs: Yandex, AdsBot-Google, and facebookexternalhit/Twitterbot, which get <code>Allow: /search</code> and <code>/imgres</code> for link-share markup.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Sitemap census: <code>/sitemap.xml</code></td><td data-label="Observation">Sitemap index with 21 children — all product-marketing pages (gmail, docs, flights, adsense). Nothing points at the search corpus; the indexable surface of google.com is brochureware.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -A "&lt;Chrome UA&gt;" "https://www.google.com/search?q=test"</code></td><td data-label="Observation">HTTP 200 but a 91KB JavaScript shell, not results: <code>&lt;noscript&gt;</code> meta-refreshes to <code>/httpservice/retry/enablejs</code>. A non-JS client gets zero result HTML even with a browser UA.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl "https://suggestqueries.google.com/complete/search?client=firefox&amp;q=test"</code></td><td data-label="Observation">Unauthenticated JSON: 10 ranked suggestions plus <code>google:suggestsubtypes</code> codes. The autocomplete endpoint is the only open, structured query surface found.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>/llms.txt</code>, <code>/opensearch.xml</code></td><td data-label="Observation">Both 404. No llms.txt and no OpenSearch description document at the conventional path.</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Why This Site Matters</h2>
-      <p>Google matters because it became the default interface between human intent and the public web. A query is a tiny expression of demand; Google's system expands it into crawling, indexing, ranking, ads auctions, local/entity matching, personalization, spam defense, browser and Android defaults, and now AI synthesis.</p>
-      <p>The site's importance is not limited to traffic. Google decides which pages are discoverable, which entities are canonical, which snippets represent a document, which businesses are nearby, which ads are eligible, and how much of the answer is consumed on the results page. That makes <code>google.com</code> both a gateway and a competitor to many sites it indexes.</p>
-      <div class="callout">
-        <strong>Why this site matters for retrieval:</strong> Google shows that web search is a multi-index orchestration problem. The result is not a list of documents; it is a ranked, monetized, policy-filtered composition across documents, entities, media, local inventory, ads, user context, and generated summaries.
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Timeline</h2>
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists on the google.com search property, the best legitimate path, cost, display rights, and churn. CSJA = <a href="https://developers.google.com/custom-search/v1/overview">Custom Search JSON API</a>.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Date</th><th>Event</th><th>Why It Matters</th></tr></thead>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
           <tbody>
-            <tr><td data-label="Date">1996</td><td data-label="Event">Larry Page and Sergey Brin begin the Stanford research project that becomes Google, using links as a relevance signal.</td><td data-label="Why It Matters">PageRank turns the web's link graph into a ranking asset.</td></tr>
-            <tr><td data-label="Date">1998</td><td data-label="Event">Google Inc. is officially formed after early outside funding.</td><td data-label="Why It Matters">Search becomes a company rather than only a research system.</td></tr>
-            <tr><td data-label="Date">2000</td><td data-label="Event">AdWords launches.</td><td data-label="Why It Matters">Intent-targeted ads create the core economic model.</td></tr>
-            <tr><td data-label="Date">2004</td><td data-label="Event">Google IPOs.</td><td data-label="Why It Matters">Public markets fund infrastructure expansion and make search economics visible.</td></tr>
-            <tr><td data-label="Date">2005</td><td data-label="Event">Google Maps launches.</td><td data-label="Why It Matters">Search extends from documents into places, routing, and local commercial intent.</td></tr>
-            <tr><td data-label="Date">2006</td><td data-label="Event">Google acquires YouTube.</td><td data-label="Why It Matters">Video becomes a major owned corpus and advertising surface.</td></tr>
-            <tr><td data-label="Date">2008</td><td data-label="Event">Chrome launches; Android's first commercial device ships.</td><td data-label="Why It Matters">Google strengthens default distribution through browser and mobile operating system layers.</td></tr>
-            <tr><td data-label="Date">2012</td><td data-label="Event">Knowledge Graph launches.</td><td data-label="Why It Matters">Search shifts from matching pages to answering entity questions directly.</td></tr>
-            <tr><td data-label="Date">2015</td><td data-label="Event">Alphabet becomes Google's parent company.</td><td data-label="Why It Matters">Separates Google Services from Other Bets and makes Search part of a broader holding-company structure.</td></tr>
-            <tr><td data-label="Date">2018-2020</td><td data-label="Event">Mobile-first indexing, neural ranking, BERT-era language understanding, and Core Web Vitals reshape SEO incentives.</td><td data-label="Why It Matters">Ranking becomes more semantic, mobile-centric, and user-experience sensitive.</td></tr>
-            <tr><td data-label="Date">2023</td><td data-label="Event">Google introduces Google-Extended and accelerates Gemini-era AI products.</td><td data-label="Why It Matters">Publisher control and AI training become explicit web-governance issues.</td></tr>
-            <tr><td data-label="Date">2024</td><td data-label="Event">AI Overviews roll out broadly in Search.</td><td data-label="Why It Matters">Search begins synthesizing answers at mass consumer scale, raising click, attribution, and accuracy questions.</td></tr>
-            <tr><td data-label="Date">2025</td><td data-label="Event">Alphabet reports $402.8B annual revenue and $224.5B Google Search &amp; other revenue.</td><td data-label="Why It Matters">Shows the search-ad business still expands despite AI disruption narratives.</td></tr>
-            <tr><td data-label="Date">Apr 29 2026</td><td data-label="Event">Alphabet reports $109.9B Q1 revenue, $60.4B Search &amp; other revenue, and queries at an all-time high.</td><td data-label="Why It Matters">Management frames AI features as expanding Search usage rather than cannibalizing it.</td></tr>
+            <tr>
+              <td data-label="Modality">Text (SERPs)</td>
+              <td data-label="Objects &amp; est. count">Result pages over a ~400B-doc index (2020 figure, Verified Metrics); not a crawlable corpus.</td>
+              <td data-label="Best legitimate path">None. robots disallows <code>/search</code>, the page is a JS wall (Probe Log), no SERP API exists. CSJA is closed to new customers, EOL Jan 1 2027.</td>
+              <td data-label="Auth &amp; quota">CSJA: API key, 100/day free, $5/1K, 10K/day cap (legacy only).</td>
+              <td data-label="License / display">Scraping prohibited by terms; SERP-API resellers operate unlicensed.</td>
+              <td data-label="Freshness">Non-deterministic per query, region, account, experiment.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Query suggestions</td>
+              <td data-label="Objects &amp; est. count">Autocomplete completions per prefix × language × region.</td>
+              <td data-label="Best legitimate path"><code>suggestqueries.google.com</code> JSON (Probe Log) — unauthenticated, undocumented, unofficial.</td>
+              <td data-label="Auth &amp; quota">None observed; no published quota or terms.</td>
+              <td data-label="License / display">Open: no stated reuse terms.</td>
+              <td data-label="Freshness">Tracks trending queries within hours–days.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images / video verticals</td>
+              <td data-label="Objects &amp; est. count">Image and video SERPs; thumbnails proxied via <code>gstatic.com</code>.</td>
+              <td data-label="Best legitimate path">Same closure as text SERPs; <code>/imgres</code> robots-disallowed except for two social-share UAs (Probe Log).</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Underlying media belongs to source sites, not Google.</td>
+              <td data-label="Freshness">Follows web recrawl, not a feed.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Knowledge Graph entities behind knowledge panels; Trends topics.</td>
+              <td data-label="Best legitimate path"><a href="https://developers.google.com/knowledge-graph">Knowledge Graph Search API</a> (lookup by name/MID); <a href="https://trends.google.com/">Trends</a> for query-interest series.</td>
+              <td data-label="Auth &amp; quota">API key for KG Search; Trends is browser/CSV, no official API.</td>
+              <td data-label="License / display">KG results carry schema.org typing; Trends is index-normalized, not absolute counts.</td>
+              <td data-label="Freshness">KG slow-churn; Trends near-real-time.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Index data (compelled)</td>
+              <td data-label="Objects &amp; est. count">One-time snapshot of search-index data plus user-interaction datasets (Verified Metrics).</td>
+              <td data-label="Best legitimate path">Qualify as a "Qualified Competitor" under the Dec 5 2025 final judgment, or buy search syndication commercially.</td>
+              <td data-label="Auth &amp; quota">Court-supervised approval; terms not public.</td>
+              <td data-label="License / display">Restricted to competing in search/AI per the judgment.</td>
+              <td data-label="Freshness">One-time, not ongoing — stale by design.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Site-owner data</td>
+              <td data-label="Objects &amp; est. count">Your own pages' impressions, clicks, queries in Google's index.</td>
+              <td data-label="Best legitimate path"><a href="https://developers.google.com/webmaster-tools">Search Console API</a> — per-property only.</td>
+              <td data-label="Auth &amp; quota">OAuth + verified site ownership.</td>
+              <td data-label="License / display">Own-property data; no cross-site visibility.</td>
+              <td data-label="Freshness">~2-day reporting lag.</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>User Intent and Core Scenarios</h2>
-      <ul>
-        <li><strong>Primary intents:</strong> navigate to a known site, answer a factual question, research a topic, compare products/services, find a local business, get directions, search images/videos/news, troubleshoot, translate, calculate, and start a commercial action.</li>
-        <li><strong>Secondary / emerging intents:</strong> AI-assisted exploration, multi-step comparison, shopping with generated summaries, local planning, coding/help queries, medical/legal/financial pre-research, and conversational follow-up in AI Mode/Gemini-linked surfaces.</li>
-        <li><strong>Repeat-use loop:</strong> browser or phone default opens Google → query reveals links/answers/ads/modules → user clicks, refines, or consumes answer on page → history, location, account, and ad signals improve future ranking and monetization → defaults and habit bring the user back.</li>
-        <li><strong>What it replaces / displaces:</strong> directories, browser bookmarks, portal homepages, yellow pages, comparison-shopping sites, maps directories, on-site search for many domains, encyclopedic lookup, weather/sports/stock widgets, and parts of publisher discovery.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Traffic and Distribution</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> Alphabet's Q1 2026 filing says Google Search &amp; other revenue was $60.4B, up 19% year over year, and management said queries reached an all-time high.</li>
-        <li><span class="evidence verified">verified</span> Public market-share panels still place Google at about 90% global search-engine referral share in 2026.</li>
-        <li><span class="evidence inferred">inferred</span> Distribution is default-driven: Chrome omnibox, Android search widget, Safari/browser search defaults, Google app, homepage habit, voice, Maps/local entry points, and search boxes embedded across Google products.</li>
-        <li><span class="evidence inferred">inferred</span> Google is both source and destination. It sends traffic outward through organic results, ads, and supporting links, while AI Overviews, knowledge panels, local packs, calculators, weather, sports, and shopping modules satisfy many intents without a click.</li>
-        <li><span class="evidence open">open</span> Need standardized first-party or audited data for query volume, zero-click share, AI Overview impression/click share, traffic sent to publishers, and query distribution by vertical.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Product Anatomy</h2>
-      <ul>
-        <li><strong>First screen:</strong> logged-out desktop shows a search box and product links; logged-in and mobile surfaces add account state, app prompts, voice/image search, Discover-adjacent entry points, and personalization.</li>
-        <li><strong>Core journey:</strong> user enters a query → Google normalizes intent, language, region, freshness, and entity candidates → composes organic results, ads, AI answer, vertical modules, and refinements → user clicks, follows up, or completes the task on Google.</li>
-        <li><strong>Discovery modes:</strong> classic typed query, autocomplete, related searches, People Also Ask, AI Overviews, AI Mode, Lens/image search, voice, Discover, Maps, News, Shopping, Trends, and vertical tabs.</li>
-        <li><strong>Account / identity:</strong> Google Account links Search to history, location, YouTube, Gmail, Chrome, Android, ads preferences, subscriptions, Workspace, payments, and developer/cloud identity; logged-out search remains functional but less personalized.</li>
-        <li><strong>Supply side:</strong> web publishers, businesses, merchants, app developers, YouTube creators, advertisers, SEOs, local contributors, structured-data providers, API/feed partners, and Google-owned vertical datasets.</li>
-        <li><strong>Demand side:</strong> users with intent, advertisers buying that intent, publishers seeking traffic, businesses seeking local discovery, developers seeking API/product distribution, and AI systems seeking grounding sources.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Business Model</h2>
-      <ul>
-        <li><strong>Revenue streams:</strong> Search ads are the core stream; Google Services also includes YouTube ads, Google Network, subscriptions, Google Play, devices, and platform fees, while Google Cloud is separately reported.</li>
-        <li><strong>Pricing / unit economics:</strong> advertisers bid in auctions against keywords, audiences, placements, product feeds, local intent, and conversion goals. Alphabet reports paid clicks and cost-per-click as monetization metrics for Search &amp; other.</li>
-        <li><strong>Who pays whom:</strong> advertisers pay Google for traffic, conversions, impressions, or outcomes; Google pays traffic acquisition costs to distribution partners and network members; users pay with attention, data, and sometimes subscriptions.</li>
-        <li><strong>Strategic shape:</strong> Google turns demand capture into a flywheel: default distribution creates queries, queries create ad inventory and training/evaluation signals, revenue funds crawling/infrastructure/AI, and AI/search quality protects defaults.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Moat</h2>
-      <p class="muted">For each moat: type, claim, evidence, fragility.</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> <strong>Economic scale:</strong> $224.5B FY2025 Google Search &amp; other revenue and $60.4B Q1 2026 Search &amp; other revenue fund infrastructure, distribution payments, model training, anti-spam, and product expansion. Fragility: antitrust remedies and AI answer competition could weaken default distribution or margins.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Behavioral default:</strong> users reflexively search Google from browser bars, phones, and apps. Fragility: conversational AI, vertical search, regulation, or device defaults can redirect high-value queries.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Index and ranking memory:</strong> decades of crawling, link graph data, spam fighting, click feedback, entity resolution, and quality evaluation are hard to reproduce. Fragility: the web can decay, hide behind apps/logins, block crawlers, or fill with generated spam.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Full-stack distribution:</strong> Chrome, Android, Maps, YouTube, Gmail, Workspace, and Google Account make Search a default layer across tasks. Fragility: platform rules, browser choice screens, app-store constraints, and privacy regulation can reduce cross-product leverage.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Peers and Contrasts</h2>
-      <p class="muted">Google should be compared by intent capture and corpus access, not only by SERP UI.</p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Peer</th><th>Same as google.com</th><th>Different from google.com</th><th>What the difference teaches</th></tr></thead>
-          <tbody>
-            <tr><td data-label="Peer">Bing</td><td data-label="Same as google.com">General web search, ads, AI answers, browser/OS distribution, crawler/index.</td><td data-label="Different from google.com">Microsoft has strong Windows/Edge/Copilot distribution but much smaller classic search share.</td><td data-label="What the difference teaches">Default access matters, but index quality, habit, advertiser liquidity, and ecosystem breadth compound over decades.</td></tr>
-            <tr><td data-label="Peer">ChatGPT / Perplexity</td><td data-label="Same as google.com">Answer-oriented retrieval with citations/links and conversational follow-up.</td><td data-label="Different from google.com">They start from chat and synthesis; Google starts from web search, ads, vertical modules, and default distribution.</td><td data-label="What the difference teaches">AI shifts the retrieval unit from page rank to answer composition, but distribution and trust still decide scale.</td></tr>
-            <tr><td data-label="Peer">Amazon</td><td data-label="Same as google.com">High-value commercial intent and ads auction.</td><td data-label="Different from google.com">Amazon owns product inventory and checkout; Google indexes merchants and routes demand across the open web and Shopping surfaces.</td><td data-label="What the difference teaches">For commerce, owning the transaction can be more valuable than owning the query.</td></tr>
-            <tr><td data-label="Peer">TikTok / YouTube</td><td data-label="Same as google.com">Discovery, recommendations, creator content, ads, search-like behavior.</td><td data-label="Different from google.com">Video platforms answer experiential and entertainment queries visually; Google orchestrates across many modalities and sites.</td><td data-label="What the difference teaches">Search increasingly competes with feeds for attention and with video for "how/what should I buy" intent.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Technical Signals</h2>
-      <ul>
-        <li><strong>DNS / hosting / CDN:</strong> observed on 2026-06-07, <code>google.com</code> resolved to multiple Google IPs in the <code>74.125.142.0/24</code> range from this network, with authoritative nameservers <code>ns1.google.com</code> through <code>ns4.google.com</code>. Delivery is vertically integrated through Google's own infrastructure.</li>
-        <li><strong>Frontend / framework clues:</strong> homepage response is compact HTML with heavy server-controlled personalization and JavaScript. Search result pages are dynamic, experiment-heavy, and module-composed by query, region, account, and device.</li>
-        <li><strong>Security / headers:</strong> observed homepage headers on 2026-06-07 included <code>server: gws</code>, <code>x-frame-options: SAMEORIGIN</code>, <code>x-xss-protection: 0</code>, report-only CSP to <code>csp.withgoogle.com</code>, secure cookies, and private cache control.</li>
-        <li><strong>Performance / delivery:</strong> observed <code>alt-svc</code> advertised HTTP/3; Google crawler docs say Google's crawlers support HTTP/1.1 and HTTP/2 and run from many datacenters.</li>
-        <li><strong>Notable integrations:</strong> Googlebot, AdsBot, Search Console, Indexing/API-adjacent tools, Merchant Center, Business Profile, Maps/Places, YouTube, Chrome, Android, Google Ads, Analytics, Tag Manager, Google APIs, Gemini, and AI Overviews/AI Mode.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Search and Retrieval Perspective</h2>
-      <p class="muted">Assume the task is to build a full-modal index over this site and its searchable universe: text, images, video, audio, documents, structured records, comments/reviews, metadata, entities, ads, and generated answers. Google is less one index than a federation of many specialized indices with a single user-intent front door.</p>
-
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where google.com differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
       <div class="subgrid">
         <div>
-          <h4>Identifier &amp; canonical URL</h4>
-          <p>Core keys include canonical URL, crawl URL, rendered URL, document ID, passage ID, image/video ID, entity ID, place ID, merchant/product IDs, ad IDs, query/session IDs, and account/device context. Dedupe must normalize redirects, canonicals, mobile variants, parameters, hreflang, and syndication.</p>
+          <h4>The inversion</h4>
+          <p>Other reports ask how to get a site's corpus out. Google's corpus is the open web — available to anyone willing to crawl it. What is locked is the <em>derived</em> layer: ranking, query logs, click data — exactly what the remedies order targets.</p>
         </div>
         <div>
-          <h4>Crawl &amp; access policy</h4>
-          <p><code>google.com/robots.txt</code> observed 2026-06-07 allows selected public entry points but disallows many search, books, scholar, maps, shopping, accounts, and internal paths. For the wider web, publishers control Google Search crawling primarily through Googlebot and robots/noindex/preview controls.</p>
-        </div>
-        <div>
-          <h4>Official APIs &amp; feeds</h4>
-          <p>There is no public bulk export of Google's full Search index. Legitimate structured paths are vertical-specific: Search Console, Indexing API for narrow cases, Merchant Center feeds, Business Profile, Ads APIs, Maps/Places APIs, Custom Search/Programmable Search, Trends, and publisher sitemaps/feeds.</p>
+          <h4>Identifier &amp; dedup</h4>
+          <p>google.com URLs are not stable objects: SERP URLs encode session params, and country editions collapsed onto google.com in 2017. The durable IDs are the query string and Knowledge Graph MIDs (<code>/m/…</code>, <code>/g/…</code>), which join KG API responses, Trends topics, and knowledge panels.</p>
         </div>
         <div>
           <h4>Retrieval unit</h4>
-          <p>Useful units vary by intent: page, passage, image, video segment, local place, product offer, news article, entity, FAQ, recipe, forum thread, scholarly record, book snippet, ad creative, and AI-generated answer with cited supporting pages.</p>
-        </div>
-        <div>
-          <h4>Full-modal object inventory</h4>
-          <p>Object counts are open. Inventory spans web pages, rendered DOM snapshots, links, anchors, passages, images, videos, transcripts, local entities, reviews, products/offers, articles, structured data, ads, queries, clicks, and generated derivatives such as embeddings and summaries.</p>
-        </div>
-        <div>
-          <h4>Cross-modal joins</h4>
-          <p>Join keys include URL, canonical URL, entity ID, place ID, product GTIN/SKU/merchant IDs, image URL/hash, video ID/timestamp, structured-data IDs, organization/person IDs, language/region, and query intent clusters. The difficult join is between open-web evidence and Google-owned entity/behavior data.</p>
-        </div>
-        <div>
-          <h4>Metadata coverage</h4>
-          <p>Strong for crawl metadata, links, titles, snippets, language, freshness, structured data, entities, local/business fields, merchant feeds, image/video metadata, spam labels, and serving features. Weak/open for licensing, publisher economic preference, original authorship, AI-generated provenance, and content-level reuse rights.</p>
-        </div>
-        <div>
-          <h4>Indexing path</h4>
-          <p>For a third party, the legitimate path is not scraping Google SERPs. Build your own crawl where allowed, consume sitemaps/feeds/APIs, use vertical partner feeds, respect robots and preview controls, and use Google APIs only within their terms.</p>
+          <p>A query→composition pair, not a page: ranked links, ads, AI Overview, and vertical modules assembled per request, non-deterministic by design. Any archived SERP is one sample, not the canonical answer.</p>
         </div>
         <div>
           <h4>Authoritative content field</h4>
-          <p>For classic Search, title/snippet/canonical/body/passage may disagree. For AI Overviews, the generated answer becomes a new presentation layer whose authority depends on selected supporting pages, model behavior, query context, and Google's safety/ranking systems.</p>
+          <p>AI Overviews replace the snippet as the page's voice: the authoritative text is generated, sources demoted to citations. Answer text and cited URLs need separate fields with separate trust.</p>
         </div>
         <div>
-          <h4>Freshness &amp; decay</h4>
-          <p>Freshness should be vertical-specific: seconds/minutes for breaking news, markets, sports, weather and local availability; hours/days for commerce and forums; weeks/months for evergreen pages; continuous for spam and quality labels.</p>
+          <h4>Quality &amp; spam</h4>
+          <p>The adversarial pressure runs <em>through</em> google.com rather than at it: SEO manipulates Google's index of other sites. google.com's own pages (brochureware, per the sitemap census) are clean and tiny.</p>
         </div>
         <div>
-          <h4>Quality signals &amp; spam patterns</h4>
-          <p>Signals include link graph, content quality, entity trust, structured-data consistency, site reputation, user behavior, manual actions, freshness, page experience, spam classifiers, local review quality, and merchant reliability. Spam pressure is extreme because ranking has direct monetary value.</p>
-        </div>
-        <div>
-          <h4>Licensing &amp; reuse</h4>
-          <p>Snippets, cached/rendered views, thumbnails, AI summaries, and training/grounding sit under different legal and policy regimes. Google Search docs say site owners can limit Search previews and use Google-Extended for some other AI systems, but those controls are not a universal licensing standard.</p>
-        </div>
-        <div>
-          <h4>Personalization &amp; non-determinism</h4>
-          <p>Results vary by location, language, device, account, history, cookies, time, experiments, safe-search settings, regulatory region, and query reformulation. A single anonymous crawl does not represent what users see.</p>
-        </div>
-        <div>
-          <h4>Region / language splits</h4>
-          <p>Country domains, <code>hl</code>, <code>gl</code>, location, legal removals, local licensing, local ads, local packs, and language detection all change results. A useful index needs regional replicas and policy annotations.</p>
-        </div>
-        <div>
-          <h4>Internal search vs external</h4>
-          <p>For many sites, users prefer Google with <code>site:</code> because Google's crawling, ranking, typo handling, and query understanding beat the site's own search. This is a distribution opportunity for Google and a product warning for every content site.</p>
-        </div>
-        <div>
-          <h4>Outbound vs inbound posture</h4>
-          <p>Google is the central outbound router of the web, but its own SERP modules increasingly keep tasks inside Google. The posture is both hub and sink: it links outward while absorbing more answer, local, shopping, travel, and media intent.</p>
-        </div>
-        <div>
-          <h4>Anti-manipulation / ranking surface</h4>
-          <p>To be found, publishers optimize crawlability, structured data, content quality, authority, links, freshness, and page experience. Manipulation surfaces include link schemes, parasite SEO, review spam, merchant feed abuse, local listing spam, AI content farms, cloaking, and SERP feature gaming.</p>
+          <h4>Internal vs external search</h4>
+          <p>The <code>site:</code> escape hatch terminates here — no external engine searches Google's results, and SERPs are deliberately unindexable (robots + JS wall, Probe Log).</p>
         </div>
         <div>
           <h4>User query profile</h4>
-          <p>Queries range from one-word navigation to long conversational tasks. Classic ranking fits navigational and source-seeking queries; AI synthesis fits multi-step explanatory and comparison queries; vertical indices fit local, shopping, maps, images, videos, news, and facts.</p>
+          <p>The full distribution of human intent, 5T+/year (Verified Metrics) — the dataset itself. The suggest endpoint leaks its head, one prefix at a time; the tail is visible only inside Google and in per-owner Search Console slices.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Nothing on google.com is worth scheduled recrawl except suggestions and Trends; everything else either never changes (marketing pages) or changes every request (SERPs).</p>
         </div>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Risks and Future</h2>
+      <h2>Indexing Plan</h2>
       <ul>
-        <li><strong>Competitive:</strong> AI answer engines, social/video search, Amazon commerce search, Apple/Safari defaults, Microsoft Copilot/Bing, and vertical apps can siphon high-intent queries.</li>
-        <li><strong>Regulatory:</strong> antitrust cases, default-search remedies, EU DMA/DSA-style obligations, privacy law, ad-tech investigations, publisher bargaining laws, and AI/copyright rules can change distribution, data use, and monetization.</li>
-        <li><strong>Platform / supply:</strong> publishers may block crawlers, hide content behind apps/logins/paywalls, demand compensation, or optimize for AI visibility in ways that reduce web quality.</li>
-        <li><strong>Abuse / safety:</strong> SEO spam, generated-content floods, local fraud, medical/financial misinformation, malicious ads, adversarial snippets, and AI Overview errors can damage trust.</li>
-        <li><strong>Technology shift (incl. AI):</strong> Google must move from link ranking to answer composition without breaking attribution, publisher economics, ad load, legal exposure, or user confidence.</li>
+        <li><strong>Retrieval unit:</strong> the query — with attached suggestion sets, Trends series, KG entities, and (where capturable) answer compositions.</li>
+        <li><strong>Primary keys &amp; joins:</strong> normalized query string + language + region; KG MID for entity joins; source URL for AI Overview citations.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Suggest endpoint — free, unauthenticated prefix-fanout for query distribution (fragile: unofficial). 2) KG Search API + Trends — entity and demand signals, key-gated. 3) Search Console — ground-truth query→click data, own properties only. 4) CSJA — legacy accounts only, dead Jan 1 2027. 5) Qualified Competitor snapshot — the only bulk path to the index itself, court-gated. 6) SERP scraping — no legitimate basis; excluded.</li>
+        <li><strong>Recrawl cadence:</strong> suggestions daily on a tracked prefix set; Trends weekly; KG entities monthly; marketing pages never.</li>
+        <li><strong>Derivatives to generate:</strong> query-intent clusters from suggestion fanouts; entity-linking table (query→MID); a divergence log of identical queries sampled across regions to quantify non-determinism.</li>
+        <li><strong>Demo to build:</strong> a suggest-fanout crawler — seed term → recursive prefix expansion (a–z appended) → ranked query graph with subtype codes, demonstrating how much query-distribution signal the one open endpoint leaks.</li>
       </ul>
     </section>
 
     <section class="section-card">
-      <h2>Lessons</h2>
+      <h2>Risks to the Index</h2>
       <ul>
-        <li><strong>Product:</strong> The most powerful interface is often a tiny input box backed by enormous invisible infrastructure.</li>
-        <li><strong>Growth / distribution:</strong> Defaults, habit, and ecosystem placement compound more reliably than feature launches.</li>
-        <li><strong>Business:</strong> Intent is one of the highest-value ad surfaces because the user declares demand before the transaction.</li>
-        <li><strong>Technical:</strong> General search is not one ranking model. It is crawling, rendering, parsing, indexing, entity resolution, vertical retrieval, ads auctions, spam fighting, experimentation, and policy enforcement.</li>
-        <li><strong>For a retrieval / agent builder:</strong> Treat search as orchestration. Choose the retrieval unit by task, preserve provenance and rights, keep freshness vertical-specific, and expect SERP/answer outputs to be personalized and non-deterministic.</li>
+        <li><strong>The last general API has a death date:</strong> Custom Search JSON API is closed to new customers and returns errors after Jan 1 2027 (<a href="https://developers.google.com/custom-search/v1/overview">docs</a>); Google's pointer is Vertex AI Search, which searches your corpus, not the web.</li>
+        <li><strong>The compelled path is contested:</strong> Google appealed the antitrust ruling in May 2026 (<a href="https://appleworld.today/2026/05/google-appeals-ruling-that-it-violated-antitrust-laws-by-paying-to-be-the-iphones-default-search-engine/">report</a>); Qualified Competitor data access could be narrowed or delayed on appeal.</li>
+        <li><strong>The suggest endpoint is a courtesy, not a contract:</strong> undocumented, unauthenticated (Probe Log) — it can be keyed, quota'd, or closed without notice, taking the only open ingestion path with it.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>SERP capture will keep getting harder.</strong> <em>Basis:</em> the logged-out SERP already requires JS execution even for a browser UA (Probe Log, 2026-06-10), a hardening Google shipped without robots.txt changes — enforcement is moving into the client runtime where third parties can't negotiate.</li>
       </ul>
     </section>
 
@@ -301,28 +229,30 @@
       <h2>Source Notes</h2>
       <h3>Sources</h3>
       <ul>
-        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm">Alphabet Q1 2026 earnings release filed with SEC</a> for Q1 2026 revenue, segment revenue, Search &amp; other revenue, employees, operating income, subscriptions, AI remarks, and Waymo ride count.</li>
-        <li><a href="https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf">Alphabet 2025 Form 10-K</a> for FY2025 revenue, Google Services/Search revenue, Google advertising revenue, TAC, geography, segment profitability, and risk context.</li>
-        <li><a href="https://about.google/company-info/our-story/">Google company history</a> for founding story and early company context.</li>
-        <li><a href="https://www.google.com/robots.txt">google.com robots.txt</a>, observed 2026-06-07, for public crawl policy on Google-owned paths and sitemap reference.</li>
-        <li><a href="https://developers.google.com/crawling/docs/crawlers-fetchers/overview-google-crawlers">Google crawler documentation</a> for crawler/fetcher categories, protocol support, datacenter distribution, and file-size/caching notes.</li>
-        <li><a href="https://developers.google.com/search/docs/appearance/ai-features">Google Search Central AI features documentation</a> for AI Overviews/AI Mode site-owner controls and preview controls.</li>
-        <li><a href="https://gs.statcounter.com/search-engine-market-share">StatCounter Global Stats search engine market share</a> and <a href="https://www.statista.com/statistics/1381664/worldwide-all-devices-market-share-of-search-engines/">Statista summary of StatCounter data</a> for public search referral share context.</li>
-        <li>Local observations on 2026-06-07: <code>curl -I https://www.google.com/</code>, <code>curl -L https://www.google.com/robots.txt</code>, <code>dig +short google.com A</code>, and <code>dig +short google.com NS</code>.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm">Alphabet 2025 Form 10-K (SEC)</a> — FY2025 Search &amp; other, Google advertising, total revenues.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm">Alphabet Q1 2026 earnings release (SEC exhibit 99.1)</a> — Q1 2026 Search revenue, TAC, headcount, "queries at an all-time high".</li>
+        <li><a href="https://blog.google/products/ads-commerce/ai-personalization-and-the-future-of-shopping/">Google blog, Mar 3 2025</a> — 5T+ annual searches; <a href="https://searchengineland.com/google-5-trillion-searches-per-year-452928">Search Engine Land</a> for the 2016 "2T+" prior.</li>
+        <li><a href="https://thecapitolforum.com/wp-content/uploads/2023/10/101823-USA-v-Google-PM.pdf">US v. Google trial transcript, Oct 18 2023 (PM)</a> — Nayak testimony on the ~400B-document index.</li>
+        <li><a href="https://variety.com/2024/digital/news/google-illegal-search-monopoly-judge-ruling-doj-1236096055/">Variety, Aug 5 2024</a> — liability ruling and the $26.3B 2021 default payments.</li>
+        <li><a href="https://www.cnbc.com/2025/12/05/judge-finalize-remedies-in-google-antitrust-case.html">CNBC, Dec 5 2025</a> and <a href="https://www.hugheshubbard.com/news/court-issues-remedies-ruling-in-united-states-v-google-search-case">Hughes Hubbard</a> — remedies: one-time index snapshot, user-interaction data, syndication.</li>
+        <li><a href="https://techcrunch.com/2025/07/23/googles-ai-overviews-have-2b-monthly-users-ai-mode-100m-in-the-us-and-india/">TechCrunch, Jul 23 2025</a> — AI Overviews 2B MAU, AI Mode 100M.</li>
+        <li><a href="https://developers.google.com/custom-search/v1/overview">Custom Search JSON API docs</a> — quota, pricing, closure and Jan 1 2027 EOL.</li>
+        <li><a href="https://gs.statcounter.com/search-engine-market-share">StatCounter</a> — 90.39% worldwide share, May 2026 (third-party panel, estimator named).</li>
+        <li>Local probes on 2026-06-10: <code>dig</code>, header fetch, robots.txt, sitemap census, logged-out SERP fetch, suggest endpoint, llms.txt/opensearch checks (full results in the Probe Log).</li>
       </ul>
       <h3>Inferences</h3>
       <ul>
-        <li>The object inventory, cross-modal joins, and metadata coverage are inferred from Google's public product surfaces, Search documentation, and known verticals, not from a disclosed full index map.</li>
-        <li>Distribution analysis is inferred from browser/mobile defaults, Chrome/Android/Search product design, and revenue/query momentum; exact channel mix is not disclosed.</li>
-        <li>The "hub and sink" framing is an interpretation of Search results pages that both route users outward and satisfy more intent directly through modules and AI answers.</li>
+        <li>Google polices its SERP boundary with engineering rather than crawler bans. <em>Basis:</em> robots.txt observed 2026-06-10 has zero AI-crawler UA rules while <code>/search</code> is disallowed for all agents and the SERP is a JS wall (Probe Log).</li>
+        <li>The only growing legitimate path to Google's index is litigation-created. <em>Basis:</em> CSJA closed to new customers with a Jan 1 2027 EOL while the Dec 5 2025 final judgment mandates index snapshots and syndication for Qualified Competitors.</li>
+        <li>SERP capture will keep getting harder. <em>Basis:</em> JS-required SERP shell served to a browser UA without cookies, observed 2026-06-10.</li>
       </ul>
       <h3>Open Questions</h3>
       <ul>
-        <li>What is current first-party Google Search MAU, DAU, query volume, and query mix by vertical?</li>
-        <li>How many URLs, passages, images, videos, places, products, entities, and ads are active in serving indices?</li>
-        <li>What share of queries trigger AI Overviews or AI Mode by country, language, device, and topic?</li>
-        <li>How much publisher traffic is gained or lost from AI features after adjusting for query complexity and link diversity?</li>
-        <li>How should third-party agents respect publisher preview/training preferences when Googlebot, Google-Extended, snippets, grounding, and AI answers are governed by different controls?</li>
+        <li>Current index size — the 400B figure is as of 2020; closeable only by a new disclosure or metadata from a remedies snapshot.</li>
+        <li>Share of queries that trigger AI Overviews / AI Mode, and the zero-click rate — needs first-party data; third-party panels disagree widely.</li>
+        <li>Qualified Competitor terms in practice — snapshot scope, pricing, refresh rights; watch DOJ technical-committee filings through 2026.</li>
+        <li>Suggest endpoint limits — undocumented; measurable by ramping request rates from clean IPs until throttling appears.</li>
+        <li>Query-mix breakdown (navigational vs question vs commercial; typed vs voice vs Lens) of the 5T — never published at any granularity.</li>
       </ul>
     </section>
   </main>
