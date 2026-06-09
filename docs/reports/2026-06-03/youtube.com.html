@@ -10,181 +10,154 @@
   <main class="report-shell">
     <nav class="top-nav">
       <a href="../../index.html">Site Wise</a>
-      <span>2026-06-03 · refreshed 2026-06-04</span>
+      <span>2026-06-03</span>
     </nav>
 
     <header class="report-hero">
       <p class="eyebrow">Daily Site Profile</p>
       <h1>youtube.com</h1>
-      <p class="lede">YouTube is the world's dominant full-modal video index: more than 20 billion uploaded videos, an average of more than 20 million new videos per day, 200 billion Shorts views per day, and a creator economy whose public corpus is valuable precisely because every video binds moving image, audio, text metadata, captions, thumbnails, comments, channel identity, rights state, and recommendation behavior.</p>
+      <p class="lede">YouTube is the web's largest video corpus: 20B+ videos, 20M added daily, crawlable page by page but with no enumeration path and gated transcripts.</p>
       <div class="tag-row">
         <span class="tag">Video</span>
         <span class="tag">Creator Economy</span>
         <span class="tag">Alphabet</span>
-        <span class="tag">Full-Modal Index</span>
-        <span class="tag">Search + Recommendation</span>
+        <span class="tag">Vertical Search</span>
       </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
     </header>
 
     <section class="section-card">
-      <h2>How To Read This Report</h2>
-      <p>Every claim is tagged:</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> Sourced to a primary or reliable secondary record.</li>
-        <li><span class="evidence inferred">inferred</span> Reasoned from public signals.</li>
-        <li><span class="evidence open">open</span> Unknown, contested, or worth deeper digging.</li>
-      </ul>
-      <p class="muted">This refreshed version uses the Site Wise full-modal indexing standard: object counts, modality mix, update rate, metadata coverage, legal indexing path, and cross-modal joins are treated as first-class metrics.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Basic Profile</h2>
+      <h2>Context</h2>
+      <p>YouTube is Alphabet's user-generated video platform: 20B+ uploaded videos monetized through ads and a subscription stack (Premium, Music, TV, NFL Sunday Ticket), with creators paid a revenue share that exceeded $100B over four years. For an index builder it is the densest audiovisual corpus on the web, keyed by one of the web's best identifiers — the 11-character <code>videoId</code> — and unusually open at the page level: robots.txt bans no AI crawlers and watch pages serve full JSON-LD to logged-out clients (Probe Log). The openness stops exactly where the payload starts. <span class="evidence inferred">inferred</span> YouTube's crawl posture is calibrated to feed search engines page by page while preventing anyone from reconstructing the catalog or the media. <em>Basis:</em> robots.txt allows <code>/watch</code> but disallows <code>/results</code>, <code>/feeds/videos.xml</code>, and <code>/youtubei/</code>; both sitemap indexes contain zero watch URLs; caption endpoints return empty bodies to non-browser clients (all observed 2026-06-10, Probe Log).</p>
       <dl class="fact-list">
         <div><dt>Host</dt><dd><code>youtube.com</code></dd></div>
         <div><dt>Canonical URL</dt><dd><a href="https://www.youtube.com/">https://www.youtube.com/</a></dd></div>
-        <div><dt>Category</dt><dd>Video platform, creator platform, music/video catalog, livestreaming service, vertical search engine, ad/subscription media business</dd></div>
-        <div><dt>Related hosts</dt><dd><code>youtu.be</code>, <code>m.youtube.com</code>, <code>music.youtube.com</code>, <code>studio.youtube.com</code>, <code>tv.youtube.com</code>, <code>kids.youtube.com</code>, <code>i.ytimg.com</code>, <code>img.youtube.com</code>, <code>www.youtube-nocookie.com</code></dd></div>
-        <div><dt>Parent / owner</dt><dd>YouTube LLC - Google LLC - Alphabet Inc. (NASDAQ: GOOG/GOOGL)</dd></div>
-        <div><dt>Country / region</dt><dd>Headquarters in San Bruno, California, USA; global product across 100+ countries and 80 languages</dd></div>
-        <div><dt>Founded / launched</dt><dd>Founded February 2005; first video uploaded April 23 2005; acquired by Google October 9 2006 for approximately $1.65B in stock</dd></div>
-        <div><dt>Founders</dt><dd>Chad Hurley, Steve Chen, Jawed Karim</dd></div>
-        <div><dt>Current leadership</dt><dd>Neal Mohan, CEO of YouTube since February 2023</dd></div>
-        <div><dt>Current scale</dt><dd>20B+ uploaded videos as of April 2025; 20M+ videos uploaded daily on average; Shorts average 200B daily views; YouTube revenue across ads and subscriptions exceeded $60B in 2025</dd></div>
+        <div><dt>Category</dt><dd>Video platform, vertical search engine, creator economy</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>youtu.be</code>, <code>m.youtube.com</code>, <code>music.youtube.com</code>, <code>studio.youtube.com</code>, <code>tv.youtube.com</code>, <code>i.ytimg.com</code> (thumbnails), <code>googlevideo.com</code> (streams), <code>youtube-nocookie.com</code> (embeds)</dd></div>
+        <div><dt>Owner</dt><dd>YouTube LLC → Google LLC → Alphabet Inc. (NASDAQ: GOOG/GOOGL); CEO Neal Mohan since Feb 2023</dd></div>
+        <div><dt>Founded / launched</dt><dd>Feb 2005; acquired by Google Oct 9 2006 for ~$1.65B in stock (<a href="https://googlepress.blogspot.com/2006/10/google-to-acquire-youtube_09.html">Google press</a>)</dd></div>
+        <div><dt>Business model</dt><dd>Advertising + consumer subscriptions, with creator revenue share as the supply engine</dd></div>
+        <div><dt>Scale anchor</dt><dd>20B+ uploaded videos — as of Apr 23 2025 (<a href="https://blog.youtube/news-and-events/happy-birthday-youtube-20/">YouTube 20th-birthday post</a>)</dd></div>
       </dl>
     </section>
 
     <section class="section-card">
-      <h2>Key Metrics</h2>
-      <p class="muted">Numbers carry an as-of date. If a corpus metric is not publicly disclosed, it is marked open rather than guessed.</p>
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (current MAU, caption coverage, ads/subscriptions split) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Uploaded videos</dt>
+          <dd>20B+ (music, Shorts, podcasts included) — as of Apr 23 2025. <a href="https://blog.youtube/news-and-events/happy-birthday-youtube-20/">YouTube Official Blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Daily uploads</dt>
+          <dd>20M+ videos/day on average — as of Apr 23 2025. <a href="https://blog.youtube/news-and-events/happy-birthday-youtube-20/">Same post</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Daily engagement</dt>
+          <dd>100M+ comments/day and 3.5B+ likes/day, 2024 averages — as of Apr 23 2025. <a href="https://blog.youtube/news-and-events/happy-birthday-youtube-20/">Same post</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Shorts views</dt>
+          <dd>200B average daily views — as of Jan 21 2026. <a href="https://blog.youtube/inside-youtube/the-future-of-youtube-2026/">CEO letter 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>YouTube revenue, FY2025</dt>
+          <dd>&gt;$60B across ads and subscriptions; the YouTube-ads line alone was $11.4B in Q4 2025 vs $10.5B in Q4 2024, +8.7% YoY calculated by Site Wise — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm">Alphabet Q4 2025 exhibit 99.1</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Paid subscriptions</dt>
+          <dd>325M+ across Alphabet consumer services, "led by Google One and YouTube Premium" — as of Dec 31 2025; the last YouTube-only anchor is 100M Premium+Music (incl. trials), Feb 2024. <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm">Same exhibit</a>, <a href="https://blog.youtube/news-and-events/youtube-music-premium-100-million-subscribers/">YouTube Blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Creator payouts</dt>
+          <dd>$100B+ paid to creators, artists, and media companies over the four years to Sep 2025 — restated Jan 21 2026. <a href="https://blog.youtube/inside-youtube/the-future-of-youtube-2026/">CEO letter 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Data API v3 default quota</dt>
+          <dd>100 <code>search.list</code> calls + 100 <code>videos.insert</code> calls + 10,000 units/day combined for all other endpoints; reads cost 1 unit, writes 50 — as of Jun 10 2026. At 50 IDs per <code>videos.list</code> call, 10K units hydrate ~500K videos/day, calculated by Site Wise. <a href="https://developers.google.com/youtube/v3/getting-started">API docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Multi-audio adoption</dt>
+          <dd>6M+ daily viewers watched 10+ minutes of auto-dubbed content in Dec 2025 — as of Jan 21 2026. <a href="https://blog.youtube/inside-youtube/the-future-of-youtube-2026/">CEO letter 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-10 (this report regenerates the 2026-06-03 profile). Desktop browser UA for page fetches, plain curl otherwise.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Metric</th><th>Value</th><th>As of</th><th>Source / Tag</th><th>Notes</th></tr></thead>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>dig +short youtube.com</code> + reverse</td><td data-label="Observation">A records in 172.217.x; <code>www</code> is CNAME <code>youtube-ui.l.google.com</code> with 16 A records; reverse lookup lands in <code>1e100.net</code>. Google-owned edge end to end, no third-party CDN.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -sI https://www.youtube.com/</code></td><td data-label="Observation">HTTP/2 200, <code>server: ESF</code>, <code>cache-control: no-cache, no-store</code>, nonce-based CSP with Trusted Types; sets 7 cookies on an anonymous hit (<code>VISITOR_INFO1_LIVE</code>, <code>YSC</code>, rollout token).</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -sL https://www.youtube.com/robots.txt</code></td><td data-label="Observation">~30 lines, one wildcard group, <strong>no AI-crawler-specific rules</strong>. Watch pages allowed; <code>Disallow:</code> <code>/results</code>, <code>/comment</code>, <code>/feeds/videos.xml</code>, <code>/api/</code>, <code>/youtubei/</code>, <code>/get_video</code>, <code>/timedtext_video</code>. Two Sitemap pointers.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Sitemap census</td><td data-label="Observation"><code>sitemaps/sitemap.xml</code>: 20 children, all corporate pages (kids, trends, jobs, about). <code>product/sitemap.xml</code>: 5 gzipped files, 234,464 <code>/product/{id}</code> shopping URLs. Zero watch-page URLs anywhere.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Watch page logged out, browser UA</td><td data-label="Observation"><code>/watch?v=dQw4w9WgXcQ</code>: 200, 1.4MB HTML. OG + Twitter player card + microdata + JSON-LD <code>VideoObject</code> (identifier, duration, uploadDate, <code>regionsAllowed</code>, 19.1M likes, one top comment). Embedded player JSON exposes viewCount 1.78B and 6 caption tracks.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Caption (timedtext) fetch</td><td data-label="Observation">Track URLs are signed (<code>signature</code>, <code>expire</code>, <code>ip</code> params). Both the signed URL and a bare <code>/api/timedtext?v=…&amp;lang=en</code> return HTTP 200 with a <strong>0-byte body</strong> to curl. Transcripts are closed to plain HTTP clients.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">oEmbed + thumbnail CDN</td><td data-label="Observation"><code>/oembed?url=…watch?v=dQw4w9WgXcQ</code>: open, no key; 13 fields (title, author_name, author_url, thumbnail_url on <code>i.ytimg.com</code>, iframe html). Thumbnail HEAD: 200, <code>access-control-allow-origin: *</code>. <code>/llms.txt</code>: 404.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Channel RSS</td><td data-label="Observation"><code>/feeds/videos.xml?channel_id=UC…</code> returns Atom with the latest 15 entries: videoId, channelId, published/updated, thumbnail, description, star rating, view count. Works without auth — but the path is robots-disallowed.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, cost, display rights, churn. Data API = <a href="https://developers.google.com/youtube/v3/getting-started">YouTube Data API v3</a> (quota in Verified Metrics).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
           <tbody>
             <tr>
-              <td data-label="Metric">Uploaded videos</td>
-              <td data-label="Value">&gt; 20 billion</td>
-              <td data-label="As of">Apr 2025</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube 20th birthday blog</td>
-              <td data-label="Notes">Includes music, Shorts, podcasts, and other video formats.</td>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Titles, descriptions, chapters on 20B+ videos (Apr 2025 anchor).</td>
+              <td data-label="Best legitimate path">Watch-page JSON-LD (robots-allowed, Probe Log); Data API <code>videos.list</code>, 50 IDs/call at 1 unit.</td>
+              <td data-label="Auth &amp; quota">Pages: none. API: key, 10K units/day.</td>
+              <td data-label="License / display">Metadata display per <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">API ToS</a>; no offline bulk retention beyond limits.</td>
+              <td data-label="Freshness">Mutable — creators retitle and rewrite freely.</td>
             </tr>
             <tr>
-              <td data-label="Metric">Daily new videos</td>
-              <td data-label="Value">&gt; 20 million videos/day on average</td>
-              <td data-label="As of">Apr 2025</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube 20th birthday blog</td>
-              <td data-label="Notes">This is the most important freshness number for a full-modal index.</td>
+              <td data-label="Modality">Transcripts / captions</td>
+              <td data-label="Objects &amp; est. count">Caption tracks per videoId × language; coverage undisclosed.</td>
+              <td data-label="Best legitimate path">None for third parties: <code>captions.download</code> requires video-owner OAuth (200 units); timedtext serves empty bodies (Probe Log).</td>
+              <td data-label="Auth &amp; quota">Owner OAuth only.</td>
+              <td data-label="License / display">Closed.</td>
+              <td data-label="Freshness">—</td>
             </tr>
             <tr>
-              <td data-label="Metric">Upload duration rate</td>
-              <td data-label="Value">&gt; 500 hours/minute; roughly &gt; 720,000 hours/day</td>
-              <td data-label="As of">2025 public Google/YouTube references</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Google / YouTube public stat via Time interview; daily hours calculated by Site Wise</td>
-              <td data-label="Notes">Duration rate and video-count rate imply many new uploads are short-form.</td>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Thumbnails for every video, several sizes, on <code>i.ytimg.com</code>.</td>
+              <td data-label="Best legitimate path">URL derivable from videoId alone (<code>/vi/{id}/hqdefault.jpg</code>); CORS open (Probe Log).</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Hotlink display in embed context is customary; bulk mirroring unlicensed.</td>
+              <td data-label="Freshness">Changes when creators A/B-test thumbnails.</td>
             </tr>
             <tr>
-              <td data-label="Metric">Daily comments</td>
-              <td data-label="Value">&gt; 100 million comments/day on average</td>
-              <td data-label="As of">2024</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube 20th birthday blog</td>
-              <td data-label="Notes">Comments are a separate text corpus, but API access and moderation state complicate indexing.</td>
+              <td data-label="Modality">Video / audio</td>
+              <td data-label="Objects &amp; est. count">Streams on <code>googlevideo.com</code>; auto-dubbing makes one videoId carry multiple audio languages (6M+ daily dub viewers, Verified Metrics).</td>
+              <td data-label="Best legitimate path">Embed iframe / oEmbed for display only. <a href="https://www.youtube.com/static?template=terms">ToS</a> prohibits downloading; third-party AI training is opt-in and off by default (<a href="https://support.google.com/youtube/answer/15509945">Help</a>).</td>
+              <td data-label="Auth &amp; quota">None for embed.</td>
+              <td data-label="License / display">Playback via official player only.</td>
+              <td data-label="Freshness">—</td>
             </tr>
             <tr>
-              <td data-label="Metric">Daily likes</td>
-              <td data-label="Value">&gt; 3.5 billion likes/day on average</td>
-              <td data-label="As of">2024</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube 20th birthday blog</td>
-              <td data-label="Notes">Important demand/relevance signal, not content.</td>
+              <td data-label="Modality">Comments</td>
+              <td data-label="Objects &amp; est. count">100M+ added/day (2024 avg, Verified Metrics).</td>
+              <td data-label="Best legitimate path">Data API <code>commentThreads.list</code>, 1 unit; one top comment ships in watch-page JSON-LD (Probe Log).</td>
+              <td data-label="Auth &amp; quota">API key, shared 10K-unit pool.</td>
+              <td data-label="License / display">API ToS display rules.</td>
+              <td data-label="Freshness">High churn; moderation and spam sweeps delete silently.</td>
             </tr>
             <tr>
-              <td data-label="Metric">Shorts views</td>
-              <td data-label="Value">200 billion daily views</td>
-              <td data-label="As of">Jan 2026 CEO letter</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube CEO letter</td>
-              <td data-label="Notes">Shorts are the fastest-growing discovery surface and a distinct indexing problem.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">TV watch time</td>
-              <td data-label="Value">&gt; 1 billion hours/day on TVs</td>
-              <td data-label="As of">Feb 2025 CEO letter</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube CEO letter</td>
-              <td data-label="Notes">TV became the primary YouTube viewing device in the U.S. by watch time.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Logged-in monthly users</td>
-              <td data-label="Value">&gt; 2.5 billion</td>
-              <td data-label="As of">2024 public YouTube/Alphabet disclosures</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube / Alphabet press</td>
-              <td data-label="Notes">Logged-in users only; total reachable audience is higher.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Revenue</td>
-              <td data-label="Value">&gt; $60 billion across ads and subscriptions</td>
-              <td data-label="As of">FY 2025</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Alphabet Q4/FY 2025 SEC exhibit</td>
-              <td data-label="Notes">First-party disclosure across YouTube ads and subscriptions.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">YouTube ad revenue</td>
-              <td data-label="Value">$11.383B in Q4 2025; full-year line not separately listed in the Q4 exhibit excerpt</td>
-              <td data-label="As of">Q4 2025</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Alphabet Q4/FY 2025 SEC exhibit</td>
-              <td data-label="Notes">Quarterly YouTube ads line excludes subscriptions.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Creator / partner payouts</td>
-              <td data-label="Value">&gt; $100 billion paid to creators, artists, and media companies over four years</td>
-              <td data-label="As of">Sep 2025</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Made on YouTube 2025</td>
-              <td data-label="Notes">Includes creators, artists, and media companies globally.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Premium + Music subscribers</td>
-              <td data-label="Value">&gt; 100 million paid + trial users</td>
-              <td data-label="As of">Jan 2024</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube Blog</td>
-              <td data-label="Notes">Alphabet later reported 325M paid subscriptions across consumer services, led by Google One and YouTube Premium, but not YouTube-only.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Auto-dubbed content consumption</td>
-              <td data-label="Value">&gt; 6 million viewers watching 10+ minutes/day</td>
-              <td data-label="As of">Dec 2025</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube auto dubbing blog</td>
-              <td data-label="Notes">Shows multilingual audio tracks are now a real modality, not an experiment.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Indexable object count</td>
-              <td data-label="Value">20B+ videos; 20M+ new videos/day; 100M+ comments/day; thumbnails, captions, chapters, playlists, channels, and live chats not fully disclosed</td>
-              <td data-label="As of">2024-2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> for disclosed counts; <span class="evidence open">open</span> for undisclosed counts</td>
-              <td data-label="Notes">Full index must separate video, transcript segment, thumbnail, comment, channel, playlist, Shorts item, live stream, and music track.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Modality mix</td>
-              <td data-label="Value">Video-first; every video object can include moving image, audio, thumbnail images, title/description/tags, captions, comments, chapters, channel metadata, and engagement signals</td>
-              <td data-label="As of">2026</td>
-              <td data-label="Source / Tag"><span class="evidence inferred">inferred</span> from YouTube API resources and product surface</td>
-              <td data-label="Notes">Exact public counts for captioned videos, multi-audio videos, comments, live chats, and thumbnails are not disclosed.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Data volume</td>
-              <td data-label="Value">Open</td>
-              <td data-label="As of">2026</td>
-              <td data-label="Source / Tag"><span class="evidence open">open</span></td>
-              <td data-label="Notes">Duration is public, storage bytes are not. A real index should estimate originals, transcodes, thumbnails, captions, comments, and embeddings separately.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Structured metadata coverage</td>
-              <td data-label="Value">Strong for videoId/channelId/title/description/duration/thumbnails/statistics/status; partial for captions, chapters, tags, category, topic details, fileDetails, training permission</td>
-              <td data-label="As of">2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube Data API docs</td>
-              <td data-label="Notes">Some fields require owner OAuth; public API is not a full corpus feed.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Licensing / reuse coverage</td>
-              <td data-label="Value">Embedding and API display allowed under terms; raw download/scraping and unauthorized AI training prohibited; third-party training opt-in is off by default</td>
-              <td data-label="As of">2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> YouTube Help / API Terms</td>
-              <td data-label="Notes">The legal path is metadata/API + embed/oEmbed, not corpus mirroring.</td>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Channels (channelId), playlists, handles, categories; counts undisclosed.</td>
+              <td data-label="Best legitimate path">Data API <code>channels.list</code> / <code>playlistItems.list</code> (1 unit); channel RSS for the latest 15 uploads.</td>
+              <td data-label="Auth &amp; quota">API key; RSS unauthenticated but robots-disallowed.</td>
+              <td data-label="License / display">API ToS.</td>
+              <td data-label="Freshness">Uploads append; playlists mutate.</td>
             </tr>
           </tbody>
         </table>
@@ -192,228 +165,63 @@
     </section>
 
     <section class="section-card">
-      <h2>Why This Site Matters</h2>
-      <p>YouTube is not just a video app. It is the largest public-facing, creator-produced audiovisual corpus on the web and one of the strongest signals of what people demonstrate, teach, entertain with, listen to, imitate, and argue about. Unlike text-first sites, YouTube's knowledge is usually locked inside time-based media: speech, visuals, music, gestures, slides, gameplay, screen recordings, comments, and recommendations.</p>
-      <p>For a full-modal index builder, YouTube is high value and high friction. The content volume is enormous, the official API exposes useful metadata, and the embed path is mature. But the platform does not provide a legitimate public bulk corpus path for raw video, transcripts, comments, or full search recall, and YouTube explicitly prohibits unauthorized downloading, scraping, and AI-training use.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Timeline</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Date</th><th>Event</th><th>Why It Matters</th></tr></thead>
-          <tbody>
-            <tr><td data-label="Date">Feb 2005</td><td data-label="Event">YouTube founded by Chad Hurley, Steve Chen, and Jawed Karim.</td><td data-label="Why It Matters">Starts as a simple web video upload/share product.</td></tr>
-            <tr><td data-label="Date">Apr 23 2005</td><td data-label="Event">"Me at the zoo" is uploaded.</td><td data-label="Why It Matters">Canonical first video and first stable <code>videoId</code>-keyed object.</td></tr>
-            <tr><td data-label="Date">Oct 9 2006</td><td data-label="Event">Google announces acquisition of YouTube for approximately $1.65B in stock.</td><td data-label="Why It Matters">Gives YouTube the bandwidth, legal capacity, ads stack, and infrastructure required to scale.</td></tr>
-            <tr><td data-label="Date">2007</td><td data-label="Event">YouTube Partner Program launches; Content ID begins maturing.</td><td data-label="Why It Matters">Creator monetization and rights matching become core supply-side infrastructure.</td></tr>
-            <tr><td data-label="Date">2012</td><td data-label="Event">Industry references describe hundreds of hours uploaded per minute; YouTube becomes a web-scale media ingestion system.</td><td data-label="Why It Matters">The indexing problem shifts from pages to time-based media at massive ingest rate.</td></tr>
-            <tr><td data-label="Date">2015</td><td data-label="Event">YouTube Music and YouTube Kids launch; YouTube Red later evolves into Premium.</td><td data-label="Why It Matters">Product splits by modality, audience, and business model.</td></tr>
-            <tr><td data-label="Date">2016</td><td data-label="Event">YouTube recommendation paper describes candidate generation plus ranking architecture.</td><td data-label="Why It Matters">Publicly confirms recommendation is central retrieval infrastructure.</td></tr>
-            <tr><td data-label="Date">2017</td><td data-label="Event">Adpocalypse and advertiser brand-safety crisis.</td><td data-label="Why It Matters">Monetization becomes a moderation and classifier problem.</td></tr>
-            <tr><td data-label="Date">2017</td><td data-label="Event">YouTube TV launches.</td><td data-label="Why It Matters">YouTube enters subscription live TV and connected-TV distribution.</td></tr>
-            <tr><td data-label="Date">2019</td><td data-label="Event">FTC and New York AG COPPA settlement over kids' data and ads.</td><td data-label="Why It Matters">Shows the regulatory cost of personalized video at child scale.</td></tr>
-            <tr><td data-label="Date">Sep 2020</td><td data-label="Event">Shorts launches in India, later expanding globally.</td><td data-label="Why It Matters">Adds a different object shape: vertical, short, looped, feed-native video.</td></tr>
-            <tr><td data-label="Date">Feb 2023</td><td data-label="Event">Neal Mohan becomes YouTube CEO; Shorts revenue-share model goes live.</td><td data-label="Why It Matters">Leadership and monetization shift toward formats, TV, subscriptions, and creator tools.</td></tr>
-            <tr><td data-label="Date">2024</td><td data-label="Event">Premium + Music cross 100M paid/trial users.</td><td data-label="Why It Matters">Subscriptions become a material second engine.</td></tr>
-            <tr><td data-label="Date">Apr 2025</td><td data-label="Event">YouTube says it has 20B+ uploaded videos and 20M+ videos uploaded daily on average.</td><td data-label="Why It Matters">Best official object-count anchor for the corpus.</td></tr>
-            <tr><td data-label="Date">Sep 2025</td><td data-label="Event">Made on YouTube reports $100B+ paid to creators, artists, and media companies over four years.</td><td data-label="Why It Matters">Confirms creator payouts as the supply engine, not a side feature.</td></tr>
-            <tr><td data-label="Date">Jan 2026</td><td data-label="Event">YouTube CEO says Shorts average 200B daily views and previews image posts in the Shorts feed.</td><td data-label="Why It Matters">Short-form discovery becomes the dominant high-volume interaction surface.</td></tr>
-            <tr><td data-label="Date">Feb 2026</td><td data-label="Event">Alphabet reports YouTube revenue across ads and subscriptions exceeded $60B in FY 2025.</td><td data-label="Why It Matters">Places YouTube in the revenue class of a major standalone media company.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>User Intent and Core Scenarios</h2>
-      <ul>
-        <li><strong>Primary intents:</strong> entertainment, music listening, how-to/tutorial search, product research, news clips, sports highlights, kids content, long-form podcasts, creator following, ambient TV viewing.</li>
-        <li><strong>Secondary / emerging intents:</strong> AI-assisted video creation, auto-dubbed multilingual viewing, shopping, live chat participation, channel memberships, Shorts discovery, classroom/learning, local-language knowledge discovery.</li>
-        <li><strong>Repeat-use loop:</strong> search or recommendation entry -> watch -> comments/likes/subscriptions/history -> recommendations/Shorts/end screens -> creator monetization and upload incentives -> more supply.</li>
-        <li><strong>What it replaces / displaces:</strong> cable TV, music-video TV, tutorial manuals, parts of radio/podcasts, niche forums, video rental, parts of paid learning, and parts of search for procedural knowledge.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Traffic and Distribution</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> YouTube is a Google Services product with direct web/app usage, connected-TV apps, Android distribution, Google Search visibility, embeds, notifications, and subscriptions.</li>
-        <li><span class="evidence verified">verified</span> YouTube says viewers watch more than 1B hours of YouTube content on TVs daily, and that TV is the primary YouTube viewing device in the U.S. by watch time.</li>
-        <li><span class="evidence inferred">inferred</span> Channel mix is likely direct/app/TV first, then Google Search and embeds. Alphabet does not publish exact channel-mix percentages.</li>
-        <li><span class="evidence inferred">inferred</span> Off-platform distribution is unusually strong: embeds, Google video carousels, social shares, Discord/Reddit links, educational sites, news articles, and YouTube thumbnails in third-party UIs.</li>
-        <li><span class="evidence open">open</span> For cross-site normalization, Site Wise should standardize a traffic panel plus official usage metrics. For YouTube, official product stats outrank third-party panel estimates.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Product Anatomy</h2>
-      <ul>
-        <li><strong>First screen:</strong> personalized home feed when signed in; region/cookie-shaped feed when signed out; search bar remains the high-intent entry point.</li>
-        <li><strong>Core journey:</strong> discover via home/search/Shorts/subscriptions/external link -> watch -> continue via recommendations, comments, playlist, channel, end screen, Shorts feed, or search refinement.</li>
-        <li><strong>Discovery modes:</strong> home recommendations, YouTube Search, Shorts feed, subscriptions, notifications, playlists, trending, live, channel pages, external embeds, Google Search video results.</li>
-        <li><strong>Account / identity:</strong> Google Account links watch history, subscriptions, comments, uploads, playlists, purchases, Premium, YouTube Studio, monetization, family controls, and safety settings.</li>
-        <li><strong>Supply side:</strong> independent creators, artists, music labels, podcasters, media companies, sports leagues, educators, brands, governments, livestreamers, Shorts creators, AI-assisted creators.</li>
-        <li><strong>Demand side:</strong> viewers, advertisers, subscribers, music listeners, students, shoppers, searchers, AI/tool builders, rights holders, and creators using analytics.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Business Model</h2>
-      <ul>
-        <li><strong>Revenue streams:</strong> YouTube ads, YouTube Premium, YouTube Music, YouTube TV, NFL Sunday Ticket and sports packages, memberships, Super Chat/Super Stickers/Super Thanks, shopping/affiliate, music licensing and partner revenue sharing.</li>
-        <li><strong>Pricing / unit economics:</strong> YouTube reports &gt;$60B revenue across ads and subscriptions in FY 2025. The cost side is bandwidth, storage, transcoding, moderation, rights management, recommendation inference, sales, and revenue share.</li>
-        <li><strong>Who pays whom:</strong> advertisers and subscribers pay YouTube/Google; YouTube pays creators, artists, and media companies through ad share, Premium allocation, music royalties, fan funding, and partner deals.</li>
-        <li><strong>Strategic shape:</strong> a full-stack media platform where recommendation, search, creator tools, ad auctions, subscription bundles, and rights matching reinforce the same corpus.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Moat</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> <strong>Corpus scale:</strong> 20B+ uploaded videos and 20M+ daily uploads. Replication requires both content and ingestion/processing infrastructure.</li>
-        <li><span class="evidence verified">verified</span> <strong>Creator economy:</strong> $100B+ paid over four years. Revenue share and creator tooling make supply durable.</li>
-        <li><span class="evidence verified">verified</span> <strong>Distribution:</strong> Google Search, Android, Chrome, Google Accounts, connected TVs, embeds, and YouTube's brand behavior.</li>
-        <li><span class="evidence verified">verified</span> <strong>Rights infrastructure:</strong> Content ID, claims, monetization controls, and rights-holder tooling let copyrighted media coexist with UGC at scale.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Behavioral data:</strong> watch history, dwell time, likes, comments, search, and session contribution generate ranking data peers cannot match.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Full-modal metadata:</strong> video + audio + transcript + thumbnail + comments + engagement + channel identity produces richer retrieval signals than video alone.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Fragility:</strong> AI-generated low-quality uploads, regulatory pressure, creator distrust, Shorts monetization pressure, rights-holder disputes, ad-load backlash, and AI answer extraction could erode parts of the moat.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Peers and Contrasts</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Peer</th><th>Same as YouTube</th><th>Different from YouTube</th><th>What the difference teaches</th></tr></thead>
-          <tbody>
-            <tr><td data-label="Peer">TikTok</td><td data-label="Same as YouTube">Short-form UGC video, algorithmic feed, creator monetization.</td><td data-label="Different from YouTube">Feed-first, weaker long-form/search/archive behavior, less open embedding/API utility.</td><td data-label="What the difference teaches">Short-form wins attention, but YouTube's moat is full-format breadth plus search.</td></tr>
-            <tr><td data-label="Peer">Netflix</td><td data-label="Same as YouTube">Video, recommendations, connected-TV viewing, subscriptions.</td><td data-label="Different from YouTube">Licensed/original catalog, not open UGC; no public upload corpus; much smaller title count.</td><td data-label="What the difference teaches">YouTube's supply cost and corpus diversity are structurally different from premium streaming.</td></tr>
-            <tr><td data-label="Peer">Twitch</td><td data-label="Same as YouTube">Live creator video, chat, subscriptions, ads.</td><td data-label="Different from YouTube">Live-first and gaming-heavy; smaller VOD/search corpus.</td><td data-label="What the difference teaches">Live is one modality for YouTube, not the whole product.</td></tr>
-            <tr><td data-label="Peer">Spotify</td><td data-label="Same as YouTube">Audio, music labels, podcasts, ads/subscriptions.</td><td data-label="Different from YouTube">Audio-first; weaker public video UGC archive; better normalized track metadata.</td><td data-label="What the difference teaches">YouTube's music value is visual and social as much as audio.</td></tr>
-            <tr><td data-label="Peer">Vimeo</td><td data-label="Same as YouTube">Video hosting and creator tools.</td><td data-label="Different from YouTube">Professional/workflow orientation, far smaller consumer discovery network.</td><td data-label="What the difference teaches">Hosting is not enough; discovery and monetization make the corpus compound.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Technical Signals</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> <strong>DNS / hosting / CDN:</strong> served from Google's global infrastructure and edge network; video delivery and thumbnails use Google/YouTube hostnames including <code>googlevideo.com</code> and <code>ytimg.com</code>.</li>
-        <li><span class="evidence verified">verified</span> <strong>Streaming stack:</strong> adaptive streaming with multiple encodes and thumbnails; public player/manifest details vary by client and rights state.</li>
-        <li><span class="evidence verified">verified</span> <strong>API metadata:</strong> YouTube Data API exposes resources such as videos, channels, playlists, playlistItems, comments, captions, thumbnails, search results, and subscriptions.</li>
-        <li><span class="evidence verified">verified</span> <strong>Owner-only file metadata:</strong> the Data API <code>fileDetails</code> object can include original file size, file type, audio/video codecs, stream bitrates, frame rate, resolution, and duration, but only for the video owner.</li>
-        <li><span class="evidence verified">verified</span> <strong>Quota:</strong> Data API projects have limited default quota; current docs describe a default allocation of 10,000 units/day, with typical read-list calls at 1 unit and <code>search.list</code> at 100 units, subject to change.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Frontend:</strong> heavy client app with personalized rendering, player state, service worker/caching behavior, and region/account-specific surfaces.</li>
-        <li><span class="evidence verified">verified</span> <strong>AI/media tooling:</strong> auto dubbing, Dream Screen, Veo-based creative tools, likeness detection, and third-party training permission status are now part of the media metadata and policy surface.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Search and Retrieval Perspective</h2>
-      <p class="muted">Assume the task is to build a legitimate full-modal index over YouTube. The right design is not "download every video." It is a rights-aware, videoId-keyed graph of metadata, embeds, transcripts/captions where allowed, thumbnails, comments where allowed, channel identity, playlists, chapters, engagement signals, and AI-training permission state.</p>
-
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where YouTube differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
       <div class="subgrid">
         <div>
-          <h4>Identifier &amp; canonical URL</h4>
-          <p>Stable IDs: <code>videoId</code>, <code>channelId</code>, <code>playlistId</code>, comment thread/comment IDs, caption track IDs, and broadcast/live IDs. Dedup URLs such as <code>youtu.be/&lt;id&gt;</code>, <code>/watch?v=&lt;id&gt;</code>, <code>/shorts/&lt;id&gt;</code>, <code>/embed/&lt;id&gt;</code>, <code>/live/&lt;id&gt;</code>, and mobile URLs on <code>videoId</code>. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Crawl &amp; access policy</h4>
-          <p>YouTube is not a legitimate bulk-download corpus. Its help docs state that unauthorized downloads, scraping, and unauthorized AI training are prohibited. Public videos can be embedded and metadata can be accessed through APIs within terms and quota. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Official APIs &amp; feeds</h4>
-          <p>YouTube Data API v3 for videos/channels/playlists/comments/captions/thumbnails/search; YouTube Analytics/Reporting APIs for authorized channel owners; oEmbed for embeds; channel RSS feeds for uploads; player embeds for display. No public bulk dump and no unrestricted public transcript API. <span class="evidence verified">verified</span></p>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The 11-char <code>videoId</code> is printed in every surface — page URL, oEmbed, RSS, thumbnail URL, embed. Collapse <code>/watch?v=</code>, <code>youtu.be/</code>, <code>/shorts/</code>, <code>/embed/</code>, <code>/live/</code> onto it. Channels have two names: <code>channelId</code> (<code>UC…</code>, stable) and <code>@handle</code> (mutable) — key on the former.</p>
         </div>
         <div>
           <h4>Retrieval unit</h4>
-          <p>Useful units: video, transcript segment with timestamp, Short, livestream segment, chapter, thumbnail/keyframe, comment thread, playlist item, channel, music track/art track, and embed card. For answers, transcript segment plus timestamp is usually better than whole video. <span class="evidence inferred">inferred</span></p>
-        </div>
-        <div>
-          <h4>Full-modal object inventory</h4>
-          <p>Known public anchors: 20B+ uploaded videos; 20M+ new videos/day; 100M+ comments/day; 3.5B+ likes/day; 200B Shorts views/day; 1B+ TV watch hours/day. Open counts: public caption tracks, auto-generated transcript coverage, thumbnails, live chat messages, playlist items, music tracks, channel count, videos with multi-audio, videos with third-party training enabled. <span class="evidence verified">verified</span> / <span class="evidence open">open</span></p>
+          <p>The ideal unit — transcript segment + timestamp — is unavailable to third parties (Access Matrix). The practical unit is the video record (metadata, thumbnail, stats) with the channel as its trust ancestor; accept that the answer payload stays behind the player.</p>
         </div>
         <div>
           <h4>Cross-modal joins</h4>
-          <p>The core join key is <code>videoId</code>. Join video metadata, channel identity, thumbnails, audio/video streams, captions, chapters, comments, playlist membership, rights state, training-permission status, engagement counters, embed URL, and region availability. Join transcript spans to <code>videoId + start_time</code>. <span class="evidence inferred">inferred</span></p>
-        </div>
-        <div>
-          <h4>Metadata coverage</h4>
-          <p>Strong: title, description, channel, publish time, duration, thumbnails, view/like/comment statistics where available, privacy/status, category, captions availability, live status. Partial or restricted: tags, fileDetails, original file bytes/codecs, owner-only analytics, full transcript text, comments at scale, region restrictions, training permission. <span class="evidence verified">verified</span> / <span class="evidence open">open</span></p>
-        </div>
-        <div>
-          <h4>Indexing path</h4>
-          <p>Legitimate path: Data API for metadata, channel RSS for upload freshness, oEmbed/player for display, Analytics/Reporting only for authorized owners, YouTube Help/API for training permission state, and embeds for user-facing playback. For public web-scale recall, there is no official bulk corpus path. <span class="evidence verified">verified</span></p>
+          <p>Everything joins on videoId, and the thumbnail join costs zero API calls — the URL is derivable from the ID alone (Probe Log). Caption tracks key on videoId + language; auto-dubbing means audio language no longer identifies a distinct object.</p>
         </div>
         <div>
           <h4>Authoritative content field</h4>
-          <p>For what the video says, creator captions outrank auto captions; transcript segments outrank title/description; chapters help topic boundaries; comments are audience reaction, not source truth. Titles and thumbnails are high-SEO/high-clickbait fields and should be treated as weak semantic evidence. <span class="evidence inferred">inferred</span></p>
+          <p>Titles and thumbnails are CTR-optimized bait, the least trustworthy fields on the site. Descriptions mix summary with sponsor links and SEO tags. What the video actually says lives in captions — which are exactly what is gated.</p>
         </div>
         <div>
-          <h4>Freshness &amp; decay</h4>
-          <p>Freshness is extreme: 20M+ new videos/day. Metadata is mutable: title, description, thumbnail, privacy, monetization, caption tracks, audio tracks, comments, region availability, age restriction, and training permission can change. Recrawl should be channel-tier and format-aware. <span class="evidence verified">verified</span> / <span class="evidence inferred">inferred</span></p>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>No firehose and no archive feed: per-channel RSS exposes only the latest 15 items, and API discovery is capped at 100 <code>search.list</code> calls/day. Freshness at 20M uploads/day is only achievable channel-by-channel on a tracked set.</p>
         </div>
         <div>
-          <h4>Quality signals &amp; spam patterns</h4>
-          <p>Signals: channel history, subscriber base, verified/official artist/news labels, watch-time retention, like/comment ratios, view validation, Content ID/rights state, manual review, age restriction, demonetization, and policy removals. Spam: reupload farms, synthetic voice/video spam, fake tutorials, scam comments, misinformation clips, AI slop, and thumbnail/title manipulation. <span class="evidence inferred">inferred</span></p>
+          <h4>Quality &amp; spam</h4>
+          <p>Trust attaches to channels, not videos. Site-specific manipulation: reupload/compilation farms, AI-generated slop at upload-rate scale, clickbait thumbnail A/B-testing, and engagement-bait Shorts recut from long-form.</p>
         </div>
         <div>
-          <h4>Licensing &amp; reuse</h4>
-          <p>Safe display path is official embed/oEmbed/API-compliant metadata. Raw video download, redistributing streams, and unauthorized scraping for AI training are not allowed. Third-party training is opt-in and off by default; permission status is exposed by video ID through a public Data API interface. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Personalization &amp; non-determinism</h4>
-          <p>Home, Shorts, recommendations, search ranking, comments ordering, and autoplay differ by account, watch history, cookie, locale, device, and region. Anonymous crawling is not representative of what users see. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Region / language splits</h4>
-          <p>Region and language affect availability, rankings, recommendations, captions, auto dubbing, music rights, and trends. Auto dubbing and multi-language audio mean one <code>videoId</code> can now have multiple audio-language surfaces. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Internal search vs external</h4>
-          <p>YouTube search is strong for known videos, channels, music, tutorials, and recency inside the platform. Google Search can be better for topical recall and web context. API <code>search</code> is quota-limited and should not be treated as full historical recall. <span class="evidence inferred">inferred</span></p>
-        </div>
-        <div>
-          <h4>Knowledge graph position</h4>
-          <p>YouTube is a sink for attention and a hub for media embeds. It links outward through descriptions but primarily keeps users inside. For a full-modal index, YouTube is best treated as a video knowledge source with strong outbound citation potential but weak crawlable text depth. <span class="evidence inferred">inferred</span></p>
-        </div>
-        <div>
-          <h4>Ranking surface</h4>
-          <p>Discovery is engagement-shaped: query relevance, title/description, thumbnail CTR, retention, session contribution, freshness, channel authority, user history, and safety/rights constraints. This makes ranking adversarial and expensive to model from outside. <span class="evidence inferred">inferred</span></p>
+          <h4>Internal vs external search</h4>
+          <p><code>/results</code> is robots-disallowed, so no external engine can mirror YouTube's SERP. Google Search carries external recall for its sister company — a path no other index gets. <code>site:youtube.com</code> queries are common precisely because on-site search ranks by engagement, not relevance alone.</p>
         </div>
         <div>
           <h4>User query profile</h4>
-          <p>Typical queries are procedural, demonstrative, entertainment, music, creator/channel, review, gameplay, sports, news clip, and podcast queries. YouTube is weaker for precise citations, prices, and primary-source factual claims unless the video itself is the primary source. <span class="evidence inferred">inferred</span></p>
+          <p>Procedural ("how to…"), music, entertainment, news clips, reviews. The answers are inside time-based media, so a metadata-only index can rank videos but cannot answer from them — it routes, it doesn't retrieve.</p>
         </div>
-      </div>
-
-      <div class="callout">
-        <strong>Bottom-line implication for a full-modal index builder:</strong> index YouTube as a rights-aware graph, not as a mirrored video warehouse. The minimum useful object is <code>videoId + channelId + metadata + thumbnail + transcript/caption segments when legitimate + comments where legitimate + embed URL + region/language/rights/training state</code>. Store timestamps and mutable-state dates.
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Risks and Future</h2>
+      <h2>Indexing Plan</h2>
       <ul>
-        <li><strong>Competitive:</strong> TikTok/Reels for short-form attention, Netflix/Disney/Amazon for premium TV, Spotify for audio/podcasts, Twitch/Kick for live, and AI answer engines for "just summarize the video" behavior.</li>
-        <li><strong>Regulatory:</strong> child safety, copyright, AI training, deepfakes, platform liability, EU DSA-style transparency, ad disclosures, political content, privacy, and antitrust around Google distribution.</li>
-        <li><strong>Platform / supply:</strong> creator burnout, opaque monetization, sudden ranking shifts, demonetization disputes, and direct-to-fan alternatives can weaken creator trust.</li>
-        <li><strong>Abuse / safety:</strong> scams, fake tutorials, comment spam, harassment, livestream incidents, CSAM, misinformation, copyright abuse, impersonation, and synthetic likeness/deepfake misuse.</li>
-        <li><strong>Technology shift:</strong> AI lowers creation cost and can improve dubbing/editing, but it also floods the corpus with low-quality synthetic media. For indexing, the hardest problem becomes provenance and quality, not raw recall.</li>
-        <li><strong>Business model:</strong> Shorts volume is enormous but historically lower monetization per view than long-form; subscriptions and TV revenue reduce but do not eliminate ad-load pressure.</li>
+        <li><strong>Retrieval unit:</strong> video record keyed by videoId (metadata + thumbnail + stats + channel), upgraded to transcript segments only if a licensed path appears.</li>
+        <li><strong>Primary keys &amp; joins:</strong> videoId; channelId for trust and freshness; videoId+language for caption/audio tracks.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Data API <code>videos.list</code> — key-only, ~500K videos/day hydrated per project (Verified Metrics); hydrates but cannot discover. 2) Watch-page JSON-LD crawl — robots-permitted, quota-free, rich (Probe Log), but seed discovery must come from external links since no sitemap or search surface exists. 3) Channel RSS for freshness on a tracked channel set — unauthenticated but robots-disallowed, so treat as gray and prefer API <code>playlistItems.list</code> on upload playlists. 4) oEmbed for display cards. 5) Transcripts/media: no legitimate path — design the index to route to the player, not replace it.</li>
+        <li><strong>Recrawl cadence:</strong> tracked channels hourly (uploads); head-video stats daily; tail metadata monthly; thumbnails on change detection via ETag.</li>
+        <li><strong>Derivatives to generate:</strong> thumbnail embeddings (visual dedup of reupload farms), entity extraction from titles/descriptions. No ASR — there is no legitimate audio access to feed it.</li>
+        <li><strong>Demo to build:</strong> a quota-budget planner — given N seed channels, simulate the <code>playlistItems</code> + <code>videos.list</code> schedule and show coverage and staleness against the 10K-unit/day budget.</li>
       </ul>
     </section>
 
     <section class="section-card">
-      <h2>Lessons</h2>
+      <h2>Risks to the Index</h2>
       <ul>
-        <li><strong>Product:</strong> a single product that supports search, feed, long-form, short-form, live, music, podcasts, comments, and TV can compound where single-format peers fragment.</li>
-        <li><strong>Growth / distribution:</strong> embeddability plus Google distribution made YouTube a web primitive, then TV apps made it a living-room default.</li>
-        <li><strong>Business:</strong> creator payout is the supply engine. YouTube is not just monetizing content; it is financing future uploads.</li>
-        <li><strong>Technical:</strong> at YouTube scale, transcoding, rights matching, recommendation, moderation, and metadata are inseparable parts of the product.</li>
-        <li><strong>For a full-modal index builder:</strong> count objects before writing prose. On YouTube that means videos, upload rate, transcript segments, thumbnails, comments, audio tracks, channels, playlists, rights states, and mutable metadata. The index must be timestamped, rights-aware, and API-compliant.</li>
+        <li><strong>API discovery already shrank:</strong> the default quota now caps <code>search.list</code> at 100 calls/day outright (<a href="https://developers.google.com/youtube/v3/getting-started">docs</a>, Jun 2026) — older plans assumed 100 units/call against 10K units. Quota terms move without notice; hydration could be next.</li>
+        <li><strong>The open robots.txt can flip:</strong> the entire quota-free JSON-LD path rests on a ~30-line robots file with no AI rules (Probe Log). A default-deny change closes it overnight, as peers already have.</li>
+        <li><strong>Training access is being formalized as opt-in licensing:</strong> the third-party training program (<a href="https://support.google.com/youtube/answer/15509945">off by default</a>) channels AI access into deals YouTube brokers — strengthening, not weakening, the case against unlicensed media use.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Legal exposure exceeds technical exposure.</strong> <em>Basis:</em> ToS prohibits scraping and downloading even on paths robots.txt permits, while caption endpoints silently serve empty bodies (Probe Log) — access that works today is not access that is licensed.</li>
       </ul>
     </section>
 
@@ -421,35 +229,26 @@
       <h2>Source Notes</h2>
       <h3>Sources</h3>
       <ul>
-        <li><span class="evidence verified">verified</span> <em>official secondary</em>: YouTube Blog, <a href="https://blog.youtube/news-and-events/happy-birthday-youtube-20/">20 ways we're celebrating two decades of YouTube</a>, Apr 23 2025 - 20B+ uploaded videos, 20M+ daily uploads, 100M+ comments/day, 3.5B+ likes/day.</li>
-        <li><span class="evidence verified">verified</span> <em>official secondary</em>: YouTube Blog, <a href="https://blog.youtube/inside-youtube/the-future-of-youtube-2026/">From the CEO: What's coming to YouTube in 2026</a>, Jan 21 2026 - Shorts 200B daily views and 2026 priorities.</li>
-        <li><span class="evidence verified">verified</span> <em>primary financial</em>: Alphabet Inc. SEC Exhibit 99.1, <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm">Alphabet Announces Fourth Quarter and Fiscal Year 2025 Results</a>, Feb 2026 - YouTube revenue across ads and subscriptions exceeded $60B.</li>
-        <li><span class="evidence verified">verified</span> <em>official secondary</em>: YouTube Blog, <a href="https://blog.youtube/news-and-events/made-on-youtube-2025/">Powering the Future: YouTube's New AI & Creator Tools</a>, Sep 2025 - $100B+ creator/artist/media-company payouts over four years.</li>
-        <li><span class="evidence verified">verified</span> <em>official secondary</em>: YouTube Blog, <a href="https://blog.youtube/inside-youtube/our-big-bets-for-2025/">From the YouTube CEO: Our big bets for 2025</a>, Feb 2025 - TV watch-time scale.</li>
-        <li><span class="evidence verified">verified</span> <em>official secondary</em>: YouTube Blog, <a href="https://blog.youtube/news-and-events/youtube-music-premium-100-million-subscribers/">100 million YouTube Music and Premium subscribers</a>, Feb 2024.</li>
-        <li><span class="evidence verified">verified</span> <em>official technical</em>: Google for Developers, <a href="https://developers.google.com/youtube/v3/getting-started">YouTube Data API Overview</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official technical</em>: Google for Developers, <a href="https://developers.google.com/youtube/v3/docs/videos">YouTube Data API videos resource</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official policy</em>: YouTube Help, <a href="https://support.google.com/youtube/answer/15509945">Your content and third-party training</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official secondary</em>: YouTube Blog, <a href="https://blog.youtube/creator-and-artist-stories/youtube-auto-dubbing-explained/">How YouTube auto dubbing helps creators reach global audiences</a>, May 2026.</li>
-        <li><span class="evidence verified">verified</span> <em>reputable secondary</em>: TIME, <a href="https://time.com/7337793/ceo-of-the-year-neal-mohan-youtube-politics-creators-kids-future/">CEO of the Year Neal Mohan Discusses YouTube's Cultural Dominance</a>, Dec 2025 - public 500+ hours/min upload reference attributed to Google.</li>
-        <li><span class="evidence verified">verified</span> <em>primary</em>: Google Press, <a href="https://googlepress.blogspot.com/2006/10/google-to-acquire-youtube_09.html">Google To Acquire YouTube</a>, Oct 9 2006.</li>
-        <li><span class="evidence verified">verified</span> <em>primary</em>: Covington, Adams, Sargin, <a href="https://dl.acm.org/doi/10.1145/2959100.2959190">Deep Neural Networks for YouTube Recommendations</a>, RecSys 2016.</li>
+        <li><a href="https://blog.youtube/news-and-events/happy-birthday-youtube-20/">YouTube Official Blog, 20th birthday (Apr 23 2025)</a> — 20B+ videos, 20M+ daily uploads, 100M+ comments/day, 3.5B+ likes/day.</li>
+        <li><a href="https://blog.youtube/inside-youtube/the-future-of-youtube-2026/">CEO letter, Jan 21 2026</a> — Shorts 200B daily views, $100B+ payouts, 6M auto-dub viewers.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm">Alphabet Q4/FY2025 earnings exhibit 99.1 (SEC)</a> — YouTube &gt;$60B FY2025, YouTube ads $11,383M Q4 2025 vs $10,473M Q4 2024, 325M+ paid subscriptions.</li>
+        <li><a href="https://developers.google.com/youtube/v3/getting-started">YouTube Data API v3 overview</a> and <a href="https://developers.google.com/youtube/v3/docs/captions/download">captions.download reference</a> — quota allocation, unit costs, owner-only caption download (accessed 2026-06-10).</li>
+        <li><a href="https://support.google.com/youtube/answer/15509945">YouTube Help: third-party AI training</a> — opt-in, off by default (accessed 2026-06-10).</li>
+        <li><a href="https://blog.youtube/news-and-events/youtube-music-premium-100-million-subscribers/">YouTube Blog, Feb 2024</a> — 100M Premium+Music anchor. <a href="https://googlepress.blogspot.com/2006/10/google-to-acquire-youtube_09.html">Google press, Oct 2006</a> — acquisition.</li>
+        <li>Local probes on 2026-06-10: dig, headers, robots.txt, sitemap census, logged-out watch page, timedtext, oEmbed, thumbnail CDN, channel RSS, llms.txt (Probe Log).</li>
       </ul>
       <h3>Inferences</h3>
       <ul>
-        <li>Full-modal index design is inferred from official API resources, YouTube product surfaces, and known video retrieval practice.</li>
-        <li>Upload duration per day is a Site Wise calculation from the public 500+ hours/minute figure: 500 * 60 * 24 = 720,000+ hours/day.</li>
-        <li>Channel mix and ranking-surface claims are inferred because Alphabet does not disclose exact traffic channel distribution or ranking factors.</li>
-        <li>Modality mix is inferred from the object model: each YouTube video can bind video, audio, thumbnails, captions, comments, engagement, and channel metadata; exact counts by sub-modality are not public.</li>
+        <li>Crawl posture feeds search engines while blocking catalog reconstruction. <em>Basis:</em> robots.txt allows <code>/watch</code> but disallows <code>/results</code> and <code>/feeds/videos.xml</code>; sitemaps carry zero watch URLs; timedtext returns empty to plain clients (all 2026-06-10).</li>
+        <li>Legal exposure exceeds technical exposure for a YouTube index. <em>Basis:</em> ToS scraping/download prohibitions cover paths that robots.txt technically permits.</li>
       </ul>
       <h3>Open Questions</h3>
       <ul>
-        <li>How many public videos currently have manual captions, auto captions, multilingual audio tracks, chapters, and transcripts?</li>
-        <li>How many comments and live chat messages exist in total, and what share is accessible through official APIs at useful scale?</li>
-        <li>What is the current distribution of upload durations by Shorts, long-form, live replay, podcast, music video, and art track?</li>
-        <li>What percentage of public videos opt into third-party AI training, and how does that vary by creator type and region?</li>
-        <li>What is the latest public country/device split for watch time, especially TV vs mobile outside the U.S.?</li>
-        <li>What is the exact split of YouTube's &gt;$60B 2025 revenue between ads, Premium, Music, YouTube TV, Sunday Ticket, and other subscriptions?</li>
+        <li>Current official monthly users — no Alphabet disclosure since the ~2.5B-era figures; only ad-reach estimates circulate. Closeable only by an Alphabet/YouTube disclosure.</li>
+        <li>Split of the &gt;$60B FY2025 revenue between ads and subscriptions — closeable by summing the four quarterly YouTube-ads lines from Alphabet's 2025 exhibits and subtracting.</li>
+        <li>Caption coverage: share of videos with manual vs auto captions — measurable by sampling <code>videos.list</code> <code>contentDetails.caption</code> over a random videoId sample.</li>
+        <li>Share of videos opted into third-party AI training — needs a YouTube disclosure; the setting's adoption is not externally observable.</li>
+        <li>Shorts vs long-form share of the 20M daily uploads — measurable by duration-sampling recent uploads across a stratified channel panel via the Data API.</li>
       </ul>
     </section>
   </main>
