@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>amazon.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-10</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>amazon.com</h1>
+      <p class="lede">Amazon is the web's default product index: a $717B store whose ASIN catalog, offers, and reviews are metered out through sales-gated APIs, not crawling.</p>
+      <div class="tag-row">
+        <span class="tag">Ecommerce</span>
+        <span class="tag">Marketplace</span>
+        <span class="tag">Ads</span>
+        <span class="tag">ASIN Graph</span>
+        <span class="tag">AWS</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Amazon.com is the largest Western online store and the center of a marketplace where third-party sellers supply 61% of units sold. The company monetizes the catalog three times over: retail margin, seller services (commissions, fulfillment, $172.2B in 2025), and advertising sold against product searches ($68.6B in 2025). For an index builder, the interesting object is not the page but the <strong>ASIN</strong> — Amazon's universal product identifier — and the graph around it: variation families, offers, sellers, brands, browse nodes, ratings. Amazon treats this graph as a paid asset: public crawl is actively defended, AI crawlers are banned outright, and the official APIs meter access in proportion to the sales you refer. <span class="evidence inferred">inferred</span> Amazon prices catalog access in sales rather than dollars. <em>Basis:</em> the PA-API quota formula grants +1 TPS per $4,320 of shipped referral revenue and revokes access after 30 days without sales (see Verified Metrics); the product-page bot wall observed in the Probe Log routes automated access to those same APIs.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>amazon.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.amazon.com/">https://www.amazon.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Ecommerce marketplace, retail ads platform</dd></div>
+        <div><dt>Related hosts</dt><dd><code>m.media-amazon.com</code> (media CDN), <code>sellercentral.amazon.com</code>, <code>advertising.amazon.com</code>, <code>affiliate-program.amazon.com</code>, <code>aws.amazon.com</code>; Prime Video, Music, Audible live on separate hosts</dd></div>
+        <div><dt>Owner</dt><dd>Amazon.com, Inc. (NASDAQ: AMZN), founded by Jeff Bezos, CEO Andy Jassy</dd></div>
+        <div><dt>Founded / launched</dt><dd>1994; amazon.com opened July 1995 as a bookstore</dd></div>
+        <div><dt>Business model</dt><dd>Retail margin + marketplace take rate + advertising + Prime subscriptions + AWS (separate segment)</dd></div>
+        <div><dt>Scale anchor</dt><dd>$716.9B net sales in 2025, as of Dec 31 2025 (<a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20251231xex991.htm">SEC exhibit 99.1</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (catalog size, current Prime count) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Net sales, FY2025</dt>
+          <dd>$716.9B, +12% YoY — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20251231xex991.htm">Q4 2025 earnings release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Segment split, FY2025</dt>
+          <dd>North America $426.3B / International $161.9B / AWS $128.7B — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20251231xex991.htm">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Net income, FY2025</dt>
+          <dd>$77.7B — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20251231xex991.htm">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Advertising services, FY2025</dt>
+          <dd>$68.6B — summed by Site Wise from the release's quarterly lines ($13.9B + $15.7B + $17.7B + $21.3B); Q4 alone $21.3B, +23% YoY. <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20251231xex991.htm">Same release</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Third-party seller services, FY2025</dt>
+          <dd>$172.2B revenue — summed by Site Wise from quarterly lines; 61% of paid units came from third-party sellers in Q4 2025. <a href="https://www.fool.com/earnings/call-transcripts/2026/02/05/amazon-amzn-q4-2025-earnings-call-transcript/">Q4 2025 earnings call</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Review volume</dt>
+          <dd>~1.5B ratings and reviews from 125M customers in one year; 200M+ suspected fake reviews blocked — as of 2022, Amazon's latest official disclosure. <a href="https://www.aboutamazon.com/news/policy-news-views/how-amazon-is-working-to-stop-fake-reviews">About Amazon</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Prime members</dt>
+          <dd>200M+ worldwide — as of Apr 2021, the last official figure; treat newer numbers as estimates. <a href="https://www.aboutamazon.com/news/company-news/2020-letter-to-shareholders">2020 shareholder letter</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>PA-API access quota</dt>
+          <dd>1 TPS / 8,640 requests per day at start; +1 TPS per $4,320 of shipped referral revenue (max 10 TPS); access revoked after 30 days without referred sales — as of Jun 10 2026. <a href="https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html">PA-API 5.0 docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-10, desktop browser user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-06-10</td><td><code>dig +short amazon.com</code></td><td>A records 98.87.170.71 / 98.82.161.185 / 98.87.170.74 (AWS IP space); <code>www</code> responses arrive via CloudFront (<code>via: 1.1 …cloudfront.net</code>, pop SIN2-P5).</td></tr>
+            <tr><td>2026-06-10</td><td><code>curl -I https://www.amazon.com/</code></td><td>HEAD is rejected with HTTP 405 (<code>allow: GET, POST, PUT, DELETE, OPTIONS</code>). HSTS <code>max-age=47474747; includeSubDomains; preload</code>, <code>x-frame-options: SAMEORIGIN</code>.</td></tr>
+            <tr><td>2026-06-10</td><td><code>curl https://www.amazon.com/</code></td><td>HTTP 202 with a 2.0KB AWS WAF JavaScript challenge (<code>awsWafCookieDomainList</code>, goku props) instead of the homepage. No HTML content without executing the challenge.</td></tr>
+            <tr><td>2026-06-10</td><td><code>curl https://www.amazon.com/dp/B08N5WRWNW</code></td><td>HTTP 404 error page. Its HTML comment says automated access should contact <code>api-services-support@amazon.com</code> and points to the Marketplace APIs (SP-API) and the Product Advertising API.</td></tr>
+            <tr><td>2026-06-10</td><td><code>curl https://www.amazon.com/robots.txt</code></td><td>436 lines; 118 Disallow rules for <code>*</code> (cart, sign-in, review voting, wishlist internals) but product and search paths allowed for generic agents. GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot and ~30 other AI agents get <code>Disallow: /</code>. No Sitemap directive anywhere.</td></tr>
+            <tr><td>2026-06-10</td><td><code>/llms.txt</code>, <code>/sitemap.xml</code></td><td><code>llms.txt</code> returns 404; <code>sitemap.xml</code> times out (connection never completes). No public sitemap surface.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. PA-API = <a href="https://webservices.amazon.com/paapi5/documentation/">Product Advertising API 5.0</a>; SP-API = <a href="https://developer-docs.amazon.com/sp-api/">Selling Partner API</a>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Product titles, bullets, descriptions, brand content. Live ASIN count: open (no official figure).</td>
+              <td>PA-API GetItems/SearchItems for affiliates; SP-API Catalog Items for sellers. Public crawl is WAF-gated (Probe Log).</td>
+              <td>Associates account with qualifying sales; 1–10 TPS, 8,640+ req/day.</td>
+              <td>Terms-bound display with attribution and link-back; no bulk retention or redistribution.</td>
+              <td>Slow churn; titles/bullets editable by sellers.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Multiple images per ASIN on <code>m.media-amazon.com</code>; count scales with catalog (open).</td>
+              <td>PA-API Images resource returns CDN URLs sized S/M/L.</td>
+              <td>Same PA-API quota.</td>
+              <td>Hotlink display permitted for Associates; no copies or derivatives.</td>
+              <td>Low churn; new images on listing updates.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Product videos and live-shopping clips on detail pages; Prime Video is a separate host and corpus.</td>
+              <td>No public metadata API for product videos.</td>
+              <td>—</td>
+              <td>Open: no documented reuse path.</td>
+              <td>Open.</td>
+            </tr>
+            <tr>
+              <td>Reviews / ratings</td>
+              <td>~1.5B ratings + reviews added per year (2022 anchor, Verified Metrics).</td>
+              <td>None for review text: PA-API exposes only star rating and count; Seller Central's Customer Reviews tool was deprecated Sep 30 2025.</td>
+              <td>—</td>
+              <td>Star rating + count displayable via PA-API; review bodies are not licensable externally.</td>
+              <td>Append-mostly; fraud sweeps delete in bulk (200M+ blocked in 2022).</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>ASINs, variation families, offers (ASIN × seller × condition), browse-node category tree, brands, sellers.</td>
+              <td>PA-API resources (ItemInfo, Offers, BrowseNodeInfo, VariationSummary); SP-API for offer-change notifications.</td>
+              <td>PA-API quota; SP-API requires a seller/developer account.</td>
+              <td>Same Associates terms; displayed prices must stay fresh.</td>
+              <td>Offers and prices churn in minutes; browse-node tree is stable.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Amazon differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The ASIN is one of the strongest IDs on the web: 10 characters, stable, printed in every URL (<code>/dp/{ASIN}</code>). Dedup against URL aliases (<code>/gp/product/</code>, tracking params) and variation families — one "product" is a parent ASIN plus child ASINs per size/color. Each marketplace (.com, .co.uk, .de) is a separate ASIN namespace.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Three distinct units: the <strong>product</strong> (variation family) for search, the <strong>offer</strong> (ASIN × seller × condition) for price/availability, and the <strong>rating summary</strong> for quality signal. Collapsing them loses either freshness or relevance.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Everything joins on ASIN: images, offers, ratings, browse nodes, brand, ads. GTIN/UPC↔ASIN mapping (PA-API ItemInfo.ExternalIds) connects Amazon's namespace to the rest of commerce.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Titles are keyword-stuffed by sellers and the least trustworthy field. Structured attributes and images are closer to ground truth; ratings carry the quality signal but are an adversarial surface (200M+ fake reviews blocked in one year, Verified Metrics).</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Two regimes: offer data (price, stock, buy-box winner) is stale within hours; catalog metadata and images churn over weeks. An index refreshing both at one cadence wastes its quota on the wrong objects.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Amazon-specific manipulation: fake reviews, listing hijacking (content swapped under an established ASIN), variation abuse to inherit reviews, counterfeit offers under legitimate ASINs. Offer provenance matters as much as the product.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Product search happens on-site. Google may crawl product pages (robots.txt allows generic agents) but its copy lags on price and stock — exactly the fields that churn fastest. External indexes of Amazon are structurally stale.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>High purchase intent: brand + model, attribute-constrained ("USB-C hub 4K 60Hz"), comparison and reorder queries. Conversational queries are shifting to Rufus, Amazon's shopping assistant, rather than the search box.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> product = ASIN variation family; offers and rating summaries attached as fast-refresh sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> marketplace + ASIN; offer = ASIN + sellerId + condition; GTIN↔ASIN for cross-store joins.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) PA-API 5.0 — metadata, images, offers, browse nodes; starts at 8,640 lookups/day and scales only with referral sales. 2) SP-API — own-catalog data plus ANY_OFFER_CHANGED notifications for near-real-time price churn. 3) Public crawl — effectively closed to non-search-engine agents (Probe Log: WAF challenge + bot-wall 404). 4) Review text — no legitimate path; design around star/count only.</li>
+        <li><strong>Recrawl cadence:</strong> offers via SP-API push, not polling; catalog metadata weekly; images on listing change; browse-node tree monthly.</li>
+        <li><strong>Derivatives to generate:</strong> attribute normalization across sellers, image embeddings for visual dedup of hijacked/counterfeit listings, GTIN concordance table.</li>
+        <li><strong>Demo to build:</strong> a quota-aware PA-API indexer — paste ASINs, fetch within TPS/TPD budget, emit JSONL index docs, and surface which fields the quota forces you to skip (mirror of the TikTok oEmbed demo).</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Quota is revenue-coupled:</strong> PA-API access dies after 30 days without referred sales (<a href="https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html">docs</a>); an index that doesn't sell loses its feed.</li>
+        <li><strong>Review data is closing, not opening:</strong> Seller Central's Customer Reviews tool was deprecated Sep 30 2025; PA-API never carried review bodies. Plan for ratings-only permanently.</li>
+        <li><strong>Bot defense is first-party infrastructure:</strong> the WAF challenge observed in the Probe Log is AWS's own product; expect it to harden faster than third-party defenses elsewhere.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>AI retrieval products face enforcement, not licensing.</strong> <em>Basis:</em> robots.txt blanket-bans ~30 named AI crawlers including agent-style UAs (observed 2026-06-10), and no AI licensing program is published on the developer portal.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20251231xex991.htm">Amazon Q4 2025 earnings release (SEC exhibit 99.1)</a> — FY2025 net sales, segments, net income, quarterly advertising and seller-services lines.</li>
+        <li><a href="https://www.fool.com/earnings/call-transcripts/2026/02/05/amazon-amzn-q4-2025-earnings-call-transcript/">Q4 2025 earnings call transcript</a> — 61% third-party unit share.</li>
+        <li><a href="https://www.aboutamazon.com/news/policy-news-views/how-amazon-is-working-to-stop-fake-reviews">About Amazon: stopping fake reviews</a> — 1.5B reviews / 125M customers, 200M+ blocked.</li>
+        <li><a href="https://www.aboutamazon.com/news/company-news/2020-letter-to-shareholders">2020 shareholder letter</a> — 200M+ Prime members (Apr 2021).</li>
+        <li><a href="https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html">PA-API 5.0 rate documentation</a> — quota formula and revocation rule.</li>
+        <li>Local probes on 2026-06-10: <code>dig</code> and <code>curl</code> against the homepage, a product page, robots.txt, llms.txt, and sitemap.xml (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Amazon prices catalog access in referred sales rather than money. <em>Basis:</em> the PA-API quota formula (+1 TPS per $4,320 shipped revenue, 30-day revocation) combined with the bot-wall 404 routing crawlers to that same API.</li>
+        <li>Review text has no legitimate external bulk path. <em>Basis:</em> the PA-API 5.0 resource list carries only star rating and count; Seller Central's Customer Reviews tool was deprecated Sep 30 2025.</li>
+        <li>AI retrieval products face enforcement, not licensing. <em>Basis:</em> ~30 AI user agents at <code>Disallow: /</code> in robots.txt observed 2026-06-10; no published AI licensing program.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Live ASIN count per marketplace and category — closeable by sweeping PA-API SearchItems TotalResultCount across the browse-node tree within quota.</li>
+        <li>Current Prime membership — only the Apr 2021 official 200M+ anchor exists; a newer figure needs an Amazon disclosure.</li>
+        <li>Offer churn rate (price changes per ASIN per day) — measurable by sampling SP-API ANY_OFFER_CHANGED notifications on a seed set.</li>
+        <li>Share of US product searches that start on Amazon — only third-party panel estimates exist.</li>
+        <li>Rufus query volume and how much internal search it displaces — no public data.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
