@@ -16,7 +16,7 @@ Daily research project: one deep report per day on a high-traffic site, written 
 These seven predate the probe-first template and should be regenerated **in place** (same path, same filename, original date dir kept):
 
 - [x] `reports/2026-06-03/youtube.com.html`
-- [ ] `reports/2026-06-04/wikipedia.org.html`
+- [x] `reports/2026-06-04/wikipedia.org.html`
 - [ ] `reports/2026-06-05/facebook.com.html`
 - [ ] `reports/2026-06-06/reddit.com.html`
 - [ ] `reports/2026-06-07/google.com.html`

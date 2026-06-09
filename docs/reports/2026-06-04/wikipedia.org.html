@@ -16,147 +16,153 @@
     <header class="report-hero">
       <p class="eyebrow">Daily Site Profile</p>
       <h1>wikipedia.org</h1>
-      <p class="lede">Wikipedia is the web's default neutral reference layer: a multilingual, volunteer-governed encyclopedia that converts external sources into linked, reusable summaries, and now sits at the center of search, AI, knowledge graphs, education, and public-memory disputes.</p>
+      <p class="lede">Wikipedia is the web's openest major corpus: 65M+ CC BY-SA articles in 300+ languages, with full dumps, free APIs, and a live edit stream.</p>
       <div class="tag-row">
         <span class="tag">Reference</span>
         <span class="tag">Nonprofit</span>
-        <span class="tag">UGC Knowledge</span>
-        <span class="tag">Search Infrastructure</span>
-        <span class="tag">AI Corpus</span>
+        <span class="tag">Open Data</span>
+        <span class="tag">Knowledge Graph</span>
       </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>. Probes ran 2026-06-10 (regeneration day).</p>
     </header>
 
     <section class="section-card">
-      <h2>How To Read This Report</h2>
-      <p>Every claim is tagged:</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> Sourced to a primary or reliable secondary record.</li>
-        <li><span class="evidence inferred">inferred</span> Reasoned from public signals.</li>
-        <li><span class="evidence open">open</span> Unknown, contested, or worth digging into further.</li>
-      </ul>
-      <p class="muted">Numbers carry their as-of date. Wikimedia readership metrics are especially sensitive to bot-detection changes, so traffic claims are treated carefully.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Basic Profile</h2>
+      <h2>Context</h2>
+      <p>Wikipedia is the volunteer-written encyclopedia operated by the Wikimedia Foundation, a US 501(c)(3) funded almost entirely by donations ($189.5M of $208.6M FY2024-25 revenue — Verified Metrics). It inverts every default platform assumption this methodology carries: no ads, no personalization, no API paywall, no AI-crawler bans, full database dumps, immutable revision IDs, and a no-auth event stream of every edit. The catch is the opposite of the usual one — access is easy, <em>trust</em> is the hard problem, because Wikipedia is a tertiary source whose authority lives in its citations, and because the openness is a policy choice the Foundation is now re-examining as AI scrapers strain its infrastructure (see Risks). For an index builder the real asset is the join structure: every article carries a stable <code>pageid</code>, an immutable <code>revid</code> per version, and a Wikidata QID that links 300+ language editions, Commons media, and external identifiers into one entity graph. <span class="evidence inferred">inferred</span> Wikipedia is the cheapest large corpus to keep fresh on the web. <em>Basis:</em> the no-auth EventStreams firehose observed in the Probe Log (~27 events/s) plus free full dumps means freshness costs a subscription, not a recrawl budget.</p>
       <dl class="fact-list">
         <div><dt>Host</dt><dd><code>wikipedia.org</code></dd></div>
         <div><dt>Canonical URL</dt><dd><a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a></dd></div>
-        <div><dt>Category</dt><dd>Online encyclopedia, reference corpus, multilingual knowledge commons</dd></div>
-        <div><dt>Grouped hosts</dt><dd><code>en.wikipedia.org</code>, <code>ru.wikipedia.org</code>, <code>es.wikipedia.org</code>, <code>ja.wikipedia.org</code>, <code>fr.wikipedia.org</code>, <code>de.wikipedia.org</code>, <code>zh.wikipedia.org</code>, and other language editions</dd></div>
-        <div><dt>Parent / operator</dt><dd>Wikimedia Foundation, Inc., a US 501(c)(3) nonprofit; community governance is distributed across language editions and Wikimedia projects</dd></div>
-        <div><dt>Country / region</dt><dd>Foundation headquartered in the United States; contributors and readers global</dd></div>
-        <div><dt>Founded / launched</dt><dd>Launched January 15, 2001, as a wiki-based successor/feeder to Nupedia</dd></div>
-        <div><dt>Founders</dt><dd>Jimmy Wales and Larry Sanger are the commonly cited founders; the exact founder framing is historically disputed</dd></div>
-        <div><dt>Current scale</dt><dd>More than 65 million articles across 300+ languages; nearly 250,000 monthly editors around Wikipedia's 25th anniversary</dd></div>
-        <div><dt>Primary languages / markets</dt><dd>English is the largest and most globally reused edition; major traffic also comes from Japanese, German, Russian, Spanish, French, Italian, Portuguese, Chinese, Indonesian, Polish, Turkish, and many regional editions</dd></div>
+        <div><dt>Category</dt><dd>Encyclopedia, open knowledge commons</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>en.wikipedia.org</code>, <code>de</code>/<code>fr</code>/<code>es</code>/<code>ja</code>/<code>ru</code>/<code>zh</code>… (300+ language editions); sibling corpora on <code>commons.wikimedia.org</code> and <code>wikidata.org</code></dd></div>
+        <div><dt>Owner</dt><dd>Wikimedia Foundation, Inc. (nonprofit); editorial control is community-held per language edition</dd></div>
+        <div><dt>Founded / launched</dt><dd>January 15, 2001 (Jimmy Wales, Larry Sanger)</dd></div>
+        <div><dt>Business model</dt><dd>Donations + grants + endowment; small paid layer (Wikimedia Enterprise, 4% of revenue)</dd></div>
+        <div><dt>Scale anchor</dt><dd>65M+ articles in 300+ languages, as of Jan 15 2026 (<a href="https://wikimediafoundation.org/news/2026/01/15/wikipedia-celebrates-25years/">WMF 25th-anniversary post</a>)</dd></div>
       </dl>
     </section>
 
     <section class="section-card">
-      <h2>Key Metrics</h2>
-      <p class="muted">Anchors with as-of dates. Wikimedia's public metrics changed in 2025-2026 because bot traffic distorted unique-device and pageview data.</p>
+      <h2>Verified Metrics</h2>
+      <p class="muted">Live counts come straight from the public Action and Analytics APIs (Probe Log) — Wikipedia is the rare site where scale is a probe-sourced fact, not a press release.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Articles, all editions</dt>
+          <dd>65M+ across 300+ languages; ~250K monthly editors; 1.5B+ unique devices/month; ~15B views/month — as of Jan 15 2026. <a href="https://wikimediafoundation.org/news/2026/01/15/wikipedia-celebrates-25years/">WMF 25th-anniversary post</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>English Wikipedia, live</dt>
+          <dd>7,193,311 articles; 65.7M pages; 1.35B cumulative edits; 275,264 active editors (30d); 814 admins — as of Jun 10 2026, Action API <code>siteinfo</code> probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Human pageviews</dt>
+          <dd>13.6B in May 2026 (all Wikimedia projects, agent=user; Apr 12.7B, Mar 13.3B) — Analytics API probe, Jun 10 2026. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Commons media files</dt>
+          <dd>142.8M files — as of Jun 10 2026, Commons <code>siteinfo</code> probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Wikidata entities</dt>
+          <dd>122.1M items, 2.50B cumulative edits — as of Jun 10 2026, Wikidata <code>siteinfo</code> probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Foundation finances, FY2024-25</dt>
+          <dd>$208.6M revenue (+13%; $189.5M donations), $190.9M expenses, $296.6M net assets — fiscal year ended Jun 30 2025. <a href="https://diff.wikimedia.org/2025/11/24/highlights-from-the-wikimedia-foundations-fiscal-year-2024-2025-audit-report/">FY2024-25 audit highlights</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Wikimedia Enterprise revenue</dt>
+          <dd>$8.3M FY2024-25, +148% YoY (from $3.4M); 13 paid customers incl. Ecosia, Pleias, ProRata.ai, Nomic AI — as of Jun 30 2025. <a href="https://diff.wikimedia.org/2025/11/24/wikimedia-enterprise-financial-report-fiscal-year-2024-2025/">Enterprise financial report</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Enterprise free tier</dt>
+          <dd>On-demand API 50K requests/mo; Snapshot API 30 requests + 1,500 chunks/mo; paid tier unlimited + Realtime API, up to 99% SLA, priced by egress — as of Jun 10 2026. <a href="https://enterprise.wikimedia.com/pricing/">Enterprise pricing</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>English dump size</dt>
+          <dd>25.3GB bz2 for <code>enwiki-latest-pages-articles</code> (current revisions, no media), built Jun 2 2026 — HEAD probe of <a href="https://dumps.wikimedia.org/enwiki/latest/">dumps.wikimedia.org</a>, Jun 10 2026. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Bot share of expensive traffic</dt>
+          <dd>≥65% of the most resource-consuming requests come from bots (vs ~35% of pageviews); multimedia bandwidth +50% since Jan 2024, driven by AI scraping — as of Apr 1 2025. <a href="https://diff.wikimedia.org/2025/04/01/how-crawlers-impact-the-operations-of-the-wikimedia-projects/">WMF on crawler impact</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-10 (regeneration day; this report's directory date is 2026-06-04). Plain curl, no special headers unless noted.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Metric</th><th>Value</th><th>As of</th><th>Source / Tag</th><th>Notes</th></tr></thead>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>dig +short</code> + reverse</td><td data-label="Observation"><code>en.wikipedia.org</code> → CNAME <code>dyna.wikimedia.org</code> → 103.102.166.224 → <code>text-lb.eqsin.wikimedia.org</code>. Wikimedia runs its own global edge (eqsin = Singapore POP), no commercial CDN.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -sI …/wiki/Main_Page</code></td><td data-label="Observation">HTTP 200, <code>server: mw-web.codfw…</code> (Kubernetes MediaWiki), <code>x-cache: cp5024 hit-front</code> with <code>age: 2804</code> — anonymous pages are edge-cached. HSTS preload, max-age ~3.4y.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -sL …/robots.txt</code></td><td data-label="Observation">711 lines. <strong>No AI-crawler blocks at all</strong> — no GPTBot/ClaudeBot/CCBot/Google-Extended entries. Disallows target site-rippers (HTTrack, wget, WebZIP), MJ12bot, SemrushBot; wildcard blocks only <code>/w/</code>, <code>/api/</code>, and <code>Special:</code> pages.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Sitemap census</td><td data-label="Observation">robots.txt declares <code>Sitemap: /w/rest.php/site/v1/sitemap/0</code> — but the endpoint returns 403 (with and without a browser UA). <code>/sitemap.xml</code> and <code>/llms.txt</code> both 404. Effectively still no working sitemap.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Action API <code>siteinfo</code> ×3</td><td data-label="Observation">Live statistics with no auth: enwiki 7,193,311 articles; Commons 142,825,717 files; Wikidata 122,100,082 items (full figures in Verified Metrics).</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">REST summary + article fetch</td><td data-label="Observation"><code>/api/rest_v1/page/summary/Singapore</code> returns pageid, <code>revision</code>, <code>wikibase_item: Q334</code>, description, coordinates, thumbnail — no auth. Article HTML carries JSON-LD with <code>mainEntity</code> → the same QID and <code>&lt;link rel="license"&gt;</code> → CC BY-SA 4.0.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -sI</code> enwiki dump</td><td data-label="Observation"><code>pages-articles.xml.bz2</code>: 200, Content-Length 25,329,990,293 (25.3GB), Last-Modified Jun 2 2026 — full text corpus is one anonymous GET.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">EventStreams, 5s sample</td><td data-label="Observation"><code>stream.wikimedia.org/v2/stream/recentchange</code> (SSE, no auth) delivered 135 events in 5s ≈ 27 edits/s across all wikis. RecentChanges Atom feed also live.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Analytics API</td><td data-label="Observation"><code>wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/all-projects/all-access/user/monthly</code> returns bot-filtered pageviews, no auth (figures in Verified Metrics).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, cost, license, churn. All API paths require only a descriptive User-Agent per the <a href="https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy">UA policy</a>; <a href="https://api.wikimedia.org/">api.wikimedia.org</a> keys raise rate limits.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
           <tbody>
             <tr>
-              <td data-label="Metric">Articles</td>
-              <td data-label="Value">&gt; 65 million</td>
-              <td data-label="As of">Jan 2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikimedia Foundation 25th anniversary post</td>
-              <td data-label="Notes">Across 300+ language editions.</td>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">65M+ articles (Jan 2026) + talk, history, templates; enwiki alone 65.7M pages (probe).</td>
+              <td data-label="Best legitimate path">XML dumps for bulk (25.3GB bz2 enwiki, twice-monthly); REST/Action API for hydration; Enterprise Snapshot for daily, SLA-backed copies.</td>
+              <td data-label="Auth &amp; quota">None for dumps/APIs; Enterprise free tier 50K req/mo, paid by egress.</td>
+              <td data-label="License / display">CC BY-SA 4.0 — attribution + share-alike; full redistribution allowed.</td>
+              <td data-label="Freshness">~27 edits/s globally (probe); stream-driven, not crawl-driven.</td>
             </tr>
             <tr>
-              <td data-label="Metric">Commons media corpus</td>
-              <td data-label="Value">142.5M cumulative files; 2025 added 20.3M files; 2026 YTD added 10.7M files</td>
-              <td data-label="As of">May 31 2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> calculated from Wikimedia Commons statistics table</td>
-              <td data-label="Notes">Annual rows sum to the cumulative file count; current total is a Site Wise calculation from the official table.</td>
+              <td data-label="Modality">Images (Commons)</td>
+              <td data-label="Objects &amp; est. count">142.8M media files (probe), image-dominant; per-MIME split open.</td>
+              <td data-label="Best legitimate path">Commons API <code>imageinfo</code> for URLs/EXIF/license; Structured Data on Commons for <code>depicts</code>; originals hotlinkable from <code>upload.wikimedia.org</code>.</td>
+              <td data-label="Auth &amp; quota">None; UA policy; bulk media download discouraged (no media-bundle dump).</td>
+              <td data-label="License / display">Free licenses per file (PD/CC); license + author must be resolved from the file page, machine-readability varies.</td>
+              <td data-label="Freshness">Append-mostly; deletions for copyright are routine.</td>
             </tr>
             <tr>
-              <td data-label="Metric">Commons data volume</td>
-              <td data-label="Value">~987 TiB / ~1.1 PB decimal; avg original file size ~7.6 MB</td>
-              <td data-label="As of">May 31 2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> calculated from Wikimedia Commons statistics table</td>
-              <td data-label="Notes">2025 alone added 236.1 TB decimal; 2026 YTD added 211.0 TB decimal.</td>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Subset of Commons (WebM/Ogg only — patent-free formats); count open.</td>
+              <td data-label="Best legitimate path">Same Commons APIs; originals + transcodes via <code>upload.wikimedia.org</code>.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Free licenses per file.</td>
+              <td data-label="Freshness">Low volume, slow churn.</td>
             </tr>
             <tr>
-              <td data-label="Metric">Commons modality mix</td>
-              <td data-label="Value">Image-dominant; 94.5% of files reported as SVG, PNG, and JPEG in BHL's Commons workflow guide</td>
-              <td data-label="As of">Source accessed 2026-06-04</td>
-              <td data-label="Source / Tag"><span class="evidence inferred">inferred</span> secondary Wikimedia-workflow source</td>
-              <td data-label="Notes">Current official file-type split by MIME needs a standard repeatable query; audio/video/document counts remain open in this report.</td>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">Pronunciations, Spoken Wikipedia recordings on Commons; count open.</td>
+              <td data-label="Best legitimate path">Same Commons APIs; pronunciation files joinable to articles/Wikidata lexemes.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Free licenses per file.</td>
+              <td data-label="Freshness">Slow churn.</td>
             </tr>
             <tr>
-              <td data-label="Metric">Commons 2026 upload velocity</td>
-              <td data-label="Value">10.7M files in first 152 days of 2026, roughly 70.5K files/day</td>
-              <td data-label="As of">May 31 2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> calculated from Wikimedia Commons statistics table</td>
-              <td data-label="Notes">Rate is YTD average, not a promise about rest-of-year growth.</td>
+              <td data-label="Modality">Comments (talk)</td>
+              <td data-label="Objects &amp; est. count">Talk + project-space discussion pages; included in the 65.7M-page enwiki total (probe).</td>
+              <td data-label="Best legitimate path">Same dumps and APIs as articles (separate namespaces); signed, threaded wikitext.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">CC BY-SA 4.0, same as articles.</td>
+              <td data-label="Freshness">Bursty around disputes; archives are stable.</td>
             </tr>
             <tr>
-              <td data-label="Metric">Monthly editors</td>
-              <td data-label="Value">Nearly 250,000</td>
-              <td data-label="As of">Jan 2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikimedia Foundation</td>
-              <td data-label="Notes">Editors across Wikipedia language editions.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Annual edits</td>
-              <td data-label="Value">94.1M changes</td>
-              <td data-label="As of">Calendar 2025</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikipedia Year in Review 2025</td>
-              <td data-label="Notes">Across 300+ language editions.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Total pageviews</td>
-              <td data-label="Value">23B in April; 301B trailing 12 months</td>
-              <td data-label="As of">May 2025-Apr 2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikistats</td>
-              <td data-label="Notes">All Wikimedia projects view; useful for direction, not a clean Wikipedia-only audience number.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Human/search traffic direction</td>
-              <td data-label="Value">Search-referred pageviews down 16% YoY; internal referrals down 13% YoY</td>
-              <td data-label="As of">Current monthly Movement Metrics report, 2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikimedia Movement Metrics</td>
-              <td data-label="Notes">Report warns that bot activity inflated parts of 2025.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Monthly reach</td>
-              <td data-label="Value">Approx. 1.5B people / 27% of internet users read Wikipedia content on-wiki each month</td>
-              <td data-label="As of">2026-2027 draft annual plan</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikimedia Foundation draft plan</td>
-              <td data-label="Notes">Framed by Wikimedia as on-wiki readership, distinct from off-platform reuse.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Foundation support and revenue</td>
-              <td data-label="Value">$185.4M</td>
-              <td data-label="As of">FY 2023-2024</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikimedia 2023 Form 990 FAQ</td>
-              <td data-label="Notes">Mostly donations and grants.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Foundation expenses</td>
-              <td data-label="Value">$178.6M</td>
-              <td data-label="As of">FY 2023-2024</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikimedia 2023 Form 990 FAQ</td>
-              <td data-label="Notes">45% technology, 32% direct volunteer support, 11% fundraising, 12% G&amp;A.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Business model</td>
-              <td data-label="Value">Donations + grants + endowment + limited enterprise API revenue</td>
-              <td data-label="As of">2024-2026</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikimedia reports / Enterprise site</td>
-              <td data-label="Notes">No ads; paid API is a sustainability lever, not the main product.</td>
-            </tr>
-            <tr>
-              <td data-label="Metric">Top countries by all-project pageviews</td>
-              <td data-label="Value">US ~3B, Japan ~936M, UK ~846M, Germany ~754M</td>
-              <td data-label="As of">May 2026 Wikistats country view</td>
-              <td data-label="Source / Tag"><span class="evidence verified">verified</span> Wikistats</td>
-              <td data-label="Notes">Country view is all Wikimedia projects and can shift with bot filters.</td>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">122.1M Wikidata items (probe): labels, statements, sitelinks, external IDs.</td>
+              <td data-label="Best legitimate path">JSON dumps; <a href="https://query.wikidata.org/">Wikidata Query Service</a> (SPARQL); EntityData REST per item.</td>
+              <td data-label="Auth &amp; quota">None; WDQS query timeout 60s.</td>
+              <td data-label="License / display">CC0 — no attribution required; the most reusable layer.</td>
+              <td data-label="Freshness">2.5B edits to date (probe); live via same EventStreams.</td>
             </tr>
           </tbody>
         </table>
@@ -164,323 +170,64 @@
     </section>
 
     <section class="section-card">
-      <h2>Why This Site Matters</h2>
-      <p>Wikipedia matters because it is not just a destination. It is a public, linkable, versioned, multilingual compression layer over the rest of the web. Search engines, knowledge panels, voice assistants, LLM datasets, classrooms, journalists, researchers, and ordinary users all treat it as the first-pass map of what is known.</p>
-      <p>The text encyclopedia is only one layer. Wikipedia pages are connected to Wikimedia Commons media, Wikidata entities, scanned source material, maps, diagrams, pronunciations, audio files, and video clips. That turns Wikimedia into a multimodal public knowledge graph, not merely a collection of prose pages.</p>
-      <p>The unusual fact is that Wikipedia won with constraints most platforms reject: no ads, no personalized feed as the core product, strict sourcing norms, publicly visible edit history, and governance by community policy rather than a normal product hierarchy.</p>
-      <div class="callout">
-        <strong>Why this site matters for retrieval specifically:</strong> Wikipedia is the cleanest high-scale human-curated retrieval corpus on the web, but it is a tertiary source. For factual systems, the article is often the route to sources, identifiers, redirects, entity disambiguation, and cross-language alignment, not the final authority.
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Timeline</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Date</th><th>Event</th><th>Why It Matters</th></tr></thead>
-          <tbody>
-            <tr><td data-label="Date">2000</td><td data-label="Event">Nupedia launches as an expert-written, peer-reviewed free encyclopedia.</td><td data-label="Why It Matters">Shows the problem Wikipedia solved: expert review was too slow for internet-scale coverage.</td></tr>
-            <tr><td data-label="Date">Jan 15 2001</td><td data-label="Event">Wikipedia launches in English.</td><td data-label="Why It Matters">The wiki mechanism changes the bottleneck from credentialed authorship to public revision and cleanup.</td></tr>
-            <tr><td data-label="Date">2002</td><td data-label="Event">Non-English editions expand.</td><td data-label="Why It Matters">Wikipedia becomes a federation of language communities, not a translated English product.</td></tr>
-            <tr><td data-label="Date">2003</td><td data-label="Event">Wikimedia Foundation is created.</td><td data-label="Why It Matters">Separates mission and infrastructure from the original commercial entity and domain ownership.</td></tr>
-            <tr><td data-label="Date">2004-2006</td><td data-label="Event">MediaWiki, Commons, categories, templates, bots, and policy infrastructure mature.</td><td data-label="Why It Matters">The product becomes a socio-technical system: software plus norms plus maintenance labor.</td></tr>
-            <tr><td data-label="Date">2005</td><td data-label="Event">Seigenthaler biography controversy draws mainstream attention to reliability risks.</td><td data-label="Why It Matters">Accelerates stronger biography, sourcing, and vandalism controls.</td></tr>
-            <tr><td data-label="Date">2007</td><td data-label="Event">English Wikipedia crosses 2M articles; global public recognition rises.</td><td data-label="Why It Matters">Coverage breadth becomes the moat.</td></tr>
-            <tr><td data-label="Date">2009</td><td data-label="Event">Licensing migration allows Wikipedia text under CC BY-SA, alongside GFDL compatibility.</td><td data-label="Why It Matters">Makes reuse easier for the modern web.</td></tr>
-            <tr><td data-label="Date">2012</td><td data-label="Event">Wikidata launches.</td><td data-label="Why It Matters">Creates a structured, multilingual entity layer that later powers infoboxes, search panels, and AI datasets.</td></tr>
-            <tr><td data-label="Date">2015-2016</td><td data-label="Event">Mobile reading and unique-device measurement become central; apps and mobile web grow.</td><td data-label="Why It Matters">Wikipedia shifts from desktop reference to everyday mobile lookup.</td></tr>
-            <tr><td data-label="Date">2021</td><td data-label="Event">Wikipedia turns 20; Wikimedia Enterprise is introduced.</td><td data-label="Why It Matters">Commercial high-volume reuse becomes explicit without adding ads to readers.</td></tr>
-            <tr><td data-label="Date">2024</td><td data-label="Event">Annual report cites more than 60M articles and Wikimedia's role as a shared knowledge source.</td><td data-label="Why It Matters">Confirms the project as internet infrastructure, not just a website.</td></tr>
-            <tr><td data-label="Date">Apr 2025</td><td data-label="Event">Wikimedia publishes an AI strategy focused on helping human editors and moderators.</td><td data-label="Why It Matters">Frames AI as an assistant to the community, not a replacement for editors.</td></tr>
-            <tr><td data-label="Date">2025</td><td data-label="Event">Wikimedia reports human pageview pressure from AI search summaries and social video; bot filtering complicates metrics.</td><td data-label="Why It Matters">The main risk shifts from "can Wikipedia get traffic?" to "will platforms extract answers without sending readers, donors, or editors back?"</td></tr>
-            <tr><td data-label="Date">Jan 2026</td><td data-label="Event">Wikipedia celebrates 25 years; Wikimedia highlights 65M+ articles, 300+ languages, and nearly 250K monthly editors.</td><td data-label="Why It Matters">The platform's scale is mature, but volunteer renewal and off-platform reuse become the strategic questions.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>User Intent and Core Scenarios</h2>
-      <ul>
-        <li><strong>Primary intents:</strong> quick factual orientation, entity lookup, historical background, biography, event context, geography, science/medicine overview, cultural reference, source discovery.</li>
-        <li><strong>Secondary / emerging intents:</strong> cross-language comparison, citation trail following, classroom starting point, media/news verification, Wikidata-driven entity lookup, AI answer grounding.</li>
-        <li><strong>Repeat-use loop:</strong> search query or direct visit → article lead gives orientation → infobox/tables/sections answer the immediate question → citations and internal links lead to deeper reading → watchlist/edit history/talk pages retain contributors.</li>
-        <li><strong>What it replaces / displaces:</strong> printed encyclopedias, general-purpose reference books, many simple Google clicks, public biographical directories, parts of knowledge graph maintenance, and the first step of academic/source discovery.</li>
-      </ul>
-      <p class="muted">The key product duality: readers experience Wikipedia as a simple answer page; editors experience it as a governance, dispute-resolution, and maintenance system.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Traffic and Distribution</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> Wikimedia says search-referred pageviews are declining and that the old waterfall of free Google referral traffic is no longer something the project can assume.</li>
-        <li><span class="evidence verified">verified</span> Wikistats reports 301B total pageviews across Wikimedia projects for the trailing 12 months ending April 2026, but warns that unique-device metrics are unavailable at all-project level.</li>
-        <li><span class="evidence inferred">inferred</span> The practical channel mix is search-first: Google/Bing/direct answer surfaces, browser omnibox queries, mobile app/direct visits, social links around breaking events, and embeds/reuse through knowledge panels and AI tools.</li>
-        <li><span class="evidence inferred">inferred</span> Wikipedia has unusually high off-platform consumption: users often receive Wikipedia-derived facts through search snippets, knowledge panels, LLM answers, voice assistants, and third-party apps without touching <code>wikipedia.org</code>.</li>
-        <li><span class="evidence open">open</span> A standard Site Wise traffic panel still needs to be chosen. For Wikipedia, Wikimedia's own public analytics should outrank Similarweb-style estimates, but third-party panels may be useful for cross-site comparability.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Product Anatomy</h2>
-      <ul>
-        <li><strong>First screen:</strong> the global <code>wikipedia.org</code> page is a language selector and search box; most real use lands directly on a language-edition article from search.</li>
-        <li><strong>Core journey:</strong> search/open article → read lead/infobox → scan table of contents → follow citations or internal links → optionally edit, discuss, watch, or inspect history.</li>
-        <li><strong>Discovery modes:</strong> external search, internal search, hyperlinks, categories, portals, "random article", Wikidata-driven interlanguage links, current-events pages, article recommendations in mobile apps.</li>
-        <li><strong>Account / identity:</strong> readers do not need accounts; editors can edit anonymously on many pages or with accounts; mature contributors build reputation through edit history, user rights, watchlists, and community roles.</li>
-        <li><strong>Supply side:</strong> volunteer editors, administrators, bots, Wikimedia affiliates, GLAM partners, source publishers, data donors, Commons media contributors, and Wikidata maintainers.</li>
-        <li><strong>Demand side:</strong> readers, students, journalists, researchers, search engines, AI companies, app developers, enterprise knowledge-graph teams, and public institutions.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Multimodal Data Layer</h2>
-      <p>Wikipedia's article pages are the visible surface, but the reusable data asset is broader: text, linked citations, infobox fields, Wikidata entities, Commons files, categories, captions, image annotations, geodata, and revision history. For AI and retrieval systems, this matters because Wikimedia can provide aligned text-image-entity examples with public provenance.</p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Layer</th><th>What It Contains</th><th>Retrieval / AI Value</th><th>Main Caveat</th></tr></thead>
-          <tbody>
-            <tr>
-              <td data-label="Layer">Article text</td>
-              <td data-label="What It Contains">Leads, sections, tables, references, templates, categories, edit history.</td>
-              <td data-label="Retrieval / AI Value">High-quality entity and concept grounding; section-level summaries; citation discovery.</td>
-              <td data-label="Main Caveat">Tertiary source; contested facts require source-following and revision IDs.</td>
-            </tr>
-            <tr>
-              <td data-label="Layer">Wikimedia Commons</td>
-              <td data-label="What It Contains">Free/public-domain media files: photos, illustrations, diagrams, maps, scans, audio, video, and documents.</td>
-              <td data-label="Retrieval / AI Value">Open multimodal corpus for visual grounding, educational media, OCR, speech, geospatial and art/history tasks.</td>
-              <td data-label="Main Caveat">License, author, subject, and quality metadata vary by file; not every media file is equally reusable.</td>
-            </tr>
-            <tr>
-              <td data-label="Layer">Structured Data on Commons</td>
-              <td data-label="What It Contains">Wikibase statements on files, including <code>depicts</code>, creator, source, location, inception, genre, and qualifiers.</td>
-              <td data-label="Retrieval / AI Value">Connects media files to Wikidata QIDs, enabling image-to-entity, entity-to-image, and multilingual media search.</td>
-              <td data-label="Main Caveat">Coverage is incomplete and community-modeled; categories and structured statements can disagree.</td>
-            </tr>
-            <tr>
-              <td data-label="Layer">Wikidata</td>
-              <td data-label="What It Contains">QIDs, labels, aliases, statements, identifiers, sitelinks, coordinates, dates, relationships.</td>
-              <td data-label="Retrieval / AI Value">Entity backbone for deduplication, cross-language joins, image captions, knowledge graph construction, and tool calls.</td>
-              <td data-label="Main Caveat">Statement quality and references vary; truth is versioned and community-curated, not centrally guaranteed.</td>
-            </tr>
-            <tr>
-              <td data-label="Layer">Media metadata</td>
-              <td data-label="What It Contains">File title, description, captions, EXIF, MIME type, dimensions, duration, thumbnail URLs, original source, license templates.</td>
-              <td data-label="Retrieval / AI Value">Useful for filtering by modality, rights, provenance, resolution, time, location, and display format.</td>
-              <td data-label="Main Caveat">Commons help pages warn that some legacy metadata, including license and author fields, may not be fully machine-readable.</td>
-            </tr>
-            <tr>
-              <td data-label="Layer">Transcribed / spoken material</td>
-              <td data-label="What It Contains">Pronunciation audio, spoken Wikipedia files, Commons audio with captions or transcripts, video descriptions.</td>
-              <td data-label="Retrieval / AI Value">Supports speech recognition, speech translation, pronunciation, accessibility, and multimodal educational search.</td>
-              <td data-label="Main Caveat">Much smaller and less uniformly annotated than the text and image corpus.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <ul>
-        <li><span class="evidence verified">verified</span> Commons statistics report file counts and total size by year; the May 31 2026 table shows 2025 and 2026 additions at very large scale.</li>
-        <li><span class="evidence verified">verified</span> Summing the official year rows gives ~142.5M cumulative files and ~987 TiB of original-file data through May 31 2026.</li>
-        <li><span class="evidence inferred">inferred</span> The corpus is overwhelmingly visual: a Wikimedia Commons workflow guide from Biodiversity Heritage Library reports 94.5% of Commons files as SVG, PNG, and JPEG. Treat this as a directional modality split until Site Wise adds a repeatable MIME-count query.</li>
-        <li><span class="evidence verified">verified</span> Structured Data on Commons represents file metadata as Wikibase statements; <code>depicts</code> is a core property for saying what a media file shows.</li>
-        <li><span class="evidence inferred">inferred</span> The strongest multimodal retrieval primitive is <strong>QID + file page + structured statements + caption/description + license + thumbnail/original URL</strong>, not the binary file alone.</li>
-        <li><span class="evidence open">open</span> The report still needs a standardized way to quantify exact current counts by MIME type, license family, quality tier, structured-data coverage, captions, geotags, EXIF, and article-usage rate for Site Wise cross-site comparisons.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Business Model</h2>
-      <ul>
-        <li><strong>Revenue streams:</strong> mostly donations and grants to the Wikimedia Foundation; endowment support; limited paid Wikimedia Enterprise API access for high-volume commercial reuse.</li>
-        <li><strong>Pricing / unit economics:</strong> readers see no ads and pay nothing; the cost center is infrastructure, security, product/technology staff, fundraising, legal, and movement support. The hidden economic subsidy is volunteer editorial labor.</li>
-        <li><strong>Who pays whom:</strong> individual donors, institutions, and grantmakers fund the Foundation; the Foundation funds infrastructure, staff, grants, legal support, and movement programs. Enterprise API customers pay for reliable, scalable, structured access rather than exclusive content.</li>
-        <li><strong>Strategic shape:</strong> donor-funded public infrastructure with a small enterprise-access layer. The existential business problem is attribution and reciprocity: major commercial systems depend on Wikimedia content while much of the value is captured off-platform.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Moat</h2>
-      <p class="muted">For each moat: type, claim, evidence, fragility.</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> <strong>Content library:</strong> 65M+ articles across 300+ languages. The archive's breadth is hard to replicate, but article quality varies sharply by language and topic.</li>
-        <li><span class="evidence verified">verified</span> <strong>Volunteer governance:</strong> public history, talk pages, policies, admins, bots, and community norms make revision at scale possible. Fragility: contributor burnout, hostile onboarding, and admin decline in mature wikis.</li>
-        <li><span class="evidence verified">verified</span> <strong>Licensing:</strong> CC BY-SA reuse turns Wikipedia into legal infrastructure for summaries, mirrors, datasets, and derivative tools. Fragility: attribution can disappear in AI/search intermediaries.</li>
-        <li><span class="evidence verified">verified</span> <strong>Search distribution:</strong> external search engines have trained users to trust Wikipedia for orientation. Fragility: AI answer engines can consume Wikipedia while reducing click-through.</li>
-        <li><span class="evidence verified">verified</span> <strong>Structured ecosystem:</strong> Wikidata, Commons, dumps, APIs, pageviews, and interlanguage links make Wikimedia machine-readable in a way most publishers are not.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Brand trust:</strong> "check Wikipedia" is a global behavior, but trust is uneven for politics, biographies of living persons, medicine, and contested history.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Peers and Contrasts</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Peer</th><th>Same as Wikipedia</th><th>Different from Wikipedia</th><th>What the difference teaches</th></tr></thead>
-          <tbody>
-            <tr>
-              <td data-label="Peer">Britannica</td>
-              <td data-label="Same as Wikipedia">General reference encyclopedia.</td>
-              <td data-label="Different from Wikipedia">Expert/editorial model, smaller scope, commercial product, less open revision and reuse.</td>
-              <td data-label="What the difference teaches">Wikipedia traded centralized authority for coverage breadth, speed, and transparency.</td>
-            </tr>
-            <tr>
-              <td data-label="Peer">Google Knowledge Graph</td>
-              <td data-label="Same as Wikipedia">Entity summaries, facts, relationships, search-result answers.</td>
-              <td data-label="Different from Wikipedia">Proprietary, not directly editable by public, derived from many sources including Wikipedia/Wikidata.</td>
-              <td data-label="What the difference teaches">Knowledge panels are downstream products; Wikipedia is part of the supply chain.</td>
-            </tr>
-            <tr>
-              <td data-label="Peer">Wikidata</td>
-              <td data-label="Same as Wikipedia">Wikimedia-operated knowledge infrastructure.</td>
-              <td data-label="Different from Wikipedia">Structured entity database, not narrative articles.</td>
-              <td data-label="What the difference teaches">Articles and structured data solve different retrieval problems and are strongest together.</td>
-            </tr>
-            <tr>
-              <td data-label="Peer">Reddit</td>
-              <td data-label="Same as Wikipedia">User-generated, public, high-ranking in search.</td>
-              <td data-label="Different from Wikipedia">Conversation-first, subjective, reputation/community siloed by subreddit, not neutral reference.</td>
-              <td data-label="What the difference teaches">UGC can produce knowledge, but governance target determines whether output is reference or discussion.</td>
-            </tr>
-            <tr>
-              <td data-label="Peer">Stack Overflow</td>
-              <td data-label="Same as Wikipedia">Community-authored knowledge with voting, revisions, and strong search presence.</td>
-              <td data-label="Different from Wikipedia">Q&amp;A format, developer niche, stronger answer ownership and acceptance mechanics.</td>
-              <td data-label="What the difference teaches">Wikipedia's article format scales to general knowledge; Q&amp;A scales to problem solving.</td>
-            </tr>
-            <tr>
-              <td data-label="Peer">LLM answer engines</td>
-              <td data-label="Same as Wikipedia">Fast factual orientation and synthesis.</td>
-              <td data-label="Different from Wikipedia">Generated answers obscure provenance and can hallucinate; governance and correction are indirect.</td>
-              <td data-label="What the difference teaches">LLMs threaten traffic but also reveal why Wikipedia's public edit trail and citations matter.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Technical Signals</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> <strong>DNS / hosting / CDN:</strong> hosted by Wikimedia Foundation infrastructure, not a third-party consumer CDN in the usual publisher sense; Wikimedia operates caching, traffic, and data-center layers publicly documented on Wikitech.</li>
-        <li><span class="evidence verified">verified</span> <strong>Frontend / framework clues:</strong> MediaWiki powers the sites; Vector is the default modern desktop skin for many users; mobile uses MinervaNeue; pages are server-rendered HTML with progressive JavaScript features.</li>
-        <li><span class="evidence verified">verified</span> <strong>Security / headers:</strong> Wikimedia uses HTTPS and HSTS; public policies and technical docs emphasize privacy, anti-abuse, and rate limits for API users.</li>
-        <li><span class="evidence verified">verified</span> <strong>APIs and data:</strong> MediaWiki Action API, REST API, Wikimedia Analytics API, dumps, recent changes streams, EventStreams, Wikidata Query Service, Wikimedia Commons file APIs, Commons structured data, and Wikimedia Enterprise API.</li>
-        <li><span class="evidence verified">verified</span> <strong>Performance / delivery:</strong> static-ish article pages, aggressive caching, compressed HTML, image/media scaling via Commons, language/project-specific cache behavior.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Notable integrations:</strong> search engines, browser previews, mobile apps, educational tools, LLM datasets, knowledge graphs, citation tools, and SEO panels all rely on Wikimedia APIs/dumps/scrapes to varying degrees.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Search and Retrieval Perspective</h2>
-      <p class="muted">Assume the task is to build a full-modal Wikimedia index: article text, citations, tables, infoboxes, images, audio, video, documents/scans, captions, EXIF/geodata, Wikidata entities, Commons statements, revisions, and demand signals. The key question is not just "can we search Wikipedia?", but which objects can be indexed, joined, licensed, refreshed, and trusted.</p>
-
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Wikimedia differs from the <a href="../../methodology.html">default platform assumptions</a> — which is almost everywhere.</p>
       <div class="subgrid">
         <div>
-          <h4>Identifier &amp; canonical URL</h4>
-          <p>Useful IDs include page title, namespace, pageid, revision id, Wikidata QID, language code, and normalized redirects. Canonicalization must handle spaces vs underscores, capitalization, redirects, disambiguation pages, mobile hosts, and interlanguage links. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Crawl &amp; access policy</h4>
-          <p>Wikipedia is broadly crawlable, but responsible use means respecting robots.txt, API etiquette, user-agent identification, rate limits, and dumps for bulk access. Paid Enterprise APIs exist for high-volume reliable commercial access. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Official APIs &amp; feeds</h4>
-          <p>MediaWiki Action API for page metadata, revisions, and image/file info; REST API for page content endpoints; Analytics API for pageviews; EventStreams for recent changes; dumps for full corpus; Commons file pages and structured data; Wikidata Query Service for graph queries; Enterprise APIs for structured/high-volume use. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Multimodal retrieval unit</h4>
-          <p>For media search, the useful unit is the Commons file page plus its original file, thumbnails, MIME type, captions, description, categories, license, EXIF where present, structured statements, and linked Wikidata QIDs. Article images should be joined back to article sections and captions, not treated as generic illustrations. <span class="evidence inferred">inferred</span></p>
-        </div>
-        <div>
-          <h4>Full-modal object inventory</h4>
-          <p>Known indexable quantities: 65M+ Wikipedia articles, ~142.5M Commons files, ~987 TiB of Commons original-file data, 94.1M Wikipedia edits in 2025, and nearly 250K monthly editors. Directionally, Commons is image-heavy: SVG/PNG/JPEG are reported as 94.5% of files; exact current audio/video/document/entity counts should be measured by MIME and project namespace before building a production index. <span class="evidence verified">verified</span> / <span class="evidence open">open</span></p>
-        </div>
-        <div>
-          <h4>Cross-modal joins</h4>
-          <p>Stable joins are article pageid/revision id, Commons file title/pageid/revision, Wikidata QID, sitelinks, image/file usage links, category membership, <code>depicts</code> statements, captions, and license templates. The correct index graph is entity-first: QID connects article text, file metadata, captions, coordinates, external identifiers, and cross-language pages. <span class="evidence inferred">inferred</span></p>
-        </div>
-        <div>
-          <h4>Metadata coverage</h4>
-          <p>Must be measured before full indexing: percentage of files with machine-readable license/author, structured <code>depicts</code>, multilingual captions, EXIF/geodata, article usage, quality assessment, and creator/source statements. Commons documentation explicitly notes that some legacy file metadata is not fully machine-readable, so coverage cannot be assumed from file count alone. <span class="evidence verified">verified</span> / <span class="evidence open">open</span></p>
-        </div>
-        <div>
-          <h4>Indexing path</h4>
-          <p>For scale, use dumps and official APIs rather than broad crawling: XML/page dumps for text, Commons dumps/file APIs for media metadata, <code>imageinfo</code> for file URLs and dimensions, Wikidata dumps/query service for entity joins, Analytics API for demand signals, EventStreams/recent changes for freshness, and Enterprise API when reliability/commercial support is required. <span class="evidence verified">verified</span></p>
+          <h4>Identifier &amp; dedup</h4>
+          <p><code>pageid</code> survives renames; <code>revid</code> is immutable and citable (<code>?oldid=</code> URLs are permanent links). Titles need normalization (underscores/spaces, first-letter case, redirects). The QID is the cross-language key: 300+ editions of one topic share one Wikidata item, so dedup is a solved join, not a similarity problem.</p>
         </div>
         <div>
           <h4>Retrieval unit</h4>
-          <p>The article is the canonical unit, but the useful retrieval unit is often a section, paragraph, table row, infobox field, or citation span tied to a specific revision. For time-sensitive facts, revision id is mandatory. <span class="evidence inferred">inferred</span></p>
+          <p>Section or infobox field pinned to a specific <code>revid</code> — the article is too long and the lead too lossy. Pinning to revid makes every extracted claim reproducible and diffable, a property almost no other UGC site offers.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Entity-first: article JSON-LD <code>mainEntity</code>, REST summary <code>wikibase_item</code>, Wikidata sitelinks, and Commons <code>depicts</code> (P180) statements all meet at the QID (observed in the Probe Log). Text↔image↔entity alignment with public provenance is the corpus's unique export.</p>
         </div>
         <div>
           <h4>Authoritative content field</h4>
-          <p>The lead gives orientation but can oversimplify; infoboxes are compact but sometimes disputed; body sections carry context; citations are the authority trail. For factual systems, cite the external source when possible and use Wikipedia as the map. <span class="evidence inferred">inferred</span></p>
+          <p>No SEO distortion — notability gates entry and external links are nofollow. The real hierarchy: infobox values are Wikidata-or-locally sourced and compact; the lead oversimplifies; the body carries nuance; the citations are the actual authority. For contested claims, Wikipedia is the map to sources, not the source.</p>
         </div>
         <div>
-          <h4>Freshness &amp; decay</h4>
-          <p>Mutability is mixed. Breaking-news pages change minute by minute; stable history/science pages change slowly; biographies and political pages can be protected or heavily contested. Recrawl cadence should be topic- and page-velocity-aware. <span class="evidence verified">verified</span></p>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Recrawl is the wrong model. EventStreams pushes every edit with no auth (probe: ~27/s all-wiki); dumps re-baseline twice monthly. Page mutability is extremely skewed: breaking-news pages change by the minute, the long tail sits untouched for years — the stream tells you which is which for free.</p>
         </div>
         <div>
-          <h4>Quality signals &amp; spam patterns</h4>
-          <p>Signals include article assessment classes, protection level, citation templates, maintenance tags, edit wars, page age, number of watchers where available, talk-page disputes, reliable-source policies, and biographies-of-living-persons constraints. Spam includes PR edits, paid editing, coordinated advocacy, citation laundering, and AI-generated low-quality additions. <span class="evidence inferred">inferred</span></p>
+          <h4>Quality &amp; spam</h4>
+          <p>Manipulation is reputational, not commercial spam: paid editing, POV pushing, citation laundering, AI-generated stubs. Machine-readable trust signals exist — protection level, assessment class, maintenance templates, edit-war velocity — and should be indexed as ranking features.</p>
         </div>
         <div>
-          <h4>Licensing &amp; reuse</h4>
-          <p>Text is generally CC BY-SA 4.0 under Wikimedia Terms, with attribution and share-alike obligations; media files have file-specific licenses, and Commons help pages warn that some legacy file metadata is not fully machine-readable. Always resolve the file page license and author before reuse. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Personalization &amp; non-determinism</h4>
-          <p>Reader article content is mostly non-personalized compared with feed platforms. Differences come from language, skin, mobile/desktop, logged-in gadgets/preferences, geoblocking/legal removals, page protection, and ongoing edits. <span class="evidence inferred">inferred</span></p>
-        </div>
-        <div>
-          <h4>Region / language splits</h4>
-          <p>Language editions are not translations of one master article. They have different sources, policies, cultural emphasis, article quality, and political constraints. Cross-language retrieval must compare editions rather than assume equivalence. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Internal search vs external</h4>
-          <p>Internal search is good for exact titles and redirects, but users often rely on external search for broad topical recall. On-wiki search has CirrusSearch/Elasticsearch behavior; external search has stronger web context and query rewriting. <span class="evidence inferred">inferred</span></p>
-        </div>
-        <div>
-          <h4>Knowledge graph position</h4>
-          <p>Wikipedia is both hub and source. It links out heavily through citations and references, while Wikidata and search engines transform it into entity graphs. It is one of the web's strongest bridges between prose and structured identity. <span class="evidence verified">verified</span></p>
-        </div>
-        <div>
-          <h4>Ranking surface</h4>
-          <p>To surface inside Wikipedia, the gate is not SEO but notability, reliable sourcing, neutrality, and community acceptance. To surface through Wikipedia in Google, entities need a durable, source-backed article or Wikidata footprint. <span class="evidence inferred">inferred</span></p>
+          <h4>Internal vs external search</h4>
+          <p>On-wiki CirrusSearch is title/redirect-strong but topical-recall-weak; users route broad queries through external engines, which then land on Wikipedia anyway. An index of Wikipedia is partly an index <em>for</em> every other search product.</p>
         </div>
         <div>
           <h4>User query profile</h4>
-          <p>Typical queries are entity and concept lookups: people, places, films, diseases, events, technologies, organizations, dates, and "what is X" questions. Wikipedia is weaker for live prices, personal advice, local availability, and primary-source-only answers. <span class="evidence inferred">inferred</span></p>
+          <p>Entity and concept lookups: people, places, events, "what is X". Useless for transactional, local, or live-price intents — Wikipedia content should win orientation queries and yield everything else.</p>
         </div>
-      </div>
-
-      <div class="callout">
-        <strong>Bottom-line implication for a full-modal index builder:</strong> use Wikipedia for entity grounding, disambiguation, section-level overview, citation discovery, and Commons-linked media grounding. Store revision IDs, file revisions, license state, and QID joins. Prefer dumps or official APIs for scale. Never treat a lead paragraph, image caption, or generated media label as the final source for a contested or high-stakes claim.
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Risks and Future</h2>
+      <h2>Indexing Plan</h2>
       <ul>
-        <li><strong>Competitive:</strong> AI answer engines and search summaries can satisfy quick lookups without sending users to Wikipedia; social/video platforms capture younger discovery habits.</li>
-        <li><strong>Volunteer health:</strong> active-editor decline, admin bottlenecks, difficult onboarding, harassment, and policy complexity can weaken maintenance capacity.</li>
-        <li><strong>Regulatory:</strong> content takedown laws, privacy laws, disinformation rules, child-safety regimes, and country-level blocking can pressure a global neutral-reference product.</li>
-        <li><strong>Platform dependency:</strong> search engines send traffic, extract snippets, and power knowledge panels. Wikimedia's 2026-2027 planning explicitly treats search-referral decline as structural.</li>
-        <li><strong>Abuse / safety:</strong> vandalism, coordinated political editing, paid editing, source manipulation, biographies of living persons, medical misinformation, and AI-generated low-quality edits.</li>
-        <li><strong>Business model:</strong> donation banners work because readers visit the site and feel reciprocity. If more consumption moves off-platform, the donor funnel weakens while commercial reliance on the corpus grows.</li>
-        <li><strong>Technology shift:</strong> AI can help patrollers, translators, image describers, and metadata maintainers, but it also makes low-quality article creation, synthetic images, caption spam, and citation laundering cheaper. For full-modal indexing, synthetic or poorly described media is a corpus-quality risk, not just a moderation problem. Community acceptance is a binding constraint, as shown by backlash to AI-summary experiments.</li>
+        <li><strong>Retrieval unit:</strong> article section pinned to (wiki, pageid, revid); infobox fields and Wikidata statements as structured sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> (wiki, pageid) for pages, revid for versions, QID for everything cross-language and cross-modal; redirect table doubles as a query-expansion alias list.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) XML/JSON dumps — free, complete, 25.3GB bz2 for enwiki text (Probe Log). 2) EventStreams — free, no auth, live deltas. 3) REST/Action APIs — free on-demand hydration under the UA policy. 4) Wikimedia Enterprise — only if daily snapshots and an SLA are worth paying for; the free tier (50K req/mo) covers evaluation.</li>
+        <li><strong>Recrawl cadence:</strong> none — event-driven updates from the stream; full dump re-baseline monthly to catch deletions and suppressed revisions.</li>
+        <li><strong>Derivatives to generate:</strong> section embeddings, infobox→typed-record extraction, image-caption-entity triples from Commons + <code>depicts</code>, per-page trust features (protection, assessment, churn rate).</li>
+        <li><strong>Demo to build:</strong> an EventStreams-driven incremental indexer — subscribe to <code>recentchange</code>, hydrate changed pages via REST summary, and display index staleness in seconds, versus the days a crawler would take.</li>
       </ul>
     </section>
 
     <section class="section-card">
-      <h2>Lessons</h2>
+      <h2>Risks to the Index</h2>
       <ul>
-        <li><strong>Product:</strong> a boring interface can win if the underlying job is urgent, universal, and trusted. Wikipedia optimizes for answerability and source trails, not delight.</li>
-        <li><strong>Growth / distribution:</strong> open licensing and search friendliness made Wikipedia a default layer of the web. Distribution came from usefulness plus reuse, not paid acquisition.</li>
-        <li><strong>Business:</strong> nonprofit infrastructure can scale when it converts public trust into donations, but off-platform extraction threatens that loop.</li>
-        <li><strong>Technical:</strong> version history, APIs, dumps, and stable identifiers are not back-office details; they are the reason the corpus can be reused, audited, and repaired.</li>
-        <li><strong>Governance:</strong> Wikipedia's moat is policy encoded in people and workflows. Software helps, but norms decide quality.</li>
-        <li><strong>For a full-modal index builder:</strong> retrieve at section or citation-span level for text; retrieve Commons media as file-page bundles with license, QID, caption, description, structured statements, original file, derivatives, MIME type, and usage links; keep revision IDs; compare language editions when relevant; follow citations to primary sources for serious claims.</li>
+        <li><strong>Openness is policy, not contract:</strong> WMF says bots are ≥65% of its most expensive traffic and multimedia bandwidth grew 50% on AI scraping (<a href="https://diff.wikimedia.org/2025/04/01/how-crawlers-impact-the-operations-of-the-wikimedia-projects/">Apr 2025 statement</a>). Rate limits, UA enforcement, and pressure toward Enterprise can tighten without notice — the free paths have no SLA.</li>
+        <li><strong>The donor funnel is the existential dependency:</strong> 91% of FY2024-25 revenue is donations (Verified Metrics), raised mostly from on-wiki banners. AI answer surfaces that consume the corpus without sending readers erode the thing that pays for the dumps an index relies on.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Paid structured access is becoming the sanctioned bulk path for AI use.</strong> <em>Basis:</em> Enterprise revenue +148% to $8.3M with AI customers (Pleias, Nomic AI) named in the FY2024-25 Enterprise report, while the same fiscal year's crawler statement asks scrapers for "responsible reuse".</li>
+        <li><strong>License compliance is per-object for media:</strong> text is uniformly CC BY-SA but each Commons file carries its own license, and machine-readability of legacy license metadata varies — bulk media reuse needs file-page resolution, not corpus-level assumptions.</li>
+        <li><strong>Suppressed revisions and courtesy deletions</strong> (BLP, copyright, oversight) must propagate to the index; a dump-only pipeline keeps text the wiki has legally removed.</li>
       </ul>
     </section>
 
@@ -488,43 +235,25 @@
       <h2>Source Notes</h2>
       <h3>Sources</h3>
       <ul>
-        <li><span class="evidence verified">verified</span> <em>official secondary</em>: Wikimedia Foundation, <a href="https://wikimediafoundation.org/news/2026/01/15/wikipedia-celebrates-25years/">Wikipedia celebrates 25 years of knowledge at its best</a>, Jan 15 2026.</li>
-        <li><span class="evidence verified">verified</span> <em>official secondary</em>: Wikimedia Foundation, <a href="https://wikimediafoundation.org/wikipedia-year-in-review-2025/">Wikipedia Year in Review 2025</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official metrics</em>: <a href="https://stats.wikimedia.org/">Wikistats</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official metrics</em>: Wikimedia Movement Metrics, <a href="https://analytics.wikimedia.org/published/reports/movement-metrics/current_monthly_report.html">current monthly report</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official planning</em>: Wikimedia Foundation Annual Plan 2026-2027 draft, <a href="https://meta.wikimedia.org/wiki/Wikimedia_Foundation_Annual_Plan/2026-2027/en">Meta-Wiki</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official financial</em>: Wikimedia Foundation, <a href="https://meta.wikimedia.org/wiki/IRS_tax_related_information/2023_Wikimedia_Foundation_Form_990_Frequently_Asked_Questions">2023 Form 990 FAQ</a>, FY 2023-2024.</li>
-        <li><span class="evidence verified">verified</span> <em>official financial</em>: Wikimedia Foundation, <a href="https://wikimediafoundation.org/annualreports/2024-2025-annual-report/">Annual Report 2024-2025</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official technical</em>: MediaWiki, <a href="https://www.mediawiki.org/wiki/API:REST_API/en">REST API documentation</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official technical</em>: Wikimedia Analytics API, <a href="https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html">Page view analytics</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official technical</em>: Wikimedia Enterprise, <a href="https://enterprise.wikimedia.com/">Enterprise API</a> and <a href="https://enterprise.wikimedia.com/pricing/">pricing</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official metrics</em>: Wikimedia Commons, <a href="https://commons.wikimedia.org/wiki/Data:Files_and_data_on_Wikimedia_Commons_per_year.tab">Files and data on Wikimedia Commons per year</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official technical</em>: Wikimedia Commons, <a href="https://commons.wikimedia.org/wiki/Commons:Statements/en">Structured Data on Commons: Statements</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official technical</em>: Wikimedia Commons, <a href="https://commons.wikimedia.org/wiki/Commons:Structured_data/Modeling/Depiction">Structured Data on Commons: Depiction modeling</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official technical</em>: Wikimedia Commons, <a href="https://commons.wikimedia.org/wiki/Help:Machine-readable_data">Machine-readable data help</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence inferred">inferred</span> <em>domain secondary</em>: Biodiversity Heritage Library, <a href="https://bhl.pubpub.org/wikimedia-commons">Wikimedia Commons workflow guide</a>, accessed 2026-06-04 — used for the directional 94.5% SVG/PNG/JPEG modality mix.</li>
-        <li><span class="evidence verified">verified</span> <em>official policy</em>: Wikimedia Foundation, <a href="https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use">Terms of Use</a>, accessed 2026-06-04.</li>
-        <li><span class="evidence verified">verified</span> <em>official secondary</em>: Wikimedia Foundation, <a href="https://wikimediafoundation.org/news/2025/04/30/our-new-ai-strategy-puts-wikipedias-humans-first/">Our new AI strategy puts Wikipedia's humans first</a>, Apr 30 2025.</li>
-        <li><span class="evidence verified">verified</span> <em>reputable secondary</em>: Encyclopaedia Britannica, <a href="https://www.britannica.com/topic/Wikipedia">Wikipedia history overview</a>, accessed 2026-06-04.</li>
+        <li><a href="https://wikimediafoundation.org/news/2026/01/15/wikipedia-celebrates-25years/">WMF: Wikipedia celebrates 25 years</a> (Jan 15 2026) — articles, languages, editors, devices, views.</li>
+        <li><a href="https://diff.wikimedia.org/2025/11/24/highlights-from-the-wikimedia-foundations-fiscal-year-2024-2025-audit-report/">Diff: FY2024-25 audit highlights</a> — revenue, expenses, net assets.</li>
+        <li><a href="https://diff.wikimedia.org/2025/11/24/wikimedia-enterprise-financial-report-fiscal-year-2024-2025/">Diff: Wikimedia Enterprise FY2024-25 financial report</a> — Enterprise revenue, customers.</li>
+        <li><a href="https://enterprise.wikimedia.com/pricing/">Wikimedia Enterprise pricing</a> (accessed 2026-06-10) — free/paid tier limits.</li>
+        <li><a href="https://diff.wikimedia.org/2025/04/01/how-crawlers-impact-the-operations-of-the-wikimedia-projects/">Diff: How crawlers impact Wikimedia operations</a> (Apr 1 2025) — bot traffic share, bandwidth growth.</li>
+        <li>Local probes on 2026-06-10: <code>dig</code>, headers, robots.txt, sitemap endpoints, Action API siteinfo (enwiki/Commons/Wikidata), REST summary, article JSON-LD, dump HEAD, EventStreams sample, Analytics API (full results in the Probe Log).</li>
       </ul>
       <h3>Inferences</h3>
       <ul>
-        <li>Traffic-channel ordering is inferred from Wikimedia's search-referral commentary, public analytics, and observed product behavior; exact channel mix is not publicly standardized like an analytics dashboard.</li>
-        <li>Enterprise API strategic importance is inferred from Wikimedia's product positioning and the rise of AI/search reuse; exact revenue contribution was not found as a separate public line item.</li>
-        <li>Moat fragility analysis combines verified public facts with strategic interpretation.</li>
-        <li>Retrieval recommendations synthesize official APIs, dumps, Commons structured data, licensing, and common information-retrieval practice.</li>
-        <li>Multimodal retrieval claims infer system design implications from Commons file statistics, structured statements, licensing documentation, and observed Wikimedia article-media-Wikidata links.</li>
-        <li>Commons cumulative file count, total bytes, average file size, and 2026 daily upload velocity are Site Wise calculations from the official Commons yearly data table, not separately published headline numbers.</li>
+        <li>Wikipedia is the cheapest large corpus to keep fresh. <em>Basis:</em> no-auth EventStreams (~27 events/s observed 2026-06-10) plus free twice-monthly dumps replace a recrawl budget with a subscription.</li>
+        <li>Paid structured access is becoming the sanctioned bulk path for AI use. <em>Basis:</em> Enterprise revenue +148% with named AI customers, alongside WMF's public complaint about scraper load.</li>
       </ul>
       <h3>Open Questions</h3>
       <ul>
-        <li>What exact share of Wikimedia's 2025-2026 revenue comes from Wikimedia Enterprise, and how fast is it growing?</li>
-        <li>How much on-wiki donor conversion has been affected by AI/search answer surfaces since 2024?</li>
-        <li>Which language editions are most exposed to active-editor and administrator decline?</li>
-        <li>How should Site Wise normalize Wikipedia traffic when all-project metrics, bot filtering, and off-platform reuse make direct comparisons misleading?</li>
-        <li>What is the latest file-type mix on Commons by images, SVGs, audio, video, PDFs/scans, maps, and other formats?</li>
-        <li>What percentage of Commons files have usable structured <code>depicts</code> statements, QID links, machine-readable licenses, and high-quality multilingual captions?</li>
-        <li>Should Wikidata receive a separate Site Wise profile, or be treated as part of the Wikipedia/Wikimedia infrastructure layer? Recommend a separate profile later.</li>
+        <li>Commons modality split (image/video/audio/document counts by MIME) — closeable by querying <code>Special:MediaStatistics</code> on Commons or a SPARQL aggregation over Structured Data.</li>
+        <li>Share of Wikipedia consumption that happens off-platform (knowledge panels, voice, LLM answers) — no public measurement exists; would require WMF or platform-side data.</li>
+        <li>Whether the declared-but-403 REST sitemap (<code>/w/rest.php/site/v1/sitemap/0</code>, Probe Log) will go live — track the MediaWiki sitemap feature's deployment config.</li>
+        <li>Coverage of Commons structured data: what fraction of files carry <code>depicts</code> statements and machine-readable licenses — measurable from the Commons JSON entity dump.</li>
+        <li>Editor-renewal exposure by language edition — closeable via the Wikistats active-editors metric per wiki (<code>stats.wikimedia.org</code>).</li>
       </ul>
     </section>
   </main>
