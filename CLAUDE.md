@@ -17,7 +17,7 @@ These seven predate the probe-first template and should be regenerated **in plac
 
 - [x] `reports/2026-06-03/youtube.com.html`
 - [x] `reports/2026-06-04/wikipedia.org.html`
-- [ ] `reports/2026-06-05/facebook.com.html`
+- [x] `reports/2026-06-05/facebook.com.html`
 - [ ] `reports/2026-06-06/reddit.com.html`
 - [ ] `reports/2026-06-07/google.com.html`
 - [ ] `reports/2026-06-08/instagram.com.html`

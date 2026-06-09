@@ -16,286 +16,191 @@
     <header class="report-hero">
       <p class="eyebrow">Daily Site Profile</p>
       <h1>facebook.com</h1>
-      <p class="lede">Facebook is the web's largest identity-backed social graph still operating as a daily utility: a feed, groups, pages, marketplace, events, video, messaging-adjacent surface, and advertising inventory system whose most valuable corpus is not a public web archive but a permissioned, personalized, multimodal graph of people, relationships, interests, posts, reactions, groups, pages, listings, and local institutions.</p>
+      <p class="lede">Facebook is Meta's 3-billion-user social graph, now nearly sealed: default-deny robots.txt, login walls, app-review APIs, and a researcher-gated Content Library replacing CrowdTangle.</p>
       <div class="tag-row">
         <span class="tag">Social Network</span>
         <span class="tag">Meta</span>
         <span class="tag">Advertising</span>
-        <span class="tag">Identity Graph</span>
-        <span class="tag">Permissioned Index</span>
+        <span class="tag">Permissioned Graph</span>
       </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
     </header>
 
     <section class="section-card">
-      <h2>How To Read This Report</h2>
-      <p>Every claim is tagged:</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> Sourced to a primary or reliable secondary record.</li>
-        <li><span class="evidence inferred">inferred</span> Reasoned from public signals.</li>
-        <li><span class="evidence open">open</span> Unknown, contested, or worth deeper digging into further.</li>
-      </ul>
-      <p class="muted">Meta no longer reports Facebook-only DAU/MAU every quarter. This report separates the last official Facebook-only metrics from current Meta Family of Apps metrics.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Basic Profile</h2>
+      <h2>Context</h2>
+      <p>Facebook launched in February 2004, IPO'd in 2012, and since October 2021 has been one app inside Meta Platforms, which sells advertising against the combined Family of Apps. Meta stopped reporting Facebook-only users after FY2023; the last clean anchor is 3.07B MAU (Dec 2023). For an index builder, Facebook is the canonical closure case: a corpus that was once partially crawlable and API-readable has been walled off in stages — the 2018 post-Cambridge-Analytica API lockdown, the 2020 oEmbed token requirement, and the August 2024 CrowdTangle shutdown, replaced by a researcher-only Content Library. What remains public-by-design is a thin, Meta-curated SEO surface: sitemaps of public group posts, high-follower profiles, and events, served only to approved search crawlers (the same files return 403 to everyone else, Probe Log). <span class="evidence inferred">inferred</span> Meta actively tunes which public group posts to expose to search engines rather than exposing the public corpus wholesale. <em>Basis:</em> the 148 sitemap pointers observed in robots.txt carry experiment-style names like <code>groups_llm_bf_posts</code>, <code>groups_target_boosting_with_firehose_posts</code>, and <code>groups_query_boost_tpc_posts</code>, i.e. ranked/selected shards, not an exhaustive census.</p>
       <dl class="fact-list">
         <div><dt>Host</dt><dd><code>facebook.com</code></dd></div>
         <div><dt>Canonical URL</dt><dd><a href="https://www.facebook.com/">https://www.facebook.com/</a></dd></div>
-        <div><dt>Category</dt><dd>Social network, social graph, groups/community platform, pages/publisher platform, social video, marketplace, events, ads platform</dd></div>
-        <div><dt>Related hosts</dt><dd><code>m.facebook.com</code>, <code>mbasic.facebook.com</code>, <code>touch.facebook.com</code>, <code>business.facebook.com</code>, <code>developers.facebook.com</code>, <code>graph.facebook.com</code>, <code>fbcdn.net</code>, <code>facebook.net</code>, <code>messenger.com</code></dd></div>
-        <div><dt>Parent company / owner</dt><dd>Meta Platforms, Inc. (NASDAQ: META), formerly Facebook, Inc.</dd></div>
-        <div><dt>Country / region</dt><dd>United States; Meta is headquartered in Menlo Park, California, with Facebook used globally except where blocked or constrained by regulation</dd></div>
-        <div><dt>Founded / launched</dt><dd>Launched February 4, 2004 as TheFacebook for Harvard students; expanded beyond colleges and became broadly available over time</dd></div>
-        <div><dt>Founders</dt><dd>Mark Zuckerberg, Eduardo Saverin, Dustin Moskovitz, Andrew McCollum, and Chris Hughes are commonly cited as co-founders</dd></div>
-        <div><dt>Current scale</dt><dd>Last official Facebook-only disclosure: 3.07B MAUs and 2.11B DAUs as of / during December 2023. Current Meta family disclosure: 3.56B daily active people across Facebook, Instagram, Messenger, WhatsApp, and other Family products in March 2026.</dd></div>
-        <div><dt>Primary languages / markets</dt><dd>Global, mobile-first; Facebook-only user growth in 2023 was led by India, Bangladesh, and Nigeria, while monetization remains strongest in US/Canada and Europe</dd></div>
+        <div><dt>Category</dt><dd>Social network: feed, groups, pages, Marketplace, events, video</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>m.facebook.com</code>, <code>mbasic.facebook.com</code>, <code>web.facebook.com</code>, <code>graph.facebook.com</code>, <code>developers.facebook.com</code>; media on <code>fbcdn.net</code>; Messenger, Instagram, WhatsApp are separate corpora</dd></div>
+        <div><dt>Owner</dt><dd>Meta Platforms, Inc. (NASDAQ: META), formerly Facebook, Inc.; founded by Mark Zuckerberg and Harvard co-founders</dd></div>
+        <div><dt>Founded / launched</dt><dd>February 4, 2004 (TheFacebook, Harvard); public to anyone 13+ since September 2006</dd></div>
+        <div><dt>Business model</dt><dd>Advertising — substantially all of Meta's revenue is ads on its apps (<a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">FY2025 10-K</a>)</dd></div>
+        <div><dt>Scale anchor</dt><dd>3.07B Facebook MAU as of Dec 31 2023 — the last Facebook-only disclosure (<a href="https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm">FY2023 10-K</a>)</dd></div>
       </dl>
     </section>
 
     <section class="section-card">
-      <h2>Key Metrics</h2>
-      <p class="muted">Numbers carry an as-of date. Facebook-specific current content counts are mostly not public; those rows are marked open rather than guessed.</p>
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Meta reports Family-of-Apps metrics since 2024; Facebook-only gaps live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Facebook MAU (last reported)</dt>
+          <dd>3.07B, +3% YoY — as of Dec 31 2023; Meta dropped this metric afterward. <a href="https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm">FY2023 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Facebook DAU (last reported)</dt>
+          <dd>2.11B average, +6% YoY — for Dec 2023. <a href="https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm">Same 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Family daily active people</dt>
+          <dd>3.56B average for Mar 2026, +4% YoY — across Facebook, Instagram, Messenger, WhatsApp; not Facebook-only. <a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm">Q1 2026 10-Q</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Meta revenue, FY2025</dt>
+          <dd>$200.97B total, +22% YoY; Family of Apps $198.76B — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">FY2025 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Meta revenue, Q1 2026</dt>
+          <dd>$56.31B total; advertising $55.02B, +33% YoY; ad impressions +19%, average price per ad +12% — quarter ended Mar 31 2026. <a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm">Q1 2026 10-Q</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Graph API platform quota</dt>
+          <dd>App-level: 200 calls/hour × daily active users of the app; Pages with page tokens: 4,800 calls/24h × engaged users (BUC logic) — as of Jun 10 2026. <a href="https://developers.facebook.com/docs/graph-api/overview/rate-limiting/">Rate-limiting docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Meta Content Library coverage gates</dt>
+          <dd>Facebook posts enter the corpus from pages, groups, events, and profiles with 100+ followers or verification; export allowed only from pages with 15K+ followers; API caps at 100K results per query — as of Jun 10 2026. <a href="https://transparency.meta.com/researchtools/meta-content-library">MCL docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-10 (regeneration day; the report date in the header is the original publication slot). Plain curl unless a UA is noted.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Metric</th><th>Value</th><th>As of</th><th>Source / Tag</th><th>Notes</th></tr></thead>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
           <tbody>
-            <tr><td>Facebook monthly active users</td><td>3.07B MAUs</td><td>Dec 31 2023</td><td><span class="evidence verified">verified</span> Meta FY2023 10-K</td><td>Last clean Facebook-only MAU anchor found in official filings.</td></tr>
-            <tr><td>Facebook daily active users</td><td>2.11B DAUs</td><td>Dec 2023 average</td><td><span class="evidence verified">verified</span> Meta FY2023 10-K</td><td>DAU definition includes registered/logged-in Facebook users visiting Facebook or using Messenger while also registered on Facebook.</td></tr>
-            <tr><td>Meta Family daily active people</td><td>3.56B DAP</td><td>Mar 2026 average</td><td><span class="evidence verified">verified</span> Meta Q1 2026 10-Q</td><td>Across Facebook, Instagram, Messenger, WhatsApp, and other Family products; not Facebook-only.</td></tr>
-            <tr><td>Quarterly revenue</td><td>$56.31B total; $55.02B advertising; $55.91B Family of Apps</td><td>Q1 2026</td><td><span class="evidence verified">verified</span> Meta Q1 2026 10-Q</td><td>Advertising is the economic engine; FoA includes Facebook, Instagram, Messenger, WhatsApp, and other services.</td></tr>
-            <tr><td>Annual revenue</td><td>$200.97B total</td><td>FY2025</td><td><span class="evidence verified">verified</span> Meta FY2025 10-K / earnings release</td><td>Meta-wide, not Facebook-only.</td></tr>
-            <tr><td>Revenue mix</td><td>Substantially all revenue from advertising on Facebook and Instagram</td><td>FY2025</td><td><span class="evidence verified">verified</span> Meta FY2025 10-K</td><td>Other FoA revenue includes paid messaging and Meta Verified; Reality Labs is separate.</td></tr>
-            <tr><td>Top revenue regions</td><td>Q1 2026 revenue: US/Canada $21.27B, APAC $15.45B, Europe $13.24B, Rest of World $6.36B</td><td>Q1 2026</td><td><span class="evidence verified">verified</span> Meta Q1 2026 10-Q</td><td>Revenue by customer address, not user location.</td></tr>
-            <tr><td>Ad growth signals</td><td>Ad impressions +19% YoY; average price per ad +12% YoY</td><td>Q1 2026</td><td><span class="evidence verified">verified</span> Meta Q1 2026 10-Q</td><td>Meta attributes price growth largely to ad performance improvements and demand.</td></tr>
-            <tr><td>Content / inventory size</td><td>Open</td><td>2026</td><td><span class="evidence open">open</span></td><td>Meta does not publish a current count of Facebook posts, photos, comments, group posts, pages, marketplace listings, events, videos, or stories.</td></tr>
-            <tr><td>Indexable object count</td><td>Open at global scale; object classes include profiles, pages, groups, posts, comments, reactions, photos, videos, Reels, events, listings, places, messages-adjacent entities, and ads</td><td>2026</td><td><span class="evidence inferred">inferred</span></td><td>Public indexing is a small subset; permissioned API access is object/permission scoped.</td></tr>
-            <tr><td>Modality mix</td><td>Text + image + video + link previews + reactions + graph edges + marketplace structured records</td><td>2026</td><td><span class="evidence inferred">inferred</span></td><td>The feed is multimodal, but most retrieval value is in joins between content and social context.</td></tr>
-            <tr><td>Data volume</td><td>Open</td><td>2026</td><td><span class="evidence open">open</span></td><td>Bytes for originals, transcodes, thumbnails, logs, ads events, embeddings, and cold storage are not disclosed.</td></tr>
-            <tr><td>Freshness / update rate</td><td>Open for content creation; ad impressions and DAP indicate daily-scale activity</td><td>2026</td><td><span class="evidence open">open</span></td><td>A standard measure would need first-party post/comment/listing creation counts by privacy state.</td></tr>
-            <tr><td>Structured metadata coverage</td><td>Strong internally; limited externally</td><td>2026</td><td><span class="evidence inferred">inferred</span></td><td>Internal objects have stable IDs, privacy state, timestamps, actor IDs, media IDs, edges, reactions, and ranking features; public web exposes only a subset.</td></tr>
-            <tr><td>Licensing / reuse coverage</td><td>Restricted; automated collection prohibited without permission; API and embed-style use are terms-bound</td><td>2026</td><td><span class="evidence verified">verified</span> Facebook robots.txt and automated data collection terms</td><td>Not a legitimate bulk public corpus.</td></tr>
-            <tr><td>Growth direction</td><td>Meta family DAP +4% YoY in March 2026; Q1 ad revenue +33% YoY</td><td>Q1 2026</td><td><span class="evidence verified">verified</span> Meta Q1 2026 10-Q</td><td>Facebook-only growth direction is not separately disclosed in current filings.</td></tr>
+            <tr><td>2026-06-10</td><td><code>dig +short facebook.com</code> + reverse</td><td>A record 57.144.150.1 (Meta IP space); <code>www</code> is CNAME <code>star-mini.c10r.facebook.com</code>; reverse lookup gives <code>edge-star-mini-shv-02-sin11.facebook.com</code>. Self-operated edge, no third-party CDN.</td></tr>
+            <tr><td>2026-06-10</td><td><code>curl -sI https://www.facebook.com/</code></td><td>HTTP/2 200 (login page). HSTS preload, <code>x-frame-options: DENY</code>, large CSP scoped to Meta domains (<code>fbcdn.net</code>, <code>fbsbx.com</code>, <code>whatsapp.com</code>), client-hints request, <code>x-fb-connection-quality</code> telemetry, <code>alt-svc: h3</code>.</td></tr>
+            <tr><td>2026-06-10</td><td><code>curl -s https://www.facebook.com/robots.txt</code></td><td>982 lines. Header: automated collection prohibited without express written permission. Default <code>User-agent: * → Disallow: /</code>. 34 named agents: ~19 search/preview crawlers (Googlebot, Bingbot, Applebot, DuckDuckBot, Twitterbot, facebookexternalhit…) get scoped Allow lists; GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, PerplexityBot, Amazonbot, Scrapy and others get <code>Disallow: /</code>. Googlebot's list disallows <code>/meta-ai-answers/</code>. 148 Sitemap pointers.</td></tr>
+            <tr><td>2026-06-10</td><td>Sitemap census attempt</td><td><code>sitemap/public_active_groups_sitemap.xml.gz</code> returns HTTP 403 (0 bytes) with no UA and with a Chrome UA. The 148 sitemaps are listed publicly but served only to approved crawlers; no URL count is measurable from outside.</td></tr>
+            <tr><td>2026-06-10</td><td>Logged-out public page, Chrome UA</td><td><code>www.facebook.com/CocaCola/</code> → HTTP 400, 1.5KB "Error" page, no OG/JSON-LD. <code>mbasic.facebook.com/CocaCola</code> → 302 to <code>/login/</code>. No anonymous content for non-browser clients.</td></tr>
+            <tr><td>2026-06-10</td><td><code>curl -s graph.facebook.com/v23.0/cocacola</code></td><td>OAuthException code 200, "Provide valid app ID". The oEmbed endpoint (<code>/v23.0/oembed_page?url=…</code>) returns the identical error — no tokenless read at all, including embeds.</td></tr>
+            <tr><td>2026-06-10</td><td><code>/llms.txt</code>, legacy RSS</td><td><code>llms.txt</code> soft-200s with the 300KB login-page HTML (catch-all route, not a file). <code>/feeds/page.php?id=…&amp;format=rss20</code> → 404; the old RSS surface is gone.</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Why This Site Matters</h2>
-      <p>Facebook matters because it turned real-name identity, friendship edges, groups, pages, photos, events, and local/community behavior into an advertising substrate. It is less open than Wikipedia, less media-native than YouTube, and less culturally young than TikTok, but it remains one of the largest living maps of social relationships and everyday institutions.</p>
-      <p>The site is also important because it shows the difference between web indexing and platform indexing. A search engine can see selected public pages, public groups, profile shells, videos, and sitemaps. Meta's actual value is the permissioned graph behind that surface: who posted, who can see it, who reacted, which group norms apply, which ad audience it matches, and how ranking changes per viewer.</p>
-      <div class="callout">
-        <strong>Why this site matters for retrieval:</strong> Facebook is a warning case for full-modal indexing. The useful document is rarely just a post. It is a post plus actor, audience, privacy state, group/page context, media, comments, reactions, shares, moderation labels, ranking history, and deletion/edit state.
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Timeline</h2>
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, cost, display rights, churn. MCL = <a href="https://transparency.meta.com/researchtools/meta-content-library">Meta Content Library</a> (researcher-gated); PPCA = <a href="https://developers.facebook.com/docs/features-reference/page-public-content-access">Page Public Content Access</a> (app review + business verification).</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Date</th><th>Event</th><th>Why It Matters</th></tr></thead>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
           <tbody>
-            <tr><td>Feb 4 2004</td><td>TheFacebook launches at Harvard.</td><td>Starts with constrained real-world identity and dense offline social graphs.</td></tr>
-            <tr><td>2005</td><td>The service drops "The" and uses <code>facebook.com</code>.</td><td>Brand and domain shift from campus directory to general social platform.</td></tr>
-            <tr><td>Sep 2006</td><td>News Feed launches; Facebook opens beyond students.</td><td>Feed ranking becomes the primary product surface and later the core advertising inventory.</td></tr>
-            <tr><td>2007</td><td>Facebook Platform and early social ads launch.</td><td>Turns the social graph into developer and advertiser infrastructure.</td></tr>
-            <tr><td>2008-2009</td><td>Chat, Like button, Pages, and Connect mature.</td><td>Creates lightweight interaction signals and an identity layer for the wider web.</td></tr>
-            <tr><td>2012</td><td>Facebook IPOs and acquires Instagram.</td><td>Public-company scale meets mobile-photo competition; Instagram later becomes central to Meta's growth.</td></tr>
-            <tr><td>2014</td><td>Facebook acquires WhatsApp and separates Messenger.</td><td>Meta's social graph expands into messaging and global communications.</td></tr>
-            <tr><td>2016</td><td>US election misinformation and Cambridge Analytica-era scrutiny intensify.</td><td>Trust, data access, and ranking harms become board-level risks.</td></tr>
-            <tr><td>2018</td><td>Cambridge Analytica scandal and API restrictions reshape platform access.</td><td>Open graph/data portability gives way to review, permissions, and privacy constraints.</td></tr>
-            <tr><td>2019</td><td>FTC settlement imposes a $5B penalty and privacy program requirements.</td><td>Privacy governance becomes a structural operating cost.</td></tr>
-            <tr><td>2020</td><td>Groups, Marketplace, live video, and election/COVID moderation become highly visible.</td><td>Facebook is no longer just friend feed; it is local commerce, community infrastructure, and information-risk surface.</td></tr>
-            <tr><td>Oct 2021</td><td>Facebook, Inc. changes corporate name to Meta Platforms, Inc.</td><td>The app keeps the Facebook name, while the company reframes around Family of Apps, VR/AR, and later AI.</td></tr>
-            <tr><td>2023</td><td>Meta reports 3.07B Facebook MAUs and 2.11B Facebook DAUs for December 2023.</td><td>Best recent official Facebook-only scale anchor.</td></tr>
-            <tr><td>2024-2025</td><td>Meta emphasizes AI ranking, Reels, business messaging, subscriptions, and platform integrity work.</td><td>Growth shifts from pure social graph expansion to AI-mediated feed and ad efficiency.</td></tr>
-            <tr><td>Mar 2026</td><td>Meta reports 3.56B daily active people across its Family of Apps.</td><td>Facebook is now best understood inside a cross-app identity, ads, and messaging ecosystem.</td></tr>
+            <tr>
+              <td>Text</td>
+              <td>Posts on pages, public groups, events, profiles. Global counts: open (never disclosed).</td>
+              <td>MCL for research; Pages API <code>/page/feed</code> with PPCA for page posts; consented page-owner tokens otherwise.</td>
+              <td>MCL: not-for-profit affiliation + application review. PPCA: app review + business verification; BUC quota (Verified Metrics).</td>
+              <td>MCL data stays in the controlled environment (export only from 15K+ follower pages); API data display is terms-bound, no retention for training.</td>
+              <td>Editable, deletable, privacy-switchable at any time.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Photos and albums on <code>fbcdn.net</code>; count open.</td>
+              <td>Attached media via the same Pages API / MCL objects; no standalone photo API.</td>
+              <td>As above; CDN URLs are signed and expire.</td>
+              <td>Render-in-place via official embed plugins only; no mirroring.</td>
+              <td>CDN URL rot makes cached references die quickly.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Page videos, Reels, live streams; count open.</td>
+              <td>oEmbed <code>oembed_video</code> for display; MCL metadata for research.</td>
+              <td>oEmbed Read feature: app review + app token (Probe Log: tokenless call rejected).</td>
+              <td>Embed markup only; no file access, no transcript surface.</td>
+              <td>Live → VOD transitions; takedowns frequent.</td>
+            </tr>
+            <tr>
+              <td>Comments / reactions</td>
+              <td>Comment threads and reaction tallies on every object; count open.</td>
+              <td><code>/page-post/comments</code> under PPCA (pages only); MCL includes engagement counts.</td>
+              <td>Same PPCA / MCL gates; public-group comments have no API path outside MCL.</td>
+              <td>Display alongside the parent object per platform terms.</td>
+              <td>Highest-churn objects on the site.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Pages (businesses, places), events, Marketplace listings, groups.</td>
+              <td>Pages Search API under PPCA; events and group directories appear in the search-engine sitemaps (403 to others, Probe Log).</td>
+              <td>PPCA gates; Marketplace has no public read API.</td>
+              <td>Page name/category/location displayable; listings effectively closed.</td>
+              <td>Listings expire in days; page metadata is stable.</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>User Intent and Core Scenarios</h2>
-      <ul>
-        <li><strong>Primary intents:</strong> keep up with friends/family, participate in groups, follow pages/creators/local institutions, buy/sell in Marketplace, discover events, watch social video, respond to birthdays/life events, manage community identity.</li>
-        <li><strong>Secondary / emerging intents:</strong> customer support through pages and messaging, local recommendations, public-interest alerts, creator monetization, short-form video, AI-assisted content/recommendations, identity login for third-party services.</li>
-        <li><strong>Repeat-use loop:</strong> notification or habit opens app/site → ranked feed and groups surface personalized updates → user reacts/comments/posts/shares → new edges and engagement signals improve ranking and ad targeting → notifications pull the user back.</li>
-        <li><strong>What it replaces / displaces:</strong> campus directories, address books, personal blogs, alumni networks, local forums, classifieds, event calendars, many small-business webpages, neighborhood groups, and portions of photo/video sharing.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Traffic and Distribution</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> Meta says substantially all daily active people access Family products on mobile devices, and Q1 2026 Family DAP averaged 3.56B.</li>
-        <li><span class="evidence verified">verified</span> Facebook's robots.txt blocks generic crawling and named AI crawlers such as GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, and PerplexityBot, while exposing selected sitemaps for public groups, profiles, videos, business/help pages, and other SEO surfaces.</li>
-        <li><span class="evidence inferred">inferred</span> Distribution is app/direct/notification-first, with search traffic mainly useful for public pages, groups, videos, profiles, and local/business entities.</li>
-        <li><span class="evidence inferred">inferred</span> Facebook is both a destination and an identity layer: many visits start from mobile push, email, browser autofill, Messenger-adjacent behavior, external embeds/share links, and cross-Meta surfaces.</li>
-        <li><span class="evidence open">open</span> A standard third-party traffic panel is still needed for web-only visit share, because Meta's filings report people across apps rather than <code>facebook.com</code> browser sessions.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Product Anatomy</h2>
-      <ul>
-        <li><strong>First screen:</strong> logged-out web shows sign-up/login; logged-in product is a personalized feed with navigation into friends, groups, video, Marketplace, pages, notifications, and account controls.</li>
-        <li><strong>Core journey:</strong> open from notification or habit → consume ranked feed/groups/video → interact with reactions/comments/shares/messages → post or list content → receive social feedback and future notifications.</li>
-        <li><strong>Discovery modes:</strong> feed ranking, group recommendations, search, hashtags, page follows, friend suggestions, Marketplace filters, events, video/Reels recommendations, notifications, and external search for public entities.</li>
-        <li><strong>Account / identity:</strong> registered identity is central; visibility is governed by privacy settings, friends/followers, groups, pages, blocks, age/location rules, and platform integrity enforcement.</li>
-        <li><strong>Supply side:</strong> users, groups, admins/moderators, page owners, creators, local businesses, advertisers, sellers, event organizers, publishers, and app developers using Meta APIs.</li>
-        <li><strong>Demand side:</strong> friends/family networks, group members, local buyers/sellers, fans/followers, advertisers, political/civic actors, customer-support seekers, and search engines for public surfaces.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Business Model</h2>
-      <ul>
-        <li><strong>Revenue streams:</strong> advertising across Facebook and Instagram is the dominant stream; other FoA revenue includes paid messaging and Meta Verified; Reality Labs hardware/software is separate.</li>
-        <li><strong>Pricing / unit economics:</strong> auction-priced ads sold against attention, targeting, conversion measurement, creative formats, and placement; Meta reports impressions and average price per ad as key drivers.</li>
-        <li><strong>Who pays whom:</strong> advertisers and businesses pay Meta for reach/performance; users generally pay with attention and data rather than subscription fees; creators and page owners may monetize indirectly through reach, shops, affiliate flows, or Meta programs.</li>
-        <li><strong>Strategic shape:</strong> Facebook supplies identity, graph, groups, public pages, and legacy reach; Instagram supplies younger visual/video engagement; WhatsApp/Messenger supply messaging; the ad system monetizes across the family.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Moat</h2>
-      <p class="muted">For each moat: type, claim, evidence, fragility.</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> <strong>Scale and monetization:</strong> 3.56B Family DAP and $55.02B Q1 2026 advertising revenue indicate enormous active inventory. Fragility: Facebook-only engagement can age or move to other Meta products while consolidated metrics remain strong.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Identity/social graph:</strong> real-world relationships, pages, groups, events, and local businesses are hard to copy because value comes from existing edges and history. Fragility: younger cohorts may build identity elsewhere, and privacy rules can reduce signal use.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Ads stack and measurement:</strong> advertiser tooling, conversion optimization, creative testing, and AI ranking compound with spend. Fragility: Apple/browser privacy changes, EU DMA/DSA/GDPR constraints, youth rules, and antitrust remedies can weaken targeting and measurement.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Group/local inventory:</strong> many communities, local sellers, hobby groups, and small businesses treat Facebook as default infrastructure. Fragility: moderation burden, spam, scams, and quality decay can push valuable communities to private chats, Discord, Reddit, WhatsApp, or niche tools.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Peers and Contrasts</h2>
-      <p class="muted">Facebook is best compared by graph shape, not only by traffic.</p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Peer</th><th>Same as facebook.com</th><th>Different from facebook.com</th><th>What the difference teaches</th></tr></thead>
-          <tbody>
-            <tr><td>Instagram</td><td>Meta ads stack, accounts, creators, Reels, social discovery.</td><td>More visual, creator/follower-oriented, mobile-native, and culturally younger; less anchored in groups, local classifieds, and old friend graphs.</td><td>Meta can shift attention between products while keeping consolidated monetization.</td></tr>
-            <tr><td>TikTok</td><td>Algorithmic feed, video attention, creator/advertiser competition.</td><td>TikTok's graph is interest-first and entertainment-first; Facebook's durable asset is identity, groups, pages, and real-world relationships.</td><td>Recommendation can beat social graph for entertainment, but not always for communities and local institutions.</td></tr>
-            <tr><td>Reddit</td><td>Groups/communities, discussion, moderation, public web discovery.</td><td>Reddit is more pseudonymous and public-indexable; Facebook is more identity-backed and permissioned.</td><td>Public corpus value and social utility can point in opposite directions.</td></tr>
-            <tr><td>Nextdoor / Craigslist</td><td>Local community, marketplace, services, neighborhood information.</td><td>Facebook has broader identity and social feed integration; specialized peers can have clearer local intent and lower personal-history baggage.</td><td>Facebook wins by bundling use cases, not by being the cleanest tool for each one.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Technical Signals</h2>
-      <ul>
-        <li><strong>DNS / hosting / CDN:</strong> observed homepage resources and CSP reference Meta-controlled domains such as <code>*.facebook.com</code>, <code>*.facebook.net</code>, <code>*.fbcdn.net</code>, <code>*.fbsbx.com</code>, plus Instagram/WhatsApp-related domains. On 2026-06-09, <code>m.facebook.com</code> resolved to <code>star-mini.c10r.facebook.com</code> and <code>57.144.186.1</code>. Delivery appears vertically integrated rather than outsourced to a generic CDN.</li>
-        <li><strong>Frontend / framework clues:</strong> logged-out web is heavily JavaScript-driven and served with Meta-specific bootloader/reporting endpoints; <code>m.facebook.com</code>, <code>mbasic.facebook.com</code>, and <code>touch.facebook.com</code> should be treated as mobile/basic views over the same Facebook object graph, not separate sites.</li>
-        <li><strong>Security / headers:</strong> homepage response on 2026-06-05 included HSTS with preload, <code>x-frame-options: DENY</code>, <code>x-content-type-options: nosniff</code>, a large CSP, reporting endpoints, and restrictive cache headers. A 2026-06-09 <code>m.facebook.com</code> response also included HSTS with preload/includeSubDomains, <code>X-Frame-Options: DENY</code>, <code>X-Content-Type-Options: nosniff</code>, <code>Origin-Agent-Cluster: ?1</code>, reporting endpoints, and cookies scoped to <code>.facebook.com</code>.</li>
-        <li><strong>Performance / delivery:</strong> <code>alt-svc: h3=":443"</code> indicates HTTP/3 availability; resource hints and client hints are used for viewport/device-aware delivery. The mobile response included connection-quality telemetry headers, consistent with adaptive delivery for varied mobile network conditions.</li>
-        <li><strong>Notable integrations:</strong> Graph API, Pages API, Login, sharing/plugins legacy surface, ads/business tools, Meta Pixel/Conversions API, Open Graph link previews, <code>facebookexternalhit</code> crawler, and <code>fbcdn.net</code> media delivery.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Search and Retrieval Perspective</h2>
-      <p class="muted">Assume the task is to build a full-modal index over this site: text, images, video, audio, documents, structured records, comments, metadata, and entities. For Facebook, the central constraint is authorization: the public web is a small, policy-constrained slice of a much larger permissioned graph.</p>
-
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Facebook differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
       <div class="subgrid">
         <div>
-          <h4>Identifier &amp; canonical URL</h4>
-          <p>Core IDs include user/profile ID, page ID, group ID, post/story/video/photo/comment IDs, event ID, listing ID, ad ID, and permalink. Vanity URLs, desktop URLs, <code>m.facebook.com</code>, <code>mbasic.facebook.com</code>, and <code>touch.facebook.com</code> URLs should dedupe to canonical object IDs when available.</p>
-        </div>
-        <div>
-          <h4>Crawl &amp; access policy</h4>
-          <p>Generic crawling is disallowed by <code>robots.txt</code>. Named crawlers receive narrower rules, and multiple AI crawlers are fully disallowed. Automated collection requires express permission and compliance with Meta terms.</p>
-        </div>
-        <div>
-          <h4>Official APIs &amp; feeds</h4>
-          <p>Legitimate access is through permission-scoped Meta APIs such as Graph API and Pages API, plus selected public sitemaps. Many useful fields require app review, user/page tokens, business permissions, or owner context.</p>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Numeric object IDs (page, group, post, event) are stable, but post permalinks now use opaque <code>pfbid</code> tokens and one object has many URL skins (<code>www</code>, <code>m</code>, <code>mbasic</code>, <code>web</code>, vanity names, <code>story.php</code> params). Canonicalize to the numeric ID whenever an API surface exposes it; URL-string dedup alone will overcount.</p>
         </div>
         <div>
           <h4>Retrieval unit</h4>
-          <p>A useful unit can be profile, page, group, post, comment thread, photo, video, reel, event, marketplace listing, or ad creative. For ranking, a "document" should include audience/privacy state and parent context.</p>
+          <p>The post alone is not the unit — meaning and visibility live in the wrapper: actor, page/group context, audience setting, and the comment thread. MCL models this correctly (posts carry their surface and follower-tier context); any index should too.</p>
         </div>
         <div>
-          <h4>Full-modal object inventory</h4>
-          <p>Open at global scale. The object classes are text posts, comments, photos, albums, videos, live videos, Reels, link previews, events, listings, pages, groups, profiles, reactions, shares, ads, and derived features.</p>
-        </div>
-        <div>
-          <h4>Cross-modal joins</h4>
-          <p>Join content by object ID and actor/page/group IDs; media joins by attachment/media ID; comment/reaction/share joins by parent object ID; entity joins by tagged people/pages/places/products and Open Graph URLs.</p>
-        </div>
-        <div>
-          <h4>Metadata coverage</h4>
-          <p>Internally high: timestamps, actor, audience, language, location signals, media dimensions, reactions, comments, shares, moderation labels, ad labels, and ranking features. Public coverage is sparse and inconsistent.</p>
-        </div>
-        <div>
-          <h4>Indexing path</h4>
-          <p>At scale, the correct path is official API, partner/business access, approved research access, or public sitemaps for allowed public surfaces. Browser scraping is not a legitimate bulk path.</p>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Deletion has three flavors here: actual deletion, privacy-state change, and group setting change — the last two silently de-publish content an index already holds. Re-verification matters more than recrawl-for-new on this site.</p>
         </div>
         <div>
           <h4>Authoritative content field</h4>
-          <p>For a post, body text and attached media are primary; link preview metadata is secondary and can disagree with the target URL. For video, title/caption, audio speech, frames, comments, and engagement each answer different queries.</p>
+          <p>Link-share posts carry Open Graph preview text scraped from the target at share time; it goes stale independently of both the post and the target page. Treat preview text as a cached third-party claim, not content.</p>
         </div>
         <div>
-          <h4>Freshness &amp; decay</h4>
-          <p>High mutability: posts can be edited, deleted, privacy-changed, moderated, or hidden; comments and reactions churn; Marketplace listings expire; events have time decay; group membership changes access.</p>
+          <h4>Internal vs external search</h4>
+          <p>The public slice Google can see is Meta-selected (the experiment-named sitemap shards in the Probe Log), so <code>site:facebook.com</code> coverage reflects Meta's SEO strategy, not the public corpus. Internal search is the only complete index, and it is personalized and logged-in only.</p>
         </div>
         <div>
-          <h4>Quality signals &amp; spam patterns</h4>
-          <p>Signals include verified/page authority, group admin/moderator status, friend distance, engagement, reports, account integrity, ad review, and policy labels. Spam incentives are strong in groups, Marketplace, pages, and comments.</p>
-        </div>
-        <div>
-          <h4>Licensing &amp; reuse</h4>
-          <p>Third-party search UI can usually show only what the API/terms and user permissions allow. Public snippets/thumbnails are not a blanket license to mirror, train on, or republish the corpus.</p>
-        </div>
-        <div>
-          <h4>Personalization &amp; non-determinism</h4>
-          <p>Extreme. Logged-out, logged-in, friend graph, group membership, location, language, history, age, device, and safety settings can all change retrieval results and visibility.</p>
-        </div>
-        <div>
-          <h4>Region / language splits</h4>
-          <p>Global product with region-specific legal restrictions, political rules, age rules, content takedowns, ad policies, and language ranking. Revenue and user growth geographies diverge materially.</p>
-        </div>
-        <div>
-          <h4>Internal search vs external</h4>
-          <p>Internal search is necessary for people, groups, posts, pages, Marketplace, and events. External search is useful mostly for public pages/groups/videos/profiles and help/business documentation.</p>
-        </div>
-        <div>
-          <h4>Outbound vs inbound posture</h4>
-          <p>Facebook is a sink for social context and a hub for outbound links, but link previews and in-app browsing keep much value inside the platform. Public embeds/shares are more constrained than the actual graph.</p>
-        </div>
-        <div>
-          <h4>Anti-manipulation / ranking surface</h4>
-          <p>Discovery can be manipulated through engagement bait, coordinated sharing, fake accounts, group spam, marketplace fraud, and ad arbitrage. Gates include account integrity, moderation, review, ranking demotion, and advertiser policies.</p>
+          <h4>Quality &amp; spam</h4>
+          <p>The objects most reachable from outside (public group posts, Marketplace-adjacent pages) skew toward the spammiest tier — engagement-bait groups, resharing rings, scam listings — while the highest-trust content (friend graph, private groups) is unreachable by design. External samples are adversely selected.</p>
         </div>
         <div>
           <h4>User query profile</h4>
-          <p>Typical queries are people, group names, local businesses, events, marketplace items, page posts, photos, and recent community discussions. It is poor for open-web factual search and strong for permissioned social/local retrieval.</p>
+          <p>People, local businesses, groups, events, second-hand goods. These resolve through the social graph (who you know, where you are) — exactly the join an external index cannot make, which caps the usefulness of any logged-out Facebook index regardless of coverage.</p>
         </div>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Risks and Future</h2>
+      <h2>Indexing Plan</h2>
       <ul>
-        <li><strong>Competitive:</strong> TikTok, YouTube, Instagram itself, messaging apps, Discord, Reddit, and niche communities all compete for attention and identity expression. Facebook's risk is not immediate disappearance; it is lower cultural centrality and lower-quality engagement.</li>
-        <li><strong>Regulatory:</strong> Privacy, youth safety, competition, political advertising, content moderation, data transfers, app-store rules, and AI/data-use rules directly affect targeting, measurement, ranking, and data access.</li>
-        <li><strong>Platform / supply:</strong> Valuable groups, creators, businesses, and young users can move elsewhere if reach feels unreliable, moderation feels unfair, or spam/scams overwhelm utility.</li>
-        <li><strong>Abuse / safety:</strong> Misinformation, fraud, harassment, scams, election manipulation, coordinated inauthentic behavior, and harmful content are intrinsic risks of a massive social graph.</li>
-        <li><strong>Technology shift (incl. AI):</strong> AI can improve ads, recommendations, moderation, translations, and content creation, but can also flood feeds/groups with low-quality synthetic content and raise new training/data-use scrutiny.</li>
+        <li><strong>Retrieval unit:</strong> page/group/event entity as the primary document; individual public posts only as attachments to an entity, with surface and audience context.</li>
+        <li><strong>Primary keys &amp; joins:</strong> numeric object ID; entity → posts → comments by parent ID; place pages join to maps/local corpora by name + address.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Pages API under PPCA — page metadata and posts, app review + business verification, 4,800 × engaged-users daily quota; the only commercial-grade path. 2) oEmbed (app token, post review) — display-only rendering of individual public posts/videos, no bulk reads. 3) Meta Content Library — the widest corpus (public groups included) but not-for-profit research only; unusable for a commercial index, useful for calibration studies. 4) Crawling — closed: default-deny robots.txt, login walls, and 403'd sitemaps (Probe Log).</li>
+        <li><strong>Recrawl cadence:</strong> page/place entities monthly; page posts via API webhooks where granted; re-verify held URLs quarterly for de-publication rather than crawling for new content.</li>
+        <li><strong>Derivatives to generate:</strong> entity resolution between Facebook pages and external business records (the durable value is the place/business directory, not the feed); language ID on public group posts if MCL-calibrated sampling is ever available.</li>
+        <li><strong>Demo to build:</strong> a robots.txt diff-tracker that snapshots Facebook's 148 sitemap pointers and named-agent rules daily — the experiment-style shard names visibly change, and the churn is a direct read on Meta's SEO-exposure strategy.</li>
       </ul>
     </section>
 
     <section class="section-card">
-      <h2>Lessons</h2>
+      <h2>Risks to the Index</h2>
       <ul>
-        <li><strong>Product:</strong> A social product's durable unit is not the post; it is the relationship plus context around the post.</li>
-        <li><strong>Growth / distribution:</strong> Real-world identity and notifications can beat open-web SEO for repeat use, but they make the corpus much less reusable by outsiders.</li>
-        <li><strong>Business:</strong> Ads become strongest when tied to identity, intent, social context, and conversion measurement; that same strength creates regulatory and platform-dependency risk.</li>
-        <li><strong>Technical:</strong> Facebook is a vertically integrated delivery and ranking system: IDs, privacy checks, media delivery, integrity classifiers, feed ranking, and ad auctions are inseparable.</li>
-        <li><strong>For a retrieval / agent builder:</strong> Treat Facebook as a permissioned graph, not a crawlable website. The right interface is scoped API/partner access with privacy-aware retrieval and explicit provenance.</li>
+        <li><strong>Access only narrows:</strong> 2018 API lockdown → 2020 oEmbed token gate → Aug 14 2024 CrowdTangle shutdown (<a href="https://transparency.meta.com/researchtools/other-datasets/crowdtangle">Meta</a>). Each step removed a working ingestion path with months of notice. Plan for PPCA or oEmbed to be next.</li>
+        <li><strong>The research path is regulator-dependent:</strong> Meta describes MCL as built to "meet new regulatory requirements for data-sharing" (<a href="https://transparency.meta.com/researchtools/other-datasets/crowdtangle">same page</a>) — i.e. DSA-driven. If the regulatory pressure changes, so may the tool.</li>
+        <li><strong>SEO surface is an experiment, not a commitment:</strong> the sitemap shards carry test names and can be withdrawn silently; any pipeline keyed to what Google sees of Facebook inherits Meta's A/B schedule.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Anti-scraping enforcement is contractual and technical, not just robots.txt.</strong> <em>Basis:</em> the robots.txt header asserts that automated collection requires express written permission per Meta's <a href="https://www.facebook.com/legal/automated_data_collection_terms">Automated Data Collection Terms</a>, and the Probe Log shows even logged-out page views rejected (HTTP 400 / login 302) for non-browser clients.</li>
       </ul>
     </section>
 
@@ -303,28 +208,26 @@
       <h2>Source Notes</h2>
       <h3>Sources</h3>
       <ul>
-        <li><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm">Meta Platforms Q1 2026 Form 10-Q</a>: current Family DAP, revenue, ad impressions, ad price, segment and geography data.</li>
-        <li><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">Meta Platforms FY2025 Form 10-K</a>: annual revenue, revenue model, headcount, advertising and regulatory risk language.</li>
-        <li><a href="https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm">Meta Platforms FY2023 Form 10-K</a>: last official Facebook-only DAU/MAU metrics used here.</li>
-        <li><a href="https://www.facebook.com/robots.txt">Facebook robots.txt</a>: crawl restrictions, AI crawler blocks, and public sitemap surface observed 2026-06-05.</li>
-        <li><a href="https://www.facebook.com/legal/automated_data_collection_terms">Facebook Automated Data Collection Terms</a>: automated collection permission and compliance posture.</li>
-        <li><a href="https://developers.facebook.com/docs/graph-api/">Meta Graph API documentation</a> and <a href="https://developers.facebook.com/docs/pages-api/">Pages API documentation</a>: official API surface for permissioned objects.</li>
-        <li>Observed with <code>curl -I -L https://www.facebook.com/</code> on 2026-06-05: CSP, HSTS, X-Frame-Options, cache, reporting, client hints, HTTP/3 alt-svc, and Meta resource domains.</li>
-        <li>Mobile-web follow-up on 2026-06-09: <code>dig +short m.facebook.com</code>, <code>curl -I https://m.facebook.com/</code>, and <code>curl -L https://www.facebook.com/robots.txt</code>; used to fold <code>m.facebook.com</code> into this canonical Facebook report rather than creating a separate daily profile.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm">Meta FY2023 Form 10-K</a> — last Facebook-only MAU/DAU figures.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">Meta FY2025 Form 10-K</a> — FY2025 revenue, segments, revenue model.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm">Meta Q1 2026 Form 10-Q</a> — Family DAP, quarterly revenue, ad impressions and pricing.</li>
+        <li><a href="https://transparency.meta.com/researchtools/other-datasets/crowdtangle">Meta: CrowdTangle discontinuation</a> — Aug 14 2024 shutdown and MCL replacement.</li>
+        <li><a href="https://transparency.meta.com/researchtools/meta-content-library">Meta Content Library documentation</a> — coverage thresholds, eligibility, export limits.</li>
+        <li><a href="https://developers.facebook.com/docs/graph-api/overview/rate-limiting/">Graph API rate-limiting docs</a>, <a href="https://developers.facebook.com/docs/features-reference/page-public-content-access">PPCA feature reference</a>, <a href="https://developers.facebook.com/docs/features-reference/oembed-read">oEmbed Read reference</a> — quotas and review gates.</li>
+        <li>Local probes on 2026-06-10: <code>dig</code>, header fetch, robots.txt analysis, sitemap fetch attempt, logged-out page fetches, tokenless Graph API and oEmbed calls, llms.txt and RSS checks (full results in the Probe Log).</li>
       </ul>
       <h3>Inferences</h3>
       <ul>
-        <li>Facebook's most valuable retrieval object is modeled as content plus graph context, because privacy state, actor, group/page context, comments, reactions, and ranking history determine meaning and accessibility.</li>
-        <li>The site is treated as mobile/app/direct dominant because Meta filings emphasize mobile access and because logged-in product behavior is driven by notifications and feeds rather than public web navigation.</li>
-        <li>Structured metadata is described as strong internally but limited externally based on the nature of Graph API objects, observed public pages, and the narrow public sitemap surface.</li>
+        <li>Meta curates which public group posts reach search engines rather than exposing the public corpus wholesale. <em>Basis:</em> experiment-style sitemap shard names (<code>groups_llm_bf_posts</code>, <code>groups_target_boosting_*</code>, <code>groups_query_boost_*</code>) observed in robots.txt on 2026-06-10.</li>
+        <li>Anti-scraping enforcement is contractual and technical, not just robots.txt. <em>Basis:</em> Automated Data Collection Terms cited in the robots.txt header, plus observed HTTP 400 / login redirects for logged-out non-browser page fetches.</li>
       </ul>
       <h3>Open Questions</h3>
       <ul>
-        <li>Current Facebook-only MAU, DAU, time spent, and demographic split after Meta shifted reporting toward Family metrics.</li>
-        <li>Global counts for Facebook posts, photos, videos, comments, groups, pages, Marketplace listings, events, and Stories/Reels.</li>
-        <li>Exact public sitemap inventory counts and refresh cadence by object class.</li>
-        <li>Quantified split between logged-out public web consumption, logged-in web sessions, and native app sessions.</li>
-        <li>Current third-party research access programs and what fields are available under approved academic or policy research paths.</li>
+        <li>Current Facebook-only MAU/DAU — Meta stopped reporting after Dec 2023; closeable only by a new Meta disclosure or regulatory filing (e.g. DSA user-number statements for the EU).</li>
+        <li>Global counts of posts, photos, groups, pages, Marketplace listings — never disclosed; MCL researchers could publish corpus-size statistics, which would give a public-slice lower bound.</li>
+        <li>Total URLs across the 148 search-engine sitemaps — measurable in principle by counting <code>&lt;loc&gt;</code> entries, but the files 403 to non-approved agents; would need Meta to serve them or a search-engine partner to report counts.</li>
+        <li>Whether a logged-out browser (full JS) still gets public page content in all regions, and how much — closeable with a headless-browser matrix across geos; out of scope for curl-level probes.</li>
+        <li>MCL corpus size and refresh latency versus the live site — closeable by an eligible research partner querying MCL and diffing against known public posts.</li>
       </ul>
     </section>
   </main>
