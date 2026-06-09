@@ -20,7 +20,7 @@ These seven predate the probe-first template and should be regenerated **in plac
 - [x] `reports/2026-06-05/facebook.com.html`
 - [x] `reports/2026-06-06/reddit.com.html`
 - [x] `reports/2026-06-07/google.com.html`
-- [ ] `reports/2026-06-08/instagram.com.html`
+- [x] `reports/2026-06-08/instagram.com.html`
 - [ ] `reports/2026-06-09/tiktok.com.html`
 
 Rules: start from `reports/template.html`, run fresh probes (Probe Log dated the regeneration day, not the directory date), re-source all numbers (don't trust the old report's claims — several lack sources), lint each file explicitly, rebuild docs, tick the checkbox here. Salvage from the old version only what survives the evidence rules; the old Search-and-Retrieval prose is mostly cross-site boilerplate now covered by the methodology page. One commit per report, message style: `Regenerate 2026-06-0X host report on probe-first template`. `reports/2026-06-10/amazon.com.html` is the reference example of the target standard.

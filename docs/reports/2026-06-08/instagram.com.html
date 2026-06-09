@@ -16,292 +16,241 @@
     <header class="report-hero">
       <p class="eyebrow">Daily Site Profile</p>
       <h1>instagram.com</h1>
-      <p class="lede">Instagram is Meta's visual social graph: a photo, video, messaging, creator, shopping, and recommendation surface where identity and entertainment collapse into one feed.</p>
+      <p class="lede">Instagram is Meta's 3B-user visual network: billions of images and Reels behind a login wall, no public content API, and a researcher-only bulk path.</p>
       <div class="tag-row">
         <span class="tag">Social Media</span>
+        <span class="tag">Images</span>
         <span class="tag">Short Video</span>
-        <span class="tag">Creators</span>
-        <span class="tag">Messaging</span>
         <span class="tag">Meta</span>
       </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
     </header>
 
     <section class="section-card">
-      <h2>How To Read This Report</h2>
-      <p>Every claim is tagged:</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> Sourced to a primary or reliable secondary record.</li>
-        <li><span class="evidence inferred">inferred</span> Reasoned from public signals.</li>
-        <li><span class="evidence open">open</span> Unknown, contested, or worth deeper digging.</li>
-      </ul>
-      <p class="muted">Meta reports most operating metrics at the Family of Apps level, not Instagram alone. Instagram-specific revenue, DAU, post count, and data volume are therefore marked open unless disclosed separately.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Basic Profile</h2>
+      <h2>Context</h2>
+      <p>Instagram is Meta's image-and-short-video network, bought for about $1B in 2012 and now at 3B monthly users; Meta otherwise blends it into Family of Apps reporting and monetizes it through the ad auction. For an index builder it is the web's largest visual corpus and also its most sealed: the consumer API line ended with the Basic Display API shutdown (Dec 2024), oEmbed returns an embed shell without author or thumbnail, and the Graph API reaches only professional accounts that grant your app access. What remains public is a thin SEO surface — profile and post pages whose Open Graph tags are served to non-browser agents while real browser UAs get an empty JS shell (Probe Log). The one bulk path, Meta Content Library, is gated to nonprofit researchers. <span class="evidence inferred">inferred</span> The narrow SEO surface is intentional, not incidental. <em>Basis:</em> robots.txt ships six sitemap pointers limited to profiles, places, and keyword pages, while Googlebot and Bingbot are specifically disallowed from <code>/*/comments/</code> and <code>/*/liked_by/</code> (observed 2026-06-10).</p>
       <dl class="fact-list">
         <div><dt>Host</dt><dd><code>instagram.com</code></dd></div>
         <div><dt>Canonical URL</dt><dd><a href="https://www.instagram.com/">https://www.instagram.com/</a></dd></div>
-        <div><dt>Category</dt><dd>Visual social network, short-form video platform, creator distribution network, messaging layer, advertising surface</dd></div>
-        <div><dt>Related hosts</dt><dd><code>www.instagram.com</code>, <code>cdninstagram.com</code>, <code>static.cdninstagram.com</code>, <code>i.instagram.com</code>, <code>graph.instagram.com</code>, <code>developers.facebook.com</code>, <code>facebook.com</code>, <code>threads.net</code></dd></div>
-        <div><dt>Parent company / owner</dt><dd>Meta Platforms, Inc. via Instagram, LLC / Meta product organization</dd></div>
-        <div><dt>Country / region</dt><dd>United States; global consumer service with local language, policy, commerce, and regulatory differences</dd></div>
-        <div><dt>Founded / launched</dt><dd>Launched publicly in October 2010; Facebook announced the acquisition on April 9, 2012</dd></div>
-        <div><dt>Founders</dt><dd>Kevin Systrom and Mike Krieger</dd></div>
-        <div><dt>Current scale</dt><dd>Instagram reached 3B monthly active users in September 2025; Meta reported 3.56B Family daily active people in March 2026 and $56.31B Q1 2026 revenue.</dd></div>
-        <div><dt>Primary languages / markets</dt><dd>Global; especially strong in mobile-first social, creator, influencer, youth, celebrity, brand, and cross-border culture markets</dd></div>
+        <div><dt>Category</dt><dd>Visual social network: photos, Reels, Stories, DMs</dd></div>
+        <div><dt>Related hosts</dt><dd><code>scontent-*.cdninstagram.com</code> (media CDN), <code>static.cdninstagram.com</code>, <code>graph.instagram.com</code>, <code>graph.facebook.com</code> (oEmbed), <code>threads.com</code> (shared identity)</dd></div>
+        <div><dt>Owner</dt><dd>Meta Platforms, Inc. (NASDAQ: META); acquired April 9 2012 (<a href="https://about.fb.com/news/2012/04/facebook-to-acquire-instagram/">announcement</a>)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Launched October 2010 by Kevin Systrom and Mike Krieger</dd></div>
+        <div><dt>Business model</dt><dd>Advertising inside Meta's auction; minor subscriptions/commerce. No Instagram-only revenue line is disclosed.</dd></div>
+        <div><dt>Scale anchor</dt><dd>3B monthly active users, as of Sep 24 2025 (<a href="https://www.cnbc.com/2025/09/24/instagram-now-has-3-billion-monthly-active-users.html">CNBC</a>)</dd></div>
       </dl>
     </section>
 
     <section class="section-card">
-      <h2>Key Metrics</h2>
-      <p class="muted">Rows distinguish Instagram-specific figures from Meta Family of Apps figures. The latter includes Facebook, Instagram, Messenger, WhatsApp, and other family products.</p>
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Instagram-specific DAU, revenue, and content counts are not disclosed — they live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Instagram MAU</dt>
+          <dd>3B — announced Sep 24 2025 by Zuckerberg/Mosseri; the previous Instagram-specific disclosure was 2B in Oct 2022. <a href="https://techcrunch.com/2025/09/24/instagram-now-has-3-billion-monthly-active-users-will-test-features-to-help-users-control-their-feeds/">TechCrunch</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Meta Family DAP</dt>
+          <dd>3.58B daily active people across all Meta apps — average for Dec 2025; not an Instagram figure. <a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/">Meta Q4 2025 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Meta revenue, FY2025</dt>
+          <dd>$200.97B total; $196.18B advertising; $198.76B Family of Apps — as of Dec 31 2025. <a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Meta revenue, Q1 2026</dt>
+          <dd>$56.31B total (+33% YoY); Family DAP 3.56B for Mar 2026. <a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/">Meta Q1 2026 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>@instagram profile stats</dt>
+          <dd>686M followers, 8,479 posts — as of Jun 10 2026, read from the <code>og:description</code> the server returns to plain curl (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>oEmbed quota</dt>
+          <dd>1,000 requests/hour; private, inactive, age-restricted, and embed-disabled accounts excluded; Stories unsupported — as of Jun 10 2026. <a href="https://developers.facebook.com/docs/instagram-platform/oembed">oEmbed docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Graph API quota</dt>
+          <dd>Instagram Platform BUC rate limit: calls per 24h = 4,800 × impressions of the account's content in the last 24h — as of Jun 10 2026. <a href="https://developers.facebook.com/docs/graph-api/overview/rate-limiting">Rate-limiting docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Hashtag search quota</dt>
+          <dd>30 unique hashtags per rolling 7 days per user; requires a professional account and Instagram Public Content Access approval — as of Jun 10 2026. <a href="https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-hashtag-search">IG Hashtag Search docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Basic Display API shutdown</dt>
+          <dd>Dec 4 2024 — consumer (personal-account) API access ended; only professional-account APIs remain. <a href="https://developers.facebook.com/blog/post/2024/09/04/update-on-instagram-basic-display-api/">Meta developer blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Meta Content Library</dt>
+          <dd>100K results/query max, 100+ data fields; Instagram coverage = public posts from business/creator accounts plus personal accounts verified or with 100+ followers; free, nonprofit researchers only — as of Jun 10 2026. <a href="https://transparency.meta.com/researchtools/meta-content-library/">Meta transparency docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-10 (regeneration day). "Browser UA" = a current Chrome desktop user-agent string; "plain curl" = curl's default UA.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Metric</th><th>Value</th><th>As of</th><th>Source / Tag</th><th>Notes</th></tr></thead>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
           <tbody>
-            <tr><td data-label="Metric">Monthly active users</td><td data-label="Value">3B Instagram MAU</td><td data-label="As of">Sep 24 2025</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Zuckerberg / Mosseri reports via Reuters and TechCrunch</td><td data-label="Notes">Meta does not include Instagram MAU in each quarterly earnings release.</td></tr>
-            <tr><td data-label="Metric">Daily active users</td><td data-label="Value">Open for Instagram; 3.56B Family DAP</td><td data-label="As of">Mar 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Meta Q1 2026 results</td><td data-label="Notes">Family DAP includes multiple Meta apps and is not an Instagram DAU proxy.</td></tr>
-            <tr><td data-label="Metric">Quarterly revenue</td><td data-label="Value">$56.31B Meta total; $55.91B Family of Apps; $55.16B advertising</td><td data-label="As of">Q1 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Meta Q1 2026 results</td><td data-label="Notes">Instagram-specific revenue is not broken out.</td></tr>
-            <tr><td data-label="Metric">Annual revenue</td><td data-label="Value">$200.97B Meta total; $198.76B Family of Apps; $196.18B advertising</td><td data-label="As of">FY2025</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> Meta FY2025 results</td><td data-label="Notes">Advertising remains the core business across Facebook and Instagram.</td></tr>
-            <tr><td data-label="Metric">Revenue mix</td><td data-label="Value">Mostly ads, with commerce, subscriptions, paid verification, creator tools, and business messaging as supporting surfaces</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Instagram monetization is embedded in Meta's ad auction and Family of Apps reporting.</td></tr>
-            <tr><td data-label="Metric">Top regions / countries</td><td data-label="Value">Open for Instagram-specific usage; Meta reports regional revenue, not app-specific user geography</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Need first-party Instagram user, ad-reach, or panel data by country and age cohort.</td></tr>
-            <tr><td data-label="Metric">Content / inventory size</td><td data-label="Value">Open</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Need posts, reels, stories, comments, profiles, shops, highlights, live archives, and deleted/private object counts.</td></tr>
-            <tr><td data-label="Metric">Indexable object count</td><td data-label="Value">Open; object classes include profiles, posts, reels, carousels, images, videos, captions, comments, hashtags, locations, audio tracks, stories, highlights, guides, shops, products, ads, DMs, and creator/business metadata</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Public logged-out indexing is intentionally narrow; many objects are private, ephemeral, personalized, or API-gated.</td></tr>
-            <tr><td data-label="Metric">Modality mix</td><td data-label="Value">Image and video dominate; text, audio, graph, commerce, and metadata are retrieval-critical</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Reels and recommendations shifted Instagram from photo graph toward TikTok-like entertainment ranking.</td></tr>
-            <tr><td data-label="Metric">Data volume</td><td data-label="Value">Open</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Need bytes for originals, transcodes, thumbnails, captions, embeddings, comments, message media, and ad creatives.</td></tr>
-            <tr><td data-label="Metric">Freshness / update rate</td><td data-label="Value">Open; high churn, with Stories expiring by design and Reels/feed posts mutable or removable</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Freshness differs sharply by stories, reels, comments, profile edits, ranking signals, and ad inventory.</td></tr>
-            <tr><td data-label="Metric">Structured metadata coverage</td><td data-label="Value">High internally; limited externally</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Graph/API fields expose IDs, captions, media type, permalink, timestamps, insights, comments, hashtags, and business discovery for approved use cases.</td></tr>
-            <tr><td data-label="Metric">Licensing / reuse coverage</td><td data-label="Value">Restricted</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> robots.txt / Meta terms posture</td><td data-label="Notes">Automated collection is broadly prohibited without permission; public search crawlers receive limited allowances, while default user agents are disallowed.</td></tr>
-            <tr><td data-label="Metric">Growth direction</td><td data-label="Value">Engagement and monetization are increasingly driven by Reels, DMs, recommendations, AI ranking, and business messaging</td><td data-label="As of">2025-2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Mosseri said recent Instagram growth was driven by DMs, Reels, and recommendations.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>dig +short instagram.com</code> + reverse</td><td data-label="Observation">A record 57.144.150.34; <code>www</code> CNAMEs to <code>z-p42-instagram.c10r.instagram.com</code>; reverse resolves to <code>instagram-p42-shv-02-sin11.fbcdn.net</code> — Meta's own edge (fbcdn), Singapore pop, no third-party CDN.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -sI https://www.instagram.com/</code></td><td data-label="Observation">HTTP/2 200. HSTS preload, <code>x-frame-options: DENY</code>, <code>cache-control: private, no-store</code>; sets <code>csrftoken</code>/<code>mid</code> cookies on an anonymous hit; CSP allows <code>*.cdninstagram.com</code>, <code>*.fbcdn.net</code>, <code>wss://edge-chat.instagram.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -s https://www.instagram.com/robots.txt</code></td><td data-label="Observation">274 lines, 34 UA stanzas. Banner: automated collection prohibited without express written permission, citing Meta's Automated Data Collection Terms. 14 AI/scraper UAs (GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, PerplexityBot, Scrapy…) get <code>Disallow: /</code>; ~19 search/social crawlers are allowed except narrow paths, with Googlebot/Bingbot also blocked from <code>/*/comments/</code> and <code>/*/liked_by/</code>; default <code>*</code> is <code>Disallow: /</code>. Six sitemap pointers: places, SEO images, two SEO profile maps, locations, logged-out keyword pages.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Sitemap fetch</td><td data-label="Observation"><code>/sitemap/ig_seo_profile_sitemap.xml.gz</code> returns HTTP 404 ("Page Not Found", <code>noimageindex, noarchive</code>) to a browser UA — the sitemaps named in robots.txt are not served to ordinary clients, so no URL census is possible.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>/instagram/</code> profile, logged out, both UAs</td><td data-label="Observation">UA-split rendering. Browser UA: 200, 782KB JS shell — zero OG tags, zero JSON-LD, content requires JS + login. Plain curl: 200, 885KB <em>with</em> OG tags — <code>og:description</code> reads "686M Followers, 218 Following, 8,479 Posts"; <code>og:image</code> is a signed <code>scontent-*.cdninstagram.com</code> URL.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>/p/CUbHfhpswxt/</code> post, logged out, both UAs</td><td data-label="Observation">Same split: browser UA gets the bare shell; plain curl gets five OG tags (type, url, title, image, description with caption excerpt). No JSON-LD on either render.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">oEmbed, tokenless</td><td data-label="Observation"><code>graph.facebook.com/v21.0/instagram_oembed?url=…</code> returns HTTP 200 with only six fields (version, provider, type, width, html); the html is a generic placeholder blockquote loading <code>embeds.js</code> — no author_name, thumbnail_url, or caption. Legacy <code>api.instagram.com/oembed</code> redirects to <code>www.instagram.com/oembed/</code>, which serves the HTML shell, not JSON.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -s https://graph.instagram.com/me</code></td><td data-label="Observation"><code>{"error":{"message":"Invalid OAuth 2.0 Access Token","type":"IGApiException","code":190}}</code> — no anonymous Graph API surface.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>/llms.txt</code>, <code>/sitemap.xml</code></td><td data-label="Observation">Both soft-200: each returns the ~781KB SPA shell instead of a file or a 404. No llms.txt, no root sitemap.</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Why This Site Matters</h2>
-      <p>Instagram matters because it turned identity into a visual publishing system. Facebook was organized around known social relationships; Instagram made public, image-first self-presentation default and gave creators, celebrities, brands, and ordinary users the same basic distribution primitive: a profile plus media objects.</p>
-      <p>The product is also a case study in platform adaptation. It absorbed Stories from Snapchat, Reels from TikTok's short-video logic, DMs as a private social layer, and shopping/creator tools as monetization extensions. The enduring asset is not one format; it is the account graph, media corpus, ranking feedback, advertiser demand, and creator economy around the formats.</p>
-      <div class="callout">
-        <strong>Why this site matters for retrieval:</strong> Instagram is a full-modal, permissioned index problem. The useful unit is often not a page but a media object joined to creator identity, caption text, audio, comments, hashtags, location, engagement, safety labels, and viewer context.
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Timeline</h2>
+      <h2>Access Matrix</h2>
+      <p class="muted">Graph API = <a href="https://developers.facebook.com/docs/instagram-platform/">Instagram Platform APIs</a> (professional accounts only, via Instagram or Facebook Login); MCL = <a href="https://transparency.meta.com/researchtools/meta-content-library/">Meta Content Library</a>.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Date</th><th>Event</th><th>Why It Matters</th></tr></thead>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
           <tbody>
-            <tr><td data-label="Date">Oct 2010</td><td data-label="Event">Instagram launches as a mobile photo-sharing app.</td><td data-label="Why It Matters">Mobile-first publishing and filters make visual sharing lightweight and social.</td></tr>
-            <tr><td data-label="Date">Apr 9 2012</td><td data-label="Event">Facebook announces agreement to acquire Instagram for about $1B in cash and stock.</td><td data-label="Why It Matters">Facebook buys a fast-growing visual network before it becomes an independent social competitor.</td></tr>
-            <tr><td data-label="Date">2013</td><td data-label="Event">Instagram introduces ads.</td><td data-label="Why It Matters">The product begins becoming a major Meta advertising surface.</td></tr>
-            <tr><td data-label="Date">2016</td><td data-label="Event">Instagram Stories launches.</td><td data-label="Why It Matters">Ephemeral posting reduces feed pressure and neutralizes Snapchat's format advantage.</td></tr>
-            <tr><td data-label="Date">2018</td><td data-label="Event">Instagram passes 1B monthly active users; IGTV launches.</td><td data-label="Why It Matters">Scale makes Instagram a standalone global platform, while video ambitions expand.</td></tr>
-            <tr><td data-label="Date">2020</td><td data-label="Event">Reels launches broadly.</td><td data-label="Why It Matters">Short-form video and algorithmic entertainment become central to competitive defense against TikTok.</td></tr>
-            <tr><td data-label="Date">2022</td><td data-label="Event">Meta says Instagram crossed 2B monthly active users.</td><td data-label="Why It Matters">Instagram becomes one of Meta's largest user-scale products.</td></tr>
-            <tr><td data-label="Date">2023</td><td data-label="Event">Threads launches using Instagram account identity.</td><td data-label="Why It Matters">Instagram identity becomes distribution infrastructure for a new public conversation app.</td></tr>
-            <tr><td data-label="Date">Sep 24 2025</td><td data-label="Event">Instagram reaches 3B monthly active users.</td><td data-label="Why It Matters">Growth confirms Instagram remains one of the few internet services at multi-billion-user scale.</td></tr>
-            <tr><td data-label="Date">Apr 29 2026</td><td data-label="Event">Meta reports $56.31B Q1 2026 revenue and 3.56B Family daily active people.</td><td data-label="Why It Matters">Instagram sits inside a still-expanding ad and AI infrastructure business.</td></tr>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Captions, bios, comments. Counts: open (no disclosure).</td>
+              <td data-label="Best legitimate path">Graph API for accounts that authorize your app; Business Discovery for other professional accounts by username; MCL for researchers. Logged-out OG description carries a caption excerpt (Probe Log).</td>
+              <td data-label="Auth &amp; quota">App review + professional account; 4,800 × impressions/24h. MCL: nonprofit researchers, 100K results/query.</td>
+              <td data-label="License / display">Platform terms: front-end display only; MCL data stays in the enclave.</td>
+              <td data-label="Freshness">Captions editable; comments append fast.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Photos and carousels on <code>scontent-*.cdninstagram.com</code>; count open.</td>
+              <td data-label="Best legitimate path">oEmbed embed for display; Graph API media for authorized accounts. CDN URLs are signed and expire — hotlink archiving fails (see Inferences).</td>
+              <td data-label="Auth &amp; quota">oEmbed 1,000 req/hr, no token observed (Probe Log).</td>
+              <td data-label="License / display">Embed-only; oEmbed terms prohibit using metadata beyond front-end view.</td>
+              <td data-label="Freshness">Posts deletable/archivable at user whim.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Reels (primary growth surface per Mosseri) + feed video; counts open.</td>
+              <td data-label="Best legitimate path">Same as images; no public metadata endpoint.</td>
+              <td data-label="Auth &amp; quota">Same quotas.</td>
+              <td data-label="License / display">Embed-only; music licensing restricts reuse further.</td>
+              <td data-label="Freshness">Trend-driven; relevance decays in days.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">Music and original-audio pages (<code>/reels/audio/{id}/</code>) aggregating Reels per track.</td>
+              <td data-label="Best legitimate path">None: no API exposes the audio catalog; pages are login-walled.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: licensed music, no reuse path.</td>
+              <td data-label="Freshness">Meme audio churns in weeks.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments</td>
+              <td data-label="Objects &amp; est. count">Comment threads per media; count open.</td>
+              <td data-label="Best legitimate path">Graph API comments/replies on media you manage only. Explicitly removed from the SEO surface: Googlebot/Bingbot blocked from <code>/*/comments/</code> (Probe Log).</td>
+              <td data-label="Auth &amp; quota">BUC quota; webhooks for own accounts.</td>
+              <td data-label="License / display">Own-account moderation use; no third-party corpus.</td>
+              <td data-label="Freshness">Fast append, high deletion/moderation churn.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Profiles (stable user ID + mutable username), hashtags, places, keyword pages.</td>
+              <td data-label="Best legitimate path">Profile OG tags logged out (follower/post counts, Probe Log); Business Discovery for professional-account stats; Graph API hashtag search; places pages are the most crawl-open surface (<code>Allow: /places/c/</code>).</td>
+              <td data-label="Auth &amp; quota">Hashtag search 30 unique/7 days; Business Discovery on Platform rate limits.</td>
+              <td data-label="License / display">Stats displayable with attribution; bulk profile harvesting breaches the robots banner.</td>
+              <td data-label="Freshness">Follower counts churn continuously; entity pages stable.</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>User Intent and Core Scenarios</h2>
-      <ul>
-        <li><strong>Primary intents:</strong> share visual updates, watch Reels, browse friends/creators/celebrities, message privately, follow brands, discover style/travel/food/fitness/culture, and maintain public identity.</li>
-        <li><strong>Secondary / emerging intents:</strong> social shopping, creator monetization, local discovery, event promotion, customer support, AI-assisted creation, cross-posting to Threads/Facebook, and professional portfolio signaling.</li>
-        <li><strong>Repeat-use loop:</strong> notification or habit opens app → feed/Reels/DMs deliver personalized stimuli → user reacts, watches, sends, saves, posts, or follows → engagement trains ranking and ad targeting → new content and messages pull the user back.</li>
-        <li><strong>What it replaces / displaces:</strong> photo albums, personal blogs, lightweight portfolios, celebrity magazines, fashion/lookbook sites, some local discovery, some TikTok/YouTube Shorts time, SMS/MMS group sharing, and parts of brand websites.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Traffic and Distribution</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> Instagram reached 3B monthly active users in September 2025, while Meta's Family daily active people reached 3.56B in March 2026.</li>
-        <li><span class="evidence inferred">inferred</span> Distribution is mobile-app led. The web host is important for profiles, embedded posts, search snippets, links in bios, and logged-out discovery, but the core experience is app-native.</li>
-        <li><span class="evidence inferred">inferred</span> Internal distribution dominates: feed, Stories tray, Reels tab, Explore, profile recommendations, DM shares, notifications, creator collaborations, cross-posting from Facebook/Threads, and ad placements.</li>
-        <li><span class="evidence inferred">inferred</span> External discovery is constrained. Instagram exposes limited logged-out profile/media pages and sitemaps for selected SEO surfaces, but robots.txt blocks broad default crawling and many AI/user-agent crawlers.</li>
-        <li><span class="evidence open">open</span> Need standardized app-vs-web traffic, logged-out traffic, referral share, search share, Reels watch time, DM share volume, and country-level engagement by cohort.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Product Anatomy</h2>
-      <ul>
-        <li><strong>First screen:</strong> logged-in users typically see feed, Stories, navigation to Reels, search/Explore, creation, activity, and profile; logged-out web visitors see a constrained public page and login prompts.</li>
-        <li><strong>Core journey:</strong> user browses feed/Reels/Stories/DMs → ranking selects posts and ads → user reacts, comments, shares, saves, follows, or creates → graph and engagement signals update distribution.</li>
-        <li><strong>Discovery modes:</strong> recommendations, follows, Explore search, hashtags, audio pages, location pages, profile links, collaborations, mutuals, DM forwards, ads, and external links.</li>
-        <li><strong>Account / identity:</strong> Instagram account is the core identity; it connects to Meta Accounts Center, Facebook, Threads, ad accounts, creator/business profiles, verification, shops, and messaging identity.</li>
-        <li><strong>Supply side:</strong> friends, creators, brands, influencers, celebrities, businesses, advertisers, shops, media companies, photographers, video creators, and AI-generated or edited media.</li>
-        <li><strong>Demand side:</strong> viewers seeking entertainment, social connection, inspiration, status, products, local recommendations, creator updates, and private communication.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Business Model</h2>
-      <ul>
-        <li><strong>Revenue streams:</strong> primarily Meta advertising across Feed, Stories, Reels, Explore, search results, and profile-related surfaces; additional surfaces include subscriptions, paid verification, commerce integrations, branded content tooling, and business messaging.</li>
-        <li><strong>Pricing / unit economics:</strong> advertisers buy impressions, clicks, conversions, reach, app installs, leads, and catalog outcomes through Meta's auction and targeting systems. Instagram's unit economics depend on watch time, ad load, conversion signal quality, and creator supply.</li>
-        <li><strong>Who pays whom:</strong> advertisers pay Meta; Meta may pay or share revenue with some creators and commerce partners; users pay with attention, data, purchases, and sometimes subscription/verification fees.</li>
-        <li><strong>Strategic shape:</strong> Instagram is a demand-capture and attention-retention layer inside Meta. It converts identity, entertainment, and creator activity into ranked ad inventory while defending Meta against TikTok, Snapchat, YouTube Shorts, Pinterest, and messaging-first social products.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Moat</h2>
-      <p class="muted">For each moat: type, claim, evidence, fragility.</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> <strong>Scale:</strong> 3B MAU gives Instagram a rare global network size. Fragility: large scale attracts regulatory scrutiny, moderation cost, and youth-safety pressure.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Identity graph:</strong> creators, friends, brands, celebrities, and businesses have durable profiles, followers, archives, and DM relationships. Fragility: algorithmic feeds can weaken follower trust if creators feel reach is unpredictable.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Media and ranking feedback:</strong> years of images, videos, captions, comments, watch behavior, saves, shares, and ads feedback train recommendations and moderation. Fragility: privacy rules, app-store policies, synthetic content, and spam can reduce signal quality.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Meta integration:</strong> shared ads infrastructure, account systems, app install base, AI infra, and cross-posting with Facebook/Threads/WhatsApp create leverage. Fragility: antitrust actions could force separation or limit cross-product data use.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Peers and Contrasts</h2>
-      <p class="muted">Compare Instagram by graph, modality, and distribution, not only by social-network label.</p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Peer</th><th>Same as instagram.com</th><th>Different from instagram.com</th><th>What the difference teaches</th></tr></thead>
-          <tbody>
-            <tr><td data-label="Peer">TikTok</td><td data-label="Same as instagram.com">Short-video recommendations, creator culture, ads, music/audio memes, mobile-first entertainment.</td><td data-label="Different from instagram.com">TikTok is more discovery-first and less anchored to a persistent friend/follower photo identity.</td><td data-label="What the difference teaches">Algorithmic entertainment can beat social graph for cold-start viewing, but Instagram's identity layer keeps broader social utility.</td></tr>
-            <tr><td data-label="Peer">Snapchat</td><td data-label="Same as instagram.com">Camera-first sharing, Stories-like ephemerality, messaging, youth-oriented communication.</td><td data-label="Different from instagram.com">Snapchat is more private and friend-message centered; Instagram is more public, creator, brand, and ad-distribution centered.</td><td data-label="What the difference teaches">Privacy and public identity create different network effects and different indexing possibilities.</td></tr>
-            <tr><td data-label="Peer">YouTube Shorts</td><td data-label="Same as instagram.com">Vertical video, creators, ads, recommendations, music/audio reuse.</td><td data-label="Different from instagram.com">YouTube has a stronger long-form archive, search culture, and creator monetization history.</td><td data-label="What the difference teaches">Short video is a format, not a product; retention comes from corpus depth, creator incentives, and retrieval/discovery quality.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Technical Signals</h2>
-      <ul>
-        <li><strong>DNS / hosting / CDN:</strong> Local DNS on 2026-06-08 resolved <code>instagram.com</code> to <code>57.144.150.34</code> with a 60s TTL; <code>instagram.com</code> returned HTTP 301 to <code>https://www.instagram.com/</code>. Assets and media rely on Meta/Facebook/CDN Instagram domains including <code>cdninstagram.com</code> and <code>fbcdn.net</code>.</li>
-        <li><strong>Frontend / framework clues:</strong> The web shell is a heavily client-rendered Meta application with static assets from <code>static.cdninstagram.com</code>, realtime connections such as <code>wss://edge-chat.instagram.com</code>, and app-specific error/reporting endpoints.</li>
-        <li><strong>Security / headers:</strong> Observed headers include HSTS with preload and includeSubDomains, <code>X-Frame-Options: DENY</code>, <code>X-Content-Type-Options: nosniff</code>, CSP/CSP report-only policies, permissions policy, same-origin resource policy, and private no-cache directives.</li>
-        <li><strong>Performance / delivery:</strong> HTTP/2 and advertised HTTP/3 alt-svc are present. Logged-out pages set cookies and ship a personalized/client-heavy web application rather than a simple static document.</li>
-        <li><strong>Notable integrations:</strong> Meta account systems, Facebook reporting, Graph API, Instagram APIs, ad systems, Business/Creator tools, messaging, Threads identity, commerce catalogs, and third-party embed/oEmbed surfaces.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Search and Retrieval Perspective</h2>
-      <p class="muted">Assume the task is to build a full-modal index over Instagram: text, images, video, audio, structured records, comments, metadata, entities, ads, and cross-modal joins.</p>
-
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Instagram differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
       <div class="subgrid">
         <div>
-          <h4>Identifier &amp; canonical URL</h4>
-          <p>Stable units include user ID, username, media ID, shortcode/permalink, comment ID, hashtag ID, location ID, product/catalog ID, ad creative ID, audio track ID, and timestamp. Username and URL aliases can change; internal IDs are better join keys.</p>
-        </div>
-        <div>
-          <h4>Crawl &amp; access policy</h4>
-          <p>robots.txt states automated collection is prohibited without express permission. Default user agents are disallowed, AI crawlers such as GPTBot, ClaudeBot, PerplexityBot, Google-Extended, and Applebot-Extended are blocked, and selected search/social crawlers receive limited allowances.</p>
-        </div>
-        <div>
-          <h4>Official APIs &amp; feeds</h4>
-          <p>Legitimate access is through approved Meta developer surfaces: Instagram API with Instagram Login, Instagram API with Facebook Login / Graph API for professional accounts, oEmbed, insights, comments, hashtag search, mentions, business discovery, and webhooks where permitted.</p>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The 11-character shortcode (<code>/p/{shortcode}/</code>, <code>/reel/{shortcode}/</code>) is the public media ID and survives caption edits. Graph API uses a separate numeric media ID; usernames are mutable while the underlying user ID is stable — keep both. CDN URLs are useless as keys: signed params rotate per fetch.</p>
         </div>
         <div>
           <h4>Retrieval unit</h4>
-          <p>The main document is not the web page. Useful units are profile, post, carousel item, image, Reel video, caption, transcript/OCR derivative, comment thread, hashtag page, audio page, location page, story/highlight, product listing, and ad creative.</p>
-        </div>
-        <div>
-          <h4>Full-modal object inventory</h4>
-          <p>Open. Instagram likely holds billions of media objects, but first-party counts for posts, Reels, Stories, comments, images, videos, audio tracks, shops, and bytes are not disclosed. Treat all public estimates as weak unless sourced to Meta.</p>
+          <p>Two units: the media object (image/Reel + caption + creator) for content queries, and the profile entity for the dominant navigational queries. Stories never become retrieval units — they expire in 24h and have no logged-out surface at all.</p>
         </div>
         <div>
           <h4>Cross-modal joins</h4>
-          <p>Media ID joins image/video to caption, creator, comments, audio, hashtags, location, tagged users, product tags, thumbnails, watch metrics, safety labels, and ad/boosting state. Story objects need expiry and highlight joins.</p>
-        </div>
-        <div>
-          <h4>Metadata coverage</h4>
-          <p>Internal coverage is rich: creator, timestamp, media type, dimensions, caption, hashtags, mentions, comments, audio, location, likes, views, saves, shares, reports, ranking features, and policy labels. External coverage is partial and permission-dependent.</p>
-        </div>
-        <div>
-          <h4>Indexing path</h4>
-          <p>At scale, the legitimate path is API access, partner permission, or limited public search crawling according to robots.txt. Browser rendering or scraping is not a clean bulk path and conflicts with Instagram's explicit automated collection posture.</p>
+          <p>Inside the API, media ID joins caption, comments, audio track, location, and tagged users. Outside it, the only join surface is the OG tag set — shortcode ↔ image ↔ caption excerpt ↔ username — with no numeric IDs exposed.</p>
         </div>
         <div>
           <h4>Authoritative content field</h4>
-          <p>For search, caption plus visual/video understanding should outrank weak page text. Hashtags are useful but spam-prone. For creator identity, profile name, username, verification, bio, and account graph are more authoritative than captions.</p>
+          <p>The caption is the only author-written text; everything else (OG title/description) is machine-generated from it plus profile stats. Visual/ASR understanding has to carry most of the relevance signal because captions are short, hashtag-stuffed, and often unrelated to the image.</p>
         </div>
         <div>
-          <h4>Freshness &amp; decay</h4>
-          <p>Stories decay quickly; feed posts and Reels persist but can be edited, deleted, hidden, geoblocked, age-gated, or made private. Ranking signals decay by trend, audio meme, creator momentum, and viewer context.</p>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Three regimes: Stories (gone in 24h, skip), Reels/posts (relevance decays in days, object persists), profile stats (continuous churn, cheap via OG tags). Deletion and private-toggling are unsignaled — expect silent corpus shrinkage.</p>
         </div>
         <div>
-          <h4>Quality signals &amp; spam patterns</h4>
-          <p>Signals include verified status, account age, follower graph, engagement quality, comment quality, saves/shares, watch completion, original audio/content, reports, policy strikes, and ad/account integrity. Spam includes engagement pods, fake giveaways, impersonation, scam shops, repost farms, and AI slop.</p>
-        </div>
-        <div>
-          <h4>Licensing &amp; reuse</h4>
-          <p>Reuse is restricted. A third-party search product should prefer links and embeds where allowed, avoid bulk media copies, respect privacy/deletion, and use approved APIs. Thumbnails/snippets require policy review, especially for private, minor, copyrighted, or sensitive content.</p>
-        </div>
-        <div>
-          <h4>Personalization &amp; non-determinism</h4>
-          <p>Logged-in ranking is highly personalized by follows, watch history, DMs, location, language, age, device, ad profile, and recent behavior. Logged-out web pages do not represent a typical user's Instagram.</p>
-        </div>
-        <div>
-          <h4>Region / language splits</h4>
-          <p>Content visibility differs by language, music rights, local law, age rules, election rules, shopping availability, creator monetization, ads policy, and account restrictions. Region is part of the serving key.</p>
-        </div>
-        <div>
-          <h4>Internal search vs external</h4>
-          <p>Instagram search is designed around accounts, hashtags, places, audio, and recommended content, not full-text archival search. External search is useful for public profiles and some media, but policy and login walls limit comprehensiveness.</p>
-        </div>
-        <div>
-          <h4>Outbound vs inbound posture</h4>
-          <p>Instagram is mostly a sink for attention and identity, with limited outbound linking. The strongest outbound path is profile bio links, story links, ads, shops, and creator/brand calls to action.</p>
-        </div>
-        <div>
-          <h4>Anti-manipulation / ranking surface</h4>
-          <p>To be found, an account must pass integrity checks, produce high-retention media, fit recommendation policy, build graph credibility, and avoid spam. The manipulation surface is broad because ranking rewards attention and social proof.</p>
+          <h4>Internal vs external search</h4>
+          <p>Instagram search is entity search — accounts, hashtags, places, audio — not full-text. The logged-out keyword pages in the sitemap set (<code>dim_ig_logged_out_web_keyword_ent</code>, Probe Log) show Meta building a parallel SEO-only keyword surface rather than exposing real search.</p>
         </div>
         <div>
           <h4>User query profile</h4>
-          <p>Queries are often entity-like: people, brands, hashtags, places, memes, styles, songs, products, or local venues. Classic document retrieval is less useful than entity/media retrieval with visual and social context.</p>
+          <p>Heavily navigational (person, brand, creator) plus visual discovery (style, place, recipe). For a web index, the profile entity answers most Instagram-bound queries; individual post retrieval matters mainly for news/meme provenance.</p>
         </div>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Risks and Future</h2>
+      <h2>Indexing Plan</h2>
       <ul>
-        <li><strong>Competitive:</strong> TikTok, YouTube Shorts, Snapchat, Pinterest, X, Threads, and emerging AI/video apps can pull creator time, youth attention, and advertiser budgets.</li>
-        <li><strong>Regulatory:</strong> youth safety, privacy, ad targeting, antitrust, copyright, DMA/DSA-style platform rules, and cross-product data use are material risks for Meta.</li>
-        <li><strong>Platform / supply:</strong> creator dissatisfaction over reach, monetization, moderation, and format changes can weaken supply quality; music and sports/media rights shape Reels and video availability.</li>
-        <li><strong>Abuse / safety:</strong> scams, impersonation, harassment, sexual exploitation, minors' safety, misinformation, body-image harms, addictive design claims, and synthetic media all require costly enforcement.</li>
-        <li><strong>Technology shift (incl. AI):</strong> AI can improve recommendations, creation, ads, moderation, and search, but it can also flood feeds with low-quality generated content and make provenance/trust harder.</li>
+        <li><strong>Retrieval unit:</strong> profile entity (primary) and media object keyed by shortcode (secondary).</li>
+        <li><strong>Primary keys &amp; joins:</strong> user ID + username history for profiles; shortcode for media; never CDN URLs.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Profile/post OG tags served to non-browser agents — free, logged out, yields stats + caption excerpt, but unofficial and revocable. 2) Graph API + Business Discovery — deep fields, only for professional accounts that opt in. 3) Meta Content Library — the only bulk path, closed to commercial builders. 4) oEmbed — display-only shell carrying no metadata (Probe Log).</li>
+        <li><strong>Recrawl cadence:</strong> profile OG stats weekly for head accounts; posts on-demand at query time; skip Stories entirely.</li>
+        <li><strong>Derivatives to generate:</strong> image embeddings and OCR only for media with a license path (owned/consented accounts); username-change history table for entity continuity.</li>
+        <li><strong>Demo to build:</strong> an OG-surface profiler — paste usernames, fetch with a non-browser UA, parse follower/following/post counts and caption excerpts into JSONL, and log when Meta turns the surface off.</li>
       </ul>
     </section>
 
     <section class="section-card">
-      <h2>Lessons</h2>
-      <ol>
-        <li>A social product can survive format shifts when it owns identity, graph, and distribution, not just the original content type.</li>
-        <li>For full-modal indexing, IDs and permissions matter more than page URLs. The visible web page is only a thin wrapper around media, graph, and ranking systems.</li>
-        <li>Ephemeral content creates engagement while making archives, search, and compliance harder.</li>
-        <li>Creator platforms must balance follower trust with recommendation efficiency; too much algorithmic opacity can turn creators into tenants rather than partners.</li>
-        <li>Robots, API policy, and terms are product strategy. Instagram's restricted crawl posture preserves control over data, ads, privacy, and ranking context.</li>
-      </ol>
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The consumer API line is closed and still closing:</strong> Basic Display API died Dec 4 2024 (<a href="https://developers.facebook.com/blog/post/2024/09/04/update-on-instagram-basic-display-api/">Meta</a>); oEmbed lost author/thumbnail fields (Probe Log). Plan for zero third-party content API, permanently.</li>
+        <li><strong>The OG ingestion path is unofficial:</strong> it depends on UA-conditional server rendering Meta can flip off silently, and bulk use conflicts with the robots.txt written-permission banner — treat it as best-effort enrichment, not a foundation.</li>
+        <li><strong>MCL access is conditional:</strong> nonprofit-only eligibility excludes a commercial index, and enclave terms bar exporting raw data; a strategy assuming MCL coverage has no fallback.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Enforcement posture is contractual as well as technical.</strong> <em>Basis:</em> robots.txt opens with a written-permission requirement binding "all authorized user-agents" to Meta's Automated Data Collection Terms (observed 2026-06-10) — crawl tolerance is framed as a revocable license, not an open norm.</li>
+      </ul>
     </section>
 
     <section class="section-card">
-      <h2>Sources</h2>
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
       <ul>
-        <li><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/">Meta Reports First Quarter 2026 Results</a> - revenue, Family daily active people, ad impressions, price per ad, capex, headcount, risk commentary.</li>
-        <li><a href="https://s21.q4cdn.com/399680738/files/doc_financials/2025/q4/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf">Meta Reports Fourth Quarter and Full Year 2025 Results</a> - FY2025 Meta and Family of Apps revenue.</li>
-        <li><a href="https://about.fb.com/news/2012/04/facebook-to-acquire-instagram/">Facebook to Acquire Instagram</a> - April 9, 2012 acquisition announcement.</li>
-        <li><a href="https://techcrunch.com/2025/09/24/instagram-now-has-3-billion-monthly-active-users-will-test-features-to-help-users-control-their-feeds/">TechCrunch: Instagram reaches 3B monthly active users</a> - reported Zuckerberg/Mosseri 3B MAU announcement and Mosseri comments on DMs, Reels, and recommendations.</li>
-        <li><a href="https://www.investing.com/news/stock-market-news/meta-ceo-zuckerberg-says-instagram-has-grown-to-3-billion-monthly-active-users-4253781">Reuters via Investing.com: Instagram 3B MAU</a> - secondary confirmation that Meta last disclosed Instagram-specific scale at 2B in 2022 before the 3B milestone.</li>
-        <li><a href="https://developers.facebook.com/docs/instagram-api/">Meta for Developers: Instagram API</a> and related Instagram platform docs - API access, media fields, comments, insights, hashtag, business discovery, and login/API pathways.</li>
-        <li><a href="https://www.instagram.com/robots.txt">Instagram robots.txt</a> - crawl restrictions, AI crawler blocks, and sitemap declarations observed on 2026-06-08.</li>
-        <li>Local technical observations on 2026-06-08: <code>dig instagram.com</code>, <code>curl -I https://instagram.com/</code>, <code>curl -I https://www.instagram.com/</code>, and <code>curl -L https://www.instagram.com/robots.txt</code>.</li>
+        <li><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/">Meta Q4/FY2025 results</a> — FY2025 revenue lines, Dec 2025 Family DAP.</li>
+        <li><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/">Meta Q1 2026 results</a> — Q1 revenue, Mar 2026 Family DAP.</li>
+        <li><a href="https://www.cnbc.com/2025/09/24/instagram-now-has-3-billion-monthly-active-users.html">CNBC</a> and <a href="https://techcrunch.com/2025/09/24/instagram-now-has-3-billion-monthly-active-users-will-test-features-to-help-users-control-their-feeds/">TechCrunch</a>, Sep 24 2025 — 3B MAU, prior 2B (2022) disclosure, Mosseri on DMs/Reels/recommendations driving growth.</li>
+        <li><a href="https://about.fb.com/news/2012/04/facebook-to-acquire-instagram/">Facebook acquisition announcement</a>, Apr 9 2012.</li>
+        <li><a href="https://developers.facebook.com/docs/instagram-platform/oembed">oEmbed docs</a>, <a href="https://developers.facebook.com/docs/graph-api/overview/rate-limiting">rate-limiting docs</a>, <a href="https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-hashtag-search">hashtag search docs</a>, <a href="https://developers.facebook.com/blog/post/2024/09/04/update-on-instagram-basic-display-api/">Basic Display shutdown post</a> — quotas and deprecation dates.</li>
+        <li><a href="https://transparency.meta.com/researchtools/meta-content-library/">Meta Content Library</a> — researcher path, coverage, query limits.</li>
+        <li>Local probes on 2026-06-10: <code>dig</code>, header fetch, robots.txt, sitemap fetch, UA-split profile/post fetches, tokenless oEmbed and Graph API calls, llms.txt/sitemap.xml (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The narrow SEO surface is deliberate product policy. <em>Basis:</em> robots.txt sitemap set covers only profiles/places/keywords while Googlebot is excluded from comments and likes; OG tags are served to non-browser agents but stripped from the browser-UA render (Probe Log, 2026-06-10).</li>
+        <li>CDN media cannot be hotlink-archived. <em>Basis:</em> observed <code>og:image</code> URLs carry signed, expiring parameters (<code>oh=</code>, <code>oe=</code>, <code>_nc_*</code>) on <code>scontent-*.cdninstagram.com</code>.</li>
+        <li>Crawl tolerance is a revocable license, not a norm. <em>Basis:</em> the robots.txt written-permission banner binding authorized agents to Meta's Automated Data Collection Terms.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Instagram-specific DAU and revenue — Meta reports only Family-level figures; closeable only by a new Meta disclosure or regulatory filing.</li>
+        <li>Total public media-object count (posts, Reels) — no disclosure; a lower bound on professional-account posts is measurable via Meta Content Library query counts, researcher access permitting.</li>
+        <li>Whether the robots.txt sitemaps are served to verified search-engine fetchers (they 404 to ordinary clients) — closeable by comparing Google's indexed-page counts for <code>site:instagram.com</code> sections against the sitemap names.</li>
+        <li>Why plain curl gets the OG render while a browser UA gets the shell (fingerprinting? bot-funnel A/B?) — closeable with a UA × header × IP probe matrix over time.</li>
+        <li>Whether Meta Content Library includes Instagram comments or only top-level posts — closeable by reading the MCL data dictionary after access approval.</li>
       </ul>
     </section>
   </main>
