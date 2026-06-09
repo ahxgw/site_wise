@@ -16,254 +16,129 @@
     <header class="report-hero">
       <p class="eyebrow">Daily Site Profile</p>
       <h1>$host</h1>
-      <p class="lede">$host is ...</p>
+      <p class="lede">$host is ... (max 25 words; this doubles as the index-card summary)</p>
       <div class="tag-row">
         <span class="tag">Category</span>
       </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
     </header>
 
     <section class="section-card">
-      <h2>How To Read This Report</h2>
-      <p>Every claim is tagged with its evidence strength:</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> Sourced to a primary or reliable secondary record. Link the source.</li>
-        <li><span class="evidence inferred">inferred</span> A reasoned interpretation from public signals; explain the basis.</li>
-        <li><span class="evidence open">open</span> Unknown, contested, or worth deeper digging.</li>
-      </ul>
-      <p class="muted">Numbers should always carry an <em>as-of</em> date and a source. Treat the absence of a date as a smell.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Basic Profile</h2>
+      <h2>Context</h2>
+      <p>Max 200 words: what the site is, who owns it, how it makes money, and why it matters for a full-modal web index. Claims that need a tag get one; generic platform truths stay in the methodology.</p>
       <dl class="fact-list">
         <div><dt>Host</dt><dd>$host</dd></div>
         <div><dt>Canonical URL</dt><dd></dd></div>
         <div><dt>Category</dt><dd></dd></div>
         <div><dt>Grouped hosts</dt><dd>$grouped_hosts</dd></div>
-        <div><dt>Parent company / owner</dt><dd></dd></div>
-        <div><dt>Country / region</dt><dd></dd></div>
+        <div><dt>Owner</dt><dd></dd></div>
         <div><dt>Founded / launched</dt><dd></dd></div>
-        <div><dt>Founders</dt><dd></dd></div>
-        <div><dt>Current scale</dt><dd></dd></div>
-        <div><dt>Primary languages / markets</dt><dd></dd></div>
+        <div><dt>Business model</dt><dd></dd></div>
+        <div><dt>Scale anchor</dt><dd>One official number with as-of date.</dd></div>
       </dl>
     </section>
 
     <section class="section-card">
-      <h2>Key Metrics</h2>
-      <p class="muted">Every row needs: figure, as-of date, source. If no number is available, write <em>open</em> rather than leaving blank. Be numerically sensitive, but keep numbers readable: use compact units such as K, M, B, TiB, or PB instead of long raw integers unless exact precision is the point.</p>
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics that have an actual figure. Each card: value, as-of date, source link, evidence tag. Anything without a figure goes to Open Questions once — do not fill this section with "open" rows.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Metric name</dt>
+          <dd>Value — as of DATE. <a href="">Source</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made for this report (at least three; see the <a href="../../docs/methodology.html">probe playbook</a>). These are the only rows that may back a <em>verified</em> tag without an external link.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Metric</th><th>Value</th><th>As of</th><th>Source</th><th>Notes</th></tr></thead>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
           <tbody>
-            <tr><td>Monthly active users</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td>Daily active users</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td>Annual revenue (USD)</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td>Revenue mix</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td>Top regions / countries</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td>Content / inventory size</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td>Indexable object count</td><td></td><td></td><td></td><td>Pages, posts, products, videos, images, files, entities, comments, listings, reviews, etc.</td></tr>
-            <tr><td>Modality mix</td><td></td><td></td><td></td><td>Text / image / video / audio / document / structured data percentages or counts.</td></tr>
-            <tr><td>Data volume</td><td></td><td></td><td></td><td>Total bytes, average object size, derivative vs original assets where available.</td></tr>
-            <tr><td>Freshness / update rate</td><td></td><td></td><td></td><td>New objects per day/month/year; edit/delete/churn rate.</td></tr>
-            <tr><td>Structured metadata coverage</td><td></td><td></td><td></td><td>Schema.org, OpenGraph, IDs, captions, EXIF, geotags, authors, license fields, APIs.</td></tr>
-            <tr><td>Licensing / reuse coverage</td><td></td><td></td><td></td><td>Public, Creative Commons, platform-licensed, unknown, restricted, paywalled.</td></tr>
-            <tr><td>Growth direction</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>$date</td><td><code>curl -sL https://$host/robots.txt</code></td><td></td></tr>
+            <tr><td>$date</td><td><code>curl -sI https://$host/</code></td><td></td></tr>
+            <tr><td>$date</td><td>Sitemap census / structured-data sample / public API sample</td><td></td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Why This Site Matters</h2>
-      <p>Explain why this site is worth studying. Focus on systemic importance, not popularity.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Timeline</h2>
+      <h2>Access Matrix</h2>
+      <p class="muted">The core deliverable: per modality, what exists, the best legitimate path to it, what auth/quota costs, what a third-party UI may display, and how fast it churns. Every cell is verifiable, tagged, or <em>open</em>.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Date</th><th>Event</th><th>Why It Matters</th></tr></thead>
-          <tbody><tr><td></td><td></td><td></td></tr></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>User Intent and Core Scenarios</h2>
-      <p>What jobs do users hire this site to do? Separate intent type and frequency.</p>
-      <ul>
-        <li><strong>Primary intents:</strong> </li>
-        <li><strong>Secondary / emerging intents:</strong> </li>
-        <li><strong>Repeat-use loop:</strong> </li>
-        <li><strong>What it replaces / displaces:</strong> </li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Traffic and Distribution</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> Channel mix (direct / search / social / app / referral): </li>
-        <li><span class="evidence inferred">inferred</span> Why those channels: </li>
-        <li><span class="evidence open">open</span> What we still need to standardize: </li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Product Anatomy</h2>
-      <ul>
-        <li><strong>First screen:</strong> </li>
-        <li><strong>Core journey:</strong> </li>
-        <li><strong>Discovery modes:</strong> </li>
-        <li><strong>Account / identity:</strong> </li>
-        <li><strong>Supply side:</strong> </li>
-        <li><strong>Demand side:</strong> </li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Business Model</h2>
-      <ul>
-        <li><strong>Revenue streams:</strong> </li>
-        <li><strong>Pricing / unit economics:</strong> </li>
-        <li><strong>Who pays whom:</strong> </li>
-        <li><strong>Strategic shape:</strong> </li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Moat</h2>
-      <p class="muted">For each moat: type, claim, evidence, fragility.</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> </li>
-        <li><span class="evidence inferred">inferred</span> </li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Peers and Contrasts</h2>
-      <p class="muted">Compare against at least two peers. A claim about this site that doesn't survive a contrast probably isn't load-bearing.</p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Peer</th><th>Same as $host</th><th>Different from $host</th><th>What the difference teaches</th></tr></thead>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
           <tbody>
-            <tr><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Text</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Images</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Video</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Audio</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Comments / reviews</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Structured entities</td><td></td><td></td><td></td><td></td><td></td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Technical Signals</h2>
-      <ul>
-        <li><strong>DNS / hosting / CDN:</strong> </li>
-        <li><strong>Frontend / framework clues:</strong> </li>
-        <li><strong>Security / headers:</strong> </li>
-        <li><strong>Performance / delivery:</strong> </li>
-        <li><strong>Notable integrations:</strong> </li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Search and Retrieval Perspective</h2>
-      <p class="muted">Assume the task is to build a full-modal index over this site: text, images, video, audio, documents, structured records, comments, metadata, and entities. Quantify what can be indexed, how it should be keyed, how often it changes, which modalities are first-class, what reuse is allowed, and where official APIs or bulk exports are the correct path.</p>
-
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site differs from the <a href="../../docs/methodology.html">default platform assumptions</a>. Delete any block that would just restate them.</p>
       <div class="subgrid">
         <div>
-          <h4>Identifier &amp; canonical URL</h4>
-          <p>Stable IDs, URL aliases that resolve to the same resource, dedup rules.</p>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Stable IDs, URL aliases, canonicalization rules.</p>
         </div>
         <div>
-          <h4>Crawl &amp; access policy</h4>
-          <p>robots.txt, paywall / login wall / geo wall / age wall, bot defenses, llms.txt or AI training policy.</p>
-        </div>
-        <div>
-          <h4>Official APIs &amp; feeds</h4>
-          <p>API surface, quota, RSS / Atom / sitemap, OpenSearch, oEmbed, JSON-LD / microdata / OG.</p>
-        </div>
-        <div>
-          <h4>Retrieval unit (what is a "document"?)</h4>
-          <p>Page, post, paragraph, transcript segment, image, video, audio clip, product, review, comment, file, table row, entity, or bounding region — which granularity is actually useful to retrieve.</p>
-        </div>
-        <div>
-          <h4>Full-modal object inventory</h4>
-          <p>Count indexable objects by modality: text records, image files, video files, audio files, documents, structured entities, tables, comments/reviews, and generated derivatives. Include bytes and growth rate when available.</p>
+          <h4>Retrieval unit</h4>
+          <p>Which granularity is actually useful to retrieve, and what attaches to it.</p>
         </div>
         <div>
           <h4>Cross-modal joins</h4>
-          <p>How text, media, entities, captions, transcripts, thumbnails, OCR, EXIF/geodata, authors, licenses, and canonical IDs connect. State the join key and whether it is stable.</p>
-        </div>
-        <div>
-          <h4>Metadata coverage</h4>
-          <p>Quantify or mark open: titles, descriptions, captions, alt text, transcripts, structured data, schema.org, OpenGraph, EXIF, geotags, authors, timestamps, language, categories, tags, ratings, and license fields.</p>
-        </div>
-        <div>
-          <h4>Indexing path</h4>
-          <p>Best path for scale: public crawl, sitemap, RSS, official API, bulk dump, firehose, partner feed, paid endpoint, browser rendering, or no legitimate bulk path.</p>
+          <p>Join keys between text, media, entities, transcripts, authors. State whether each key is stable.</p>
         </div>
         <div>
           <h4>Authoritative content field</h4>
-          <p>When title / description / body / transcript / OCR disagree, which one wins? Where does SEO distortion live?</p>
+          <p>When title / body / transcript / OCR disagree, which wins; where SEO distortion lives.</p>
         </div>
         <div>
-          <h4>Freshness &amp; decay</h4>
-          <p>Mutability, deletion rate, decay half-life, recrawl cadence implications.</p>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Mutability, deletion rate, decay half-life by object class.</p>
         </div>
         <div>
-          <h4>Quality signals &amp; spam patterns</h4>
-          <p>Official trust tiers (verified / authority), known spam / farm patterns, manipulation incentives.</p>
+          <h4>Quality &amp; spam</h4>
+          <p>Site-specific trust tiers and manipulation patterns.</p>
         </div>
         <div>
-          <h4>Licensing &amp; reuse</h4>
-          <p>What can a third-party search UI legally show? Snippets, thumbnails, embeds, transcripts.</p>
-        </div>
-        <div>
-          <h4>Personalization &amp; non-determinism</h4>
-          <p>Logged-out vs logged-in vs cookied differences; whether anonymous crawl reflects real "popular".</p>
-        </div>
-        <div>
-          <h4>Region / language splits</h4>
-          <p>Geo / language gating, parameters (gl, hl), copyright-territory differences.</p>
-        </div>
-        <div>
-          <h4>Internal search vs external</h4>
-          <p>How good is on-site search? Do users escape to Google with <code>site:</code>? Implication for retrieval strategy.</p>
-        </div>
-        <div>
-          <h4>Outbound vs inbound posture</h4>
-          <p>Hub or sink? Where it sits in the broader knowledge graph; embed footprint elsewhere.</p>
-        </div>
-        <div>
-          <h4>Anti-manipulation / ranking surface</h4>
-          <p>If someone wanted to be found here, what gates them in? Spam defenses, ranking factors, reverse-SEO risk.</p>
+          <h4>Internal vs external search</h4>
+          <p>What on-site search answers well; whether users escape to <code>site:</code> queries.</p>
         </div>
         <div>
           <h4>User query profile</h4>
-          <p>What does a typical query on this site look like? Which retrieval intents fit, which do not.</p>
+          <p>What a typical query here looks like; which retrieval intents fit.</p>
         </div>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Risks and Future</h2>
+      <h2>Indexing Plan</h2>
+      <p class="muted">The actionable conclusion: how Site Wise would build the index for this site.</p>
       <ul>
-        <li><strong>Competitive:</strong> </li>
-        <li><strong>Regulatory:</strong> </li>
-        <li><strong>Platform / supply:</strong> </li>
-        <li><strong>Abuse / safety:</strong> </li>
-        <li><strong>Technology shift (incl. AI):</strong> </li>
+        <li><strong>Retrieval unit:</strong> </li>
+        <li><strong>Primary keys &amp; joins:</strong> </li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) ... 2) ... 3) ... (with auth cost and coverage ceiling for each)</li>
+        <li><strong>Recrawl cadence:</strong> by object class.</li>
+        <li><strong>Derivatives to generate:</strong> ASR, OCR, thumbnails, embeddings — and which source objects justify them.</li>
+        <li><strong>Demo to build:</strong> the one probe-able claim worth turning into a local demo.</li>
       </ul>
     </section>
 
     <section class="section-card">
-      <h2>Lessons</h2>
+      <h2>Risks to the Index</h2>
+      <p class="muted">Only risks that change indexing strategy: legal/licensing shifts, API deprecations, ownership changes, wall hardening. Skip generic business risks.</p>
       <ul>
-        <li><strong>Product:</strong> </li>
-        <li><strong>Growth / distribution:</strong> </li>
-        <li><strong>Business:</strong> </li>
-        <li><strong>Technical:</strong> </li>
-        <li><strong>For a retrieval / agent builder:</strong> </li>
+        <li></li>
       </ul>
     </section>
 
@@ -272,9 +147,9 @@
       <h3>Sources</h3>
       <ul><li></li></ul>
       <h3>Inferences</h3>
-      <ul><li></li></ul>
+      <ul><li>Claim. <em>Basis:</em> the concrete signal it rests on.</li></ul>
       <h3>Open Questions</h3>
-      <ul><li></li></ul>
+      <ul><li>Question — and the query, API, dump, or measurement that would close it.</li></ul>
     </section>
   </main>
 </body>

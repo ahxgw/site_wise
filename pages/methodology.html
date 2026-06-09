@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Methodology - Site Wise</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="index.html">Site Wise</a>
+      <span>Methodology</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Shared Rules</p>
+      <h1>Methodology</h1>
+      <p class="lede">How Site Wise reports are written: evidence tags, numeric conventions, default platform assumptions, and the probe playbook. Reports state only what is specific to the site; everything generic lives here.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Evidence Tags</h2>
+      <ul>
+        <li><span class="evidence verified">verified</span> Sourced to a primary or reliable secondary record, or observed first-hand in the probe log. Must link the source or name the probe.</li>
+        <li><span class="evidence inferred">inferred</span> A reasoned interpretation. Must name its basis inline (<em>Basis: robots.txt line N / oEmbed field X / observed header Y</em>). An inference that cannot name a concrete signal gets deleted, not tagged.</li>
+        <li><span class="evidence open">open</span> Unknown or contested. Every open item lives exactly once, in the report's Open Questions list, with the query, API, dump, or measurement that would close it.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Numeric Conventions</h2>
+      <ul>
+        <li>Every figure carries an <strong>as-of date</strong> and a source. A number without a date is treated as a defect.</li>
+        <li>Use compact units (<code>70K</code>, <code>1.2M</code>, <code>20B</code>, <code>1.1PB</code>) unless the exact value is itself meaningful (IDs, quotas).</li>
+        <li>Mark whether a number is directly reported or calculated by Site Wise.</li>
+        <li>Third-party traffic estimates are not treated as official figures; they appear only with the estimator named.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Default Assumptions for Large Platforms</h2>
+      <p>The following hold for essentially every major logged-in platform. Reports do <strong>not</strong> repeat them; they state only where the site deviates.</p>
+      <ul>
+        <li>Logged-out / anonymous crawl does not reflect the personalized product. Region, language, age, device, and account state change results.</li>
+        <li>Official embeds / oEmbed are the safest public display path; bulk media mirroring requires explicit rights review.</li>
+        <li>robots.txt commonly blocks AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, etc.); the report notes only the deltas or unusual allowances.</li>
+        <li>Internal ranking is the dominant distribution channel; spam and manipulation incentives concentrate wherever ranking rewards attention.</li>
+        <li>Internal metadata (ranking features, safety labels, engagement telemetry) is far richer than anything exposed externally.</li>
+        <li>Trends decay fast; back catalogs persist. Recrawl cadence should follow object class, not site-wide averages.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Playbook</h2>
+      <p>Each report must include at least three first-hand probes, recorded in its Probe Log with date, command, and observation. Standard probes:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Probe</th><th>Command / method</th><th>What it answers</th></tr></thead>
+          <tbody>
+            <tr><td>DNS / CDN</td><td><code>dig +short host</code>, reverse lookup of returned IPs</td><td>Hosting and CDN posture.</td></tr>
+            <tr><td>Headers</td><td><code>curl -sI https://host/</code></td><td>Security headers, cache policy, framework fingerprints.</td></tr>
+            <tr><td>Crawl policy</td><td><code>curl -sL https://host/robots.txt</code> (snapshot the relevant lines)</td><td>Allowed paths, AI-crawler stance, sitemap pointers.</td></tr>
+            <tr><td>Sitemap census</td><td>Fetch sitemap index, count child sitemaps and URL entries</td><td>Lower bound on indexable URL count and its structure.</td></tr>
+            <tr><td>Structured data sample</td><td>Fetch N sample pages, extract JSON-LD / OG / microdata</td><td>Measured metadata coverage instead of a guessed one.</td></tr>
+            <tr><td>Public API sample</td><td>oEmbed / public endpoint call with a real object URL</td><td>Exact fields a third party can get without auth.</td></tr>
+            <tr><td>Feeds</td><td>Check RSS / Atom / OpenSearch / llms.txt</td><td>Legitimate incremental ingestion paths.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Writing Rules</h2>
+      <ul>
+        <li><strong>Lede:</strong> at most 25 words. It doubles as the index-card summary.</li>
+        <li><strong>Context:</strong> origin, owner, business model, and why the site matters fit in one section of at most 200 words. No section for intents, product anatomy, or lessons unless a claim there is evidenced and site-specific.</li>
+        <li><strong>Access Matrix is the core deliverable:</strong> modality &times; objects &times; legitimate path &times; auth/quota &times; license/display &times; freshness. Every cell must be verifiable or marked open.</li>
+        <li><strong>Deltas only:</strong> retrieval notes state how this site differs from the default assumptions above.</li>
+        <li><strong>One home per fact:</strong> an open question appears once (Open Questions), a number appears once (Verified Metrics), a probe appears once (Probe Log). Other sections reference them instead of restating them.</li>
+        <li>Run <code>python3 scripts/lint_report.py</code> before committing; it flags untagged links, basis-less inferences, and oversized ledes.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -50,28 +50,25 @@ The `docs/` directory contains the static reader for GitHub Pages. Build it with
 python3 scripts/build_site.py
 ```
 
-This copies HTML reports into `docs/reports/`, copies shared CSS into `docs/assets/`, and writes `docs/index.html`.
+This copies HTML reports into `docs/reports/`, copies shared CSS into `docs/assets/`, copies shared pages from `pages/` (such as the methodology), and writes `docs/index.html`. During the copy it injects `data-label` attributes into every table cell so tables render as stacked cards on phones instead of requiring horizontal scrolling.
 
 For phone viewing, GitHub Pages is deployed by the `Deploy GitHub Pages` workflow in `.github/workflows/pages.yml`. The workflow publishes the built `docs/` directory from `main` whenever the reader, reports, assets, build script, or workflow changes. In the repository settings, set Pages to use GitHub Actions as the source.
 
 ## Report Structure
 
-Use `reports/template.html` as the default outline. The main sections are:
+Use `reports/template.html` as the default outline. The report is organized around the index-builder question; business analysis is compressed into context, not expanded into sections. The main sections are:
 
-- One-sentence understanding
-- Basic profile
-- Key metrics, including traffic, revenue, object counts, modality mix, data volume, freshness, metadata coverage, and licensing coverage
-- Timeline
-- User intent and core scenarios
-- Traffic and distribution
-- Product anatomy
-- Business model
-- Moat
-- Technical signals
-- Search and retrieval perspective, written from the perspective of building a full-modal index
-- Risks and future
-- Lessons
-- Sources
+- One-sentence lede (max 25 words; doubles as the index-card summary)
+- Context: what the site is, owner, business model, and why it matters for retrieval, in at most 200 words plus a compact fact list
+- Verified Metrics: only metrics that have an actual figure, each with value, as-of date, source, and evidence tag — missing numbers go to Open Questions once
+- Probe Log: at least three first-hand measurements (robots.txt, headers, sitemap census, structured-data sample, public API sample)
+- Access Matrix: the core deliverable — modality × objects × best legitimate path × auth/quota × license/display × freshness
+- Retrieval Notes: only site-specific deltas from the shared default assumptions
+- Indexing Plan: retrieval unit, join keys, ranked ingestion paths, recrawl cadence, derivatives, and the demo worth building
+- Risks to the Index: only risks that change indexing strategy
+- Source Notes: sources, inferences (each with an explicit basis), and open questions
+
+Shared rules — evidence tags, numeric conventions, default platform assumptions, and the probe playbook — live in `pages/methodology.html` and are published at `docs/methodology.html`. Reports state only what is specific to the site.
 
 ## Structured Profiles
 
@@ -99,10 +96,11 @@ Possible selection strategies:
 
 1. Pick one host from the local private `top_site.jsonl`.
 2. Create `reports/YYYY-MM-DD/host.html` from `reports/template.html`.
-3. Gather sources and technical observations.
-4. Fill the report with sourced facts, explicit inferences, and open questions.
-5. Optionally create or update a structured profile that conforms to `schema/site_profile.schema.json`.
-6. Commit the report and any profile updates.
+3. Run the probes first (robots.txt, headers, sitemap census, structured-data sample, public API sample) and record them in the Probe Log.
+4. Fill the Access Matrix and the rest of the report with sourced facts, inferences that name their basis, and open questions (each open item appears exactly once).
+5. Lint the report with `python3 scripts/lint_report.py`.
+6. Optionally create or update a structured profile that conforms to `schema/site_profile.schema.json`.
+7. Commit the report and any profile updates.
 
 You can pick the next site with:
 
@@ -130,6 +128,10 @@ Selection strategies:
 ## Research Principles
 
 - Separate verified facts from inference.
+- Every inference must name its basis inline (`Basis: robots.txt line N`, `Basis: oEmbed field X`). An inference that cannot name a concrete signal gets deleted, not tagged.
+- Write deltas, not boilerplate: generic truths about large platforms live in the shared methodology page; reports state only how this site differs.
+- One home per fact: an open question appears once (Open Questions), a number once (Verified Metrics), a probe once (Probe Log). Other sections reference them instead of restating them.
+- Prefer measurement over prose: each report carries at least three first-hand probes whose outputs back its verified claims.
 - Prefer primary sources when available.
 - Include dates for major events.
 - Be numerically sensitive. Treat object counts, modality split, data volume, freshness/update rate, structured metadata coverage, and licensing/reuse coverage as first-class facts, not appendix details.

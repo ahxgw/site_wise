@@ -315,6 +315,68 @@ code {
 }
 
 @media (max-width: 680px) {
+  /* Tables become stacked cards: each row is a bordered card, each cell
+     shows its column header (injected as data-label by build_site.py). */
+  .table-wrap {
+    overflow-x: visible;
+    border: 0;
+  }
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  table {
+    min-width: 0;
+    background: none;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  tr:last-child {
+    margin-bottom: 0;
+  }
+
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eceff2;
+  }
+
+  td:last-child {
+    border-bottom: 0;
+  }
+
+  td:empty {
+    display: none;
+  }
+
+  td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 2px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 680px) {
   .site-shell,
   .report-shell {
     padding: 14px;
