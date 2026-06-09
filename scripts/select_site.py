@@ -15,9 +15,30 @@ TOP_SITE_PATH = ROOT / "top_site.jsonl"
 TEMPLATE_PATH = ROOT / "reports" / "template.html"
 REPORTS_DIR = ROOT / "reports"
 AGGREGATED_HOSTS = {
+    "facebook.com": {
+        "match_hosts": ("m.facebook.com", "mbasic.facebook.com", "touch.facebook.com"),
+        "match_suffixes": (),
+        "note": "Mobile/basic/touch Facebook hosts are analyzed together as Facebook.",
+    },
+    "imdb.com": {
+        "match_hosts": ("m.imdb.com",),
+        "match_suffixes": (),
+        "note": "Mobile IMDb hosts are analyzed together as IMDb.",
+    },
+    "youtube.com": {
+        "match_hosts": ("m.youtube.com",),
+        "match_suffixes": (),
+        "note": "Mobile YouTube hosts are analyzed together as YouTube.",
+    },
     "wikipedia.org": {
+        "match_hosts": (),
         "match_suffixes": (".wikipedia.org",),
         "note": "Language editions are analyzed together as Wikipedia.",
+    },
+    "yelp.com": {
+        "match_hosts": ("m.yelp.com",),
+        "match_suffixes": (),
+        "note": "Mobile Yelp hosts are analyzed together as Yelp.",
     }
 }
 
@@ -43,6 +64,8 @@ def report_exists(host: str) -> bool:
 def canonical_host(host: str) -> str:
     for canonical, rule in AGGREGATED_HOSTS.items():
         if host == canonical:
+            return canonical
+        if host in rule.get("match_hosts", ()):
             return canonical
         if any(host.endswith(suffix) for suffix in rule["match_suffixes"]):
             return canonical

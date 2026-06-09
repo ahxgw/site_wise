@@ -43,7 +43,7 @@
         <div><dt>Host</dt><dd><code>facebook.com</code></dd></div>
         <div><dt>Canonical URL</dt><dd><a href="https://www.facebook.com/">https://www.facebook.com/</a></dd></div>
         <div><dt>Category</dt><dd>Social network, social graph, groups/community platform, pages/publisher platform, social video, marketplace, events, ads platform</dd></div>
-        <div><dt>Related hosts</dt><dd><code>m.facebook.com</code>, <code>mbasic.facebook.com</code>, <code>business.facebook.com</code>, <code>developers.facebook.com</code>, <code>graph.facebook.com</code>, <code>fbcdn.net</code>, <code>facebook.net</code>, <code>messenger.com</code></dd></div>
+        <div><dt>Related hosts</dt><dd><code>m.facebook.com</code>, <code>mbasic.facebook.com</code>, <code>touch.facebook.com</code>, <code>business.facebook.com</code>, <code>developers.facebook.com</code>, <code>graph.facebook.com</code>, <code>fbcdn.net</code>, <code>facebook.net</code>, <code>messenger.com</code></dd></div>
         <div><dt>Parent company / owner</dt><dd>Meta Platforms, Inc. (NASDAQ: META), formerly Facebook, Inc.</dd></div>
         <div><dt>Country / region</dt><dd>United States; Meta is headquartered in Menlo Park, California, with Facebook used globally except where blocked or constrained by regulation</dd></div>
         <div><dt>Founded / launched</dt><dd>Launched February 4, 2004 as TheFacebook for Harvard students; expanded beyond colleges and became broadly available over time</dd></div>
@@ -189,10 +189,10 @@
     <section class="section-card">
       <h2>Technical Signals</h2>
       <ul>
-        <li><strong>DNS / hosting / CDN:</strong> observed homepage resources and CSP reference Meta-controlled domains such as <code>*.facebook.com</code>, <code>*.facebook.net</code>, <code>*.fbcdn.net</code>, <code>*.fbsbx.com</code>, plus Instagram/WhatsApp-related domains. Delivery appears vertically integrated rather than outsourced to a generic CDN.</li>
-        <li><strong>Frontend / framework clues:</strong> logged-out web is heavily JavaScript-driven and served with Meta-specific bootloader/reporting endpoints; mobile and app surfaces are the primary product experience.</li>
-        <li><strong>Security / headers:</strong> homepage response on 2026-06-05 included HSTS with preload, <code>x-frame-options: DENY</code>, <code>x-content-type-options: nosniff</code>, a large CSP, reporting endpoints, and restrictive cache headers.</li>
-        <li><strong>Performance / delivery:</strong> <code>alt-svc: h3=":443"</code> indicates HTTP/3 availability; resource hints and client hints are used for viewport/device-aware delivery.</li>
+        <li><strong>DNS / hosting / CDN:</strong> observed homepage resources and CSP reference Meta-controlled domains such as <code>*.facebook.com</code>, <code>*.facebook.net</code>, <code>*.fbcdn.net</code>, <code>*.fbsbx.com</code>, plus Instagram/WhatsApp-related domains. On 2026-06-09, <code>m.facebook.com</code> resolved to <code>star-mini.c10r.facebook.com</code> and <code>57.144.186.1</code>. Delivery appears vertically integrated rather than outsourced to a generic CDN.</li>
+        <li><strong>Frontend / framework clues:</strong> logged-out web is heavily JavaScript-driven and served with Meta-specific bootloader/reporting endpoints; <code>m.facebook.com</code>, <code>mbasic.facebook.com</code>, and <code>touch.facebook.com</code> should be treated as mobile/basic views over the same Facebook object graph, not separate sites.</li>
+        <li><strong>Security / headers:</strong> homepage response on 2026-06-05 included HSTS with preload, <code>x-frame-options: DENY</code>, <code>x-content-type-options: nosniff</code>, a large CSP, reporting endpoints, and restrictive cache headers. A 2026-06-09 <code>m.facebook.com</code> response also included HSTS with preload/includeSubDomains, <code>X-Frame-Options: DENY</code>, <code>X-Content-Type-Options: nosniff</code>, <code>Origin-Agent-Cluster: ?1</code>, reporting endpoints, and cookies scoped to <code>.facebook.com</code>.</li>
+        <li><strong>Performance / delivery:</strong> <code>alt-svc: h3=":443"</code> indicates HTTP/3 availability; resource hints and client hints are used for viewport/device-aware delivery. The mobile response included connection-quality telemetry headers, consistent with adaptive delivery for varied mobile network conditions.</li>
         <li><strong>Notable integrations:</strong> Graph API, Pages API, Login, sharing/plugins legacy surface, ads/business tools, Meta Pixel/Conversions API, Open Graph link previews, <code>facebookexternalhit</code> crawler, and <code>fbcdn.net</code> media delivery.</li>
       </ul>
     </section>
@@ -204,7 +204,7 @@
       <div class="subgrid">
         <div>
           <h4>Identifier &amp; canonical URL</h4>
-          <p>Core IDs include user/profile ID, page ID, group ID, post/story/video/photo/comment IDs, event ID, listing ID, ad ID, and permalink. Vanity URLs and mobile/basic URLs should dedupe to canonical object IDs when available.</p>
+          <p>Core IDs include user/profile ID, page ID, group ID, post/story/video/photo/comment IDs, event ID, listing ID, ad ID, and permalink. Vanity URLs, desktop URLs, <code>m.facebook.com</code>, <code>mbasic.facebook.com</code>, and <code>touch.facebook.com</code> URLs should dedupe to canonical object IDs when available.</p>
         </div>
         <div>
           <h4>Crawl &amp; access policy</h4>
@@ -310,6 +310,7 @@
         <li><a href="https://www.facebook.com/legal/automated_data_collection_terms">Facebook Automated Data Collection Terms</a>: automated collection permission and compliance posture.</li>
         <li><a href="https://developers.facebook.com/docs/graph-api/">Meta Graph API documentation</a> and <a href="https://developers.facebook.com/docs/pages-api/">Pages API documentation</a>: official API surface for permissioned objects.</li>
         <li>Observed with <code>curl -I -L https://www.facebook.com/</code> on 2026-06-05: CSP, HSTS, X-Frame-Options, cache, reporting, client hints, HTTP/3 alt-svc, and Meta resource domains.</li>
+        <li>Mobile-web follow-up on 2026-06-09: <code>dig +short m.facebook.com</code>, <code>curl -I https://m.facebook.com/</code>, and <code>curl -L https://www.facebook.com/robots.txt</code>; used to fold <code>m.facebook.com</code> into this canonical Facebook report rather than creating a separate daily profile.</li>
       </ul>
       <h3>Inferences</h3>
       <ul>
