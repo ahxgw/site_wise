@@ -16,282 +16,210 @@
     <header class="report-hero">
       <p class="eyebrow">Daily Site Profile</p>
       <h1>tiktok.com</h1>
-      <p class="lede">TikTok is a short-video recommendation network where the primary graph is not who you know but what you watch, replay, skip, remix, save, search, buy, and share.</p>
+      <p class="lede">TikTok is a billion-user short-video network: 19-digit video IDs, page-embedded JSON state, keyless oEmbed, and a researcher-gated 100K-records/day Research API.</p>
       <div class="tag-row">
         <span class="tag">Short Video</span>
         <span class="tag">Recommendations</span>
-        <span class="tag">Creators</span>
-        <span class="tag">Music</span>
         <span class="tag">Commerce</span>
         <span class="tag">ByteDance</span>
+        <span class="tag">US JV</span>
       </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
     </header>
 
     <section class="section-card">
-      <h2>How To Read This Report</h2>
-      <p>Every claim is tagged:</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> Sourced to a primary or reliable secondary record.</li>
-        <li><span class="evidence inferred">inferred</span> Reasoned from public signals.</li>
-        <li><span class="evidence open">open</span> Unknown, contested, or worth deeper digging.</li>
-      </ul>
-      <p class="muted">TikTok and ByteDance are private, so revenue, global DAU, object counts, and storage volume are less transparent than public-company platforms. Treat user and revenue rows carefully: official TikTok numbers are sparse, while analyst estimates vary.</p>
-    </section>
-
-    <section class="section-card">
-      <h2>Basic Profile</h2>
+      <h2>Context</h2>
+      <p>TikTok is ByteDance's global short-video app, monetized by ads and TikTok Shop commerce. Since January 23, 2026 its US operation sits in a separate company, TikTok USDS Joint Venture LLC (ownership in Verified Metrics), which controls US user data, the US recommendation algorithm (run in Oracle's cloud), and US moderation. For an index builder the unit is the <strong>video post</strong>: a 19-digit ID under an <code>@handle</code>, joined to a sound, a creator, hashtags, and comments. TikTok exposes this corpus three ways, none complete: public web pages embedding a full JSON state blob (served unreliably — see Probe Log), a keyless oEmbed endpoint, and a Research API gated to qualified academic and nonprofit researchers. There is no sitemap of content and no feed. <span class="evidence inferred">inferred</span> The public-web SEO surface is deliberately minimal. <em>Basis:</em> the only sitemap holds 5,660 corporate/legal URLs and zero videos or profiles; fetched pages carry no JSON-LD or OG tags; robots.txt allows generic crawlers only a short path whitelist (Probe Log, 2026-06-10).</p>
       <dl class="fact-list">
         <div><dt>Host</dt><dd><code>tiktok.com</code></dd></div>
         <div><dt>Canonical URL</dt><dd><a href="https://www.tiktok.com/">https://www.tiktok.com/</a></dd></div>
-        <div><dt>Category</dt><dd>Short-form video platform, recommendation feed, creator network, music/meme distribution system, live/video commerce surface, advertising platform</dd></div>
-        <div><dt>Related hosts</dt><dd><code>www.tiktok.com</code>, <code>m.tiktok.com</code>, <code>vm.tiktok.com</code>, <code>tiktokcdn.com</code>, <code>tiktokv.com</code>, <code>tiktokapis.com</code>, <code>developers.tiktok.com</code>, <code>ads.tiktok.com</code>, <code>seller.tiktokglobalshop.com</code>, <code>musical.ly</code></dd></div>
-        <div><dt>Parent company / owner</dt><dd>Global TikTok is owned by ByteDance. In the United States, TikTok announced TikTok USDS Joint Venture LLC on January 23, 2026, with majority non-ByteDance ownership and ByteDance retaining 19.9% of the joint venture.</dd></div>
-        <div><dt>Country / region</dt><dd>ByteDance is China-founded and globally operated; TikTok has major regional operating, data-security, and regulatory structures in the US, Europe, Singapore, and other markets.</dd></div>
-        <div><dt>Founded / launched</dt><dd>TikTok launched internationally in 2017; ByteDance combined it with Musical.ly after the 2017 acquisition and 2018 merger.</dd></div>
-        <div><dt>Founders</dt><dd>ByteDance was founded by Zhang Yiming; TikTok evolved from ByteDance's Douyin/TikTok product organization and Musical.ly's creator/video network.</dd></div>
-        <div><dt>Current scale</dt><dd>Officially more than 1B global monthly users since 2021; TikTok cited a billion-strong global community and over 170M US users in 2024, then more than 200M Americans and 7.5M US businesses in its January 2026 USDS announcement.</dd></div>
-        <div><dt>Primary languages / markets</dt><dd>Global, mobile-first, youth-to-mainstream; strong in entertainment, music, beauty, food, sports, education, local trends, live shopping, creator marketing, and small-business discovery.</dd></div>
+        <div><dt>Category</dt><dd>Short-form video, recommendation feed, video commerce</dd></div>
+        <div><dt>Related hosts</dt><dd><code>vm.tiktok.com</code> (share links), <code>tiktokcdn.com</code> + regional variants (media), <code>developers.tiktok.com</code>, <code>library.tiktok.com</code> (ad library), <code>newsroom.tiktok.com</code></dd></div>
+        <div><dt>Owner</dt><dd>ByteDance Ltd. (private) globally; TikTok USDS Joint Venture LLC for US operations since Jan 23 2026</dd></div>
+        <div><dt>Founded / launched</dt><dd>TikTok launched internationally 2017; merged with Musical.ly 2018</dd></div>
+        <div><dt>Business model</dt><dd>Advertising + TikTok Shop take rate + live gifts</dd></div>
+        <div><dt>Scale anchor</dt><dd>1B+ monthly users, as of Sep 27 2021 — TikTok's last official global figure (<a href="https://newsroom.tiktok.com/en-us/1-billion-people-on-tiktok">Newsroom</a>)</dd></div>
       </dl>
     </section>
 
     <section class="section-card">
-      <h2>Key Metrics</h2>
-      <p class="muted">TikTok official metrics are used when available; otherwise rows are marked open or estimate-only.</p>
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (current global MAU, video count, Shop GMV) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Global monthly users</dt>
+          <dd>1B+ — as of Sep 27 2021; TikTok has published no newer global figure. <a href="https://newsroom.tiktok.com/en-us/1-billion-people-on-tiktok">TikTok Newsroom</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>US users and businesses</dt>
+          <dd>200M+ Americans, 7.5M US businesses — as of Jan 23 2026. <a href="https://newsroom.tiktok.com/announcement-from-the-new-tiktok-usds-joint-venture-llc">USDS JV announcement</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>US JV ownership</dt>
+          <dd>Oracle / Silver Lake / MGX 15% each, ByteDance 19.9%, remaining investors ~35.1% — as of Jan 23 2026. <a href="https://newsroom.tiktok.com/announcement-from-the-new-tiktok-usds-joint-venture-llc">USDS JV announcement</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>ByteDance profit (estimate)</dt>
+          <dd>~$50B net profit pace for 2025, Bloomberg's estimate — reported Dec 19 2025; ByteDance is private and publishes no audited figures. <a href="https://www.bloomberg.com/news/articles/2025-12-19/tiktok-owner-bytedance-on-track-for-50-billion-profit-in-2025">Bloomberg</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Research API quota</dt>
+          <dd>1,000 requests/day, 100 records/request, up to 100K records/day (video and comment queries); follower/following lists 20K calls and 2M records/day; resets 12AM UTC — as of Jun 10 2026. <a href="https://developers.tiktok.com/doc/research-api-faq">Research API FAQ</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Display API rate limit</dt>
+          <dd>600 requests/min per endpoint (<code>user/info</code>, <code>video/list</code>, <code>video/query</code>), one-minute sliding window — as of Jun 10 2026. <a href="https://developers.tiktok.com/doc/tiktok-api-v2-rate-limit">Rate limits doc</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap census</dt>
+          <dd>5,660 URLs in the only sitemap, all corporate/legal/business pages; zero video, profile, or tag URLs — probed 2026-06-10 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sample profile scale</dt>
+          <dd>@khaby.lame: 161.9M followers, 1,330 videos, in page-embedded JSON — probed 2026-06-10 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-10 (regeneration day), desktop Chrome user agent and logged out unless noted.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Metric</th><th>Value</th><th>As of</th><th>Source / Tag</th><th>Notes</th></tr></thead>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
           <tbody>
-            <tr><td data-label="Metric">Monthly active users</td><td data-label="Value">More than 1B global MAU</td><td data-label="As of">Sep 2021 official anchor; still described as billion-strong in 2024</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> TikTok Newsroom</td><td data-label="Notes">TikTok has not published a current global MAU every quarter. Third-party 2026 estimates vary, so this report avoids treating them as official.</td></tr>
-            <tr><td data-label="Metric">US users</td><td data-label="Value">Over 170M Americans in 2024; more than 200M Americans in USDS announcement</td><td data-label="As of">2024 and Jan 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> TikTok Newsroom / TikTok USDS</td><td data-label="Notes">The 2026 figure appears in the USDS joint-venture announcement and is US-specific.</td></tr>
-            <tr><td data-label="Metric">Daily active users</td><td data-label="Value">Open</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Need first-party DAU by country, age, logged-in state, and app-vs-web surface.</td></tr>
-            <tr><td data-label="Metric">Annual revenue</td><td data-label="Value">Open for TikTok; ByteDance is private and does not publish audited segment revenue</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Analyst and press estimates exist, but they mix ByteDance, TikTok global, TikTok US, ads, shop, and China/non-China lines.</td></tr>
-            <tr><td data-label="Metric">Revenue mix</td><td data-label="Value">Ads, TikTok Shop/commerce, live gifts, creator/brand tools, music/artist promotion, business services</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Ads and commerce are the main strategic monetization surfaces; exact mix is not public.</td></tr>
-            <tr><td data-label="Metric">Top regions / countries</td><td data-label="Value">Open</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">US and Europe are strategic regulatory markets; India has remained unavailable since the 2020 ban.</td></tr>
-            <tr><td data-label="Metric">Content / inventory size</td><td data-label="Value">Open</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Need counts for public videos, private videos, live replays, comments, sounds, effects, filters, shop products, creators, deleted/private objects, and moderation-limited objects.</td></tr>
-            <tr><td data-label="Metric">Indexable object count</td><td data-label="Value">Open; object classes include videos, creators, captions, hashtags, sounds, effects, comments, stitches, duets, live sessions, playlists, collections, shop products, reviews, ads, search entities, and generated derivatives</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">The public web exposes many video/profile/tag/music URLs, but API access is permissioned and not a bulk corpus feed.</td></tr>
-            <tr><td data-label="Metric">Modality mix</td><td data-label="Value">Video-first with audio, text captions, comments, thumbnails, creator graph, hashtags, effects, product records, and engagement telemetry</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Audio and short visual clips are first-class retrieval features, not attachments.</td></tr>
-            <tr><td data-label="Metric">Data volume</td><td data-label="Value">Open</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence open">open</span></td><td data-label="Notes">Need originals, transcodes, thumbnails, audio tracks, captions, comments, embeddings, moderation labels, live archives, and shop media bytes.</td></tr>
-            <tr><td data-label="Metric">Freshness / update rate</td><td data-label="Value">Open; very high churn in trends, sounds, comments, search demand, live streams, shop listings, and recommendation feedback</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Trending half-life can be hours or days; creator back catalogs persist much longer.</td></tr>
-            <tr><td data-label="Metric">Structured metadata coverage</td><td data-label="Value">Moderate externally, high internally</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">Developer APIs expose user/video fields, oEmbed, post IDs, captions, counts, cover URLs, share URLs, and embed HTML, but not the full ranking graph.</td></tr>
-            <tr><td data-label="Metric">Licensing / reuse coverage</td><td data-label="Value">Restricted and terms-bound</td><td data-label="As of">Jun 9 2026</td><td data-label="Source / Tag"><span class="evidence verified">verified</span> robots.txt / developer docs</td><td data-label="Notes">Robots blocks multiple AI crawlers and AI-user agents. Embeds/oEmbed are the main public reuse path for eligible public videos/profiles.</td></tr>
-            <tr><td data-label="Metric">Growth direction</td><td data-label="Value">More commerce, local discovery, USDS data controls, creator tools, search behavior, and AI-assisted ranking/moderation</td><td data-label="As of">2026</td><td data-label="Source / Tag"><span class="evidence inferred">inferred</span></td><td data-label="Notes">US ownership and data-security restructuring became a first-order product and infrastructure issue in 2026.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>dig +short tiktok.com</code></td><td data-label="Observation">Akamai IP space (23.32.39.x, PTR <code>*.deploy.static.akamaitechnologies.com</code>); <code>www</code> CNAMEs through <code>edgesuite.net</code> and ByteDance's <code>bytewlb.akadns.net</code> load balancer.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -sI https://www.tiktok.com/</code></td><td data-label="Observation">HTTP/2 200, <code>server: TLB</code>, Akamai cache MISS, <code>no-store</code>, HSTS 1y; very large CSP reporting to <code>mon.tiktokv.com</code>; <code>x-tt-trace-id</code>/<code>x-tt-logid</code> trace headers.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl -s https://www.tiktok.com/robots.txt</code></td><td data-label="Observation">59 lines. 25 UAs get <code>Disallow: /</code>: GPTBot, ClaudeBot, CCBot, PerplexityBot, agent UAs (ChatGPT-User, Claude-User, GoogleAgent-Mariner), Baiduspider/Sogou/360/Yisou — and ByteDance's own <strong>Bytespider</strong>. Generic agents get an Allow whitelist (<code>/tag</code>, <code>/music</code>, <code>/share</code>, <code>/discover</code>…) with <code>/search?</code>, <code>/shop/view/product/</code>, <code>/embed/v2</code> disallowed. Bingbot alone is barred from <code>/discover</code>. No Sitemap directive.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Sitemap census</td><td data-label="Observation"><code>/sitemap.xml</code> 302s to <code>/tos/node/sitemaps/sitemap.xml</code>: one flat urlset, 5,660 URLs, entirely corporate/legal/business pages. No content URLs of any kind.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Profile fetch <code>/@khaby.lame</code></td><td data-label="Observation">392KB HTML embedding <code>__UNIVERSAL_DATA_FOR_REHYDRATION__</code> JSON: user id, stable <code>secUid</code>, follower/heart/video counts (the sibling <code>heartCount</code> field shows a 32-bit overflow beside <code>heart: 2.6B</code>). No JSON-LD, no OG tags, no video IDs in the initial HTML — the item grid loads via XHR.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe">Video page fetch (4 attempts, same UA)</td><td data-label="Observation">1 of 4 returned the full 411KB page with <code>webapp.video-detail</code> JSON: <code>statsV2</code> (play/digg/comment/share/collect/repost), music ID, <code>playAddr</code> media URL, <code>subtitleInfos</code>, AIGC flags, <code>indexEnabled: true</code>. The other 3 got an 11KB login shell with an empty <code>&lt;title&gt;</code>.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>curl "https://www.tiktok.com/oembed?url=…/video/6718335390845095173"</code></td><td data-label="Observation">Keyless JSON, 15 fields: title (= caption), author_name/author_unique_id/author_url, embed <code>html</code> with <code>data-video-id</code>, thumbnail_url/width/height, embed_product_id, embed_type, provider fields. No view counts, duration, or create time. Thumbnail URL signed with <code>x-expires</code> + <code>x-signature</code>.</td></tr>
+            <tr><td data-label="Date">2026-06-10</td><td data-label="Probe"><code>/llms.txt</code>, RSS</td><td data-label="Observation"><code>/llms.txt</code> 302s to the 404 page; <code>/rss</code> 302s away. No feeds, no llms.txt.</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Why This Site Matters</h2>
-      <p>TikTok matters because it proved that an interest graph can outcompete a follower graph for entertainment discovery. The For You feed made cold-start recommendations feel personal before users had built a social network, and it made every video an audition for global distribution.</p>
-      <p>The site also changed how culture moves. Sounds, captions, effects, duets, stitches, comments, creator personas, product links, and algorithmic feedback can turn one clip into music discovery, political discourse, shopping demand, search behavior, or a cross-platform meme. For retrieval, TikTok is a full-modal ranking problem: video, audio, text, entities, comments, product metadata, and viewer feedback all carry meaning.</p>
-      <div class="callout">
-        <strong>Why this site matters for retrieval:</strong> TikTok's most valuable index is not a list of videos. It is a time-sensitive map from clips to sounds, creators, trends, products, comments, visual entities, viewer cohorts, safety labels, and reuse/remix chains.
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Timeline</h2>
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, cost, display rights, churn. Research API = <a href="https://developers.tiktok.com/products/research-api/">researcher program</a> (US/EEA/UK/CH academics; EU nonprofits; Brazil youth-safety orgs). Display API = <a href="https://developers.tiktok.com/doc/display-api-overview">OAuth-scoped read API</a>.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Date</th><th>Event</th><th>Why It Matters</th></tr></thead>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
           <tbody>
-            <tr><td data-label="Date">2012</td><td data-label="Event">ByteDance is founded by Zhang Yiming.</td><td data-label="Why It Matters">Creates the recommendation-first company that later scales Toutiao, Douyin, and TikTok.</td></tr>
-            <tr><td data-label="Date">2016</td><td data-label="Event">Douyin launches in China.</td><td data-label="Why It Matters">Short-video recommendation format proves out before TikTok's global expansion.</td></tr>
-            <tr><td data-label="Date">2017</td><td data-label="Event">TikTok launches internationally; ByteDance acquires Musical.ly.</td><td data-label="Why It Matters">Combines ByteDance recommendations with an existing Western lip-sync/creator base.</td></tr>
-            <tr><td data-label="Date">2018</td><td data-label="Event">Musical.ly is merged into TikTok.</td><td data-label="Why It Matters">Creates the global TikTok app and accelerates creator migration.</td></tr>
-            <tr><td data-label="Date">2020</td><td data-label="Event">India bans TikTok; US pressure and attempted forced-sale actions begin.</td><td data-label="Why It Matters">Geopolitical platform risk becomes central to TikTok's future.</td></tr>
-            <tr><td data-label="Date">Sep 2021</td><td data-label="Event">TikTok announces more than 1B monthly users globally.</td><td data-label="Why It Matters">Confirms TikTok as a top-tier global consumer platform.</td></tr>
-            <tr><td data-label="Date">2022-2023</td><td data-label="Event">TikTok Shop, search behavior, ads, and creator monetization expand in key markets.</td><td data-label="Why It Matters">The app becomes commerce and discovery infrastructure, not only entertainment.</td></tr>
-            <tr><td data-label="Date">Apr 24 2024</td><td data-label="Event">The US divest-or-ban law is enacted.</td><td data-label="Why It Matters">Ownership, hosting, app distribution, and algorithm control become legal gating issues.</td></tr>
-            <tr><td data-label="Date">Jan 17 2025</td><td data-label="Event">The US Supreme Court upholds the divest-or-ban law in <em>TikTok Inc. v. Garland</em>.</td><td data-label="Why It Matters">Confirms the US legal pressure survives First Amendment challenge.</td></tr>
-            <tr><td data-label="Date">Jan-Jun 2025</td><td data-label="Event">US enforcement is delayed through executive actions while a deal is pursued.</td><td data-label="Why It Matters">TikTok remains available but under unresolved legal and infrastructure uncertainty.</td></tr>
-            <tr><td data-label="Date">Jan 23 2026</td><td data-label="Event">TikTok announces TikTok USDS Joint Venture LLC.</td><td data-label="Why It Matters">US user data, apps, algorithm security, and moderation receive a separate governance and ownership structure.</td></tr>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Captions, hashtags, bios, comment text. Total counts: open.</td>
+              <td data-label="Best legitimate path">Research API video/comment/user queries; page-state JSON for seed sets (unreliably served, Probe Log).</td>
+              <td data-label="Auth &amp; quota">Research approval; 1,000 req / 100K records per day.</td>
+              <td data-label="License / display">Research terms: non-commercial use, no redistribution of raw data.</td>
+              <td data-label="Freshness">Captions near-immutable; comments high-churn.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Video covers, dynamic covers, avatars on <code>tiktokcdn.com</code>.</td>
+              <td data-label="Best legitimate path">oEmbed <code>thumbnail_url</code>; <code>cover</code> fields in page state.</td>
+              <td data-label="Auth &amp; quota">None for oEmbed (keyless).</td>
+              <td data-label="License / display">URLs are signed and expire (Probe Log) — display via embed, no durable hotlink.</td>
+              <td data-label="Freshness">Static per video.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">The short-video corpus itself; public count open.</td>
+              <td data-label="Best legitimate path">Official embed player (oEmbed <code>html</code> + <code>embed.js</code>). <code>playAddr</code> appears in page state but bulk download is terms-barred.</td>
+              <td data-label="Auth &amp; quota">None for embeds.</td>
+              <td data-label="License / display">Embed-only display; Research API returns metadata, never media files.</td>
+              <td data-label="Freshness">Append-heavy; takedowns and creator deletions remove tails.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">Sounds/music: every video record carries a music ID; <code>/music/{slug}-{id}</code> pages are robots-allowed.</td>
+              <td data-label="Best legitimate path">Music ID via oEmbed embed HTML and page state; sound pages for the video cluster.</td>
+              <td data-label="Auth &amp; quota">None for public pages.</td>
+              <td data-label="License / display">Music licensing is the most restricted layer; no reuse path for audio itself.</td>
+              <td data-label="Freshness">Trend half-life days; catalog persists.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments</td>
+              <td data-label="Objects &amp; est. count">Comment threads per video; volume open.</td>
+              <td data-label="Best legitimate path">Research API comments endpoint only (100/request).</td>
+              <td data-label="Auth &amp; quota">Within the 100K records/day research quota.</td>
+              <td data-label="License / display">Research terms only; no public comment API.</td>
+              <td data-label="Freshness">Hours-to-days churn on trending posts.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Users (id, secUid, handle, stats), hashtags, sounds, effects, shop products, ads.</td>
+              <td data-label="Best legitimate path">Research API for users/follows; <a href="https://library.tiktok.com/ads">Commercial Content Library</a> + API for ads (EU coverage); Display API for OAuth-consenting creators' own profiles/videos.</td>
+              <td data-label="Auth &amp; quota">Research/Commercial API approval; Display API 600 req/min after user consent.</td>
+              <td data-label="License / display">Ad library is public-searchable; shop product pages are robots-disallowed.</td>
+              <td data-label="Freshness">Ads and shop listings churn daily; user records slowly.</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>User Intent and Core Scenarios</h2>
-      <ul>
-        <li><strong>Primary intents:</strong> watch personalized short videos, follow creators, search trends/how-tos/reviews, discover music, comment/share, create videos, remix sounds, go live, and browse products.</li>
-        <li><strong>Secondary / emerging intents:</strong> local discovery, news exposure, shopping, creator monetization, artist promotion, brand performance marketing, education, fandom, live commerce, and AI-assisted creation/moderation.</li>
-        <li><strong>Repeat-use loop:</strong> open app or web link; For You feed serves high-feedback videos; user watches, skips, replays, likes, comments, shares, saves, follows, searches, buys, or remixes; ranking adapts; notifications and trend loops bring the user back.</li>
-        <li><strong>What it replaces / displaces:</strong> TV clips, music discovery, YouTube browsing, Instagram Reels time, meme forums, product reviews, casual search, recipe/tutorial sites, shopping inspiration, and parts of local entertainment discovery.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Traffic and Distribution</h2>
-      <ul>
-        <li><span class="evidence verified">verified</span> TikTok publicly cited more than 1B global monthly users in 2021 and over 170M US users in 2024; the January 2026 USDS announcement cites more than 200M Americans and 7.5M US businesses.</li>
-        <li><span class="evidence verified">verified</span> Robots.txt blocks many AI crawlers and AI-user agents, including GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, Bytespider, and others.</li>
-        <li><span class="evidence inferred">inferred</span> Distribution is app-first and recommendation-first. Web traffic matters for public video/profile/tag/music pages, embeds, search snippets, desktop viewing, and logged-out link sharing, but the core experience is the native app feed.</li>
-        <li><span class="evidence inferred">inferred</span> The platform's strongest distribution channel is internal ranking: For You, following, search, sounds, hashtags, comments, shares, creator collaborations, stitches/duets, live, shop, and notifications.</li>
-        <li><span class="evidence open">open</span> Need app-vs-web traffic, logged-out share, search referral share, watch-time by surface, country-level usage, TikTok Shop GMV by market, and the share of sessions beginning from search rather than feed.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Product Anatomy</h2>
-      <ul>
-        <li><strong>First screen:</strong> app users see a full-screen video feed; web users see a desktop/mobile shell for For You, explore/discover, profile, tag, music, search, or video pages, often with login prompts and app-open nudges.</li>
-        <li><strong>Core journey:</strong> user lands on feed/video/search/profile; ranking selects short videos; user gives implicit and explicit feedback; creator, sound, hashtag, and product links provide lateral navigation; user may follow, comment, remix, shop, or create.</li>
-        <li><strong>Discovery modes:</strong> For You feed, following feed, search, hashtags, sounds/music pages, creator profiles, comments, shares, playlists, live, shop surfaces, effects, stitches/duets, embeds, and external search.</li>
-        <li><strong>Account / identity:</strong> creator handle, user ID, device/session identity, viewing history, interests, region, age, safety settings, shop/account links, and advertiser/business accounts form the identity and ranking context.</li>
-        <li><strong>Supply side:</strong> creators, viewers who become creators, brands, musicians, labels, publishers, sellers, live streamers, agencies, advertisers, affiliate creators, effect/template makers, and commerce partners.</li>
-        <li><strong>Demand side:</strong> viewers seeking entertainment, learning, shopping inspiration, trend awareness, music, local tips, news exposure, creator relationships, and social participation.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Business Model</h2>
-      <ul>
-        <li><strong>Revenue streams:</strong> ads, commerce/take rates and seller services, promoted content, TikTok Shop, live gifts, creator/brand marketplace tooling, music promotion, and business accounts.</li>
-        <li><strong>Pricing / unit economics:</strong> advertisers buy reach, views, clicks, conversions, app installs, leads, catalog outcomes, and shop sales. Unit economics depend on watch time, ad load, conversion signal quality, creator supply, moderation cost, CDN/video delivery, and commerce logistics.</li>
-        <li><strong>Who pays whom:</strong> advertisers and sellers pay TikTok; users pay attention and sometimes buy products or gifts; TikTok pays or enables creators through funds, affiliate commissions, live gifts, brand deals, and shop economics.</li>
-        <li><strong>Strategic shape:</strong> TikTok converts entertainment ranking into commerce and ads. Its advantage is demand creation: users do not need to know what they want before the feed shows it to them.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Moat</h2>
-      <p class="muted">For each moat: type, claim, evidence, fragility.</p>
-      <ul>
-        <li><span class="evidence verified">verified</span> <strong>Scale:</strong> official anchors show a billion-plus global community and a very large US base. Fragility: regulatory access can change by country, as India and the US process demonstrate.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Recommendation feedback:</strong> watch time, rewatches, skips, comments, shares, saves, follows, searches, and purchases create dense interest signals. Fragility: rivals can copy the full-screen video format, and regulation may constrain algorithm/data use.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Creator and trend liquidity:</strong> a clip can reach beyond follower count quickly, attracting creators who want discovery. Fragility: creator income uncertainty, moderation disputes, and platform risk can push supply elsewhere.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Audio/remix culture:</strong> sounds, effects, stitches, duets, captions, and templates make content reusable. Fragility: music licensing, copyright disputes, and low-quality imitation can weaken the loop.</li>
-        <li><span class="evidence inferred">inferred</span> <strong>Commerce integration:</strong> TikTok Shop turns attention into measurable transactions. Fragility: counterfeit goods, fulfillment quality, seller spam, regulation, and user trust can limit shopping growth.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Peers and Contrasts</h2>
-      <p class="muted">Compare TikTok by ranking graph, media unit, and commerce loop.</p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Peer</th><th>Same as tiktok.com</th><th>Different from tiktok.com</th><th>What the difference teaches</th></tr></thead>
-          <tbody>
-            <tr><td data-label="Peer">Instagram Reels</td><td data-label="Same as tiktok.com">Vertical short video, creators, music, ads, recommendations, shopping experiments.</td><td data-label="Different from tiktok.com">Instagram remains tied to identity, photos, DMs, and follower graph; TikTok is more interest/discovery-first.</td><td data-label="What the difference teaches">A copied format is not enough; the ranking culture and creator expectation matter.</td></tr>
-            <tr><td data-label="Peer">YouTube Shorts</td><td data-label="Same as tiktok.com">Short video, recommendations, creators, music, ads, comments, public web pages.</td><td data-label="Different from tiktok.com">YouTube has a stronger long-form archive, search habit, subscriptions, and mature creator monetization.</td><td data-label="What the difference teaches">TikTok owns immediacy and trend velocity; YouTube owns archive depth and intentional search.</td></tr>
-            <tr><td data-label="Peer">Snapchat Spotlight</td><td data-label="Same as tiktok.com">Mobile video, camera tools, creator/entertainment discovery.</td><td data-label="Different from tiktok.com">Snapchat is more private messaging and friend-camera centered; TikTok is public discovery and trend centered.</td><td data-label="What the difference teaches">Private social frequency and public recommendation liquidity are different moats.</td></tr>
-            <tr><td data-label="Peer">Amazon / Temu / Shopee</td><td data-label="Same as tiktok.com">Commerce and product discovery increasingly overlap with TikTok Shop.</td><td data-label="Different from tiktok.com">Marketplaces start with purchase intent; TikTok starts with entertainment and manufactures demand.</td><td data-label="What the difference teaches">Commerce can be pull-based search or push-based discovery; TikTok's bet is the latter.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <h2>Technical Signals</h2>
-      <ul>
-        <li><strong>DNS / hosting / CDN:</strong> Local DNS on 2026-06-09 resolved <code>tiktok.com</code> to Akamai IPs in the <code>23.215.7.*</code> range. Response headers included Akamai cache/origin timing plus TikTok/ByteDance trace IDs.</li>
-        <li><strong>Frontend / framework clues:</strong> The homepage response identified <code>x-gw-dst-psm: serverless.tiktok.desktop</code>, <code>x-bytefaas-enable-stream</code>, and <code>x-powered-by: Goofy Node</code>. The web shell references many TikTok, ByteDance, CDN, captcha, login, payment, ad, and embed domains.</li>
-        <li><strong>Security / headers:</strong> Observed headers include HSTS with includeSubDomains, <code>X-Frame-Options: SAMEORIGIN</code>, <code>X-Content-Type-Options: nosniff</code>, <code>Referrer-Policy: strict-origin-when-cross-origin</code>, <code>Feature-Policy</code> limiting microphone/geolocation, CSP and CSP report-only, and multiple secure cookies.</li>
-        <li><strong>Performance / delivery:</strong> The response is dynamic and no-store, with CDN miss/origin timing, ByteFaaS timing, and broad CSP. Video playback and embeds rely on TikTok CDN/media domains, web workers, and app/web handoff.</li>
-        <li><strong>Notable integrations:</strong> TikTok Login, Display API, Content Posting API, oEmbed, embed player, TikTok Shop, ads/business tools, CapCut/Lemon8 related surfaces, music/sound infrastructure, captcha providers, payment providers, and analytics/security monitoring endpoints.</li>
-      </ul>
-    </section>
-
-    <section class="section-card">
-      <h2>Search and Retrieval Perspective</h2>
-      <p class="muted">Assume the task is to build a full-modal index over TikTok: video, audio, captions, comments, creators, hashtags, sounds, effects, products, live sessions, ads, structured metadata, and ranking signals.</p>
-
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where TikTok differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
       <div class="subgrid">
         <div>
-          <h4>Identifier &amp; canonical URL</h4>
-          <p>Stable units include user ID/open_id, handle, video/post ID, sound/music ID, hashtag, effect ID, comment ID, live ID, shop product ID, ad creative ID, and share URL. The post ID in URLs such as <code>/@user/video/{id}</code> is the key dedupe anchor.</p>
-        </div>
-        <div>
-          <h4>Crawl &amp; access policy</h4>
-          <p>Robots.txt allows selected public paths for generic crawlers but blocks many AI crawlers and AI-user agents. Search pages, auth, embeds under certain paths, shop product pages, and multiple API paths are disallowed. Bot defenses and login/app prompts constrain practical crawl quality.</p>
-        </div>
-        <div>
-          <h4>Official APIs &amp; feeds</h4>
-          <p>Developer surfaces include Display API for profile/video metadata, Content Posting API for video/photo publishing, oEmbed for public embeds, embed player, Login Kit, Research API in eligible contexts, and business/ads/shop APIs where approved.</p>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Video ID is a 64-bit integer whose top 32 bits are the Unix creation time — IDs sort chronologically for free. <span class="evidence inferred">inferred</span> <em>Basis:</em> sample video <code>6718335390845095173 &gt;&gt; 32</code> = 1564234353, five seconds from its page-state <code>createTime</code> 1564234358 (Probe Log). Handles are mutable; <code>user id</code> and <code>secUid</code> are the stable creator keys. <code>vm.tiktok.com</code> share links are opaque aliases that must be resolved before dedup.</p>
         </div>
         <div>
           <h4>Retrieval unit</h4>
-          <p>The primary document is a video post plus creator, caption, sound, hashtags, effects, comments, cover image, engagement counts, safety state, and optional product/live/ad context. For some queries, sound, hashtag, creator, or product is the better retrieval unit.</p>
-        </div>
-        <div>
-          <h4>Full-modal object inventory</h4>
-          <p>Open. Object classes include public/private videos, thumbnails, audio tracks, captions, OCR text, ASR transcripts, comments, creator profiles, hashtags, sounds, effects, stickers, livestreams, products, shops, ads, and derived embeddings.</p>
+          <p>The video post, carrying caption, creator, music ID, hashtags, counts, AIGC flags. For trend queries the <strong>sound</strong> is the better unit: one music ID clusters thousands of videos into a meme lineage no text field captures.</p>
         </div>
         <div>
           <h4>Cross-modal joins</h4>
-          <p>Video ID joins frames, audio, caption, hashtags, creator, comments, engagement, cover image, transcript/OCR, safety labels, shop products, and remixes. Sound ID joins videos into trend clusters. Product ID joins videos to shop listings and sellers.</p>
-        </div>
-        <div>
-          <h4>Metadata coverage</h4>
-          <p>Externally moderate: oEmbed and Display API can expose title/caption, author, video ID, embed HTML, cover image, duration, dimensions, share URL, and counts. Internally, ranking and safety metadata is much richer but not publicly available.</p>
-        </div>
-        <div>
-          <h4>Indexing path</h4>
-          <p>Best path is official API plus embeds for allowed public content and partner/research access where eligible. Public crawl can cover some visible pages but is incomplete, fragile, and restricted for AI-related user agents.</p>
+          <p>All joins ride three stable keys: video ID, music ID, secUid. Hashtags join via <code>/tag/{name}</code> but are free-text and squattable. Shop product IDs exist in video records but their pages are robots-disallowed — the commerce join is visible only in-app.</p>
         </div>
         <div>
           <h4>Authoritative content field</h4>
-          <p>For meaning, video/audio content wins over caption alone. Captions, hashtags, sound title, comments, OCR, ASR, creator profile, and product metadata are all retrieval fields, but none alone is authoritative.</p>
+          <p>Captions are sparse and emoji-laden; the video itself carries the meaning. <code>subtitleInfos</code> in page state holds creator/auto captions when present (zero tracks on the sampled video — coverage is an open question). ASR is not optional here; it is the primary text field.</p>
         </div>
         <div>
-          <h4>Freshness &amp; decay</h4>
-          <p>Trends and sounds can spike and decay within hours or days. Evergreen tutorials, creator catalogs, music tracks, product videos, and popular memes persist longer. Recrawl cadence should be highest for trending sounds/tags, comments, shop listings, and newly viral posts.</p>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Because IDs encode creation time, "everything since timestamp T" is an ID-range scan — the Research API supports date-bounded queries, making incremental ingestion unusually clean for a platform with no feeds.</p>
         </div>
         <div>
-          <h4>Quality signals &amp; spam patterns</h4>
-          <p>Useful signals include watch completion, replay, share, save, comment quality, creator history, originality, moderation labels, account integrity, product/seller trust, copyright status, and bot/engagement-farm detection.</p>
+          <h4>Quality &amp; spam</h4>
+          <p>Page state ships integrity labels worth ingesting: <code>IsAigc</code>/<code>AIGCDescription</code> (AI-generated flags) and <code>indexEnabled</code> — a per-video flag for whether the creator permits external indexing. An index should honor <code>indexEnabled: false</code> as an opt-out signal.</p>
         </div>
         <div>
-          <h4>Licensing &amp; reuse</h4>
-          <p>Embeds and oEmbed are the safest public display path for eligible content. Bulk mirroring, AI training, transcript extraction, thumbnail caching, or product reuse requires careful terms, rights, privacy, and robots review.</p>
-        </div>
-        <div>
-          <h4>Personalization &amp; non-determinism</h4>
-          <p>Very high. Results differ by region, language, age, watch history, device, app/web surface, account state, safety settings, experiments, and legal market. Logged-out web does not reflect the real For You feed.</p>
-        </div>
-        <div>
-          <h4>Region / language splits</h4>
-          <p>Region affects availability, music rights, content policy, shop, ads, data residency, youth features, and legal status. USDS and Project Clover-like structures make data governance part of retrieval architecture.</p>
-        </div>
-        <div>
-          <h4>Internal search vs external</h4>
-          <p>Internal search increasingly answers how-to, product, local, creator, music, and trend queries using watch and engagement signals. External search can surface public videos and profiles, but lacks personalization and trend graph context.</p>
-        </div>
-        <div>
-          <h4>Outbound vs inbound posture</h4>
-          <p>TikTok is mostly a sink for attention, but embeds, share links, creator links, shop links, music links, and cross-posting make it a trend source for the broader web.</p>
-        </div>
-        <div>
-          <h4>Anti-manipulation / ranking surface</h4>
-          <p>Manipulation vectors include fake engagement, repost farms, misleading captions, synthetic media, affiliate spam, product scams, hashtag hijacking, sound squatting, and coordinated influence. Ranking must account for provenance and integrity, not only popularity.</p>
+          <h4>Internal vs external search</h4>
+          <p>TikTok search is a destination for how-to/product/local queries, and the platform keeps external engines at arm's length: <code>/search?</code> is robots-disallowed, so query-level content is invisible to crawlers. Google holds video pages only because generic agents stay allowed.</p>
         </div>
         <div>
           <h4>User query profile</h4>
-          <p>Queries are often trend, creator, song, product, tutorial, local, meme, or "what was that video" queries. Many are better answered with visual/audio matching than text search.</p>
+          <p>Trend, sound, creator, and "what was that video" queries — many better answered by audio/visual match (music ID, frame embedding) than by caption text.</p>
         </div>
       </div>
     </section>
 
     <section class="section-card">
-      <h2>Risks and Future</h2>
+      <h2>Indexing Plan</h2>
       <ul>
-        <li><strong>Competitive:</strong> Instagram Reels, YouTube Shorts, Snapchat, Facebook, X video, Twitch/live platforms, Amazon/Temu/Shopee commerce, Spotify/YouTube Music discovery, and AI video apps compete for creators and attention.</li>
-        <li><strong>Regulatory:</strong> US ownership/security controls, EU data residency and DSA-style obligations, youth safety, election integrity, algorithm audits, data transfers, copyright/music licensing, and commerce regulation are first-order risks.</li>
-        <li><strong>Platform / supply:</strong> Creator earnings, moderation consistency, music rights, shop quality, app-store access, country bans, and advertiser trust can affect supply and demand.</li>
-        <li><strong>Abuse / safety:</strong> Misinformation, dangerous challenges, scams, counterfeit goods, synthetic media, harassment, self-harm content, sexual exploitation, and coordinated influence require constant safety investment.</li>
-        <li><strong>Technology shift (incl. AI):</strong> Generative video lowers creation costs and raises spam/authenticity costs. AI search may compete with TikTok's discovery role, while TikTok can also use multimodal AI to improve ranking, search, moderation, translation, and shopping.</li>
+        <li><strong>Retrieval unit:</strong> video post; sounds as a first-class secondary unit clustering posts by music ID.</li>
+        <li><strong>Primary keys &amp; joins:</strong> video ID (time-ordered, see Retrieval Notes); creator = secUid; sound = music ID; resolve <code>vm.tiktok.com</code> aliases at ingest.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Research API — 100K records/day of videos+comments with date-bounded queries, but gated to academic/nonprofit status and revocable. 2) oEmbed + page-state JSON — keyless metadata for seed sets; page state is rich but served on ~1 of 4 attempts (Probe Log), so plan for retries. 3) Embed player — display layer, zero metadata beyond oEmbed. 4) Commercial Content API — the ads corpus, EU coverage only.</li>
+        <li><strong>Recrawl cadence:</strong> new posts via Research API date queries daily; engagement counts on trending posts hourly via page state; back-catalog counts monthly; comment threads only for posts above an engagement floor.</li>
+        <li><strong>Derivatives to generate:</strong> ASR on every indexed video (captions are not the content); frame OCR for text-on-screen memes; audio fingerprints to join re-uploads to the same sound; re-fetch thumbnails on access since CDN URLs expire.</li>
+        <li><strong>Demo to build:</strong> an oEmbed enrichment loop — paste any TikTok URL (including <code>vm.</code> short links), resolve, pull the 15 oEmbed fields plus page-state stats when the fetch wins, and emit one index document showing which fields came keyless vs. gated.</li>
       </ul>
     </section>
 
     <section class="section-card">
-      <h2>Lessons</h2>
+      <h2>Risks to the Index</h2>
       <ul>
-        <li><strong>Product:</strong> If recommendations are good enough, users will build an interest graph before they build a follower graph.</li>
-        <li><strong>Growth / distribution:</strong> Letting any clip reach beyond follower count creates creator liquidity and keeps supply motivated.</li>
-        <li><strong>Business:</strong> Entertainment can become commerce when the feed creates demand before the user forms a search query.</li>
-        <li><strong>Technical:</strong> Short video retrieval is inherently multimodal: audio, frames, captions, comments, OCR, ASR, products, and engagement must be indexed together.</li>
-        <li><strong>For a retrieval / agent builder:</strong> Do not reduce TikTok to captions. The key joins are video-to-sound, video-to-creator, video-to-trend, video-to-product, video-to-comment, and video-to-viewer-cohort.</li>
+        <li><strong>Jurisdiction split:</strong> since Jan 23 2026 the US algorithm and US user data sit in TikTok USDS JV (Oracle cloud) while the rest of the world stays ByteDance (<a href="https://newsroom.tiktok.com/announcement-from-the-new-tiktok-usds-joint-venture-llc">announcement</a>). Two operators can mean diverging corpora, policies, and API terms by region.</li>
+        <li><strong>Research API is a privilege, not infrastructure:</strong> eligibility is region- and status-gated, quotas are fixed ("we can't grant exceptions" — <a href="https://developers.tiktok.com/doc/research-api-faq">FAQ</a>), and access is revocable; an index must not make it the only ingestion path.</li>
+        <li><strong>Page-state dependence is fragile:</strong> the embedded JSON blob is an internal hydration format, already bot-walled intermittently (Probe Log); a rename or full wall breaks path 2 overnight.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Scraper enforcement will keep hardening.</strong> <em>Basis:</em> robots.txt blocks 25 named crawlers including ByteDance's own Bytespider (observed 2026-06-10) — a company that bans its own bot from its consumer site treats anti-scraping as policy, not accident.</li>
+        <li><strong>EU pressure opens doors:</strong> DSA proceedings produced binding ad-transparency commitments (<a href="https://digital-strategy.ec.europa.eu/en/news/commission-accepts-tiktoks-commitments-advertising-transparency-under-digital-services-act">EC, 2026</a>) — researcher access is likeliest to expand in the EU.</li>
       </ul>
     </section>
 
@@ -299,27 +227,29 @@
       <h2>Source Notes</h2>
       <h3>Sources</h3>
       <ul>
-        <li><a href="https://newsroom.tiktok.com/en-us/1-billion-people-on-tiktok">TikTok Newsroom: Thanks a billion!</a> - official 1B monthly user announcement in September 2021.</li>
-        <li><a href="https://newsroom.tiktok.com/en-us/year-on-tiktok-2024">TikTok Newsroom: Year on TikTok 2024</a> - billion-strong global community and 170M US users reference.</li>
-        <li><a href="https://newsroom.tiktok.com/announcement-from-the-new-tiktok-usds-joint-venture-llc">TikTok USDS Joint Venture announcement</a> - January 2026 US joint venture, ownership, board, data, algorithm, moderation, and 200M+ US users / 7.5M US businesses claims.</li>
-        <li><a href="https://supreme.justia.com/cases/federal/us/604/24-656/">TikTok Inc. v. Garland</a> and <a href="https://www.law.cornell.edu/supremecourt/text/24-656">Cornell LII text</a> - Supreme Court decision context for the US divest-or-ban law.</li>
-        <li><a href="https://www.whitehouse.gov/presidential-actions/2025/06/further-extending-the-tiktok-enforcement-delay/">White House June 19 2025 enforcement delay</a> - US enforcement timeline before the 2026 USDS deal.</li>
-        <li><a href="https://www.tiktok.com/robots.txt">TikTok robots.txt</a> - crawl and AI-crawler access policy observed 2026-06-09.</li>
-        <li><a href="https://developers.tiktok.com/doc/display-api-overview/">TikTok Display API</a>, <a href="https://developers.tiktok.com/doc/content-posting-api-reference-direct-post">Content Posting API</a>, and <a href="https://developers.tiktok.com/doc/embed-videos/">oEmbed / Embed docs</a> - official developer surfaces.</li>
-        <li>Local observations on 2026-06-09: <code>dig +short tiktok.com</code>, <code>curl -I https://www.tiktok.com/</code>, and <code>curl -L https://www.tiktok.com/robots.txt</code>.</li>
+        <li><a href="https://newsroom.tiktok.com/en-us/1-billion-people-on-tiktok">TikTok Newsroom, Sep 27 2021</a> — 1B+ monthly users, the last official global anchor.</li>
+        <li><a href="https://newsroom.tiktok.com/announcement-from-the-new-tiktok-usds-joint-venture-llc">TikTok USDS Joint Venture LLC announcement, Jan 23 2026</a> — JV ownership, scope (US data, algorithm, moderation), 200M+ Americans, 7.5M US businesses.</li>
+        <li><a href="https://www.bloomberg.com/news/articles/2025-12-19/tiktok-owner-bytedance-on-track-for-50-billion-profit-in-2025">Bloomberg, Dec 19 2025</a> — ByteDance ~$50B 2025 profit estimate (estimator-named; ByteDance is private).</li>
+        <li><a href="https://developers.tiktok.com/doc/research-api-faq">Research API FAQ</a> and <a href="https://developers.tiktok.com/products/research-api/">Research Tools page</a> — quotas, eligibility regions, data scope.</li>
+        <li><a href="https://developers.tiktok.com/doc/display-api-overview">Display API overview</a> and <a href="https://developers.tiktok.com/doc/tiktok-api-v2-rate-limit">v2 rate limits</a> — OAuth scopes and the 600 req/min sliding window.</li>
+        <li><a href="https://digital-strategy.ec.europa.eu/en/news/commission-accepts-tiktoks-commitments-advertising-transparency-under-digital-services-act">European Commission DSA decision</a> and <a href="https://newsroom.tiktok.com/en-eu/expanding-tiktoks-research-api-and-commercial-content-library">TikTok Newsroom</a> — Commercial Content Library scope and obligations.</li>
+        <li>Local probes on 2026-06-10: <code>dig</code>, header/robots/sitemap fetches, profile and video page fetches with browser UA, keyless oEmbed call, llms.txt/RSS checks (full results in the Probe Log).</li>
       </ul>
       <h3>Inferences</h3>
       <ul>
-        <li>Revenue mix, object inventory, data volume, and full-modal joins are inferred from product surfaces and developer APIs because TikTok/ByteDance do not publish a full current corpus or segment-revenue breakdown.</li>
-        <li>The report treats the For You feed as TikTok's main distribution engine because the product is organized around personalized video ranking rather than follower-only timelines.</li>
-        <li>USDS effects are described as structural for US retrieval/data governance, but the exact implementation details of algorithm retraining, audit boundaries, and interoperability are open beyond the public announcement.</li>
+        <li>Video IDs encode creation time in their top 32 bits. <em>Basis:</em> sampled ID right-shifted by 32 lands five seconds from the page-state <code>createTime</code> (Probe Log).</li>
+        <li>The public-web SEO surface is deliberately minimal. <em>Basis:</em> sitemap has zero content URLs; no JSON-LD/OG in fetched pages; robots.txt whitelists only a handful of paths (all observed 2026-06-10).</li>
+        <li>Scraper enforcement will keep hardening. <em>Basis:</em> 25 crawlers at <code>Disallow: /</code> including ByteDance's own Bytespider; video pages already serve a login shell on most automated fetches.</li>
+        <li>Thumbnails cannot be cached by URL. <em>Basis:</em> oEmbed <code>thumbnail_url</code> carries <code>x-expires</code> and <code>x-signature</code> parameters (observed 2026-06-10).</li>
       </ul>
       <h3>Open Questions</h3>
       <ul>
-        <li>Current global MAU/DAU, country-level active users, app-vs-web share, and logged-out usage.</li>
-        <li>Counts for public videos, private videos, live sessions, comments, sounds, effects, shop products, and deleted/moderated objects.</li>
-        <li>TikTok-only and TikTok Shop revenue, GMV, ad revenue, creator payouts, and country mix.</li>
-        <li>How USDS algorithm security, Oracle-hosted infrastructure, and global interoperability work in practice for ranking, search, moderation, and data access.</li>
+        <li>Total public video count — no official figure; boundable by sweeping Research API date-range queries and summing result counts within quota.</li>
+        <li>Current global MAU (the official anchor is Sep 2021) — needs a TikTok or USDS disclosure.</li>
+        <li>Whether the USDS algorithm fork diverges US vs. global ranking and corpus — measurable by running identical logged-out queries from US and EU vantage points over weeks.</li>
+        <li>TikTok Shop GMV by market — only third-party estimates exist; an official figure needs a ByteDance/TikTok disclosure.</li>
+        <li>Subtitle (<code>subtitleInfos</code>) coverage rate — the sampled video had zero tracks; measurable by sampling N video pages and counting non-empty tracks, which sets the ASR budget.</li>
+        <li>What fraction of page fetches get the full hydration JSON vs. the login shell, by IP reputation and region — measurable by repeating the video-page probe across vantage points.</li>
       </ul>
     </section>
   </main>
