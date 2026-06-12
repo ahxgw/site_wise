@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fandom.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-06-12</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>fandom.com</h1>
+      <p class="lede">Fandom hosts 250K CC-licensed fan wikis whose HTML is Cloudflare-walled but whose MediaWiki API, XML dumps, and image CDN remain wide open.</p>
+      <div class="tag-row">
+        <span class="tag">Wikis</span>
+        <span class="tag">UGC</span>
+        <span class="tag">Gaming &amp; Entertainment</span>
+        <span class="tag">CC BY-SA</span>
+        <span class="tag">MediaWiki</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Fandom is the web's largest concentration of fan-maintained reference content: 250K MediaWiki instances on <code>*.fandom.com</code> subdomains, one per franchise, plus acquired editorial brands (GameSpot, Metacritic, TV Guide). Founded as Wikia in 2004 by Jimmy Wales and Angela Beesley, rebranded Fandom in 2016, controlled by a TPG-led investor group since 2018. Revenue is display ads layered onto volunteer-written wikis — the tension that drives its biggest structural risk, community forks. For an index builder Fandom is unusual twice over: the text corpus is CC BY-SA licensed, so a full legal mirror is possible; and the access posture is inverted relative to every other platform this project has profiled. The HTML surface — including robots.txt — sits behind a Cloudflare managed challenge, while the per-wiki MediaWiki API, weekly XML dumps on S3, and the image CDN answer anonymous requests with no auth and no quota (Probe Log). The wiki, not the page, is the unit of acquisition: each subdomain is a separate database with its own statistics, dump, sitemap set, and community.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>fandom.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.fandom.com/">https://www.fandom.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Wiki hosting / fan reference (gaming, TV, film, anime)</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>*.fandom.com</code> wiki subdomains; <code>static.wikia.nocookie.net</code> (media CDN); <code>community.fandom.com</code> (central); editorial brands on separate hosts</dd></div>
+        <div><dt>Owner</dt><dd>Fandom, Inc. (private), controlled by a TPG-led group since the 2018 Jon Miller investment (<a href="https://www.prnewswire.com/news-releases/wikia-incs-fandom-announces-investment-led-by-media-veteran-jon-miller-300600947.html">press release</a>)</dd></div>
+        <div><dt>Founded / launched</dt><dd>2004 as Wikia (Jimmy Wales, Angela Beesley); rebranded Fandom 2016</dd></div>
+        <div><dt>Business model</dt><dd>Display ads on wiki pages + editorial-brand advertising; no paywall, no API monetization</dd></div>
+        <div><dt>Scale anchor</dt><dd>350M monthly uniques, 250K wikis, 50M content pages — as of Oct 31 2024 (<a href="https://about.fandom.com/news/fandom-uncovers-two-decades-of-fan-trends-across-entertainment-gaming-in-celebration-of-its-20th-anniversary">20th-anniversary release</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (total articles across wikis, revenue) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Platform scale</dt>
+          <dd>350M monthly unique visitors, 250K wikis, 50M pages of content — as of Oct 31 2024, Fandom's latest official disclosure. <a href="https://about.fandom.com/news/fandom-uncovers-two-decades-of-fan-trends-across-entertainment-gaming-in-celebration-of-its-20th-anniversary">20th-anniversary release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Contributor base</dt>
+          <dd>~100K wiki contributors, 32M edits in 2024 — as of Oct 31 2024. <a href="https://about.fandom.com/news/fandom-uncovers-two-decades-of-fan-trends-across-entertainment-gaming-in-celebration-of-its-20th-anniversary">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Largest probed wiki corpora</dt>
+          <dd>Marvel Database 271K articles / 1.57M pages; Wookieepedia (Star Wars) 227K articles / 724K pages / 15.6M edits / 156K images — as of 2026-06-12, siteinfo API probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Registered accounts (global pool)</dt>
+          <dd>41.27M — as of 2026-06-12, siteinfo <code>users</code> field probe; one account works on every wiki (basis in Inferences). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Wookieepedia XML dumps</dt>
+          <dd>Current-pages 273.6MB, full-history 1.79GB (.7z), both regenerated 2026-06-08 — observed via S3 HEAD probe 2026-06-12. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Wookieepedia Discussions</dt>
+          <dd>1.24M posts — as of 2026-06-12, <code>wikia.php</code> DiscussionPost API probe (<code>postCount</code> field). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Edit churn, single active wiki</dt>
+          <dd>500+ changes in the trailing 24h on Wookieepedia (API cap reached with continuation; 492 of the first 500 were edits) — as of 2026-06-12, recentchanges probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Text license</dt>
+          <dd>CC BY-SA 3.0 Unported, platform-wide default — as of 2026-06-12, confirmed by the siteinfo rightsinfo probe and the <a href="https://www.fandom.com/licensing">licensing page</a> (read via archive snapshot). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-12. Rows marked "via Wayback" read an archive snapshot because the live path is challenge-gated; the snapshot date is given.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-06-12</td><td data-label="Probe"><code>dig +short fandom.com / www</code></td><td data-label="Observation">A records 162.159.142.170 / 172.66.2.166; <code>www</code> is a CNAME to <code>www.fandom.com.cdn.cloudflare.net</code>. Entirely behind Cloudflare.</td></tr>
+            <tr><td data-label="Date">2026-06-12</td><td data-label="Probe"><code>curl -sI https://www.fandom.com/</code></td><td data-label="Observation">HTTP 403 with <code>cf-mitigated: challenge</code> — a Cloudflare managed JS challenge, not a plain block. Same result for <code>/robots.txt</code>, <code>/sitemap.xml</code>, <code>/llms.txt</code>, for wiki subdomains (<code>starwars.fandom.com</code>), and with a desktop-browser UA. Even crawl policy is unreadable without passing the challenge.</td></tr>
+            <tr><td data-label="Date">2026-06-12</td><td data-label="Probe"><code>api.php?action=query&amp;meta=siteinfo</code> across 11 wikis</td><td data-label="Observation">HTTP 200 to plain curl, no auth. MediaWiki 1.43.8. Census: marvel 271K articles, starwars 227K, elderscrolls 73K, memory-alpha 66K, fallout 58K, genshin-impact 38K, harrypotter 25K, gta 23K, zelda 12K, leagueoflegends 11K, onepiece 8K. Articles run 1–31% of raw page counts.</td></tr>
+            <tr><td data-label="Date">2026-06-12</td><td data-label="Probe"><code>api.php?action=parse&amp;page=Luke_Skywalker</code></td><td data-label="Observation">Full rendered article HTML returned; revisions query shows latest edit 2026-06-10 and 705KB of wikitext for this one page. Content API is real-time and unmetered.</td></tr>
+            <tr><td data-label="Date">2026-06-12</td><td data-label="Probe"><code>wikia.php?controller=DiscussionPost&amp;method=getPosts</code></td><td data-label="Observation">HTTP 200, JSON with post bodies, author IDs, avatar URLs, pagination (620K pages of 2 at limit=2), and per-container counts (ARTICLE_COMMENT / FORUM / WALL).</td></tr>
+            <tr><td data-label="Date">2026-06-12</td><td data-label="Probe"><code>curl -sI s3.amazonaws.com/wikia_xml_dumps/s/st/starwars_pages_current.xml.7z</code></td><td data-label="Observation">HTTP 200, anonymous. Current-pages and full-history dumps both Last-Modified 2026-06-08 — four days before this probe.</td></tr>
+            <tr><td data-label="Date">2026-06-12</td><td data-label="Probe"><code>curl -sI static.wikia.nocookie.net/starwars/images/…</code></td><td data-label="Observation">HTTP 200, <code>access-control-allow-origin: *</code>, on-the-fly WebP transcode by an in-house thumbnailer (<code>x-thumbnailer: Thumblr</code>). Hotlinking is technically unrestricted.</td></tr>
+            <tr><td data-label="Date">2026-06-12</td><td data-label="Probe">robots.txt via Wayback (snapshot 2026-02-03)</td><td data-label="Observation">974 lines. Only four UAs get <code>Disallow: /</code>: SemrushBot, serpstatbot, GPTBot, ImagesiftBot. <code>User-agent: *</code> explicitly Allows <code>api.php</code> and Disallows/Noindexes only User:, Template:, Special:, Help: namespaces across 31 language paths. 31 per-language Sitemap directives.</td></tr>
+            <tr><td data-label="Date">2026-06-12</td><td data-label="Probe">Sitemap index via Wayback (2026 snapshot)</td><td data-label="Observation"><code>starwars.fandom.com/sitemap-newsitemapxml-index.xml</code>: 51 child sitemaps, sharded by page-id range — 45 for NS_0 (articles), 4 for NS_14 (categories), 1 for NS_2900 (maps).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. All API paths below were exercised anonymously in the Probe Log.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Wiki articles: 50M pages platform-wide (Oct 2024, Verified Metrics); per-wiki counts from siteinfo. Wikitext + rendered HTML.</td>
+              <td data-label="Best legitimate path">Per-wiki XML dump (S3, anonymous) for bulk; <code>api.php</code> parse/revisions/recentchanges for incremental.</td>
+              <td data-label="Auth &amp; quota">None observed; no documented quota for either path.</td>
+              <td data-label="License / display">CC BY-SA 3.0: full reuse incl. commercial, with attribution and share-alike.</td>
+              <td data-label="Freshness">API real-time; dumps observed 4 days old on a flagship wiki.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Per-wiki image namespaces (Wookieepedia 156K, Fallout 267K, Marvel 375K — siteinfo probe). Platform total: open.</td>
+              <td data-label="Best legitimate path"><code>imageinfo</code> API for URLs + metadata; direct CDN fetch from <code>static.wikia.nocookie.net</code>.</td>
+              <td data-label="Auth &amp; quota">None; CDN allows anonymous hotlinking with <code>access-control-allow-origin: *</code>.</td>
+              <td data-label="License / display">Mostly fair-use screenshots, covers, and promo art — <em>not</em> CC; per-file license templates vary. Hotlink display is the defensible path; mirroring is not.</td>
+              <td data-label="Freshness">Low churn; new uploads track release cycles of the underlying franchise.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Mostly third-party YouTube embeds inside articles; no first-party video corpus surfaced by the APIs probed.</td>
+              <td data-label="Best legitimate path">Extract embed URLs from parsed HTML; index against YouTube, not Fandom.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Follows the embedded platform's terms.</td>
+              <td data-label="Freshness">Follows article edits.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / discussions</td>
+              <td data-label="Objects &amp; est. count">Discussions, article comments, message walls per wiki — Wookieepedia alone 1.24M posts (Verified Metrics).</td>
+              <td data-label="Best legitimate path"><code>wikia.php</code> DiscussionPost / DiscussionThread controllers, paginated JSON.</td>
+              <td data-label="Auth &amp; quota">None observed.</td>
+              <td data-label="License / display">Open: the CC BY-SA grant on the licensing page covers wiki text; whether Discussions posts are included is not stated.</td>
+              <td data-label="Freshness">Real-time feed; low retrieval value relative to articles (chatter, polls).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Infoboxes (Portable Infobox markup in wikitext), category graph (NS_14 sitemaps), redirects/aliases, interlanguage links.</td>
+              <td data-label="Best legitimate path">Parse infobox key-values from dump wikitext; categories and redirects via <code>api.php</code> list modules.</td>
+              <td data-label="Auth &amp; quota">None observed.</td>
+              <td data-label="License / display">CC BY-SA, same as text.</td>
+              <td data-label="Freshness">Follows article edits; category tree stable.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Fandom differs from the <a href="../../methodology.html">default platform assumptions</a> — and it inverts the central one: here the API/dump track is free and unmetered while the HTML track is closed.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Key is <code>(wiki subdomain, pageId)</code>; titles move, pageIds don't (probe: Luke Skywalker = pageid 452217). Language editions live as path prefixes on the same subdomain (<code>/es/</code>, <code>/ja/</code> — 31 on starwars). Rival wikis for one franchise and post-fork stale copies (see Risks) are the real dedup problem, not URL aliases.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The article, but flagship-wiki articles are enormous (705KB of wikitext for one character — Probe Log); section-level chunking is mandatory, with the infobox extracted as a separate structured record.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Wikitext file references join articles to CDN image URLs via <code>imageinfo</code>; category membership and interlanguage links join within and across language editions. All keys are MediaWiki-native and stable.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Wikitext is ground truth and carries community canon labels (e.g. Wookieepedia's Canon vs Legends) that an index must preserve — they distinguish in-universe fact regimes, not quality tiers.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Extreme head/tail split: one active wiki exceeds 500 edits/day (Probe Log) while most of the 250K are dormant. recentchanges gives exact per-wiki churn for free — recrawl scheduling can be measured, not guessed.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Articles-to-pages ratio is a built-in quality denominator (1–31% across the census; the rest is talk, templates, redirects, stubs). Vandalism exists but big wikis revert fast; the bigger trap is fan speculation written in encyclopedic voice.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>On-site search is weak enough that it is a stated reason communities fork (<a href="https://www.pcgamer.com/official-minecraft-wiki-editors-so-furious-at-fandoms-degraded-functionality-and-popups-theyre-overwhelmingly-voting-to-leave-the-site/">PC Gamer on the Minecraft vote</a>); discovery runs through Google. An external index with section-level retrieval beats the native experience.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Dense entity lookups: character bios, item stats, episode lists, quest walkthroughs, "is X canon". Infobox-shaped answers cover a large share of queries directly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> article section + infobox entity record, keyed to the parent article.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>(wiki, pageId)</code> with <code>revId</code> for versioning; redirect table for aliases; interlanguage links for cross-edition joins; file references for image joins.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) S3 XML dumps — full wikitext per wiki, zero auth, refreshed ~weekly on active wikis. 2) <code>api.php</code> recentchanges + parse — real-time incremental on high-churn wikis. 3) <code>wikia.php</code> Discussions — low priority, license unsettled. 4) Image CDN hotlinks for display only. 5) HTML crawl — closed by the Cloudflare challenge; do not fight it, the API track is strictly better anyway.</li>
+        <li><strong>Recrawl cadence:</strong> rank wikis by measured recentchanges rate; poll the active head hourly-to-daily via API, sweep the dormant tail from dumps monthly or on dump regeneration.</li>
+        <li><strong>Derivatives to generate:</strong> infobox→entity cards, redirect/alias table, cross-wiki and cross-language entity linking, fork-detection signal (edit-rate collapse vs the independent fork), section embeddings.</li>
+        <li><strong>Demo to build:</strong> a wiki-census crawler — sweep <code>siteinfo</code> statistics across the subdomain space to produce the per-wiki activity ranking that drives the recrawl schedule, and as a by-product close the "total articles platform-wide" open question.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Fork exodus poisons the head:</strong> when a community forks (Minecraft Wiki left for Weird Gloop's <a href="https://minecraft.wiki/w/Minecraft_Wiki:Moving_from_Fandom">minecraft.wiki</a> on Sep 24 2023), the Fandom copy stays up, keeps its Google rank, and goes stale. An index needs fork detection (edit-rate collapse, fork-notice templates) to switch authority to the successor wiki.</li>
+        <li><strong>The open API track is one config flip from closing:</strong> the Cloudflare wall already covers all HTML; extending it to <code>api.php</code> and the S3 bucket requires no engineering. Mirror dumps while they're open — CC BY-SA makes the mirror lawful and irrevocable for text already published.</li>
+        <li><strong>AI-crawler policy is selective today, expandable tomorrow:</strong> robots.txt bans only GPTBot and ImagesiftBot among AI agents (Probe Log) — unusually permissive vs the default assumption — but the same file is one deploy away from the industry-standard blanket ban.</li>
+        <li><strong>Image rights are the weak layer:</strong> text is CC but the image corpus is largely fair-use franchise media; any index feature beyond hotlink display needs a rights review per use, not per site.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://about.fandom.com/news/fandom-uncovers-two-decades-of-fan-trends-across-entertainment-gaming-in-celebration-of-its-20th-anniversary">Fandom 20th-anniversary press release, Oct 31 2024</a> (read via archive snapshot; live host is challenge-gated) — 350M uniques, 250K wikis, 50M pages, ~100K contributors, 32M edits.</li>
+        <li><a href="https://www.prnewswire.com/news-releases/wikia-incs-fandom-announces-investment-led-by-media-veteran-jon-miller-300600947.html">PR Newswire, Feb 2018</a> — TPG-led investment in Wikia/Fandom.</li>
+        <li><a href="https://about.fandom.com/news/fandom-sells-giant-bomb-to-independent-creators">Fandom: Giant Bomb sale to independent creators, May 2025</a> — editorial-brand portfolio churn.</li>
+        <li><a href="https://www.fandom.com/licensing">Fandom licensing page</a> (archive snapshot) — CC BY-SA 3.0 Unported default, alternate licenses require explicit permission.</li>
+        <li><a href="https://minecraft.wiki/w/Minecraft_Wiki:Moving_from_Fandom">Minecraft Wiki: Moving from Fandom</a> and <a href="https://www.pcgamer.com/official-minecraft-wiki-editors-so-furious-at-fandoms-degraded-functionality-and-popups-theyre-overwhelmingly-voting-to-leave-the-site/">PC Gamer coverage</a> — Sep 2023 fork, reasons stated by editors.</li>
+        <li><a href="https://community.fandom.com/wiki/Help:Database_download">Help:Database_download</a> (read via api.php parse) — dump options, weekly off-peak regeneration, .7z format, license carries over.</li>
+        <li>Local probes on 2026-06-12: dig, header checks, siteinfo census across 11 wikis, parse/revisions sample, Discussions API sample, S3 dump HEADs, image CDN headers, archived robots.txt and sitemap index (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Fandom's accounts are one global pool, so the siteinfo <code>users</code> figure is platform-wide, not per-wiki. <em>Basis:</em> near-identical counts (41,274,088 vs 41,276,186) returned by two unrelated wikis probed minutes apart on 2026-06-12.</li>
+        <li>Approved search crawlers pass the Cloudflare wall that blocks everyone else. <em>Basis:</em> <code>cf-mitigated: challenge</code> on every client we tried, while robots.txt maintains 31 sitemap directives and current fandom.com pages keep appearing in live search results observed 2026-06-12 — pure SEO plumbing nobody could use if Google were challenged too.</li>
+        <li>The open API/dump posture is deliberate policy, not an oversight. <em>Basis:</em> robots.txt explicitly Allows <code>api.php</code> for all agents while Disallowing utility namespaces, and the dump pipeline is documented user-facing functionality (Help:Database_download).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total <em>article</em> count across all 250K wikis (the official "50M pages" mixes namespaces) — closeable by sweeping siteinfo statistics across an enumerated wiki list, the same sweep as the census demo.</li>
+        <li>Platform-wide image count and the fair-use vs CC split — closeable by sampling per-file license templates via the imageinfo API across wikis.</li>
+        <li>Whether Discussions posts fall under the CC BY-SA grant — closeable by a legal read of the Terms of Use section on user contributions.</li>
+        <li>Dump coverage and staleness across the long tail (dumps regenerate on request; how many wikis have none or year-old ones?) — closeable by probing S3 URL patterns and Last-Modified over a wiki sample.</li>
+        <li>Fandom's revenue and post-2024 traffic — private company; needs a disclosure or credible reporting with the estimator named.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
