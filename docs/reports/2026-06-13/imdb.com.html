@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>imdb.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-06-13</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>imdb.com</h1>
+      <p class="lede">IMDb is the web's entertainment graph: 12.6M titles and 15.4M names ship as free daily dumps you may not legally turn into a searchable index.</p>
+      <div class="tag-row">
+        <span class="tag">Entertainment</span>
+        <span class="tag">Reference</span>
+        <span class="tag">Amazon</span>
+        <span class="tag">Title/Name Graph</span>
+        <span class="tag">Bulk Dumps</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>IMDb is the world's reference database for movies, TV, and the people who make them — an Amazon subsidiary since 1998 (Amazon's first acquisition). For an index builder it is an unusual case: a near-complete bulk copy of the core graph is <strong>freely downloadable every day</strong> at <code>datasets.imdbws.com</code>, yet its license forbids using that data to "create any kind of online/offline database of movie information." The data is open; the right to index it is not. The legitimate index path is therefore the commercial <strong>IMDb Essential Metadata</strong> feed sold through AWS Data Exchange at $150K/year (see Verified Metrics), not the free dumps and not crawling — the live site sits behind the same AWS WAF challenge as amazon.com. <span class="evidence inferred">inferred</span> IMDb monetizes the catalog through licensing and IMDbPro, not the consumer site's ads alone. <em>Basis:</em> the B2B Essential Metadata launch (Sep 2025) and the $150K AWS Marketplace listing both observed this report; the free dataset's no-republish clause channels any indexer toward that paid feed.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>imdb.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.imdb.com/">https://www.imdb.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Entertainment reference database</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>m.imdb.com</code> (mobile); related: <code>datasets.imdbws.com</code> (bulk dumps), <code>v3.sg.media-imdb.com</code> (suggestion API), <code>m.media-amazon.com</code> (image CDN), <code>pro.imdb.com</code>, <code>developer.imdb.com</code></dd></div>
+        <div><dt>Owner</dt><dd>IMDb.com, Inc., a subsidiary of Amazon.com, Inc. (NASDAQ: AMZN)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Oct 17 1990 by Col Needham (from a Usenet movie list); incorporated 1996; acquired by Amazon Apr 1998</dd></div>
+        <div><dt>Business model</dt><dd>Consumer-site advertising + IMDbPro subscriptions + B2B data licensing (Essential Metadata)</dd></div>
+        <div><dt>Scale anchor</dt><dd>250M+ monthly visitors, as of Dec 2025 (<a href="https://www.businesswire.com/news/home/20251208687732/en/IMDb-Announces-the-Most-Popular-Movies-Shows-and-Stars-of-2025">IMDb press release</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Counts below are first-hand from the 2026-06-13 non-commercial dump (Probe Log); the full on-site catalog size lives once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Titles in non-commercial dataset</dt>
+          <dd>12.56M (12,561,268) — as of the 2026-06-13 daily dump. Summed by Site Wise across <code>title.basics</code> titleType lines (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Title-type split</dt>
+          <dd>9.70M tvEpisode / 1.14M short / 749K movie / 327K video / 301K tvSeries / 155K tvMovie / 71K tvMiniSeries / 58K tvSpecial / 49K videoGame — 2026-06-13 dump (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Name (person) records</dt>
+          <dd>15.40M (15,401,873) in <code>name.basics</code> — as of the 2026-06-13 daily dump (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Titles carrying an aggregate rating</dt>
+          <dd>1.68M (1,680,051) in <code>title.ratings</code> — 13% of titles — as of the 2026-06-13 dump (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Monthly visitors</dt>
+          <dd>250M+ — as of Dec 2025, IMDb's stated figure. <a href="https://www.businesswire.com/news/home/20251208687732/en/IMDb-Announces-the-Most-Popular-Movies-Shows-and-Stars-of-2025">IMDb press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Commercial metadata feed price</dt>
+          <dd>$150,000 / 12-month contract + $0.00000093 per 100 bytes of API requests over the contract — as of 2026-06-13. <a href="https://aws.amazon.com/marketplace/pp/prodview-wdqq4hg3bcbws">IMDb Essential Metadata (API), AWS Marketplace</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-13. Browser user agent (<code>Chrome/120</code>) unless noted; plain <code>curl</code> default UA is rejected by the WAF.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-06-13</td><td data-label="Probe"><code>dig +short www.imdb.com</code></td><td data-label="Observation">CNAME chain to <code>…frontier.imdb.com</code> → <code>d2bytcopxu066p.cloudfront.net</code>; apex <code>imdb.com</code> resolves to AWS IPs (98.82.x). Served via CloudFront (<code>x-amz-cf-pop: SIN3-P4</code>).</td></tr>
+            <tr><td data-label="Date">2026-06-13</td><td data-label="Probe"><code>curl -sI https://www.imdb.com/</code></td><td data-label="Observation">HTTP 202 with <code>x-amzn-waf-action: challenge</code>, <code>content-length: 0</code> — AWS WAF JS challenge, no HTML. HSTS <code>max-age=47474747; includeSubDomains; preload</code>. <code>vary: …,User-Agent</code>.</td></tr>
+            <tr><td data-label="Date">2026-06-13</td><td data-label="Probe"><code>curl https://www.imdb.com/title/tt0111161/</code> as Chrome <em>and</em> as Googlebot</td><td data-label="Observation">Both return HTTP 202 WAF challenge, 0 bytes — no JSON-LD, no SEO body. UA spoofing does not unlock the title page; the SEO sliver is gated on verified crawler IP/reverse-DNS, not the UA string.</td></tr>
+            <tr><td data-label="Date">2026-06-13</td><td data-label="Probe"><code>curl https://www.imdb.com/robots.txt</code></td><td data-label="Observation">68 lines (browser UA; default UA gets the 202 challenge). <code>Disallow</code> on <code>/find</code>, <code>/search/*</code>, <code>/title/*/reviews</code>, <code>/*/_json/*</code>, <code>/api/_ajax/*</code>, <code>/contribute/*</code>. <code>anthropic-ai</code>, <code>Claude-Web</code>, <code>GPTBot</code>, <code>CCbot</code>, <code>Google-Extended</code>, <code>FacebookBot</code>, <code>PiplBot</code> each get <code>Disallow: /</code>. <strong>No Sitemap directive.</strong></td></tr>
+            <tr><td data-label="Date">2026-06-13</td><td data-label="Probe"><code>curl https://datasets.imdbws.com/</code> + <code>HEAD</code> each file</td><td data-label="Observation">7 gzipped TSVs (<code>title.basics</code>, <code>title.akas</code>, <code>title.crew</code>, <code>title.episode</code>, <code>title.principals</code>, <code>title.ratings</code>, <code>name.basics</code>). All <code>last-modified</code> 2026-06-13 ~00:45 UTC — confirms daily rebuild. <code>title.principals.tsv.gz</code> alone is 769MB gz.</td></tr>
+            <tr><td data-label="Date">2026-06-13</td><td data-label="Probe"><code>curl https://v3.sg.media-imdb.com/suggestion/x/inception.json</code></td><td data-label="Observation">HTTP 200, no auth. Returns <code>{id, l, q, qid, rank, s, y, i:{imageUrl,width,height}}</code> per hit — tconst/nconst, label, type, popularity rank, top cast, year, and an <code>m.media-amazon.com</code> poster URL. The one open public endpoint.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what may be displayed, and how fast it churns. Three paths recur: free <strong>dataset</strong> (non-commercial only), paid <strong>Essential Metadata</strong> API/bulk (AWS Data Exchange), and the open <strong>suggestion</strong> endpoint.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text (core fields)</td>
+              <td data-label="Objects &amp; est. count">12.56M titles, 15.40M names (Verified Metrics): primary/original title, year, runtime, genres, professions, known-for.</td>
+              <td data-label="Best legitimate path">Non-commercial dataset (free) for these fields; Essential Metadata API for commercial use.</td>
+              <td data-label="Auth &amp; quota">Dataset: none. API: $150K/yr contract.</td>
+              <td data-label="License / display">Dataset: personal/non-commercial only, attribution required, no re-publication as a database. API: per-contract license.</td>
+              <td data-label="Freshness">Dataset rebuilt daily; catalog is append-heavy.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text (rich)</td>
+              <td data-label="Objects &amp; est. count">Plot summaries, bios, trivia, full plot synopses, parents-guide, goofs — not in the free dataset.</td>
+              <td data-label="Best legitimate path">Essential Metadata API (GraphQL) for the licensed subset; on-site pages otherwise (WAF-gated, Probe Log).</td>
+              <td data-label="Auth &amp; quota">API contract; no free path.</td>
+              <td data-label="License / display">Licensed display only; no bulk reuse from the site.</td>
+              <td data-label="Freshness">Edited continuously by contributors.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Posters, stills, headshots on <code>m.media-amazon.com</code>; not enumerated in the dataset.</td>
+              <td data-label="Best legitimate path">Suggestion API returns one poster URL per entity; full galleries only on-site or via licensed feed.</td>
+              <td data-label="Auth &amp; quota">Suggestion: none. Bulk: API contract.</td>
+              <td data-label="License / display">Hotlinked CDN URLs; no documented redistribution right.</td>
+              <td data-label="Freshness">Low churn; new art on releases.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Trailers and clips on title pages; the ad-supported streaming catalog now lives on Amazon (Freevee folded into Prime Video).</td>
+              <td data-label="Best legitimate path">No public metadata API for IMDb video.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: no documented reuse path.</td>
+              <td data-label="Freshness">Open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reviews / ratings</td>
+              <td data-label="Objects &amp; est. count">1.68M titles with an aggregate rating (avg + vote count). Individual user reviews exist on-site.</td>
+              <td data-label="Best legitimate path"><code>title.ratings</code> dataset gives the aggregate; review <em>text</em> has no legitimate bulk path — <code>/title/*/reviews</code> is robots-disallowed (Probe Log).</td>
+              <td data-label="Auth &amp; quota">Dataset: none for aggregates.</td>
+              <td data-label="License / display">Aggregate rating + count reusable under dataset terms; review bodies not licensable.</td>
+              <td data-label="Freshness">Ratings recompute continuously; daily in the dump.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">tconst/nconst IDs, crew (directors/writers), principals (billed cast + characters), episode→series links, AKA localized titles, genres.</td>
+              <td data-label="Best legitimate path">Non-commercial dataset carries all of these directly — the corpus's strongest, most complete layer.</td>
+              <td data-label="Auth &amp; quota">Dataset: none.</td>
+              <td data-label="License / display">Non-commercial only; commercial use needs the API.</td>
+              <td data-label="Freshness">Daily dump; principals/episodes append as productions are logged.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where IMDb differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Two of the web's most reused IDs live here: <code>tt</code>+digits for titles (<code>tt0111161</code>) and <code>nm</code>+digits for people (<code>nm0000138</code>), both printed in the URL (<code>/title/{tt}</code>, <code>/name/{nm}</code>) and adopted as foreign keys by Wikidata, TMDB, and trakt. Dedup against AKA rows (<code>title.akas</code>): one tconst has many regional title strings.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The title (tconst) and the person (nconst) are the natural units. Mind the episode explosion: 9.70M of 12.56M titles are <code>tvEpisode</code> (Verified Metrics), so a title index is mostly episodes — group them under their series tconst or they swamp relevance.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Everything joins on tconst/nconst: ratings, crew, principals, episodes, AKAs all key off tconst; principals and crew key off nconst. <code>knownForTitles</code> in <code>name.basics</code> is a person→title edge. These keys are stable and never recycled — an unusually clean join graph.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Unlike SEO-stuffed marketplaces, the structured fields <em>are</em> the ground truth here — they are editorially curated, not seller-supplied. <code>originalTitle</code> beats <code>primaryTitle</code> for canonical identity; the AKA table holds the localized display strings.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The whole core graph is reissued daily as a single dump, so "recrawl" is a diff against yesterday's TSV, not a crawl. Ratings and vote counts move every day; basic catalog facts rarely change after release.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>On-site <code>/find</code> and <code>/search/*</code> are robots-disallowed (Probe Log), so Google indexes title/name pages but not IMDb's own result pages. The open suggestion endpoint is effectively IMDb's public typeahead and the only sanctioned programmatic lookup.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> title (tconst) and person (nconst); episodes rolled up under their parent series; ratings and principals attached as sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> tconst and nconst as universal keys; tconst↔nconst via <code>title.principals</code>/<code>title.crew</code>; episode↔series via <code>title.episode</code>; localized strings via <code>title.akas</code>.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) IMDb Essential Metadata via AWS Data Exchange — the only path licensed for a real index; $150K/yr (Verified Metrics), GraphQL API or bulk. 2) Non-commercial dataset — complete for prototyping/eval only; license bars shipping a database. 3) Suggestion endpoint — typeahead-grade lookups, no bulk. 4) Live crawl — closed by the AWS WAF challenge (Probe Log).</li>
+        <li><strong>Recrawl cadence:</strong> daily diff of the seven TSVs for prototypes; for production, the licensed feed's change stream. Ratings daily; catalog facts on change.</li>
+        <li><strong>Derivatives to generate:</strong> series-rollup of episodes, person→title bipartite graph from principals, AKA-normalized canonical title, tconst↔Wikidata/TMDB concordance.</li>
+        <li><strong>Demo to build:</strong> a daily dump-diff loader — ingest the seven TSVs, count rows by titleType, and emit a JSONL of what changed since yesterday — with a banner stating the non-commercial license forbids republishing the result.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The free path is a licensing trap.</strong> The non-commercial datasets are trivially downloadable but explicitly forbid building any republishable movie database (<a href="https://help.imdb.com/article/imdb/general-information/can-i-use-imdb-data-in-my-software/G5JTRESSHJBBHTGX">help center</a>); an index built on them is non-compliant by design. Budget for the commercial feed from day one.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Live crawling is structurally closed.</strong> <em>Basis:</em> the AWS WAF challenge returned HTTP 202 / 0 bytes to both browser and Googlebot UAs on 2026-06-13 (Probe Log); the SEO sliver is reserved for verified crawler identities.</li>
+        <li><strong>AI crawlers are named and blocked.</strong> robots.txt sets <code>Disallow: /</code> for <code>anthropic-ai</code>, <code>Claude-Web</code>, <code>GPTBot</code>, <code>CCbot</code>, <code>Google-Extended</code>, <code>FacebookBot</code>, <code>PiplBot</code> (Probe Log) — AI retrieval over the live site faces enforcement, not licensing.</li>
+        <li><strong>Permission is revocable.</strong> IMDb reserves the right to withdraw dataset access at any time and per individual request (<a href="https://www.imdb.com/conditions/">conditions of use</a>); a prototype feed is not a durable supply.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://developer.imdb.com/non-commercial-datasets/">IMDb non-commercial datasets documentation</a> — file list, schema, daily-refresh statement, non-commercial scope.</li>
+        <li>Local probes on 2026-06-13: <code>dig</code>/<code>curl</code> against the homepage, a title page (browser + Googlebot UA), robots.txt, the dataset directory, and the suggestion endpoint; row counts streamed from the dumps (full results in the Probe Log).</li>
+        <li><a href="https://aws.amazon.com/marketplace/pp/prodview-wdqq4hg3bcbws">IMDb Essential Metadata for Movies/TV/OTT (API), AWS Marketplace</a> — GraphQL delivery, $150K/yr contract + usage overage.</li>
+        <li><a href="https://www.vp-land.com/p/imdb-transforms-entertainment-metadata-with-new-b2b-data-licensing-platform">IMDb B2B data licensing launch (IBC 2025)</a> — Essential Metadata positioning. <a href="https://www.businesswire.com/news/home/20251208687732/en/IMDb-Announces-the-Most-Popular-Movies-Shows-and-Stars-of-2025">Most Popular 2025 press release</a> — 250M+ monthly visitors.</li>
+        <li><a href="https://help.imdb.com/article/imdb/general-information/can-i-use-imdb-data-in-my-software/G5JTRESSHJBBHTGX">IMDb help: can I use IMDb data in my software</a> and <a href="https://www.imdb.com/conditions/">Conditions of Use</a> — non-commercial terms, attribution, no-republish, revocability.</li>
+        <li><a href="https://en.wikipedia.org/wiki/IMDb">Wikipedia: IMDb</a> — founding (1990, Col Needham), Amazon acquisition (1998), "no API for automated queries". <a href="https://www.hollywoodreporter.com/business/business-news/imdb-founder-col-needham-ceo-nikki-santoro-1236112229/">Hollywood Reporter</a> — Needham→Santoro CEO change (Jan 2025).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>IMDb monetizes the catalog via licensing + IMDbPro, not consumer ads alone. <em>Basis:</em> the Sep 2025 Essential Metadata B2B launch and the $150K AWS Marketplace listing; the free dataset's no-republish clause routes indexers to that paid feed.</li>
+        <li>Live crawling is structurally closed. <em>Basis:</em> AWS WAF returned HTTP 202 / 0 bytes to both Chrome and Googlebot UAs on the title page (2026-06-13 Probe Log).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Full on-site catalog size — the free dump holds 12.56M titles / 15.40M names, the AWS Marketplace listing advertises "9M+ titles / 12M+ names," and third-party tallies (Wikipedia) cite ~25.9M titles. Closeable by a title census through the licensed Essential Metadata API or an official IMDb stats disclosure.</li>
+        <li>IMDbPro subscriber count and registered/contributing-user totals — no official figure published.</li>
+        <li>Image and video object counts — absent from the dataset; would need the commercial feed or an on-site census.</li>
+        <li>Individual review volume per title — review bodies are robots-disallowed and carry no dataset field; measurable only via licensed access.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
