@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pinterest.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-06-14</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>pinterest.com</h1>
+      <p class="lede">Pinterest is a 631M-user visual discovery engine whose pin corpus is reachable only through a 315-bot crawl allowlist, per-URL oEmbed, and an account-scoped API.</p>
+      <div class="tag-row">
+        <span class="tag">Visual Discovery</span>
+        <span class="tag">Images</span>
+        <span class="tag">Ads</span>
+        <span class="tag">Bookmarking</span>
+        <span class="tag">SEO Surface</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Pinterest is a visual discovery and bookmarking platform: users "pin" images that link out to source pages and organize them onto boards. It earns almost entirely from advertising sold against discovery intent — $1,008M in Q1 2026, with 631M monthly active users, though three-quarters of those users (Rest of World) monetize at roughly a sixth of US ARPU. For an index builder the atomic object is the <strong>Pin</strong>: an image plus an outbound link plus board/topic context — Pinterest is unusual in being a giant curated pointer graph <em>into</em> the rest of the web, not a content silo. Its legitimate read surface is sharply bifurcated. A large SEO surface (tens of millions of pin, board, and "idea" URLs in 91 sitemap indexes) is served only to an explicit allowlist of ~314 named crawlers; <span class="evidence verified">verified</span> every unlisted agent — including all AI crawlers — gets <code>Disallow: /</code> (Probe Log). The official API is OAuth-scoped to the caller's own account and ads, not a corpus read. There is no public bulk pin endpoint.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>pinterest.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.pinterest.com/">https://www.pinterest.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Visual discovery / bookmarking, advertising platform</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>i.pinimg.com</code> / <code>s.pinimg.com</code> (image CDN), <code>assets.pinterest.com</code> (embeds), <code>api.pinterest.com</code> (API), <code>developers.pinterest.com</code></dd></div>
+        <div><dt>Owner</dt><dd>Pinterest, Inc. (NYSE: PINS); CEO Bill Ready</dd></div>
+        <div><dt>Founded / launched</dt><dd>Founded 2009; public site launched 2010; IPO April 2019</dd></div>
+        <div><dt>Business model</dt><dd>Advertising (Promoted Pins / shopping ads); ~all revenue</dd></div>
+        <div><dt>Scale anchor</dt><dd>631M global MAUs, as of Mar 31 2026 (<a href="https://www.sec.gov/Archives/edgar/data/0001506293/000150629326000066/q1-26xpressrelease.htm">Pinterest Q1 2026 press release</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (live pin/board count, sitemap-wide URL total) live once in Open Questions. All cards below are from the Q1 2026 release for the quarter ended Mar 31 2026.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Revenue, Q1 2026</dt>
+          <dd>$1,008M, +18% YoY (+15% constant currency) — as of Mar 31 2026. <a href="https://www.sec.gov/Archives/edgar/data/0001506293/000150629326000066/q1-26xpressrelease.htm">Q1 2026 press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Global MAUs</dt>
+          <dd>631M, +11% YoY (all-time high) — as of Mar 31 2026. By region: US &amp; Canada 106M (+4%), Europe 159M (+7%), Rest of World 367M (+15%). <a href="https://www.sec.gov/Archives/edgar/data/0001506293/000150629326000066/q1-26xpressrelease.htm">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Global ARPU, Q1 2026</dt>
+          <dd>$1.61, +6% YoY — but US &amp; Canada $7.12 vs Europe $1.17; Rest of World (60% of users) is far lower. <a href="https://www.sec.gov/Archives/edgar/data/0001506293/000150629326000066/q1-26xpressrelease.htm">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Profitability, Q1 2026</dt>
+          <dd>GAAP net loss $74M; Adjusted EBITDA $207M; free cash flow $311.7M. <a href="https://www.sec.gov/Archives/edgar/data/0001506293/000150629326000066/q1-26xpressrelease.htm">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Crawl allowlist size</dt>
+          <dd>~314 named <code>User-agent</code> entries share one allowed ruleset; a final <code>User-agent: *</code> is <code>Disallow: /</code> — as of Jun 14 2026. <a href="https://www.pinterest.com/robots.txt">robots.txt</a> (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap surface</dt>
+          <dd>91 <code>Sitemap:</code> directives in robots.txt; the tier-0 high-engagement image-pin index alone references 2,576 child sitemaps at ≈30K URLs each ≈ 77M pin URLs — as of Jun 14 2026 (children dated 2026-06-08). <a href="https://www.pinterest.com/robots.txt">robots.txt</a> (Probe Log) <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>API per-user rate ceiling</dt>
+          <dd>Universal 100 calls/sec/user/app; finer limits vary by endpoint category and by Trial vs Standard tier — as of Jun 14 2026. <a href="https://developers.pinterest.com/docs/reference/rate-limits/">API rate-limit docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-14, desktop browser user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-06-14</td><td data-label="Probe"><code>dig +short pinterest.com</code></td><td data-label="Observation">Single A record <code>108.160.165.147</code>; responses carry <code>x-cdn: akamai</code> + <code>akamai-grn</code> and <code>alt-svc: h3</code>. Edge is Akamai.</td></tr>
+            <tr><td data-label="Date">2026-06-14</td><td data-label="Probe"><code>curl -sI https://www.pinterest.com/</code></td><td data-label="Observation">HTTP/2 200, <code>content-length: 1</code> for an anonymous GET. <code>vary: User-Agent, Accept-Encoding</code> (UA-dependent rendering). HSTS preload, <code>x-frame-options: SAMEORIGIN</code>, strict CSP, Arkose Labs anti-bot in CSP. Sets <code>csrftoken</code> + <code>_pinterest_sess</code>.</td></tr>
+            <tr><td data-label="Date">2026-06-14</td><td data-label="Probe"><code>curl -sL https://www.pinterest.com/robots.txt</code></td><td data-label="Observation">1,045 lines. ~314 named <code>User-agent</code> entries (search engines, ad/SEO tools, archivers) share one ruleset; final <code>User-agent: *</code> → <code>Disallow: /</code>. No AI crawler (GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot, Bytespider) is named, so all fall under the blanket block. Header comment links a <a href="https://help.pinterest.com/bot-submission-form">bot-submission form</a>. 91 <code>Sitemap:</code> directives.</td></tr>
+            <tr><td data-label="Date">2026-06-14</td><td data-label="Probe">Sitemap census</td><td data-label="Observation">Sitemaps split by object class and quality tier (<code>image_pin_*</code>, <code>board_link_*</code>, <code>ideas_hub_*</code>, <code>shopping_*</code>, <code>answers_page_*</code>) with engagement/quality tiers in the names. One tier-0 image-pin index → 2,576 gzipped child sitemaps; one child held exactly 30,000 <code>&lt;loc&gt;</code> pin URLs.</td></tr>
+            <tr><td data-label="Date">2026-06-14</td><td data-label="Probe"><code>oembed.json?url=…/pin/&lt;id&gt;/</code></td><td data-label="Observation">Returns 200 with no auth: <code>title</code>, <code>author_name</code>, <code>author_url</code>, <code>thumbnail_url</code> (i.pinimg.com 236px), <code>thumbnail_width/height</code>, and an <code>&lt;iframe&gt;</code> embed pointing at <code>assets.pinterest.com/ext/embed.html</code>. No pin body or board context.</td></tr>
+            <tr><td data-label="Date">2026-06-14</td><td data-label="Probe">Structured data sample (pin page)</td><td data-label="Observation">Pin HTML is a ~955KB client-rendered SPA shell; identical size under Googlebot UA. Carries Open Graph tags (og:title, og:description, 6 og:image variants) but <strong>no JSON-LD</strong> (<code>application/ld+json</code> count 0). <code>/llms.txt</code> returns 200 but serves the SPA shell, i.e. a soft 404.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. API = <a href="https://developers.pinterest.com/docs/api/v5/introduction/">Pinterest API v5</a> (OAuth 2.0, account-scoped). Every cell is verifiable or marked open.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Pin images on <code>i.pinimg.com</code> (the dominant modality). Live count open; ≥77M pins in one tier-0 sitemap index alone (Verified Metrics).</td>
+              <td data-label="Best legitimate path">oEmbed <code>thumbnail_url</code> per pin URL; full pin via SEO surface if your UA is allowlisted.</td>
+              <td data-label="Auth &amp; quota">oEmbed unauthenticated; sitemap crawl requires allowlist approval.</td>
+              <td data-label="License / display">oEmbed thumbnail + iframe embed are the sanctioned display path; no bulk mirroring.</td>
+              <td data-label="Freshness">Append-mostly; pins deleted/made-secret by users churn the surface.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Pin titles &amp; descriptions, board names, "Idea"/Answers article text. Count open.</td>
+              <td data-label="Best legitimate path">Open Graph tags per pin page (allowlisted UA); idea/answers pages have their own sitemaps.</td>
+              <td data-label="Auth &amp; quota">Allowlist for crawl; API read is own-account only.</td>
+              <td data-label="License / display">OG snippet display with link-back; no JSON-LD to license.</td>
+              <td data-label="Freshness">Editable by owner; idea/answers pages refreshed in dated sitemap batches.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Outbound links</td>
+              <td data-label="Objects &amp; est. count">The defining object: each pin's source URL — a curated pointer graph into the wider web.</td>
+              <td data-label="Best legitimate path">Not exposed by oEmbed; visible only on the rendered pin or via API for own pins.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: no documented path to the link graph at scale.</td>
+              <td data-label="Freshness">Stable per pin; dead-link decay open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Idea Pins / video pins; <code>video_pins/</code> paths exist but are <code>Disallow</code>ed in robots.txt.</td>
+              <td data-label="Best legitimate path">No public metadata path; embeds only.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: no documented reuse path.</td>
+              <td data-label="Freshness">Open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reactions</td>
+              <td data-label="Objects &amp; est. count">Pin comments, reactions, "tried it" notes.</td>
+              <td data-label="Best legitimate path">None public; activity paths (<code>/_activity/</code>, <code>/tried/</code>) are robots-disallowed.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: not licensable externally.</td>
+              <td data-label="Freshness">Append-mostly.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Pins, boards, sections, users, topics/interests, shopping catalogs, trends.</td>
+              <td data-label="Best legitimate path">API v5: <code>/pins</code>, <code>/boards</code>, catalogs, trends — but scoped to the authenticated account (+ads).</td>
+              <td data-label="Auth &amp; quota">OAuth 2.0; Trial→Standard via video review; 100 calls/sec/user/app ceiling.</td>
+              <td data-label="License / display">Developer terms; not a license to read other users' public pins in bulk.</td>
+              <td data-label="Freshness">Boards/sections stable; shopping &amp; trends churn fast.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Pinterest differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Pin URLs come in two forms: bare numeric ID (<code>/pin/137359857373863947/</code>) and slug-prefixed (<code>/pin/046-ray-ma--44824958780723406/</code>) — canonicalize on the trailing numeric ID. The harder dedup is at the <em>image</em> layer: the same source image is re-pinned millions of times, so visual/perceptual dedup matters more than URL dedup.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The useful unit is the <strong>pin</strong> (image + outbound link + caption), with the board/topic as a curation signal. Unlike most platforms the pin is a <em>pointer</em>: its value is partly the page it links to, so the retrieval unit straddles Pinterest and the destination site.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Joins run image ↔ caption ↔ outbound URL ↔ board ↔ user. The outbound URL is the bridge to the rest of the index — but it is not exposed by oEmbed, so the join key you most want is the one hardest to get legitimately.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Captions are user-supplied and SEO-noisy; the image is ground truth and the outbound page is the real "document." Treat the pin caption as a weak annotation over an external object, not as the content itself.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Sitemaps are tiered by engagement and quality and stamped with batch dates (observed 2026-06-08), so Pinterest itself signals recrawl priority — follow the tier, not a flat cadence. Shopping and trends churn fastest; boards are near-static.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Spam concentrates on outbound links (affiliate/cloaked destinations) rather than on-pin text. Quality is best judged on the destination page and engagement tier, both of which Pinterest already encodes in its sitemap tiering.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Pinterest deliberately courts external search: the allowlist exists to feed Google/Bing a curated SEO surface while blocking everyone else. Much Pinterest discovery actually starts as a Google image/query click into a pin page — the SEO surface <em>is</em> the public product.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Queries are inspirational and visual ("kitchen ideas", "fall outfits"), high on intent-to-act and shopping, low on named-entity lookup. Visual/similarity retrieval fits better than keyword retrieval.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the pin (image + caption + outbound URL), with board/topic as curation context and the destination page joined in from the rest of the index.</li>
+        <li><strong>Primary keys &amp; joins:</strong> numeric pin ID (canonical); secondary keys board ID, user handle, and the outbound URL as the bridge to non-Pinterest documents.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Allowlisted SEO crawl of the 91 sitemaps — the only path to pins at scale, and it requires bot-submission approval (Probe Log); honor the engagement/quality tiers as a priority queue. 2) oEmbed per pin URL — unauthenticated, but only title/author/thumbnail, no body or outbound link. 3) API v5 — rich, but account-scoped (own pins/boards/ads), not a corpus read. 4) Generic crawl — blocked by <code>User-agent: * Disallow: /</code>.</li>
+        <li><strong>Recrawl cadence:</strong> drive by sitemap tier and batch date, not a flat interval — tier-0 high-engagement first; boards monthly; shopping/trends fast.</li>
+        <li><strong>Derivatives to generate:</strong> image embeddings for perceptual dedup of re-pins, caption-language normalization, and an outbound-link resolver that joins each pin to its destination document.</li>
+        <li><strong>Demo to build:</strong> a sitemap-tier-walker — read the 91 sitemap indexes, bucket pin URLs by engagement/quality tier and batch date, then enrich a sample via oEmbed and report exactly which fields (outbound link, board, body) the public surface forces you to leave empty.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Access is an allowlist, not a license:</strong> all bulk pin access depends on being one of the ~314 approved UAs; an index that isn't allowlisted has no compliant path to the corpus (Verified Metrics).</li>
+        <li><span class="evidence inferred">inferred</span> <strong>AI retrieval is blocked by default, with no opt-in.</strong> <em>Basis:</em> no AI crawler is named in the 1,045-line robots.txt, so all are caught by the terminal <code>User-agent: * Disallow: /</code> (observed 2026-06-14); inclusion requires manual bot-submission review.</li>
+        <li><strong>The outbound link graph — the most valuable join key — has no public path:</strong> oEmbed omits it and the API only returns your own pins, so a key index feature can't be built compliantly at scale.</li>
+        <li><strong>Client-rendered pages with no JSON-LD:</strong> the SEO surface relies on OG tags plus JS rendering; a parser that doesn't execute JS or isn't served the allowlisted render gets a near-empty shell (Probe Log).</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/0001506293/000150629326000066/q1-26xpressrelease.htm">Pinterest Q1 2026 press release (SEC 8-K)</a> — revenue, global &amp; regional MAUs, ARPU, net loss, Adjusted EBITDA, free cash flow (quarter ended Mar 31 2026).</li>
+        <li><a href="https://developers.pinterest.com/docs/reference/rate-limits/">Pinterest API v5 rate-limit docs</a> — 100 calls/sec/user/app, Trial vs Standard tiers.</li>
+        <li><a href="https://developers.pinterest.com/docs/getting-started/access-tiers/">Pinterest API access tiers</a> — Trial→Standard video-review upgrade.</li>
+        <li>Local probes on 2026-06-14: <code>dig</code>, <code>curl -sI</code>, robots.txt, sitemap census, oEmbed, and a pin-page structured-data sample (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>AI retrieval products are blocked by default with no opt-in. <em>Basis:</em> zero AI crawlers named among ~314 allowlisted UAs in robots.txt; the terminal <code>User-agent: * Disallow: /</code> catches them (observed 2026-06-14).</li>
+        <li>Pinterest is structured as a curated pointer graph into the wider web. <em>Basis:</em> every pin carries an outbound source URL, and the public surface (oEmbed, OG tags) treats the image+link as the object rather than hosting standalone content.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Live pin and board counts — closeable by summing <code>&lt;loc&gt;</code> across all 91 sitemap indexes (≈30K per child), acknowledging it omits non-indexed and secret pins.</li>
+        <li>Total URLs across all sitemap tiers — only one tier-0 image-pin index (~77M) was measured here; the full census is unrun.</li>
+        <li>Outbound-link dead/decay rate — measurable by resolving a sampled set of pin destination URLs over time.</li>
+        <li>Re-pin duplication factor (distinct source images vs total pins) — closeable with perceptual hashing over a sitemap sample.</li>
+        <li>Whether Pinterest offers any paid/licensed bulk or AI-training data feed — no public program found; needs a partnerships disclosure.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
