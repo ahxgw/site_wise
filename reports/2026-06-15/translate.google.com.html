@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>translate.google.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-15</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>translate.google.com</h1>
+      <p class="lede">Google Translate is a function, not a corpus: 243 languages translated on demand, nothing archived — the only bulk path is a paid per-character API.</p>
+      <div class="tag-row">
+        <span class="tag">Tool</span>
+        <span class="tag">Machine Translation</span>
+        <span class="tag">Google</span>
+        <span class="tag">No Public Corpus</span>
+        <span class="tag">Per-Character API</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>translate.google.com is Google's free machine-translation tool: paste or speak text, point a camera, or drop a document, and it returns a translation across 243 languages. It is the consumer face of the same neural and LLM models Google sells through the Cloud Translation API. For an index builder this site is the clearest example of <strong>negative space</strong>: there is almost nothing to crawl. The product generates output on demand and stores no public archive — no documents, no posts, no media library, no user-generated corpus. The only crawlable surface is a few hundred near-duplicate marketing and about pages, localized into ~98 UI languages (Probe Log). The thing of value — translation itself — is explicitly walled off from crawlers in robots.txt and offered only through a metered per-character API. <span class="evidence inferred">inferred</span> Google does not defend Translate against AI crawlers because there is no corpus to protect, only a model sold by the character. <em>Basis:</em> robots.txt (Probe Log) names no AI user agents and instead <code>Disallow</code>s the <code>/translate*</code> function paths for every agent, while the Cloud Translation API meters access at $20 per million characters (Verified Metrics).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>translate.google.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://translate.google.com/">https://translate.google.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Machine-translation tool; consumer front-end to a paid translation API</dd></div>
+        <div><dt>Related hosts</dt><dd><code>translate.googleapis.com</code> (unofficial web endpoint), <code>translation.googleapis.com</code> (Cloud Translation API), <code>cloud.google.com/translate</code> (docs &amp; pricing); Android/iOS apps and Lens camera translation are separate surfaces</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC (Alphabet, NASDAQ: GOOGL)</dd></div>
+        <div><dt>Founded / launched</dt><dd>April 28 2006; neural (GNMT) rebuild Nov 2016</dd></div>
+        <div><dt>Business model</dt><dd>Free consumer tool that drives engagement and feeds the paid Cloud Translation API; no ads on the tool itself</dd></div>
+        <div><dt>Scale anchor</dt><dd>500M+ users translating 100B+ words/day, as of Apr 28 2016 (<a href="https://blog.google/products/translate/ten-years-of-google-translate/">Ten years of Google Translate</a>) — Google's last combined official figure</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (current exact language count, current daily volume) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Languages supported</dt>
+          <dd>243 — after the June 2024 expansion that added 110 new languages representing 614M speakers, powered by PaLM 2. <a href="https://blog.google/products-and-platforms/products/translate/google-translate-new-languages-2024/">Google blog</a>, total per <a href="https://techcrunch.com/2024/06/27/google-traslate-adds-support-for-110-languages-representing-614-million-speakers/">TechCrunch</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Users &amp; daily volume</dt>
+          <dd>500M+ users, 100B+ words translated per day, across 103 languages then — as of Apr 28 2016. <a href="https://blog.google/products/translate/ten-years-of-google-translate/">Ten years of Google Translate</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Daily volume (later, third-party)</dt>
+          <dd>~143B words/day cited from Google's 2018 Made by Google event — not a current primary disclosure. <a href="https://www.androidpolice.com/2018/10/09/google-translate-processes-143-billion-words-every-day/">Android Police</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Cloud Translation — NMT price</dt>
+          <dd>$20 per 1M characters (Advanced/v3 and Basic/v2), first 500K characters/month free — as of Jun 15 2026. <a href="https://cloud.google.com/translate/pricing">Cloud Translation pricing</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Cloud Translation — LLM price</dt>
+          <dd>Translation LLM $10/1M input + $10/1M output; Adaptive MT $25 + $25; document translation $0.08/page (NMT) — as of Jun 15 2026. <a href="https://cloud.google.com/translate/pricing">Same page</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Indexable URL surface</dt>
+          <dd>~784 URLs total — 196 in <code>mainsitemap.xml</code> (localized homepage <code>?hl=</code> variants) + 588 in <code>aboutsitemap.xml</code> (98 locales &times; 6 about pages) — as of Jun 15 2026, Site Wise sitemap census (Probe Log) <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-15, desktop user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-06-15</td><td><code>dig +short translate.google.com</code></td><td>Six A records in <code>142.250.99.0/24</code> (Google front-end IP space); the unofficial web endpoint resolves separately as <code>translate.googleapis.com</code> → <code>108.177.98.95</code>.</td></tr>
+            <tr><td>2026-06-15</td><td><code>curl -sI https://translate.google.com/</code></td><td>HTTP/2 200, <code>server: ESF</code>, <code>content-length: 0</code> on a bare GET (the UI is JS-rendered). <code>cache-control: no-cache, no-store</code>; CSP with <code>require-trusted-types-for 'script'</code> and a per-response script nonce; <code>x-frame-options: SAMEORIGIN</code>; sets an <code>NID</code> cookie on <code>.google.com</code>.</td></tr>
+            <tr><td>2026-06-15</td><td><code>curl -sL https://translate.google.com/robots.txt</code></td><td>16 lines. <code>Disallow</code>s <code>/translate</code>, <code>/translate_a</code>, <code>/translate_suggestion</code>, <code>/translate_t</code>, <code>/m?</code>, <code>/toolkit/</code>, <code>/manager/</code> for <code>*</code>; <code>Allow</code>s <code>/translate_a/element.js</code>. Carries a <code>Sitemap:</code> directive (uncommon for Google). No AI-crawler rules at all — no GPTBot/ClaudeBot/Google-Extended block.</td></tr>
+            <tr><td>2026-06-15</td><td>Sitemap census: <code>/sitemap.xml</code> → children</td><td>Sitemap index points to <code>mainsitemap.xml</code> (196 <code>&lt;loc&gt;</code> entries, all homepage <code>?hl=</code> locale variants) and <code>aboutsitemap.xml</code> (588 entries: <code>/intl/{locale}/about/{index,languages,contribute,helptranslate,forbusiness,license}.html</code>). No content/document URLs anywhere.</td></tr>
+            <tr><td>2026-06-15</td><td><code>curl "translate.googleapis.com/translate_a/single?client=gtx&amp;sl=en&amp;tl=es&amp;dt=t&amp;q=hello%20world"</code></td><td>Returns <code>[[["Hola Mundo","hello world",null,null,10]],null,"en",...]</code> — the web client's internal endpoint. Works without auth but is disallowed in robots.txt and undocumented; not a licensed path.</td></tr>
+            <tr><td>2026-06-15</td><td><code>curl /llms.txt</code></td><td>HTTP 404. No <code>llms.txt</code>; no RSS/Atom feed exists (there is no content stream to syndicate).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. The recurring theme is "not a corpus": translations are generated, not stored, so most rows describe a function call rather than an object set.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text (translation)</td>
+              <td>No stored corpus. Output is generated per request; the "object" is a translation of caller-supplied text.</td>
+              <td><a href="https://cloud.google.com/translate/docs/reference/rest">Cloud Translation API</a> (NMT or Translation LLM). The web app's <code>translate_a/single</code> endpoint is unofficial and robots-disallowed.</td>
+              <td>GCP project + API key/OAuth; metered $20/1M chars (NMT), first 500K/mo free (Verified Metrics).</td>
+              <td>You own your input and output text; standard GCP terms. No Google content to redistribute.</td>
+              <td>N/A — computed fresh each call; quality changes as models update.</td>
+            </tr>
+            <tr>
+              <td>Marketing / about pages</td>
+              <td>~784 URLs, but only ~6 canonical pages × ~98 locale variants (Verified Metrics).</td>
+              <td>Public crawl; listed in <code>sitemap.xml</code> (Probe Log).</td>
+              <td>None.</td>
+              <td>Standard web page; dedup hard across <code>?hl=</code> and <code>/intl/{locale}/</code> variants.</td>
+              <td>Low churn; product copy updates occasionally.</td>
+            </tr>
+            <tr>
+              <td>Images / documents</td>
+              <td>Camera (Lens) and document translation accept user uploads; nothing public is stored or listed.</td>
+              <td>Cloud Translation document endpoint ($0.08/page NMT, Verified Metrics); Lens is a separate surface.</td>
+              <td>Same GCP metering.</td>
+              <td>Caller's own files; no public object set to index.</td>
+              <td>N/A — per request.</td>
+            </tr>
+            <tr>
+              <td>Audio / speech</td>
+              <td>Speech-to-speech ("Conversation") translation in the apps; no public audio corpus.</td>
+              <td>No corpus path; pair Cloud Speech-to-Text with Cloud Translation if building it.</td>
+              <td>Separate metered APIs.</td>
+              <td>Caller's own audio.</td>
+              <td>N/A — per request.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>None. No UGC, ratings, or social layer. "Suggest an edit" feedback is not publicly exposed.</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>The language list and the language-pair graph: 243 languages, each an ISO-639/BCP-47 code; pairs are mostly via-English.</td>
+              <td><a href="https://cloud.google.com/translate/docs/languages">Cloud Translation languages doc</a>; <code>getSupportedLanguages</code> API call.</td>
+              <td>None for the doc; API call uses GCP auth.</td>
+              <td>Factual list; freely indexable as reference data.</td>
+              <td>Changes only when Google adds languages (last big expansion June 2024).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Translate differs from the <a href="../../docs/methodology.html">default platform assumptions</a>. The largest delta is that there is no corpus, so most "indexing" questions invert into "function-call" questions.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>There are no content IDs because there is no content. The only stable identifiers are <strong>language codes</strong> (ISO-639 / BCP-47, e.g. <code>en</code>, <code>zh-Hans</code>, <code>pt-BR</code>). For the crawlable pages, dedup is the whole problem: ~784 URLs collapse to ~6 canonical pages once you fold <code>?hl=</code> and <code>/intl/{locale}/</code> variants.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Not a document — a <strong>(source text, source lang, target lang)</strong> tuple resolved by an API call. If you index anything, you index the capability and the language graph, not pages.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>The one meaningful join is language code, which links text↔text across pairs and (if you assemble the pipeline) text↔speech↔image. There is no author, entity, or media graph to join on.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>No stored field is authoritative; the model output is the answer and it is non-deterministic across model versions. The same input can translate differently after a model update, so any cached translation is a snapshot, not a record.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The crawlable surface is near-static (recrawl the ~6 about pages monthly). The "data" is infinitely fresh and infinitely ephemeral — generated on demand, never persisted publicly.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>No UGC spam surface. Quality risk is mistranslation and hallucination in low-resource languages — exactly the 110 newest languages where training data is thin (Verified Metrics).</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>There is no search box and no result set; the input box is a function, not a query. Users do not "search Translate," they call it. External indexes can only describe the tool, never mirror its output.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Inputs are arbitrary user text/audio/images in any of 243 languages — unbounded and private. None of it is observable to an external indexer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> a capability record, not a page — "Google Translate supports language pair X↔Y via path Z at price P," plus the ~6 canonical about pages as reference docs.</li>
+        <li><strong>Primary keys &amp; joins:</strong> language code (ISO-639/BCP-47) as the only stable key; pair = (source code, target code); join the capability record to your own multilingual content by code.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Cloud Translation <code>getSupportedLanguages</code> + the languages doc — the language/pair graph as structured reference. 2) Public crawl of the deduped about pages via <code>sitemap.xml</code>. 3) Cloud Translation API as a <em>derivative generator</em> for your own corpus (metered per character), not as a source to harvest. 4) The web <code>translate_a</code> endpoint — disallowed in robots.txt and undocumented; do not build on it.</li>
+        <li><strong>Recrawl cadence:</strong> about pages monthly; language graph on Google product announcements (rare, ~annual); pricing page quarterly.</li>
+        <li><strong>Derivatives to generate:</strong> if you run your own multilingual index, call the API to translate documents/queries at ingest — store translations as your derivatives under your terms, keyed by language code.</li>
+        <li><strong>Demo to build:</strong> a "negative-space census" — crawl the two sitemaps, fold locale variants, and emit the handful of canonical pages plus a language-pair matrix, demonstrating that a top-25 host can have a four-figure URL count and effectively zero indexable corpus.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Nothing to index is the baseline, not a risk:</strong> any indexing strategy that assumes a crawlable corpus here will return near-empty. Budget for API-based derivative generation instead.</li>
+        <li><strong>Per-character metering is the real cost driver:</strong> using the API as a derivative generator scales linearly with corpus size at $20/1M chars (NMT) or $10+$10/1M (LLM); a large multilingual index can run a material translation bill.</li>
+        <li><strong>Output is version-dependent:</strong> cached translations silently diverge from live output as models update; treat them as dated snapshots, not stable records.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The unofficial web endpoint can disappear without notice.</strong> <em>Basis:</em> <code>translate_a/single</code> is <code>Disallow</code>ed in robots.txt and absent from the Cloud docs (Probe Log); only the documented Cloud Translation API carries a stability/SLA commitment.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://blog.google/products/translate/ten-years-of-google-translate/">Ten years of Google Translate (Apr 28 2016)</a> — 500M+ users, 100B+ words/day, 103 languages then.</li>
+        <li><a href="https://blog.google/products-and-platforms/products/translate/google-translate-new-languages-2024/">110 new languages added (June 2024)</a> — +110 languages, 614M speakers, PaLM 2.</li>
+        <li><a href="https://techcrunch.com/2024/06/27/google-traslate-adds-support-for-110-languages-representing-614-million-speakers/">TechCrunch coverage</a> — resulting total of 243 languages.</li>
+        <li><a href="https://www.androidpolice.com/2018/10/09/google-translate-processes-143-billion-words-every-day/">Android Police (2018)</a> — ~143B words/day, attributed to Google's Made by Google event.</li>
+        <li><a href="https://cloud.google.com/translate/pricing">Cloud Translation pricing</a> — NMT, LLM, Adaptive, and document prices; free tier.</li>
+        <li><a href="https://cloud.google.com/translate/docs/languages">Cloud Translation language support</a> — language codes, per-model coverage, via-English pairs.</li>
+        <li>Local probes on 2026-06-15: <code>dig</code>, header fetch, robots.txt, sitemap census, the <code>translate_a</code> endpoint, and <code>llms.txt</code> (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Google does not defend Translate against AI crawlers because there is no corpus to protect. <em>Basis:</em> robots.txt names no AI user agents and instead disallows the <code>/translate*</code> function paths for all agents, while the model is sold per character via the Cloud API.</li>
+        <li>The unofficial web endpoint may vanish without notice. <em>Basis:</em> <code>translate_a/single</code> is robots-disallowed and undocumented; only the Cloud Translation API has published stability.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Current exact supported-language count — the Cloud docs list languages per model but state no total; closeable by counting <code>getSupportedLanguages</code> output (and noting LLM vs NMT coverage differ).</li>
+        <li>Current daily translation volume and active users — the last combined official figures are 2016; only Google could refresh them.</li>
+        <li>Share of Cloud Translation revenue vs. the free consumer tool's cost — not disclosed; no Alphabet segment breaks it out.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
