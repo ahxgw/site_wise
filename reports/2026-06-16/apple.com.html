@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>apple.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-16</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>apple.com</h1>
+      <p class="lede">apple.com is a freely crawlable marketing shell wrapping Apple's real index asset: a no-auth media-catalog API for apps, music, and podcasts — rate-capped, not walled.</p>
+      <div class="tag-row">
+        <span class="tag">Hardware</span>
+        <span class="tag">Marketing</span>
+        <span class="tag">Services</span>
+        <span class="tag">Media Catalog</span>
+        <span class="tag">adam ID</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>apple.com is two corpora wearing one domain. The visible site is a promotional and retail surface — product pages, the newsroom, support docs, store locator — that Apple deliberately makes <strong>easy</strong> to index: rich JSON-LD, five public sitemaps, and a robots.txt that blocks no AI crawler (Probe Log). It is thin on data, though: product pages carry no price or offer in their structured data. The asset an index actually wants is Apple's <strong>media catalog</strong> — apps, music, podcasts, books, TV — surfaced not on apple.com but through the public <code>itunes.apple.com</code> Search/Lookup API, which returns structured records with artwork, previews, and stable numeric IDs without any authentication. The catch is throughput, not access: the API is capped near 20 calls/minute and bulk is pushed to a partner feed. Apple is a hardware company ($416B FY2025) increasingly carried by Services ($109B, first $100B+ year), and that catalog is the Services engine. <span class="evidence inferred">inferred</span> Apple treats marketing content as free advertising and the catalog as a metered funnel. <em>Basis:</em> robots.txt allows all crawlers including AI agents (observed 2026-06-16) while the catalog API throttles to ~20/min and routes heavy use to the Enterprise Partner Feed (see Verified Metrics).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>apple.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.apple.com/">https://www.apple.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Consumer-hardware marketing &amp; retail site + media-catalog API surface</dd></div>
+        <div><dt>Related hosts</dt><dd><code>itunes.apple.com</code> (Search/Lookup API), <code>apps.apple.com</code>, <code>music.apple.com</code>, <code>podcasts.apple.com</code>, <code>tv.apple.com</code>, <code>books.apple.com</code>, <code>support.apple.com</code>, <code>*.mzstatic.com</code> (catalog media CDN), <code>www.apple.com.cn</code> (China storefront)</dd></div>
+        <div><dt>Owner</dt><dd>Apple Inc. (NASDAQ: AAPL); CEO Tim Cook</dd></div>
+        <div><dt>Founded / launched</dt><dd>Apple founded Apr 1 1976; apple.com registered Feb 1987</dd></div>
+        <div><dt>Business model</dt><dd>Hardware margin + Services (App Store commission, subscriptions, licensing, ads); the site is the funnel, not a revenue line itself</dd></div>
+        <div><dt>Scale anchor</dt><dd>2.5B active devices, as of Jan 29 2026 (Q1 FY2026 earnings call; see Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Live catalog size and review volume live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Total revenue, FY2025</dt>
+          <dd>$416B for the fiscal year ended Sep 27 2025 — record year. <a href="https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/">Q4 FY2025 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Revenue, Q4 FY2025</dt>
+          <dd>$102.5B, +8% YoY; diluted EPS $1.85 — quarter ended Sep 27 2025. <a href="https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Services revenue, FY2025</dt>
+          <dd>$109.16B — first fiscal year above $100B; Q4 Services hit an all-time high of $28.8B. <a href="https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm">FY2025 Form 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>iPhone revenue, FY2025</dt>
+          <dd>$209.59B — the single largest product line. <a href="https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm">FY2025 Form 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Active devices</dt>
+          <dd>2.5B+ worldwide (Tim Cook) — as of the Q1 FY2026 earnings call, Jan 29 2026; up from 2.35B a year earlier. <a href="https://www.macrumors.com/2026/01/29/apple-2-5-billion-active-devices/">MacRumors (earnings call)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>App Store ecosystem billings &amp; sales, 2024</dt>
+          <dd>$1.3T facilitated; for 90%+ of it developers paid Apple no commission — as of Jun 2025 study. <a href="https://www.apple.com/newsroom/2025/06/global-app-store-helps-developers-reach-new-heights/">Apple Newsroom</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>iTunes Search API rate cap</dt>
+          <dd>~20 calls/minute (subject to change); heavier use directed to the Enterprise Partner Feed (EPF) — as of Jun 16 2026. <a href="https://performance-partners.apple.com/search-api">Apple Performance Partners docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-16. The probe vantage resolves through a China edge (note <code>geo=CN</code>), so localized routing is itself one of the findings.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-06-16</td><td><code>dig +short apple.com / www.apple.com</code></td><td><code>apple.com</code> → 17.253.144.10 (Apple's own AS714, 17.0.0.0/8). <code>www.apple.com</code> CNAMEs through <code>v.aaplimg.com</code> to <code>www.apple.com.w.cdngslb.com</code> → 122.228.195.x / 122.228.79.x — a Chinese CDN (Wangsu/ChinaNetCenter), not Apple IP space.</td></tr>
+            <tr><td>2026-06-16</td><td><code>curl -sI https://www.apple.com/</code></td><td>HTTP/2 200, <code>server: Apple</code>, HSTS <code>max-age=31536000; preload</code>, detailed <code>content-security-policy</code> (img-src locked to <code>*.apple.com *.mzstatic.com</code>), <code>x-frame-options: SAMEORIGIN</code>. Edge markers <code>via: cache6.cn6144</code> and <code>eagleid:</code> confirm a Chinese CDN POP; response sets <code>geo=CN</code> cookie.</td></tr>
+            <tr><td>2026-06-16</td><td><code>curl -sL https://www.apple.com/robots.txt</code></td><td>43 lines. <strong>No</strong> AI-crawler rules — GPTBot, ClaudeBot, Applebot and Applebot-Extended are all absent (0 matches). Only a few overlay/checkout paths blocked for <code>*</code>; Chinese engines (Baiduspider, Sogou, HaoSouSpider) restricted to <code>/cn/</code> paths. Lists 5 sitemaps: shop, autopush, newsroom, retail, today.</td></tr>
+            <tr><td>2026-06-16</td><td>Sitemap census</td><td><code>newsroom/sitemap.xml</code> = 2,550 URLs carrying <code>&lt;video:&gt;</code> metadata (title, description, <code>content_loc</code> mp4, duration, publication_date). <code>autopush</code> index = 292 child sitemaps; <code>retail</code> = 611 store URLs; <code>today</code> index = 30 children. <code>shop/sitemap.xml</code> is a per-country index; the US <code>buy.xml</code> alone holds 1,320 URLs.</td></tr>
+            <tr><td>2026-06-16</td><td>Structured-data sample (JSON-LD)</td><td>Newsroom article exposes <code>NewsArticle</code> + <code>ImageObject</code> + <code>VideoObject</code>. Product page (<code>/shop/buy-iphone/...</code>) exposes only <code>Organization</code> + <code>Brand</code> — <strong>no</strong> <code>Product</code>, <code>Offer</code>, or price in structured data.</td></tr>
+            <tr><td>2026-06-16</td><td><code>curl "https://itunes.apple.com/search?term=beatles&amp;entity=album&amp;limit=1"</code> and <code>/lookup?id=909253</code></td><td>HTTP 200 JSON, no auth. Returns <code>artistId</code>, <code>collectionId</code>, <code>collectionName</code>, <code>collectionPrice</code>, <code>artworkUrl60/100</code> (on <code>mzstatic.com</code>), <code>collectionViewUrl</code>. Lookup by ID returns the same numeric-keyed records. App Store RSS (<code>/us/rss/topfreeapplications/...json</code>) also returns public chart entries.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Two regimes: the freely crawlable <em>website</em> and the rate-capped <em>catalog API</em>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text (site)</td>
+              <td>Product/spec pages, newsroom articles (2,550), support docs, store pages (611) — per locale (Probe Log).</td>
+              <td>Public crawl via the 5 listed sitemaps; all crawlers (incl. AI) allowed.</td>
+              <td>None.</td>
+              <td>Copyrighted marketing/editorial copy; normal crawl &amp; snippet, no bulk republication.</td>
+              <td>Marketing churns on product cycles (keynotes); newsroom append-mostly.</td>
+            </tr>
+            <tr>
+              <td>Text (catalog)</td>
+              <td>App/album/track/podcast/book/movie metadata: names, descriptions, genres, prices.</td>
+              <td>iTunes Search/Lookup API; bulk via EPF.</td>
+              <td>No auth; ~20 calls/min, then EPF (Verified Metrics).</td>
+              <td>Performance-Partners terms; attribution + link-back to storefront.</td>
+              <td>Prices/availability/chart rank churn daily.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Product imagery on <code>*.mzstatic.com</code>; catalog artwork at multiple sizes (60/100/512px).</td>
+              <td>Crawl product pages; API <code>artworkUrl*</code> fields give CDN URLs.</td>
+              <td>None for site; API quota for catalog art.</td>
+              <td>Apple trademark/marketing imagery; hotlink display, no derivatives.</td>
+              <td>Low churn; refreshes on listing/product updates.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Newsroom/product films with <code>content_loc</code> mp4 + duration in the video sitemap. Apple TV+ catalog is a separate corpus.</td>
+              <td>Video sitemap (newsroom); no public API for TV+ titles.</td>
+              <td>None for sitemap video.</td>
+              <td>Apple-owned promo video; embed/snippet only.</td>
+              <td>Tied to launch cadence.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Apple Music 30s previews; podcast episodes (public RSS behind Apple Podcasts).</td>
+              <td>API <code>previewUrl</code>; podcast feeds are the publishers' own RSS.</td>
+              <td>No auth; API quota.</td>
+              <td>Previews are display-only; full tracks not accessible.</td>
+              <td>Catalog adds continuously.</td>
+            </tr>
+            <tr>
+              <td>Reviews / ratings</td>
+              <td>App Store ratings &amp; written reviews per app, per storefront.</td>
+              <td>No official bulk endpoint; only undocumented per-app RSS/amp feeds.</td>
+              <td>—</td>
+              <td>Open: no documented reuse path for review text.</td>
+              <td>Append-mostly; reset on major app version.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>adam IDs (artistId, collectionId, trackId, App ID, bundleId), genres, storefronts, 611 retail locations.</td>
+              <td>iTunes Lookup API (by ID/UPC/bundleId); retail sitemap for stores.</td>
+              <td>No auth; ~20 calls/min.</td>
+              <td>Performance-Partners terms.</td>
+              <td>IDs stable; chart/rank entities churn daily.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where apple.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The catalog's universal key is the numeric <strong>adam ID</strong> (<code>trackId</code>/<code>collectionId</code>/<code>artistId</code>), present in every API record and in <code>music.apple.com/.../{id}</code> and <code>apps.apple.com/.../id{id}</code> URLs. It is <em>storefront-scoped</em>: <code>us</code>, <code>cn</code>, <code>jp</code> are separate namespaces for the same content. The website instead uses path-based locales (<code>/cn/</code>, <code>/jp/</code>) — dedup those against the canonical <code>www.apple.com</code> page.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Two unrelated units: the <strong>marketing/editorial page</strong> (URL) for the website, and the <strong>catalog item</strong> (adam ID) for apps/music/podcasts/books/TV. They share artwork on mzstatic but almost nothing else.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p><code>artistId</code> joins albums↔tracks↔music videos; <code>bundleId</code>↔App ID joins app metadata to its store page; UPC/EAN lookup bridges Apple's namespace to external music IDs. All catalog media joins back to mzstatic artwork URLs.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Marketing copy is the <em>least</em> neutral field — promotional by design and the wrong source for factual specs. Catalog API fields (publisher-supplied) and the support docs are the trustworthy text; product spec tables beat the hero copy.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Website is event-driven: near-static between keynotes, then a large coordinated swap on launch day. Catalog is the opposite — prices, availability, and chart rank move daily, so the API/RSS side needs a far tighter cadence than the crawl side.</p>
+        </div>
+        <div>
+          <h4>AI-crawler stance (reversed default)</h4>
+          <p>Unlike most large platforms, robots.txt blocks <em>no</em> AI crawler (Probe Log). Apple's own opt-out lever, <code>Applebot-Extended</code>, is absent from its file — and Apple's docs say absence = consent to train foundation models. Apple permits AI training on its own marketing content while offering other publishers the switch.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Apple runs its own crawler, Applebot, to power Siri/Spotlight/Safari suggestions — so apple.com is both a source and a search engine. The rich JSON-LD shows it still courts Google; the two coexist rather than the site escaping to <code>site:</code>.</p>
+        </div>
+        <div>
+          <h4>Geo &amp; sovereignty split</h4>
+          <p>From a China vantage the site is served by a third-party Chinese CDN (Probe Log), with a <code>geo</code> cookie steering storefront and locale. A single-region crawl silently misses the localized corpus; the catalog's per-storefront IDs make this explicit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> two classes — website page (URL + locale) and catalog item (storefront + adam ID).</li>
+        <li><strong>Primary keys &amp; joins:</strong> canonical <code>www.apple.com</code> URL for the site; <code>storefront + adamID</code> for catalog; <code>artistId</code>/<code>bundleId</code>/UPC for cross-item and cross-store joins; mzstatic artwork URL as the shared media key.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) the 5 public sitemaps — full marketing, newsroom (with video), support, retail; freely crawlable incl. AI. 2) iTunes Search/Lookup API — catalog metadata, artwork, previews; no auth but cache hard against the ~20/min cap. 3) App Store RSS chart feeds — cheap daily freshness/ranking signal. 4) EPF — the only sanctioned bulk catalog path (partner approval). 5) Review text — no official path; design around ratings/counts.</li>
+        <li><strong>Recrawl cadence:</strong> marketing pages on keynote/launch events; newsroom daily; catalog charts daily; catalog metadata weekly; retail locations monthly.</li>
+        <li><strong>Derivatives to generate:</strong> artwork embeddings for visual dedup, audio fingerprints from <code>previewUrl</code>, spec extraction from product tables, an adam-ID↔UPC↔bundleId concordance.</li>
+        <li><strong>Demo to build:</strong> a storefront-aware iTunes Search indexer that honors the ~20/min cap, caches aggressively, emits JSONL keyed on adam ID with artist/app joins, and logs which fields throughput forces you to skip — the music/app analogue of the Amazon PA-API demo.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The generous API is undocumented-stable:</strong> the iTunes Search API has no versioned contract and Apple can change the ~20/min cap "at any time" (<a href="https://performance-partners.apple.com/search-api">docs</a>); bulk depends on EPF partner status that can be revoked.</li>
+        <li><strong>Reviews have no legitimate bulk path:</strong> App Store ratings/review text are only on undocumented per-app feeds — plan for ratings-summary-only permanently.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The open AI stance is reversible.</strong> <em>Basis:</em> robots.txt carries no <code>Applebot-Extended</code> rule today (observed 2026-06-16); Apple already ships that exact opt-out lever, so a one-line addition would cut AI training access to apple.com overnight.</li>
+        <li><strong>Geo-split corpus:</strong> China (and other regions) are served by separate CDNs/storefronts; an index crawling from one vantage under-counts localized content and per-storefront catalog IDs.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/">Apple Q4 FY2025 results (Oct 30 2025)</a> — $416B FY revenue, $102.5B Q4, Services all-time high.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm">Apple FY2025 Form 10-K (SEC)</a> — $109.16B Services, $209.59B iPhone.</li>
+        <li><a href="https://www.macrumors.com/2026/01/29/apple-2-5-billion-active-devices/">MacRumors</a> — 2.5B active devices, Q1 FY2026 earnings call (Jan 29 2026).</li>
+        <li><a href="https://www.apple.com/newsroom/2025/06/global-app-store-helps-developers-reach-new-heights/">Apple Newsroom (Jun 2025)</a> — $1.3T App Store ecosystem billings, 90%+ commission-free.</li>
+        <li><a href="https://performance-partners.apple.com/search-api">Apple Performance Partners — iTunes Search API</a> — ~20 calls/min cap and EPF for bulk.</li>
+        <li><a href="https://support.apple.com/en-us/119829">Apple Support — About Applebot</a> — Applebot &amp; Applebot-Extended; absence of the opt-out = consent to AI training.</li>
+        <li>Local probes on 2026-06-16: <code>dig</code>, <code>curl -I</code>, robots.txt, sitemap census, JSON-LD sample, and live iTunes Search/Lookup calls (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Apple treats marketing content as free advertising and the catalog as a metered funnel. <em>Basis:</em> robots.txt allows all crawlers (incl. AI agents) while the catalog API caps at ~20/min and routes bulk to EPF.</li>
+        <li>The open AI-training stance is one robots.txt line from reversal. <em>Basis:</em> <code>Applebot-Extended</code> is absent from the file observed 2026-06-16, and Apple already ships that opt-out mechanism.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Live catalog size per storefront (apps, songs, podcasts, books) — closeable by sweeping iTunes Search <code>resultCount</code> across genres/storefronts within the rate cap, or via EPF table counts.</li>
+        <li>App Store review volume and whether any sanctioned bulk path exists — needs an Apple disclosure or a documented endpoint.</li>
+        <li>Full-year Services sub-mix (App Store vs subscriptions vs licensing vs ads) — Apple reports Services as one line; only the $1.3T ecosystem study breaks out billings categories.</li>
+        <li>Whether Applebot honors crawl-delay / how aggressively it recrawls apple.com itself — measurable from server logs, which are not public.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
