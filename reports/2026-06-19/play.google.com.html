@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>play.google.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-19</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>play.google.com</h1>
+      <p class="lede">Google Play is Android's crawlable catalog of ~1.85M apps keyed by package name — and a court is forcing Google to share it with rivals.</p>
+      <div class="tag-row">
+        <span class="tag">App Store</span>
+        <span class="tag">Android</span>
+        <span class="tag">Digital Goods</span>
+        <span class="tag">Package Graph</span>
+        <span class="tag">Antitrust</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>play.google.com is the storefront for Google Play: the default distribution channel for apps on 3B+ Android devices, plus books and audiobooks. Google monetizes it with a service fee on paid apps, in-app purchases, and subscriptions — historically 30%, now mostly 15% or less. For an index builder, the interesting object is not the page but the <strong>application ID</strong> (the reverse-DNS package name like <code>com.whatsapp</code>): globally unique, stable, printed in every listing URL (<code>?id=…</code>), and shared with the APK, the manifest, and every other Android tool. Unlike Amazon, Play does <em>not</em> hide its catalog: app detail pages are crawlable, carry microdata, and are enumerated in a public sitemap. The bigger story is legal — the Epic v. Google injunction now compels Google to share its app catalog with rival stores and allow third-party distribution and billing. <span class="evidence inferred">inferred</span> A sanctioned bulk catalog feed is arriving by mandate, not by API design. <em>Basis:</em> the Supreme Court let stand an injunction requiring Google to "share its catalog of apps with rivals," with catalog sharing due to "come into force next summer" (see Verified Metrics).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>play.google.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://play.google.com/store">https://play.google.com/store</a> (root 302s here — Probe Log)</dd></div>
+        <div><dt>Category</dt><dd>App store / digital-goods marketplace</dd></div>
+        <div><dt>Related hosts</dt><dd><code>play-lh.googleusercontent.com</code> (icon/screenshot CDN, observed in og:image), <code>play.google.com/console</code> (Play Console), <code>developer.android.com</code>; Movies merged into Google TV, Music into YouTube Music</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC (Alphabet Inc., NASDAQ: GOOGL/GOOG)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Android Market launched Oct 2008; rebranded Google Play on Mar 6 2012</dd></div>
+        <div><dt>Business model</dt><dd>15–30% service fee on paid apps, in-app purchases, and subscriptions; funnels users to Android + Google account</dd></div>
+        <div><dt>Scale anchor</dt><dd>3B+ active Android devices, as of May 10 2023 (<a href="https://blog.google/products/android/android-updates-io-2023/">Google I/O 2023</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (official app count, Play revenue, catalog object total) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Active Android devices</dt>
+          <dd>3B+ worldwide — as of May 10 2023, the standing official figure. <a href="https://blog.google/products/android/android-updates-io-2023/">Google I/O 2023</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Apps available</dt>
+          <dd>~1.85M — as of Jun 2026; third-party estimate by AppBrain (Google publishes no official count). Peaked ~3.6M in 2017 before removal waves. <a href="https://www.appbrain.com/stats/number-of-android-apps">AppBrain</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap census</dt>
+          <dd>35,825 child sitemaps listed across two index files (4,699 + 31,126), batch dated 2026-06-14; one sampled shard held 391 URLs, mostly books — as of Jun 19 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured-data sample (WhatsApp)</dt>
+          <dd>App page exposes microdata <code>aggregateRating</code> = 4.66 from 237.1M ratings, plus price/genre/contentRating/14 images — as of Jun 19 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Standard service fee</dt>
+          <dd>15% on a developer's first $1M/yr, 30% above; subscriptions 15% from day one; 99%+ of developers qualify for ≤15% — as of Jun 19 2026. <a href="https://support.google.com/googleplay/android-developer/answer/112622?hl=en">Play Console Help</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Post-Epic fee &amp; openness changes</dt>
+          <dd>Registered App Stores program for third-party distribution; alternative/out-of-app billing; new EEA/UK/US billing fee 5%; rollout EEA/UK/US Jun 30 2026 → global Sep 30 2027 — announced Mar 4 2026. <a href="https://android-developers.googleblog.com/2026/03/a-new-era-for-choice-and-openness.html">Android Developers Blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Catalog-sharing mandate</dt>
+          <dd>Supreme Court declined Oct 6 2025 to block the injunction requiring Google to distribute third-party stores via Play, "share its catalog of apps with rivals," and allow non-Google billing; catalog sharing "come[s] into force next summer." <a href="https://www.aol.com/news/supreme-court-rejects-google-request-215113115.html">AOL/Reuters</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-19, desktop browser user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-06-19</td><td><code>dig +short play.google.com</code></td><td>Single A record 104.244.42.197 (no reverse PTR). Confirmed Google front end: response <code>server: ESF</code> and root 302 to <code>/store</code> — not the apex IP's nominal owner.</td></tr>
+            <tr><td>2026-06-19</td><td><code>curl -sI https://play.google.com/</code></td><td>HTTP 302 to <code>https://play.google.com/store</code>. <code>server: ESF</code>, <code>x-frame-options: SAMEORIGIN</code>, <code>x-content-type-options: nosniff</code>, <code>x-xss-protection: 0</code>, hard no-cache, <code>NID</code> cookie set on <code>.google.com</code>, <code>alt-svc</code> h3. No HSTS header on the redirect.</td></tr>
+            <tr><td>2026-06-19</td><td><code>curl -sL .../robots.txt</code></td><td>107 lines, a <strong>single</strong> <code>User-Agent: *</code> group — no AI-crawler block (no GPTBot/ClaudeBot/Google-Extended rules). Allows <code>/store/devices</code>, <code>/books</code>, <code>/apps/publish</code>; Disallows <code>/apps</code>, <code>/music</code>, <code>/movies</code>, <code>/store/search</code>, <code>/store/getreviews</code>, <code>/store/submitreview</code>, all <code>collection/p3_details_*</code>. Two Sitemap directives.</td></tr>
+            <tr><td>2026-06-19</td><td>Sitemap index fetch + child shard</td><td><code>sitemaps-index-0.xml</code> (4,699 children) + <code>-1.xml</code> (31,126) = 35,825 shards, all in batch <code>play_sitemaps_2026-06-14</code>. Shard filenames read <code>NNNNN-of-81126</code>, so the indexes list ~44% of named shards. Sampled shard 00000: 391 URLs (319 books, 42 apps, 15 audiobooks, 14 info).</td></tr>
+            <tr><td>2026-06-19</td><td><code>curl .../store/apps/details?id=com.whatsapp</code></td><td>HTTP 200, 1.24MB static HTML (no auth, no JS challenge). Carries Schema.org microdata: <code>itemprop</code> name/description/genre/contentRating/price/starRating/<code>aggregateRating</code> (ratingValue 4.6567, ratingCount 237,140,964) and 14 <code>itemprop="image"</code> on <code>play-lh.googleusercontent.com</code>. og:title/url/image present; no JSON-LD block.</td></tr>
+            <tr><td>2026-06-19</td><td><code>/llms.txt</code></td><td>HTTP 404 — no LLM-policy file.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Play has an unusually open public surface (Probe Log) and no consumer catalog API; the Play Developer API is publisher-scoped to your own apps.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>App listings (title, description, what's-new), book &amp; audiobook detail pages. Apps ~1.85M (AppBrain); books in the millions (sitemap-dominant).</td>
+              <td>Public crawl of <code>/store/apps/details?id=</code> + sitemap enumeration; microdata on every page (Probe Log).</td>
+              <td>None — listing pages serve full static HTML to any agent.</td>
+              <td>Google/developer content; metadata is developer-supplied. Display under Google terms; no bulk redistribution.</td>
+              <td>Per-release churn; "updated on" varies by app (some weekly).</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Icon, feature graphic, screenshots per app (14 image props on the WhatsApp page).</td>
+              <td>Hotlink from <code>play-lh.googleusercontent.com</code> CDN URLs in og:image / itemprop=image.</td>
+              <td>None to fetch.</td>
+              <td>Hotlink display; no copying/derivatives without rights review.</td>
+              <td>Low churn; changes on listing updates.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>App preview/promo videos on some listings (YouTube-hosted).</td>
+              <td>YouTube oEmbed for the embedded trailer where present.</td>
+              <td>None for oEmbed.</td>
+              <td>YouTube embed terms.</td>
+              <td>Low churn.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Audiobooks (Play Books). Play Music shut down; catalog moved to YouTube Music.</td>
+              <td>Public audiobook detail pages via sitemap; no sample API.</td>
+              <td>None for metadata.</td>
+              <td>Publisher content; samples not licensable in bulk.</td>
+              <td>Catalog-stable.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>User reviews + star ratings (WhatsApp: 237.1M ratings, Verified Metrics).</td>
+              <td>Rating <em>summary</em> only, via page microdata (ratingValue + ratingCount). Review <em>bodies</em> have no path.</td>
+              <td>—</td>
+              <td>Aggregate rating displayable; <code>/store/getreviews</code> is <code>Disallow</code>ed (Probe Log), so bodies are off-limits.</td>
+              <td>Ratings append continuously; bulk deletions on policy sweeps.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Apps (package ID), developers, categories, books (Google Books volume ID), audiobooks, data-safety labels, permissions, price/offer.</td>
+              <td>Microdata on detail pages; Play Developer API only for a publisher's own apps.</td>
+              <td>Public pages: none. Developer API: OAuth, own-catalog scope only.</td>
+              <td>Same Google display terms; prices must stay fresh.</td>
+              <td>Price/offer can change; data-safety + permissions change per release.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Play differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The <strong>application ID</strong> (reverse-DNS package name, e.g. <code>com.whatsapp</code>) is the canonical app key: globally unique, stable, in every URL's <code>id=</code> param. Books carry separate Google Books volume IDs (<code>id=Eoz0bGACG60C</code>), bridging Play to the Books namespace. <code>hl</code>/<code>gl</code> params create per-locale listing variants — dedup on the ID, keep locale as a facet.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The app listing (per package), with offer (price/IAP), rating summary, and the data-safety/permissions block as sub-records. For Play's other corpora, the unit is the book or audiobook volume.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Everything joins on the package ID: icon/screenshots (CDN), rating summary, developer entity, category. The package ID also joins outward to the APK and to security feeds — a strong cross-ecosystem key, unlike most platforms' internal-only IDs.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Developer-supplied titles are keyword-stuffed for store search; least trustworthy. Data-safety labels, declared permissions, and content rating are closer to ground truth; the rating summary carries quality signal but is an adversarial surface (review/install farms).</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The sitemap batch is regenerated frequently (observed batch <code>2026-06-14</code>, five days old). App metadata churns on each release; ratings append continuously; book catalog is near-static.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Play-specific: cloned/repackaged apps with near-identical package names, keyword-stuffed titles, fake reviews and installs, and malware waves that trigger mass removals (peak ~3.6M apps fell toward ~1.85M). Icon/screenshot similarity is the strongest impersonation signal.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Unusual delta: Play feeds its own catalog to web crawlers (public sitemap, no AI-crawler block, full static HTML). The on-device Play search is the primary discovery surface, but Play pages are deliberately web-indexable — closer to Wikipedia's posture than Amazon's wall.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>App name ("whatsapp"), branded + platform ("free pdf scanner android"), and category browse. High install intent; little long-form text retrieval except in the Books corpus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> app listing keyed by package ID; offer, rating summary, and data-safety block as sub-records. Books/audiobooks keyed by Google Books volume ID.</li>
+        <li><strong>Primary keys &amp; joins:</strong> package ID (apps), volume ID (books); locale (<code>hl</code>/<code>gl</code>) as a facet; package ID joins to APK and security corpora.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Public sitemap + crawl of <code>/store/apps/details</code> — no auth, microdata-rich, the rare open major-platform surface (Probe Log). 2) The Epic-mandated catalog-sharing feed (due summer 2026) — a legally compelled bulk path; watch for its spec. 3) Play Developer API — own-catalog only, useless for third-party indexing. 4) Review bodies — none; <code>/store/getreviews</code> is Disallowed, so design for ratings-only.</li>
+        <li><strong>Recrawl cadence:</strong> top-app metadata + ratings daily; long-tail app metadata weekly (release cadence); books monthly; re-pull the sitemap index daily to catch the fresh batch.</li>
+        <li><strong>Derivatives to generate:</strong> icon/screenshot embeddings for clone &amp; impersonation detection; permission/data-safety normalization; title de-spam; package-ID ↔ APK ↔ developer concordance.</li>
+        <li><strong>Demo to build:</strong> a sitemap-driven Play indexer — walk the 35,825 shards, fetch <code>/store/apps/details</code>, extract microdata (name, rating, ratingCount, price, category, image), emit JSONL, and report which fields need JS vs arrive in static HTML.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Catalog sharing reshapes the legitimate path:</strong> the injunction forces a bulk feed to rival stores by summer 2026 (<a href="https://www.aol.com/news/supreme-court-rejects-google-request-215113115.html">SCOTUS denial</a>) — potentially a sanctioned ingestion path, but format, terms, and eligibility are unpublished.</li>
+        <li><strong>Regional fragmentation:</strong> post-Epic billing/distribution changes roll out by country (EEA/UK/US first, global Sep 30 2027 — <a href="https://android-developers.googleblog.com/2026/03/a-new-era-for-choice-and-openness.html">dev blog</a>), so the catalog/offer surface differs by region during the transition.</li>
+        <li><strong>Open surface could close:</strong> the current single <code>User-Agent: *</code> robots group with no AI-crawler block is the exception among major platforms; Google could tighten it. The index's cheapest path is also its most revocable.</li>
+        <li><strong>Review bodies are permanently closed:</strong> <code>/store/getreviews</code> is Disallowed and no API carries review text — plan for rating summaries only.</li>
+        <li><strong>High deletion rate:</strong> mass policy-driven removals churn the catalog (peak ~3.6M → ~1.85M apps), so the index needs aggressive tombstoning, not just additions.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://blog.google/products/android/android-updates-io-2023/">Google I/O 2023 (blog.google)</a> — 3B+ active Android devices (May 10 2023).</li>
+        <li><a href="https://www.appbrain.com/stats/number-of-android-apps">AppBrain</a> — third-party estimate of apps available (~1.85M, Jun 2026); historical peak ~3.6M.</li>
+        <li><a href="https://support.google.com/googleplay/android-developer/answer/112622?hl=en">Play Console Help: service fees</a> — 15%/30% structure, subscription rate, 99%+ eligibility.</li>
+        <li><a href="https://android-developers.googleblog.com/2026/03/a-new-era-for-choice-and-openness.html">Android Developers Blog, "A new era for choice and openness" (Mar 4 2026)</a> — Registered App Stores program, alternative billing, 5% billing fee, rollout timeline.</li>
+        <li><a href="https://www.aol.com/news/supreme-court-rejects-google-request-215113115.html">AOL/Reuters (Oct 6 2025)</a> — Supreme Court denial; injunction's catalog-sharing, third-party-store, and billing requirements.</li>
+        <li>Local probes on 2026-06-19: <code>dig</code>, <code>curl</code> against the homepage, robots.txt, both sitemap indexes, a child shard, a sample app page, and llms.txt (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>A sanctioned bulk catalog feed is arriving by legal mandate rather than API design. <em>Basis:</em> the injunction's "share its catalog of apps with rivals" requirement upheld by SCOTUS (Oct 6 2025), force date summer 2026, with no equivalent consumer catalog API on Google's developer portal.</li>
+        <li>The application ID is the dedup/join key across the Android ecosystem. <em>Basis:</em> the reverse-DNS package name appears as the <code>id=</code> param in the listing URL (Probe Log) and is the same identifier used by the APK manifest and security feeds.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Official live app count — Google publishes none; only third-party estimates (AppBrain) exist. Closeable by an official disclosure or a full sitemap sweep deduped by package ID.</li>
+        <li>Total indexable URL/object count — 35,825 child shards observed, but filenames reference 81,126 shards; the gap and the per-shard URL distribution need a full census (sampled shard had 391 URLs, book-heavy).</li>
+        <li>Google Play revenue and developer payouts — Alphabet does not break out Play within "Google services"; needs a filing or trial-disclosed figure.</li>
+        <li>Catalog-sharing feed format, terms, and eligibility — not yet published as of Jun 19 2026; closeable when Google releases the implementation spec.</li>
+        <li>Books and audiobooks catalog counts — dominate the sitemap but have no official figure; closeable by a sitemap census by path.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
