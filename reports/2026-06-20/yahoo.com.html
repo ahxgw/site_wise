@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>yahoo.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-20</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>yahoo.com</h1>
+      <p class="lede">Yahoo.com is a 30-year web portal — news, finance, sports, mail, Bing-powered search — owned by Apollo, aggregating licensed publisher content under per-article provider attribution.</p>
+      <div class="tag-row">
+        <span class="tag">Portal</span>
+        <span class="tag">News aggregator</span>
+        <span class="tag">Finance</span>
+        <span class="tag">Webmail</span>
+        <span class="tag">Search (Bing)</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Yahoo.com is the front door of Yahoo Inc., a privately held media-and-tech group owned by funds managed by Apollo Global Management since September 2021 (Verizon kept 10%). The portal bundles News, Finance, Sports, Mail, and a search box whose results are supplied by Microsoft Bing. Money comes from advertising (Yahoo Ads/DSP), Mail and Finance Plus subscriptions, and a search-revenue share with Microsoft. For an index builder the defining fact is that <strong>Yahoo is an aggregator, not an originator</strong>: most article pages carry a JSON-LD <code>provider</code> field naming the upstream publisher (a local TV station, AFP, a partner site) whose content Yahoo licenses and re-hosts on <code>s.yimg.com</code> / <code>media.zenfs.com</code>. <span class="evidence inferred">inferred</span> Yahoo cannot grant reuse rights to most of its own article corpus. <em>Basis:</em> the structured-data sample (Probe Log) shows <code>NewsArticle.provider = "WPXI"</code> distinct from <code>publisher = "Yahoo News"</code>; the licensing party for that body text is the provider, not Yahoo. The retrieval target is therefore the article-with-provenance, plus the high-value structured layer under Yahoo Finance.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>yahoo.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.yahoo.com/">https://www.yahoo.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Web portal: news aggregation, finance, sports, webmail, Bing-powered search</dd></div>
+        <div><dt>Related hosts</dt><dd><code>finance.yahoo.com</code>, <code>sports.yahoo.com</code>, <code>mail.yahoo.com</code>, <code>search.yahoo.com</code>, <code>s.yimg.com</code> / <code>media.zenfs.com</code> (media CDNs); sibling brands <code>aol.com</code>, <code>techcrunch.com</code>, <code>engadget.com</code>, <code>autoblog.com</code>, <code>rivals.com</code> (seen in the homepage CSP)</dd></div>
+        <div><dt>Owner</dt><dd>Yahoo Inc., owned by Apollo Global Management funds (since Sep 1 2021); Verizon retains 10%</dd></div>
+        <div><dt>Founded / launched</dt><dd>1994 (Jerry Yang &amp; David Filo); Verizon Media era 2017–2021; Apollo era from 2021</dd></div>
+        <div><dt>Business model</dt><dd>Advertising + Mail/Finance subscriptions + Microsoft search-revenue share</dd></div>
+        <div><dt>Scale anchor</dt><dd>~900M monthly active users worldwide, "third-largest property on the internet" — as of Sep 1 2021 (<a href="https://www.apollo.com/insights-news/pressreleases/2021/09/apollo-funds-complete-acquisition-of-yahoo-161530593">Apollo close release</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Live corpus size and current MAU live once in Open Questions. Third-party panel estimates are labelled with their estimator.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Monthly active users (worldwide)</dt>
+          <dd>~900M, "third-largest property on the internet" — as of Sep 1 2021, the figure stated at the Apollo acquisition close. <a href="https://www.apollo.com/insights-news/pressreleases/2021/09/apollo-funds-complete-acquisition-of-yahoo-161530593">Apollo</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Acquisition price</dt>
+          <dd>$5.0B (Apollo bought Verizon Media, renamed Yahoo) — announced May 3 2021, closed Sep 1 2021. <a href="https://www.apollo.com/insights-news/pressreleases/2021/05/verizon-media-to-be-acquired-by-apollo-funds-130247212">Apollo</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Yahoo Finance audience</dt>
+          <dd>150M+ global monthly visitors; positioned as the #1 finance destination — as of 2025. <a href="https://www.yahooinc.com/press/yahoo-finance-launches-premium-experience-with-new-content-and-tools">Yahoo Inc. press</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>US search market share</dt>
+          <dd>~3.2% of US desktop search — as of Aug 2025. Third-party estimate (Statcounter, via Wikipedia). <a href="https://en.wikipedia.org/wiki/Yahoo!_Search">Yahoo Search (Wikipedia)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Article sitemap (this report)</dt>
+          <dd>902 daily sitemaps × ~1,475 URLs/day ≈ 1.3M indexable article URLs on a ~2.5-year rolling window — as of Jun 20 2026, measured. Probe Log <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>News sitemap depth (this report)</dt>
+          <dd>17 child news-sitemaps; the head <code>news-sitemap.xml</code> held 827 recent-article URLs, refreshed within the hour — as of Jun 20 2026, measured. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-20. Homepage and sitemaps fetched with a descriptive UA; the article page needed a desktop browser UA (noted).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-06-20</td><td><code>dig +short yahoo.com / www.yahoo.com</code></td><td>Apex A records in Yahoo's own ranges (98.137.11.x, 74.6.x). <code>www</code> is a CNAME to <code>me-ycpi-cf-www.g06.yahoodns.net</code> → 69.147.80.x — Yahoo's own edge, not a third-party CDN.</td></tr>
+            <tr><td>2026-06-20</td><td><code>curl -sI https://www.yahoo.com/</code></td><td>HTTP/2 200, <code>server: ATS</code> (Apache Traffic Server edge), Next.js app (<code>/_nca/_next/…</code>, <code>x-deployment-id: sha-68645b8</code>) behind AWS ALB (<code>AWSALBTG</code> cookies, <code>x-aws-region</code>). HSTS 1y, <code>x-content-type-options: nosniff</code>. CSP <code>frame-ancestors</code> enumerates the whole brand family (engadget, techcrunch, autoblog, rivals, aol, huffpost) plus Taboola.</td></tr>
+            <tr><td>2026-06-20</td><td><code>curl -sL https://www.yahoo.com/robots.txt</code></td><td>Generic <code>*</code> agents allowed except internal API/render paths (<code>/caas/</code>, <code>/_remote</code>, <code>/search_ms</code>…). ~45 AI/scraper UAs (GPTBot, ClaudeBot, Claude-Web, Google-Extended, CCBot, Bytespider, PerplexityBot, Diffbot…) get blanket <code>Disallow: /</code>. <strong>Delta:</strong> <code>Claude-SearchBot</code> and <code>OAI-SearchBot</code> get only <code>Disallow: */articles/</code> — index everything except article bodies. Three sitemaps declared.</td></tr>
+            <tr><td>2026-06-20</td><td><code>curl -sL …/sitemap-index.xml</code> &amp; one child</td><td>Index lists 902 daily sitemaps (one per calendar day, ~2.5-year window). The 2026-06-20 child held 1,475 article URLs under <code>/news/articles/…</code> and <code>/news/{section}/articles/…</code>.</td></tr>
+            <tr><td>2026-06-20</td><td>Structured-data sample (browser UA) on a <code>/news/articles/…</code> page</td><td>~435KB page carries JSON-LD <code>NewsArticle</code>: headline, <code>datePublished</code>/<code>dateModified</code> (same timestamp), keywords[], description, <code>author</code> (Person), <code>publisher</code> (Yahoo News), and a distinct <code>provider</code> (Organization = original outlet, e.g. WPXI) + 3 <code>ImageObject</code>. Hero images served from <code>s.yimg.com</code>/<code>media.zenfs.com</code>.</td></tr>
+            <tr><td>2026-06-20</td><td><code>/llms.txt</code>, <code>/news/rss</code>, <code>/_td_api/oembed</code></td><td><code>llms.txt</code> → 404. <code>/news/rss</code> → 308 to <code>/news/rss/</code> → 403 (RSS gated, not open). oEmbed endpoint → 404. No open feed or oEmbed surface for third parties.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Every cell is verifiable, tagged, or <em>open</em>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>News/sports articles (~1.3M URLs on the rolling sitemap, Verified Metrics); each is mostly syndicated, with a named upstream provider.</td>
+              <td>Public crawl via the daily sitemaps (generic UAs allowed); no bulk text API.</td>
+              <td>None for generic crawl; AI crawlers blocked, AI-search bots blocked from <code>/articles/</code> (Probe Log).</td>
+              <td>Reuse rights belong to the <code>provider</code>, not Yahoo (see Context); snippet/link-out only.</td>
+              <td>Article body frozen at publish (<code>dateModified == datePublished</code> in sample); URLs roll off the ~2.5-year window.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Article hero + inline images on <code>s.yimg.com</code> / <code>media.zenfs.com</code>; ≥1 per article (3 <code>ImageObject</code> in sample).</td>
+              <td>CDN URLs embedded in page JSON-LD and the resize proxy (<code>/ny/mysterio/api/…/resizefill_wN</code>).</td>
+              <td>None to fetch; hotlinking governed by provider/agency terms.</td>
+              <td>Wire-agency &amp; partner imagery — display rights upstream; treat as unlicensed for the index.</td>
+              <td>Set at publish; rarely re-edited.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Yahoo News/Finance/Sports video segments; count <em>open</em>.</td>
+              <td>No public metadata API; players are JS-rendered.</td>
+              <td>—</td>
+              <td>Open: no documented reuse path.</td>
+              <td>Open.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Finance/sports podcasts &amp; clips; count <em>open</em>.</td>
+              <td>None first-party; some shows mirror to open podcast feeds off-host.</td>
+              <td>—</td>
+              <td>Open.</td>
+              <td>Open.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>Article comment threads (Yahoo comment system) on many pages.</td>
+              <td>No public API; comments load via internal endpoints (<code>/caas/</code>, blocked in robots).</td>
+              <td>Login to post; no read API.</td>
+              <td>Open: no reuse path.</td>
+              <td>High churn on hot stories; decays with the article.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Finance: tickers, quotes, fundamentals, screeners — the densest structured layer. Plus article entities (author, provider, keywords) from JSON-LD.</td>
+              <td>JSON-LD per article (public). Finance quote/chart data via undocumented <code>query*.finance.yahoo.com</code> JSON endpoints; no supported public API since YQL's retirement.</td>
+              <td>Article JSON-LD: none. Finance endpoints: unofficial, rate-limited, ToS-restricted.</td>
+              <td>Article metadata reusable with attribution; market data is licensed from exchanges/providers — not redistributable.</td>
+              <td>Quotes: seconds–minutes. Article entities: at publish.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Yahoo differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Article URLs end in a numeric id (<code>…-124055643.html</code>) that is Yahoo's stable key. But the same wire story appears under Yahoo, the provider's own site, and other ZenFS subscribers — dedup must cluster on <code>provider</code> + headline + body hash, not on URL. The <code>provider</code> field is the cross-site anchor.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Two units: the <strong>article</strong> (with provenance) for News/Sports, and the <strong>ticker/quote record</strong> for Finance. They share almost nothing — different keys, freshness, and licensing — and should be separate indexes.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Article JSON-LD joins text↔images (<code>ImageObject</code>), text↔author (<code>Person</code>), and text↔upstream-source (<code>provider</code>). Finance joins on the exchange ticker symbol, which links quotes, charts, filings, and any article that tags the symbol.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Trust the <code>provider</code> over the <code>publisher</code>: "Yahoo News" is the re-host; the provider (WPXI, AFP, …) is the editorial source of record. For canonical body text, prefer the provider's own URL when it exists.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>News sitemap head re-stamps within the hour (Verified Metrics); Finance quotes churn by the second. Everything else (older articles) is effectively immutable until it rolls off the 902-day window — recrawl those once, then only to detect deletion.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Less UGC-spam exposure than social platforms (content is editorially syndicated), but high <strong>duplication</strong>: the same agency story repeated across the portal and the sibling brands. The spam surface that matters is the comment threads, not the articles.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Yahoo's own search box is Bing's index, not Yahoo's content — so on-site "search" doesn't expose a Yahoo corpus API. To find Yahoo articles, an external index relies on the sitemaps, exactly as Google does.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Portal traffic skews to <strong>finance lookups</strong> (ticker, "AAPL stock"), breaking-news headlines, and sports scores — short, entity-anchored, freshness-sensitive queries that reward the structured Finance layer over the article text.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> two indexes — (a) news/sports article keyed by numeric URL id and carrying its <code>provider</code>; (b) Finance entity keyed by exchange ticker.</li>
+        <li><strong>Primary keys &amp; joins:</strong> article id + provider + body-hash (for cross-site dedup); ticker symbol for the finance graph; author Person and keywords[] as secondary facets.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) daily sitemap-index → ~1,475 article URLs/day, generic crawl permitted; 2) per-article JSON-LD for clean metadata + provenance; 3) news-sitemap-index for sub-hour breaking-news refresh; 4) Finance JSON endpoints for quotes — unofficial and ToS-restricted, treat as best-effort. No RSS/oEmbed/llms.txt (all blocked/absent, Probe Log).</li>
+        <li><strong>Recrawl cadence:</strong> news head every 15–30 min; Finance quotes intraday; back-catalog articles once, then deletion-checks; full sitemap-index daily to catch the new day's child.</li>
+        <li><strong>Derivatives to generate:</strong> body-hash for cross-publisher dedup, provider→license map, ticker NER over article text to link news to the finance graph, image embeddings only after upstream rights clearance.</li>
+        <li><strong>Demo to build:</strong> a "provenance splitter" — ingest a day's sitemap, parse each article's JSON-LD, and bucket URLs by <code>provider</code> to show what share of yahoo.com is original vs. syndicated and which licensors dominate the corpus.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Licensing is upstream, not Yahoo's:</strong> body text and imagery belong to the named <code>provider</code>. An index that treats yahoo.com as the rights-holder is exposed to the agencies and partners it actually licenses from.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Article text is being walled off from AI even where navigation is open.</strong> <em>Basis:</em> robots.txt blanket-bans ~45 AI/scraper UAs and limits <code>Claude-SearchBot</code>/<code>OAI-SearchBot</code> to <code>Disallow: */articles/</code> (Probe Log) — the snippet is allowed, the body is not.</li>
+        <li><strong>Search is Microsoft's, not Yahoo's:</strong> the search box rides the Bing alliance; a change in that partnership would alter what "Yahoo Search" even returns, independent of Yahoo's own content.</li>
+        <li><strong>Rolling archive deletes silently:</strong> the sitemap window is ~902 days — older articles drop out of discovery without a tombstone, so an index must record its own first-seen/last-seen rather than trust the sitemap.</li>
+        <li><strong>Finance endpoints are undocumented:</strong> the <code>query*.finance.yahoo.com</code> JSON paths have no support contract and have broken before (YQL retirement); the structured layer can vanish without notice.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.apollo.com/insights-news/pressreleases/2021/09/apollo-funds-complete-acquisition-of-yahoo-161530593">Apollo — completion of Yahoo acquisition (Sep 1 2021)</a> — ~900M MAU, "third-largest property", Verizon 10% stake, close date.</li>
+        <li><a href="https://www.apollo.com/insights-news/pressreleases/2021/05/verizon-media-to-be-acquired-by-apollo-funds-130247212">Apollo — Verizon Media to be acquired (May 3 2021)</a> — $5.0B price.</li>
+        <li><a href="https://www.yahooinc.com/press/yahoo-finance-launches-premium-experience-with-new-content-and-tools">Yahoo Inc. press — Yahoo Finance premium</a> — 150M+ monthly visitors, #1 finance destination.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Yahoo!_Search">Yahoo Search (Wikipedia)</a> — Bing-powered since 2009, amended 2015 (non-exclusive); ~3.2% US share (Aug 2025).</li>
+        <li>Local probes on 2026-06-20: <code>dig</code>, <code>curl</code> against the homepage, robots.txt, sitemap-index and a daily child, the news-sitemap index, an article page's JSON-LD, and the rss/oembed/llms.txt surfaces (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Yahoo cannot grant reuse rights to most of its own article corpus. <em>Basis:</em> sampled <code>NewsArticle.provider = "WPXI"</code> distinct from <code>publisher = "Yahoo News"</code>; the body's licensor is the provider.</li>
+        <li>Article text is being closed to AI while navigation stays open. <em>Basis:</em> ~45 AI/scraper UAs at <code>Disallow: /</code>, but AI-search bots limited to <code>Disallow: */articles/</code> (robots.txt, 2026-06-20).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Current worldwide MAU — only the Sep 2021 ~900M acquisition-era figure is official; a newer number needs a Yahoo disclosure. Third-party panels (Similarweb, electroiq) diverge and are estimates.</li>
+        <li>Share of yahoo.com articles that are original vs. syndicated — closeable by running the "provenance splitter" demo across a week of sitemaps and tallying <code>provider</code> values.</li>
+        <li>Total live article count across all sections (not just the daily news track) — needs summing every daily child sitemap, deduped.</li>
+        <li>Video and audio object counts and any reuse path — no first-party API found.</li>
+        <li>Whether the Finance JSON endpoints carry a usable license for indexing — undocumented; needs a terms review or a Yahoo data-licensing contact.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
