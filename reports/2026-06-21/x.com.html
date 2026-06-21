@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>x.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-21</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>x.com</h1>
+      <p class="lede">x.com (formerly Twitter) is a real-time public-conversation network now owned by xAI; its post firehose is metered through pay-per-use API credits, not crawling.</p>
+      <div class="tag-row">
+        <span class="tag">Social</span>
+        <span class="tag">Real-time</span>
+        <span class="tag">Ads</span>
+        <span class="tag">xAI / Grok</span>
+        <span class="tag">Closed crawl</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>x.com is the renamed Twitter: a public posting network where short messages, replies, and reposts form a real-time conversation graph. Elon Musk bought Twitter for $44B in October 2022, rebranded the domain to x.com in July 2023, and in March 2025 folded the company into his AI lab xAI in an all-stock merger that valued X at $33B. That ownership change is the dominant fact for an index builder: X's public posts are now the training and grounding corpus for Grok, so the platform has every incentive to keep its real-time stream <em>inside</em> the xAI/X walls rather than let it be crawled. The product still earns mainly from advertising plus Premium subscriptions, but the data itself is now a strategic AI asset. <span class="evidence inferred">inferred</span> X treats its post stream as a proprietary AI input, not a crawlable corpus. <em>Basis:</em> robots.txt sets <code>User-agent: * Disallow: /</code> and allowlists only three SEO/social bots (Probe Log), while the same content feeds Grok via the <code>/os-grok.xml</code> OpenSearch descriptor served to Googlebot (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>x.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://x.com/">https://x.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Social network, real-time public conversation, ads platform</dd></div>
+        <div><dt>Related hosts</dt><dd><code>twitter.com</code> (legacy alias, still resolves), <code>api.x.com</code> / <code>api.twitter.com</code> (API), <code>pbs.twimg.com</code> &amp; <code>video.twimg.com</code> (media CDN), <code>abs.twimg.com</code> (assets), <code>t.co</code> (link wrapper), <code>publish.twitter.com</code> (oEmbed)</dd></div>
+        <div><dt>Owner</dt><dd>xAI (X Corp. merged into xAI Holdings), controlled by Elon Musk</dd></div>
+        <div><dt>Founded / launched</dt><dd>Twitter launched 2006; acquired by Musk Oct 27 2022; domain rebranded to x.com Jul 23 2023</dd></div>
+        <div><dt>Business model</dt><dd>Advertising + Premium subscriptions + API access fees; data now also feeds xAI's Grok</dd></div>
+        <div><dt>Scale anchor</dt><dd>~600M monthly active users claimed by Musk, as of May 23 2024 — unaudited (<a href="https://www.socialmediatoday.com/news/elon-musk-x-now-600-million-monthly-active-users/717078/">Social Media Today</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (live post count, MAU as an audited figure, ad revenue) live once in Open Questions. Musk's MAU claim is unaudited and tagged as a claim.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>xAI–X merger valuation</dt>
+          <dd>X valued at $33B ($45B less $12B debt); xAI at $80B; all-stock — announced Mar 28 2025. <a href="https://x.com/elonmusk/status/1905731750275510312?lang=en">Musk's announcement post</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Musk acquisition price</dt>
+          <dd>$44B, deal closed Oct 27 2022. <a href="https://www.cnbc.com/2025/03/28/elon-musk-says-xai-has-acquired-x-in-deal-that-values-social-media-site-at-33-billion.html">CNBC</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Monthly active users (claim)</dt>
+          <dd>~600M, "about half use the platform every day" — Musk statement, May 23 2024; not an audited disclosure. <a href="https://www.socialmediatoday.com/news/elon-musk-x-now-600-million-monthly-active-users/717078/">Social Media Today</a> <span class="evidence verified">verified</span> as a claim</dd>
+        </div>
+        <div>
+          <dt>API model: pay-per-use credits</dt>
+          <dd>Default for new developers since Feb 6 2026; credits deducted per request, with duplicate requests for the same resource within 24h charged once. <a href="https://docs.x.com/x-api/getting-started/about-x-api">docs.x.com</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>API per-request prices</dt>
+          <dd>$0.015 per post created ($0.20 if it contains a link), $0.005 per post read, capped at 2M reads/month — as of 2026. <a href="https://postproxy.dev/blog/x-api-pricing-2026/">Postproxy pricing roundup</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Legacy API tiers</dt>
+          <dd>Basic $200/mo (~50K writes, ~10–15K reads), Pro $5,000/mo (~300K writes, ~1M reads), Enterprise from ~$42K/mo; Basic/Pro closed to new signups — as of 2026. <a href="https://postproxy.dev/blog/x-api-pricing-2026/">Postproxy</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-21, desktop browser user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-06-21</td><td><code>dig +short x.com</code> / <code>api.x.com</code></td><td>x.com → 162.159.140.229 (Cloudflare); api.x.com → 45.77.186.255 (separate API origin). Front door is fronted by Cloudflare.</td></tr>
+            <tr><td>2026-06-21</td><td><code>curl -sI https://x.com/</code></td><td>HTTP/2 <strong>403</strong> to a plain browser UA. <code>server: cloudflare envoy</code>, <code>x-powered-by: Express</code>, HSTS <code>max-age=631138519</code>. Sets <code>guest_id</code>, <code>guest_id_ads</code>, <code>personalization_id</code> cookies before any content — logged-out HTML is not served to bots.</td></tr>
+            <tr><td>2026-06-21</td><td><code>curl https://x.com/robots.txt</code></td><td>Allowlists only <code>Googlebot</code>, <code>Bingbot</code>, <code>facebookexternalhit</code> with narrow <code>Allow</code> rules; <code>Google-Extended</code>, <code>FacebookBot</code>, <code>Discordbot</code> get <code>Disallow: *</code>; <code>User-agent: * Disallow: /</code>. Blocks <code>/*/likes</code>, <code>/*/media</code>, <code>/*/photo</code>, <code>/*/followers</code>, <code>/*/following</code>, <code>/*/analytics</code>, <code>/search/realtime</code>, <code>/search/users</code>. <code>Crawl-delay: 1</code>. Declares sitemaps at x.com and twitter.com.</td></tr>
+            <tr><td>2026-06-21</td><td><code>curl -sI https://x.com/sitemap.xml</code></td><td>HTTP/2 <strong>403</strong> to guest UA — the sitemap declared in robots.txt is itself gated; no public URL census without an approved crawler identity.</td></tr>
+            <tr><td>2026-06-21</td><td><code>curl https://publish.twitter.com/oembed?url=…</code></td><td>HTTP 200 <strong>without auth</strong>. Returns canonical x.com post URL, <code>author_name</code>, <code>author_url</code>, an embeddable <code>html</code> blockquote, <code>provider_name: "X"</code>, and <code>cache_age: 3153600000</code> (~100 years). This is the one open, documented display path.</td></tr>
+            <tr><td>2026-06-21</td><td><code>curl -A Googlebot https://x.com/jack/status/20</code></td><td>Googlebot UA gets server-rendered HTML: <code>og:site_name "X (formerly Twitter)"</code>, <code>fb:app_id</code>, an <code>onion-location</code> header, and OpenSearch descriptors <code>/os-x.xml</code> (X search) and <code>/os-grok.xml</code> (Grok). The shell still hydrates client-side from <code>api.x.com</code>.</td></tr>
+            <tr><td>2026-06-21</td><td><code>curl https://api.twitter.com/2/tweets?ids=20</code></td><td>HTTP <strong>401</strong> — the v2 API requires a bearer token; no anonymous read. <code>api.x.com</code> root returns 404.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Prices and tiers are in Verified Metrics.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Posts, replies, reposts, quotes. Live count: open (no official figure; historically hundreds of millions/day).</td>
+              <td>X API v2 (read endpoints); oEmbed for single-post display. Generic crawl is blocked (Probe Log).</td>
+              <td>Bearer token; pay-per-use $0.005/read, 2M reads/mo cap, or Enterprise firehose.</td>
+              <td>oEmbed blockquote is freely embeddable with attribution; API content is terms-bound, no redistribution/training without a license.</td>
+              <td>Real-time; high deletion/edit rate, accounts go private or are suspended.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Photos on <code>pbs.twimg.com</code>; multiple per post. Count scales with post volume (open).</td>
+              <td>API media fields return CDN URLs; oEmbed renders inline. <code>/*/photo</code> and <code>/*/media</code> are robots-blocked.</td>
+              <td>Same API token/quota as text.</td>
+              <td>Display via embed; no bulk mirroring rights.</td>
+              <td>Tied to parent post lifecycle; vanishes when post is deleted.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Native + amplify video on <code>video.twimg.com</code>; live streams.</td>
+              <td>API media variants (HLS/MP4 URLs) where authorized; no public bulk path.</td>
+              <td>API token/quota; live video largely outside the public API.</td>
+              <td>Embed only; no copy/derivative rights.</td>
+              <td>Real-time; live streams ephemeral.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Spaces (live audio rooms); voice posts.</td>
+              <td>Open: no documented bulk metadata/recording API for Spaces.</td>
+              <td>—</td>
+              <td>Open: no clear external reuse path.</td>
+              <td>Ephemeral by default; recordings retained at host discretion.</td>
+            </tr>
+            <tr>
+              <td>Comments / replies</td>
+              <td>Replies and quote-posts — same object type as a post, threaded by <code>conversation_id</code>.</td>
+              <td>Same API read endpoints as text; reply trees reconstructed via <code>conversation_id</code>.</td>
+              <td>Same token/quota; full thread retrieval burns reads quickly.</td>
+              <td>Same as text.</td>
+              <td>Real-time; replies deleted independently of the root post.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Accounts (numeric ID + handle), hashtags, cashtags, Lists, Communities, trends.</td>
+              <td>API user/lists endpoints; trends via API. Follower/following graphs are robots-blocked and API-gated.</td>
+              <td>Token/quota; social-graph endpoints are the most restricted.</td>
+              <td>Profile fields displayable via embed; graph data not redistributable.</td>
+              <td>Handles mutable; follow graph churns continuously; trends decay in hours.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where x.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The post ID is a Snowflake — a 64-bit, time-sortable integer in every URL (<code>/{handle}/status/{id}</code>). It is the strong key. The handle in the path is <em>not</em> stable (users rename; the ID still resolves), so canonicalize on the numeric ID, not the handle. <code>twitter.com</code> and <code>x.com</code> paths are aliases for the same object; <code>t.co</code> wraps every outbound link and must be unwrapped.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The post is the unit, but it is rarely meaningful alone: retrieve it with its <code>conversation_id</code> thread and quoted-post chain attached, or short replies lose their referent.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Everything joins on post ID and author ID. Media has no independent stable ID exposed publicly — images/video are reachable only through their parent post, so a deleted post orphans its media. There is no durable key from a pbs.twimg.com URL back to a post.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>The post body is authoritative; there is no SEO title layer to distort it. The distortion surface is instead <em>volume and coordination</em> — bot networks and reply spam — not keyword stuffing.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Unusually high mutability: posts are edited (Premium), deleted, or hidden when accounts flip private or are suspended, and the author's visibility (blue-check boost) changes ranking after the fact. An index must re-verify existence, not just re-rank.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>On-site search owns real-time/recent intent (<code>/search/realtime</code> and <code>/search/users</code> are explicitly robots-blocked, so external engines cannot mirror it). Grok is wired in as a second search descriptor (<code>/os-grok.xml</code>, Probe Log) — conversational queries route to the model, not a results list.</p>
+        </div>
+        <div>
+          <h4>Crawl posture</h4>
+          <p>Sharper than the default two-track model: the generic public-crawl middle is fully closed (<code>* Disallow: /</code>), only three named SEO/social bots get a curated allow-list, and <em>everything else</em> — including AI — is pushed to metered API credits or an Enterprise firehose. Even the declared sitemap 403s to guests.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Real-time intent dominates: breaking news, live events, "what are people saying about X right now," brand/handle monitoring, and cashtag/finance chatter. Recency outranks authority more than on most corpora.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the post, keyed by Snowflake ID, stored with its conversation thread, quoted chain, author ID, and media URLs as attached sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> post ID (canonical) + author numeric ID; <code>conversation_id</code> for threads; unwrap <code>t.co</code> for outbound-link joins; treat handle as a mutable display alias.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Enterprise firehose/filtered stream — the only path that scales to real-time coverage, but priced at ~$42K/mo+. 2) Pay-per-use v2 reads — $0.005/read, 2M/mo cap, fine for targeted monitoring, not corpus building. 3) oEmbed — free, but one URL at a time and display-only. 4) Generic crawl — closed (Probe Log), do not design around it.</li>
+        <li><strong>Recrawl cadence:</strong> existence re-checks matter more than re-ranking — sample active conversations continuously; re-verify older posts on a slower sweep because deletion/suspension is common.</li>
+        <li><strong>Derivatives to generate:</strong> thread reconstruction from <code>conversation_id</code>, link-unwrapping table for <code>t.co</code>, language ID, and bot/coordination scoring (the dominant spam axis here).</li>
+        <li><strong>Demo to build:</strong> an oEmbed-only post-card indexer — paste post URLs, fetch via <code>publish.twitter.com/oembed</code> with no auth, emit JSONL index docs (author, canonical URL, embed HTML, cache_age), and show exactly which fields the no-auth path omits (engagement counts, media variants) versus what the metered API would add.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Data is now an AI moat, not a crawl target:</strong> after the xAI merger (Verified Metrics) the post stream feeds Grok, so expect access to tighten, not loosen — the opposite trajectory of an opening API.</li>
+        <li><strong>Pricing volatility:</strong> X moved free→tiered→pay-per-use and migrated Basic subscribers off within ~3 years (Verified Metrics); any cost model built on today's per-request prices can be repriced unilaterally.</li>
+        <li><strong>No legitimate bulk path below Enterprise:</strong> the firehose is the only real coverage path and costs ~$42K/mo+; everything cheaper is rate-capped (2M reads/mo) and cannot build a corpus.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>AI crawlers are explicitly unwelcome.</strong> <em>Basis:</em> <code>Google-Extended Disallow: *</code> in robots.txt (Probe Log) and the absence of any published AI-licensing program for third parties — X reserves the corpus for its own model.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://x.com/elonmusk/status/1905731750275510312?lang=en">Musk merger-announcement post (Mar 28 2025)</a> — xAI acquires X; $33B / $45B-less-$12B-debt / $80B figures.</li>
+        <li><a href="https://www.cnbc.com/2025/03/28/elon-musk-says-xai-has-acquired-x-in-deal-that-values-social-media-site-at-33-billion.html">CNBC</a> — $44B 2022 acquisition price and merger context.</li>
+        <li><a href="https://www.socialmediatoday.com/news/elon-musk-x-now-600-million-monthly-active-users/717078/">Social Media Today</a> — Musk's 600M MAU claim (May 23 2024), reported as a claim.</li>
+        <li><a href="https://docs.x.com/x-api/getting-started/about-x-api">docs.x.com — About the X API</a> — pay-per-use credit model and 24h dedup rule.</li>
+        <li><a href="https://postproxy.dev/blog/x-api-pricing-2026/">Postproxy: X API pricing 2026</a> — per-request prices, read cap, legacy tier prices/limits, Feb 6 2026 pay-per-use default.</li>
+        <li>Local probes on 2026-06-21: <code>dig</code>/<code>curl</code> against homepage, robots.txt, sitemap.xml, a status page (Googlebot UA), the oEmbed endpoint, and the v2 API (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>X treats its post stream as a proprietary AI input rather than a crawlable corpus. <em>Basis:</em> <code>User-agent: * Disallow: /</code> with only three allowlisted bots (robots.txt), plus the <code>/os-grok.xml</code> Grok search descriptor served to Googlebot (Probe Log), both observed 2026-06-21.</li>
+        <li>AI crawlers are explicitly unwelcome. <em>Basis:</em> <code>Google-Extended Disallow: *</code> in robots.txt (2026-06-21) and no published third-party AI-licensing program.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Live post count and posts/day — no official figure since going private; closeable only via an Enterprise firehose volume sample.</li>
+        <li>Audited MAU/DAU — only Musk's unaudited 600M claim exists; needs a disclosure or an independent panel.</li>
+        <li>Current ad and Premium revenue — X is private and discloses nothing; closeable by a filing or xAI Holdings financials.</li>
+        <li>Spaces (live audio) corpus size and any retrieval path — no documented API; needs a published endpoint or measurement.</li>
+        <li>Whether any AI-licensing program exists below the Enterprise tier — would require an official X/xAI data-license offering.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
