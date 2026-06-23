@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>open.spotify.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-06-23</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>open.spotify.com</h1>
+      <p class="lede">open.spotify.com is Spotify's web player: a 100M-track catalog graph exposed as rich page metadata and oEmbed, but gated behind OAuth and a 2024-pruned API.</p>
+      <div class="tag-row">
+        <span class="tag">Audio streaming</span>
+        <span class="tag">Music</span>
+        <span class="tag">Podcasts</span>
+        <span class="tag">Catalog graph</span>
+        <span class="tag">Web API</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>open.spotify.com is the browser front end for Spotify, the world's largest audio-streaming service: 761M monthly listeners and 293M paying subscribers across 184 markets (Verified Metrics). The licensed audio itself is DRM-protected and never legitimately bulk-retrievable; the interesting object for an index builder is the <strong>catalog graph</strong> — tracks, albums, artists, playlists, podcast shows/episodes, audiobooks — each a base-62 ID with stable cross-links. Spotify exposes this graph three ways with sharply different ceilings: every public object page carries rich OpenGraph + JSON-LD music metadata (Probe Log), a no-auth oEmbed endpoint returns an embeddable player and thumbnail, and the OAuth-gated Web API returns structured records. <span class="evidence inferred">inferred</span> Spotify is deliberately narrowing the machine-readable surface to the embed/search lane while closing the catalog-graph and recommendation lane. <em>Basis:</em> robots.txt blocks training crawlers with the comment "avoid feeding model weights with our catalogue graph," yet explicitly allows <code>/embed/</code> and <code>/oembed</code> for search/agent fetchers (Probe Log); the Nov 2024 Web API cuts removed audio-features, audio-analysis, recommendations and related-artists (Verified Metrics).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>open.spotify.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://open.spotify.com/">https://open.spotify.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Audio streaming: music, podcasts, audiobooks</dd></div>
+        <div><dt>Related hosts</dt><dd><code>api.spotify.com</code> (Web API), <code>i.scdn.co</code> / <code>image-cdn-ak.spotifycdn.com</code> (cover art), <code>p.scdn.co</code> (audio previews), <code>open.spotifycdn.com</code> / <code>encore.scdn.co</code> (app assets); <code>spotify.com</code> is marketing, <code>developer.spotify.com</code> the API portal</dd></div>
+        <div><dt>Owner</dt><dd>Spotify Technology S.A. (NYSE: SPOT), Luxembourg; founded by Daniel Ek and Martin Lorentzon</dd></div>
+        <div><dt>Founded / launched</dt><dd>Company 2006; service launched Oct 2008; web player (open.spotify.com) launched 2012</dd></div>
+        <div><dt>Business model</dt><dd>Premium subscriptions (majority of revenue) + ad-supported free tier; royalties paid per stream to rights holders</dd></div>
+        <div><dt>Scale anchor</dt><dd>761M monthly active users, as of Mar 31 2026 (<a href="https://newsroom.spotify.com/2026-04-28/spotify-q1-2026-earnings/">Q1 2026 earnings</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (live track count by query, lyrics coverage) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Monthly active users</dt>
+          <dd>761M, +12% YoY — as of Mar 31 2026. <a href="https://newsroom.spotify.com/2026-04-28/spotify-q1-2026-earnings/">Q1 2026 earnings</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Premium subscribers</dt>
+          <dd>293M, +9% YoY — as of Mar 31 2026. <a href="https://newsroom.spotify.com/2026-04-28/spotify-q1-2026-earnings/">Q1 2026 earnings</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Quarterly revenue</dt>
+          <dd>€4.5B, +14% YoY constant currency; operating income €715M, gross margin 33% — Q1 2026, as of Mar 31 2026. <a href="https://newsroom.spotify.com/2026-04-28/spotify-q1-2026-earnings/">Q1 2026 earnings</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Royalties paid</dt>
+          <dd>$11B+ to the music industry in 2025; ~$70B cumulative — as of Apr 28 2026. <a href="https://newsroom.spotify.com/2026-04-28/spotify-q1-2026-earnings/">Q1 2026 earnings</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Catalog size</dt>
+          <dd>100M+ tracks, 7M podcast titles, 700K audiobooks, 184 markets — as of Jun 23 2026. <a href="https://newsroom.spotify.com/company-info/">Spotify company info</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Web API endpoints deprecated</dt>
+          <dd>Audio Features, Audio Analysis, Recommendations, Related Artists, algorithmic/editorial playlists, and 30s preview URLs in multi-get responses — restricted to apps without pre-existing extended quota; announced Nov 27 2024. <a href="https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api">Spotify for Developers blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Web API quota / rate limit</dt>
+          <dd>Default development mode caps an app at 25 users; extended quota requires application. Rate limit is a rolling 30-second window; over-limit returns HTTP 429 with <code>Retry-After</code> — as of Jun 23 2026. <a href="https://developer.spotify.com/documentation/web-api/concepts/quota-modes">Quota modes</a>, <a href="https://developer.spotify.com/documentation/web-api/concepts/rate-limits">rate limits</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-23, desktop browser user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-06-23</td><td data-label="Probe"><code>dig +short open.spotify.com</code></td><td data-label="Observation">A record <code>98.159.108.71</code>; CNAME resolves to <code>atc.spotify.map.fastly.net</code> — fronted by Fastly.</td></tr>
+            <tr><td data-label="Date">2026-06-23</td><td data-label="Probe"><code>curl -sI https://open.spotify.com/</code></td><td data-label="Observation">HTTP 200, <code>server: envoy</code>, <code>via: … 1.1 varnish</code> (Fastly), custom <code>x-spotify-open-index: true</code>. HSTS <code>max-age=31536000</code>, strict CSP, <code>x-content-type-options: nosniff</code>. Sets <code>sp_t</code> anonymous tracking cookie on <code>.spotify.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-06-23</td><td data-label="Probe"><code>curl -sL https://open.spotify.com/robots.txt</code></td><td data-label="Observation"><code>Allow: /</code> except <code>/local/</code>, <code>/download/</code>, <code>/embed/</code>. Training crawlers (GPTBot, CCBot, Google-Extended, Applebot-Extended, anthropic-ai, Claude-Web, ClaudeBot, cohere-ai, Meta-ExternalAgent, FacebookBot, Bytespider) all <code>Disallow: /</code>. Search/agent fetchers (OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot, Perplexity-User, Applebot, Amazonbot, Meta-ExternalFetcher, Googlebot, Bingbot, Yeti) explicitly <code>Allow: /embed/</code> and <code>/oembed</code>. Inline comment: blocked "to avoid feeding model weights with our catalogue graph and entity relationships."</td></tr>
+            <tr><td data-label="Date">2026-06-23</td><td data-label="Probe"><code>curl -s ".../oembed?url=…/track/4cOdK2wGLETKBW3PvgPWqT"</code></td><td data-label="Observation">No auth required. Returns JSON: embeddable <code>&lt;iframe&gt;</code> + <code>iframe_url</code>, <code>title</code>, <code>provider_name</code>, and a 300×300 <code>thumbnail_url</code> on <code>image-cdn-ak.spotifycdn.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-06-23</td><td data-label="Probe"><code>curl -s .../track/{id}</code> → OpenGraph + JSON-LD</td><td data-label="Observation">Rich music metadata in page head: <code>og:title</code>, <code>og:type=music.song</code>, <code>og:audio</code> (a 30s preview MP3 on <code>p.scdn.co</code>), <code>music:duration</code>, <code>music:release_date</code>, <code>music:album</code> and <code>music:musician</code> as <code>open.spotify.com</code> URLs, <code>al:ios/android</code> deep links (<code>spotify://track/{id}</code>), and JSON-LD <code>MusicRecording</code> with <code>@id</code> = the canonical URL.</td></tr>
+            <tr><td data-label="Date">2026-06-23</td><td data-label="Probe"><code>curl -s https://api.spotify.com/v1/tracks/{id}</code></td><td data-label="Observation">HTTP 401 <code>{"error":{"status":401,"message":"Invalid access token"}}</code> with and without a junk bearer token — Web API is OAuth-only, no anonymous read.</td></tr>
+            <tr><td data-label="Date">2026-06-23</td><td data-label="Probe"><code>/sitemap.xml</code>, <code>/llms.txt</code></td><td data-label="Observation">Both return HTTP 404 (SPA "Page not found"). No public sitemap surface and no llms.txt; robots.txt declares no <code>Sitemap:</code> directive.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Web API = <a href="https://developer.spotify.com/documentation/web-api">Spotify Web API</a> (OAuth, quota-metered).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Track/album/artist/playlist names, podcast show + episode titles and descriptions, audiobook blurbs. 100M+ tracks, 7M podcasts, 700K audiobooks (Verified Metrics).</td>
+              <td data-label="Best legitimate path">Web API objects (GetTrack/Album/Artist/Show/Episode); per-page OG + JSON-LD for the public sliver (Probe Log).</td>
+              <td data-label="Auth &amp; quota">OAuth client-credentials or user token; rolling 30s rate limit; 25-user cap until extended quota.</td>
+              <td data-label="License / display">Display with attribution per Developer Terms; no bulk storage of the catalog graph.</td>
+              <td data-label="Freshness">Names stable; podcast episodes append daily; descriptions editable.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Cover art per track/album/show, artist photos on <code>i.scdn.co</code>; sizes 64/300/640px.</td>
+              <td data-label="Best legitimate path">Web API <code>images[]</code> (CDN URLs); oEmbed returns one 300×300 thumbnail unauth; OG <code>og:image</code> 640×640.</td>
+              <td data-label="Auth &amp; quota">oEmbed: none. API images: same OAuth quota.</td>
+              <td data-label="License / display">Hotlink display of Spotify-hosted URLs; no re-hosting or derivative art.</td>
+              <td data-label="Freshness">Low churn; changes on re-release / rebrand.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">Full licensed streams (DRM, encrypted-media); a 30s preview MP3 still exposed via <code>og:audio</code> on track pages (Probe Log).</td>
+              <td data-label="Best legitimate path"><strong>No legitimate bulk path</strong> for full audio. Preview URLs were removed from API multi-get responses Nov 2024 (Verified Metrics) but persist in page OG.</td>
+              <td data-label="Auth &amp; quota">Streaming needs the licensed app/SDK + account; previews are unauth but per-page.</td>
+              <td data-label="License / display">Streaming under Spotify's content licenses only; no download, copy, or ASR-on-full-track rights.</td>
+              <td data-label="Freshness">Catalog audio stable; takedowns on licensing lapse.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Music videos, video podcasts, looping Canvas clips on track pages.</td>
+              <td data-label="Best legitimate path">Open: no public metadata or media API for video objects.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: no documented reuse path.</td>
+              <td data-label="Freshness">Open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reviews</td>
+              <td data-label="Objects &amp; est. count">Effectively none: Spotify has no public review system; podcast ratings exist in-app only.</td>
+              <td data-label="Best legitimate path">No API for ratings or user reviews.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">—</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Track, album, artist, playlist, show, episode, audiobook — each a 22-char base-62 ID. ISRC (recordings) and UPC (albums) carried in API.</td>
+              <td data-label="Best legitimate path">Web API object + relationship endpoints (album↔tracks, artist↔albums, playlist↔items).</td>
+              <td data-label="Auth &amp; quota">OAuth; recommendations / related-artists / audio-features endpoints deprecated for new apps (Verified Metrics).</td>
+              <td data-label="License / display">Terms-bound; the relationship graph is exactly what robots.txt protects.</td>
+              <td data-label="Freshness">Catalog graph stable; playlist membership and editorial playlists churn fast.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where open.spotify.com differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Every object is a 22-char base-62 ID, present in the URL (<code>/track/{id}</code>), the <code>spotify:track:{id}</code> URI, and the JSON-LD <code>@id</code>. Dedup against deep-link aliases (<code>spotify://</code>, <code>?si=</code> share params) and against per-market duplicates — the same recording can have several IDs across regional releases; ISRC is the cross-ID anchor.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>track</strong> is the atom for music, but playlists and editorial collections are the distribution unit users actually navigate. Podcasts split into show (series) and episode (item) — index both, joined by show ID.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>OG/JSON-LD give free joins without the API: <code>music:album</code> and <code>music:musician</code> are emitted as <code>open.spotify.com</code> URLs, so track→album→artist links are extractable from the page head alone. ISRC↔track and UPC↔album (API only) join Spotify's namespace to the wider music-rights graph.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Catalog text comes from rights-holder delivery (DDEX), so titles and credits are clean — unlike seller- or user-authored fields elsewhere. The <code>og:audio</code> preview is the only audio leakage outside the licensed player.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Two regimes: the catalog graph (tracks, albums, credits) is near-immutable once delivered; editorial and algorithmic playlists rotate daily and podcast feeds append continuously. Recrawl playlists/episodes daily, catalog objects monthly.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Spotify-specific abuse is stream-farming and "fake artist" / AI-generated upload floods, plus metadata gaming (keyword-stuffed titles, fake features). The trust signal lives in Spotify's internal anti-fraud, not in any exposed field.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Discovery is overwhelmingly in-app (search box + recommendations). The robots policy keeps Google/Bing to <code>/embed/</code> and <code>/oembed</code>, so external web search indexes only the embed/share sliver, not the catalog — <code>site:open.spotify.com</code> is shallow by design.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Song / artist / podcast name lookups, "play X," mood/activity playlist queries, and lyric-fragment searches (lyrics not in API). High navigational and recommendation intent; little long-tail informational text.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> track for music, show + episode for podcasts, audiobook for spoken-word; playlists indexed as collections that reference object IDs.</li>
+        <li><strong>Primary keys &amp; joins:</strong> base-62 object ID as PK; ISRC (recording) and UPC (album) for cross-catalog joins; show ID joins episodes; artist/album URLs from OG link the graph without the API.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Web API objects + relationships — cleanest structured data, but OAuth, 25-user cap until extended quota, and rolling-30s rate limit; recommendations/audio-features no longer available to new apps. 2) Per-page OG + JSON-LD on the public sliver — no auth, gives title/album/artist/duration/release-date/preview, but only for crawlable pages and within robots limits. 3) oEmbed — no auth, but yields just embed HTML + title + one thumbnail. 4) Full audio — no legitimate bulk path; design the index to be metadata-only.</li>
+        <li><strong>Recrawl cadence:</strong> editorial/algorithmic playlists and podcast episodes daily; track/album/artist catalog monthly; cover art on change only.</li>
+        <li><strong>Derivatives to generate:</strong> ISRC/UPC concordance to external rights data; artist→album→track graph from OG links; image embeddings for cover-art dedup across regional duplicates. No ASR — full audio is not retrievable.</li>
+        <li><strong>Demo to build:</strong> a page-metadata harvester — paste Spotify URLs, pull OG + JSON-LD only (no API key), and emit JSONL catalog-graph docs, showing exactly which fields the public page yields versus what the OAuth API adds.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The API surface is shrinking, not growing:</strong> the Nov 2024 cuts removed audio-features, audio-analysis, recommendations, related-artists and editorial playlists for new apps (<a href="https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api">blog</a>); plan for metadata-only and assume further endpoints can close.</li>
+        <li><strong>Extended quota is the real gate:</strong> a 25-user development-mode cap makes any consumer-scale index depend on a discretionary approval that Spotify can deny or revoke.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The public-page lane is the durable one, but explicitly steered to embed/search use.</strong> <em>Basis:</em> robots.txt allows search/agent fetchers only <code>/embed/</code> and <code>/oembed</code> while blocking all named training crawlers at <code>Disallow: /</code> (Probe Log) — an index relying on page OG must present as an allowed fetcher, not a training crawler.</li>
+        <li><strong>Audio is permanently off-limits:</strong> full streams are DRM/licensed and the 30s preview is the only leak (via <code>og:audio</code>); any audio-derivative feature must be designed around having no audio corpus.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://newsroom.spotify.com/2026-04-28/spotify-q1-2026-earnings/">Spotify Q1 2026 earnings (newsroom)</a> — 761M MAU, 293M Premium, €4.5B revenue, €715M operating income, $11B/$70B royalties.</li>
+        <li><a href="https://newsroom.spotify.com/company-info/">Spotify company info</a> — 100M+ tracks, 7M podcast titles, 700K audiobooks, 184 markets.</li>
+        <li><a href="https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api">Spotify for Developers: changes to the Web API (Nov 27 2024)</a> — deprecated endpoints list.</li>
+        <li><a href="https://developer.spotify.com/documentation/web-api/concepts/quota-modes">Web API quota modes</a> and <a href="https://developer.spotify.com/documentation/web-api/concepts/rate-limits">rate limits</a> — 25-user development cap, rolling 30s window, 429 + Retry-After.</li>
+        <li>Local probes on 2026-06-23: <code>dig</code>, <code>curl</code> against the homepage, robots.txt, a track page (OG/JSON-LD), the oembed endpoint, the Web API, sitemap.xml and llms.txt (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Spotify is narrowing the machine-readable surface to the embed/search lane while closing the catalog-graph/recommendation lane. <em>Basis:</em> robots.txt blocks training crawlers citing the "catalogue graph," allows fetchers only <code>/embed/</code> + <code>/oembed</code>, and the Nov 2024 API cuts removed graph/recommendation endpoints.</li>
+        <li>The public-page (OG/JSON-LD) lane is the durable indexing path but is steered to embed/search consumers. <em>Basis:</em> the robots.txt allow-list grants search/agent fetchers <code>/embed/</code> and <code>/oembed</code> only, while named training crawlers get <code>Disallow: /</code> (observed 2026-06-23).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Live track count reachable per market/genre — closeable by sweeping Web API search <code>total</code> across browse categories within quota.</li>
+        <li>Lyrics coverage and provider terms — lyrics render in-app but are absent from the Web API and page metadata; needs a licensing/source disclosure.</li>
+        <li>Exact development-mode and extended-quota request rates — Spotify documents the rolling-30s window but not the numeric ceilings; measurable only by instrumented testing against a real app.</li>
+        <li>Whether <code>og:audio</code> preview MP3s remain populated catalog-wide or only for legacy tracks — measurable by sampling OG tags across release years.</li>
+        <li>Premium-revenue vs ad-supported-revenue split for Q1 2026 — the newsroom summary gives the total only; the SEC 6-K shareholder letter carries the segment lines.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
