@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>xvideos.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-06-24</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>xvideos.com</h1>
+      <p class="lede">xvideos.com is the open extreme of web video: permissive crawl, full JSON-LD, and fetchable signed MP4s — gated by law and age checks, not technology.</p>
+      <div class="tag-row">
+        <span class="tag">Adult video</span>
+        <span class="tag">UGC + studio</span>
+        <span class="tag">Ad-funded</span>
+        <span class="tag">DSA VLOP</span>
+        <span class="tag">Open crawl</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>xvideos.com is one of the largest adult video sites — a free, ad-funded tube mixing uploader UGC with studio catalogs. It is owned by WGCZ Holding (WebGroup Czech Republic, Prague), which also runs the sister site <code>xnxx.com</code>. For an index builder it is the structural opposite of a locked platform: robots.txt allows almost everything, every video page ships a complete <strong>schema.org VideoObject</strong>, the embed endpoint needs no auth, and the JSON-LD even carries a directly fetchable (time-limited, signed) MP4 <code>contentUrl</code> — so the media itself, not just metadata, is technically retrievable. <span class="evidence inferred">inferred</span> The model is purely ad-funded with cam/affiliate upsells, no content paywall. <em>Basis:</em> the homepage CSP whitelists ad networks (<code>exoclick</code>, <code>trafficjunky</code>, <code>exdynsrv</code>) and cam affiliates (<code>livejasmin</code>, <code>flirt4free</code>, <code>camster</code>) while video pages serve without login (Probe Log). The binding constraint here is not technical access but <strong>law</strong>: EU DSA VLOP duties, mandated age verification, and copyright/CSAM liability. <span class="evidence inferred">inferred</span> Crawl access is being gated by age checks, not robots. <em>Basis:</em> the CSP loads <code>yoti:</code> and <code>global.frcapi.com</code> (facial age estimation) sources (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>xvideos.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.xvideos.com/">https://www.xvideos.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Adult video tube (UGC + studio)</dd></div>
+        <div><dt>Grouped hosts</dt><dd>Sister site under the same owner: <code>xnxx.com</code>; media on <code>*.xvideos-cdn.com</code> + cdn77.</dd></div>
+        <div><dt>Owner</dt><dd>WGCZ Holding (WebGroup Czech Republic), Prague; Stéphane Pacaud (100% as of 2025) <span class="evidence verified">verified</span> <a href="https://en.wikipedia.org/wiki/WGCZ_Holding">WGCZ Holding</a></dd></div>
+        <div><dt>Founded / launched</dt><dd>Founded in Paris, 2007</dd></div>
+        <div><dt>Business model</dt><dd>Free, ad-supported (display + ad networks) with cam and premium affiliate upsells; no content paywall</dd></div>
+        <div><dt>Scale anchor</dt><dd>45M+ average monthly users in the EU, as of Dec 20 2023 (<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6763">EC VLOP designation</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. The site is privately held and publishes no traffic, revenue, or corpus counts, so global audience, video count, and upload rate live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>EU monthly users</dt>
+          <dd>45M+ average monthly recipients in the EU — the threshold the Commission found met when it designated xvideos.com a Very Large Online Platform under the DSA on Dec 20 2023. <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6763">EC press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap entity census</dt>
+          <dd>Sitemap index lists 18 child sitemaps covering the browse/entity graph, not videos: tags ~2.0K, pornstars ~2.2K entries; channels and models capped at 20K entries per file. <code>sitemap_main.xml</code> contains 0 <code>/video.</code> URLs — as of Jun 24 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Per-video engagement field</dt>
+          <dd>Every video page exposes a JSON-LD <code>interactionStatistic</code> (<code>WatchAction</code> count) and an ISO <code>uploadDate</code>; sampled video: 11 views, uploaded 3 days prior — as of Jun 24 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-24, desktop browser user agent unless noted. Plain <code>curl</code> succeeds — no WAF/JS challenge.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-06-24</td><td data-label="Probe"><code>dig +short xvideos.com</code></td><td data-label="Observation">A record <code>199.59.148.7</code>; origin served by <code>server: nginx</code>. Media/thumbnails on <code>thumb-cdn77.xvideos-cdn.com</code> &rarr; <code>*.cdn77.org</code> (<code>79.127.203.x</code>) — CDN77 fronts the media, not the HTML.</td></tr>
+            <tr><td data-label="Date">2026-06-24</td><td data-label="Probe"><code>curl -sI https://www.xvideos.com/</code></td><td data-label="Observation">HTTP 200 (no challenge). Strict CSP enumerating the whole ad/cam/CDN stack incl. <code>*.xnxx.com</code>, <code>*.xnxx-cdn.com</code>, <code>yoti:</code>, <code>global.frcapi.com</code>, <code>exoclick</code>, <code>trafficjunky</code>. <code>p3p</code> policy header, <code>x-frame-options: SAMEORIGIN</code>, HSTS. Sets a <code>session_token</code> cookie on <code>.xvideos.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-06-24</td><td data-label="Probe"><code>curl -sL https://www.xvideos.com/robots.txt</code></td><td data-label="Observation">3 lines. <code>User-Agent: *</code> with only <code>Disallow: /video-vote/</code> and <code>Disallow: /account/</code>. No AI-crawler blocks, no rate guidance, no <code>Sitemap:</code> directive (the sitemap lives at the well-known path).</td></tr>
+            <tr><td data-label="Date">2026-06-24</td><td data-label="Probe"><code>curl -sL https://www.xvideos.com/sitemap.xml</code></td><td data-label="Observation">Sitemap index &rarr; 18 child sitemaps: <code>sitemap_main</code> (+ <code>_gay</code>, <code>_shemale</code>), <code>_tags</code>, <code>_channels</code>, <code>_pornstars</code>, <code>_models</code>, <code>_amateurs</code>, etc. Children list category/tag/performer pages with <code>changefreq</code> daily–always; individual videos are absent.</td></tr>
+            <tr><td data-label="Date">2026-06-24</td><td data-label="Probe"><code>curl -sL .../video.{token}/{slug}</code> &rarr; OG + JSON-LD</td><td data-label="Observation">Full <code>VideoObject</code>: <code>name</code>, <code>description</code>, <code>uploadDate</code> (ISO), <code>duration</code> (PT…), <code>thumbnailUrl</code>, <code>interactionStatistic</code>, and <code>contentUrl</code> = a signed SD MP4 on <code>mp4-cdn77.xvideos-cdn.com</code> with an expiring <code>?secure=&lt;token&gt;,&lt;unix-ts&gt;</code> query. OG carries <code>og:type=video.movie</code>, <code>og:duration</code>, <code>og:image</code>. Page exposes both a numeric <code>id_video</code> (<code>90312082</code>) and an obfuscated token (<code>opitdvi9428</code>).</td></tr>
+            <tr><td data-label="Date">2026-06-24</td><td data-label="Probe"><code>curl -sIL .../embedframe/{numeric_id}</code></td><td data-label="Observation">HTTP 200, no auth — a public iframe player keyed by the numeric video id; player media loads via JS, not in the static HTML.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. There is no official API; everything legitimate rides public crawl + on-page markup.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Video titles + descriptions; tag, category, channel, pornstar, model names/bios. Live video count: open. Entity pages: tens of thousands (Verified Metrics).</td>
+              <td data-label="Best legitimate path">Per-page OG + JSON-LD; sitemaps enumerate the entity pages (not videos).</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Rights-restricted; titles/descriptions are uploader-authored and SEO-stuffed.</td>
+              <td data-label="Freshness">New uploads continuous; metadata static post-upload; browse pages <code>changefreq</code> daily–always.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">One cover thumbnail + a hover preview-frame strip per video, on <code>*.xvideos-cdn.com</code> / cdn77.</td>
+              <td data-label="Best legitimate path"><code>og:image</code> + JSON-LD <code>thumbnailUrl</code> (hotlinkable, no auth).</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Hotlink display only; redistribution rights-restricted.</td>
+              <td data-label="Freshness">Static per video.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count"><strong>The core object.</strong> SD MP4 reachable via JSON-LD <code>contentUrl</code>; higher resolutions via the in-player JSON. Count: open (not in sitemaps).</td>
+              <td data-label="Best legitimate path">JSON-LD <code>contentUrl</code> (signed, expiring) for SD; <code>/embedframe/{id}</code> for no-auth display.</td>
+              <td data-label="Auth &amp; quota">None, but the <code>?secure=…,&lt;ts&gt;</code> token expires; an age-gate appears in some regions.</td>
+              <td data-label="License / display"><strong>No redistribution.</strong> Rights-restricted; DMCA + CSAM / non-consensual liability surface.</td>
+              <td data-label="Freshness">Media static; the signed URL rots when its token expires.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">Only as the audio track inside a video; no standalone audio objects.</td>
+              <td data-label="Best legitimate path">Demux from the fetched MP4 (rights permitting).</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Same rights as the video.</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reviews</td>
+              <td data-label="Objects &amp; est. count">View counts, up/down votes, user comments per video.</td>
+              <td data-label="Best legitimate path">View count via JSON-LD <code>interactionStatistic</code>; comments via page/XHR. Voting path <code>/video-vote/</code> is the one robots-blocked surface.</td>
+              <td data-label="Auth &amp; quota">None to read; voting/commenting needs an account.</td>
+              <td data-label="License / display">UGC; display with attribution.</td>
+              <td data-label="Freshness">Append-mostly.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Video (numeric <code>id_video</code> + obfuscated token + slug), pornstar, model, channel, tag, category — each its own ID namespace.</td>
+              <td data-label="Best legitimate path">Per-entity sitemaps + on-page links; JSON-LD per video.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Rights-restricted; the entity graph is the cleanly indexable layer.</td>
+              <td data-label="Freshness">Entity lists refresh daily; membership grows with uploads.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where xvideos.com differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>A video carries <strong>three</strong> IDs: an internal numeric <code>id_video</code> (e.g. <code>90312082</code>), a per-listing obfuscated token (<code>opitdvi9428</code>), and a title slug. The canonical <code>og:url</code> (token + slug) is authoritative; several URL forms resolve to one video, so dedup on <code>og:url</code> or numeric <code>id_video</code>. Much of the catalog is mirrored on sister site <code>xnxx.com</code> under different IDs — cross-site perceptual hashing is needed to collapse duplicates.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>video</strong> is the atom. Pornstar / channel / tag / category pages are navigational hubs and the join graph, not retrieval targets — but they are the only thing the sitemaps enumerate, so they bootstrap discovery.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>The media UUID in the CDN path (<code>…-cdn.com/&lt;uuid&gt;/…</code>) is shared between <code>thumbnailUrl</code> and <code>contentUrl</code>, keying image↔video. On-page links join video &rarr; pornstar &rarr; channel &rarr; tags. No stable ISRC/UPC-style external key exists.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Titles and descriptions are uploader-authored and keyword-stuffed for internal/Google search — the least trustworthy fields. The structured fields (<code>duration</code>, <code>uploadDate</code>, IDs) are clean machine output; <strong>tags</strong> are the most reliable topical signal.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Video metadata is immutable after upload, so it is crawl-once. But the <code>contentUrl</code> token expires, so the page must be re-fetched to obtain a fresh signed media URL. Trending / browse / front pages churn constantly (<code>changefreq: always</code>).</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Beyond ordinary SEO spam and re-uploads, the dominant concern is <strong>content legality</strong> (CSAM, non-consensual material). The trust layer is regulatory — age verification and DSA-mandated moderation — not an exposed quality score. Any index must classify-and-gate before storage.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Unlike walled platforms, xvideos is built for external search: open robots, entity sitemaps, slugged URLs, and full JSON-LD. <code>site:xvideos.com</code> is deep, and Google is a real discovery channel — the inverse of <code>open.spotify.com</code>, whose catalog is deliberately hidden from crawlers.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Category / tag queries, performer-name lookups, and long-tail descriptive phrases. High navigational and browse intent; little informational text retrieval.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the video, keyed by numeric <code>id_video</code>; pornstar / channel / tag / category as entity records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>id_video</code> as PK; obfuscated token + slug as URL aliases (canonical = <code>og:url</code>); media UUID joins thumbnail↔contentUrl; entity IDs from the per-entity sitemaps.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) entity sitemaps — no auth, but they enumerate categories/tags/performers, <em>not</em> videos. 2) per-page JSON-LD/OG — no auth, complete video metadata including the signed <code>contentUrl</code>. 3) internal browse/pagination crawl — the only way to enumerate the video corpus (sitemaps don't), respecting the <code>/video-vote/</code> disallow. 4) <code>/embedframe/{id}</code> — no-auth display surface. No official API exists.</li>
+        <li><strong>Recrawl cadence:</strong> trending/browse pages daily; video metadata crawl-once (immutable); re-fetch a page only to refresh an expired <code>contentUrl</code> token; entity sitemaps weekly.</li>
+        <li><strong>Derivatives to generate:</strong> ASR transcripts and keyframe sampling are technically possible here (the MP4 is fetchable, unlike Spotify) — but only within reuse rights; perceptual video hashing for cross-site (xnxx) dedup; and mandatory age/CSAM classification before any retention.</li>
+        <li><strong>Demo to build:</strong> a JSON-LD video-record harvester — given a video URL, emit the index doc (IDs, tags, duration, uploadDate, thumbnail, signed <code>contentUrl</code>) and flag the token's TTL, demonstrating that the corpus is technically open while the real gate is legal, not technical.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The wall is legal, not technical.</strong> As a DSA VLOP (<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6763">designated Dec 20 2023</a>) and a target of age-verification mandates (EU, UK Online Safety Act, US state laws), an anonymous crawler increasingly meets an age-gate, not content. <span class="evidence inferred">inferred</span> Age verification is becoming the access gate. <em>Basis:</em> the CSP loads <code>yoti:</code> and <code>global.frcapi.com</code> facial-age sources (Probe Log).</li>
+        <li><strong>Content-legality liability:</strong> indexing or redistributing risks CSAM and non-consensual material; classification + takedown handling is mandatory, not optional.</li>
+        <li><strong>Signed-URL rot:</strong> <code>contentUrl</code> tokens expire, so any cached media link decays; the page must be re-derived for a fresh URL.</li>
+        <li><strong>No contract to rely on:</strong> there is no API or licensing program — access depends on robots/markup that the owner can change unilaterally, and sister-site (<code>xnxx.com</code>) duplication inflates the corpus.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_23_6763">European Commission press release IP/23/6763</a> — xvideos.com designated a VLOP on 20 Dec 2023 at the 45M+ average-monthly-EU-users threshold.</li>
+        <li><a href="https://en.wikipedia.org/wiki/WGCZ_Holding">WGCZ Holding (Wikipedia)</a> and <a href="https://en.wikipedia.org/wiki/XVideos">XVideos (Wikipedia)</a> — ownership (WGCZ / Stéphane Pacaud), Paris 2007 founding, sister-site xnxx.com. Secondary.</li>
+        <li>Local probes on 2026-06-24: <code>dig</code> and <code>curl</code> against the homepage, robots.txt, the sitemap index and children, a video page (OG/JSON-LD), and the embedframe endpoint (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The model is purely ad-funded with cam/affiliate upsells and no content paywall. <em>Basis:</em> the CSP whitelists ad networks (exoclick, trafficjunky, exdynsrv) and cam affiliates (livejasmin, flirt4free, camster), and video pages serve without login (observed 2026-06-24).</li>
+        <li>Shared ownership/infrastructure with xnxx.com. <em>Basis:</em> the xvideos CSP and CDN namespaces include <code>*.xnxx.com</code> and <code>*.xnxx-cdn.com</code> (observed 2026-06-24).</li>
+        <li>Crawl access is gated by age verification rather than robots. <em>Basis:</em> robots.txt is near-empty and JSON-LD is complete, yet the CSP loads <code>yoti:</code> and <code>global.frcapi.com</code> facial-age-estimation sources (observed 2026-06-24).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total live video count and corpus growth rate — no official figure, and sitemaps do not enumerate videos (Probe Log: 0 <code>/video.</code> URLs in <code>sitemap_main.xml</code>); closeable only by an exhaustive browse crawl or an owner disclosure.</li>
+        <li>Official global traffic and revenue — WGCZ Holding is private and publishes nothing; only named third-party panel estimates exist.</li>
+        <li>Higher-resolution <code>contentUrl</code> availability and the signed-token TTL — only an SD MP4 with an expiring token was observed; exact TTL and HD access need instrumented fetching.</li>
+        <li>Which regions force age verification (Yoti / facial estimation) before content is served — measurable by geo-varied fetches.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
