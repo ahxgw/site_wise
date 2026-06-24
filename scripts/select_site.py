@@ -39,6 +39,11 @@ AGGREGATED_HOSTS = {
         "match_hosts": ("m.yelp.com",),
         "match_suffixes": (),
         "note": "Mobile Yelp hosts are analyzed together as Yelp.",
+    },
+    "spotify.com": {
+        "match_hosts": ("open.spotify.com",),
+        "match_suffixes": (),
+        "note": "The web player (open.spotify.com) and the marketing/account domain are analyzed together as Spotify.",
     }
 }
 
