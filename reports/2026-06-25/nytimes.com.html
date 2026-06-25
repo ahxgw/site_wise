@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nytimes.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-25</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>nytimes.com</h1>
+      <p class="lede">The New York Times is a metered-paywall news archive to 1851: metadata flows through free APIs, full text only through paid licensing.</p>
+      <div class="tag-row">
+        <span class="tag">News</span>
+        <span class="tag">Subscriptions</span>
+        <span class="tag">Paywall</span>
+        <span class="tag">AI Licensing</span>
+        <span class="tag">Archive 1851</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>The New York Times Company (NYSE: NYT) runs the largest subscription news business in the West: 13.08M total subscribers as of Q1 2026, on a stated path to 15M by end-2027. The product is a bundle — core news plus Cooking, The Athletic, Wirecutter, Games (Wordle/Crossword), and Audio — sold behind a metered paywall. For an index builder the object is the <strong>article</strong>, and the corpus runs back to the paper's first issue in September 1851. NYT treats that text as a licensable asset, not a crawlable one: its robots.txt opens with a legal notice reserving text-and-data-mining rights under EU DSM Art. 4 and blocks ~50 bots, including every major AI crawler (Probe Log). It is simultaneously suing OpenAI/Microsoft and selling training rights to Amazon ($20–25M/yr, May 2025). <span class="evidence inferred">inferred</span> NYT splits its corpus into free metadata and paid full text. <em>Basis:</em> the Archive API returns abstract, headline, byline, keywords and multimedia for every article since 1851 but not the body (see Verified Metrics / Access Matrix), while the robots legal header forbids TDM and Amazon paid for training access.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>nytimes.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.nytimes.com/">https://www.nytimes.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Subscription news publisher; lifestyle/sports/games bundle</dd></div>
+        <div><dt>Grouped hosts</dt><dd>Subpaths under <code>www.nytimes.com</code>: <code>/cooking</code>, <code>/athletic</code>, <code>/wirecutter</code>, <code>/games</code>, <code>/espanol</code>; API on <code>api.nytimes.com</code>, feeds on <code>rss.nytimes.com</code></dd></div>
+        <div><dt>Owner</dt><dd>The New York Times Company (NYSE: NYT), publicly traded; Sulzberger family voting control via Class B shares</dd></div>
+        <div><dt>Founded / launched</dt><dd>Newspaper Sep 18 1851; nytimes.com launched Jan 1996</dd></div>
+        <div><dt>Business model</dt><dd>Digital + print subscriptions (dominant) + advertising + licensing/affiliate (Wirecutter, AI deals)</dd></div>
+        <div><dt>Scale anchor</dt><dd>13.08M total subscribers (12.52M digital-only), as of Mar 31 2026 (<a href="https://www.chartmill.com/news/NYT/bizwire-2026-5-6-the-new-york-times-company-reports-first-quarter-2026-results">Q1 2026 results</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Sitemap and API counts live once in the Probe Log; missing numbers (lifetime article count, comment corpus) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Total revenue, Q1 2026</dt>
+          <dd>$712.2M, +12.0% YoY — quarter ended Mar 31 2026. <a href="https://www.chartmill.com/news/NYT/bizwire-2026-5-6-the-new-york-times-company-reports-first-quarter-2026-results">Q1 2026 results (BusinessWire)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Digital-only subscription revenue, Q1 2026</dt>
+          <dd>$389.0M, +16.1% YoY — as of Mar 31 2026. <a href="https://www.subscriptioninsider.com/article-type/news/new-york-times-adds-310k-digital-subscribers-as-arpu-and-subscription-revenue-rise">Q1 2026 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Subscribers</dt>
+          <dd>13.08M total / 12.52M digital-only; ~310K net digital adds in the quarter — as of Mar 31 2026. <a href="https://www.chartmill.com/news/NYT/bizwire-2026-5-6-the-new-york-times-company-reports-first-quarter-2026-results">Q1 2026 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Digital-only ARPU</dt>
+          <dd>$9.77, +2.4% YoY — as of Mar 31 2026. <a href="https://www.subscriptioninsider.com/article-type/news/new-york-times-adds-310k-digital-subscribers-as-arpu-and-subscription-revenue-rise">Q1 2026 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Digital advertising, Q1 2026</dt>
+          <dd>+31.6% YoY — as of Mar 31 2026. <a href="https://www.investing.com/news/company-news/new-york-times-q1-2026-slides-digital-ads-surge-32-stock-jumps-5-93CH-4663553">Q1 2026 slides</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Subscriber target</dt>
+          <dd>15M total subscribers by end of 2027 — management guidance reaffirmed Q1 2026. <a href="https://www.storyboard18.com/media-and-entertainment/new-york-times-crosses-13-million-subscribers-as-digital-revenue-rises-in-q1-97432.htm">Coverage of Q1 2026 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Amazon AI licensing deal</dt>
+          <dd>$20–25M/yr to license news, Cooking and The Athletic content for Amazon AI — announced May 29 2025; NYT's first generative-AI licensing deal. <a href="https://techcrunch.com/2025/05/29/the-new-york-times-and-amazon-ink-ai-licensing-deal/">TechCrunch</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Archive API coverage</dt>
+          <dd>Article metadata back to 1851/9; ~MB–20MB JSON per month, capped at 2,000 requests/day — as of Jun 25 2026. <a href="https://github.com/nytimes/public_api_specs/blob/master/archive_api/archive_api.md">Archive API spec</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-25 from France (server geo-tagged <code>nyt-geo: FR</code>), desktop browser user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-06-25</td><td><code>dig +short nytimes.com / www.nytimes.com</code></td><td>Apex A <code>199.16.158.9</code>; <code>www</code> A <code>173.244.209.150</code>. Responses carry <code>x-served-by: cache-lga…/cache-fra…</code> and <code>vary: …Fastly-SSL</code> — fronted by Fastly with <code>server: envoy</code> origin.</td></tr>
+            <tr><td>2026-06-25</td><td><code>curl -sI https://www.nytimes.com/</code></td><td>HTTP/2 200, <code>x-pagetype: vi-homepage</code>. HSTS <code>max-age=63072000; preload</code>, <code>x-frame-options: DENY</code>, CSP with <code>report-uri https://csp.nytimes.com/report</code>. Sets <code>datadome</code>, GDPR <code>nyt-purr</code>/<code>nyt-gdpr</code>, and <code>nyt-geo</code> cookies.</td></tr>
+            <tr><td>2026-06-25</td><td><code>curl -sL https://www.nytimes.com/robots.txt</code></td><td>344 lines, 63 <code>User-agent</code> groups, ~50 blanket <code>Disallow: /</code> bot blocks. Legal header reserves TDM rights under EU DSM Art. 4 and bans use for AI/LLM development. AI crawlers blocked: <code>anthropic-ai</code>, <code>ClaudeBot</code>, <code>Claude-SearchBot/User/Web</code>, <code>GPTBot</code>, <code>OAI-SearchBot</code>, <code>ChatGPT-User</code>, <code>Google-Extended</code>, <code>Applebot-Extended</code>, <code>CCBot</code>, <code>Bytespider</code>, <code>Meta-External*</code>, <code>PerplexityBot</code>, <code>archive.org_bot</code>. <code>AmazonBot</code> gets only <code>Disallow: /wirecutter/</code>. 25 <code>Sitemap:</code> directives.</td></tr>
+            <tr><td>2026-06-25</td><td>Sitemap census (<code>sitemap.xml.gz</code> → children, browser UA)</td><td><code>sitemap.xml.gz</code> is an index of <strong>2,097</strong> monthly sitemaps spanning <code>sitemap-1851-09</code> → <code>sitemap-2026-06</code>. The June 2026 child holds <strong>7,717</strong> URLs; <code>news.xml.gz</code> (Google-News window) holds <strong>880</strong>. Separate sitemaps exist for video, cooking, recipes, games, español, Wirecutter and The Athletic.</td></tr>
+            <tr><td>2026-06-25</td><td><code>curl</code> + WebFetch on an article URL</td><td>Both return a <strong>DataDome JS challenge</strong> (403, <code>host: geo.captcha-delivery.com</code>) instead of HTML. On-page JSON-LD (<code>NewsArticle</code>, <code>isAccessibleForFree</code>) could not be sampled anonymously; article bodies are not crawlable without rendering + paywall.</td></tr>
+            <tr><td>2026-06-25</td><td>Feeds &amp; API: <code>/llms.txt</code>, RSS, Top Stories API</td><td><code>llms.txt</code> → 404. RSS <code>HomePage.xml</code> → 200 with 20 items (no key). Developer API <code>topstories/v2/home.json</code> → 401 (key required).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. APIs are the free <a href="https://developer.nytimes.com/apis">NYT Developer APIs</a> (free key); full-text reuse routes to <a href="https://nytlicensing.com/contact/">NYT Licensing</a>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text — metadata</td>
+              <td>Headline, abstract, lead paragraph, byline, keywords per article, 1851→now (lifetime count open).</td>
+              <td>Archive API (by month) for backfill; Article Search + Top Stories for current.</td>
+              <td>Free key. Archive 2,000/day; Top Stories/Article Search ~5–10/min, 500–4,000/day (Open Q).</td>
+              <td>Metadata display with attribution per API ToS; no bulk redistribution.</td>
+              <td>Top Stories near-real-time; archive months immutable.</td>
+            </tr>
+            <tr>
+              <td>Text — full body</td>
+              <td>Full article text, all sections + Cooking + Athletic + Wirecutter.</td>
+              <td>No public crawl/API for body: DataDome wall + paywall (Probe Log). Bulk = NYT Licensing; AI training = signed deal.</td>
+              <td>Paid licensing contract; AI use precedent is the Amazon deal.</td>
+              <td>Reuse and AI training only under contract; robots reserves TDM under EU DSM Art. 4.</td>
+              <td>Corrections append post-publish; live blogs churn continuously.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Up to 5 sized renditions per article via <code>multimedia</code>; full archive photo desk beyond that.</td>
+              <td>Archive / Article Search API <code>multimedia</code> URLs.</td>
+              <td>Same free key + quota.</td>
+              <td>Thumbnail display via API ToS; no mirroring or derivatives.</td>
+              <td>Per article publish.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>NYT video + The Athletic clips (<code>video.xml.gz</code>, <code>athletic/sitemap-videos-index.xml</code>).</td>
+              <td>Sitemap discovery only; no public video metadata API.</td>
+              <td>—</td>
+              <td>Open: no documented bulk reuse path.</td>
+              <td>Per publish.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Podcasts (The Daily, etc.) + in-app NYT Audio.</td>
+              <td>Public podcast RSS for episodes; no NYT API for audio metadata.</td>
+              <td>—</td>
+              <td>Standard podcast syndication for episodes; app audio open.</td>
+              <td>Daily/weekly cadence.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>Reader comments on selected articles; Wirecutter is editorial reviews, not UGC.</td>
+              <td>None current: the Community API was retired; comments now render client-side only.</td>
+              <td>—</td>
+              <td>Open: no current public path.</td>
+              <td>Comment windows close days after publish.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>TimesTags (people, orgs, locations, subjects); Best-Sellers lists; recipes (Cooking); games.</td>
+              <td>Semantic/TimesTags API for entities; Books API for best-sellers; Most Popular API. Recipes/games: sitemap only, no API.</td>
+              <td>Free key + per-API quota.</td>
+              <td>Structured display with attribution; no bulk dump.</td>
+              <td>Lists weekly; tags slow; games daily.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where NYT differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Core articles use a dated canonical path <code>/YYYY/MM/DD/section/slug.html</code> plus an API <code>_id</code> and <code>web_url</code>. The Athletic breaks the pattern with opaque short IDs (<code>/athletic/&hellip;/Z8wkoK02ohtT/</code>). Dedup the <code>/espanol</code> mirror, AMP variants, and syndication copies against the canonical.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The article splits into two units: a <strong>free metadata doc</strong> (API: abstract, headline, keywords, multimedia) and a <strong>gated body</strong>. Recipes, Wirecutter product reviews, and games are distinct units with their own schemas and no metadata API.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p><code>web_url</code> / <code>_id</code> join metadata, multimedia and keywords; <code>byline</code> &rarr; author; <code>section_name</code>/<code>news_desk</code> &rarr; desk. TimesTags entity IDs are stable join keys across articles and into the Best-Sellers and Most Popular sets.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>The API <code>abstract</code>/<code>lead_paragraph</code> is editor-written and reliable. Headlines have print-vs-web variants (a <code>headline.main</code> plus <code>kicker</code>), so the headline is the SEO-distorted field; the body — the true authority — sits behind the paywall.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Three regimes: Top Stories / news sitemap update in minutes; archive months are immutable after a settling period (corrections append); The Athletic live blogs mutate continuously. One cadence across all three wastes quota.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Editorial control makes spam a non-issue; the real hazard is <em>staleness</em> — free metadata can lag paywalled corrections and retractions, so an external index can surface superseded claims.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Googlebot is grouped with <code>*</code> and served article pages, so Google indexes NYT; AI crawlers are blocked outright. The gap between "indexed by a search engine" and "licensed for AI" is explicit here, not incidental.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>News lookups and breaking events, recipe search ("best lasagna"), sports team/player queries (Athletic), product recommendations ("best X" &rarr; Wirecutter), and games. High navigational and recency intent.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> article metadata doc keyed by <code>web_url</code>/<code>_id</code>; recipe, product-review, and game as sibling units; full body only for licensed corpora.</li>
+        <li><strong>Primary keys &amp; joins:</strong> canonical <code>web_url</code> + <code>_id</code>; TimesTags entity IDs; <code>byline</code> author; <code>section_name</code>/<code>news_desk</code>.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Archive API — month-by-month backfill of the entire 1851&rarr;now metadata corpus at 2,000 req/day (~one call per month, so a full backfill is ~2,100 calls). 2) Article Search + Top Stories + RSS for incremental fresh metadata. 3) Books / TimesTags / Most Popular for structured side-tables. 4) Full text — no legitimate bulk path; route to NYT Licensing or design metadata-only. 5) Public crawl — DataDome-walled and AI-UA-banned (Probe Log), not viable.</li>
+        <li><strong>Recrawl cadence:</strong> Top Stories / news sitemap every few minutes; re-pull the trailing two Archive months periodically for corrections; older months once.</li>
+        <li><strong>Derivatives to generate:</strong> entity linking from TimesTags, embeddings over abstracts (not bodies — license), image thumbnails from <code>multimedia</code> renditions.</li>
+        <li><strong>Demo to build:</strong> an Archive-API backfiller that walks 1851&rarr;2026 within the 2,000/day budget, emits JSONL metadata docs, and explicitly flags that body text is absent by license — the metadata-vs-body split made tangible.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Licensing-gated, not crawl-gated:</strong> full text needs a paid contract, and AI training needs a signed deal (the Amazon precedent). Indexing bodies without one invites the OpenAI-style suit NYT is already litigating.</li>
+        <li><strong>Explicit TDM reservation:</strong> the robots legal header invokes EU DSM Art. 4 opt-out and bans AI/LLM development use (Probe Log) — a documented legal signal, not just a courtesy directive.</li>
+        <li><strong>Free tier is metadata-only and rate-capped:</strong> the entire AI-relevant value (body text) is excluded from the API by design; if NYT meters or paywalls the Developer APIs, the metadata backfill window also closes.</li>
+        <li><strong>Bot wall hardens:</strong> DataDome challenges plus ~50 banned UAs already make public crawl non-viable; expect tightening, not loosening.</li>
+        <li><strong>Uneven bundle coverage:</strong> Cooking, Games, video and comments have no metadata API; an index of "NYT" is really an index of the news/API surface plus sitemap-only islands.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.chartmill.com/news/NYT/bizwire-2026-5-6-the-new-york-times-company-reports-first-quarter-2026-results">NYT Company Q1 2026 results (BusinessWire, May 6 2026)</a> — revenue, subscribers, digital subscription revenue.</li>
+        <li><a href="https://www.subscriptioninsider.com/article-type/news/new-york-times-adds-310k-digital-subscribers-as-arpu-and-subscription-revenue-rise">Subscription Insider on Q1 2026</a> — net adds, ARPU, digital-only subscription revenue.</li>
+        <li><a href="https://www.investing.com/news/company-news/new-york-times-q1-2026-slides-digital-ads-surge-32-stock-jumps-5-93CH-4663553">Investing.com Q1 2026 slides</a> — digital advertising +31.6%.</li>
+        <li><a href="https://techcrunch.com/2025/05/29/the-new-york-times-and-amazon-ink-ai-licensing-deal/">TechCrunch</a> &amp; <a href="https://www.geekwire.com/2025/report-amazon-to-pay-at-least-20m-a-year-in-ai-content-deal-with-new-york-times/">GeekWire</a> — Amazon AI licensing deal ($20–25M/yr).</li>
+        <li><a href="https://github.com/nytimes/public_api_specs/blob/master/archive_api/archive_api.md">NYT Archive API spec</a> &amp; <a href="https://developer.nytimes.com/apis">NYT Developer APIs</a> — coverage from 1851, fields, rate limits.</li>
+        <li>Local probes on 2026-06-25: <code>dig</code>, <code>curl -sI</code> homepage, <code>robots.txt</code>, sitemap census, article DataDome wall, RSS / Top Stories / <code>llms.txt</code> (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>NYT splits its corpus into free metadata and paid full text. <em>Basis:</em> the Archive API returns abstract/headline/byline/keywords/multimedia for every article since 1851 but no body (spec), while the robots legal header forbids TDM and Amazon paid separately for training rights.</li>
+        <li>Public crawl of article bodies is not viable. <em>Basis:</em> curl and WebFetch on an article both returned the DataDome JS challenge (403) on 2026-06-25, and ~50 bot UAs including all major AI crawlers sit at <code>Disallow: /</code>.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Lifetime count of indexable articles 1851&rarr;now — closeable by summing Archive API monthly response counts (or URL totals across the 2,097 monthly sitemaps).</li>
+        <li>Whether on-page JSON-LD carries <code>NewsArticle</code>/<code>isAccessibleForFree</code> — blocked by DataDome on 2026-06-25; closeable with a headless-browser render.</li>
+        <li>Exact Article Search / Top Stories rate limits — sources disagree (5/min·500/day vs 10/min·4,000/day); closeable by registering a key and measuring.</li>
+        <li>Comment corpus size and any current public path — the Community API is retired; needs confirmation of whether comments are exposed anywhere.</li>
+        <li>NYT Cooking recipe count and whether structured recipe data is exposed — closeable via a <code>cooking.xml.gz</code> / <code>recipe-collects.xml.gz</code> census.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
