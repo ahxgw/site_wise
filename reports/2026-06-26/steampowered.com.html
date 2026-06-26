@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>steampowered.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-26</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>steampowered.com</h1>
+      <p class="lede">Steam is Valve's PC game store — 265K products keyed by appid, exposed through unauthenticated storefront JSON endpoints and an unusually open robots.txt.</p>
+      <div class="tag-row">
+        <span class="tag">Gaming</span>
+        <span class="tag">PC Distribution</span>
+        <span class="tag">Marketplace</span>
+        <span class="tag">Valve</span>
+        <span class="tag">Open JSON</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Steam is the dominant store and distribution platform for PC games, run by privately-held Valve and launched in 2003. Valve takes a revenue share on every sale (30% standard, falling to 25% and 20% as a title's lifetime sales pass $10M and $50M) plus in-game-transaction fees, and sells hardware (Steam Deck, Index). For an index builder, the object of interest is the <strong>app</strong> — Steam's universal <code>appid</code> — and the bundle of store metadata, screenshots, trailers, age ratings, and user reviews hanging off it. What makes Steam unusual among top platforms is openness: the store serves nearly all of that through stable, unauthenticated JSON endpoints (<code>appdetails</code>, <code>appreviews</code>, the search "infinite" feed), and its robots.txt blocks neither AI crawlers nor general agents (see Probe Log). The richer Steamworks Web API on <code>api.steampowered.com</code> needs a free key; the storefront JSON needs nothing at all. <span class="evidence inferred">inferred</span> Steam treats third-party indexing as a feature, not a leak. <em>Basis:</em> the storefront JSON serves full metadata and review bodies with no auth, and robots.txt carries no AI-crawler or sitemap restrictions (Probe Log) — the posture that lets SteamDB and SteamSpy exist.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>steampowered.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://store.steampowered.com/">https://store.steampowered.com/</a></dd></div>
+        <div><dt>Category</dt><dd>PC game store and digital distribution platform</dd></div>
+        <div><dt>Related hosts</dt><dd><code>store.steampowered.com</code> (store), <code>api.steampowered.com</code> (Web API), <code>steamcommunity.com</code> (profiles, workshop, market), <code>help.steampowered.com</code>, <code>*.steamstatic.com</code> / <code>*.eccdnx.com</code> (media CDNs)</dd></div>
+        <div><dt>Owner</dt><dd>Valve Corporation (private); co-founded 1996 by Gabe Newell and Mike Harrington</dd></div>
+        <div><dt>Founded / launched</dt><dd>Steam client launched Sep 12, 2003</dd></div>
+        <div><dt>Business model</dt><dd>Revenue share on game sales + in-game transaction fees + hardware</dd></div>
+        <div><dt>Scale anchor</dt><dd>42.04M peak concurrent users, Jan 11 2026 (<a href="https://steamdb.info/app/753/charts/">SteamDB concurrency tracker</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Current MAU/DAU and platform-wide review totals live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Store products</dt>
+          <dd>264,949 listed products — as of 2026-06-26, from the search "infinite" API <code>total_count</code> (Probe Log). <span class="evidence verified">verified</span>, probe</dd>
+        </div>
+        <div>
+          <dt>New game releases, 2025</dt>
+          <dd>~19,000 games released in 2025 (record year) — as of Dec 31 2025. <a href="https://steamdb.info/stats/releases/">SteamDB release summary</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Peak concurrent users</dt>
+          <dd>42,042,778 simultaneous users on Jan 11 2026 — all-time record. <a href="https://steamdb.info/app/753/charts/">SteamDB</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Monthly active users</dt>
+          <dd>132M — as of 2021, Valve's last official figure (Steam 2021 Year in Review); treat newer numbers as estimates. <a href="https://www.pcgamesinsider.biz/news/72901/steam-hits-132m-monthly-active-players-during-2021/">PC Games Insider</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Estimated platform revenue, 2025</dt>
+          <dd>$16.2B, +~50% YoY — Alinea Analytics estimate (third party, not Valve). <a href="https://80.lv/articles/steam-earned-usd16b-in-2025-but-nearly-half-of-19-000-games-got-under-10-reviews">80.lv summary</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Standard revenue share</dt>
+          <dd>30% to Valve, dropping to 25% above $10M and 20% above $50M lifetime sales per title — current. <a href="https://partner.steamgames.com/doc/finance/payments">Steamworks payments doc</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Reviews on a single app (Half-Life, appid 70)</dt>
+          <dd>161,546 total reviews / 155,902 positive ("Overwhelmingly Positive") — as of 2026-06-26, from the <code>appreviews</code> endpoint (Probe Log). <span class="evidence verified">verified</span>, probe</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-26. Plain <code>curl</code>; this network's edge geolocated the requests to China unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-06-26</td><td><code>dig +short store.steampowered.com</code></td><td>A record 23.199.1.175; reverse lookup → <code>a23-199-1-175.deploy.static.akamaitechnologies.com</code>. Steam fronts the store on Akamai.</td></tr>
+            <tr><td>2026-06-26</td><td><code>curl -sI https://store.steampowered.com/</code></td><td><code>Server: nginx</code>, HSTS <code>max-age=63072000</code>, <code>X-Frame-Options: DENY</code>, long CSP. Set <code>steamCountry=CN</code> and served <code>og:image</code> via <code>eccdnx.com</code> (Steam China CDN) — corpus is region-variant.</td></tr>
+            <tr><td>2026-06-26</td><td><code>curl -sL …/robots.txt</code></td><td>Only 9 <code>Disallow</code> lines (share, news/externalpost, token opt-out paths, login/join, widgets). <strong>No AI-crawler rules, no <code>Sitemap</code> directive.</strong> Store, <code>/app/</code> and <code>/search/</code> all allowed.</td></tr>
+            <tr><td>2026-06-26</td><td><code>/sitemap.xml</code>, <code>/sitemap_index.xml</code>, <code>/llms.txt</code></td><td>All HTTP 302 → homepage. No sitemap or llms.txt surface exists.</td></tr>
+            <tr><td>2026-06-26</td><td><code>…/api/appdetails?appids=70</code></td><td>Unauthenticated JSON: name, type, <code>price_overview</code> ($1.99, 80% off), genres, 8+ categories, 11 screenshots, Metacritic 96, 5 ratings boards (USK/DEJUS/IGRS/AGCOM/steam_germany), <code>content_descriptors</code>, <code>recommendations.total</code> 115,125. <code>cc</code>/<code>l</code> params switch region/language.</td></tr>
+            <tr><td>2026-06-26</td><td><code>…/search/results/?…&infinite=1</code></td><td>JSON <code>total_count</code> = 264,949 — the full store product count, one HTTP call.</td></tr>
+            <tr><td>2026-06-26</td><td><code>…/appreviews/70?json=1</code></td><td>Unauthenticated. <code>query_summary</code>: 161,546 total / 155,902 positive. <code>reviews[]</code> carry full bodies plus author <code>steamid</code>, <code>playtime_forever</code>, <code>num_games_owned</code>, language; <code>cursor</code> paginates. Intermittently returned empty under rapid calls (soft rate limit).</td></tr>
+            <tr><td>2026-06-26</td><td><code>curl https://api.steampowered.com/ISteamApps/GetAppList/v2/</code></td><td>TLS handshake never completed from this network (proxy-blocked, code 000) — the keyed Web API's authoritative full appid enumeration was unreachable here; recorded as a gap, not a finding about Steam.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what auth/quota costs, what a third-party UI may show, and how fast it churns. <code>appdetails</code> / <code>appreviews</code> are the unauthenticated storefront JSON endpoints from the Probe Log; the Web API is the keyed <code>api.steampowered.com</code> surface.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Store names, descriptions, system specs across ~265K products (Verified Metrics).</td>
+              <td><code>appdetails</code> JSON (<code>cc</code>/<code>l</code> for region/language); HTML <code>/app/{appid}/</code> is robots-allowed.</td>
+              <td>None; soft rate limit (~200 req / 5 min observed behavior).</td>
+              <td>Publisher copyright; reuse under Steam Web API Terms — display with attribution, no bulk republication.</td>
+              <td>Metadata edits rare; price text churns with sales.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Header, capsule, and 11+ screenshots per app on <code>*.steamstatic.com</code> / <code>eccdnx.com</code>.</td>
+              <td><code>appdetails</code> returns full CDN URLs (<code>header_image</code>, <code>screenshots[]</code>).</td>
+              <td>None.</td>
+              <td>Hotlinkable CDN; publisher copyright. No mirroring/derivatives without rights.</td>
+              <td>Low churn; changes on store-page updates.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Trailers / gameplay clips (<code>movies[]</code>), mp4 + webm per app.</td>
+              <td><code>appdetails</code> <code>movies[]</code> CDN URLs.</td>
+              <td>None.</td>
+              <td>Publisher copyright; embed/hotlink, no rehosting.</td>
+              <td>Low churn.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>No separate exposed corpus (game audio ships inside builds; some soundtracks are their own appids).</td>
+              <td>Soundtrack appids via <code>appdetails</code>; in-game audio not retrievable.</td>
+              <td>—</td>
+              <td>Open: no documented audio reuse path.</td>
+              <td>Open.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>User reviews per app (Half-Life alone 161K, Verified Metrics); platform-wide total is open.</td>
+              <td><code>appreviews/{appid}</code> JSON, cursor-paginated — bodies + playtime + language + author steamid.</td>
+              <td>None; same soft rate limit.</td>
+              <td>User content under the Steam Subscriber Agreement; redistribution of bodies is unclear.</td>
+              <td>Append-mostly; counts rise continuously, authors may edit/delete.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>appids, packages/bundles (subid/bundleid), DLC, developers, publishers, genres, tags, 5-board age ratings, prices.</td>
+              <td><code>appdetails</code> for per-app fields; Web API <code>GetAppList</code> (keyed) for authoritative full enumeration.</td>
+              <td>Web API needs a free key; storefront JSON none.</td>
+              <td>Web API Terms; structured fields freely indexable with attribution.</td>
+              <td>Prices fast (sale cadence); catalog grows ~19K apps/yr.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Steam differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The <code>appid</code> (a stable integer) is the universal key, present in every URL as <code>/app/{appid}/</code>; the trailing name slug is cosmetic and ignored on resolve. DLC, demos, soundtracks, and tools live in the same appid space as separate ids; packages and bundles are a distinct id space (<code>subid</code>/<code>bundleid</code>). One appid yields many region/language variant pages via <code>cc</code>/<code>l</code>.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Three units: the <strong>app</strong> (store page) for search and discovery, the <strong>review</strong> for opinion mining, and the <strong>package/sub</strong> for price and availability. Collapsing them loses either freshness (price) or signal (reviews).</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Everything joins on <code>appid</code>: screenshots, trailers, reviews, ratings, the community hub. The user-side join is <code>appid</code> ↔ review-author <code>steamid</code>, both stable integers returned directly by the JSON.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Store text is publisher-supplied marketing, not neutral. The trust signal is the aggregate <code>review_score</code> band ("Overwhelmingly Positive" etc.) plus the review corpus; <code>content_descriptors</code> and the five ratings boards are authoritative for safety/age.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Two regimes: price/discount churns on the sale calendar (daily during seasonal sales), while catalog metadata and media are near-static. Review counts append continuously. Recrawl price separately from everything else.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Steam-specific noise: review bombing (coordinated negative campaigns), and asset-flip shovelware — roughly half of 2025's ~19K releases drew under 10 reviews. The <code>review_score</code> band and review volume are the practical noise filter.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>On-site tag/genre search is strong, but Steam <em>intentionally</em> exposes JSON, so external indexes (SteamDB, SteamSpy) are first-class rather than adversarial — the opposite of the closing-wall posture seen on Amazon or X.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Title lookup, genre/tag browse, "is it good / how long / Deck-verified", and price/deal queries. High purchase and comparison intent; little conversational traffic.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> app = appid; reviews and packages attached as sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> appid primary; <code>subid</code>/<code>bundleid</code> for packages; <code>steamid</code> for review authors; all media join on appid.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>appdetails</code> storefront JSON — no auth, full metadata + media URLs, soft-limited ~200 req/5 min. 2) <code>appreviews</code> JSON — no auth, cursor-paginated full bodies. 3) Web API <code>GetAppList</code>/<code>StoreItem</code> — free key, authoritative appid enumeration and the only complete catalog list. 4) HTML crawl of <code>/app/</code> (robots-open) for fields absent from JSON.</li>
+        <li><strong>Recrawl cadence:</strong> prices daily (sale-driven); review deltas weekly via cursor; catalog metadata monthly; new-release discovery via <code>GetAppList</code> diff.</li>
+        <li><strong>Derivatives to generate:</strong> review aspect/sentiment extraction, screenshot/trailer embeddings, tag normalization, per-app price-history series.</li>
+        <li><strong>Demo to build:</strong> a rate-aware appid indexer — enumerate via <code>GetAppList</code>, hydrate each app with <code>appdetails</code> + <code>appreviews</code> inside the ~200/5min budget, and emit appid-keyed JSONL with media URLs and a review summary (mirrors the Amazon quota-aware indexer demo).</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The open JSON is a courtesy, not a contract:</strong> the storefront endpoints are undocumented and unversioned. Valve can tighten the soft rate limit or change shape without notice — the keyed Web API is the only surface with stability guarantees.</li>
+        <li><strong>Region variance is structural:</strong> the edge geolocated this probe to CN and served Steam-China CDN URLs and CN pricing (Probe Log). An index that does not pin <code>cc</code>/<code>l</code> will silently mix price and availability across regions.</li>
+        <li><strong>Review bodies sit under the Subscriber Agreement:</strong> opinion mining is fine internally, but republishing review text has no clear license — design for derived signals, not verbatim redistribution.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The open-crawl stance could close.</strong> <em>Basis:</em> robots.txt today carries no AI-crawler rule and no sitemap (observed 2026-06-26), but that is a current snapshot of an editable file, not a commitment — re-check before relying on crawl access.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li>Local probes on 2026-06-26: <code>dig</code>, <code>curl</code> headers/robots, <code>appdetails</code>, <code>appreviews</code>, and the search <code>infinite</code> API (full results in the Probe Log).</li>
+        <li><a href="https://steamdb.info/stats/releases/">SteamDB release summary by year</a> — ~19,000 games released in 2025.</li>
+        <li><a href="https://steamdb.info/app/753/charts/">SteamDB concurrency tracker</a> — 42,042,778 peak concurrent on Jan 11 2026.</li>
+        <li><a href="https://www.pcgamesinsider.biz/news/72901/steam-hits-132m-monthly-active-players-during-2021/">PC Games Insider</a> — Steam 2021 Year in Review, 132M MAU (last official).</li>
+        <li><a href="https://80.lv/articles/steam-earned-usd16b-in-2025-but-nearly-half-of-19-000-games-got-under-10-reviews">80.lv</a> — Alinea Analytics 2025 revenue estimate ($16.2B); ~half of 2025 releases under 10 reviews.</li>
+        <li><a href="https://partner.steamgames.com/doc/finance/payments">Steamworks payments documentation</a> — 30% / 25% / 20% revenue-share tiers.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Steam treats third-party indexing as a feature. <em>Basis:</em> unauthenticated full metadata and review bodies plus a robots.txt with no AI-crawler or sitemap restriction (Probe Log) — the conditions SteamDB/SteamSpy depend on.</li>
+        <li><code>appid</code> is the universal join key. <em>Basis:</em> <code>appdetails</code> returns <code>steam_appid</code>, every store URL is <code>/app/{appid}/</code>, and screenshots, movies, and reviews are all addressed by it (observed in probe).</li>
+        <li>The storefront JSON is best-effort, not a contract. <em>Basis:</em> it carries no version path, is absent from Steamworks docs, and returned intermittent empty responses under rapid calls (rate-limit behavior, Probe Log).</li>
+        <li>The corpus is region-variant. <em>Basis:</em> the edge set <code>steamCountry=CN</code> and served <code>og:image</code> via <code>eccdnx.com</code> (Steam China CDN), so pricing and availability vary by <code>cc</code>.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Current MAU/DAU — only the 2021 official 132M exists; the circulating 147M-MAU figure traces only to SEO stat-aggregator sites, not any Valve disclosure or games-press primary. Closeable by a new Valve statement.</li>
+        <li>Platform-wide review total — closeable by summing <code>appreviews</code> <code>total_reviews</code> across all appids within the rate limit, or via SteamSpy aggregates.</li>
+        <li>Exact storefront-JSON rate limit — measurable with a timed request sweep until empty/429 responses begin.</li>
+        <li>Full appid count including non-store apps (tools, betas, DLC) — needs Web API <code>GetAppList</code>, which was unreachable from this probe network.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
