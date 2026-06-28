@@ -85,6 +85,7 @@
             <tr><td data-label="Date">2026-06-28</td><td data-label="Probe">Structured-data sample (video page)</td><td data-label="Observation">No JSON-LD on a sampled <code>/videos/...</code> page. OpenGraph is the machine surface: <code>og:type=video.movie</code>, <code>og:title</code>, <code>og:image</code> (thumbnail on <code>ic-vt-nss.xhpingcdn.com</code> with <code>s(w:1280,h:720)</code> transform), and an <code>og:description</code> that names Starring / Channel / Category. Inline page JSON carries <code>views</code>, <code>likes</code>, <code>dislikes</code>; pornstars, channel and tags appear as named entities.</td></tr>
             <tr><td data-label="Date">2026-06-28</td><td data-label="Probe"><code>GET /info/dsa-transparency-report-2025/10_AMAR.csv</code></td><td data-label="Observation">Served (200, text/csv) but every per-country and TOTAL recipient value is empty, each row tagged "Only for VLOPs and VLOSEs" — an explicit non-VLOP posture.</td></tr>
             <tr><td data-label="Date">2026-06-28</td><td data-label="Probe">ID-format sample (homepage hrefs)</td><td data-label="Observation">Two coexisting video-ID schemes: legacy numeric (<code>4431995</code>) and newer <code>xh</code>-prefixed base62 (<code>xhc2BAq</code>). Both terminate the canonical slug URL.</td></tr>
+            <tr><td data-label="Date">2026-06-28</td><td data-label="Probe">Thumbnail CDN transform test (<code>xhpingcdn</code>)</td><td data-label="Observation">Thumb URLs carry transform ops in the path, e.g. <code>b(2),s(w:16,h:9),webp</code> — a blurred 16&times;9 LQIP placeholder. The signed cover at <code>s(w:1280,h:720)</code> fetched 200 (110KB); hand-editing that same URL's size to 1920 returned <strong>403</strong>. The <code>/a/&lt;b64&gt;/</code> segment is a signature bound to the transform string (differs across jpeg vs webp), not a media-content hash. The entity ID is re-encoded as <code>/NNN/NNN/NNN/</code> (e.g. <code>25538412</code> &rarr; <code>/025/538/412/</code>).</td></tr>
           </tbody>
         </table>
       </div>
@@ -135,6 +136,10 @@
         <div>
           <h4>Access posture</h4>
           <p>Unusually crawler-open for an adult site: no AI-bot blocks and no sitemap. Cloudflare rate-limits bursts to 520 rather than serving a sitemap, so ingestion is paced page-crawl, not bulk pull.</p>
+        </div>
+        <div>
+          <h4>Image renditions</h4>
+          <p>Thumbnails ride an on-the-fly transform CDN (<code>xhpingcdn</code>): the size lives in the path (<code>s(w:..,h:..)</code>), but each rendition is <strong>signed</strong> — editing the size 403s (see Probe Log), so you can't synthesize a larger image. Ingest the <code>og:image</code> 1280&times;720 cover the page already serves; treat the smallest <code>s(w:16,h:9)</code> blur as an LQIP placeholder, not a thumbnail. The stable image&harr;video join is the entity ID in the path, not the <code>/a/</code> signature.</p>
         </div>
       </div>
     </section>
