@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>globo.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-29</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>globo.com</h1>
+      <p class="lede">globo.com is Brazil's largest media portal: a thin homepage fronting per-vertical subdomains (G1, ge, gshow, Globoplay) whose corpora ride dated sitemaps, not APIs.</p>
+      <div class="tag-row">
+        <span class="tag">News</span>
+        <span class="tag">Portal</span>
+        <span class="tag">Video</span>
+        <span class="tag">Streaming</span>
+        <span class="tag">Brazil</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>globo.com is the web home of Grupo Globo, the Marinho family's media conglomerate and Brazil's dominant broadcaster. The host <code>www.globo.com</code> is essentially a curated front door; the actual corpus lives on topic subdomains that are separate products: <strong>G1</strong> (news), <strong>ge</strong> (sport), <strong>gshow</strong> (entertainment), and <strong>Globoplay</strong> (the subscription streaming service). The business is the classic Brazilian media triangle: broadcast and digital advertising (about two-thirds of revenue), content licensing, and a fast-growing streaming subscription line. For an index builder the interesting fact is the <em>federated</em> structure: each vertical publishes its own robots policy, its own dated sitemap tree, and its own ID space, so "indexing globo.com" really means indexing a dozen newsroom and video systems that happen to share a CDN (<code>glbimg.com</code>) and an auth wall. Public crawl is wide open on the news side and gated on the streaming side. <span class="evidence inferred">inferred</span> Globo treats AI-crawler policy as a per-product decision, not a corporate one. <em>Basis:</em> robots.txt blocks GPTBot/CCBot/Google-Extended on <code>www</code>, <code>ge</code> and <code>gshow</code> but those blocks are absent from <code>g1</code> and <code>globoplay</code> (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>globo.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.globo.com/">https://www.globo.com/</a></dd></div>
+        <div><dt>Category</dt><dd>News &amp; media portal; video / streaming</dd></div>
+        <div><dt>Related hosts</dt><dd><code>g1.globo.com</code> (news), <code>ge.globo</code> (sport), <code>gshow.globo.com</code> (entertainment), <code>globoplay.globo.com</code> (streaming), <code>glbimg.com</code> (image CDN), <code>video.globo.com</code> / <code>pox.globo.com</code> (video metadata)</dd></div>
+        <div><dt>Owner</dt><dd>Globo Comunicação e Participações S.A. (GCP), controlled by the Marinho family; privately held</dd></div>
+        <div><dt>Founded / launched</dt><dd>Grupo Globo broadcaster 1965; <code>globo.com</code> portal 2000; G1 news portal 18 Sep 2006</dd></div>
+        <div><dt>Business model</dt><dd>Advertising (broadcast + digital) + content/programming licensing + Globoplay subscriptions</dd></div>
+        <div><dt>Scale anchor</dt><dd>R$18.28B net revenue FY2025, as of the Mar 25 2026 financial publication (<a href="https://www.poder360.com.br/poder-economia/faturamento-da-globo-sobe-1133-em-2025-ante-2024/">Poder360</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Traffic estimates name their estimator. Missing numbers (total live article count, paid-vs-free streaming split) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Net revenue, FY2025 (GCP)</dt>
+          <dd>R$18.28B, +11.32% YoY (vs R$16.42B in 2024) — published Mar 25 2026. <a href="https://www.poder360.com.br/poder-economia/faturamento-da-globo-sobe-1133-em-2025-ante-2024/">Poder360 on GCP financials</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Advertising revenue, 2025</dt>
+          <dd>R$12.546B — about 68.6% of total revenue, +15% YoY. <a href="https://www.meioemensagem.com.br/midia/globo-amplia-em-15-a-receita-com-publicidade-em-2025">Meio &amp; Mensagem</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>EBITDA / net profit, FY2025</dt>
+          <dd>EBITDA R$2.45B (+57%); net profit R$1.49B (−25% YoY) — published Mar 25 2026. <a href="https://www.poder360.com.br/poder-economia/faturamento-da-globo-sobe-1133-em-2025-ante-2024/">Poder360</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Globoplay users</dt>
+          <dd>30M+ — as of Nov 2 2025; the figure is "usuários" (users) and includes the free ad-supported tier, not only paying subscribers (see Open Questions). <a href="https://paraibaonline.com.br/entretenimento/2025/11/02/globoplay-passa-dos-30-milhoes-de-assinantes-ao-vivo-lidera-audiencia/">Paraíba Online</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Portal traffic (estimate)</dt>
+          <dd>~795M visits in May 2025; ranked #1 News &amp; Media in Brazil and #76 globally May 2026 — Similarweb estimates, not official. <a href="https://www.similarweb.com/website/globo.com/">Similarweb</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>G1 sitemap depth</dt>
+          <dd>9,012 dated daily child sitemaps in the G1 index, spanning 2003-01-05 → 2026-06-28; the 2026-06-28 sitemap holds 363 article URLs and 350 image entries — as of 2026-06-29. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Globoplay video sitemap depth</dt>
+          <dd>23,736 dated child sitemaps in the video sitemap index (some future-dated, e.g. 2028-05-28, 2031-12-31) — as of 2026-06-29. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-06-29; desktop user agent unless noted. AI-crawler blocks fetched with a research UA.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-06-29</td><td><code>dig +short globo.com / www.globo.com</code></td><td>Apex 186.192.83.12; <code>www</code> resolves via CNAME <code>home-globo.cache.gcp.cloud.globo</code> to 137.131.136.199. Multi-cloud: GCP cache front, but headers fingerprint Oracle Cloud (<code>x-bip: …oci-prd…varnish</code>).</td></tr>
+            <tr><td>2026-06-29</td><td><code>curl -sI https://www.globo.com/</code></td><td>HTTP 200, 2.3MB HTML homepage. Custom edge: <code>x-served-from: Router Home PROD</code>, <code>via: 2.2 KubeCache</code>, <code>cache-control: max-age=10</code>, <code>x-mobile: desktop</code>. CSP present (<code>upgrade-insecure-requests</code>, frame-ancestors locked to <code>*.globo.com</code>). No HSTS header observed.</td></tr>
+            <tr><td>2026-06-29</td><td><code>curl --compressed .../robots.txt</code> (www)</td><td>31 lines. Blocks <code>/busca/</code>, <code>/beta/</code>, <code>/explore/</code>, A/B paths (<code>/alt-a…d/</code>). Declares only <code>sitemap-image.xml</code>. Separate stanzas <code>Disallow: /</code> for <strong>CCBot, GPTBot, Google-Extended</strong> — but <strong>not</strong> ClaudeBot, PerplexityBot, Applebot, or Bytespider.</td></tr>
+            <tr><td>2026-06-29</td><td>robots.txt across subdomains</td><td>Per-product policy: <code>gshow</code> and <code>ge</code> carry the same GPTBot/CCBot/Google-Extended block; <strong>g1 omits it entirely</strong> (no AI-crawler stanza); <code>globoplay</code> robots is a bare <code>User-agent: *</code> with no Disallow.</td></tr>
+            <tr><td>2026-06-29</td><td>G1 sitemap census</td><td><code>g1/sitemap.xml</code> is an index of 9,012 daily sitemaps back to 2003-01-05; robots also lists an "Apuração" (elections) and a videos sitemap. The 2026-06-28 daily file = 363 <code>&lt;url&gt;</code> + 350 <code>&lt;image:image&gt;</code> entries.</td></tr>
+            <tr><td>2026-06-29</td><td>Structured-data sample (G1 article)</td><td>JSON-LD is thin: one block is just <code>{"articleSection":["G1","Fantástico"]}</code> plus a publisher Organization/ImageObject; <strong>no NewsArticle schema</strong>. Article identity carried by Open Graph tags (<code>og:title/description/image/url</code>, <code>og:locale=pt_BR</code>). URL pattern: <code>/{section}/.../{YYYY}/{MM}/{DD}/{slug}.ghtml</code>.</td></tr>
+            <tr><td>2026-06-29</td><td>Globoplay video sitemap</td><td><code>sitemap-videos.xml</code> → index on <code>pox.globo.com</code> with 23,736 dated children. Child entries carry full <code>video:video</code> markup: <code>thumbnail_loc</code>, <code>title</code>, and a public <code>content_loc</code> pointing at <code>vodstreaming01.video.globo.com</code> for free regional clips.</td></tr>
+            <tr><td>2026-06-29</td><td>Image CDN anatomy</td><td>Images served from <code>s2-*.glbimg.com</code> as Thumbor-style signed transforms: <code>{sig}=/{WxH}/smart/filters:strip_icc()/i.s3.glbimg.com/AUTH_…/{source}</code>. Dimensions and filters are baked into a signed path; the underlying object lives in an OpenStack/S3 store.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Globo publishes no documented public content API; sitemaps + OG tags are the surface for news, and a subscription wall guards premium video.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text (news)</td>
+              <td>G1/ge/gshow articles, <code>.ghtml</code> pages keyed by date+slug. 9,012 daily G1 sitemaps back to 2003; total live count open.</td>
+              <td>Public crawl via per-vertical dated sitemaps; OG tags carry title/description/image.</td>
+              <td>None for G1 (robots open to all incl. AI); <code>www</code>/ge/gshow block GPTBot/CCBot/Google-Extended.</td>
+              <td>Copyrighted editorial; no reuse license published. Snippet/link display per fair-dealing only.</td>
+              <td>Fast: hundreds of articles/day; daily sitemap is the recrawl signal.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Article photos, one or more per story (350 image entries in the 2026-06-28 G1 sitemap alone).</td>
+              <td><code>sitemap-image.xml</code> + <code>&lt;image:image&gt;</code> in article sitemaps; signed <code>glbimg.com</code> transform URLs.</td>
+              <td>None to fetch; transforms are pre-signed by Globo.</td>
+              <td>Copyright Globo / agencies; hotlinking the signed CDN URL is the only sanctioned display.</td>
+              <td>Tied to article publish; back catalog stable.</td>
+            </tr>
+            <tr>
+              <td>Video (free)</td>
+              <td>Regional-edition and open clips; 23,736 dated video sitemaps. content_loc exposed for free items.</td>
+              <td><code>globoplay/sitemap-videos.xml</code> → <code>pox.globo.com</code> children with <code>video:video</code> metadata.</td>
+              <td>None for sitemap metadata; stream <code>content_loc</code> public for free clips only.</td>
+              <td>Globo content; thumbnails + metadata indexable, stream redistribution not licensed.</td>
+              <td>Mixed: news clips fast; sitemap carries future-dated (scheduled) entries.</td>
+            </tr>
+            <tr>
+              <td>Video (premium)</td>
+              <td>Novelas, series, live channels, sports behind Globoplay. Catalog count open.</td>
+              <td>No crawl path; Globoplay app/site behind subscription.</td>
+              <td>Paid subscription (and AVOD free tier with login); no public API.</td>
+              <td>All-rights-reserved; no third-party indexing of premium catalog.</td>
+              <td>Continuous (daily novela/news episodes); live linear streams.</td>
+            </tr>
+            <tr>
+              <td>Comments</td>
+              <td>Article comments where enabled (moderated).</td>
+              <td>No public/bulk endpoint observed; rendered client-side.</td>
+              <td>—</td>
+              <td>Open: no documented path.</td>
+              <td>Open.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Sections/editorias, sport fixtures &amp; standings (ge), TV programming/EPG, show pages. No public entity API.</td>
+              <td>Embedded in page HTML + sitemap path taxonomy; thin JSON-LD (articleSection only).</td>
+              <td>—</td>
+              <td>Derivable from public pages; no licensed feed.</td>
+              <td>Fixtures/EPG churn daily; section tree stable.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where globo.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>No single site ID space. News articles are keyed by the <code>.ghtml</code> URL (<code>/{section}/…/{YYYY}/{MM}/{DD}/{slug}.ghtml</code>); videos by a numeric media ID embedded in both the watch URL and the CDN path (e.g. <code>14662314</code>). The same story can surface under G1, ge and gshow with different URLs — dedup across verticals on slug + publish date.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The article (<code>.ghtml</code>) for news; the video object (media ID) for clips. The portal homepage is <em>not</em> a retrieval unit — it is a 2.3MB editorial layout with <code>max-age=10</code>, meant to be re-rendered, not indexed.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Article ↔ image joins via the <code>&lt;image:image&gt;</code> entries in the same sitemap row. Video ↔ thumbnail/stream joins via the shared numeric media ID across <code>pox.globo.com</code> metadata and <code>s0*.video.glbimg.com</code> assets. There is no published key linking an article to its source TV broadcast.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Open Graph tags, not JSON-LD, are the reliable metadata: the sampled article had no NewsArticle schema, only <code>articleSection</code>. Trust <code>og:title</code> / <code>og:description</code> / <code>og:url</code> over any inline microdata.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The daily-partitioned sitemap is a gift: poll only today's and yesterday's child sitemap per vertical to catch all new and updated articles, instead of recrawling the tree. <code>lastmod</code> is precise to the second.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Low spam surface — this is first-party editorial, not UGC. The manipulation risk is the opposite: an index must respect that premium video and most of Globoplay are deliberately walled, and that "free" stream URLs in the sitemap are a curated subset, not the catalog.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>On-site search (<code>/busca/</code>) is robots-blocked on every vertical, so external <code>site:globo.com</code> queries do the discovery work Globo declines to expose. The sitemap, not search, is the intended machine entry point.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Portuguese-language, Brazil-centric: breaking news, futebol scores and tables, novela/celebrity, and "ao vivo" (live) intents. Locale (<code>pt_BR</code>) and regional editions (per-state G1 paths like <code>/sp/</code>, <code>/ba/</code>) are first-class facets.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the <code>.ghtml</code> article for news/sport/entertainment; the numeric-media-ID video object for clips. Treat each vertical (G1, ge, gshow) as a separate corpus sharing a CDN.</li>
+        <li><strong>Primary keys &amp; joins:</strong> article = canonical <code>.ghtml</code> URL (section + date + slug); video = media ID; image = signed <code>glbimg.com</code> source path. Join article→images within the sitemap row; join video→thumbnail/stream by media ID.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Per-vertical dated sitemaps — the only complete, lastmod-stamped index; poll the newest child files for incrementals. 2) Article HTML for body text + OG metadata (JSON-LD is too thin to rely on). 3) Globoplay video sitemap for free-clip metadata. 4) Premium catalog — no path; design around the wall.</li>
+        <li><strong>Recrawl cadence:</strong> news verticals — pull today's + yesterday's daily sitemap hourly; section/EPG pages daily; deep back catalog (pre-2024) once, then never (stable).</li>
+        <li><strong>Derivatives to generate:</strong> ASR transcripts for free video clips, full-text body extraction from <code>.ghtml</code>, cross-vertical story dedup embeddings, and a normalized regional/section facet from the URL taxonomy.</li>
+        <li><strong>Demo to build:</strong> a "daily-sitemap delta crawler" — given a vertical, fetch its dated sitemap index, diff the two newest children, and emit JSONL index docs (URL, OG fields, image set, lastmod) — proving the recrawl cadence claim above.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>AI-crawler policy is per-product and could converge to the strict stance.</strong> G1 currently omits the AI block that <code>www</code>/ge/gshow already carry; if Globo standardizes robots, the largest news corpus closes overnight (Probe Log).</li>
+        <li><strong>No licensing program for editorial.</strong> Crawl access ≠ reuse rights; an AI-retrieval product indexing G1 has no published license and faces a litigious rights-holder. Plan for snippet+link only.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Free-clip stream URLs are not a stable bulk video path.</strong> <em>Basis:</em> <code>content_loc</code> appears only for a curated subset (regional editions) in the video sitemap while the premium catalog has no crawl entry; treat exposed streams as revocable.</li>
+        <li><strong>Signed image CDN can rotate.</strong> <code>glbimg.com</code> transform URLs embed a signature; if the signing scheme changes, stored image URLs break — store the source path + transform params, not the full signed URL.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.poder360.com.br/poder-economia/faturamento-da-globo-sobe-1133-em-2025-ante-2024/">Poder360 — GCP FY2025 financials</a> — net revenue R$18.28B (+11.32%), EBITDA R$2.45B, net profit R$1.49B; published Mar 25 2026.</li>
+        <li><a href="https://www.meioemensagem.com.br/midia/globo-amplia-em-15-a-receita-com-publicidade-em-2025">Meio &amp; Mensagem</a> — 2025 advertising revenue R$12.546B, ~68.6% of total.</li>
+        <li><a href="https://paraibaonline.com.br/entretenimento/2025/11/02/globoplay-passa-dos-30-milhoes-de-assinantes-ao-vivo-lidera-audiencia/">Paraíba Online</a> — Globoplay 30M+ users (Nov 2 2025).</li>
+        <li><a href="https://www.similarweb.com/website/globo.com/">Similarweb</a> — ~795M visits May 2025; #1 News &amp; Media Brazil, #76 global (May 2026) — third-party estimates.</li>
+        <li><a href="https://en.wikipedia.org/wiki/G1_(website)">Wikipedia: G1</a> — G1 launched 18 Sep 2006 under Central Globo de Jornalismo; aggregates Grupo Globo outlets.</li>
+        <li>Local probes on 2026-06-29: <code>dig</code>, <code>curl</code> headers/robots across <code>www</code>/g1/ge/gshow/globoplay, G1 and Globoplay sitemap census, a G1 article structured-data sample, and glbimg CDN URL anatomy (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Globo sets AI-crawler policy per product, not corporately. <em>Basis:</em> GPTBot/CCBot/Google-Extended are blocked on <code>www</code>, ge and gshow but absent from g1 and globoplay robots (observed 2026-06-29).</li>
+        <li>Free-clip stream URLs are a curated, revocable subset, not a bulk video path. <em>Basis:</em> <code>content_loc</code> present only for regional-edition clips in the video sitemap; premium catalog has no crawl entry.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total live article count across verticals — closeable by summing <code>&lt;url&gt;</code> entries across all 9,012 G1 daily sitemaps (plus ge/gshow trees) within a crawl budget.</li>
+        <li>Globoplay paid-subscriber count vs free-AVOD users — the 30M figure is "usuários" and undifferentiated; needs a Globo disclosure or regulator filing splitting the tiers.</li>
+        <li>Whether globo.com serves HSTS — not present in the sampled root response; would need a check across edge nodes and the apex redirect chain.</li>
+        <li>Premium Globoplay catalog size and metadata — no public path; would need a partner/API agreement or an authenticated panel.</li>
+        <li>Why the video sitemap carries future-dated children (2028, 2031) — likely scheduled/evergreen placeholders; confirmable by fetching a future-dated child and inspecting its entries.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
