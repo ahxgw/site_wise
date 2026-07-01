@@ -9,7 +9,7 @@
 <body>
   <main class="report-shell">
     <nav class="top-nav">
-      <a href="../../index.html">Site Wise</a>
+      <a href="../../docs/index.html">Site Wise</a>
       <span>2026-07-01</span>
     </nav>
 
@@ -24,7 +24,7 @@
         <span class="tag">DSA VLOP</span>
         <span class="tag">Open crawl</span>
       </div>
-      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
     </header>
 
     <section class="section-card">
@@ -68,13 +68,13 @@
         <table>
           <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
           <tbody>
-            <tr><td data-label="Date">2026-07-01</td><td data-label="Probe"><code>dig +short xnxx.com / www.xnxx.com</code></td><td data-label="Observation">Apex <code>xnxx.com</code> resolves to <code>0.0.0.0</code> (nulled); <code>www.xnxx.com</code> → <code>182.50.139.56</code>. The apex is not the serving host — <code>www</code> is canonical.</td></tr>
-            <tr><td data-label="Date">2026-07-01</td><td data-label="Probe"><code>curl -sI https://www.xnxx.com/</code></td><td data-label="Observation">HTTP/2 200; <code>server: nginx</code>; sets a 180-day <code>session_token</code> cookie (Secure, HttpOnly, <code>domain=.xnxx.com</code>) plus a <code>pending_thumb</code> cookie. No HSTS or CDN header on the origin response.</td></tr>
-            <tr><td data-label="Date">2026-07-01</td><td data-label="Probe"><code>curl -sL https://www.xnxx.com/robots.txt</code></td><td data-label="Observation">3 lines: <code>User-Agent: *</code>, <code>Disallow: /video-vote/</code>, <code>Disallow: /account/</code>. No AI-crawler rules, no Sitemap directive — essentially fully open crawl.</td></tr>
-            <tr><td data-label="Date">2026-07-01</td><td data-label="Probe"><code>curl -sL https://www.xnxx.com/sitemap.xml</code></td><td data-label="Observation">A sitemap index (not in robots) pointing to 3 children: <code>sitemap_main.xml</code> (128 entity URLs — categories, tags, channels), <code>sitemap_uploads_new.xml</code> (20,000), <code>sitemap_uploads_new_1.xml</code> (3,274). The uploads files are a recent-uploads feed.</td></tr>
-            <tr><td data-label="Date">2026-07-01</td><td data-label="Probe"><code>curl -sL https://www.xnxx.com/</code></td><td data-label="Observation">HTTP 200, 115KB. Title "Free Porn, Sex, Tube Videos… - XNXX.COM"; links out to the <code>xnxx.gold</code> premium domain; the inline JS carries the XVideos codebase's video-URL regex and an <code>xvideos</code> reference — same platform code.</td></tr>
-            <tr><td data-label="Date">2026-07-01</td><td data-label="Probe"><code>curl -sL https://www.xnxx.com/video-&lt;id&gt;/&lt;slug&gt;</code></td><td data-label="Observation">JSON-LD <code>VideoObject</code>: <code>name</code>, <code>description</code>, <code>thumbnailUrl</code> (<code>thumb-cdn77.xnxx-cdn.com</code>), <code>uploadDate</code>, <code>duration</code>, <code>contentUrl</code> (<code>mp4-cdn77…/mp4_sd.mp4?secure=…</code>), <code>interactionStatistic</code>. Player JS exposes <code>setVideoUrlHigh/Low</code> (MP4), <code>setVideoHLS</code> (<code>hls-cdn77…</code> .m3u8, time-signed token) and an embedded <code>uploader_id</code>/<code>uploader</code>/<code>uploader_url</code>.</td></tr>
-            <tr><td data-label="Date">2026-07-01</td><td data-label="Probe">Media CDN hostnames</td><td data-label="Observation">Video, HLS and thumbnails are served from <code>mp4-cdn77</code> / <code>hls-cdn77</code> / <code>thumb-cdn77</code> under <code>xnxx-cdn.com</code> (CDN77). The asset path embeds a UUID that is the true media key.</td></tr>
+            <tr><td>2026-07-01</td><td><code>dig +short xnxx.com / www.xnxx.com</code></td><td>Apex <code>xnxx.com</code> resolves to <code>0.0.0.0</code> (nulled); <code>www.xnxx.com</code> → <code>182.50.139.56</code>. The apex is not the serving host — <code>www</code> is canonical.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sI https://www.xnxx.com/</code></td><td>HTTP/2 200; <code>server: nginx</code>; sets a 180-day <code>session_token</code> cookie (Secure, HttpOnly, <code>domain=.xnxx.com</code>) plus a <code>pending_thumb</code> cookie. No HSTS or CDN header on the origin response.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sL https://www.xnxx.com/robots.txt</code></td><td>3 lines: <code>User-Agent: *</code>, <code>Disallow: /video-vote/</code>, <code>Disallow: /account/</code>. No AI-crawler rules, no Sitemap directive — essentially fully open crawl.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sL https://www.xnxx.com/sitemap.xml</code></td><td>A sitemap index (not in robots) pointing to 3 children: <code>sitemap_main.xml</code> (128 entity URLs — categories, tags, channels), <code>sitemap_uploads_new.xml</code> (20,000), <code>sitemap_uploads_new_1.xml</code> (3,274). The uploads files are a recent-uploads feed.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sL https://www.xnxx.com/</code></td><td>HTTP 200, 115KB. Title "Free Porn, Sex, Tube Videos… - XNXX.COM"; links out to the <code>xnxx.gold</code> premium domain; the inline JS carries the XVideos codebase's video-URL regex and an <code>xvideos</code> reference — same platform code.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sL https://www.xnxx.com/video-&lt;id&gt;/&lt;slug&gt;</code></td><td>JSON-LD <code>VideoObject</code>: <code>name</code>, <code>description</code>, <code>thumbnailUrl</code> (<code>thumb-cdn77.xnxx-cdn.com</code>), <code>uploadDate</code>, <code>duration</code>, <code>contentUrl</code> (<code>mp4-cdn77…/mp4_sd.mp4?secure=…</code>), <code>interactionStatistic</code>. Player JS exposes <code>setVideoUrlHigh/Low</code> (MP4), <code>setVideoHLS</code> (<code>hls-cdn77…</code> .m3u8, time-signed token) and an embedded <code>uploader_id</code>/<code>uploader</code>/<code>uploader_url</code>.</td></tr>
+            <tr><td>2026-07-01</td><td>Media CDN hostnames</td><td>Video, HLS and thumbnails are served from <code>mp4-cdn77</code> / <code>hls-cdn77</code> / <code>thumb-cdn77</code> under <code>xnxx-cdn.com</code> (CDN77). The asset path embeds a UUID that is the true media key.</td></tr>
           </tbody>
         </table>
       </div>
@@ -88,52 +88,52 @@
           <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
           <tbody>
             <tr>
-              <td data-label="Modality">Text</td>
-              <td data-label="Objects &amp; est. count">Video titles, descriptions, tags; category / pornstar / channel pages. ~23.3K recent-upload URLs in the sitemap; full catalog far larger (open).</td>
-              <td data-label="Best legitimate path">Crawl video and entity pages (robots permits) and parse JSON-LD; poll <code>sitemap_uploads_new*.xml</code> for new items.</td>
-              <td data-label="Auth &amp; quota">None (age-gated by law in some regions, not by robots).</td>
-              <td data-label="License / display">Uploader/studio content under ToS; metadata display with attribution.</td>
-              <td data-label="Freshness">High upload velocity; the uploads sitemaps are the incremental feed.</td>
+              <td>Text</td>
+              <td>Video titles, descriptions, tags; category / pornstar / channel pages. ~23.3K recent-upload URLs in the sitemap; full catalog far larger (open).</td>
+              <td>Crawl video and entity pages (robots permits) and parse JSON-LD; poll <code>sitemap_uploads_new*.xml</code> for new items.</td>
+              <td>None (age-gated by law in some regions, not by robots).</td>
+              <td>Uploader/studio content under ToS; metadata display with attribution.</td>
+              <td>High upload velocity; the uploads sitemaps are the incremental feed.</td>
             </tr>
             <tr>
-              <td data-label="Modality">Images</td>
-              <td data-label="Objects &amp; est. count">Per-video thumbnails and preview sprites on <code>thumb-cdn77.xnxx-cdn.com</code>.</td>
-              <td data-label="Best legitimate path">JSON-LD <code>thumbnailUrl</code> and the player's <code>setThumbUrl169</code>.</td>
-              <td data-label="Auth &amp; quota">None (hotlink; some URLs signed).</td>
-              <td data-label="License / display">Promotional stills, ToS-bound; no bulk retention.</td>
-              <td data-label="Freshness">Fixed per video at upload.</td>
+              <td>Images</td>
+              <td>Per-video thumbnails and preview sprites on <code>thumb-cdn77.xnxx-cdn.com</code>.</td>
+              <td>JSON-LD <code>thumbnailUrl</code> and the player's <code>setThumbUrl169</code>.</td>
+              <td>None (hotlink; some URLs signed).</td>
+              <td>Promotional stills, ToS-bound; no bulk retention.</td>
+              <td>Fixed per video at upload.</td>
             </tr>
             <tr>
-              <td data-label="Modality">Video</td>
-              <td data-label="Objects &amp; est. count">The MP4/HLS streams themselves, one asset per video.</td>
-              <td data-label="Best legitimate path">JSON-LD <code>contentUrl</code> (<code>mp4_sd.mp4</code>) plus player <code>setVideoUrlHigh</code> / <code>setVideoHLS</code> (.m3u8) — technically fetchable.</td>
-              <td data-label="Auth &amp; quota">No login, but URLs carry an <strong>expiring signed token</strong> (<code>?secure=</code> / <code>…==,&lt;ts&gt;/</code>).</td>
-              <td data-label="License / display">No redistribution; copyright/CSAM law binds. Not licensable for mirroring.</td>
-              <td data-label="Freshness">Static per video; the access token rotates.</td>
+              <td>Video</td>
+              <td>The MP4/HLS streams themselves, one asset per video.</td>
+              <td>JSON-LD <code>contentUrl</code> (<code>mp4_sd.mp4</code>) plus player <code>setVideoUrlHigh</code> / <code>setVideoHLS</code> (.m3u8) — technically fetchable.</td>
+              <td>No login, but URLs carry an <strong>expiring signed token</strong> (<code>?secure=</code> / <code>…==,&lt;ts&gt;/</code>).</td>
+              <td>No redistribution; copyright/CSAM law binds. Not licensable for mirroring.</td>
+              <td>Static per video; the access token rotates.</td>
             </tr>
             <tr>
-              <td data-label="Modality">Audio</td>
-              <td data-label="Objects &amp; est. count">No separate audio track — audio is muxed into the video container.</td>
-              <td data-label="Best legitimate path">Derive from the video stream (ASR).</td>
-              <td data-label="Auth &amp; quota">Same as video.</td>
-              <td data-label="License / display">Same as video.</td>
-              <td data-label="Freshness">Same as video.</td>
+              <td>Audio</td>
+              <td>No separate audio track — audio is muxed into the video container.</td>
+              <td>Derive from the video stream (ASR).</td>
+              <td>Same as video.</td>
+              <td>Same as video.</td>
+              <td>Same as video.</td>
             </tr>
             <tr>
-              <td data-label="Modality">Comments / votes</td>
-              <td data-label="Objects &amp; est. count">Per-video comments and up/down votes; view count is the exposed engagement figure.</td>
-              <td data-label="Best legitimate path">Comments render on the page; <code>interactionStatistic</code> carries the WatchAction count. <code>/video-vote/</code> is robots-disallowed.</td>
-              <td data-label="Auth &amp; quota">Posting needs an account; reading does not.</td>
-              <td data-label="License / display">UGC under ToS.</td>
-              <td data-label="Freshness">Append-mostly per video.</td>
+              <td>Comments / votes</td>
+              <td>Per-video comments and up/down votes; view count is the exposed engagement figure.</td>
+              <td>Comments render on the page; <code>interactionStatistic</code> carries the WatchAction count. <code>/video-vote/</code> is robots-disallowed.</td>
+              <td>Posting needs an account; reading does not.</td>
+              <td>UGC under ToS.</td>
+              <td>Append-mostly per video.</td>
             </tr>
             <tr>
-              <td data-label="Modality">Structured entities</td>
-              <td data-label="Objects &amp; est. count">Videos (base36 ID in <code>/video-{id}/</code>), uploaders/channels (<code>uploader_id</code>), pornstars, tags/categories.</td>
-              <td data-label="Best legitimate path"><code>sitemap_main.xml</code> for the entity graph; uploader/tag fields embedded in each video page.</td>
-              <td data-label="Auth &amp; quota">None.</td>
-              <td data-label="License / display">ToS; attribution.</td>
-              <td data-label="Freshness">Entities stable; new videos attach continuously.</td>
+              <td>Structured entities</td>
+              <td>Videos (base36 ID in <code>/video-{id}/</code>), uploaders/channels (<code>uploader_id</code>), pornstars, tags/categories.</td>
+              <td><code>sitemap_main.xml</code> for the entity graph; uploader/tag fields embedded in each video page.</td>
+              <td>None.</td>
+              <td>ToS; attribution.</td>
+              <td>Entities stable; new videos attach continuously.</td>
             </tr>
           </tbody>
         </table>
@@ -142,7 +142,7 @@
 
     <section class="section-card">
       <h2>Retrieval Notes (site-specific deltas)</h2>
-      <p class="muted">Only where xnxx differs from the <a href="../../methodology.html">default platform assumptions</a> (and from its <code>xvideos.com</code> sibling).</p>
+      <p class="muted">Only where xnxx differs from the <a href="../../docs/methodology.html">default platform assumptions</a> (and from its <code>xvideos.com</code> sibling).</p>
       <div class="subgrid">
         <div>
           <h4>Identifier &amp; dedup</h4>
