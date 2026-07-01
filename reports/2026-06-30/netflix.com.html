@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>netflix.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-06-30</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>netflix.com</h1>
+      <p class="lede">Netflix is the largest subscription streaming service: a $45B catalog of ~25.7K titles whose public pages welcome AI crawlers yet expose no content API.</p>
+      <div class="tag-row">
+        <span class="tag">SVOD streaming</span>
+        <span class="tag">Ads tier</span>
+        <span class="tag">DRM video</span>
+        <span class="tag">Open Connect CDN</span>
+        <span class="tag">AI-crawler allowed</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Netflix is the largest subscription video-on-demand (SVOD) service, delivering movies and series over its own Open Connect CDN. It began in 1997 as DVD-by-mail (Reed Hastings and Marc Randolph, Scotts Valley CA), launched streaming in 2007, and now runs on subscription tiers plus a fast-growing ad-supported plan. For an index builder the object is not a page but the <strong>title</strong> — a movie or series keyed by a numeric title ID at <code>/title/{id}</code>. The valuable corpus (feature video, dubbed audio, timed-text subtitles) sits behind DRM with no legitimate bulk path, but Netflix voluntarily publishes two things an index can use: rich <strong>schema.org metadata</strong> on public title pages, and two bulk <strong>engagement datasets</strong> (a weekly Top 10 TSV and a semiannual "What We Watched" report). The notable delta from most large platforms: Netflix's robots.txt grants named AI crawlers the same access as Googlebot. <span class="evidence inferred">inferred</span> Netflix treats its public metadata as an SEO/AI asset, not something to wall off. <em>Basis:</em> robots.txt lists GPTBot, ClaudeBot, PerplexityBot and OAI-SearchBot in the same <code>Allow: /</code> group as the search engines (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>netflix.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.netflix.com/">https://www.netflix.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Subscription streaming (SVOD) + advertising tier</dd></div>
+        <div><dt>Related hosts</dt><dd>Media on <code>*.nflxvideo.net</code> (Open Connect video) and <code>*.nflxso.net</code> (images); <code>about.netflix.com</code> (press/engagement reports), <code>help.netflix.com</code>; <code>top10.netflix.com</code> and the former <code>tudum.com</code> now redirect under <code>/tudum/</code></dd></div>
+        <div><dt>Owner</dt><dd>Netflix, Inc. (NASDAQ: NFLX); co-CEOs Ted Sarandos &amp; Greg Peters; co-founder Reed Hastings is executive chairman</dd></div>
+        <div><dt>Founded / launched</dt><dd>1997 (DVD rental); streaming service launched 2007</dd></div>
+        <div><dt>Business model</dt><dd>Subscription tiers + advertising; no per-title purchase, no public content API</dd></div>
+        <div><dt>Scale anchor</dt><dd>Crossed 325M paid memberships during Q4 2025 (<a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm">Q4 2025 shareholder letter</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (exact current membership, per-country title count) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Revenue, FY2025</dt>
+          <dd>$45.2B, +16% YoY (+17% F/X neutral) — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm">Q4 2025 shareholder letter (SEC 8-K ex99.1)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Operating margin, FY2025</dt>
+          <dd>29.5%, up from 26.7% in 2024 — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm">Same letter</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Advertising revenue, 2025</dt>
+          <dd>Over $1.5B, up more than 2.5x vs 2024 (third year selling ads) — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm">Same letter</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Paid memberships</dt>
+          <dd>Crossed the 325M milestone during Q4 2025 — Netflix stopped reporting exact quarterly membership counts in 2025 and now discloses only milestones. <a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm">Same letter</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Engagement, H2 2025</dt>
+          <dd>96B hours viewed in the second half of 2025 (view hours +2% YoY per the letter). <a href="https://about.netflix.com/en/news/what-we-watched-the-second-half-of-2025">What We Watched, H2 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Public title corpus</dt>
+          <dd>Sitemap index lists 25,705 per-title child sitemaps (one per title ID) — as of Jul 1 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Top 10 engagement dataset</dt>
+          <dd>10,440 weekly rows in the global TSV, through the week of Jun 28 2026 — as of Jul 1 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-01 from an EU vantage point (responses served via a Frankfurt Open Connect PoP); desktop or Googlebot user agent as noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-01</td><td><code>dig +short netflix.com / www.netflix.com</code></td><td>Apex A records in AWS <code>eu-west-1</code>; <code>www</code> is a CNAME to <code>www.prod.ftl.netflix.com</code> (207.45.72.1 / 207.45.73.1). Homepage responses arrive via Open Connect FTL (<code>via: 2 …(eu-west-1), 1.1 c000.fra002.ix.nflxvideo.net</code>). Origin <code>server: envoy</code>.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sI https://www.netflix.com/</code></td><td>HEAD rejected with HTTP/2 405 (<code>allow: GET, OPTIONS, POST</code>). HSTS <code>max-age=31536000; includeSubDomains</code>, <code>x-frame-options: DENY</code>, <code>x-content-type-options: nosniff</code>, <code>cache-control: no-cache, no-store</code>; sets <code>nfvdid</code> and <code>NetflixId</code> cookies.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sL https://www.netflix.com/</code></td><td>HTTP 200, geo-redirected to <code>/fr-en/</code> (French PoP); <code>&lt;title&gt;Netflix France - Watch TV Shows Online…&lt;/title&gt;</code>. Anonymous landing surface is regionalized.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sL https://www.netflix.com/robots.txt</code></td><td>180 lines. <code>User-agent: *</code> → <code>Disallow: /</code>, then one allow-group naming the major search engines <em>and</em> AI crawlers together (GPTBot, ChatGPT-User, OAI-SearchBot, Google-Extended, ClaudeBot, Claude-User, Claude-SearchBot, PerplexityBot) with <code>Allow: /</code>. <code>/browse</code>, <code>/search</code>, <code>/profiles</code> and account paths disallowed; <code>/browse/genre/*</code> and <code>/title/*</code> allowed. <code>Sitemap: /sitemap/index</code>.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sL https://www.netflix.com/sitemap/index</code></td><td>2.4MB sitemap index; 25,705 child sitemaps, each <code>/sitemap/title/{id}</code>.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sL …/sitemap/title/80057281</code></td><td>37.6MB, a single title (Stranger Things) enumerated as ~599 locale-variant URLs (country × language, e.g. <code>/fr-en/</code>, <code>/sn/</code>, <code>/de-en/</code>) cross-linked by <code>xhtml:link hreflang</code> alternates.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl -sL …/title/80057281</code> (Googlebot UA)</td><td>HTTP 200, 3.5MB JS app. Embeds one JSON-LD <code>TVSeries</code> (name, genre, contentRating, image, dateCreated, actors, creators, numberOfSeasons) plus a <code>trailer</code> <code>VideoObject</code> with <code>contentUrl</code> (.m3u8), duration and thumbnail; OG tags; and a <code>netflix.reactContext</code> Falcor state blob.</td></tr>
+            <tr><td>2026-07-01</td><td><code>curl top10.netflix.com/data/all-weeks-global.tsv</code>; oEmbed probe</td><td>854KB TSV, 10,440 rows (week, category, rank, title, hours_viewed, runtime, views, weeks_in_top_10) through 2026-06-28; the Top 10 site itself 301-redirects to <code>/tudum/top10/</code>. An <code>/oembed</code> call returns 302 — no oEmbed endpoint.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Every cell is verifiable, tagged, or <em>open</em>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Title metadata (name, synopsis, genre, rating, cast, seasons) for ~25.7K titles (Verified Metrics).</td>
+              <td>Crawl public <code>/title/{id}</code> pages for JSON-LD/OG; enumerate IDs from <code>/sitemap/index</code>. robots allows generic and AI agents.</td>
+              <td>None for public metadata; no API.</td>
+              <td>Netflix ToS; standard SEO metadata display with attribution/link-back.</td>
+              <td>Stable per title; catalog membership churns on licensing windows.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Key art / thumbnails per title on <code>*.nflxso.net</code>.</td>
+              <td>Image URLs carried in JSON-LD <code>image</code> and OG tags.</td>
+              <td>None (hotlink).</td>
+              <td>Promotional art, ToS-bound; no bulk retention or derivatives.</td>
+              <td>Art is A/B-tested and refreshed for merchandising.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Feature streams (per title, multi-bitrate) plus one trailer per title.</td>
+              <td>Trailers only: JSON-LD <code>trailer.contentUrl</code> (.m3u8). Feature video is DRM-locked on Open Connect (<code>*.nflxvideo.net</code>).</td>
+              <td>Feature: subscription + Widevine/PlayReady/FairPlay DRM. Trailer: none.</td>
+              <td>No reuse of feature streams; trailers are promotional.</td>
+              <td>Trailer stable; feature availability follows licensing.</td>
+            </tr>
+            <tr>
+              <td>Audio / subtitles</td>
+              <td>Dubbed audio tracks and timed-text subtitles in many languages per title.</td>
+              <td>None public — bundled inside the DRM stream.</td>
+              <td>Subscription + DRM.</td>
+              <td>Open: no documented reuse path.</td>
+              <td>Added over a title's life (new dubs/subs).</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>None public. Netflix removed user reviews in 2018; the thumbs rating is a private personalization signal.</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Titles (numeric ID), genres (<code>/browse/genre/{id}</code>), people (cast/creators), plus engagement rows: Top 10 (10,440) and the semiannual "What We Watched" report.</td>
+              <td>Top 10 TSV bulk download; engagement report XLSX from about.netflix.com; people/genre parsed from title-page JSON-LD.</td>
+              <td>None (public downloads).</td>
+              <td>Netflix-published data; citable with attribution.</td>
+              <td>Top 10 weekly (Tuesdays); engagement report semiannual.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Netflix differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The numeric title ID in <code>/title/{id}</code> is the stable key. Each title renders at ~599 locale paths (<code>/fr-en/title/{id}</code>, <code>/sn/title/{id}</code>, …) all hreflang-alternating to the same ID (Probe Log). Dedup on title ID, never on URL.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>title</strong> (movie or series). Series expose <code>numberOfSeasons</code> but seasons and episodes are not separate public pages; episode granularity appears only inside engagement data (<code>season_title</code> in the Top 10 TSV).</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Title ID joins metadata ↔ key art ↔ trailer cleanly. But the engagement datasets key on human-readable <code>show_title</code>/<code>season_title</code> strings, <em>not</em> the numeric ID — so binding engagement to the catalog needs fuzzy title matching, and the match-failure rate is a real quality metric.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>JSON-LD is the cleanest machine field. The <code>netflix.reactContext</code> Falcor blob holds the richest state but needs rendering. OG/<code>&lt;title&gt;</code> are SEO-tuned ("Watch X | Netflix Official Site") and least useful as the canonical name.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Per-title metadata is near-static; the volatile fact is catalog <em>membership</em> — titles enter and leave on licensing windows. A weekly diff of <code>/sitemap/index</code> detects adds/removes cheaply; engagement refreshes weekly (Top 10) and semiannually (report).</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Not a UGC platform: no user posts, no spam surface. The dominant defect is <strong>staleness</strong> — a removed title can leave a cached page and JSON-LD claiming availability that no longer exists in a given country.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><code>/search</code> is robots-disallowed; discovery inside Netflix is personalized recommendation, not query. External indexes only ever see the public title pages, so "is X on Netflix" queries route to those pages, not to Netflix's own search.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Availability and lookup intent: "is <em>X</em> on Netflix", cast, season count, "new on Netflix". Answerable from title-page JSON-LD; the personalized browse experience is not indexable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the title (numeric ID); key art, trailer, cast, genre, and engagement stats attach to it.</li>
+        <li><strong>Primary keys &amp; joins:</strong> Netflix title ID as the spine; join engagement data via a title-string concordance (lossy — track match rate).</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>/sitemap/index</code> → 25.7K title IDs → crawl one canonical locale per title for JSON-LD (robots-allowed, incl. AI agents). 2) Top 10 global TSV weekly (no auth). 3) "What We Watched" XLSX semiannually for long-tail engagement. 4) Feature video / audio / subtitles — no legitimate path (DRM); design around metadata + trailers.</li>
+        <li><strong>Recrawl cadence:</strong> title metadata monthly; catalog-membership diff of the sitemap weekly; Top 10 weekly (Tuesdays); engagement report semiannual.</li>
+        <li><strong>Derivatives to generate:</strong> a title-ID ↔ title-string concordance to bind engagement to catalog; synopsis + key-art embeddings; ASR on trailers (the only legally fetchable video).</li>
+        <li><strong>Demo to build:</strong> a sitemap-diff catalog tracker — pull <code>/sitemap/index</code> weekly, diff title IDs to flag adds/removes, enrich each with JSON-LD, attach Top-10 engagement by title-string match, and surface the match-failure rate as the headline metric.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The valuable modalities have no legitimate bulk path:</strong> feature video, dubbed audio, and subtitles are DRM-locked on Open Connect. Plan for metadata + trailers permanently.</li>
+        <li><strong>Engagement data is voluntary and unkeyed:</strong> the Top 10 TSV and the semiannual report are published at Netflix's discretion and key on title strings, not IDs; format changes or discontinuation would break the join.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The AI-crawler allowance is a revocable policy, not a right.</strong> <em>Basis:</em> robots.txt currently grants GPTBot, ClaudeBot, PerplexityBot and OAI-SearchBot the Googlebot allow-list (observed 2026-07-01); that grouping can be removed at any time.</li>
+        <li><strong>Geo-fragmentation:</strong> the catalog differs by country and the sitemap enumerates ~599 locale variants per title; a single-locale crawl under-samples per-country availability.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm">Netflix Q4 2025 shareholder letter (SEC 8-K exhibit 99.1)</a> — FY2025 revenue, operating margin, ad revenue, 325M membership milestone, H2 2025 view hours.</li>
+        <li><a href="https://about.netflix.com/en/news/what-we-watched-the-second-half-of-2025">What We Watched, second half of 2025 (About Netflix)</a> — 96B hours viewed.</li>
+        <li><a href="https://www.cbsnews.com/news/netflix-to-stop-reporting-quarterly-subscriber-numbers-2025/">CBS News</a> and <a href="https://variety.com/2024/tv/news/netflix-stop-reporting-subscriber-numbers-starting-2025-1235975341/">Variety</a> (2024) — Netflix ending quarterly subscriber reporting in 2025, milestones only.</li>
+        <li>Local probes on 2026-07-01: <code>dig</code> and <code>curl</code> against the homepage, headers, robots.txt, the sitemap index and a child sitemap, a title page (JSON-LD), and the Top 10 TSV (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Netflix opens its public catalog metadata to AI crawlers rather than walling it off. <em>Basis:</em> robots.txt lists GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, Google-Extended and Claude-User/Claude-SearchBot in the same <code>Allow: /</code> group as the search engines (observed 2026-07-01).</li>
+        <li>Engagement data cannot be cleanly joined to the catalog. <em>Basis:</em> the Top 10 TSV and the engagement report key on <code>show_title</code>/<code>season_title</code> strings, while title pages key on the numeric title ID; neither dataset carries the other's key.</li>
+        <li>The only legally fetchable video is the trailer. <em>Basis:</em> title-page JSON-LD exposes a <code>trailer.contentUrl</code> (.m3u8) while feature streams sit behind DRM on <code>nflxvideo.net</code> with no public URL.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Exact live title count per country — the sitemap enumerates ~599 locale variants per title but not which titles play where; closeable by crawling per-country title pages and recording availability.</li>
+        <li>Current precise paid-membership count — Netflix now reports only milestones (325M in Q4 2025); a precise figure needs a Netflix disclosure.</li>
+        <li>Episode-level catalog IDs — public pages stop at the title; episode IDs would require the Falcor/reactContext state or a partner feed.</li>
+        <li>Number of titles covered by the "What We Watched" report — the About page gives 96B hours but not a title count; closeable by parsing the downloadable XLSX.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
