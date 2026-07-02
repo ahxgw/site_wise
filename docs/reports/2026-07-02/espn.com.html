@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>espn.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-07-02</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>espn.com</h1>
+      <p class="lede">ESPN walls its article HTML and video behind CloudFront, but leaves the entire structured sports graph open on an unauthenticated, CORS-enabled JSON API.</p>
+      <div class="tag-row">
+        <span class="tag">Sports</span>
+        <span class="tag">Media</span>
+        <span class="tag">Live Data</span>
+        <span class="tag">Streaming</span>
+        <span class="tag">Disney</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>ESPN.com is the United States' dominant sports destination: news, scores, standings, and — since August 2025 — a standalone streaming product that put ESPN's cable networks online without a pay-TV bundle for the first time. The business is carriage-and-advertising media (Disney's Sports segment, $17.7B FY2025 revenue) pivoting to direct subscriptions. For an index builder, the striking fact is architectural: ESPN's editorial HTML and live video are defended by a CloudFront bot wall (Probe Log), yet the same site is backed by a family of <strong>undocumented but wide-open JSON APIs</strong> (<code>site.api.espn.com</code>, <code>sports.core.api.espn.com</code>) that return the full sports entity graph — leagues, seasons, events, plays, teams, athletes, standings — with no key, no rate limit observed, and <code>Access-Control-Allow-Origin: *</code>. The indexable object here is not the page; it is the <strong>event</strong> and the entity graph hung off it. <span class="evidence inferred">inferred</span> ESPN treats structured sports data as a display feed, not a protected asset. <em>Basis:</em> the open CORS API and 6-second scoreboard cache observed in the Probe Log, versus the 403 wall on <code>www.espn.com</code> HTML and <code>sitemap.xml</code>.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>espn.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.espn.com/">https://www.espn.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Sports news, live data, and streaming</dd></div>
+        <div><dt>Related hosts</dt><dd><code>site.api.espn.com</code> &amp; <code>sports.core.api.espn.com</code> (public JSON APIs), <code>a.espncdn.com</code> (media CDN), <code>plus.espn.com</code> / ESPN app (DTC video), <code>fantasy.espn.com</code></dd></div>
+        <div><dt>Owner</dt><dd>The Walt Disney Company 72%, Hearst 18%, NFL 10% — after the NFL-media deal closed Feb 2026 (previously Disney 80% / Hearst 20%)</dd></div>
+        <div><dt>Founded / launched</dt><dd>ESPN network 1979; ESPN.com (as ESPNET SportsZone) 1995</dd></div>
+        <div><dt>Business model</dt><dd>Affiliate/carriage fees + advertising + the new ESPN direct-to-consumer subscription; fantasy and ESPN BET integrations</dd></div>
+        <div><dt>Scale anchor</dt><dd>Disney Sports segment revenue $17.67B, FY2025 (ended Sep 27 2025) (<a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448925000154/fy2025_q4xprxex991.htm">Disney FY2025 Q4 earnings</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (DTC subscriber count, monthly uniques, article corpus size) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Sports segment revenue, FY2025</dt>
+          <dd>$17.67B, flat YoY — as of Sep 27 2025. <a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448925000154/fy2025_q4xprxex991.htm">Disney FY2025 Q4 earnings</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sports segment operating income, FY2025</dt>
+          <dd>$2.88B, +20% YoY (from $2.41B) — as of Sep 27 2025. <a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448925000154/fy2025_q4xprxex991.htm">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>ESPN DTC pricing</dt>
+          <dd>Unlimited $29.99/mo (all 12 networks), Select $11.99/mo — launched Aug 21 2025. <a href="https://espnpressroom.com/us/press-releases/2025/08/espn-launches-new-direct-to-consumer-service-enhanced-espn-app/">ESPN Press Room</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Live events on ESPN DTC</dt>
+          <dd>More than 47,000 per year — as of Aug 21 2025. <a href="https://espnpressroom.com/us/press-releases/2025/08/espn-launches-new-direct-to-consumer-service-enhanced-espn-app/">ESPN Press Room</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>ESPN valuation (NFL deal)</dt>
+          <dd>~$30B implied; NFL received a 10% stake for ~$3B in media assets — deal closed Feb 2026. <a href="https://thewaltdisneycompany.com/press-releases/espn-to-acquire-nfl-network-and-other-media-assets-from-the-nfl-in-exchange-for-a-10-equity-stake-in-espn/">Disney press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sports entity counts (NFL, via core API)</dt>
+          <dd>20,263 all-time NFL athletes; 32 teams; 272 events in the 2025 regular season — as of Jul 2 2026, from <code>sports.core.api.espn.com</code> pagination totals (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-02. Homepage requests used a desktop browser user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-07-02</td><td data-label="Probe"><code>dig +short espn.com / www.espn.com</code></td><td data-label="Observation">espn.com &rarr; 65.8.131.x; www.espn.com &rarr; 13.226.244.x. Both AWS/CloudFront ranges; responses carry <code>via: … cloudfront.net</code>.</td></tr>
+            <tr><td data-label="Date">2026-07-02</td><td data-label="Probe"><code>curl -I https://www.espn.com/</code></td><td data-label="Observation">HTTP 403 from <code>server: CloudFront</code> (<code>x-cache: Error from cloudfront</code>), 919-byte block page — <strong>even with a Chrome user agent</strong>. No HTML served to non-browser clients.</td></tr>
+            <tr><td data-label="Date">2026-07-02</td><td data-label="Probe"><code>curl https://www.espn.com/robots.txt</code></td><td data-label="Observation">141 lines. One <code>Sitemap:</code> pointer (<code>/sitemap.xml</code>). <code>Disallow: /</code> for GPTBot, Google-Extended, CCBot, anthropic-ai, Bytespider, FacebookBot, Omgili(bot), claritybot. Generic <code>*</code> blocks paths (<code>*/boxscore?</code>, <code>*/conversation/</code>, <code>*/login/</code>, <code>watch/*?*</code>, <code>*/print?id</code>) but allows article and scores paths.</td></tr>
+            <tr><td data-label="Date">2026-07-02</td><td data-label="Probe"><code>curl https://www.espn.com/sitemap.xml</code></td><td data-label="Observation">HTTP 403 CloudFront — the sitemap named in robots.txt is itself bot-walled, so no census is possible from an automated client.</td></tr>
+            <tr><td data-label="Date">2026-07-02</td><td data-label="Probe"><code>curl https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard</code></td><td data-label="Observation">HTTP 200 JSON. <code>access-control-allow-origin: *</code>, <code>cache-control: max-age=6</code>. No auth, no key. Returns league (<code>id:28</code>, <code>uid:s:20~l:28</code>), events, competitions, teams, scores.</td></tr>
+            <tr><td data-label="Date">2026-07-02</td><td data-label="Probe"><code>curl https://sports.core.api.espn.com/v2/…/athletes?limit=1</code></td><td data-label="Observation">Pagination totals expose corpus size directly: NFL <code>count:20263</code> athletes, 32 teams, 272 events in 2025 regular season. Each is a stable numeric ID with a self-referential <code>$ref</code> URL.</td></tr>
+            <tr><td data-label="Date">2026-07-02</td><td data-label="Probe"><code>curl https://site.api.espn.com/apis/site/v2/sports/football/nfl/news</code></td><td data-label="Observation">Article objects with <code>id</code>, <code>contentKey</code>, <code>type</code> (HeadlineNews / Story / Media), <code>headline</code>, <code>description</code>, <code>published</code>, <code>lastModified</code>, <code>images[]</code>, <code>categories[]</code>, and a boolean <code>premium</code> flag. Bodies are not in the feed; description only.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. "Core API" = <code>sports.core.api.espn.com</code>; "Site API" = <code>site.api.espn.com</code> — both undocumented and unauthenticated (Probe Log).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Leagues, seasons, events, competitions, plays, teams (32/NFL), athletes (20K+/NFL), venues, standings across ~40 leagues.</td>
+              <td data-label="Best legitimate path">Core API + Site API; every object has an ID and a <code>$ref</code>.</td>
+              <td data-label="Auth &amp; quota">None observed — no key, no rate limit hit.</td>
+              <td data-label="License / display">Open: no published API terms; site <a href="https://disneytermsofuse.com/">Terms of Use</a> bar scraping/commercial reuse (see Risks).</td>
+              <td data-label="Freshness">Scores <code>max-age=6</code> (live); rosters/standings hourly-daily; historical seasons static.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text (articles)</td>
+              <td data-label="Objects &amp; est. count">News stories, HeadlineNews, Media notes. Total corpus size: open.</td>
+              <td data-label="Best legitimate path">Site API <code>/news</code> returns headline + description + links; full body lives in bot-walled HTML.</td>
+              <td data-label="Auth &amp; quota">API none; full-page HTML blocked to non-browsers (403).</td>
+              <td data-label="License / display"><code>premium</code>-flagged items are ESPN+/Insider paywalled; rest are copyrighted editorial.</td>
+              <td data-label="Freshness">Minutes; <code>published</code> / <code>lastModified</code> per article.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Team logos, athlete headshots, photos on <code>a.espncdn.com</code>; URLs embedded in API <code>images[]</code>.</td>
+              <td data-label="Best legitimate path">Hotlink CDN URLs returned by the APIs.</td>
+              <td data-label="Auth &amp; quota">None (public S3 origin).</td>
+              <td data-label="License / display">Copyright/likeness constrained; no bulk-mirror right.</td>
+              <td data-label="Freshness">Logos static (years); photos churn with news.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Live events (47K+/yr), replays, originals on the ESPN DTC app.</td>
+              <td data-label="Best legitimate path">Subscription playback only; <code>/watch</code> query params are robots-disallowed.</td>
+              <td data-label="Auth &amp; quota">ESPN Unlimited $29.99/mo or Select $11.99/mo; DRM.</td>
+              <td data-label="License / display">No indexing/redistribution right; rights-encumbered by league.</td>
+              <td data-label="Freshness">Live + VOD windows set by rights deals.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">ESPN Radio, podcasts (e.g. shows distributed off-site).</td>
+              <td data-label="Best legitimate path">Open: no first-hand feed probed this report.</td>
+              <td data-label="Auth &amp; quota">Open.</td>
+              <td data-label="License / display">Open.</td>
+              <td data-label="Freshness">Open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments</td>
+              <td data-label="Objects &amp; est. count">Article/conversation threads (third-party embed).</td>
+              <td data-label="Best legitimate path">None: <code>*/conversation/</code> and <code>*/conversations/</code> are robots-disallowed.</td>
+              <td data-label="Auth &amp; quota">&mdash;</td>
+              <td data-label="License / display">Not offered for indexing.</td>
+              <td data-label="Freshness">Fast on live games.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where ESPN differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>ESPN's IDs are unusually clean: a compact <code>uid</code> encodes the hierarchy (<code>s:20~l:28~t:{team}~a:{athlete}</code>), and every entity resolves through a self-describing <code>$ref</code> URL. Sport + league + event + competition uniquely key a game; the same athlete carries one ID across every season and team.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>event</strong> (a single game) is the natural unit: it joins competitors, venue, plays, box score, odds, and linked articles. For editorial, the unit is the article keyed by <code>contentKey</code>/<code>id</code>.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Everything joins on the entity IDs: an article's <code>categories[]</code> carry team/athlete/league IDs, so a story links to the same athlete node the box score references. Images join by the same IDs. This is a rare site where text and structured data share one key space.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>For facts (scores, rosters, standings) the API is ground truth and updates faster than the prose. Article bodies are commentary; the structured feed is the record. When a headline and the scoreboard disagree, trust the scoreboard.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Two clocks: live scoreboards carry a 6-second cache and must be polled during games; historical seasons never change. Recrawl by event state (pre/in/post), not by a site-wide cadence.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>The bot wall on HTML plus a blocked sitemap means external crawlers cannot see article bodies at all; only the API's headline/description is reachable. External text indexes of ESPN are structurally thin — the structured graph is the only fully open surface.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Near-zero UGC spam surface: the corpus is first-party editorial and league-sourced stats. Risk is staleness (a missed live poll), not manipulation.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Score checks ("did the Lakers win"), schedule/standings lookups, player stat lines, and fantasy research — all answerable from the structured feed without touching an article.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the event (game) with its entity graph attached; the article as a secondary unit keyed by <code>contentKey</code>.</li>
+        <li><strong>Primary keys &amp; joins:</strong> the <code>uid</code> hierarchy (sport~league~team~athlete) and numeric event/athlete/team IDs; articles join to entities through <code>categories[]</code>.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Core API (<code>sports.core.api.espn.com</code>) — walk league&rarr;season&rarr;events&rarr;athletes via <code>$ref</code>; pagination totals give exact counts. 2) Site API (<code>site.api.espn.com</code>) — scoreboards, news headlines, images. 3) Article bodies — no legitimate bulk path; HTML is 403-walled, sitemap blocked. 4) Video — subscription only, not indexable.</li>
+        <li><strong>Recrawl cadence:</strong> live events every ~10s while in-progress; standings/rosters daily; historical seasons once.</li>
+        <li><strong>Derivatives to generate:</strong> an entity concordance (ESPN IDs &harr; league/Sportradar IDs), event-to-article link graph, headshot/logo embeddings for visual entity resolution.</li>
+        <li><strong>Demo to build:</strong> an event-graph crawler that walks the Core API <code>$ref</code> chain for one league, emits JSONL entity docs with counts, and flags every field that has no documented reuse license.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The open API is undocumented, not licensed.</strong> It has no published terms and no SLA; Disney's <a href="https://disneytermsofuse.com/">Terms of Use</a> prohibit scraping and commercial reuse. Access can be keyed, throttled, or shut off without notice — build for that.</li>
+        <li><strong>Legal exposure is the real wall, not the technical one.</strong> The data flows freely, but redistributing scores/stats commercially invites both ESPN's terms and league data-rights claims (Sportradar/Genius licensing). Display rights, not fetch access, are the constraint.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The AI-crawler block list is stale and partial.</strong> <em>Basis:</em> robots.txt (observed 2026-07-02) blocks GPTBot, anthropic-ai, CCBot, and Bytespider but omits ClaudeBot, PerplexityBot, Applebot-Extended, and Amazonbot — enforcement lags the current agent landscape.</li>
+        <li><strong>Video and premium editorial are moving behind the DTC paywall.</strong> The Aug 2025 launch and the <code>premium</code> flag on articles signal more content gated over time; the free structured surface may narrow.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448925000154/fy2025_q4xprxex991.htm">Disney FY2025 Q4 &amp; full-year earnings (SEC exhibit 99.1)</a> — Sports segment revenue $17.67B and operating income $2.88B, fiscal year ended Sep 27 2025.</li>
+        <li><a href="https://espnpressroom.com/us/press-releases/2025/08/espn-launches-new-direct-to-consumer-service-enhanced-espn-app/">ESPN Press Room: DTC launch</a> — Aug 21 2025 launch, $29.99/$11.99 pricing, 12 networks, 47,000+ events/year.</li>
+        <li><a href="https://thewaltdisneycompany.com/press-releases/espn-to-acquire-nfl-network-and-other-media-assets-from-the-nfl-in-exchange-for-a-10-equity-stake-in-espn/">Disney: ESPN–NFL media deal</a> — NFL 10% equity stake; <a href="https://variety.com/2026/tv/news/disney-nfl-approval-espn-deal-league-investor-1236648201/">Variety</a> for the Feb 2026 close and 72/18/10 ownership split.</li>
+        <li>Local probes on 2026-07-02: <code>dig</code>, <code>curl</code> against homepage, robots.txt, sitemap.xml, and the Site/Core JSON APIs (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>ESPN treats structured sports data as a display feed, not a protected asset. <em>Basis:</em> the unauthenticated CORS-<code>*</code> API with a 6-second scoreboard cache, alongside the 403 wall on HTML and sitemap.xml (Probe Log).</li>
+        <li>The AI-crawler block list is stale/partial. <em>Basis:</em> robots.txt blocks GPTBot/anthropic-ai/CCBot/Bytespider but not ClaudeBot, PerplexityBot, Applebot-Extended, or Amazonbot (observed 2026-07-02).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>ESPN DTC subscriber count — Disney projected 15M by 2027; no reported actual yet. Closeable by a Disney earnings disclosure that breaks out the DTC line.</li>
+        <li>Monthly unique visitors / digital reach — needs a Comscore or Disney-reported figure; no first-party number probed.</li>
+        <li>Total article corpus size and whether full bodies have any licensed feed — the <code>/news</code> API returns only description; measurable only via a rights conversation or an archive dump.</li>
+        <li>Whether the Site/Core APIs enforce any undocumented rate limit at scale — closeable by a controlled load test within terms.</li>
+        <li>Audio (ESPN Radio/podcast) distribution and reuse terms — not probed this report.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
