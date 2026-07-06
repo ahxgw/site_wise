@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gemini.google.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-07-06</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>gemini.google.com</h1>
+      <p class="lede">Gemini is Google's AI assistant with 900M monthly users; the app host has no robots.txt and noindexes even its public shared conversations.</p>
+      <div class="tag-row">
+        <span class="tag">AI Chat Assistant</span>
+        <span class="tag">Freemium Subscription</span>
+        <span class="tag">No robots.txt</span>
+        <span class="tag">Noindexed Share Pages</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Gemini is Google's conversational AI assistant, launched as Bard on 2023-03-21 and renamed Gemini on 2024-02-08, when this host replaced <code>bard.google.com</code>. Owner is Google (Alphabet); the model is monetized three ways: free app usage feeding the wider ecosystem, consumer subscriptions (Google AI Plus / Pro / Ultra), and a separately hosted metered token API (<code>generativelanguage.googleapis.com</code>, not covered here). For an index builder the decisive fact is a two-domain split: <code>gemini.google.com</code> is a pure logged-in app shell, while the crawlable corpus lives on the separate registrable domain <code>gemini.google</code> — a marketing site with open robots and a 4-sitemap index (Probe Log). Where chatgpt.com hides everything behind a Cloudflare transport challenge, Google's approach is quieter: the app host serves HTTP 200 shells with zero server-rendered text, has no robots.txt at all, and marks the one public per-object surface — <code>/share/&lt;id&gt;</code> conversation pages — <code>noindex, nofollow</code>. <span class="evidence inferred">inferred</span> The legitimately indexable Gemini corpus is the marketing domain, not the app host. <em>Basis:</em> robots.txt 404, HEAD 204, and a 770KB app shell with no extractable text on <code>gemini.google.com</code>, versus <code>Allow: /</code> plus a 4,165-URL sitemap on <code>gemini.google</code> (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>gemini.google.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://gemini.google.com/">https://gemini.google.com/</a></dd></div>
+        <div><dt>Category</dt><dd>AI chat assistant — consumer &amp; enterprise SaaS</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>bard.google.com</code> (redirect alias), <code>gemini.google</code> (marketing + sitemaps), <code>g.co/gemini/share/*</code> (share shortlinks), <code>generativelanguage.googleapis.com</code> / <code>aistudio.google.com</code> (developer API, separate product)</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC (Alphabet Inc.); CEO Sundar Pichai</dd></div>
+        <div><dt>Founded / launched</dt><dd>Bard launched 2023-03-21; renamed Gemini with this host 2024-02-08</dd></div>
+        <div><dt>Business model</dt><dd>Free tier + Google AI Plus/Pro/Ultra subscriptions; metered per-token API on a separate host</dd></div>
+        <div><dt>Scale anchor</dt><dd>900M monthly active users — announced 2026-05-19 at Google I/O (Pichai keynote)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing counts (share-link population, Gem directory, AI-tier subscriber split) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Monthly active users</dt>
+          <dd>900M — announced 2026-05-19 at Google I/O; daily requests up 7× year-over-year in the same keynote. <a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/">Google blog (Pichai keynote)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>MAU growth curve</dt>
+          <dd>650M (Q3 2025) → 750M (Q4 2025 earnings, 2026-02-04) → 900M (2026-05-19); roughly +100M/quarter, calculated by Site Wise from the two disclosures. <a href="https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/">TechCrunch</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Subscription pricing</dt>
+          <dd>AI Plus $4.99 / AI Pro $19.99 / AI Ultra $100 (new tier) and $200 (cut from $250) per month — as of 2026-05-19. <a href="https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/">Google blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Gemini 3 launch</dt>
+          <dd>2025-11-18 — current flagship model family, deployed across the app, Search, and the developer stack the same day. <a href="https://blog.google/products/gemini/gemini-3/">Google blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Marketing sitemap census</dt>
+          <dd>4,165 URLs across 4 child sitemaps on <code>gemini.google</code> (29 + 864 + 1,366 + 1,906), collapsing to ~29 unique English pages plus country/locale variants — measured 2026-07-06, calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Workspace share controls</dt>
+          <dd>2026-03 — Workspace admins gained an org-wide toggle for Gemini conversation sharing, off by default for enterprise. <a href="https://workspaceupdates.googleblog.com/2026/03/workspace-admins-can-allow-gemini-app-conversation-for-their-organizations.html">Workspace Updates blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-06. Requests routed through a local HTTP proxy with a French datacenter exit (OVH); DNS results are proxy-mediated and not authoritative, but HTTP-layer signals (status codes, headers, page bytes) are genuine Google responses.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-07-06</td><td data-label="Probe"><code>curl -s https://gemini.google.com/robots.txt</code></td><td data-label="Observation">HTTP 404 — the app host has <strong>no robots.txt at all</strong> (Google's standard 404 page, served directly, never intercepted by the abuse gate). The marketing host <code>gemini.google</code> instead serves a 3-line robots.txt: <code>User-agent: * / Allow: / / Sitemap: …</code> — no AI-crawler blocks anywhere.</td></tr>
+            <tr><td data-label="Date">2026-07-06</td><td data-label="Probe"><code>curl -sI https://gemini.google.com/</code></td><td data-label="Observation">HEAD returns HTTP/2 204 No Content, <code>server: scaffolding on HTTPServer2</code>. GET behavior fluctuated within the hour: first 302 → <code>www.google.com/sorry/…</code> (the reCAPTCHA abuse interstitial, also hit via the WebFetch tool), later plain 200 with a 770KB app shell titled "Google Gemini". <code>/app</code> serves the same shell logged-out — the login wall is client-rendered, not an HTTP redirect.</td></tr>
+            <tr><td data-label="Date">2026-07-06</td><td data-label="Probe">Sitemap census on <code>gemini.google/sitemap.xml</code></td><td data-label="Observation">Sitemap index → 4 children totalling 4,165 URLs (Verified Metrics). <code>sitemap_1</code> holds 29 bare English paths (<code>/overview/deep-research/</code>, <code>/overview/video-generation/</code>, …); children 2–4 repeat the same paths under country prefixes with <code>?hl=</code> params (<code>/ag/…?hl=en</code>, <code>/ae/…?hl=ar</code>).</td></tr>
+            <tr><td data-label="Date">2026-07-06</td><td data-label="Probe">Structured-data sample: <code>curl https://gemini.google/overview/deep-research/</code></td><td data-label="Observation">158KB static page with OG tags and 2 JSON-LD blocks (<code>Organization</code>, <code>VideoObject</code> with full video metadata). Content geo-adapted: served in French to the French exit IP with no locale in the URL.</td></tr>
+            <tr><td data-label="Date">2026-07-06</td><td data-label="Probe">Share-page sample: <code>curl https://gemini.google.com/share/58ae9ebdacdb</code></td><td data-label="Observation">HTTP 200, 770KB app shell. <code>&lt;meta name="robots" content="noindex, nofollow"&gt;</code>; OG title/description are the generic "Gemini - direct access to Google AI" / "Created with Gemini". Tag-stripping the HTML yields <strong>zero</strong> natural-language runs over 80 chars — conversation text is entirely client-rendered.</td></tr>
+            <tr><td data-label="Date">2026-07-06</td><td data-label="Probe">WebSearch <code>site:gemini.google.com/share</code></td><td data-label="Observation">Exactly 1 result (the sample above), with only the generic title — consistent with the noindex directive keeping shared chats out of search engines.</td></tr>
+            <tr><td data-label="Date">2026-07-06</td><td data-label="Probe">Public API sample: <code>curl https://generativelanguage.googleapis.com/v1beta/models</code> (no key)</td><td data-label="Observation">Structured JSON 403 <code>PERMISSION_DENIED</code> ("use API Key…") — the developer API is fully metered, no anonymous surface.</td></tr>
+            <tr><td data-label="Date">2026-07-06</td><td data-label="Probe">Alias checks: <code>curl -L bard.google.com</code>, <code>g.co/gemini/share/abc123</code></td><td data-label="Observation"><code>bard.google.com</code> → 200 at <code>gemini.google.com</code> (redirect alias); <code>g.co/gemini/share/&lt;id&gt;</code> → 302 to <code>gemini.google.com/share/&lt;id&gt;</code>; <code>gemini.google/</code> root → 302 to the app host.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, cost, license/display, and freshness. The decisive fact: every indexable object lives on the marketing domain; everything on the app host is either private, client-rendered, or explicitly noindexed.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Modality">Text (marketing)</td><td data-label="Objects &amp; est. count">~29 unique pages × ~140 locale variants = 4,165 sitemap URLs on <code>gemini.google</code> (Verified Metrics)</td><td data-label="Best legitimate path">Public crawl via open robots + sitemap index</td><td data-label="Auth &amp; quota">None; abuse gate applies to datacenter IPs on the app host, not observed on the marketing host</td><td data-label="License / display">Standard copyright, no reuse grant</td><td data-label="Freshness">Tied to model/feature launches (Gemini 3 2025-11-18, I/O waves)</td></tr>
+            <tr><td data-label="Modality">Text (user conversations)</td><td data-label="Objects &amp; est. count">Private per account; not enumerable</td><td data-label="Best legitimate path">None — logged-in product surface only</td><td data-label="Auth &amp; quota">Google account required; no bulk export on this host (Takeout exports to the user only)</td><td data-label="License / display">User-owned per Google ToS</td><td data-label="Freshness">N/A, not indexable</td></tr>
+            <tr><td data-label="Modality">Text (shared conversations)</td><td data-label="Objects &amp; est. count"><code>/share/&lt;12-hex&gt;</code> pages, population <span class="evidence open">open</span></td><td data-label="Best legitimate path">Direct link + JS render only — HTML carries zero conversation text and <code>noindex, nofollow</code> (Probe Log)</td><td data-label="Auth &amp; quota">No auth to view a known link; links not enumerable</td><td data-label="License / display">Noindex is an explicit no-display policy for search engines; revocable by sharer and (for Workspace) by admins</td><td data-label="Freshness">Ephemeral — deletable; enterprise sharing off by default (Verified Metrics)</td></tr>
+            <tr><td data-label="Modality">Images / video (generated)</td><td data-label="Objects &amp; est. count">Imagen/Veo artifacts embedded in shared chats and marketing pages; no standalone gallery</td><td data-label="Best legitimate path">Inside share pages after JS render; marketing videos described in <code>VideoObject</code> JSON-LD (Probe Log)</td><td data-label="Auth &amp; quota">Same as their carrier page</td><td data-label="License / display">AI-generated, SynthID-watermarked; reuse rights per Google GenAI terms</td><td data-label="Freshness">Follows carrier page</td></tr>
+            <tr><td data-label="Modality">Audio</td><td data-label="Objects &amp; est. count">Gemini Live voice sessions, session-only</td><td data-label="Best legitimate path">None — no persisted retrievable audio objects observed</td><td data-label="Auth &amp; quota">Login required to use</td><td data-label="License / display">N/A</td><td data-label="Freshness">N/A, not indexable</td></tr>
+            <tr><td data-label="Modality">Structured entities (Gems)</td><td data-label="Objects &amp; est. count">Custom agents; no public directory observed, unlike the GPT Store</td><td data-label="Best legitimate path">None found — preset Gems appear only as marketing copy; Gem chats are excluded from sharing (support doc, Sources)</td><td data-label="Auth &amp; quota">Login required</td><td data-label="License / display">N/A</td><td data-label="Freshness">N/A</td></tr>
+            <tr><td data-label="Modality">Model API</td><td data-label="Objects &amp; est. count">Not a corpus — metered inference on <code>generativelanguage.googleapis.com</code></td><td data-label="Best legitimate path">API key, pay-per-token (Probe Log: anonymous call → 403)</td><td data-label="Auth &amp; quota">Free tier + paid quotas</td><td data-label="License / display">Output ownership per API terms</td><td data-label="Freshness">N/A</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <div class="subgrid">
+        <div>
+          <h4>Policy lives in meta tags, not robots.txt</h4>
+          <p>The default assumption is robots.txt AI-crawler blocks; here neither Gemini host blocks anyone at the robots layer (404 and <code>Allow: /</code>, Probe Log). Control is enforced downstream: IP-reputation abuse interstitials at transport, client-side rendering for content, and per-page-class <code>noindex</code> for the only public objects. A robots-only compliance check reads this site as wide open and would be wrong.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Two registrable domains split app and corpus: canonicalize <code>bard.google.com</code> and <code>g.co/gemini/share/*</code> onto <code>gemini.google.com</code>, and strip country dir + <code>hl</code> param on <code>gemini.google</code> to collapse 4,165 sitemap URLs onto ~29 canonical pages. Share IDs are 12-hex tokens — the only stable per-object IDs on the app host.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Share-page OG metadata is deliberately generic ("Created with Gemini") — title and description carry no conversation signal, so the only authoritative field is the JS-rendered transcript itself. Marketing pages invert this: JSON-LD (<code>VideoObject</code>) is richer than the visible copy.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Geo-adaptive serving (French page to a French IP with no locale in the URL, Probe Log) means recrawls from different exits produce spurious diffs; pin crawl geography or diff per-locale URLs only.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <p class="muted">The actionable conclusion: how Site Wise would build the index for this site.</p>
+      <ul>
+        <li><strong>Retrieval unit:</strong> marketing page (bare-path canonical) on <code>gemini.google</code>; shared conversation only as an on-demand, user-supplied-link fetch, never as a bulk-indexed unit.</li>
+        <li><strong>Primary keys &amp; joins:</strong> canonical bare path for marketing pages, joined to locale variants by path+<code>hl</code>; 12-hex share ID for conversations; <code>VideoObject</code> JSON-LD joins marketing video metadata to page text.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>gemini.google</code> sitemap crawl — free, open robots, ceiling is the ~29-page marketing corpus; 2) JS-rendered fetch of individual share links on user demand — works (page is public), but <code>noindex</code> forbids putting results in a public index, so treat as retrieval-time-only; 3) nothing else — conversations, Gems, and generated media have no bulk path; don't budget for them.</li>
+        <li><strong>Recrawl cadence:</strong> marketing pages weekly, tightening around Google launch events (I/O in May, model launches in Nov); sitemap diff monthly for new feature pages.</li>
+        <li><strong>Derivatives to generate:</strong> page-text embeddings for the ~29 canonical pages; harvest <code>VideoObject</code> JSON-LD instead of running ASR on marketing videos. Nothing else is justified.</li>
+        <li><strong>Demo to build:</strong> a canonicalizer that crawls all 4,165 sitemap URLs, content-hashes the rendered text, and proves the corpus collapses to ~29 documents — a measurable test of the locale-dedup rule this report asserts.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li>Share pages are publicly fetchable but explicitly noindexed — indexing them anyway reproduces OpenAI's Aug 2025 shared-chat privacy incident as a deliberate policy violation, not an accident. Google pre-empted the failure mode; a compliant index gets zero shared-conversation coverage by design.</li>
+        <li>The <code>/sorry</code> abuse gate flipped between 302 and 200 for the same URL within one hour of probing — coverage from datacenter IPs is unstable today and could harden to a Cloudflare-style absolute gate without notice.</li>
+        <li>Host churn is proven, not hypothetical: <code>bard.google.com</code> → <code>gemini.google.com</code> (2024-02), and the Assistant continues merging into Gemini — alias tables need active maintenance or joins silently break.</li>
+        <li>Workspace admins can disable conversation sharing org-wide (Verified Metrics), so enterprise share links can die in bulk from a single admin action — any cached share-link fetch has an unbounded revocation rate.</li>
+        <li>An index scoped to <code>gemini.google.com</code> (the ranked host) sees almost nothing; the corpus sits on <code>gemini.google</code>. Domain-scoping logic that treats them as unrelated registrable domains silently drops the entire indexable surface.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/">Google blog, Sundar Pichai I/O 2026 keynote (900M MAU, 2026-05-19)</a></li>
+        <li><a href="https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/">TechCrunch, Gemini passes 750M MAU (Q4 2025 earnings, 2026-02-04)</a></li>
+        <li><a href="https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/">Google blog, AI subscription tiers &amp; pricing (2026-05-19)</a></li>
+        <li><a href="https://blog.google/products/gemini/gemini-3/">Google blog, Gemini 3 launch (2025-11-18)</a></li>
+        <li><a href="https://blog.google/technology/ai/try-bard/">Google blog, Bard launch (2023-03-21)</a></li>
+        <li><a href="https://blog.google/products/gemini/bard-gemini-advanced-app/">Google blog, Bard becomes Gemini (2024-02-08)</a></li>
+        <li><a href="https://support.google.com/gemini/answer/13743730">Gemini Apps Help, "Share your chats" (share-link scope, Gem exclusion)</a></li>
+        <li><a href="https://workspaceupdates.googleblog.com/2026/03/workspace-admins-can-allow-gemini-app-conversation-for-their-organizations.html">Workspace Updates blog, admin sharing controls (2026-03)</a></li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The legitimately indexable Gemini corpus is the marketing domain, not the app host. <em>Basis:</em> robots.txt 404, HEAD 204, and zero extractable text in the app shell on <code>gemini.google.com</code>, versus open robots and a 4,165-URL sitemap on <code>gemini.google</code> (Probe Log).</li>
+        <li>Google deliberately excludes shared conversations from search engines. <em>Basis:</em> <code>noindex, nofollow</code> meta on the sampled share page, deliberately generic OG description, and a <code>site:</code> search returning a single generic-titled result (Probe Log).</li>
+        <li>The abuse interstitial is IP-reputation-based, not path-based. <em>Basis:</em> the same URL returned 302 → <code>/sorry</code> and then 200 within an hour from the same datacenter exit, while robots.txt fetches were never intercepted (Probe Log).</li>
+        <li>Locale sitemap entries are boilerplate duplicates of the ~29 English pages. <em>Basis:</em> child sitemaps 2–4 repeat sitemap 1's path set under country prefixes with <code>hl</code> params (Probe Log).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many <code>/share/</code> links exist — no enumeration path; a Common Crawl / URL-corpus query for <code>gemini.google.com/share/</code> would give a lower bound.</li>
+        <li>Whether Gems have any public or shareable surface at all — would need a logged-in browser session creating and sharing a Gem to inspect the resulting URL shape.</li>
+        <li>Subscriber counts for the AI Plus/Pro/Ultra tiers — Alphabet has not broken these out; would need an earnings disclosure or a court filing.</li>
+        <li>When share pages gained the noindex directive (the one surviving indexed result suggests a pre-noindex window) — an archive.org snapshot series of a share URL would date the change.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
