@@ -44,7 +44,12 @@ AGGREGATED_HOSTS = {
         "match_hosts": ("open.spotify.com",),
         "match_suffixes": (),
         "note": "The web player (open.spotify.com) and the marketing/account domain are analyzed together as Spotify.",
-    }
+    },
+    "whatsapp.com": {
+        "match_hosts": ("web.whatsapp.com",),
+        "match_suffixes": (),
+        "note": "The web client (web.whatsapp.com) is analyzed together as WhatsApp.",
+    },
 }
 
 
