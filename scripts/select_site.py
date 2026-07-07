@@ -50,6 +50,11 @@ AGGREGATED_HOSTS = {
         "match_suffixes": (),
         "note": "The web client (web.whatsapp.com) is analyzed together as WhatsApp.",
     },
+    "steampowered.com": {
+        "match_hosts": ("store.steampowered.com",),
+        "match_suffixes": (),
+        "note": "The storefront (store.steampowered.com) is analyzed together as Steam.",
+    },
 }
 
 
