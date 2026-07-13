@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>support.google.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-07-13</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>support.google.com</h1>
+      <p class="lede">Google's shared Help Center: one domain hosting dozens of per-product article and Q&amp;A namespaces, server-rendering text but injecting structured data only via JS.</p>
+      <div class="tag-row">
+        <span class="tag">Help center</span>
+        <span class="tag">Documentation</span>
+        <span class="tag">Community Q&amp;A</span>
+        <span class="tag">Multi-product</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>support.google.com is Google's unified Help Center: one host serving product-specific documentation and moderated community Q&amp;A for essentially every consumer and business Google product (Accounts, Mail, Drive, Docs, Chrome, Android, YouTube, Ads, Merchant Center, Workspace admin, and more). It carries no separate business model of its own — it is a cost center that reduces paid-support load and supports retention across Google's ad-, subscription-, and cloud-revenue products. <span class="evidence verified">verified</span> The domain has resolved since at least Feb 2002 (earliest Wayback Machine capture, a 302 redirect), well before the current per-product Help Center structure existed. <span class="evidence inferred">inferred</span> Content is organized as two distinct object types sharing one host and product-scoped ID space: authored help articles (<code>/{product}/answer/{id}</code>) and community-authored Q&amp;A threads (<code>/{product}/thread/{id}</code>) with algorithmically flagged "Recommended Answers". <em>Basis:</em> probes below confirm both URL families resolve under the same product prefixes and thread pages embed an automated recommended-answer classifier string.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd>support.google.com</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://support.google.com/">https://support.google.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Vendor help center / documentation + community Q&amp;A</dd></div>
+        <div><dt>Grouped hosts</dt><dd>Not grouped with other Google properties in this report; <code>workspace.google.com</code>, <code>translate.google.com</code>, <code>play.google.com</code>, and <code>gemini.google.com</code> are covered as separate Site Wise reports; <code>support.google.com/a/</code> (Workspace admin help) and <code>support.google.com/workspace/</code> (redirects to <code>/a/</code>) live on this same host</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC (Alphabet Inc., NASDAQ: GOOGL)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Unified Help Center structure predates 2013 consolidation of product-specific help subdomains; exact launch date <span class="evidence open">open</span></dd></div>
+        <div><dt>Business model</dt><dd>Not directly monetized; internal cost/retention infrastructure for Google's ad, subscription, and cloud products</dd></div>
+        <div><dt>Scale anchor</dt><dd>At least 19 distinct product help hubs confirmed reachable by direct probe on 2026-07-13 (Probe Log); no official total is published</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">No official traffic, article-count, or usage figures are published for support.google.com specifically (it is not broken out in Alphabet's SEC filings or in Google's public product-usage disclosures). The counts below are Site Wise's own direct observations, not Google-published metrics, and are logged in the Probe Log rather than restated here as if they were company-reported figures.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Product Experts badge tiers</dt>
+          <dd>Five tiers — Bronze, Silver, Gold, Platinum, Diamond — Bronze auto-granted after regular activity plus one Recommended Answer, higher tiers require Community Manager promotion. As of program page retrieved 2026-07-13. <a href="https://support.google.com/communities/answer/9138806?hl=en">Product Experts Program overview</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Earliest domain record</dt>
+          <dd>2002-02-06, HTTP 302 — as of Wayback Machine CDX query run 2026-07-13. <a href="http://web.archive.org/web/20020206100039/http://support.google.com:80/">Wayback CDX capture</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-13, browser UA unless noted; see the <a href="../../methodology.html">probe playbook</a>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-07-13</td><td data-label="Probe"><code>dig +short support.google.com</code></td><td data-label="Observation">6 A records in Google's own IP space (74.125.142.x / 142.250.99.x, varies by run); no third-party CDN <code>via</code> header on any response — served directly from Google Front End.</td></tr>
+            <tr><td data-label="Date">2026-07-13</td><td data-label="Probe"><code>curl -sI</code> vs <code>curl -s -D -</code> on the same URL</td><td data-label="Observation">HEAD requests return HTTP 404 uniformly (even for pages that exist); GET returns the real HTTP 200 body. <code>server: support-content-ui</code> on every response; CSP is report-only (<code>content-security-policy-report-only</code>), not enforcing.</td></tr>
+            <tr><td data-label="Date">2026-07-13</td><td data-label="Probe"><code>curl -sL https://support.google.com/robots.txt</code></td><td data-label="Observation">7 lines total: <code>Disallow: /*/search</code>, <code>/*/apis</code>, <code>/*/api</code>, <code>/*/bin/search.py</code>, <code>/bin/search.py</code>, <code>/bin/search.go</code>, <code>/*/forum-attachment</code>. No <code>Sitemap:</code> directive. No named-crawler rules for GPTBot, ClaudeBot, Google-Extended, or any other AI agent — a delta from the methodology's default (most major platforms explicitly ban AI crawlers by name; this host doesn't mention any).</td></tr>
+            <tr><td data-label="Date">2026-07-13</td><td data-label="Probe"><code>/sitemap.xml</code>, <code>/sitemap_index.xml</code>, <code>/llms.txt</code></td><td data-label="Observation">All three return HTTP 301 to <code>https://support.google.com/</code> (Google's catch-all "not found" redirect for this host) — no public sitemap or llms.txt surface.</td></tr>
+            <tr><td data-label="Date">2026-07-13</td><td data-label="Probe">Structured-data sample: <code>curl</code> a rendered help article (<code>/accounts/answer/27441</code>) and a community thread (<code>/mail/thread/235488034</code>), grep for <code>application/ld+json</code></td><td data-label="Observation">Zero JSON-LD blocks in the raw HTML for either page type. Both pages instead carry a minified JS function that builds a <code>&lt;script type="application/ld+json"&gt;</code> element at runtime — <code>VideoObject</code> schema for embedded videos, <code>QAPage</code> schema for threads. A non-JS crawler gets no structured data from either page type. Article body text and <code>&lt;meta name="description"&gt;</code>, by contrast, are present in the raw server-rendered HTML.</td></tr>
+            <tr><td data-label="Date">2026-07-13</td><td data-label="Probe">ID-namespace test: <code>/accounts/answer/27441</code> (200) vs. <code>/mail/answer/27441</code> (404, "Sorry, this page can't be found")</td><td data-label="Observation">Numeric answer IDs are scoped per product hub, not global — the join key is (product prefix, answer ID), not answer ID alone.</td></tr>
+            <tr><td data-label="Date">2026-07-13</td><td data-label="Probe">Locale test: same URL with <code>?hl=en</code> / <code>?hl=es</code> / <code>?hl=ja</code></td><td data-label="Observation">Each returns a distinct localized <code>&lt;title&gt;</code> and a locale-specific <code>rel="canonical"</code> (e.g. <code>...?hl=en&amp;co=GENIE.Platform%3DDesktop</code>) — locale is a query param, not a subdomain or path segment, and each locale self-canonicalizes rather than being consolidated. No <code>hreflang</code> alternate-link tags found in the head.</td></tr>
+            <tr><td data-label="Date">2026-07-13</td><td data-label="Probe">Product-hub sweep: <code>curl -o /dev/null -w '%{http_code}'</code> against 19 candidate product prefixes</td><td data-label="Observation">17 of 19 resolve directly (200): <code>accounts, mail, drive, docs, calendar, chrome, android, youtube, maps, photos, websearch, chromebook, pixelphone, adsense, analytics, ads, merchants</code>. 2 redirect (301) to a canonical path: <code>workspace</code> → <code>/a/</code>, <code>a</code> → itself (Workspace admin help lives at <code>/a/</code>).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third party may display, and how fast it churns.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Help articles (<code>/{product}/answer/{id}</code>), server-rendered title, description, and step-by-step body per product per locale. Total article count: <span class="evidence open">open</span>.</td>
+              <td data-label="Best legitimate path">Direct HTTP GET (Probe Log: text is present without JS execution); no public bulk export or Content API.</td>
+              <td data-label="Auth &amp; quota">None required for individual pages; no documented bulk-download quota because no bulk API exists.</td>
+              <td data-label="License / display">No stated reuse/redistribution license for article text; Google's general site Terms of Service govern use, not a developer program.</td>
+              <td data-label="Freshness">Edited silently on product changes; no visible "last updated" timestamp observed on the sampled article.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Community Q&amp;A</td>
+              <td data-label="Objects &amp; est. count">Threads (<code>/{product}/thread/{id}</code>) with replies, algorithmic "Recommended Answer" flag, and Product Expert badge (Bronze–Diamond) on repliers. Observed thread IDs from a <code>site:</code> sample span ~5.8M to ~329M, suggesting tens of millions of threads platform-wide (rough, unverified lower bound).</td>
+              <td data-label="Best legitimate path">Direct HTTP GET per thread; body text server-rendered same as articles.</td>
+              <td data-label="Auth &amp; quota">None for reading; posting requires a Google account.</td>
+              <td data-label="License / display">Same general-ToS basis as articles; no explicit community-content API or license grant found.</td>
+              <td data-label="Freshness">Threads stay open for replies indefinitely; recommended-answer flag can change as new replies arrive (per the in-page tooltip text observed in the Probe Log).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Inline screenshots/diagrams embedded in article bodies; no separate image gallery observed.</td>
+              <td data-label="Best legitimate path">Standard <code>&lt;img&gt;</code> URLs inside rendered article HTML.</td>
+              <td data-label="Auth &amp; quota">None documented.</td>
+              <td data-label="License / display">No explicit reuse license found; treat as ToS-bound like article text.</td>
+              <td data-label="Freshness">Tied to article edit cadence.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Embedded YouTube videos on some articles, described via the client-injected <code>VideoObject</code> JSON-LD (Probe Log).</td>
+              <td data-label="Best legitimate path">Public YouTube oEmbed/Data API against the embedded video ID once extracted (requires JS execution to obtain the ID from the injected schema, or DOM inspection of the iframe <code>src</code>).</td>
+              <td data-label="Auth &amp; quota">Standard YouTube Data API key + quota (see the youtube.com report).</td>
+              <td data-label="License / display">Standard YouTube embed terms; the video itself is a YouTube object, not a support.google.com asset.</td>
+              <td data-label="Freshness">Low; help videos are rarely replaced.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count"><code>QAPage</code> (threads) and <code>VideoObject</code> (embedded video) schema.org markup; Product Expert reputation tier per community author.</td>
+              <td data-label="Best legitimate path">Requires JS execution — a headless renderer, not a plain HTTP client (Probe Log: zero JSON-LD in raw HTML for either sampled page type).</td>
+              <td data-label="Auth &amp; quota">None documented; no API, only client-side rendering.</td>
+              <td data-label="License / display">schema.org markup is Google's own SEO signal to itself and other search engines; no separate license needed to read it once rendered.</td>
+              <td data-label="Freshness">Recomputed on each page render from the same server data; not separately versioned.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The stable ID is a compound key: (product prefix, answer or thread ID), e.g. <code>accounts/answer/27441</code>. The same numeric ID is reused across unrelated products (Probe Log: <code>mail/answer/27441</code> 404s), so a global numeric index without the product prefix will silently collide.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Two distinct units on one host: the <strong>article</strong> (authored, single accepted answer) and the <strong>thread</strong> (community, many replies plus one algorithmically flagged Recommended Answer). Treating both as the same document type loses the trust-tier signal that only threads carry.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Locale variants of the same article join on (product, answer ID) with <code>hl</code> stripped — but there is no <code>hreflang</code> markup to discover siblings; an indexer must enumerate <code>?hl=</code> values itself. Embedded videos join to YouTube via the video ID inside the JS-injected <code>VideoObject</code>, which requires rendering, not just fetching, the page.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Article body text is server-rendered and authoritative for facts; the <code>QAPage</code>/<code>VideoObject</code> JSON-LD is a derived, client-only annotation of the same content, not an independent source — don't index it as if it were separately authored.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Articles: silent edits on product changes, no visible last-modified date on the sampled page — recrawl on a fixed schedule since there's no changed-since signal. Threads: reply-driven, open-ended; the Recommended Answer flag can flip after recrawl as new replies arrive.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Community answers carry two built-in trust signals absent from generic forums: the algorithmic Recommended Answer flag (explicitly described in-page as automated, not purely vote-based) and the five-tier Product Expert badge (Bronze auto-granted, Gold+ requires Community Manager promotion) — both extractable from rendered thread HTML and usable as a ranking feature without separate moderation infrastructure.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>robots.txt blocks the on-site search results path (<code>/*/search</code>) for all crawlers, so external indexes cannot mirror Google's own on-site search ranking — they must crawl and rank answer/thread pages independently rather than reusing Google's relevance signal.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Troubleshooting and how-to intent tied to a specific product ("gmail not syncing android"), distinct from Amazon/YouTube-style discovery queries — high value for a support/FAQ-oriented retrieval slice of a general index, low value for entity or media search.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> article and thread as separate document types, each keyed by (product prefix, numeric ID); locale variants attached as sub-records, not separate documents.</li>
+        <li><strong>Primary keys &amp; joins:</strong> (product, id, type) as the primary key; <code>hl</code> enumerated separately per locale since no <code>hreflang</code> exists to discover it automatically; embedded videos joined via YouTube video ID extracted post-render.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Direct HTTP GET of answer/thread pages — full text available with no JS, no auth, no documented rate limit encountered in this probe run, but also no bulk listing endpoint, so URLs must be discovered externally (search-engine indexes, product cross-links, or a seed list per product). 2) Headless render — only path to the <code>QAPage</code>/<code>VideoObject</code> schema and any client-fetched supplementary data. 3) No API track exists for this host, unlike Amazon/YouTube-style platforms — there is nothing to apply for.</li>
+        <li><strong>Recrawl cadence:</strong> articles monthly (no changed-since signal observed, so cadence is a guess against typical help-doc edit rates); active threads weekly while reply count is climbing, then quarterly once quiet.</li>
+        <li><strong>Derivatives to generate:</strong> per-product FAQ clusters from article titles; Recommended-Answer + Product-Expert-tier as a pre-computed trust score for thread replies; locale-normalized canonical article grouping (dedup the <code>?hl=</code> variants Google itself treats as separate pages).</li>
+        <li><strong>Demo to build:</strong> a small crawler that fetches a seed list of answer/thread URLs, diffs plain-HTTP output against a headless-rendered one, and reports exactly which fields (schema.org type, video ID, Recommended-Answer flag) are only recoverable after JS execution — makes the SSR/CSR split in the Probe Log concrete and reproducible.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>No bulk discovery path:</strong> with no sitemap, no <code>llms.txt</code>, and no Content API, the only way to discover the full article/thread set is external (search-engine backlinks, product cross-links, or manual seed lists) — coverage is structurally partial, not a temporary gap.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Structured-data extraction requires a headless renderer as a hard dependency, not an optimization.</strong> <em>Basis:</em> zero JSON-LD found in raw HTML for both sampled page types (Probe Log); the schema is built by a JS function that runs only in a DOM environment.</li>
+        <li><strong>No AI-crawler-specific policy:</strong> unlike Amazon and other major platforms, this host's robots.txt names no AI agents at all (Probe Log) — a future policy change here would be a first-seen signal, not an incremental tightening, since there's currently nothing to tighten from.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://support.google.com/communities/answer/9138806?hl=en">Google Product Experts Program overview</a> — badge tiers and promotion rules.</li>
+        <li><a href="http://web.archive.org/web/20020206100039/http://support.google.com:80/">Wayback Machine CDX record for support.google.com</a> — earliest capture, 2002-02-06.</li>
+        <li>Local probes on 2026-07-13: <code>dig</code>, <code>curl</code> (HEAD and GET) against the homepage, robots.txt, sitemap/llms.txt paths, a sampled help article (<code>accounts/answer/27441</code>), a sampled community thread (<code>mail/thread/235488034</code>), a cross-product ID-collision test, a locale test, and a 19-prefix product-hub sweep (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Structured-data extraction requires a headless renderer as a hard dependency. <em>Basis:</em> zero <code>application/ld+json</code> blocks in raw HTML for either sampled page type; the schema-building code is a minified JS function invoked at runtime, observed identically on both the article and thread samples.</li>
+        <li>The unified Help Center structure predates 2013 consolidation of product-specific help subdomains. <em>Basis:</em> domain resolves as early as Feb 2002 in the Wayback Machine CDX index (as a redirect, pre-dating the current per-product path structure) — treated as a loose historical anchor, not a launch date, hence still flagged open in Context.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total help-article and community-thread count across all products — closeable only with an internal Google source; no public API or sitemap exists to sweep it externally.</li>
+        <li>Exact launch date of the current unified <code>support.google.com</code> structure (vs. legacy per-product help subdomains) — no official Google announcement found; would need a Google blog post or Search Central archive citation.</li>
+        <li>Total number of supported locales via <code>?hl=</code> — only en/es/ja were spot-checked; a full list would require enumerating the client-rendered language-selector data.</li>
+        <li>Total number of distinct product hubs under this host — 19 were checked directly; no directory page enumerating all of them was found.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
