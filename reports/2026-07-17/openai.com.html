@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>openai.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-07-17</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>openai.com</h1>
+      <p class="lede">openai.com is OpenAI's corporate site: a Cloudflare bot-management wall blocks every HTML page fetch, leaving a 1,038-item RSS archive as the only public bulk-text channel.</p>
+      <div class="tag-row">
+        <span class="tag">AI Research Lab</span>
+        <span class="tag">Corporate Blog</span>
+        <span class="tag">Model Provider</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>openai.com is the corporate, research, and product-marketing site of OpenAI, developer of ChatGPT and the GPT model family. The nonprofit OpenAI Foundation controls OpenAI Group PBC, the public-benefit for-profit subsidiary that runs the commercial business; the conversion completed Oct 28 2025, with Microsoft taking a 27% stake. Revenue comes from ChatGPT subscriptions plus metered API usage; the company closed a $122B funding round at an $852B valuation on Mar 31 2026 and reported $25B+ in annualized revenue as of end-Feb 2026. For an index builder, this host is almost entirely unreachable by ordinary automated fetch: Cloudflare's bot-management layer returned a 403 challenge for every sampled HTML page &mdash; homepage and article alike &mdash; regardless of user agent, while <code>robots.txt</code>, <code>sitemap.xml</code>, and a 1,038-item RSS feed stayed open. <span class="evidence inferred">inferred</span> That split looks like a deliberate content-type policy rather than a network fluke. <em>Basis:</em> four fetch attempts across two URLs and three methods (default-UA curl, Googlebot-UA curl, WebFetch) all returned identical <code>cf-mitigated: challenge</code> headers, while every non-HTML asset path tried (robots.txt, sitemap.xml, RSS, bot-IP JSON) returned 200 (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>openai.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://openai.com/">https://openai.com/</a></dd></div>
+        <div><dt>Category</dt><dd>AI research lab &mdash; corporate site, newsroom/blog, and marketing funnel</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>chatgpt.com</code> is the consumer product surface and has its own 2026-07-05 report; <code>api.openai.com</code>, <code>platform.openai.com</code>, and <code>developers.openai.com</code> are the developer/API surface and are out of scope here (<code>developers.openai.com</code> was fetched once, only for its crawler-policy page); <code>community.openai.com</code> (developer forum) was not probed.</dd></div>
+        <div><dt>Owner</dt><dd>OpenAI Foundation (nonprofit), controlling OpenAI Group PBC (public benefit corporation); Microsoft holds ~27% of the PBC</dd></div>
+        <div><dt>Founded / launched</dt><dd>Dec 11 2015 public launch &mdash; matches the earliest item in this session's RSS probe</dd></div>
+        <div><dt>Business model</dt><dd>ChatGPT subscriptions (Plus/Pro/Team/Enterprise) + metered API usage + enterprise agreements</dd></div>
+        <div><dt>Scale anchor</dt><dd>$25B+ annualized revenue as of end-Feb 2026 (<a href="https://finance.yahoo.com/news/openai-tops-25-billion-annualized-033836274.html">Reuters via Yahoo Finance, citing The Information</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Employee headcount has no single official figure and lives once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>ChatGPT weekly active users</dt>
+          <dd>900M &mdash; announced by OpenAI, as of Feb 27 2026. <a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/">TechCrunch</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Annualized revenue run-rate</dt>
+          <dd>$25B+, up from $21.4B at end of 2025 &mdash; as of end-Feb 2026, per The Information. <a href="https://finance.yahoo.com/news/openai-tops-25-billion-annualized-033836274.html">Reuters via Yahoo Finance</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Funding round / valuation</dt>
+          <dd>$122B raised, closed at an $852B post-money valuation &mdash; Mar 31 2026. <a href="https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html">CNBC</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Corporate restructuring</dt>
+          <dd>PBC conversion completed Oct 28 2025; Microsoft holds 27% of OpenAI Group PBC. <a href="https://www.cnbc.com/2025/10/28/open-ai-for-profit-microsoft.html">CNBC</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap census</dt>
+          <dd>1,705 URLs across 34 child sitemaps &mdash; as of 2026-07-17, calculated by Site Wise from the Probe Log fetch. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>RSS archive size</dt>
+          <dd>1,038 published items spanning Dec 11 2015 to Jul 16 2026 &mdash; as of 2026-07-17, calculated by Site Wise from the <code>news/rss.xml</code> Probe Log fetch. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-17.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-17</td><td><code>dig +short openai.com</code>; <code>dig +short NS openai.com</code></td><td>A records are Cloudflare anycast IPs (172.64.154.211, 104.18.33.45); authoritative nameservers are Microsoft Azure DNS (<code>ns1-02.azure-dns.com</code> etc.) &mdash; domain delegation sits on Azure while the live site fronts through Cloudflare. CAA records permit six CAs (Google, DigiCert, Amazon, Let's Encrypt, GoDaddy, Sectigo), not a restrictive policy.</td></tr>
+            <tr><td>2026-07-17</td><td><code>curl -sI https://openai.com/</code></td><td>HTTP/2 403. <code>server: cloudflare</code>, <code>cf-mitigated: challenge</code> &mdash; the homepage itself is intercepted by Cloudflare bot management before any app response is served.</td></tr>
+            <tr><td>2026-07-17</td><td><code>curl -sL https://openai.com/robots.txt</code></td><td>4 substantive lines: <code>User-agent: *</code>, <code>Allow: /</code>, <code>Disallow: /microsoft-for-startups/</code>, <code>Sitemap: https://openai.com/sitemap.xml</code>. No named AI-crawler rules (no GPTBot/ClaudeBot/PerplexityBot/etc.).</td></tr>
+            <tr><td>2026-07-17</td><td>Bot-wall confirmation: fetch <code>/index/accelerating-the-next-phase-ai/</code> via (a) curl default UA, (b) curl spoofing Googlebot's UA, (c) the WebFetch tool</td><td>All three returned HTTP 403 with <code>cf-mitigated: challenge</code>, identical to the homepage result. User-agent spoofing does not bypass the gate.</td></tr>
+            <tr><td>2026-07-17</td><td>Sitemap census: fetch <code>sitemap.xml</code>, then each of its 34 child sitemaps, count <code>&lt;loc&gt;</code></td><td>34 child sitemaps sum to 1,705 URLs: company 230, publication 192, product 164, global-affairs 142, safety 103, release 78, research 43, security 39, milestone 36, openai-academy 30, engineering 18, page 443, plus 20 smaller verticals.</td></tr>
+            <tr><td>2026-07-17</td><td><code>curl -s https://openai.com/news/rss.xml</code></td><td>200. 1,038-item archive, earliest <code>pubDate</code> Fri 11 Dec 2015, latest matching same-day sitemap activity. Each item carries title, description, link, one of 19 <code>category</code> tags, and pubDate; top categories: Research 193, Company 190, Product 142, Global Affairs 99.</td></tr>
+            <tr><td>2026-07-17</td><td>Fetch <code>developers.openai.com/api/docs/bots</code> (separate host, not challenged)</td><td>Documents three OpenAI-operated crawlers &mdash; OAI-SearchBot, OAI-AdsBot, GPTBot &mdash; each independently controllable via a site's own robots.txt and each with a published IP-range JSON (<code>openai.com/searchbot.json</code>, <code>openai.com/gptbot.json</code>, both fetched 200).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third party may display, and how fast it churns.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>1,705 sitemap-listed pages; 1,038 of them are RSS-archived posts/articles (Probe Log).</td>
+              <td><code>news/rss.xml</code> is the only bulk channel that returns content: title + description + category + pubDate per item. The article body itself has no observed legitimate path &mdash; every direct page fetch (curl default UA, curl spoofed Googlebot UA, WebFetch) hit the Cloudflare challenge.</td>
+              <td>None documented for RSS/sitemap; the HTML pages are gated by a CDN bot check, not a credential, so there is no quota to negotiate.</td>
+              <td>Standard web copyright; no bulk-reuse terms published.</td>
+              <td>RSS reflects same-day publishing (Jul 16 items present in a Jul 17 fetch); full archive stable back to 2015.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td><span class="evidence open">open</span> &mdash; not observed.</td>
+              <td><span class="evidence open">open</span></td>
+              <td>&mdash;</td>
+              <td>&mdash;</td>
+              <td><span class="evidence open">open</span></td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td><span class="evidence open">open</span> &mdash; not observed (sitemap lists a 4-URL <code>/sora/</code> vertical, but page content is unreachable this session).</td>
+              <td><span class="evidence open">open</span></td>
+              <td>&mdash;</td>
+              <td>&mdash;</td>
+              <td><span class="evidence open">open</span></td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td><span class="evidence open">open</span> &mdash; not observed.</td>
+              <td><span class="evidence open">open</span></td>
+              <td>&mdash;</td>
+              <td>&mdash;</td>
+              <td><span class="evidence open">open</span></td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td><span class="evidence inferred">inferred</span> None. <em>Basis:</em> the RSS item schema (Probe Log) carries no comment-related elements (no <code>wfw:commentRss</code>, no reply/comment count field) across all 1,038 sampled items.</td>
+              <td>&mdash;</td>
+              <td>&mdash;</td>
+              <td>&mdash;</td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>19-tag category taxonomy across the RSS archive (Probe Log); on-page JSON-LD is <span class="evidence open">open</span> &mdash; not observed.</td>
+              <td>RSS <code>category</code> field, readable without any page fetch.</td>
+              <td>None.</td>
+              <td>OpenAI's own taxonomy, not third-party.</td>
+              <td>Assigned at publish time; low churn per item once published.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Canonical key is the <code>/index/{slug}/</code> path, shared by the sitemap <code>&lt;loc&gt;</code> and the RSS <code>&lt;guid&gt;</code>. Locale variants appear as <code>/{locale}/index/{slug}/</code> via <code>xhtml:link</code> alternates in the sitemap (8+ locales seen in one sampled entry, e.g. de-DE, id-ID, el-GR, zh-Hant, pl-PL); strip the locale prefix to reach the canonical page.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The individual post at <code>/index/{slug}/</code>. Its metadata (sitemap lastmod + locale alternates, RSS title/description/category/pubDate) is retrievable; the body text is not, since every page-render fetch this session hit the Cloudflare challenge.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>RSS <code>&lt;guid&gt;</code> equals the canonical (non-locale) sitemap <code>&lt;loc&gt;</code> &mdash; the two feeds join on exact URL. No image/video join key was confirmed (Open Questions).</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>RSS <code>&lt;description&gt;</code> is a one-sentence marketing summary, not the article body &mdash; even the accessible channel yields metadata, not full text (Probe Log RSS sample).</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>RSS is append-only and same-day fresh; a baseline crawl of the 1,038 existing items plus daily RSS polling captures every new post with no gap, independent of the blocked HTML layer.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Single-publisher corporate/research blog, no UGC on this host &mdash; no spam-manipulation surface here (Access Matrix).</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><span class="evidence open">open</span> &mdash; the on-site search UI lives on the blocked HTML page and was not observable this session.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p><span class="evidence inferred">inferred</span> Model-release/system-card lookups, safety/policy-position queries, and enterprise case-study queries. <em>Basis:</em> Research (193), Company (190), Product (142), and Global Affairs (99) are the four largest categories in the 1,038-item RSS archive (Probe Log).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> RSS item / sitemap URL, keyed by the canonical (non-locale) <code>/index/{slug}/</code> path.</li>
+        <li><strong>Primary keys &amp; joins:</strong> canonical path stripped of any <code>/{locale}/</code> prefix; RSS <code>&lt;guid&gt;</code> matches sitemap <code>&lt;loc&gt;</code> exactly.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Poll <code>news/rss.xml</code> (unauthenticated, 1,038-item full archive, same-day updates) for title/description/category/pubDate &mdash; the only channel that isn't CDN-challenged. 2) Sitemap-diff the 34 child sitemaps for lastmod-based change detection and locale-alternate discovery, without rendering the page. 3) Full-text ingestion of the article body has no observed legitimate path this session &mdash; every direct page fetch (curl, spoofed-UA curl, WebFetch) hit Cloudflare's challenge; the only realistic route is a general search engine's own cache/snippet, not a first-party crawl.</li>
+        <li><strong>Recrawl cadence:</strong> RSS/sitemap poll daily (new items publish same-day); no cadence applies to body text since it isn't ingestible through any path found this session.</li>
+        <li><strong>Derivatives to generate:</strong> none justified beyond embedding the RSS description sentence itself for topic classification against the existing 19-tag taxonomy as labels &mdash; there is no body text to run ASR/OCR against yet.</li>
+        <li><strong>Demo to build:</strong> an RSS-plus-sitemap join watcher &mdash; poll <code>rss.xml</code>, match each item's <code>guid</code> against the sitemap's locale-alternate list, and report "this post has N locale variants, published/updated on DATE" purely from metadata, never touching the challenged HTML endpoint.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>CDN-layer bot wall, not a robots.txt policy:</strong> a Cloudflare bot-management challenge blocked 100% of sampled HTML page fetches (2 curl UAs + WebFetch, across 2 URLs) while robots.txt/sitemap.xml/RSS/bot-IP-JSON stayed open &mdash; a far harder gate than a disallow rule, since a well-behaved crawler has nothing in <code>robots.txt</code> to respect or negotiate around (Probe Log).</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The HTML/asset split looks deliberate, not incidental.</strong> <em>Basis:</em> 4 independent fetch attempts across 2 URLs and 3 methods all returned identical <code>cf-mitigated: challenge</code> headers, while every non-HTML path tried returned 200 (Probe Log).</li>
+        <li><strong>Revenue/valuation figures are third-party-attributed:</strong> $25B ARR traces to The Information via Reuters, not an openai.com disclosure page reachable this session; a post-IPO 10-K would be a more authoritative but structurally different source to re-point citations to.</li>
+        <li><strong>Reciprocity asymmetry:</strong> OpenAI operates three named crawlers (GPTBot, OAI-SearchBot, OAI-AdsBot) that other sites choose to allow or block via robots.txt, while openai.com's own CDN blocks equivalent inbound automated fetches outright &mdash; an indexer relying on crawler reciprocity norms gets no default access here.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/">TechCrunch, "ChatGPT reaches 900M weekly active users"</a> (Feb 27 2026).</li>
+        <li><a href="https://finance.yahoo.com/news/openai-tops-25-billion-annualized-033836274.html">Reuters via Yahoo Finance, "OpenAI tops $25 billion in annualized revenue, The Information reports"</a> (Mar 2026).</li>
+        <li><a href="https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html">CNBC, "OpenAI closes funding round at an $852 billion valuation"</a> (Mar 31 2026).</li>
+        <li><a href="https://www.cnbc.com/2025/10/28/open-ai-for-profit-microsoft.html">CNBC, "OpenAI completes restructure, solidifying Microsoft as a major shareholder"</a> (Oct 28 2025).</li>
+        <li><a href="https://developers.openai.com/api/docs/bots">developers.openai.com, "Overview of OpenAI Crawlers"</a> (fetched 2026-07-17).</li>
+        <li>Local probes on 2026-07-17: DNS/NS/CAA lookups, header fetch, robots.txt, a 4-method/2-URL bot-wall confirmation test, full sitemap census across 34 child sitemaps, and an RSS archive fetch (full detail in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The HTML/asset fetch split is a deliberate Cloudflare policy, not a fluke. <em>Basis:</em> 4 fetch attempts (2 curl UAs + WebFetch) across 2 URLs all returned identical <code>cf-mitigated: challenge</code>, observed 2026-07-17.</li>
+        <li>No comments/UGC on this host. <em>Basis:</em> the RSS item schema carries no comment-related elements across all 1,038 sampled items, observed 2026-07-17.</li>
+        <li>User query profile skews toward research/company/safety/enterprise intent. <em>Basis:</em> Research, Company, Product, and Global Affairs are the four largest of 19 RSS categories, observed 2026-07-17.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Employee headcount &mdash; no OpenAI-published figure found this session; secondary estimates range from ~4,500 (Financial Times, Mar 2026) to 7,850 (Revelio Labs, Dec 2025) to an 8,000 year-end target (Engadget); closeable by an official careers-page or SEC-filing disclosure.</li>
+        <li>Article body text, images, video, and on-page JSON-LD &mdash; none observed: every HTML page fetch (curl default UA, curl spoofed Googlebot UA, WebFetch) hit Cloudflare's challenge; closeable only via a browser-automation fetch that can pass the JS/TLS challenge, or a search engine's cached rendering.</li>
+        <li>On-site search behavior &mdash; not observable for the same reason.</li>
+        <li>Whether GPTBot/OAI-SearchBot/ClaudeBot etc. are let through the Cloudflare challenge layer specifically (robots.txt names no rule for them, but the CDN gate is a separate layer from robots.txt) &mdash; closeable only by a live crawl attempt using each bot's actual published user agent and IP range.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
