@@ -35,6 +35,11 @@ AGGREGATED_HOSTS = {
         "match_suffixes": (".wikipedia.org",),
         "note": "Language editions are analyzed together as Wikipedia.",
     },
+    "pornhub.com": {
+        "match_hosts": (),
+        "match_suffixes": (".pornhub.com",),
+        "note": "Locale subdomains (es., it., etc.) are analyzed together as Pornhub.",
+    },
     "yelp.com": {
         "match_hosts": ("m.yelp.com",),
         "match_suffixes": (),
