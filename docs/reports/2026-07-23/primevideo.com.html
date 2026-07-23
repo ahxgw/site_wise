@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>primevideo.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-07-23</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>primevideo.com</h1>
+      <p class="lede">Prime Video, Amazon's bundled streaming service, reaches 315M+ monthly viewers — but its catalog metadata lives only in undocumented page JSON, not any public API.</p>
+      <div class="tag-row">
+        <span class="tag">Streaming Video</span>
+        <span class="tag">SVOD/AVOD</span>
+        <span class="tag">Amazon Prime</span>
+        <span class="tag">GTI Graph</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Prime Video is Amazon's video-streaming subsidiary, bundled into Prime membership and carrying ads by default since Jan 29, 2024 unless the subscriber pays for the $4.99/mo Ultra add-on (Verified Metrics). Unlike amazon.com retail, the public site serves full HTML with no AWS WAF JS challenge (Probe Log). Every title carries a stable internal ID, the GTI (<code>amzn1.dv.gti.&lt;uuid&gt;</code>), and X-Ray cast/crew data draws on Amazon-owned IMDb, but no PA-API-equivalent exists for video: the only place catalog metadata (synopsis, cast, genres, maturity rating, audio/subtitle tracks, rating average) appears is inline React SSR JSON on each detail page — undocumented, unversioned, and not exposed as schema.org markup (Probe Log). Reviews route through Amazon's retail ASIN system: each title's review link resolves to an <code>amazon.com/product-reviews/{ASIN}</code> URL, joining the GTI namespace to the retail catalog. For an index builder the interesting object is the title (season/episode GTI), not the page; there is no legitimate bulk path to any modality beyond what a browser renders.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>primevideo.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.primevideo.com/">https://www.primevideo.com/</a> (logged-out visitors 302 to <code>/offers/nonprimehomepage</code>, Probe Log)</dd></div>
+        <div><dt>Category</dt><dd>SVOD + AVOD streaming video, an Amazon Prime membership benefit</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>m.media-amazon.com</code> (poster/cover-art CDN, shared with amazon.com retail); legacy <code>amazon.com/gp/video</code> paths resolve into the same product</dd></div>
+        <div><dt>Owner</dt><dd>Amazon.com, Inc. (NASDAQ: AMZN)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Sept 7, 2006 as Amazon Unbox; renamed Prime Video in 2018</dd></div>
+        <div><dt>Business model</dt><dd>Bundled with Prime membership + in-stream ads by default + $4.99/mo Ultra ad-free/4K add-on + title rent-or-buy (PVOD/TVOD) + third-party Channels add-ons</dd></div>
+        <div><dt>Scale anchor</dt><dd>315M+ global monthly ad-supported viewers, Sep 2024–Aug 2025 measurement window (<a href="https://advertising.amazon.com/library/news/unboxed-2025-recap">Amazon Ads, unBoxed 2025 recap</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics that have an actual figure. Each card: value, as-of date, source link, evidence tag. Anything without a figure goes to Open Questions once — do not fill this section with "open" rows.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Ad-supported monthly reach</dt>
+          <dd>315M+ global / 130M+ US, unduplicated average — measured Sep 2024–Aug 2025, published Nov 11 2025. <a href="https://advertising.amazon.com/library/news/unboxed-2025-recap">Amazon Ads unBoxed 2025 recap</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Video + music content expense, FY2025</dt>
+          <dd>$22.4B, +10% YoY (from $20.4B in FY2024) — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm">Amazon FY2025 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Capitalized video + music content asset, FY2025</dt>
+          <dd>$21.3B net of amortization (up from $19.6B FY2024) — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm">Same 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Amazon Subscription services net sales, FY2025</dt>
+          <dd>$49.6B, +11.8% YoY (calculated by Site Wise from $44.374B) — as of Dec 31 2025. Aggregates Prime membership fees with digital video, audiobook, music and e-book subscriptions; Amazon does not break out Prime Video alone. <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm">Same 10-K</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Prime Video Ultra price (US)</dt>
+          <dd>$4.99/mo, replacing the $2.99/mo ad-free add-on — effective Apr 10 2026. <a href="https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription">About Amazon</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>MGM Holdings acquisition</dt>
+          <dd>$8.45B deal announced May 26 2021; closed Mar 17 2022 for $6.1B net cash + $2.5B assumed debt (repaid immediately); acquired assets = $3.4B video content + $4.9B goodwill. <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm">Amazon FY2022 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made for this report (at least three; see the <a href="../../methodology.html">probe playbook</a>). These are the only rows that may back a <em>verified</em> tag without an external link.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-07-23</td><td data-label="Probe"><code>dig +short www.primevideo.com</code></td><td data-label="Observation">Resolves to a CloudFront edge IP (18.64.x); confirmed by response headers below (<code>via: cloudfront.net</code>, <code>x-amz-cf-pop</code>).</td></tr>
+            <tr><td data-label="Date">2026-07-23</td><td data-label="Probe"><code>curl -sI https://www.primevideo.com/</code> (HEAD)</td><td data-label="Observation">HTTP/2 405 — HEAD is rejected (<code>allow: GET, POST, PUT, DELETE, OPTIONS</code>), same fingerprint as amazon.com retail.</td></tr>
+            <tr><td data-label="Date">2026-07-23</td><td data-label="Probe"><code>curl -sL https://www.primevideo.com/</code> (GET)</td><td data-label="Observation">302 → <code>/offers/nonprimehomepage</code> → 200; session cookies set for both <code>.primevideo.com</code> and <code>amazon.com</code>; HSTS <code>max-age=47474747</code>; CSP report-only scoped to <code>*.amazon.com</code>/<code>*.media-amazon.com</code>. No AWS WAF JS challenge — unlike the amazon.com retail probe.</td></tr>
+            <tr><td data-label="Date">2026-07-23</td><td data-label="Probe"><code>curl -s https://www.primevideo.com/robots.txt</code></td><td data-label="Observation">313 lines. Generic UA disallowed only on auth/search/api/mystuff paths; <code>/detail/</code> pages are allowed (only <code>/detail/Login</code> blocked). ~90 named AI/agent crawlers (ChatGPT-User, Claude-User, PerplexityBot, CCBot, Bytespider, GPTBot-class agents, etc.) get blanket <code>Disallow: /</code>. No <code>Sitemap:</code> directive anywhere in the file.</td></tr>
+            <tr><td data-label="Date">2026-07-23</td><td data-label="Probe"><code>curl -s https://www.primevideo.com/sitemap.xml</code> and <code>/llms.txt</code></td><td data-label="Observation">Both return HTTP 404 with Amazon's generic error page. No public sitemap or LLM-access file.</td></tr>
+            <tr><td data-label="Date">2026-07-23</td><td data-label="Probe">Structured-data sample: GET a title detail page (<code>/detail/0U9LVA2T8NCPW1W1B51AGU7KCR</code>, "Marry My Husband")</td><td data-label="Observation">Zero <code>application/ld+json</code> blocks, zero <code>itemprop</code> microdata — no schema.org markup. Only OpenGraph (<code>og:image</code>) and a plain meta description. All real metadata (17 distinct GTIs for season+16 episodes, genres, maturity rating, 11 audio tracks, 22 subtitle tracks with 3 flagged <code>[auto]</code> machine-translated, <code>amazonRating</code> count/value, a review link resolving to an <code>amazon.com/product-reviews/{ASIN}</code> URL) sits in an inline, undocumented React SSR JSON blob.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">The core deliverable: per modality, what exists, the best legitimate path to it, what auth/quota costs, what a third-party UI may display, and how fast it churns. Every cell is verifiable, tagged, or <em>open</em>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Title synopses, genres, moods, maturity ratings; catalog size open (no official figure).</td>
+              <td data-label="Best legitimate path">None public. Only source is the inline SSR JSON on each <code>/detail/</code> page (Probe Log); no PA-API-style endpoint exists for video.</td>
+              <td data-label="Auth &amp; quota">No auth, no quota, no ToS-sanctioned access — scraping the SSR blob is unsupported and schema-unstable.</td>
+              <td data-label="License / display">No official embed or reuse grant found.</td>
+              <td data-label="Freshness">Slow churn; synopses/ratings change on licensing renewal or re-release.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Poster/cover art per title (≥1 <code>og:image</code>; ~19 image URLs observed on one detail page).</td>
+              <td data-label="Best legitimate path"><code>m.media-amazon.com</code> hotlink URLs embedded in the SSR JSON; same CDN host as amazon.com retail images.</td>
+              <td data-label="Auth &amp; quota">No documented API; direct hotlink only.</td>
+              <td data-label="License / display">No PA-API-equivalent Images resource for video; reuse terms undocumented.</td>
+              <td data-label="Freshness">Low churn; refreshed on key art updates.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Full episodes/films/live sports streams, DRM-wrapped; trailers separately.</td>
+              <td data-label="Best legitimate path">No legitimate bulk path. Playback requires an authenticated, entitled session and a DRM license (Widevine/PlayReady/FairPlay class).</td>
+              <td data-label="Auth &amp; quota">Prime membership or per-title rent/buy; live sports carry ads regardless of Ultra tier (Verified Metrics).</td>
+              <td data-label="License / display">No public embed program (unlike YouTube oEmbed).</td>
+              <td data-label="Freshness">Licensed catalog rotates on studio windows; originals/live sports are append-only.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">Dubbed audio tracks (11 observed for one title) and subtitle tracks (22 observed, 3 machine-translated).</td>
+              <td data-label="Best legitimate path">Enumerated only inside the same per-title SSR JSON; no standalone captions/audio API.</td>
+              <td data-label="Auth &amp; quota">Same as Text row — no supported access.</td>
+              <td data-label="License / display">No reuse grant found.</td>
+              <td data-label="Freshness">Stable per title once localized; MT subtitle tracks can be added post-launch.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reviews</td>
+              <td data-label="Objects &amp; est. count">Star rating (count + average) and a ratings histogram per title; review body text lives on amazon.com, not primevideo.com.</td>
+              <td data-label="Best legitimate path">Rating summary is inline SSR JSON; full review text is Amazon retail's <code>product-reviews/{ASIN}</code> page, joined via the GTI→ASIN link observed in the Probe Log.</td>
+              <td data-label="Auth &amp; quota">No API for either; same retail bot-wall risk applies once a request crosses to amazon.com.</td>
+              <td data-label="License / display">No reuse grant; review bodies are not Prime-Video-licensed content.</td>
+              <td data-label="Freshness">Ratings accrue continuously; histograms recompute per view.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Titles keyed by GTI (<code>amzn1.dv.gti.&lt;uuid&gt;</code>) — one per season and per episode; cast/director/studio/genre attached by name string, not ID.</td>
+              <td data-label="Best legitimate path">Only the per-page SSR JSON; no catalog-wide feed or export.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">No reuse grant; internal ID scheme, not documented for third parties.</td>
+              <td data-label="Freshness">GTI is stable once assigned; cast/genre edits are rare post-launch.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site differs from the <a href="../../methodology.html">default platform assumptions</a>. Delete any block that would just restate them.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The GTI (<code>amzn1.dv.gti.&lt;uuid&gt;</code>) is Prime Video's ASIN-equivalent: one per season and per episode, embedded in the canonical <code>/detail/{id}</code> URL. Unlike the ASIN, it carries no public documentation or cross-reference table; dedup against title-slug URL variants (<code>/detail/{Title-Slug}/{id}</code> vs bare <code>/detail/{id}</code>, Probe Log) that resolve to the same canonical.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Three levels: series → season → episode, each with its own GTI. A search-relevance index should retrieve at the series level but attach season/episode GTIs as sub-records, mirroring the parent-ASIN/child-ASIN split amazon.com uses for product variations.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>The one confirmed stable join is GTI→ASIN via the review link (<code>allReviewsLink</code> resolving to <code>amazon.com/product-reviews/{ASIN}</code>, Probe Log) — this is the seam between the video catalog and Amazon's retail review corpus. Cast/director/studio are joined by <strong>name string only</strong>, no IMDb ID observed in the payload, despite Amazon owning IMDb and using its data to power the in-app X-Ray feature; name-string joins risk collision on common names.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>The inline SSR JSON is the only content field that exists — there is no separate SEO-facing HTML/schema.org layer to disagree with it (Probe Log: zero JSON-LD, zero microdata). Subtitle tracks marked <code>[auto]</code> (3 of 22 on the sampled title) are machine-translated and should be weighted below human-authored tracks for any transcript-derived field.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Two regimes, same as amazon.com retail but inverted in what churns fastest: licensed-catalog availability windows change over weeks to months, while ratings/review counts accrue continuously. Live sports and Channels content is the fastest-churning class and carries no stable on-demand GTI once the broadcast ends.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><code>/search</code> is robots-disallowed for generic UAs (Probe Log) even though <code>/detail/</code> pages are crawlable, so a generic crawler can index individual titles but not reconstruct the on-site search/browse graph — title discovery has to come from an external seed list (e.g., IMDb or a licensing database), not from crawling Prime Video's own search.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <p class="muted">The actionable conclusion: how Site Wise would build the index for this site.</p>
+      <ul>
+        <li><strong>Retrieval unit:</strong> title (series/film) as the primary document, with season and episode GTIs as fast-refresh sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> GTI (<code>amzn1.dv.gti.&lt;uuid&gt;</code>) for the video object; GTI→ASIN via the review-link seam for joining into Amazon's retail review corpus; cast/crew joined by name string only (no ID available).</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Render <code>/detail/{gti}</code> pages and parse the inline SSR JSON — the only path that yields genres, ratings, audio/subtitle lists; unofficial and schema-fragile. 2) Crawl the generic-UA-allowed <code>/detail/</code> sliver for SEO-visible title pages (robots.txt permits it; AI agents are blocked). 3) Third-party availability aggregators (e.g., JustWatch-class services) for cross-platform "where to watch" joins, at whatever license those services set — open, not verified here. 4) No SP-API/PA-API equivalent exists for video; there is no seller/developer-account path in.</li>
+        <li><strong>Recrawl cadence:</strong> catalog metadata (synopsis, cast, genres) monthly; ratings/review counts weekly; availability windows and live/Channels content daily given fastest churn (Retrieval Notes).</li>
+        <li><strong>Derivatives to generate:</strong> ASR transcripts only from human-authored subtitle tracks (skip the 3-of-22 <code>[auto]</code> tracks observed, or flag them low-confidence); poster embeddings for visual dedup across regional key-art variants; a GTI↔ASIN concordance table built by walking the review-link seam.</li>
+        <li><strong>Demo to build:</strong> a small crawler that walks a seed list of <code>/detail/{gti}</code> URLs, extracts the inline SSR JSON, and emits a JSONL index doc per title — surfacing exactly which fields (rating histogram, audio/subtitle lists, GTI↔ASIN link) survive a schema change, since none of this is a documented contract.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <p class="muted">Only risks that change indexing strategy: legal/licensing shifts, API deprecations, ownership changes, wall hardening. Skip generic business risks.</p>
+      <ul>
+        <li><strong>No documented contract to build against:</strong> every field an indexer would need (genres, ratings, audio/subtitle lists, the GTI↔ASIN seam) comes from an inline SSR JSON blob never intended for external consumption; it can be restructured or minified differently without notice, unlike a versioned API.</li>
+        <li><strong>AI retrieval agents are blocked, not licensed:</strong> ~90 named AI/agent user agents get blanket <code>Disallow: /</code> (Probe Log) with no published licensing alternative for video metadata, mirroring the enforcement-not-licensing posture already observed on amazon.com retail.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Review-text indexing inherits amazon.com's access risk.</strong> <em>Basis:</em> the only path to review bodies for a Prime Video title is its linked <code>amazon.com/product-reviews/{ASIN}</code> page, which sits behind the same retail bot-wall documented in Site Wise's amazon.com report.</li>
+        <li><strong>Pricing/tier churn:</strong> the ad-default switch (Jan 2024) and the Ultra rebrand/price hike (Apr 2026, Verified Metrics) show Amazon actively restructuring the paid/ad-free boundary; an indexer tracking "is this ad-free" as a field should expect it to move again.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://advertising.amazon.com/library/news/unboxed-2025-recap">Amazon Ads: unBoxed 2025 recap</a> — 315M global / 130M US monthly ad-supported reach.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm">Amazon FY2025 10-K</a> — video+music content expense and capitalized content asset, Subscription services net sales.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm">Amazon FY2022 10-K</a> — MGM Holdings acquisition cash consideration and acquired-asset split.</li>
+        <li><a href="https://press.aboutamazon.com/news-releases/news-release-details/amazon-and-mgm-have-signed-agreement-amazon-acquire-mgm">About Amazon: MGM agreement announcement</a> (May 26 2021) — $8.45B headline deal value.</li>
+        <li><a href="https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription">About Amazon: Prime Video Ultra announcement</a> — $4.99/mo tier, Apr 10 2026.</li>
+        <li><a href="https://www.aboutamazon.com/news/entertainment/prime-video-update-announces-limited-ads">About Amazon: ads update</a> — Jan 29 2024 ads-by-default launch, $2.99/mo original ad-free price.</li>
+        <li><a href="https://press.aboutamazon.com/2006/9/amazon-com-launches-amazon-unboxtm-a-digital-video-download-service-with-dvd-quality-picture">About Amazon: Amazon Unbox launch</a> (Sept 7 2006).</li>
+        <li>Local probes on 2026-07-23: <code>dig</code>, <code>curl</code> against the homepage, robots.txt, sitemap.xml, llms.txt, and a title detail page (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Review-text indexing inherits amazon.com's access risk. <em>Basis:</em> the GTI-linked review page resolves to the same <code>amazon.com/product-reviews/{ASIN}</code> surface documented as WAF-gated in Site Wise's amazon.com report.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total catalog size (title/episode count) — no official figure exists; third-party counts range 9,000–25,000+ titles by inconsistent methodologies. Closeable only with an Amazon-disclosed number or a full crawl of the SEO-allowed <code>/detail/</code> sliver.</li>
+        <li>Current global/US Prime membership count — Amazon stopped disclosing this after the ~200M figure in Apr 2021; only third-party estimates (220–250M) exist now.</li>
+        <li>Whether an IMDb-side ID (nm-code) is available anywhere in Prime Video's own data for cast/crew, which would upgrade the current name-string join to a stable key — checkable by diffing X-Ray's in-app payload (not the web SSR JSON sampled here) against IMDb's public dataset.</li>
+        <li>Prime Video Channels / FAST channel catalog size — third-party counts range from ~100 (premium add-ons) to 500+ (FAST channels) with no single Amazon-disclosed figure; closeable via an official Amazon Channels catalog disclosure.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
