@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>flipkart.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-07-26</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>flipkart.com</h1>
+      <p class="lede">Flipkart publishes an 83M-product sitemap and JSON-LD on every listing, then hides all of it behind a reCAPTCHA wall that blocks plain crawlers.</p>
+      <div class="tag-row">
+        <span class="tag">Ecommerce</span>
+        <span class="tag">Marketplace</span>
+        <span class="tag">India</span>
+        <span class="tag">Walmart</span>
+        <span class="tag">Product Catalog</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Flipkart is India's largest home-grown e-commerce marketplace: an online bookstore started in a Bengaluru flat in 2007 by Sachin Bansal and Binny Bansal, majority-acquired by Walmart in 2018, and re-domiciled to India in 2026 ahead of a planned FY27 listing. It earns marketplace commissions, seller services, advertising, and logistics fees through eKart, with quick commerce added via Flipkart Minutes. For an index builder Flipkart is the mirror image of Amazon. Amazon publishes no sitemap and bans AI crawlers by name; Flipkart publishes a nine-file sitemap tree covering roughly 83M canonical product URLs, stamps schema.org <code>Product</code> JSON-LD onto listings, refreshes its sitemap index daily — and names no AI crawler at all. Then it puts a reCAPTCHA Enterprise interstitial in front of every path on <code>www</code>, and its Terms of Use forbid any "page-scrape", "robot" or "spider". The catalog is mapped in public and gated in practice. <span class="evidence inferred">inferred</span> The crawl surface is built for allowlisted search engines, not for crawlers generally. <em>Basis:</em> robots.txt grants named Google agents unrestricted access and advertises nine sitemaps, while plain-UA requests to those same sitemap URLs return HTTP 403 reCAPTCHA (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>flipkart.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.flipkart.com/">https://www.flipkart.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Ecommerce marketplace, retail ads platform</dd></div>
+        <div><dt>Related hosts</dt><dd><code>rukminim1/2.flixcart.com</code> (image CDN), <code>seller.flipkart.com</code>, <code>affiliate-api.flipkart.net</code>, <code>stories.flipkart.com</code>; Myntra and PhonePe are separate corpora</dd></div>
+        <div><dt>Owner</dt><dd>Flipkart Internet Private Limited; Walmart Inc. (NYSE: WMT) is majority shareholder</dd></div>
+        <div><dt>Founded / launched</dt><dd>2007, Bengaluru, by Binny Bansal and Sachin Bansal, as an online bookstore (<a href="https://stories.flipkart.com/">company timeline</a>)</dd></div>
+        <div><dt>Business model</dt><dd>Marketplace take rate + seller services + advertising + eKart logistics + Flipkart Minutes quick commerce</dd></div>
+        <div><dt>Scale anchor</dt><dd>500M+ registered customers, as of 2026-07-26 (<a href="https://stories.flipkart.com/">stories.flipkart.com</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (official live SKU count, review corpus size, video corpus) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Customers, sellers, facilities</dt>
+          <dd>500M+ registered customers, 1.4M+ sellers, 500+ supply-chain facilities, 3L+ jobs created — as of 2026-07-26, read from the official stat blocks. <a href="https://stories.flipkart.com/">stories.flipkart.com</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Quick-commerce footprint</dt>
+          <dd>Flipkart Minutes passed 1,000 micro-fulfilment centres — as of 2026-06-24. <a href="https://stories.flipkart.com/1-000-micro-fulfilment-centers-in-2-years-the-flipkart-minutes-story">stories.flipkart.com</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Walmart ownership</dt>
+          <dd>~85% — as of Jan 31 2024, the latest percentage restated in the FY2026 filing; acquired 77% for $16B in May 2018. <a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm">Walmart FY2026 Form 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Product-sitemap census</dt>
+          <dd>6 index files listing 3,643 child sitemaps (659 + 653 + 653 + 653 + 653 + 372); one decompressed child held 45,802 <code>&lt;loc&gt;</code> entries = 22,901 canonical products plus 22,901 <code>/hi/</code> duplicates — as of 2026-07-26. Measured in the Probe Log <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Catalog size, crawl-visible</dt>
+          <dd>~83.4M canonical product URLs (~166.9M raw sitemap entries) — as of 2026-07-26. <span class="evidence inferred">inferred</span>, calculated by Site Wise. <em>Basis:</em> 3,643 child sitemaps × 22,901 canonical products from the single decompressed child (Probe Log); uniform fill assumed, so trailing children are likely partial and this is an upper bound.</dd>
+        </div>
+        <div>
+          <dt>Affiliate API limits</dt>
+          <dd>20 calls/sec per affiliate; 500 items per feed page (fixed, paginated via <code>nextUrl</code>); feed URLs expire in 10 hours; keyword search returns at most 10 products — as of 2026-07-26. <a href="https://affiliate.flipkart.com/api-docs/af_faq.html">Affiliate API FAQ</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured-data coverage</dt>
+          <dd>10 of 10 sampled product pages carried a schema.org <code>Product</code> JSON-LD block with <code>sku</code>, price, availability, shipping and return policy; 2 of 10 carried <code>aggregateRating</code>; JSON-LD <code>image[]</code> held 1–5 URLs against 47–70 <code>&lt;img&gt;</code> per page — as of 2026-07-26. Rendered probe, see Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Third-party estimates</dt>
+          <dd>217.7M monthly visits, global rank #114, 96.4% of desktop visits from India, 33.5% direct — <a href="https://www.similarweb.com/website/flipkart.com/">Similarweb</a>, June 2026. GMV ~$30B in 2025 vs ~$23B in 2021 — industry estimate reported by <a href="https://finance.yahoo.com/news/flipkart-completes-domiciliation-india-ahead-145819023.html">Reuters</a>. Neither is an official figure. <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-26. Plain-UA requests used <code>-A "SiteWise research"</code>; rendered probes used headless Chromium via Playwright.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-26</td><td><code>curl -sI https://www.flipkart.com/</code>, then robots.txt via a browser-class fetcher</td><td>Plain UA gets HTTP 403 with <code>x-captcha-validate: true</code> and a 787-byte reCAPTCHA Enterprise interstitial — identical for <code>/robots.txt</code>, <code>/sitemap.xml</code>, <code>/llms.txt</code>, <code>/ads.txt</code>, so a missing file and a blocked file look the same. The browser-class fetch of the same robots.txt URL returned the real file: 62 <code>Disallow</code> rules, 9 <code>Sitemap</code> lines, <code>Mediapartners-Google</code>/<code>AdsBot-Google</code>/<code>Googlebot-Image</code> unrestricted, <code>Storebot-Google</code> allowed <code>/viewcart</code>, and <code>/search?</code>, <code>/reviews/</code>, <code>/sc/</code>, <code>/dynamic/</code> plus ~20 facet parameters blocked. <strong>No AI-crawler user agent is named at all</strong> — no GPTBot, ClaudeBot, CCBot, PerplexityBot or Google-Extended rule.</td></tr>
+            <tr><td>2026-07-26</td><td><code>dig +short www.flipkart.com</code></td><td><code>www</code> CNAMEs to the apex → <code>103.243.32.90</code> (TTL 603); nameservers <code>sdns14.ultradns.{biz,com,net,org}</code>. Image host <code>rukminim2.flixcart.com</code> resolves via <code>edgekey.net</code> to Akamai — media and HTML sit on different infrastructure.</td></tr>
+            <tr><td>2026-07-26</td><td>Sitemap census (6 index files, 1 child decompressed)</td><td>Index entries stamped <code>lastmod</code> 2026-07-25/26. Child sitemaps carry <strong>no <code>lastmod</code> at all</strong> and no <code>image:</code> extension — the decompressed child was 28.2MB of bare <code>&lt;loc&gt;</code> + <code>hreflang</code>, 45,802 entries, 22,643 distinct <code>itm</code> IDs, hreflangs limited to <code>x-default</code>, <code>en-IN</code>, <code>hi-IN</code>. Counts in Verified Metrics.</td></tr>
+            <tr><td>2026-07-26</td><td>10 product pages rendered, sampled evenly across one child sitemap</td><td>All HTTP 200 in a real browser, each with canonical, <code>og:image</code> and one <code>Product</code> JSON-LD block. The JSON-LD <code>sku</code> is a <em>different</em> identifier from the URL: <code>/p/itm000439652e07f</code> carries <code>sku: "PJTHERJGTJQRRBT8"</code>. Where <code>aggregateRating</code> appeared it split <code>ratingCount</code> from <code>reviewCount</code> (e.g. 51 ratings, 6 reviews) and inlined up to 3 review bodies. 7 of the 10 were phone cases, skins or handset spare parts.</td></tr>
+            <tr><td>2026-07-26</td><td>Rendered <code>/hi/</code> vs canonical variant of one product</td><td>The Hindi URL renders 927 Devanagari characters of translated chrome and attributes, but <code>rel=canonical</code> points at the English URL and <code>&lt;html lang&gt;</code> still reads <code>en-IN</code>. Price, <code>sku</code> and <code>aggregateRating</code> identical — half the sitemap is discardable before fetching.</td></tr>
+            <tr><td>2026-07-26</td><td><code>curl https://affiliate-api.flipkart.net/…/sitewise.json</code>; affiliate docs and seller host</td><td>API returns HTTP 401 <code>Invalid Headers</code>, unchanged with dummy <code>Fk-Affiliate-Id</code>/<code>Fk-Affiliate-Token</code> — alive and strictly token-gated, and <code>/registerme</code> still answers (405 to HEAD, GET-only). The docs serve plain UAs but are frozen: footer "© Copyright 2015, Flipkart", unversioned Product APIs marked deprecated, and the sidebar's own "API Terms Of Use" link (<code>af_terms.html</code>) 404s. <code>seller.flipkart.com</code> returns 200 with <code>x-ratelimit-limit: 800</code> and a 79-URL sitemap all stamped <code>lastmod 2023-07-20</code>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Counts and quotas are in Verified Metrics; observations are in the Probe Log.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Titles, descriptions, specification lists, browse/store pages. ~83.4M canonical product URLs.</td>
+              <td>Sitemap tree to discover, then rendered fetch — plain agents hit the 403 wall (Probe Log). Affiliate feed carries <code>productDescription</code> + <code>specificationList</code> per category.</td>
+              <td>Sitemaps unauthenticated; feed needs an affiliate token (20 calls/sec, 500 items/page).</td>
+              <td>Terms of Use prohibit "page-scrape", "robot" and "spider" access to any Content; feed data licensed for affiliate promotion only.</td>
+              <td>Index re-stamped daily; child sitemaps carry no lastmod, so per-product change is invisible.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>1–5 canonical images per product in JSON-LD, against 47–70 <code>&lt;img&gt;</code> per rendered page; served from <code>rukminim1/2.flixcart.com</code>.</td>
+              <td>JSON-LD <code>image[]</code>; affiliate feed <code>imageUrls</code> for sized variants. <code>Googlebot-Image</code> is unrestricted in robots.txt.</td>
+              <td>None beyond the page/feed gate. CDN accepts size and quality path segments (<code>/1500/1500/…?q=70</code>).</td>
+              <td>Seller-supplied imagery under Flipkart's Terms; hotlinking is the only clearly-sanctioned display, no bulk mirroring right.</td>
+              <td>Low churn; changes on listing edit.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Product videos appear on detail pages; robots.txt blocks video-player paths. No count available.</td>
+              <td>No documented API or sitemap — see Open Questions.</td>
+              <td>—</td>
+              <td>No documented reuse path.</td>
+              <td>Unmeasured.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>No first-party audio corpus. <span class="evidence inferred">inferred</span> <em>Basis:</em> no audio field in the affiliate feed schema, no audio sitemap among the nine advertised, none in the rendered sample (Probe Log).</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>Ratings and review bodies per product; <code>ratingCount</code> and <code>reviewCount</code> are separate and unequal. Only 2 of 10 sampled products carried any.</td>
+              <td>JSON-LD <code>aggregateRating</code> plus up to 3 inlined review bodies. <strong>The affiliate feed carries seller-level ratings only</strong> (<code>sellerAverageRating</code>, <code>sellerNoOfRatings</code>, <code>sellerNoOfReviews</code>) — no product review text.</td>
+              <td>Page gate applies; full review lists sit under <code>/reviews/</code>, disallowed in robots.txt.</td>
+              <td>User content licensed to Flipkart perpetually under its Terms; no third-party redistribution grant.</td>
+              <td>Append-mostly; aggregates move with each new rating.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Products keyed by PID, plus brands, sellers, category paths, price + MRP + discount, stock state, COD availability, size/colour variants.</td>
+              <td>Affiliate Product Feed and versioned Delta Feed per category; Feed Download API returns a whole category as zipped CSV. JSON-LD covers the same fields per page.</td>
+              <td>Affiliate token; 500 items/page and 10-hour URL validity, so a full-category pull must finish inside the window.</td>
+              <td>Affiliate terms: display for promotion, with tracking links appended automatically.</td>
+              <td>Price and stock churn fastest; Delta Feed versioning is the only sanctioned incremental signal.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Flipkart differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Flipkart runs <strong>two product identifiers in parallel</strong>, published in different places. URLs and every sitemap entry key on the <code>itm</code> ID (<code>/p/itm000439652e07f</code>); JSON-LD <code>sku</code> and the affiliate API key on the PID (<code>PJTHERJGTJQRRBT8</code>), whose prefix encodes category (<code>ACC</code>, <code>CAY</code>, <code>MSA</code>). Nothing public maps them in bulk — you learn the pair only by fetching the page, so an index ingesting sitemaps and feeds together double-counts until it resolves this.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The product page, not the offer: no visible multi-seller offer array per listing, so product and offer collapse into one record. Specification lists carry the substantive text — titles are short and attribute-stuffed, descriptions are template prose built around the price.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>PID joins JSON-LD, feed, images and seller ratings; the <code>itm</code> ID joins sitemap and URL only. Image URLs embed the category slug plus a stable asset hash (<code>…/pooja-thali-set/t/g/9/no-wa006-wraparts-original-imaherjgj8ezpzup.jpeg</code>), usable as a dedup key across resized variants. Reviews join to product, not to a durable reviewer ID.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>JSON-LD beats the rendered DOM: it types the actual selling price, availability, shipping rate and return window, where the page mixes MRP, discount and promotional "Buy at" copy a parser would fumble. The <code>/hi/</code> variant translates chrome and attributes but leaves titles in English and mislabels itself <code>lang="en-IN"</code> — language detection cannot trust that attribute here.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The freshness signal is deliberately coarse: sitemap <em>index</em> entries are re-stamped daily, but child sitemaps carry no <code>lastmod</code> at all, so a moved timestamp says something changed among 22,901 products without saying which. Either re-fetch a whole child or drop crawl for the Delta Feed's version counter.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>The tail is commodity accessories: 7 of 10 randomly sampled products were phone cases, skins or handset spare parts, many near-identical listings from different micro-brands (<code>dikro</code>, <code>jugga</code>, <code>flipcase</code>, <code>yapzone</code>, <code>nassion</code>, <code>fronk</code>). Near-duplicate detection matters more than fake-review detection, and 8 of 10 had no rating at all, so quality priors cannot lean on ratings.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>On-site search is closed to crawlers outright — <code>/search?</code>, <code>/search-book?</code> and <code>/search.php?</code> disallowed, along with ~20 facet parameters. Only product pages and curated browse/store/query-browse sitemaps are offered: Flipkart exports a catalog, not a query log.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> product record keyed by PID, <code>itm</code> ID as secondary alias, specification list as primary text, price/stock as fast-refresh sub-fields.</li>
+        <li><strong>Primary keys &amp; joins:</strong> PID (JSON-LD <code>sku</code> or feed <code>productId</code>) is the spine; <code>itm</code>→PID table built during first fetch; image asset hash for media dedup; <code>categoryPath</code> for taxonomy.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Affiliate Delta Feed per category — the only incremental path with a version counter, and needs no rendering. 2) Feed Download API zipped CSV for cold-start bulk. 3) Sitemap tree for discovery and coverage audit — free, unauthenticated, the only source enumerating all ~83.4M URLs. 4) Rendered fetch for JSON-LD fields the feed omits (<code>aggregateRating</code>, inline reviews, shipping and return policy) — wall-gated and expensive, so reserve it for a sample.</li>
+        <li><strong>Recrawl cadence:</strong> Delta Feed daily per category; sitemap index diffed daily for new children; full child re-fetch only where the index <code>lastmod</code> moved; rendered re-fetch monthly on a stratified sample to keep coverage statistics honest.</li>
+        <li><strong>Derivatives to generate:</strong> <code>itm</code>↔PID concordance, near-duplicate clustering over accessory listings (title + image hash), attribute normalisation across micro-brands, Hindi/English collapse via canonical.</li>
+        <li><strong>Demo to build:</strong> a sitemap-only catalog profiler — walk the six index files, sample N children, report canonical-vs-duplicate split, category mix from URL slugs, and estimated live SKU count with confidence bounds, without ever touching a walled page.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The only documented API is unmaintained.</strong> Docs stamped "© Copyright 2015", unversioned Product APIs deprecated, and the sidebar's own "API Terms Of Use" link 404s (Probe Log). An index built on it has no maintained contract to point at.</li>
+        <li><strong>robots.txt and the Terms of Use disagree.</strong> The permissive crawl policy is not a licence; the Terms forbid "page-scrape", "robot" and "spider" access outright. Following the Terms means treating the sitemap as a census instrument, not a fetch queue.</li>
+        <li><strong>No AI-crawler policy means no grandfathered position.</strong> Since robots.txt names no AI agent today, Flipkart can add a blanket <code>Disallow</code> in a single deploy without contradicting any prior stance.</li>
+        <li><strong>Ownership and disclosure are in motion.</strong> Re-domiciliation from Singapore to India is complete — eight Singapore entities merged into Flipkart Internet Private Limited, NCLT approval December 2025, announced March 2026 — with an IPO targeted for FY27 (<a href="https://finance.yahoo.com/news/flipkart-completes-domiciliation-india-ahead-145819023.html">Reuters via Yahoo Finance</a>). A listing would replace estimate-only GMV with audited figures and add disclosure-driven constraints on data sharing.</li>
+        <li><strong>Indian regulatory action targets marketplace structure.</strong> The CCI Director General's investigation report alleging competition-law violations was served on Flipkart subsidiaries September 13 2024, and the Directorate of Enforcement's FDI proceedings (notice July 2021, latest request April 2025) carry possible "share ownership restrictions" (<a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm">Walmart FY2026 Form 10-K</a>). Those remedies reach seller relationships and listing structure — exactly what the catalog encodes.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The bot wall will tighten before the sitemap does.</strong> <em>Basis:</em> reCAPTCHA already covers every <code>www</code> path including <code>/robots.txt</code>, while the sitemap tree stays fully public and daily-refreshed — Flipkart defends fetch, not discovery (Probe Log).</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://stories.flipkart.com/">stories.flipkart.com</a> — official stat blocks (customers, sellers, facilities, jobs) and founding timeline; <a href="https://stories.flipkart.com/1-000-micro-fulfilment-centers-in-2-years-the-flipkart-minutes-story">Flipkart Minutes milestone</a> for the 1,000-MFC figure.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm">Walmart FY2026 Form 10-K</a> (filed 2026-03-13) — ownership percentages, 2018 acquisition, CCI antitrust matter, Directorate of Enforcement FDI matter.</li>
+        <li><a href="https://affiliate.flipkart.com/api-docs/af_faq.html">Affiliate API FAQ</a>, <a href="https://affiliate.flipkart.com/api-docs/af_prod_ref.html">Product APIs Reference</a>, <a href="https://affiliate.flipkart.com/api-docs/af_register.html">registration</a> — quotas, batch size, URL validity, feed fields, Delta Feed and Feed Download endpoints, token header scheme.</li>
+        <li><a href="https://affiliate.flipkart.com/terms-of-use">Flipkart Terms of Use</a> — the "deep-link / page-scrape / robot / spider" prohibition and the perpetual licence over user-supplied content.</li>
+        <li><a href="https://finance.yahoo.com/news/flipkart-completes-domiciliation-india-ahead-145819023.html">Reuters via Yahoo Finance</a> — re-domiciliation dates, FY27 IPO target, GMV estimate. <a href="https://www.similarweb.com/website/flipkart.com/">Similarweb</a> — June 2026 traffic estimate.</li>
+        <li>Local probes on 2026-07-26: <code>curl</code> and <code>dig</code> against the apex, <code>seller</code> and <code>affiliate-api</code> hosts; robots.txt and six sitemap index files via a browser-class fetcher; one child sitemap decompressed and counted locally; 12 product pages rendered in headless Chromium. Results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Crawl surface serves allowlisted search engines, not crawlers generally. <em>Basis:</em> Google agents unrestricted and nine sitemaps advertised, while plain-UA fetches of those URLs 403.</li>
+        <li>~83.4M crawl-visible canonical products. <em>Basis:</em> 3,643 children × 22,901 products from one decompressed child; uniform fill assumed, so an upper bound.</li>
+        <li>No first-party audio corpus. <em>Basis:</em> no audio field in the feed schema, no audio sitemap, none in the rendered sample.</li>
+        <li>The bot wall tightens before the sitemap does. <em>Basis:</em> reCAPTCHA covers every <code>www</code> path including robots.txt; the sitemap tree stays public and daily-refreshed.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Official live SKU count — no Flipkart or Walmart disclosure exists; closeable by a company statement or the FY27 IPO prospectus.</li>
+        <li>Whether all 3,643 child sitemaps hold 22,901 products or only the non-trailing ones — closeable by decompressing the first, middle and last child of each index and comparing counts.</li>
+        <li>Product-video corpus size and whether any sanctioned path exposes it — closeable by inspecting the robots-blocked video-player endpoint against a rendered listing that has video.</li>
+        <li>Whether the Product and Delta Feeds still serve live data — the endpoint 401s without a token, so this needs an approved affiliate account.</li>
+        <li>Bulk <code>itm</code>↔PID mapping — no public source found; closeable only by fetching pages or by a Flipkart-provided concordance.</li>
+        <li>How much the served response depends on user agent — whether verified Googlebot sees different markup or robots rules than a browser, and whether <code>/llms.txt</code> exists at all behind the host-wide 403; closeable by fetching both paths with a reverse-DNS-verified Googlebot UA and a browser-class client and diffing.</li>
+        <li>What share of the catalog carries any rating, and the review corpus size — 2 of 10 is far too small a sample; closeable by widening the rendered sample to a few thousand products stratified by category.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
