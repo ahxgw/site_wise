@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mail.google.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-07-27</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>mail.google.com</h1>
+      <p class="lede">Gmail is a top-100 host with a three-page public index: every object of value sits behind a per-user OAuth grant, not a crawler.</p>
+      <div class="tag-row">
+        <span class="tag">Email</span>
+        <span class="tag">Walled Corpus</span>
+        <span class="tag">OAuth-Gated</span>
+        <span class="tag">Google Workspace</span>
+        <span class="tag">Zero-Crawl</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Gmail is Google's email client, launched April 1 2004 and now serving 3B users. It is free for consumers (monetized through Google One storage upsell and Workspace seats) and paid for the 10M+ businesses on Workspace. For an index builder it is the cleanest example on the top-100 list of a <strong>zero-crawl host</strong>: enormous traffic, essentially no public corpus. The retrievable object is the RFC 2822 message inside one person's mailbox, and the only legitimate path to it is that person's OAuth grant. That inverts the usual economics — the meter is not rate limit but compliance: Gmail's scopes are all <em>restricted</em>, which means an annual third-party security assessment before you may touch a single mailbox at scale. <span class="evidence inferred">inferred</span> Google treats the hostname itself as the permission boundary. <em>Basis:</em> the Gmail API discovery document lists <code>https://mail.google.com/</code> as one of its 14 OAuth scopes — the full-mailbox scope is literally spelled as the site's URL (probed 2026-07-27).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>mail.google.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://mail.google.com/mail/u/0/">https://mail.google.com/mail/u/0/</a> (auth-gated)</dd></div>
+        <div><dt>Category</dt><dd>Consumer + business email client</dd></div>
+        <div><dt>Related hosts</dt><dd><code>googlemail.com</code> (legacy alias), <code>gmail.googleapis.com</code> (API), <code>gmailpostmastertools.googleapis.com</code> (sender reputation), <code>accounts.google.com</code> (auth wall), <code>www.google.com/gmail/about/</code> and <code>workspace.google.com/gmail/</code> (the actual crawlable marketing surface), <code>gmail-smtp-in.l.google.com</code> (MX ingress)</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC / Alphabet Inc. (NASDAQ: GOOGL)</dd></div>
+        <div><dt>Founded / launched</dt><dd>April 1 2004 (<a href="https://blog.google/products-and-platforms/products/gmail/hitting-send-on-the-next-15-years-of-gmail/">Google blog</a>)</dd></div>
+        <div><dt>Business model</dt><dd>Free tier funded by Google One storage upsell + Workspace subscriptions; no ad targeting on message content</dd></div>
+        <div><dt>Scale anchor</dt><dd>3B users — as of Jan 8 2026 (<a href="https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/">Google blog</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (message volume, mailbox size distribution) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Users</dt>
+          <dd>3B — as of Jan 8 2026. <a href="https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/">Google blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Workspace paying customers</dt>
+          <dd>10M+ businesses — as of Jan 2025. <a href="https://workspace.google.com/blog/product-announcements/empowering-businesses-with-AI">Workspace blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Spam blocked</dt>
+          <dd>~10M messages per minute (≈14.4B/day, calculated by Site Wise) — Google's own FAQ text, read from the JSON-LD block on the Gmail about page on 2026-07-27 (see Probe Log). <a href="https://www.google.com/gmail/about/">Source page</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Public indexable pages</dt>
+          <dd>3 unique pages × 55 locales + 1 = 166 sitemap URLs, all served off-host from <code>www.google.com</code> — measured 2026-07-27 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Gmail API rate limit</dt>
+          <dd>6,000 quota units/min/user; 1.2M units/min/project; 80M units/day/project free threshold — limits revised May 1 2026. <a href="https://developers.google.com/workspace/gmail/api/reference/quota">Quota docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Method costs</dt>
+          <dd><code>history.list</code> 2 · <code>messages.list</code> 5 · <code>messages.get</code> 20 · <code>threads.get</code> 40 · <code>messages.send</code> 100 units. <a href="https://developers.google.com/workspace/gmail/api/reference/quota">Same doc</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Effective ingest ceiling</dt>
+          <dd>300 messages/min/user (6,000 ÷ 20) and 200 concurrent users per project (1.2M ÷ 6,000) — calculated by Site Wise from the <a href="https://developers.google.com/workspace/gmail/api/reference/quota">quota figures</a> above. A 100K-message mailbox backfills in ≈5.6 hours. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Account limits</dt>
+          <dd>15 GB free storage shared across Gmail, Drive and Photos (<a href="https://support.google.com/mail/answer/6558">help</a>); 25 MB max attachment per send on personal accounts (<a href="https://support.google.com/mail/answer/6584">help</a>); 15 simultaneous IMAP/POP clients per account (<a href="https://support.google.com/mail/answer/7126229">help</a>) — all as of Jul 27 2026. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Takeout export</dt>
+          <dd>MBOX with labels preserved in an <code>X-Gmail-Labels</code> header; archive expires ~7 days, 5 downloads, split at up to 50 GB. <a href="https://support.google.com/accounts/answer/3024190">Takeout Help</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-27.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-07-27</td><td data-label="Probe"><code>curl -sL https://mail.google.com/robots.txt</code></td><td data-label="Observation">Seven lines total. <code>Disallow: /</code> for <code>*</code>, with three <code>$</code>-anchored exceptions: <code>/$</code>, <code>/mail/$</code>, <code>/mail/u/0/$</code>. Sitemap directive points off-host to <code>https://www.google.com/gmail/sitemap.xml</code>. No AI-crawler section — none is needed when everything is already denied.</td></tr>
+            <tr><td data-label="Date">2026-07-27</td><td data-label="Probe"><code>curl -sIL -A "…Googlebot/2.1…" https://mail.google.com/mail/u/0/</code></td><td data-label="Observation">The robots-allowed path is a dead end even for Googlebot: 301 → <code>/mail/u/0/</code>, then 302 → <code>accounts.google.com/ServiceLogin</code>, two more 302 hops, terminating at a 1.2 MB sign-in page on a different host. The allowlist grants access to a redirect.</td></tr>
+            <tr><td data-label="Date">2026-07-27</td><td data-label="Probe"><code>curl -sI https://mail.google.com/</code> and <code>/llms.txt</code></td><td data-label="Observation"><code>server: GSE</code>, <code>x-frame-options: SAMEORIGIN</code>, <code>content-security-policy: frame-ancestors 'self'</code>, <code>cache-control: private, max-age=7776000</code>, <code>alt-svc: clear</code>. No embedding surface of any kind; <code>llms.txt</code> 301s into the same sign-in funnel, and there is no feed or oEmbed endpoint.</td></tr>
+            <tr><td data-label="Date">2026-07-27</td><td data-label="Probe"><code>dig +short mail.google.com</code> / <code>MX gmail.com</code></td><td data-label="Observation">A records 74.125.142.17–.19, .83 — Google's own space, no third-party CDN. The product's real ingress is SMTP: <code>gmail-smtp-in.l.google.com</code> (pri 5) plus four <code>alt</code> hosts; <code>gmail.com</code> SPF is <code>v=spf1 redirect=_spf.google.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-07-27</td><td data-label="Probe">Sitemap census (<code>www.google.com/gmail/sitemap.xml</code>)</td><td data-label="Observation">949 KB, 166 <code>&lt;loc&gt;</code> entries, zero nested sitemaps. Collapsing the <code>/intl/{locale}/</code> prefix leaves exactly three unique pages — <code>/gmail/about/</code>, <code>/gmail/about/for-work/</code>, <code>/gmail/about/policy/</code> — in 55 hreflang locales, plus one <code>signup_complete.html</code>.</td></tr>
+            <tr><td data-label="Date">2026-07-27</td><td data-label="Probe">Structured-data sample (<code>www.google.com/gmail/about/</code>)</td><td data-label="Observation">One JSON-LD block, <code>@type: FAQPage</code>, four Q&amp;A pairs (spam volume, ads, Advanced Protection, Workspace). Open Graph present but <code>og:url</code> and <code>rel=canonical</code> both point to <code>workspace.google.com/gmail/</code> — the flagship marketing page canonicalizes onto a third host.</td></tr>
+            <tr><td data-label="Date">2026-07-27</td><td data-label="Probe">Gmail API discovery + unauth call</td><td data-label="Observation">v1, revision 20260719, 212 KB. One resource (<code>users</code>) over six sub-resources: <code>messages</code>, <code>threads</code>, <code>drafts</code>, <code>labels</code>, <code>history</code>, <code>settings</code>. 14 OAuth scopes, one of them <code>https://mail.google.com/</code> itself. <code>messages.get</code> offers <code>minimal</code>/<code>metadata</code>/<code>full</code>/<code>raw</code>; <code>messages.list</code> caps at 500 IDs per page and accepts <code>q</code> in search-box syntax. An unauthenticated <code>users/me/messages</code> call returns 401 <code>CREDENTIALS_MISSING</code> — no anonymous read surface exists at all.</td></tr>
+            <tr><td data-label="Date">2026-07-27</td><td data-label="Probe">Postmaster Tools API discovery</td><td data-label="Observation">v1, revision 20260723. <code>TrafficStats</code> exposes <code>domainReputation</code>, <code>ipReputations</code>, SPF/DKIM/DMARC success ratios, inbound/outbound encryption ratios, and <code>userReportedSpamRatio</code> with explicit bounds. Single scope <code>postmaster.readonly</code>; unauthenticated call also 401s. The only aggregate, non-personal Gmail signal — and it is scoped to domains you already own.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what may be displayed, and how fast it churns. Every row except the last requires a per-user OAuth grant on a <a href="https://developers.google.com/identity/protocols/oauth2/scopes#gmail">restricted scope</a>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Public web</td>
+              <td data-label="Objects &amp; est. count">3 unique marketing pages in 55 locales (Verified Metrics) — none of them on this host.</td>
+              <td data-label="Best legitimate path">Ordinary crawl of <code>www.google.com/gmail/about/*</code>; robots.txt denies everything else.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Standard web quotation; FAQPage JSON-LD is reusable structured data.</td>
+              <td data-label="Freshness">Months.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Message bodies, subjects, snippets, drafts. Per-mailbox count from <code>users.getProfile</code> (<code>messagesTotal</code>, <code>threadsTotal</code>); corpus-wide count is open.</td>
+              <td data-label="Best legitimate path"><code>users.messages.get</code> at <code>format=full</code> (parsed MIME parts) or <code>raw</code> (base64url RFC 2822).</td>
+              <td data-label="Auth &amp; quota">OAuth <code>gmail.readonly</code> or <code>mail.google.com</code>; 20 units/message → 300 msg/min/user.</td>
+              <td data-label="License / display">Limited Use policy: only to power a user-facing feature visible in your own UI. No redistribution, no cross-user pooling.</td>
+              <td data-label="Freshness">Append-mostly; labels and read state mutate constantly.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Inline and attached images, referenced by <code>attachmentId</code> inside <code>MessagePart</code>.</td>
+              <td data-label="Best legitimate path"><code>users.messages.attachments.get</code> after walking the <code>payload.parts</code> tree.</td>
+              <td data-label="Auth &amp; quota">Same scope; one extra call per attachment.</td>
+              <td data-label="License / display">Same Limited Use policy; content is third-party copyright held in a private mailbox.</td>
+              <td data-label="Freshness">Immutable once delivered.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Documents / media</td>
+              <td data-label="Objects &amp; est. count">PDFs, invoices, tickets, spreadsheets — for most users the densest document store they own. No native video or audio corpus: media arrives only as ≤25 MB attachments or Drive links in bodies.</td>
+              <td data-label="Best legitimate path">Attachments endpoint, filtered on part <code>filename</code> / <code>mimeType</code>; Drive links need the separate Drive API and their own grant.</td>
+              <td data-label="Auth &amp; quota">Same scope, plus Drive scope for linked files.</td>
+              <td data-label="License / display">As above. OCR and other derivatives must stay inside the granting user's tenancy.</td>
+              <td data-label="Freshness">Immutable; Drive targets can change under a stable link.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Threads &amp; labels</td>
+              <td data-label="Objects &amp; est. count">Conversation objects and the user's own taxonomy (system labels plus custom).</td>
+              <td data-label="Best legitimate path"><code>users.threads.get</code> (40 units), <code>users.labels.list</code>.</td>
+              <td data-label="Auth &amp; quota">Same scope; <code>gmail.labels</code> alone for the taxonomy.</td>
+              <td data-label="License / display">As above.</td>
+              <td data-label="Freshness">Threads grow; labels are user-mutable at any time.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">schema.org email markup — flight/hotel/restaurant reservations, orders, parcel tracking, events, invoices — embedded by senders. Coverage share: open.</td>
+              <td data-label="Best legitimate path">Parse the JSON-LD/microdata out of the fetched body yourself; there is no entity endpoint.</td>
+              <td data-label="Auth &amp; quota">Same scope. Senders need Google <a href="https://developers.google.com/workspace/gmail/markup">registration</a> to have markup honoured in the UI.</td>
+              <td data-label="License / display">As above.</td>
+              <td data-label="Freshness">Immutable once sent; the underlying reservation is not.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Domain reputation</td>
+              <td data-label="Objects &amp; est. count">Per-domain and per-IP sender reputation, auth pass ratios, spam-report ratios (Probe Log).</td>
+              <td data-label="Best legitimate path">Postmaster Tools API v1.</td>
+              <td data-label="Auth &amp; quota"><code>postmaster.readonly</code> + verified ownership of the domain.</td>
+              <td data-label="License / display">Aggregate, non-personal — the one Gmail signal safe to store centrally.</td>
+              <td data-label="Freshness">Daily buckets.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Gmail differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Two ID systems that must not be confused. Gmail's <code>id</code> and <code>threadId</code> are <strong>mailbox-local</strong> — the same email in sender's and recipient's accounts carries different IDs. The globally stable key is the RFC 2822 <code>Message-ID</code> header, searchable via <code>q=rfc822msgid:</code>. Cross-mailbox dedup is only possible on <code>Message-ID</code>; anything keyed on Gmail's <code>id</code> silently double-counts.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The thread, not the message. Gmail's product model is conversational and users recall threads ("the invoice chain with the landlord"), but attachments and markup hang off individual messages — so index the thread as the retrievable card with per-message parts as sub-records.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p><code>attachmentId</code> joins media to message; <code>historyId</code> is a per-mailbox monotone sequence that joins every mutation into one changelog. The discovery doc warns it is <em>non-contiguous</em> with random gaps — treat it as a cursor, never as a count or a delta size.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p><code>internalDate</code> beats the <code>Date:</code> header: the API documents it as the time Google accepted the message, and it is what orders the inbox. The <code>Date:</code> header is sender-supplied and routinely wrong or forged. For time-ranked retrieval, <code>internalDate</code> is the only trustworthy clock.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Never re-poll. <code>users.watch</code> pushes to Cloud Pub/Sub, and <code>history.list</code> costs 2 units — a tenth of one <code>messages.get</code>. Incremental sync from a stored <code>historyId</code> is so much cheaper than enumeration that full re-listing is a bug, not a fallback.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Roughly 10M spam messages a minute are stopped before delivery (Verified Metrics), so the mailbox arrives pre-filtered — but <code>messages.list</code> takes <code>includeSpamTrash</code>, and setting it silently changes the corpus. Also note phishing is adversarial content <em>inside</em> the index; a mailbox index will happily retrieve a convincing fake invoice.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>There is no external option. Gmail search operators are the whole query language, and the API exposes them verbatim through <code>q</code> — so an index builder can push predicates server-side rather than pulling and filtering. The catch: the cheap <code>gmail.metadata</code> scope explicitly forbids <code>q</code>, forcing the expensive scope on anyone who wants search pushdown.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Re-finding, not discovery. Queries are person-anchored and artifact-anchored ("the flight confirmation from March", "what did Priya send about the contract") over a corpus the user already saw once. Recency and sender identity outrank topical relevance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> thread, with per-message MIME parts, attachments, and extracted schema.org entities as sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> partition key is always <code>(userId, threadId)</code> — never a bare message ID. Cross-mailbox identity on <code>Message-ID</code>; mutation cursor on <code>historyId</code>; time on <code>internalDate</code>.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>Gmail API</strong> — the only real path; one-time backfill via <code>messages.list</code> + <code>get</code> (≈5.6 h per 100K-message mailbox), then <code>users.watch</code> → Pub/Sub → <code>history.list</code> forever. 2) <strong>Takeout MBOX</strong> — user-initiated, no OAuth verification burden, preserves labels via <code>X-Gmail-Labels</code>; good for import-once products, useless for freshness (7-day expiry, no delta). 3) <strong>IMAP</strong> — works without restricted-scope review but caps at 15 clients per account and gives no label or thread model. 4) <strong>Crawl</strong> — yields three marketing pages and nothing else.</li>
+        <li><strong>Recrawl cadence:</strong> push-driven only. Bodies and attachments are immutable, so re-fetch nothing; replay <code>history.list</code> for label, read-state, and delete events. Re-enumerate solely to repair a lost cursor.</li>
+        <li><strong>Derivatives to generate:</strong> attachment OCR, thread summarization, sender-entity resolution, and schema.org entity extraction into a personal timeline. All must be computed and stored per-user — the Limited Use policy makes a pooled cross-user embedding store non-compliant, which also forecloses the usual cost-amortization play.</li>
+        <li><strong>Demo to build:</strong> a quota-aware mailbox indexer that runs the arithmetic before it runs the sync — given <code>messagesTotal</code> from <code>getProfile</code>, project backfill wall-clock at 300 msg/min, then show the same mailbox staying current on <code>history.list</code> deltas for ~2 units a poll. The point of the demo is the ratio, not the retrieval.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Compliance is the real quota.</strong> Every Gmail scope is restricted, requiring OAuth app verification, a demo video of the full grant flow, and an <a href="https://support.google.com/cloud/answer/13464321">annual security assessment</a> by a Google-empanelled assessor if you store or transmit the data. This is a recurring yearly gate on continued access, not a launch cost.</li>
+        <li><strong>The Limited Use policy blocks the standard index architecture.</strong> Data may only power features "prominent in the requesting app's user interface," and model training on it requires explicit user consent. A shared cross-user index — the thing that makes search economics work — is out of bounds by construction.</li>
+        <li><strong>Quota was rewritten this year and gains a price tag.</strong> The limits changed May 1 2026 and the docs state overages are <a href="https://developers.google.com/workspace/gmail/api/reference/quota">planned to bill</a> to Cloud accounts later in 2026. A free-tier assumption baked into a sync scheduler will start costing money mid-year.</li>
+        <li><strong>Project-level concurrency binds before user-level does.</strong> At 200 concurrently syncing users per project (Verified Metrics), scale is a matter of provisioning Cloud projects, not of optimizing calls — a constraint that has to be designed in early.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Google is building the first-party version of exactly this index.</strong> <em>Basis:</em> the Jan 8 2026 blog post announces Gemini-powered retrieval inside Gmail, and Workspace's <a href="https://knowledge.workspace.google.com/admin/gemini/generative-ai-in-google-workspace-privacy-hub">privacy hub</a> confirms in-domain processing is permitted while third parties face restricted-scope review — an asymmetry that widens as the feature set grows.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li>Google blog: <a href="https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/">Jan 8 2026</a> (3B users, Gemini in Gmail) and <a href="https://blog.google/products-and-platforms/products/gmail/hitting-send-on-the-next-15-years-of-gmail/">Apr 1 2019</a> ("On April 1, 2004 we launched Gmail"); <a href="https://workspace.google.com/blog/product-announcements/empowering-businesses-with-AI">Workspace blog, Jan 2025</a> (10M+ paying businesses).</li>
+        <li>Developer docs: <a href="https://developers.google.com/workspace/gmail/api/reference/quota">Gmail API usage limits</a>, <a href="https://developers.google.com/identity/protocols/oauth2/scopes#gmail">OAuth scope list</a>, <a href="https://support.google.com/cloud/answer/13464321">restricted-scope requirements</a>, <a href="https://developers.google.com/workspace/gmail/markup">email markup</a>, <a href="https://developers.google.com/workspace/gmail/postmaster/reference/rest">Postmaster Tools API</a>.</li>
+        <li>Gmail Help: <a href="https://support.google.com/mail/answer/6558">storage</a>, <a href="https://support.google.com/mail/answer/6584">attachments</a>, <a href="https://support.google.com/mail/answer/7126229">IMAP/POP</a>, <a href="https://support.google.com/accounts/answer/3024190">Takeout</a>; <a href="https://knowledge.workspace.google.com/admin/gemini/generative-ai-in-google-workspace-privacy-hub">Workspace generative-AI privacy hub</a>.</li>
+        <li>Local probes on 2026-07-27: <code>curl</code> and <code>dig</code> against robots.txt, headers, DNS/MX, the off-host sitemap, the about-page JSON-LD, and the Gmail and Postmaster Tools discovery documents (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The hostname is the permission boundary. <em>Basis:</em> <code>https://mail.google.com/</code> is itself an OAuth scope string in the Gmail API discovery document.</li>
+        <li>The robots.txt allowlist is decorative. <em>Basis:</em> a Googlebot-UA fetch of the allowed <code>/mail/u/0/</code> path redirected four times to a sign-in page on another host.</li>
+        <li>Gmail's crawlable identity is delegated off-host. <em>Basis:</em> the <code>Sitemap:</code> directive points to <code>www.google.com</code>, whose flagship page canonicalizes to <code>workspace.google.com</code> — neither on this host.</li>
+        <li>Google is building the first-party version of this index. <em>Basis:</em> the Jan 8 2026 Gemini-in-Gmail announcement against the privacy hub's in-domain processing allowance versus third-party restricted-scope review.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total messages stored across Gmail, and the mailbox-size distribution — needs a Google disclosure, or a consented panel sampling <code>messagesTotal</code> from <code>users.getProfile</code>.</li>
+        <li>Share of messages carrying schema.org email markup — measurable by parsing JSON-LD from bodies across a consented mailbox sample, reported by sender category.</li>
+        <li>Real-world sustained throughput versus the documented 300 msg/min/user ceiling — closeable by timing a backfill against a test mailbox and logging 429 behaviour.</li>
+        <li>What the May 1 2026 quota revision changed, and the overage price once billing starts — the doc states only the new limits; needs the prior revision or a pricing announcement.</li>
+        <li>Whether <code>classificationLabelValues</code> (Drive Labels on messages, seen in the Message schema) is generally available or Workspace-tier gated — closeable by an authenticated <code>messages.get</code> on both a consumer and a Workspace account.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
