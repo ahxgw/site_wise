@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pixiv.net Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-07-28</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>pixiv.net</h1>
+      <p class="lede">pixiv serves 147M artworks through an unauthenticated JSON API with no sitemap and no rate limit — and terms that forbid crawling them.</p>
+      <div class="tag-row">
+        <span class="tag">Art Community</span>
+        <span class="tag">Japan</span>
+        <span class="tag">Open API, Closed Licence</span>
+        <span class="tag">AI-Saturated</span>
+        <span class="tag">Adult-Heavy</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>pixiv is Japan's dominant illustration-sharing community, launched September 10 2007 and run by the privately held pixiv Inc. (Sendagaya, Tokyo). It earns from the pixiv Premium subscription, advertising, and adjacent properties — FANBOX, BOOTH, Sketch, Comic. For an index builder it is the mirror image of a walled platform: the corpus is enormous, media-dense, richly tagged, and nearly all of it answers to an <strong>undocumented but entirely unauthenticated JSON API</strong>. The obstacle is not a login wall or a quota but <a href="https://policies.pixiv.net/en.html">Article 14</a> of the Terms of Use. pixiv is also the clearest case yet of a corpus that changed species underneath its own URL space: <span class="evidence inferred">inferred</span> most new posts are now machine-generated. <em>Basis:</em> a random-ID census on 2026-07-28 returned <code>aiType=2</code> for 57.4% of works created Jan–Jul 2026 against 0% for a 2021 control cohort (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.pixiv.net</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><code>https://www.pixiv.net/artworks/{id}</code> (Japanese canonical; <code>/en/</code> is an hreflang alternate)</dd></div>
+        <div><dt>Category</dt><dd>Illustration / manga / novel community</dd></div>
+        <div><dt>Related hosts</dt><dd><code>i.pximg.net</code> (image CDN, referer-gated), <code>s.pximg.net</code>, <code>www.fanbox.cc</code>, <code>booth.pm</code>, <code>sketch.pixiv.net</code>, <code>comic.pixiv.net</code>, <code>dic.pixiv.net</code> (encyclopedia), <code>policies.pixiv.net</code>, <code>pixiv.co.jp</code></dd></div>
+        <div><dt>Owner</dt><dd>pixiv Inc. — private; incorporated November 1 2008 from predecessor Crooc Inc.</dd></div>
+        <div><dt>Founded / launched</dt><dd>September 10 2007, by Takahiro Kamitani and Takanori Katagiri (<a href="https://en.wikipedia.org/wiki/Pixiv">Wikipedia</a>)</dd></div>
+        <div><dt>Business model</dt><dd>pixiv Premium (US$4.15/mo, <a href="https://www.pixiv.help/hc/en-us/articles/235583728-What-are-pixiv-Premium-s-fees-and-available-payment-methods">help centre</a>) + advertising + FANBOX/BOOTH take rate</dd></div>
+        <div><dt>Scale anchor</dt><dd>160M posted works, 119M registered users — as of September 10 2025 (<a href="https://finance.yahoo.com/news/pixiv-celebrates-18th-anniversary-over-140000372.html">18th-anniversary release</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Corpus-wide image count, revenue, and MAU live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Registered users / total works</dt>
+          <dd>119M users; 160M works, up 11% year over year — as of Sep 10 2025. <a href="https://finance.yahoo.com/news/pixiv-celebrates-18th-anniversary-over-140000372.html">18th-anniversary release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Internationalization</dt>
+          <dd>~50% of active users work in a language other than Japanese; ~⅓ of posts are from international users; 240+ countries and regions — as of Sep 10 2025. <a href="https://finance.yahoo.com/news/pixiv-celebrates-18th-anniversary-over-140000372.html">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Highest illustration ID seen</dt>
+          <dd><code>147589525</code>, created 2026-07-25 — read from the ranking endpoint, probed 2026-07-28. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>ID issuance rate</dt>
+          <dd>Illustrations ~39.7K IDs/day (≈14.5M/yr): 2.5M IDs between <code>145000000</code> (2026-05-20) and <code>147500000</code> (2026-07-22). Novels ~8.8K/day (≈3.2M/yr) in a separate ID space: 1M IDs between <code>26000000</code> (2025-09-23) and <code>27000000</code> (2026-01-14). Probed 2026-07-28. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>AI-flagged share of new works</dt>
+          <dd>57.4% (117/204) of works created Jan–Jul 2026; 0% (0/73) in the 2021 control — random-ID census, probed 2026-07-28. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>R-18 share of new works</dt>
+          <dd>48.0% (98/204) at <code>xRestrict=1</code>, plus 2 at <code>xRestrict=2</code> (R-18G), against 21.9% (16/73) in 2021 — same census probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Object survival</dt>
+          <dd>85.0% of IDs from the last 7 months still resolve (36/240 gone); 60.8% of 2021 IDs do (47/120 gone) — same census probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Shape of a work</dt>
+          <dd>Recent cohort: mean 5.33 images (median 1, max 78), 49.0% multi-page; mean 6.8 tags (cap 10); median 852 views, mean 2.9K. 2021 cohort: 2.37 images, 4.9 tags. Same census probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Tag-level corpus counters</dt>
+          <dd>Search returns exact totals unauthenticated: <code>オリジナル</code> 11.85M works, of which 968,861 AI-flagged (8.2% all-time); <code>VTuber</code> 630,513 — probed 2026-07-28. <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-28. Every API call was unauthenticated — no key, no cookie beyond what the server itself set.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe"><code>curl -sL https://www.pixiv.net/robots.txt</code></td><td data-label="Observation">Two stanzas. The <code>*</code> stanza denies mostly social surfaces — <code>/users/*/bookmarks</code>, <code>/users/*/followers</code>, <code>/users/*/mypixiv</code>, <code>/artworks/unlisted/*</code>, <code>/en/search/</code> — but never <code>/artworks/</code>. The second lists 12 AI crawler UAs (<code>GPTBot</code>, <code>ClaudeBot</code>, <code>anthropic-ai</code>, <code>Google-Extended</code>, <code>CCBot</code>, <code>Diffbot</code>, <code>meta-externalagent</code>, <code>cohere-ai</code>, <code>Applebot-Extended</code>, <code>FacebookBot</code>, <code>omgili</code>, <code>omgilibot</code>) under one <code>Disallow: /</code>. <strong>No <code>Sitemap:</code> directive.</strong></td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe"><code>/sitemap.xml</code>, <code>/sitemap_index.xml</code>, <code>/llms.txt</code></td><td data-label="Observation">All 404. A ~150M-object corpus publishes no sitemap and no LLM manifest. <code>/.well-known/security.txt</code> exists and points to <a href="https://hackerone.com/pixiv">hackerone.com/pixiv</a>.</td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe"><code>curl -sI https://www.pixiv.net/</code></td><td data-label="Observation"><code>server: cloudflare</code>, <code>cf-cache-status: DYNAMIC</code>, <code>vary: User-Agent</code>, HSTS 1yr, <code>x-frame-options: SAMEORIGIN</code>, <code>cache-control: no-store</code>. An <code>x-envoy-upstream-service-time</code> header leaks an Envoy mesh behind the CDN. Nine <code>Set-Cookie</code> headers on a logged-out root fetch, two of them A/B bucket IDs with five-year expiries.</td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe"><code>curl -s .../ajax/illust/100000000</code></td><td data-label="Observation">The central finding. 200 OK, 43KB JSON, no auth. <strong>57 top-level fields</strong>: <code>title</code>, <code>description</code>, <code>createDate</code>, <code>userId</code>, <code>userName</code>, <code>tags</code> (per-tag author attribution and a <code>locked</code> flag), <code>viewCount</code>, <code>bookmarkCount</code>, <code>likeCount</code>, <code>commentCount</code>, <code>width</code>/<code>height</code>, <code>pageCount</code>, <code>illustType</code>, <code>xRestrict</code>, <code>sl</code>, <code>aiType</code>, <code>isOriginal</code>, and a <code>urls</code> object with five renditions up to <code>original</code>. <code>extraData.meta</code> also hands over the canonical URL, both hreflang alternates, and the full OGP block.</td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe">Random-ID census via <code>/ajax/illust/{id}</code></td><td data-label="Observation">240 uniform-random IDs in <code>140000000</code>–<code>147500000</code> (Jan–Jul 2026) plus a 120-ID control in <code>90000000</code>–<code>93000000</code> (2021). Recent: 204 resolvable, <code>aiType=2</code> 57.4%, <code>xRestrict=1</code> 48.0%, split 192 illustration / 8 manga / 4 ugoira, 1,087 images across 204 works. Control: 73 resolvable, <code>aiType=2</code> 0% (72 of 73 carry <code>aiType=0</code> — the flag postdates the work), <code>xRestrict=1</code> 21.9%. The control is what makes the AI figure trustworthy: the field is empty before 2022 and majority-set after.</td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe">Curated ranking vs raw ID space</td><td data-label="Observation"><code>ranking.php?mode=daily&amp;format=json</code> returns 50 entries unauthenticated. Re-fetching each gives <strong>0/50 AI-flagged and 0/50 R-18</strong>, against 57.4% and 48.0% in the random sample. <code>mode=daily_r18</code> is 403 without a session.</td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe"><code>curl -s .../ajax/search/artworks/{tag}</code></td><td data-label="Observation">Unauthenticated, 60 results per page, returns an exact <code>total</code> — a free corpus counter for any tag. <code>&amp;ai_type=1</code> (exclude AI) drops <code>オリジナル</code> from 11,851,051 to 10,882,190. <code>mode=safe</code> and <code>mode=r18</code> both return the unfiltered total, so that filter is not applied server-side for logged-out callers.</td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe"><code>/ajax/novel/{id}</code>, <code>/ajax/illusts/comments/roots</code></td><td data-label="Observation">Novels return 51KB including the <strong>entire body text</strong> in <code>content</code>, plus <code>wordCount</code>, <code>characterCount</code>, <code>readingTime</code>, <code>genre</code>, <code>language</code>, <code>textEmbeddedImages</code>. Comments return author ID, name, body and timestamp, paginated by <code>offset</code>/<code>limit</code>. Both unauthenticated.</td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe"><code>curl -s https://i.pximg.net/img-master/...jpg</code></td><td data-label="Observation">403 with no <code>Referer</code>; 200 and 648KB with <code>-e https://www.pixiv.net/</code>. The image CDN's only gate is a referer check — a hotlink guard, not access control.</td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe">Burst test — 40 sequential <code>/ajax/illust/</code> calls</td><td data-label="Observation">31 seconds at ~1.3 req/s: 36×200, 4×404, zero 429s, no <code>Retry-After</code>, no challenge. Across ~400 API calls for this report the endpoint never throttled. The ceiling on ingestion is contractual, not technical.</td></tr>
+            <tr><td data-label="Date">2026-07-28</td><td data-label="Probe"><code>dig +short</code> and structured-data check</td><td data-label="Observation"><code>www.pixiv.net</code> → 31.13.95.38 (Cloudflare front). The artwork page 302s a plain curl UA but returns 200/76KB to a Googlebot UA, with <code>vary: User-Agent</code> confirming UA-dependent rendering. That render contains <strong>zero JSON-LD blocks</strong> — no <code>ImageObject</code>, no <code>CreativeWork</code>. All structured metadata lives in the JSON API, none in the crawlable HTML.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, best legitimate path, cost, display rights, churn. The recurring theme: every path below is technically open and contractually restricted by <a href="https://policies.pixiv.net/en.html">Article 14</a>. pixiv has no audio modality.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">~125M live illustration/manga works (147.6M IDs × 85% survival, calculated by Site Wise), mean 5.33 images each. Total image count open.</td>
+              <td data-label="Best legitimate path"><code>/ajax/illust/{id}</code> for <code>urls</code>, then <code>i.pximg.net</code> with a pixiv <code>Referer</code>.</td>
+              <td data-label="Auth &amp; quota">None observed — no key, no quota, no 429 (Probe Log).</td>
+              <td data-label="License / display">Individual creator copyright; no platform-wide grant. Original-resolution mirroring is squarely outside the ToS.</td>
+              <td data-label="Freshness">Immutable once posted; 15% of a 7-month cohort already gone.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text (titles, captions, tags)</td>
+              <td data-label="Objects &amp; est. count">Title, HTML <code>description</code>, mean 6.8 tags with per-tag author attribution.</td>
+              <td data-label="Best legitimate path">Same illust endpoint; <code>titleCaptionTranslation</code> carries user translations.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">As above.</td>
+              <td data-label="Freshness">Tags mutable by the author and, when unlocked, by others.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Long-form text (novels)</td>
+              <td data-label="Objects &amp; est. count">~27M novel IDs by Jan 2026, +8.8K/day (Verified Metrics). Separate ID space.</td>
+              <td data-label="Best legitimate path"><code>/ajax/novel/{id}</code> — returns the full body in <code>content</code>.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">As above. A complete full-text corpus, delivered with no auth header.</td>
+              <td data-label="Freshness">Author-editable in place.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video / animation</td>
+              <td data-label="Objects &amp; est. count">Ugoira frame-sequence animations, ~2% of recent works (4/204 census).</td>
+              <td data-label="Best legitimate path"><code>/ajax/illust/{id}/ugoira_meta</code> — ZIP of frames plus per-frame delays.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">As above; assembly into a video file is a derivative.</td>
+              <td data-label="Freshness">Immutable.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments</td>
+              <td data-label="Objects &amp; est. count">Threaded per-work comments with stamp support.</td>
+              <td data-label="Best legitimate path"><code>/ajax/illusts/comments/roots</code>, paginated.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">As above; individually owned user text.</td>
+              <td data-label="Freshness">Append-mostly; deletable.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Engagement signals</td>
+              <td data-label="Objects &amp; est. count"><code>viewCount</code>, <code>bookmarkCount</code>, <code>likeCount</code>, <code>commentCount</code> on every work — ranking features, exposed free.</td>
+              <td data-label="Best legitimate path">Same illust endpoint; ranking endpoint for the curated top 50/day.</td>
+              <td data-label="Auth &amp; quota">None for the SFW ranking; <code>daily_r18</code> is 403.</td>
+              <td data-label="License / display">Aggregate counts, not personal data — the safest field group to store.</td>
+              <td data-label="Freshness">Monotonic; re-read to refresh.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Creators (<code>userId</code>), tags as folksonomy, series (<code>seriesNavData</code>), and <code>dic.pixiv.net</code> as a character/franchise ontology.</td>
+              <td data-label="Best legitimate path"><code>/ajax/user/{id}/profile/all</code> enumerates a creator's whole output.</td>
+              <td data-label="Auth &amp; quota">None on pixiv; <code>dic.pixiv.net</code> served a Cloudflare interstitial to curl.</td>
+              <td data-label="License / display">As above.</td>
+              <td data-label="Freshness">Profiles mutate; tag vocabulary drifts continuously.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Social graph</td>
+              <td data-label="Objects &amp; est. count">Followers, bookmarks, "My pixiv" mutuals.</td>
+              <td data-label="Best legitimate path"><strong>Explicitly disallowed in robots.txt</strong> — the one surface pixiv fences at the crawl layer (Probe Log).</td>
+              <td data-label="Auth &amp; quota">n/a</td>
+              <td data-label="License / display">Treat as out of bounds.</td>
+              <td data-label="Freshness">n/a</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where pixiv departs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Three disjoint integer ID spaces — illustrations (~147.6M), novels (~27M), users — none namespaced. "ID 27000000" is meaningless without its type, and the official 160M-works figure is the <em>sum</em> across spaces, which is why it exceeds the highest illustration ID. Locale is a URL prefix, not an object: <code>/artworks/{id}</code> and <code>/en/artworks/{id}</code> are one work, and <code>extraData.meta.canonical</code> always names the bare Japanese form.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <em>work</em>, not the image. Half of recent posts are multi-page (up to 78 images) and pages share one title, one tag set, one caption — a page-level index shatters that context and returns 78 near-duplicates for one query. Index the work; treat pages as sub-records keyed <code>{id}_p{n}</code>.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>The image URL is itself a join key: <code>i.pximg.net/img-original/img/YYYY/MM/DD/HH/MM/SS/{id}_p{n}.jpg</code> encodes work ID, page index, and upload time to the second. A pixiv image found anywhere on the web resolves back to its work and creator from the filename alone, with no lookup — unusually generous provenance infrastructure.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Tags beat titles decisively. Titles are frequently emoji, punctuation, or blank; the tag list is the semantic payload, and per-tag <code>userId</code> attribution plus the <code>locked</code> flag lets you weight author-applied tags above community ones. The first two tags are typically franchise and character — an entity pair, free.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Deletion, not mutation, is the dominant change event, and the rate is severe: 15% of works vanish within seven months and ~39% within five years (Verified Metrics). A liveness sweep is a first-class job here, not an afterthought — a five-year-old crawl is nearly 40% tombstones.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>The manipulation surface is inverted. Little classic SEO spam — pixiv barely competes in web search — but enormous volume pressure from AI generators, which pixiv itself throttled by limiting rapid multi-posting after its May 2023 announcement. The practical filter is <code>aiType</code> plus the ranking endpoint, not a spam classifier.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>A near-closed search economy: no sitemap, no JSON-LD, and an artwork page that 302s a plain crawler. Discovery happens on-site through tag search, and pixiv's own search API beats anything an external engine offers — exact tag totals, AI filtering, 60 results a page, no auth. External <code>site:</code> queries are not a meaningful escape hatch.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Japanese-language entity lookups — franchise plus character plus situation, composed from the tag vocabulary rather than natural language. Half of active users are non-Japanese (Verified Metrics), which makes tag translation the highest-leverage derivative: demand is cross-lingual, the index is not.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the work (illustration, manga, ugoira, or novel), with pages, comments, and extracted entities as sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>(type, id)</code> — never a bare integer. Creator on <code>userId</code>; series on <code>seriesNavData</code>; media on the timestamped <code>i.pximg.net</code> path; entities on the tag vocabulary, normalized against <code>dic.pixiv.net</code>.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>A licensing conversation with pixiv Inc.</strong> — the only path that survives Article 14, and the one to open first, because everything below is technically trivial and contractually exposed. 2) <strong>Ranking + search endpoints</strong> — unauthenticated, cheap, self-limiting in volume; yields the curated ~0%-AI surface and exact tag counters, the right corpus for most retrieval products anyway. 3) <strong>Creator-scoped enumeration</strong> via <code>/ajax/user/{id}/profile/all</code> driven by opt-in creator consent — coverage without a blanket sweep. 4) <strong>Full ID enumeration</strong> — unobstructed at ~1.3 req/s with no throttle, and the path the ToS most directly prohibits. Ranked last on purpose.</li>
+        <li><strong>Recrawl cadence:</strong> metadata weekly for works under 30 days old (counts still moving); liveness-only checks quarterly after that; never re-fetch image bytes, which are immutable. Budget the sweep against 15%/7-month attrition.</li>
+        <li><strong>Derivatives to generate:</strong> tag translation JA→EN first — it addresses the ~50% non-Japanese active base against a Japanese-only vocabulary. Then CLIP-style image embeddings for visual similarity, character/franchise entity resolution from the tag pair, and an AI-provenance field carried through from <code>aiType</code> rather than re-predicted.</li>
+        <li><strong>Demo to build:</strong> a two-corpus comparator. Ingest the same 500 works twice — once from the daily ranking, once by random ID sampling — and show them side by side: 0% vs 57% AI-flagged, 0% vs 48% R-18, a curated head against a median-852-view long tail. The demo's argument is that on pixiv, choosing an ingestion path <em>is</em> choosing a corpus, and no downstream ranking undoes that choice.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Article 14 is the whole story.</strong> The <a href="https://policies.pixiv.net/en.html">Master Terms of Use</a> (revised June 22 2026) prohibit "use of crawlers or other programs to aggregate works," and item 4 separately covers conduct prejudicing posters' interests "by using the results of data analysis (including the conduct of learning to develop artificial intelligence)." pixiv's <a href="https://www.pixiv.net/info.php?id=9524">May 9 2023 announcement</a> confirms it enforces this against scraping specifically, and those countermeasures were built under creator pressure — so the enforcement risk is social as much as legal, and creators can delete, which the 39% five-year attrition shows they do. An index on the open API has no technical problem and a standing legal one.</li>
+        <li><strong>Undocumented means unstable.</strong> <code>/ajax/*</code> is pixiv's own front-end transport, not a published product: no version, no deprecation policy, no contract. A front-end refactor can rename 57 fields without notice, and there is no changelog to watch.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The AI-crawler block and the open API are on a collision course.</strong> <em>Basis:</em> robots.txt names 12 AI crawler UAs under <code>Disallow: /</code> while <code>/ajax/illust/</code> served ~400 unauthenticated calls with no 429 or challenge — a stated policy the infrastructure does not enforce. Closing that gap (keys, signed requests, Cloudflare challenges on <code>/ajax/</code>) is the single change that would most damage a pixiv index, and Cloudflare already fronts the whole site.</li>
+        <li><strong>Nearly half the corpus is adult content and it is not gated on the API.</strong> <code>xRestrict=1</code> works return in full unauthenticated even though <code>mode=daily_r18</code> is 403 — so a naive crawl ingests ~48% R-18 by default. Carry <code>xRestrict</code>/<code>sl</code> through ingestion as hard filters; in jurisdictions with age-verification duties this is compliance, not preference.</li>
+        <li><strong>Composition drifts fast enough to invalidate a stale index.</strong> AI-flagged share went 0%→57.4% in four years and R-18 share roughly doubled (Verified Metrics). A ranker tuned on a 2022 pixiv crawl is not tuned on today's pixiv.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li>pixiv corporate: <a href="https://finance.yahoo.com/news/pixiv-celebrates-18th-anniversary-over-140000372.html">18th-anniversary release, Sep 10 2025</a> (119M users, 160M works, +11% YoY, internationalization); <a href="https://www.pixiv.net/info.php?id=10483">100M-accounts announcement, Jan 23 2024</a>; <a href="https://en.wikipedia.org/wiki/Pixiv">Wikipedia</a> (launch date, founders, incorporation).</li>
+        <li>Policy: <a href="https://policies.pixiv.net/en.html">Service Master Terms of Use</a> (rev. Jun 22 2026, Article 14); <a href="https://www.pixiv.net/info.php?id=9524">generative-AI countermeasures, May 9 2023</a>; <a href="https://www.pixiv.help/hc/en-us/articles/235583728-What-are-pixiv-Premium-s-fees-and-available-payment-methods">Premium pricing</a>.</li>
+        <li>Local probes on 2026-07-28: <code>curl</code> and <code>dig</code> against robots.txt, headers, DNS, the missing sitemap, <code>/.well-known/security.txt</code>, the <code>/ajax/</code> illust, novel, search, comment and user endpoints, the ranking endpoint, <code>i.pximg.net</code> referer behaviour, a 40-call burst test, and a 360-ID two-cohort census. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Most new pixiv posts are machine-generated. <em>Basis:</em> <code>aiType=2</code> on 57.4% of 204 resolvable works from a random Jan–Jul 2026 ID sample, against 0% of 73 works in a 2021 control where the field is unset — the flag is populated, not noisy.</li>
+        <li>Ranking and raw ID enumeration yield materially different corpora. <em>Basis:</em> 0/50 AI-flagged and 0/50 R-18 in the daily ranking versus 57.4% and 48.0% in the random sample, measured the same day. pixiv runs a separate AI ranking, so the SFW ranking's 0% is partly by construction — which is the point: it is a filtered surface, not a sample.</li>
+        <li>The AI-crawler block and the open API contradict each other. <em>Basis:</em> 12 AI UAs under <code>Disallow: /</code> in robots.txt while <code>/ajax/illust/</code> served ~400 unauthenticated calls without one 429 or challenge.</li>
+        <li>Structured metadata is deliberately API-side, not HTML-side. <em>Basis:</em> a Googlebot-UA render of an artwork page contains zero JSON-LD blocks, while <code>extraData.meta</code> in the JSON response carries the canonical URL, hreflang alternates, and full OGP payload.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total image count across the corpus — the recent cohort averages 5.33 images per work but the 2021 cohort averages 2.37, so extrapolating either over 125M live works gives a 300M–670M band too wide to publish. Closeable by stratifying the census by ID decile and summing <code>pageCount</code> per stratum.</li>
+        <li>pixiv Inc. revenue, profitability, and Premium subscriber count — the company is private and files nothing public; only unreliable aggregator estimates exist. Needs a company disclosure or a Japanese corporate filing.</li>
+        <li>Monthly active users, versus the 119M <em>registered</em> figure — pixiv publishes registrations only. Needs an official MAU disclosure, or a third-party panel with its estimator named.</li>
+        <li>Whether the unresolvable 15%/39% are deletions, privatizations, unlisted conversions, or suspensions — the endpoint returns an undifferentiated error for all four. Closeable by comparing against <code>isUnlisted</code> on known-unlisted works, or by watching a fixed ID cohort weekly and recording transitions.</li>
+        <li>Whether <code>sl</code> (observed values 2, 4, 6) is a finer sensitivity scale than <code>xRestrict</code>, and how the two interact — the census found <code>sl=6</code> on more works than <code>xRestrict=1</code>. Needs pixiv documentation or a labelled sample.</li>
+        <li>Whether pixiv offers any licensed bulk or partner feed — no developer portal, API documentation, or partner programme was found. Closeable only by a direct enquiry to pixiv Inc.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
