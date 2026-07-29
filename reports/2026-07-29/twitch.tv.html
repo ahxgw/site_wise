@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>twitch.tv Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-07-29</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>twitch.tv</h1>
+      <p class="lede">Twitch's wall isn't robots.txt — it's a 24-hour cache cap and a metadata-free shell that serves Googlebot exactly what curl gets.</p>
+      <div class="tag-row">
+        <span class="tag">Live Video</span>
+        <span class="tag">Amazon</span>
+        <span class="tag">Ephemeral Corpus</span>
+        <span class="tag">Chat</span>
+        <span class="tag">Creator Economy</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Twitch is the West's dominant live-streaming platform, owned by Amazon since 2014 and monetized through channel subscriptions, Bits, advertising, and Prime bundling. Its primary corpus is <strong>ephemeral by construction</strong>: the flagship object is a live stream that exists for hours, then either expires or survives as a time-limited VOD. That inverts the usual indexing problem — the corpus is enormous in flow and small in stock, and the wall is contractual rather than technical. Twitch's robots.txt is unusually permissive, with no AI-crawler blocks at all, but its Developer Agreement caps caching of API data at twenty-four hours and forbids re-syndication outright. <span class="evidence inferred">inferred</span> Twitch does not defend its corpus by blocking crawlers; it defends it by making a durable third-party copy a contract breach. <em>Basis:</em> robots.txt (Probe Log) names zero AI user agents while the Developer Agreement's 24-hour cache clause and re-syndication ban bind every API consumer (Verified Metrics).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>twitch.tv</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.twitch.tv/">https://www.twitch.tv/</a></dd></div>
+        <div><dt>Category</dt><dd>Live video streaming, creator economy</dd></div>
+        <div><dt>Related hosts</dt><dd><code>clips.twitch.tv</code> (clip permalinks), <code>player.twitch.tv</code> (embed), <code>api.twitch.tv</code> (Helix), <code>eventsub.wss.twitch.tv</code>, <code>irc-ws.chat.twitch.tv</code> (chat), <code>static-cdn.jtvnw.net</code> (thumbnails, emotes), <code>dev.twitch.tv</code>, <code>legal.twitch.com</code></dd></div>
+        <div><dt>Owner</dt><dd>Twitch Interactive, Inc., a subsidiary of Amazon.com, Inc. (NASDAQ: AMZN)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Launched June 2011 as the gaming vertical of Justin.tv (2007); acquired by Amazon August 2014</dd></div>
+        <div><dt>Business model</dt><dd>Channel subscriptions + Bits + advertising + Prime bundling; revenue not broken out in Amazon's segment reporting</dd></div>
+        <div><dt>Scale anchor</dt><dd>More than 55M unique visitors in July 2014 — the last scale figure Twitch or Amazon disclosed officially (<a href="https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch">Amazon press release</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Third-party numbers name their estimator. Missing figures live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Acquisition price</dt>
+          <dd>~$970M in cash — announced Aug 25 2014. <a href="https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch">Amazon press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Last official scale disclosure</dt>
+          <dd>55M+ unique visitors, 15B+ minutes watched, 1M+ broadcasters — July 2014. The minutes figure is 250M hours, calculated by Site Wise. <a href="https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch">Same release</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Sitemap census</dt>
+          <dd>60,004 <code>&lt;loc&gt;</code> entries across 8 child sitemaps collapse to 33,569 unique URLs — 44% duplication, calculated by Site Wise. Observed 2026-07-29 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Sitemap staleness</dt>
+          <dd>Every child sitemap carries <code>lastmod 2026-03-29T18:29:51Z</code> — 122 days stale at probe time, calculated by Site Wise. No per-URL <code>&lt;lastmod&gt;</code> anywhere. Observed 2026-07-29 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Placeholder URLs in sitemap</dt>
+          <dd>2,399 of 60,004 entries (4.0%, calculated by Site Wise) are the literal string <code>--redacted_channel--</code>, e.g. <code>/--redacted_channel--/videos</code>. Observed 2026-07-29 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Media slice of the crawlable surface</dt>
+          <dd>8,280 VOD URLs + 6,435 clip URLs = 14,715 media objects, calculated by Site Wise from the sitemap census on 2026-07-29 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Server-rendered metadata</dt>
+          <dd>A VOD page returns 196,387 bytes byte-identical to Googlebot, Amazonbot, Chrome, and default curl; 6 Open Graph tags, all site-level except <code>og:url</code>; zero JSON-LD blocks. Observed 2026-07-29 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Helix API rate limit</dt>
+          <dd>Token bucket, default 1 point per request, documented example bucket of 800 points; separate buckets per client ID (app tokens) and per client ID per user (user tokens) — as of 2026-07-29. <a href="https://dev.twitch.tv/docs/api/guide/">Twitch API guide</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Cache cap on API data</dt>
+          <dd>Third parties may "cache such information for only a twenty-four hour time period without further sharing it with third parties"; re-syndication and redistribution of API data is prohibited — agreement last modified Dec 4 2024. <a href="https://legal.twitch.com/en/legal/developer-agreement/">Developer Services Agreement</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Automated-access ban</dt>
+          <dd>Terms of Service prohibit accessing Twitch "by means of any robot, spider, scraper, crawler, or other automated means for any purpose" and bar "data mining, robots, or similar data gathering or extraction methods" — last modified Apr 13 2026. <a href="https://www.twitch.tv/p/en/legal/terms-of-service/">Terms of Service</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Live concurrency (estimator: TwitchTracker)</dt>
+          <dd>2,102,980 seven-day average concurrent viewers against 92,373 seven-day average live channels — 22.8 viewers per live channel, calculated by Site Wise. Retrieved 2026-07-29. <a href="https://twitchtracker.com/statistics">TwitchTracker statistics</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Annual flow (estimator: TwitchTracker)</dt>
+          <dd>19B+ hours watched during 2025; ~6.9M active streaming channels per month. Retrieved 2026-07-29. <a href="https://twitchtracker.com/statistics">TwitchTracker statistics</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-29. Default curl user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-29</td><td><code>curl -sL https://www.twitch.tv/robots.txt</code></td><td>58 lines. Four Amazon agents (<code>Amazonbot</code>, <code>Amazonbot-Video</code>, <code>Amzn-SearchBot</code>, <code>Amzn-User</code>) each get a bare <code>Disallow:</code> — full-site allow. <code>User-agent: *</code> blocks ~40 paths (<code>/search</code>, <code>/embed/</code>, <code>/chat/</code>, <code>/popout/</code>, <code>/user/*</code>, <code>/directory/following</code> internals) and explicitly allows <code>/directory</code>. <strong>No GPTBot, ClaudeBot, PerplexityBot, CCBot or Google-Extended directive exists.</strong></td></tr>
+            <tr><td>2026-07-29</td><td><code>curl -sI https://www.twitch.tv/</code></td><td>HEAD rejected with HTTP/2 405 (<code>allow: GET</code>). HSTS <code>max-age=31536000</code>, <code>x-frame-options: SAMEORIGIN</code>, <code>cache-control: private, max-age=0</code>. Sets a <code>twitch.lohp.countryCode</code> cookie on <code>.twitch.tv</code> and reports network errors to <code>nel.twitch.tv</code>.</td></tr>
+            <tr><td>2026-07-29</td><td><code>curl -sI https://twitch.tv/</code>, <code>dig +short</code></td><td>Apex 301s to <code>www</code> from Varnish (<code>x-served-by: cache-pao-kpao1770069-PAO</code>) on Fastly space 151.101.x.x; <code>www</code> resolves to 108.160.162.109. Two different edges front the apex and the app.</td></tr>
+            <tr><td>2026-07-29</td><td>Sitemap index <code>/sitemapv2_index.xml.gz</code></td><td>292-byte gzip listing 8 children (<code>other</code>, <code>referred-p</code>, <code>referred-f</code>, <code>verticals</code>, <code>referred-gp</code>, <code>referred-v</code>, <code>vods</code>, <code>clips</code>), all stamped <code>2026-03-29T18:29:51Z</code>.</td></tr>
+            <tr><td>2026-07-29</td><td>Sitemap census (all 8 children fetched and counted)</td><td>Per file (locs / unique): other 1/1, referred-p 5,645/3,727, referred-f 9,999/9,132, verticals 9,826/1,460, referred-gp 9,837/5,071, referred-v 9,981/8,712, vods 8,280/8,280, clips 6,435/6,430. Five files sit at a ~9,999 cap, implying truncation rather than completeness. Child URL entries carry no <code>&lt;lastmod&gt;</code>.</td></tr>
+            <tr><td>2026-07-29</td><td>Structured-data sample: <code>/videos/1622874979</code>, <code>clips.twitch.tv/TiredSmoothFiddleheads…</code></td><td>Both return the same shell: <code>og:title</code> = "Twitch", <code>og:description</code> = the generic company blurb, <code>og:image</code> = <code>twitch_logo3.jpg</code>, <code>og:type</code> = website. <code>og:url</code> is the only field that varies per object. <code>grep -c 'ld+json'</code> = 0.</td></tr>
+            <tr><td>2026-07-29</td><td>User-agent differential on <code>/videos/1622874979</code></td><td>Googlebot, Amazonbot, desktop Chrome, and bare curl all receive exactly 196,387 bytes. No prerendered variant, no crawler-only SEO sliver.</td></tr>
+            <tr><td>2026-07-29</td><td>Public API sample</td><td><code>api.twitch.tv/v5/oembed</code> and <code>api.twitch.tv/oembed</code> both 404 — no oEmbed surface. <code>helix/streams</code> and <code>helix/games/top</code> return 401 <code>{"error":"Unauthorized","message":"OAuth token is missing"}</code>; a bogus bearer yields 401 "Invalid OAuth token". No <code>Ratelimit-*</code> headers appear on a 401, so the bucket only materializes after auth. <code>POST gql.twitch.tv/gql</code> → 400; <code>eventsub.wss.twitch.tv/ws</code> → 400 over plain HTTPS.</td></tr>
+            <tr><td>2026-07-29</td><td><code>/llms.txt</code> and a nonsense path</td><td><code>llms.txt</code> returns HTTP 200 — but so does <code>/zzz-not-a-real-path-9911.txt</code>, and both bodies are the SPA shell. There is no llms.txt; the app answers 200 for everything.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third party may display, and how fast it churns. Helix = <a href="https://dev.twitch.tv/docs/api/">Twitch API</a>; all API rows inherit the 24-hour cache cap in Verified Metrics.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Stream titles, channel bios, panel text, category names. Only ~33.5K URLs are advertised for crawl (sitemap census).</td>
+              <td>Helix <code>/streams</code>, <code>/channels</code>, <code>/games</code>. Public crawl yields the empty shell only (Probe Log).</td>
+              <td>OAuth required for every endpoint; 800-point bucket.</td>
+              <td>24-hour cache, no re-syndication.</td>
+              <td>Titles change mid-broadcast; bios are near-static.</td>
+            </tr>
+            <tr>
+              <td>Video — live</td>
+              <td>~92K concurrent channels (Verified Metrics). No persistent object: a live stream is a slot, not a document.</td>
+              <td>Embed via <code>player.twitch.tv</code> with a <code>parent</code> param. No metadata path except Helix <code>/streams</code>.</td>
+              <td>Embed is unauthenticated; metadata needs OAuth.</td>
+              <td>Embed only; robots.txt disallows <code>/embed/</code> for crawlers.</td>
+              <td>Half-life measured in hours; object ceases to exist at stream end.</td>
+            </tr>
+            <tr>
+              <td>Video — VOD &amp; clips</td>
+              <td>Sitemap advertises 8,280 VODs and 6,435 clips; true catalogue size is <span class="evidence open">open</span>.</td>
+              <td>Helix <code>/videos</code>, <code>/clips</code> (clips queryable by game or broadcaster).</td>
+              <td>OAuth; <code>/clips</code> is paginated and window-limited.</td>
+              <td>Embed permitted; media files not licensable for mirroring.</td>
+              <td>VODs expire on a retention clock; clips persist (see Open Questions).</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>No separate audio asset — audio exists only as the stream's track. No transcripts or captions published.</td>
+              <td>None. Derivatives would require ASR over embedded playback.</td>
+              <td>—</td>
+              <td><span class="evidence open">open</span> — no documented reuse path for derived transcripts.</td>
+              <td>Tracks the parent video object.</td>
+            </tr>
+            <tr>
+              <td>Chat</td>
+              <td>The densest text on the platform: messages per stream scale with concurrency. Volume is <span class="evidence open">open</span>.</td>
+              <td>Chat over IRC/WebSocket (<code>irc-ws.chat.twitch.tv</code>) or EventSub subscriptions.</td>
+              <td>OAuth token and per-channel subscriptions; robots.txt disallows <code>/chat/</code>.</td>
+              <td>Same 24-hour cache cap; chat is user content under the ToS licence.</td>
+              <td>Sub-second churn; VOD chat replay is the only durable form.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Stream thumbnails, avatars, game box art, emotes — all on <code>static-cdn.jtvnw.net</code>.</td>
+              <td>Helix returns templated CDN URLs with <code>{width}</code>/<code>{height}</code> slots.</td>
+              <td>OAuth for the URLs; CDN fetch itself is open.</td>
+              <td>Hotlink display; no copies retained past 24 hours.</td>
+              <td>Live thumbnails regenerate every few minutes.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Users/channels, categories (games), streams, clips, tags. Category pages are the best-covered crawl surface — <code>verticals</code> and <code>referred-gp</code> sitemaps are almost entirely <code>/directory/category/*</code>.</td>
+              <td>Helix <code>/users</code>, <code>/games</code>, <code>/search/categories</code>.</td>
+              <td>OAuth; <code>/users</code> accepts 100 IDs per call.</td>
+              <td>24-hour cache cap applies to the entity graph too.</td>
+              <td>Category tree is stable; channel↔category binding changes per stream.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Twitch differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The URL key (<code>twitch.tv/&lt;login&gt;</code>) is <em>mutable</em> — logins can be changed and later reclaimed by another account, so an index keyed on the visible URL silently re-attributes a channel's history after a rename. Only the numeric user ID is stable. Clips carry a further trap: the same clip is addressable on <code>clips.twitch.tv/&lt;slug&gt;</code> and <code>twitch.tv/&lt;login&gt;/clip/&lt;slug&gt;</code>, two canonical-looking URLs on different hosts.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>There is no document. A live channel page is a <strong>slot</strong> whose contents are replaced every broadcast, so the useful unit is the <em>broadcast session</em> (channel × start time × category) and, below it, the transcript segment. Indexing <code>twitch.tv/&lt;login&gt;</code> as a page produces a record whose meaning expires within hours.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Everything hangs off <code>user_id</code>. Clips carry <code>video_id</code> plus an offset — the one join anchoring a short-form object to its long-form parent, though the parent disappears when the VOD expires, orphaning the clip. Chat replay joins a VOD by second offset: the only text↔video alignment Twitch exposes.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Inverted relative to text platforms: the title and category are creator-set metadata, often written once and left stale for a six-hour stream, while the actual content lives in audio nobody transcribes. The most reliable text description of a Twitch broadcast is its chat log, not its title.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The contractual cache cap and the natural half-life of live objects happen to agree: a compliant index of live state is also a correct one. The mismatch is on the durable end — clips and channel entities are stable for years but may not legitimately be retained past a day without a commercial agreement.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>robots.txt disallows <code>/search</code>, and on-site search covers channels and categories, not spoken content. Combined with the metadata-free shell (Probe Log), no search engine — internal or external — can answer "which stream discussed X". This is the largest unindexed spoken-word corpus in the top 100.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the broadcast session (channel × start time × category), with transcript segments and clips as child records; clips are the only child worth persisting.</li>
+        <li><strong>Primary keys &amp; joins:</strong> numeric <code>user_id</code> as the spine — never the login. <code>video_id</code> + offset joins clips and chat replay to their parent VOD; <code>game_id</code> joins sessions to the category tree.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) EventSub push subscriptions for stream online/offline and channel updates — the only way to catch sessions that never appear in any sitemap. 2) Helix polling of <code>/streams</code> and <code>/clips</code> within the 800-point bucket, for discovery and backfill. 3) Chat over IRC/WebSocket per tracked channel, as the de facto transcript. 4) The sitemap — 33.5K URLs, 4% of them placeholders, frozen since March; useful for the category tree and nothing else. 5) Public crawl — worthless, returns an identical empty shell to every agent.</li>
+        <li><strong>Recrawl cadence:</strong> live state via push, never polling; category tree monthly; clip metadata weekly; channel entities on EventSub update events only.</li>
+        <li><strong>Derivatives to generate:</strong> ASR over clip audio (clips are short, permanent, and legally embeddable — the best cost-per-minute target); chat-log summarization as a proxy transcript for live sessions; thumbnail embeddings for detecting the same game across channels.</li>
+        <li><strong>Demo to build:</strong> a 24-hour-TTL compliant indexer — ingest Helix + chat into a store that hard-expires every record at 24 hours, and show what fraction of a useful search index survives the expiry. The interesting output is the gap between what you can retrieve and what you can keep.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The 24-hour cache cap is the whole strategy.</strong> A persistent Twitch index is not a crawling problem but a licensing one; without a commercial arrangement, retention past a day breaches the <a href="https://legal.twitch.com/en/legal/developer-agreement/">Developer Agreement</a> regardless of how the data was obtained.</li>
+        <li><strong>robots.txt and the ToS contradict each other.</strong> robots.txt permits generic crawlers on <code>/directory</code> and names no AI agents, while the <a href="https://www.twitch.tv/p/en/legal/terms-of-service/">ToS</a> bans automated access "for any purpose". Compliance with the machine-readable signal is not a defence.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The crawlable surface is unmaintained and may simply be withdrawn.</strong> <em>Basis:</em> the sitemap has not regenerated in 122 days, five of eight children are truncated at a ~9,999 cap, and 2,399 entries are unreplaced <code>--redacted_channel--</code> placeholders (Probe Log) — signals of a pipeline nobody is watching.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Amazon is the privileged crawler.</strong> <em>Basis:</em> robots.txt grants four Amazon-owned agents a bare <code>Disallow:</code> while every other agent faces ~40 blocked paths (Probe Log). Parity with first-party retrieval is not available to third parties on any published terms.</li>
+        <li><strong>No oEmbed means no safe cheap display path.</strong> Both oEmbed endpoints 404 (Probe Log), so third-party UIs must use the iframe player with a <code>parent</code> allowlist — which couples display to your own domain registry and breaks for aggregators.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch">Amazon press release, Aug 25 2014</a> — $970M price; July 2014 visitors, minutes, and broadcaster counts.</li>
+        <li><a href="https://legal.twitch.com/en/legal/developer-agreement/">Twitch Developer Services Agreement</a> (last modified Dec 4 2024) — 24-hour cache clause, re-syndication ban, deletion-propagation duty, Twitch's right to crawl your service for audit.</li>
+        <li><a href="https://www.twitch.tv/p/en/legal/terms-of-service/">Twitch Terms of Service</a> (last modified Apr 13 2026) — automated-access and data-mining prohibitions.</li>
+        <li><a href="https://dev.twitch.tv/docs/api/guide/">Twitch API guide</a> — token-bucket rate limiting, <code>Ratelimit-*</code> headers, app vs user buckets.</li>
+        <li><a href="https://twitchtracker.com/statistics">TwitchTracker</a> — named third-party estimator for concurrency and annual watch hours; not an official figure.</li>
+        <li>Local probes on 2026-07-29: robots.txt, headers, DNS, full sitemap census across all 8 children, structured-data sample, user-agent differential, and API surface tests (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Twitch defends its corpus contractually rather than technically. <em>Basis:</em> zero AI-crawler directives in robots.txt (Probe Log) alongside a 24-hour cache cap and re-syndication ban in the Developer Agreement.</li>
+        <li>Twitch does no crawler-specific prerendering. <em>Basis:</em> Googlebot, Amazonbot, Chrome, and bare curl each received exactly 196,387 bytes with identical site-level Open Graph tags and no JSON-LD (Probe Log).</li>
+        <li>The sitemap pipeline is unmaintained. <em>Basis:</em> 122-day-old <code>lastmod</code>, five children truncated at ~9,999 entries, and 2,399 literal <code>--redacted_channel--</code> placeholders (Probe Log).</li>
+        <li>Amazon-owned agents get privileged crawl access. <em>Basis:</em> four <code>Amzn</code>/<code>Amazonbot</code> user agents receive a bare <code>Disallow:</code> against ~40 paths blocked for <code>*</code> (Probe Log).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total live catalogue size — how many VODs and clips actually exist, versus the 14,715 the sitemap advertises. Closeable by sweeping Helix <code>/clips</code> and <code>/videos</code> per <code>game_id</code> with an app token and summing paginated cursors.</li>
+        <li>Current VOD retention periods by account tier, and whether the 8,280 sitemap VOD URLs still resolve. Closeable with a batched Helix <code>/videos?id=</code> lookup over the sampled IDs — the SPA returns 200 for deleted objects, so HTTP status cannot answer it.</li>
+        <li>Chat message volume per day platform-wide — no published figure; closeable by sampling IRC joins across a stratified channel set and extrapolating by concurrency.</li>
+        <li>Twitch revenue and user counts — Amazon does not break Twitch out in segment reporting, so no official figure has been published since July 2014. Only an Amazon disclosure would close this.</li>
+        <li>Whether any commercial arrangement lifts the 24-hour cache cap, and on what terms. The agreement references "commercial arrangements described above" but publishes no rate card; closeable only by contacting Twitch developer relations.</li>
+        <li>Whether Twitch content is licensed for AI training to anyone, including Amazon. No published policy exists in robots.txt, the ToS, or the Developer Agreement.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
