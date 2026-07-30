@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ebay.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-07-30</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>ebay.com</h1>
+      <p class="lede">eBay lists 2.5B items but sitemaps expose 2%; the priced, crawlable corpus hides in category and keyword pages, not listings.</p>
+      <div class="tag-row">
+        <span class="tag">Ecommerce</span>
+        <span class="tag">C2C Marketplace</span>
+        <span class="tag">Long-Tail Inventory</span>
+        <span class="tag">Recommerce</span>
+        <span class="tag">Ads</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>eBay is the web's largest inventory of <em>individually described used and collectible goods</em> — 2.5B live listings written by sellers rather than derived from a manufacturer catalog. That inverts Amazon: instead of one canonical product record with competing offers, eBay carries millions of near-duplicate, hand-written listings whose condition and provenance live in free text and photos. It monetizes a take rate on ~$80B of GMV plus $2.0B of seller advertising. For an index builder the tension is sharp: the listing detail page holds the value and is the one surface eBay refuses to serve to generic clients, while the aggregation pages above it hand out priced, imaged, structured records for free. <span class="evidence inferred">inferred</span> eBay wants to be cited by assistants but not learned from or transacted through. <em>Basis:</em> robots.txt gives training crawlers <code>Disallow: /</code> while <code>Claude-User</code>/<code>ChatGPT-User</code> inherit the permissive <code>*</code> rules, and the same file's prose bans agent-driven checkout (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>ebay.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.ebay.com/">https://www.ebay.com/</a></dd></div>
+        <div><dt>Category</dt><dd>C2C/B2C marketplace, recommerce, retail ads</dd></div>
+        <div><dt>Related hosts</dt><dd><code>i.ebayimg.com</code> (images, Fastly), <code>video.ebaycdn.net</code> (HLS video), <code>developer.ebay.com</code>, <code>api.ebay.com</code>; ~20 country sites (<code>ebay.co.uk</code>, <code>ebay.de</code>, …) are separate listing namespaces</dd></div>
+        <div><dt>Owner</dt><dd>eBay Inc. (NASDAQ: EBAY), CEO Jamie Iannone; agreed Feb 2026 to acquire Depop for ~$1.2B (<a href="https://www.sec.gov/Archives/edgar/data/1065088/000106508826000027/ebay-20251231.htm">FY2025 10-K</a>)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Sept 1995 as AuctionWeb; 30+ years of commerce data</dd></div>
+        <div><dt>Business model</dt><dd>Marketplace take rate + Promoted Listings advertising + store subscriptions + payments/shipping fees</dd></div>
+        <div><dt>Scale anchor</dt><dd>2.5B live listings and 135M active buyers at end of 2025 (<a href="https://www.sec.gov/Archives/edgar/data/1065088/000106508826000027/ebay-20251231.htm">FY2025 10-K</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Live listings</dt>
+          <dd>2.5B globally — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1065088/000106508826000027/ebay-20251231.htm">FY2025 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemapped URLs</dt>
+          <dd>111.2M across 2,686 child sitemaps in 7 indexes: 49.9M <code>/itm/</code> listings (2.53M auction + 47.34M fixed-price), 13.3M of them carrying <code>&lt;video:video&gt;</code> markup; plus 23.0M <code>/b/</code> category nodes, 21.5M <code>/p/</code> catalog products, 3.1M <code>/shop/</code> keyword pages, 515K <code>/str/</code> stores — as of Jul 30 2026, sitemap census (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Listing coverage of the corpus</dt>
+          <dd>49.9M sitemapped <code>/itm/</code> URLs = <strong>2.0% of the 2.5B live listings</strong> — as of Jul 30 2026, sitemap census (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>JSON-LD yield per aggregation page</dt>
+          <dd>60 items with name + URL + image + price, at 60/60 coverage on both a <code>/b/</code> and a <code>/shop/</code> page — as of Jul 30 2026, structured-data sample (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>GMV, FY2025</dt>
+          <dd>~$80B enabled in 2025 — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1065088/000106508826000027/ebay-20251231.htm">FY2025 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Net revenues, FY2025</dt>
+          <dd>$11.10B total — Marketplace $9.11B, Advertising $1.99B (+22% YoY) — as of Dec 31 2025. <a href="https://www.sec.gov/Archives/edgar/data/1065088/000106508826000027/ebay-20251231.htm">FY2025 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Q1 2026 GMV and buyers</dt>
+          <dd>GMV $22.2B (+18% as-reported, +14% FX-neutral); 136M active buyers; revenue $3.1B — quarter ended Mar 31 2026. <a href="https://www.sec.gov/Archives/edgar/data/1065088/000106508826000092/exhibit991erebayq12026.htm">Q1 2026 earnings release (SEC exhibit 99.1)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>AI-training prohibition, API terms</dt>
+          <dd>Developers may not ingest Restricted API data into any third-party generative AI model or tool without eBay's prior written consent — effective Jun 24 2025. <a href="https://developer.ebay.com/join/api-license-agreement">API License Agreement</a>, <a href="https://www.ecommercebytes.com/2025/07/18/ebay-restricts-developers-from-using-its-data-to-train-ai/">clause reported by EcommerceBytes</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Bulk feed cadence</dt>
+          <dd>Feed API item files are TSV_GZIP; <code>NEWLY_LISTED</code> daily per category+marketplace, <code>ALL_ACTIVE</code> bootstrap generated Tuesdays reflecting Sunday state, streamed in Range chunks up to 200MB — as of Jul 30 2026. <a href="https://developer.ebay.com/api-docs/buy/feed/overview.html">Feed API overview</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-30, desktop Chrome user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-30</td><td><code>curl -sL https://www.ebay.com/robots.txt</code></td><td>808 lines, versioned <code>v29_COM_July_2026</code>, with seven <code>Sitemap:</code> pointers. Header prose bans "automated scraping, buy-for-me agents, LLM-driven bots, or any end-to-end flow that attempts to place orders without human review" and threatens action under the User Agreement.</td></tr>
+            <tr><td>2026-07-30</td><td>robots.txt AI-agent blocks</td><td>Two tiers. <strong>Training crawlers</strong> — <code>Bytespider</code>, <code>CCBot</code>, <code>ChatGLM-Spider</code>, <code>ClaudeBot</code>, <code>PerplexityBot</code>, <code>anthropic-ai</code>, <code>AmazonBot</code>, <code>meta-externalagent</code>, <code>GPTBot</code>, <code>Applebot-Extended</code> — share one <code>Disallow: /</code> with 11 <code>Allow</code> exceptions, all marketing/help pages (<code>/help</code>, <code>/sellercenter</code>, <code>/giftcards</code>). No listing path among them. <strong>Assistant-time fetchers</strong> — <code>OAI-SearchBot</code>, <code>ChatGPT-User</code>, <code>Claude-SearchBot</code>, <code>Claude-User</code> — get a block duplicating the permissive <code>*</code> rules, leaving listings and categories open. <code>OAI-AdsBot</code> gets a third block with no <code>Disallow: /</code> and an explicit <code>Allow: /b/*?*mkcid=32*</code>.</td></tr>
+            <tr><td>2026-07-30</td><td><code>curl -sI https://www.ebay.com/</code> and <code>dig +short www.ebay.com</code></td><td>HTTP/2 200 via Akamai (<code>x-cdn: Akamai</code>, <code>server: ebay-proxy-server</code>); CNAME chain <code>ebaycdn.net</code> → <code>edgekey.net</code> → <code>akamaiedge.net</code>, apex separately at 23.53.3.147/148. HSTS lacks <code>includeSubDomains</code>/<code>preload</code>; CSP is <code>report-only</code>. Six Imperva <code>__uzm*</code> bot-management cookies set on first byte.</td></tr>
+            <tr><td>2026-07-30</td><td>Sitemap census: 7 indexes, all 2,686 children counted (totals in Verified Metrics)</td><td>Children are uniformly packed (39K–49K URLs) with only the last of each class partial, so the total is a tight bound, not a guess. Classes map to URL shapes: AUCTION 53 and VIS 1,214 → <code>/itm/</code> (VIS children are named <code>GTC-*</code>, Good-Til-Cancelled), VIDEO 280 → <code>/itm/</code>, PRP 552 → <code>/p/{epid}</code>, BROWSE 512 → <code>/b/{slug}/{catId}/bn_{n}</code>, KWSRP 64 → <code>/shop/{slug}?_nkw=</code>, NGS 11 → <code>/str/{seller}</code>.</td></tr>
+            <tr><td>2026-07-30</td><td>Fetch one URL of each sitemapped class</td><td><strong>The listing page is the only blocked class.</strong> <code>/itm/117323896652</code> → HTTP 403, a 1.8KB <code>noindex,nofollow</code> soft-error page. Everything above it serves 200: <code>/</code> 473KB, <code>/b/…/bn_37</code> 1.68MB, <code>/p/5977</code> 443KB, <code>/str/sanjoseparts</code> 699KB, <code>/shop/…?_nkw=</code> 1.81MB. <code>/sch/i.html?_nkw=drone</code> also 403 — the classic search URL is walled while its sitemapped <code>/shop/</code> twin is not. <code>developer.ebay.com</code> serves the same 403 page to curl.</td></tr>
+            <tr><td>2026-07-30</td><td>Structured-data sample, JSON-LD extraction</td><td>The canonical container is empty and the payload sits in a non-standard slot. On <code>/b/</code> the <code>ItemList</code> has <code>itemListElement: []</code> while the 60 real listings live at <code>CollectionPage.about.offers.itemOffered[]</code>. On <code>/shop/</code>, one <code>CollectionPage</code> holds 60 items at <code>.offers.itemOffered[]</code>, each with name, <code>/itm/</code> URL, <code>i.ebayimg.com</code> image and <code>offers.price</code> + <code>priceCurrency</code> + <code>availability</code> — 60/60 on every field. On <code>/p/</code>: one Product under <code>WebPage.mainEntity.WebPageElement.offers</code>, long editorial catalog prose, no price. Item URLs arrive wrapped in <code>itmmeta</code>/<code>hash</code>/<code>itmprp</code> params.</td></tr>
+            <tr><td>2026-07-30</td><td>VIDEO sitemap → CDN fetch</td><td>Entries carry <code>video:content_loc</code>, <code>video:thumbnail_loc</code>, <code>video:title</code>, <code>video:description</code>. Fetching one <code>content_loc</code> returned an unauthenticated 200 HLS master playlist (<code>application/x-mpegurl</code>) advertising a 4-rung ABR ladder to 1280×720 plus a 128kbps audio-only rendition. No token, referer, or cookie required.</td></tr>
+            <tr><td>2026-07-30</td><td>Image CDN headers, 20 listing images</td><td><code>i.ebayimg.com</code> runs Fastly (<code>x-cdn: Fastly</code>) — a different CDN from the Akamai-fronted site. <code>access-control-allow-origin: *</code>, <code>cache-control: public,max-age=31536000,immutable</code>, <code>last-modified</code> present. Every response declares <code>access-control-expose-headers: X-EBAY-AI-GENERATED</code>, but <strong>0 of 20</strong> images actually carried that header — the provenance channel is wired up, unpopulated on this sample.</td></tr>
+            <tr><td>2026-07-30</td><td>Reviews, feedback, <code>/llms.txt</code>, oEmbed, unauthenticated Browse API</td><td>robots.txt has <code>Allow: /urw/*/product-reviews/</code> then <code>Disallow: /urw/</code>, but live review URLs are <code>/urw/product-reviews/{epid}</code>, which the <code>Allow</code> cannot match (it requires a segment between the two literals), so the <code>Disallow</code> governs. The page serves 200 (145KB, 22 ratings, 5.0 average) with no JSON-LD — review text is HTML-only. <code>/fdbk/</code> seller feedback serves 200 (116KB) but is disallowed for every agent. <code>llms.txt</code> and oEmbed both 404. <code>api.ebay.com/buy/browse/v1/item_summary/search</code> without a token returns 403, not a documented auth error.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Browse/Feed = <a href="https://developer.ebay.com/api-docs/buy/feed/overview.html">eBay Buy APIs</a>, governed by the <a href="https://developer.ebay.com/join/api-license-agreement">API License Agreement</a>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text — listings</td>
+              <td>2.5B live titles/descriptions; 49.9M sitemapped (Verified Metrics).</td>
+              <td>Feed API <code>ALL_ACTIVE</code> bootstrap + <code>NEWLY_LISTED</code> deltas. Crawling <code>/itm/</code> is closed — 403 to generic clients (Probe Log).</td>
+              <td>Limited Release: Partner Network membership, business-unit approval, signed contract. Default app quota cited as 5,000 calls/day; production tier open.</td>
+              <td>Affiliate display terms; no resale or redistribution; gen-AI ingestion banned without written consent.</td>
+              <td>High churn — auctions expire in days; GTC persists but reprices.</td>
+            </tr>
+            <tr>
+              <td>Text — aggregation layer</td>
+              <td>23.0M <code>/b/</code>, 3.1M <code>/shop/</code>, 21.5M <code>/p/</code>, 515K <code>/str/</code> (Verified Metrics).</td>
+              <td>Plain public crawl: serves 200 with JSON-LD carrying 60 priced items per page (Probe Log) — the one open, no-auth window onto listing data.</td>
+              <td>None. Rate-limit posture behind the Imperva wall is open.</td>
+              <td>robots.txt permits these paths for <code>*</code> and assistant-time fetchers; training crawlers excluded.</td>
+              <td>Category trees stable; the 60-item payload is a live ranked slice.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Multiple photos per listing on <code>i.ebayimg.com</code>; total open, but ≥155 distinct image URLs on one search page (Probe Log).</td>
+              <td>URLs arrive free inside aggregation JSON-LD and Feed rows; CDN is CORS-open and immutably cached (Probe Log).</td>
+              <td>None for the CDN itself.</td>
+              <td>Hotlink display under affiliate terms; seller-owned photos, so bulk copying needs rights review. <code>X-EBAY-AI-GENERATED</code> declared but unpopulated in our sample.</td>
+              <td>Immutable per URL (1-year cache); new URLs on revision.</td>
+            </tr>
+            <tr>
+              <td>Video + audio</td>
+              <td>13.3M listings with video (Verified Metrics), plus eBay Live streams at <code>/ebaylive</code> (count open). No standalone audio corpus — audio is the track inside listing video.</td>
+              <td><strong>Best-in-class for a marketplace:</strong> VIDEO sitemap → <code>video:content_loc</code> → unauthenticated HLS master playlist, 1280×720 ladder with a separate 128kbps audio rendition (Probe Log).</td>
+              <td>None observed — no token, referer, or cookie.</td>
+              <td>Seller-produced media; the open CDN grants no reuse licence. Treat as fetchable, not licensed.</td>
+              <td>Dies with the listing; sitemap <code>lastmod</code> at day granularity.</td>
+            </tr>
+            <tr>
+              <td>Reviews / feedback</td>
+              <td>Product reviews per <code>/p/</code> entry; seller feedback per account. Volumes open.</td>
+              <td>No clean path: review pages are robots-disallowed by the <code>/urw/</code> rule and carry no JSON-LD; <code>/fdbk/</code> is disallowed for every agent (Probe Log).</td>
+              <td>—</td>
+              <td>Buyer-authored text; no licence to redistribute.</td>
+              <td>Append-mostly; feedback ages out of the 12-month scorecard.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Listing IDs, EPIDs, category IDs, seller accounts, item aspects, condition grades.</td>
+              <td>EPIDs and category IDs are legible in URLs and crawlable at scale; item aspects need Browse API <code>getItem</code>.</td>
+              <td>Browse API needs an OAuth app token; unauthenticated calls 403 (Probe Log).</td>
+              <td>API License Agreement; aspects may fall under the "Restricted API" gen-AI clause.</td>
+              <td>Category tree slow; aspects change on revision.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where eBay differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Two ID namespaces that do not interchange: web URLs use a bare numeric legacy item ID (<code>/itm/117323896652</code>), the REST APIs use <code>v1|117323896652|0</code> with the third field as variation. Store both or you cannot join a crawled page to a Feed row. Strip <code>itmmeta</code>, <code>hash</code>, <code>itmprp</code>, <code>_skw</code> and <code>var</code> before keying — the JSON-LD emits all of them (Probe Log). Every country site is a separate namespace.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Inverted from Amazon. The <strong>listing</strong> is the unit, not the product: one physical object is one listing, so condition, completeness and photos differentiate rather than price alone. The <code>/p/</code> EPID catalog covers only the mass-produced tail (21.5M entries against 2.5B listings) and collapses exactly the variation that matters for used goods.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Everything hangs off the numeric item ID: the VIDEO sitemap keys video and thumbnail to <code>/itm/{id}</code>, and aggregation JSON-LD keys image and price to the same. eBay is therefore one of the few large sites where a text record, a priced offer, a thumbnail and a playable video stream join <em>without any authenticated call</em>. EPID joins to catalog prose and reviews; seller ID to store and feedback.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Titles are stuffed to the character limit and are the weakest field. For used goods the <strong>photo is ground truth</strong> and the description is the seller's claim about it — the reverse of catalog commerce, and why image and video derivatives carry unusual weight here. Catalog prose on <code>/p/</code> describes the product line, not the item for sale, and must never merge into a listing record.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Two populations with different physics, and the sitemap names them: AUCTION (2.5M) expires on a clock of days, VIS/GTC (47.3M) persists for months while repricing. The <code>ALL_ACTIVE</code> bootstrap is a Sunday snapshot published Wednesday (Verified Metrics), so a bulk-only index carries a structural 3–10 day lag on a corpus whose fast population partly no longer exists.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Near-duplicate listings from one seller across categories, titles borrowing brands the item is merely "compatible with" (visible in the sampled JSON-LD), and the counterfeit risk motivating Authenticity Guarantee. Promoted Listings make the 60-item JSON-LD slice an <em>ad-influenced</em> ranking, not an organic one.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>eBay splits its own search surface: the sitemapped <code>/shop/{slug}?_nkw=</code> form is crawlable and serves structured results while the canonical <code>/sch/i.html?_nkw=</code> returns 403 (Probe Log). The 3.1M <code>/shop/</code> pages are a purpose-built SEO layer — eBay chooses which keyword searches exist externally. Queries here run condition- and variant-heavy (model + year + "OEM", "NOS", "for parts", PSA grades), and numeric part numbers demand exact-match, not semantic, retrieval.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the listing, keyed by marketplace + numeric item ID, with photos, HLS video, price and seller attached. EPID-linked catalog prose and reviews stay a separate joined record.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>marketplace + itemId</code> (store legacy numeric <em>and</em> <code>v1|id|var</code>); <code>epid</code> → catalog and reviews; <code>sellerId</code> → store and feedback; <code>categoryId</code> → browse tree.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>Aggregation-page crawl</strong> — 23.0M <code>/b/</code> + 3.1M <code>/shop/</code> pages × 60 priced JSON-LD items; zero auth, and the only path yielding price without a contract. 2) <strong>VIDEO sitemap</strong> — 13.3M listings with directly fetchable HLS and thumbnails. 3) <strong>Feed API</strong> — the only true bulk path for full descriptions, gated behind Partner Network membership and lagged 3–10 days. 4) <strong>Browse API</strong> <code>getItem</code> for aspects, metered per call. 5) <strong><code>/itm/</code> crawl</strong> — closed; do not design around it.</li>
+        <li><strong>Recrawl cadence:</strong> by sitemap class, not site-wide. AUCTION daily or not at all (most rows die before a weekly pass). GTC weekly for existence, repriced from aggregation pages far more often. BROWSE/PRP monthly. Images and video never — the CDN marks them <code>immutable</code>.</li>
+        <li><strong>Derivatives to generate:</strong> image embeddings as the primary dedup and condition signal (photos outrank titles here); keyframe + ASR over the 13.3M videos, where sellers actually demonstrate defects and function; title de-stuffing to separate the item from "compatible with" brand noise; a legacy-ID ↔ REST-ID concordance table.</li>
+        <li><strong>Demo to build:</strong> a no-auth slice builder — walk the BROWSE and VIDEO sitemaps, harvest the 60-item payload from <code>CollectionPage.about.offers.itemOffered</code>, pull matching HLS thumbnails, emit joined JSONL with price. It would show how much of a 2.5B-listing marketplace is indexable with no contract, and where the 403 wall starts.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The open window is a JSON-LD implementation detail, not a commitment.</strong> The 60 priced items sit in <code>CollectionPage.about.offers.itemOffered</code> while the standards-compliant <code>ItemList</code> is empty (Probe Log). A template refactor could remove the payload with no policy announcement.</li>
+        <li><strong>Licensing forbids the obvious use.</strong> The API License Agreement bans ingesting Restricted API data into third-party gen-AI models without written consent (Verified Metrics). An index feeding a generative product needs consent or must confine itself to crawl-derived data whose own terms stay restrictive.</li>
+        <li><strong>Feed API access is relationship-gated, not money-gated.</strong> Limited Release, Partner Network membership plus business-unit approval, and eligibility explicitly not a guarantee (<a href="https://developer.ebay.com/api-docs/buy/feed/overview.html">Feed API overview</a>). No self-serve tier to fall back to.</li>
+        <li><strong>Bulk-only indexing is structurally stale.</strong> The <code>ALL_ACTIVE</code> snapshot reflects Sunday and lands Wednesday; auctions turn over inside that window, so a feed-only index misrepresents availability on its fastest-moving 2.5M objects.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Agentic-commerce enforcement will tighten before crawl policy does.</strong> <em>Basis:</em> robots.txt was re-versioned to <code>v29_COM_July_2026</code> with new prose singling out "buy-for-me agents" and citing the User Agreement, while the listing paths available to <code>Claude-User</code> and <code>ChatGPT-User</code> were left permissive (Probe Log) — the pressure is on transacting, not reading.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>eBay is building an ads-for-assistants channel.</strong> <em>Basis:</em> <code>OAI-AdsBot</code> has its own robots block with no <code>Disallow: /</code> and an explicit <code>Allow: /b/*?*mkcid=32*</code>, an affiliate/marketing-channel-tagged URL form (Probe Log). Category pages reachable by an ads crawler may diverge from what organic crawlers see.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1065088/000106508826000027/ebay-20251231.htm">eBay FY2025 Form 10-K</a> (filed Feb 19 2026) — 2.5B live listings, 135M active buyers, ~$80B GMV, $11.10B net revenues and the Marketplace/Advertising split, Depop acquisition agreement.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1065088/000106508826000092/exhibit991erebayq12026.htm">eBay Q1 2026 earnings release (SEC exhibit 99.1)</a> — $22.2B GMV, 136M active buyers, $3.1B revenue, US/International GMV split.</li>
+        <li><a href="https://developer.ebay.com/api-docs/buy/feed/overview.html">eBay Feed API overview</a> — TSV_GZIP format, <code>NEWLY_LISTED</code>/<code>ALL_ACTIVE</code> scopes, Tuesday/Wednesday bootstrap cadence, 200MB Range chunks, Limited Release eligibility.</li>
+        <li><a href="https://developer.ebay.com/join/api-license-agreement">eBay API License Agreement</a> and <a href="https://www.ecommercebytes.com/2025/07/18/ebay-restricts-developers-from-using-its-data-to-train-ai/">EcommerceBytes report on the Jun 24 2025 update</a> — the gen-AI ingestion clause.</li>
+        <li><a href="https://community.ebay.com/t5/eBay-APIs-Talk-to-your-fellow/About-API-limit-calls/td-p/34671615">eBay Community: API call limits</a> — the commonly cited 5,000 calls/day default application limit and the Application Growth Check process. Secondary, not an official quota table.</li>
+        <li>Local probes on 2026-07-30 — see the Probe Log for commands and results.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>eBay wants assistant citation and affiliate traffic, not training or autonomous purchase. <em>Basis:</em> the robots.txt tier split (ten training crawlers at <code>Disallow: /</code> versus <code>*</code>-equivalent rules for <code>Claude-User</code> and <code>ChatGPT-User</code>), plus the prose ban on buy-for-me agents and the API terms' gen-AI clause.</li>
+        <li>The 2% sitemap ratio is deliberate SEO selection, not an incomplete sitemap. <em>Basis:</em> seven indexes hand-partitioned by listing type (AUCTION/GTC/VIDEO) and SEO surface (BROWSE/KWSRP/PRP/NGS), children uniformly packed to 39K–49K with only the last partial, and 3.1M purpose-built keyword pages — the shape of a curated feed, not a truncated dump.</li>
+        <li>Product reviews are crawl-excluded by a mis-specified rule, not by intent. <em>Basis:</em> <code>Allow: /urw/*/product-reviews/</code> cannot match the live form <code>/urw/product-reviews/{epid}</code>, so the adjacent <code>Disallow: /urw/</code> governs; the <code>Allow</code>'s existence shows reviews were meant to be crawlable.</li>
+        <li>Photos, not titles, are authoritative for used inventory. <em>Basis:</em> sampled JSON-LD titles are stuffed to the length limit and borrow brands the item is only "compatible with", while each listing carries multiple immutable CDN photos of the specific object.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many of the 2.5B live listings are reachable by any legitimate path — closeable by summing <code>ALL_ACTIVE</code> bootstrap row counts across every category and marketplace once Feed API access is granted.</li>
+        <li>Whether allowlisted search crawlers receive the <code>/itm/</code> HTML generic clients are refused, and whether it carries Product JSON-LD with price — closeable by diffing our 403 against Google's and Bing's rendering of the same item ID.</li>
+        <li>Whether <code>X-EBAY-AI-GENERATED</code> is ever populated, and on what share of images — closeable by sampling thousands of image URLs, biased toward listings using eBay's AI background tools.</li>
+        <li>Authoritative Browse and Feed API production quotas — the 5,000/day figure is a community number; the Analytics API <code>getRateLimits</code> call returns real limits for a credentialed app.</li>
+        <li>What <code>mkcid=32</code> designates and whether <code>OAI-AdsBot</code> sees different inventory than organic crawlers — closeable by diffing <code>/b/</code> responses with and without the parameter.</li>
+        <li>eBay Live stream count and review/feedback corpus sizes — no official figures; <code>/ebaylive</code> serves 200 but appears in no sitemap index, and ratings counts are visible per <code>/p/</code> page but only aggregable via a disallowed path.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
