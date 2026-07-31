@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>accuweather.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-07-31</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>accuweather.com</h1>
+      <p class="lede">AccuWeather is a 3.5M-location forecast engine behind an Akamai wall: its pages are machine-generated and perishable, so the API is the only real index.</p>
+      <div class="tag-row">
+        <span class="tag">Weather</span>
+        <span class="tag">Data Licensing</span>
+        <span class="tag">Ads</span>
+        <span class="tag">Location Keys</span>
+        <span class="tag">Private</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>AccuWeather is a privately held forecasting company that sells the same data three ways: metered APIs to 250+ Fortune 500 customers, advertising against its consumer properties, and subscriptions. It is the rare top-100 site with <strong>no user-generated corpus at all</strong> — every object is a machine-rendered view of a numerical forecast, valid for minutes to days and then replaced. That inverts the usual indexing problem: no back catalog to accumulate, no comment graph to mine, no revision history to diff, just a 3.5M-row location table joined to parameters that expire. The company defends the consumer site hard and sells the data separately — pages carry no JSON-LD, the Internet Archive is refused, and AI-crawler user agents have their connection dropped at the Akamai edge (Probe Log) — while the developer portal publishes <code>llms.txt</code>, <code>llms-full.txt</code>, and Markdown docs. A machine-readable sales surface bolted to a machine-hostile content surface.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>accuweather.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.accuweather.com/">https://www.accuweather.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Weather forecasting; B2B data licensing + consumer ad-supported media</dd></div>
+        <div><dt>Related hosts</dt><dd><code>dataservice.accuweather.com</code> (API), <code>developer.accuweather.com</code> (portal), <code>corporate.accuweather.com</code>, <code>advertising.accuweather.com</code>, <code>apidev.accuweather.com</code>; <code>m.weathercn.com</code> is the China-facing property that search-engine user agents get redirected to (Probe Log)</dd></div>
+        <div><dt>Owner</dt><dd>AccuWeather, Inc. — private, founder-controlled. CEO Steven R. Smith since Jun 2023; founder Dr. Joel N. Myers is executive chair (<a href="https://en.wikipedia.org/wiki/AccuWeather">Wikipedia</a>)</dd></div>
+        <div><dt>Founded / launched</dt><dd>1962 by Joel N. Myers as a State College, PA forecasting service; renamed AccuWeather 1971 (<a href="https://corporate.accuweather.com/company/about-us/">About Us</a>)</dd></div>
+        <div><dt>Business model</dt><dd>Metered API licensing + display advertising + consumer subscriptions (Premium/Professional) + FAST TV channel</dd></div>
+        <div><dt>Scale anchor</dt><dd>3.5M+ locations covered, observed on the developer portal 2026-07-31 (<a href="https://developer.accuweather.com/home">developer.accuweather.com</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. AccuWeather publishes its audience and volume claims undated, so each carries the date Site Wise observed it. Missing numbers live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Locations covered</dt>
+          <dd>3.5M+ — observed 2026-07-31; AccuWeather states no as-of date. <a href="https://developer.accuweather.com/home">Developer portal</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Daily API call volume</dt>
+          <dd>"30 Billion Daily Data Calls" on the ad-sales site; the developer portal says "tens of billions of API calls per day" — both observed 2026-07-31, undated by AccuWeather. <a href="https://advertising.accuweather.com/about/">Advertising: About</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Audience</dt>
+          <dd>200M unique monthly global visitors; 40M U.S.; 3× average daily visits per user — observed 2026-07-31, undated by AccuWeather. <a href="https://advertising.accuweather.com/about/">Advertising: About</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Core Weather API tiers</dt>
+          <dd>Free $0 (14-day trial, 500 calls/day) · Starter $2/mo 15K calls · Standard $25/mo 225K · Prime $250/mo 1.8M · Elite $500/mo 2.4M — as of 2026-07-31. <a href="https://developer.accuweather.com/llms-full.txt">llms-full.txt pricing table</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Core Weather overage</dt>
+          <dd>$0.25 CPM (Starter) · $0.12 CPM (Standard) · $0.15 CPM (Prime) · $0.22 CPM (Elite); Free tier has no overage — as of 2026-07-31. <a href="https://developer.accuweather.com/llms-full.txt">Same table</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>MinuteCast API tiers</dt>
+          <dd>Free $0 (50 calls/day) · Lite $25/mo 10K calls ($0.18 CPM over) · Full $100/mo 675K calls ($0.12 CPM over); billed separately from Core Weather — as of 2026-07-31. <a href="https://developer.accuweather.com/llms-full.txt">Same table</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Parameter breadth</dt>
+          <dd>250+ weather data parameters overall; 70+ forecast parameters; 50+ lifestyle indices; MinuteCast in 210 countries and territories — observed 2026-07-31. <a href="https://developer.accuweather.com/home">Developer portal</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Localization surface</dt>
+          <dd>56 language codes and 214 language-region localization codes — counted by Site Wise from the localization table, 2026-07-31. <a href="https://developer.accuweather.com/documentation/languages-localizations.md">languages-localizations.md</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>B2B customer base</dt>
+          <dd>250+ Fortune 500 customers; 97% annual renewal rate — observed 2026-07-31, undated by AccuWeather. <a href="https://advertising.accuweather.com/about/">Advertising: About</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-07-31 from a US egress IP (AS7018, San Francisco — confirmed via <code>ipinfo.io</code> so that redirects below are not geographic).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>2026-07-31</td>
+              <td><code>dig +short accuweather.com www.accuweather.com NS</code></td>
+              <td>Apex A record 104.68.255.35; <code>www</code> resolves via <code>www.accuweather.com.edgekey.net → e1524.e12.akamaiedge.net → 184.85.228.72</code>. Nameservers are all <code>*.akam.net</code>. API and portal hosts also sit on Akamai (<code>ds.accuweather.akadns.net</code>, <code>devportal.accuweather.akadns.net</code>). Akamai handles DNS, CDN, and bot management end to end.</td>
+            </tr>
+            <tr>
+              <td>2026-07-31</td>
+              <td><code>curl -sI https://www.accuweather.com/</code> (Chrome UA)</td>
+              <td>HTTP 403 from <code>server: AkamaiGHost</code>, 373-byte "Access Denied" body, <code>errors.edgesuite.net</code> reference ID. Only substantive header is <code>strict-transport-security: max-age=15768000; includeSubDomains; preload</code>. The apex behaves identically.</td>
+            </tr>
+            <tr>
+              <td>2026-07-31</td>
+              <td>UA matrix against <code>/robots.txt</code>, 7 agents</td>
+              <td>Three tiers: <strong>(a)</strong> <code>curl/8.7.1</code>, <code>ClaudeBot/1.0</code>, <code>GPTBot/1.2</code> → no HTTP status at all, the HTTP/2 stream is killed (<code>curl: (92) … INTERNAL_ERROR</code>); <strong>(b)</strong> Chrome UA and a custom research UA → HTTP 403; <strong>(c)</strong> <code>Googlebot/2.1</code> and <code>bingbot/2.0</code> → HTTP 301 to <code>https://m.weathercn.com/robots.txt</code>, reproduced 3/3 and for <code>/</code>, <code>/sitemap.xml</code>, <code>/llms.txt</code> and a forecast URL; that host serves 26 bytes, <code>User-agent: *</code> / <code>Disallow: /</code>. WebFetch on the same URL timed out at 60s — a fourth failure mode.</td>
+            </tr>
+            <tr>
+              <td>2026-07-31</td>
+              <td>Wayback CDX history + raw 2026-02-01 capture of <code>robots.txt</code></td>
+              <td>Captures from 2026-01-22 to 2026-02-03 are almost all HTTP 403 — the Akamai denial page is what got archived — and the last HTTP 200 is 2026-02-01, with none in the ~6 months since. That last good copy is 2.6KB with three UA groups only (<code>*</code>, <code>Googlebot</code>, <code>Googlebot-News</code>), ~40 Disallow rules each, mostly legacy paths (<code>/cgi-bin/</code>, <code>*.axd</code>, <code>/welcome.asp</code>). Live rules of note: <code>/web-api/</code>, <code>/tiles/</code>, <code>/shop</code>, <code>/pwa/</code>, <code>*day=*</code>. <strong>Not one AI-crawler directive appears</strong> — no GPTBot, ClaudeBot, CCBot, or Google-Extended. Ends with <code>Sitemap: …/sitemaps_v2/special/index_index.xml</code>.</td>
+            </tr>
+            <tr>
+              <td>2026-07-31</td>
+              <td>Sitemap census (live, then archived 2026-02-01 copy)</td>
+              <td>Live index is 403 to a browser UA and 301-to-weathercn to a Googlebot UA. The archived index holds 108 <code>&lt;loc&gt;</code> entries: <code>all-admin</code>, <code>us-daily</code>, <code>us-details</code>, <code>us-hourly</code>, <code>us-fcst-other</code> and the four <code>world-*</code> equivalents, each × 11 languages (ar de en es fr it pl pt ru tr zh), plus <code>us-airqual</code>, <code>us-lightning</code>, <code>us-smoke</code>, <code>world-airqual</code>, <code>world-lightning</code>, and two article indexes. All children are <code>.xml.gz</code>; all 108 <code>lastmod</code> values fall in 2025-11-04 … 2025-11-10.</td>
+            </tr>
+            <tr>
+              <td>2026-07-31</td>
+              <td>Structured-data sample: archived NYC forecast page</td>
+              <td>225KB of server HTML contains <strong>zero</strong> <code>application/ld+json</code> blocks and zero <code>hreflang</code> links, but 25 OpenGraph/Twitter meta tags. Canonical is <code>/en/us/new-york/10021/weather-forecast/349727</code>; the same location key under ZIP 10001, 10007, and 10036 returns that identical canonical.</td>
+            </tr>
+            <tr>
+              <td>2026-07-31</td>
+              <td>Public API sample: <code>dataservice.accuweather.com</code></td>
+              <td><code>GET /locations/v1/cities/search?q=London</code> and <code>GET /currentconditions/v1/349727</code> both return HTTP 401 with an RFC 7807 <code>application/problem+json</code> body — <code>{"Code":"Unauthorized","Message":"API authorization failed"}</code> plus <code>requestId</code>, <code>buildId</code>, timestamp. An invalid key yields the same. No anonymous or degraded tier: zero fields readable without a key.</td>
+            </tr>
+            <tr>
+              <td>2026-07-31</td>
+              <td><code>developer.accuweather.com</code> feeds and docs</td>
+              <td>Opposite posture to the content host: <code>/robots.txt</code> 200 (ASCII-art banner, 8 Disallow rules confined to <code>/signin</code>, <code>/checkout</code>, <code>/subscriptions</code> and similar), <code>/llms.txt</code> 200 (731B, indexes 24 doc pages), <code>/llms-full.txt</code> 200 (29KB, including both pricing tables), and every doc page served as Markdown at <code>&lt;path&gt;.md</code>. But <code>/packages</code>, <code>/apis</code>, and <code>/openapi.json</code> are 403, and <code>terms-of-use.md</code> and <code>brand-guidelines.md</code> return only unrendered React import stubs (94 and 135 bytes).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Tier prices are in Verified Metrics; quotas are per API key. Every License cell reading "open" traces to one cause — the terms documents do not render (Probe Log).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best path</th><th>Auth &amp; quota</th><th>License</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Structured records <em>(primary corpus)</em></td>
+              <td>3.5M+ location keys × 250+ parameters × valid-time. Current conditions, hourly to 120h, daily to 15d, 50+ indices, alerts, tropical, alarms.</td>
+              <td>Core Weather API on <code>dataservice.accuweather.com</code>.</td>
+              <td>Bearer key, no anonymous tier (Probe Log). 500 calls/day free for 14 days; then 15K–2.4M calls/month by tier, CPM overage above.</td>
+              <td>Open.</td>
+              <td>Sub-hourly; the response <code>Expires</code> header is the authoritative TTL.</td>
+            </tr>
+            <tr>
+              <td>MinuteCast <em>(separate meter)</em></td>
+              <td>Minute-by-minute precipitation keyed to exact lat/lon, 210 countries and territories.</td>
+              <td>MinuteCast API — distinct billing line.</td>
+              <td>Own tier: 50 calls/day free, else 10K or 675K/month.</td>
+              <td>Open.</td>
+              <td>Minute-resolution; the shortest-lived object on the site.</td>
+            </tr>
+            <tr>
+              <td>Text</td>
+              <td>Forecast pages across 11 sitemap languages (56 language codes / 214 localizations available via API) plus a weather-news article corpus. Total URL count open.</td>
+              <td>Search-engine crawl only: robots.txt admits <code>*</code>, <code>Googlebot</code>, and <code>Googlebot-News</code>, but the Akamai edge refuses generic clients and drops AI-crawler UAs outright (Probe Log).</td>
+              <td>No auth path; access depends on being a recognized search crawler.</td>
+              <td>No published reuse grant for page text.</td>
+              <td>Page text regenerates continuously, but no crawlable signal says so — all 108 sitemap <code>lastmod</code> values are ~9 months stale.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Radar and satellite imagery maps per location key at several resolutions; a documented numbered weather-icon set.</td>
+              <td>Imagery Maps endpoint (Prime tier and above); icon reference is public in the docs.</td>
+              <td>Prime ($250/mo) or Elite ($500/mo) key for imagery.</td>
+              <td>Open; icons documented for API-customer use.</td>
+              <td>Radar on the observation cycle; icon set static.</td>
+            </tr>
+            <tr>
+              <td>Video &amp; audio</td>
+              <td>AccuWeather NOW FAST channel plus on-site video segments; object count open. No standalone audio product observed while probing.</td>
+              <td>No public metadata API or feed observed.</td>
+              <td>—</td>
+              <td>Open — no documented reuse path.</td>
+              <td>Continuous linear stream; segment retention open.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td><strong>None.</strong> The forecast page sampled in the Probe Log carries no comment, rating, or review markup. Personal Weather Stations are the only contributor surface.</td>
+              <td>No public path; PWS ingestion is a partner program.</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Entity metadata</td>
+              <td>The location table itself: key, type, rank, localized and English names, primary postal code, admin areas, country, GMT offset, <code>NextOffsetChange</code>, lat/lon.</td>
+              <td>Locations API — search by city, postal code, POI, lat/lon, or client IP.</td>
+              <td>Same Core Weather key; every lookup spends quota.</td>
+              <td>Open.</td>
+              <td>Slow-changing; the only genuinely long-lived table here.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where AccuWeather differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The location key is the whole identity system — a short integer (<code>349727</code> New York, <code>347629</code> San Francisco) that every weather endpoint requires. URLs read <code>/{lang}/{country}/{city}/{zip}/weather-forecast/{key}</code>, but the ZIP is decorative: three NYC ZIPs all canonicalize to the same <code>10021</code> URL for key 349727 (Probe Log). Dedup on <code>(language, location key, page type)</code> and discard the ZIP and city slug. MinuteCast is the exception — it keys on raw lat/lon, so it will not join to a location key without a reverse lookup costing its own quota call.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Not the page. The useful unit is <code>(location key, parameter, valid-time, issue-time)</code> — a forecast assertion with two timestamps. Indexing the rendered page collapses issue-time, so you cannot tell a stale forecast from a revised one.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The inverted case the default assumptions do not cover: no back catalog, no revision history. Objects are <em>replaced</em>, not edited, and the previous value is gone unless you kept it. The API hands you the recrawl schedule directly via the <code>Expires</code> header, and the docs ask clients to randomize refresh times rather than align to the clock. Freshness here is a correctness property, not a ranking bonus — a two-hour-old "current conditions" record is wrong, not merely dated.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>The API JSON is authoritative and the page text is a rendering of it, so the usual title-vs-body arbitration does not apply. The field to distrust is marketing breadth. <span class="evidence inferred">inferred</span> The advertised "200+ languages and dialects" counts language-region localizations, not languages. <em>Basis:</em> the same documentation table yields 214 localization codes against 56 language codes (Verified Metrics), and 214 is the only figure near 200+.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>With no UGC there is no spam surface and no manipulation incentive — a genuine absence, not a gap in measurement. The quality problem migrates to provenance: multiple providers publish contradictory forecasts for the same place and hour, so an index must retain which model issued a value and when, or it will silently blend competing predictions.</p>
+        </div>
+        <div>
+          <h4>Policy lives at the edge, not in robots.txt</h4>
+          <p>The two-track model holds, but the published policy no longer describes either track. <span class="evidence inferred">inferred</span> Enforcement has moved off robots.txt onto the Akamai edge, and unverified search-engine UAs are sinkholed rather than served. <em>Basis:</em> the 2026-02-01 robots.txt names no AI crawler, yet ClaudeBot and GPTBot UAs get their HTTP/2 stream killed while a Chrome UA gets a 403; and Googlebot/bingbot UAs from a confirmed US egress IP get reproducible 301s to <code>m.weathercn.com</code>, which serves a blanket <code>Disallow: /</code> (Probe Log). So a crawler obeying the published file learns nothing about what will happen, and a naive fetcher following the redirect indexes a different company's site.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Nobody searches AccuWeather; users arrive at one location page from a search engine or open an app pinned to their coordinates. The query is always "this place, this time", never a topic — so relevance is entirely geo-resolution plus recency, and conventional text ranking contributes nothing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the forecast assertion — <code>(location key, parameter, valid-time, issue-time, unit system)</code>. Location records and article text are separate units with their own cadences.</li>
+        <li><strong>Primary keys &amp; joins:</strong> location key joins everything; <code>(lat, lon)</code> is the fallback key for MinuteCast; language code selects the localization variant. Persist the location table once and treat it as the dimension table for every fact stored.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Core Weather API — the only complete path, but priced per call: indexing all 3.5M locations at any useful cadence exceeds even Elite's 2.4M calls/month and needs an enterprise contract. 2) Locations API sweep to materialize the location dimension once, then stop. 3) MinuteCast API for precipitation, separately metered. 4) Public crawl — unusable: 403 to browsers, stream reset to AI agents, no anonymous tier. 5) <code>llms-full.txt</code> for the docs corpus, which is genuinely open.</li>
+        <li><strong>Recrawl cadence:</strong> drive it off the <code>Expires</code> header, never a fixed interval, and jitter as the docs request. Location dimension monthly, plus an event-driven refresh on <code>NextOffsetChange</code> so DST transitions don't corrupt local-time math. Article text daily. Ignore sitemap <code>lastmod</code> — it is ~9 months stale (Probe Log).</li>
+        <li><strong>Derivatives to generate:</strong> forecast-skill scoring by retaining issue-time and grading each assertion against later observations; a ZIP-and-slug → location-key alias table built from canonical tags; unit normalization. Skip embeddings of forecast text — it is templated from the numbers, so the numbers are the better vector.</li>
+        <li><strong>Demo to build:</strong> an <code>Expires</code>-driven quota planner — enter a location set and target staleness; it computes calls/month, names the cheapest sufficient tier, prices the CPM overage, and shows where budget forces wider staleness. Makes concrete the finding that this corpus is priced by freshness, not volume.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The reuse terms are unreadable, which is itself the risk.</strong> <code>terms-of-use.md</code> and <code>brand-guidelines.md</code> — the two documents defining what you may store and display — return unrendered component stubs, and <code>/packages</code> is 403 (Probe Log). Every License cell in the Access Matrix is open for this reason; no ingestion should start before the terms are obtained in writing.</li>
+        <li><strong>Edge policy can change without any published signal.</strong> Because enforcement lives in Akamai rather than robots.txt, the posture can tighten between one crawl and the next with nothing to diff. Monitor by probing, not by watching the policy file.</li>
+        <li><strong>Cost scales with freshness, not corpus size.</strong> The corpus is small, but every object expires. Any staleness target tighter than the tier allows converts directly into CPM overage — a design error in cadence is a billing error.</li>
+        <li><strong>Self-serve tiers cap well below full coverage.</strong> Elite's 2.4M calls/month is under one call per location per month; full coverage requires an enterprise agreement whose terms and price are unpublished.</li>
+        <li><strong>Archival recovery is closing.</strong> The Internet Archive has no successful capture of even robots.txt since 2026-02-01 (Probe Log). The archived sitemap and forecast pages this report relied on are being cut off — capture what you need from history now.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://developer.accuweather.com/home">Developer portal — home</a> — 3.5M+ locations, "tens of billions of API calls per day", 250+ parameters, 50+ indices, MinuteCast in 210 countries.</li>
+        <li><a href="https://developer.accuweather.com/llms-full.txt">llms-full.txt</a> — both pricing tables, caching and best-practice guidance, HTTP status semantics.</li>
+        <li><a href="https://developer.accuweather.com/documentation/location-keys.md">Location keys</a> and <a href="https://developer.accuweather.com/documentation/languages-localizations.md">languages and localizations</a> docs — the key model, lookup endpoints, and the table counted for 56 languages / 214 localizations.</li>
+        <li><a href="https://advertising.accuweather.com/about/">Advertising — About</a> — 30B daily data calls, 200M global / 40M U.S. monthly visitors, 250+ Fortune 500 customers, 97% renewal rate.</li>
+        <li><a href="https://corporate.accuweather.com/company/about-us/">Corporate — About Us</a> and <a href="https://en.wikipedia.org/wiki/AccuWeather">Wikipedia: AccuWeather</a> — founding, ownership, leadership.</li>
+        <li>Wayback Machine: 2026-02-01 raw captures of <code>robots.txt</code>, the sitemap index, and NYC forecast pages, plus the CDX history showing the 403 wall closing.</li>
+        <li>Local probes on 2026-07-31: <code>dig</code>, <code>curl</code> across seven user agents, unauthenticated <code>dataservice</code> calls, developer-portal feed checks (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Enforcement has moved from robots.txt to the Akamai edge, and unverified search-engine UAs are sinkholed to <code>m.weathercn.com</code>. <em>Basis:</em> stated in full under Retrieval Notes → "Policy lives at the edge".</li>
+        <li>The ZIP path segment is an alias, not an identifier. <em>Basis:</em> ZIPs 10001, 10007, and 10036 under location key 349727 all emit the canonical <code>/new-york/10021/weather-forecast/349727</code>.</li>
+        <li>"200+ languages and dialects" counts localizations, not languages. <em>Basis:</em> 214 localization codes vs 56 language codes in the same documentation table.</li>
+        <li>The absent JSON-LD is deliberate withholding, not oversight. <em>Basis:</em> the same page ships 25 OpenGraph/Twitter tags, so metadata generation exists; the structured form of this data is the metered product.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Do the live robots.txt and its AI-crawler stance still match the 2026-02-01 capture? Closeable only from an IP or verified crawler identity the Akamai edge admits.</li>
+        <li>What do the API terms of use and brand guidelines permit for storage, display, and derivative works? Closeable by requesting them via the portal contact form or a sales contract — the published <code>.md</code> files do not render them.</li>
+        <li>Total indexable URL count. The 108 child sitemaps are gzipped and 403 live; closeable by summing <code>&lt;url&gt;</code> entries across the archived shards.</li>
+        <li>Enterprise pricing and quota ceiling above the $500/mo Elite tier — unpublished; requires a sales quote. Related: whether any AI-licensing agreement exists, given robots.txt is silent and the edge simply drops those agents.</li>
+        <li>Is there a machine-readable OpenAPI spec? <code>/openapi.json</code> and sibling paths return 403/404 despite the docs describing OpenAPI references.</li>
+        <li>Location count by country, and how many of the 3.5M+ are populated places versus interpolated grid points — closeable by a Locations API sweep under an enterprise key.</li>
+        <li>Depth and licensing of historical weather data — the docs cover only the last 24 hours of observations.</li>
+        <li>AccuWeather NOW video object count and retention — no public catalog or feed observed.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
