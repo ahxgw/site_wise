@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>amazon.in Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-02</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>amazon.in</h1>
+      <p class="lede">amazon.in serves the catalog amazon.com walls off: full product pages over plain HTTP in eight languages, of which robots.txt lets crawlers index two.</p>
+      <div class="tag-row">
+        <span class="tag">Ecommerce</span>
+        <span class="tag">Marketplace</span>
+        <span class="tag">Multilingual</span>
+        <span class="tag">India</span>
+        <span class="tag">ASIN Graph</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>amazon.in is Amazon's India marketplace, operated by Amazon Seller Services Pvt Ltd. Indian FDI policy bars foreign-funded e-commerce from owning inventory for domestic sale, so amazon.in is structurally a pure marketplace: Amazon runs the catalog, ranking, logistics and ads, while title to the goods sits with third-party sellers. That constraint shapes the data — the offer layer is entirely third-party, and seller identity carries more weight than on amazon.com. The site runs its own ASIN namespace and, unlike the US store, publishes product content in eight languages. For an index builder the headline is access, not scale: the product detail pages, search results and browse pages that amazon.com answers with a bot wall are served on amazon.in to an ordinary HTTP client with no auth, no JavaScript and no cookie (Probe Log). <span class="evidence inferred">inferred</span> The two marketplaces run different bot-defense postures rather than one global policy. <em>Basis:</em> on 2026-08-02 the same client and user agent got HTTP 200 and 2.4MB from <code>amazon.in/dp/B0BWYRH6QX</code> and HTTP 404 from <code>amazon.com/dp/B08N5WRWNW</code>, a live US ASIN, on three consecutive runs.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>amazon.in</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.amazon.in/">https://www.amazon.in/</a></dd></div>
+        <div><dt>Category</dt><dd>Ecommerce marketplace, retail ads platform</dd></div>
+        <div><dt>Related hosts</dt><dd><code>m.media-amazon.com</code> (media CDN, shared with all marketplaces), <code>sellercentral.amazon.in</code>, <code>affiliate-program.amazon.in</code>; Amazon MX Player and Prime Video sit on separate hosts</dd></div>
+        <div><dt>Owner</dt><dd>Amazon.com, Inc. (NASDAQ: AMZN), via Amazon Seller Services Pvt Ltd</dd></div>
+        <div><dt>Founded / launched</dt><dd>amazon.in opened June 2013, after the Junglee.com comparison-shopping launch in Feb 2012</dd></div>
+        <div><dt>Business model</dt><dd>Marketplace commissions + fulfilment + advertising + Prime subscriptions; no first-party domestic inventory (FDI rule)</dd></div>
+        <div><dt>Scale anchor</dt><dd>$48B committed investment 2026–2030; $88B cumulative 2010–2030, as of Jun 2026 (<a href="https://www.aboutamazon.com/news/company-news/amazon-india-investment">About Amazon</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Live ASIN count, seller count and India segment revenue live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>India investment commitment</dt>
+          <dd>$48B between 2026 and 2030, of which $13B newly announced for AI and cloud; $88B cumulative 2010–2030 — as of Jun 2026. <a href="https://www.aboutamazon.com/news/company-news/amazon-india-investment">About Amazon</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Cumulative ecommerce exports</dt>
+          <dd>$20B+ enabled 2015–2025, against an $80B target by 2030; 750M "Made in India" units shipped by 200K+ exporters — as of 2025. <a href="https://www.aboutamazon.in/news/small-business/amazon-india-exports-20-billion-milestone-global-selling">About Amazon India</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Small businesses digitized</dt>
+          <dd>12M digitized and 2.8M jobs supported, against 2030 commitments of 3.8M jobs and AI benefits for 15M small businesses — as of Jun 2026. <a href="https://www.aboutamazon.com/news/company-news/amazon-india-investment">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Product content languages</dt>
+          <dd>8 — English plus Hindi, Tamil, Telugu, Kannada, Malayalam, Bengali and Marathi carry translated product titles; Gujarati and Punjabi locale paths resolve but fall back to English. As of 2026-08-02, measured across 10 locale paths on one ASIN (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Crawlable share of those languages</dt>
+          <dd>2 of 8 — the unprefixed English tree plus <code>/-/hi/</code>; robots.txt line 87 sets <code>Disallow: /-/</code> and lines 89–90 re-open only Hindi. As of 2026-08-02 (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>robots.txt AI-crawler bans</dt>
+          <dd>100 named user agents at <code>Disallow: /</code> across a 473-line file, versus ~30 observed on amazon.com on 2026-06-10 — as of 2026-08-02 (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Creators API eligibility</dt>
+          <dd>Requires an active Associates account with at least 10 qualifying sales in the trailing 30 days — as of 2026-08-02. <a href="https://affiliate-program.amazon.com/creatorsapi/docs">Creators API docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Search result ceiling</dt>
+          <dd>Query <code>laptop</code> reports "50,000 results" and returns 19 unique <code>data-asin</code> values per page — as of 2026-08-02 (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Hindi homepage yield</dt>
+          <dd>926KB of HTML carrying 186 unique ASINs, 440 unique CDN image URLs and 19.6K Devanagari characters in one unauthenticated request — as of 2026-08-02 (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-02, desktop Chrome user agent unless noted. Sizes vary run to run because the pages carry rotating merchandising.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe"><code>dig +short amazon.in</code> / <code>NS</code></td><td data-label="Observation">A records 3.253.176.101 / 3.253.170.100 / 3.253.168.43 (AWS EU-West space); <code>www</code> resolves through a <code>tp.c95e7e602-frontier.amazon.in</code> CNAME chain. Nameservers are Amazon's own <code>amzndns.{com,net,org,co.uk}</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe"><code>curl -sI https://www.amazon.in/</code></td><td data-label="Observation">HEAD rejected with HTTP 405 (<code>allow: GET, POST, PUT, DELETE, OPTIONS</code>) — same posture as amazon.com. HSTS <code>max-age=47474747; includeSubDomains; preload</code>, <code>x-frame-options: SAMEORIGIN</code>, served via CloudFront (pop SFO53-P12).</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe"><code>curl https://www.amazon.in/robots.txt</code></td><td data-label="Observation">473 lines. The <code>*</code> block holds 82 Disallow rules (cart, sign-in, wishlists, review voting, reviewer leaderboards) but does not block <code>/dp/</code>, <code>/s?k=</code> or <code>/gp/bestsellers</code>. <code>Disallow: /-/</code> (line 87) blocks every locale path; <code>Allow: /-/hi/</code> and <code>Allow: /-/hi$</code> (lines 89–90) re-open Hindi alone. 100 named agents get <code>Disallow: /</code> — GPTBot, ClaudeBot, CCBot, Google-Extended, Bytespider, plus agent-style UAs (GoogleAgent-Shopping, Manus-User, Crawl4AI). <code>AmazonAdBot</code> gets an empty Disallow. No Sitemap directive.</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe"><code>curl https://www.amazon.in/</code> ×3</td><td data-label="Observation">HTTP 202 with a zero-byte body on every run — the homepage is WAF-challenged and yields nothing. Identical result with a Googlebot user agent.</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe"><code>curl https://www.amazon.in/dp/B0BWYRH6QX</code> ×3</td><td data-label="Observation">HTTP 200, 2.4–2.5MB of server-rendered HTML on every run. Title, <code>productTitle</code>, price (₹249), rating (4.3 of 5), review count (572) and 620 unique CDN image URLs all present in the raw source. Contrast: <code>amazon.com/dp/B08N5WRWNW</code> returned HTTP 404 (1,147 bytes) to the same client.</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe">Locale sweep, <code>/-/{lang}/dp/B0BWYRH6QX</code></td><td data-label="Observation">All 10 paths (hi, ta, te, kn, ml, bn, mr, gu, pa, en) return HTTP 200 at 1.5–2.3MB. Seven carry genuinely translated titles in their own script (Tamil 34.3K chars, Malayalam 37.3K, Telugu 34.9K, Kannada 34.9K, Bengali 25.6K, Hindi 24.9K, Marathi 24.7K); <code>gu</code> and <code>pa</code> return zero script-range characters and an English title.</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe"><code>curl https://www.amazon.in/-/hi/</code> and <code>/gp/bestsellers/</code></td><td data-label="Observation">Both HTTP 200 while the English homepage is challenged: Hindi home ~926KB with 186 unique ASINs, bestsellers ~617KB with 36. Each declares its own <code>rel=canonical</code> — the Hindi one a percent-encoded Devanagari slug.</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe"><code>curl https://www.amazon.in/product-reviews/B0BWYRH6QX</code></td><td data-label="Observation">HTTP 302, two hops, landing on <code>/ax/claim?arb=…</code> — a bot-check interstitial. The detail page itself contains 8 review containers but zero <code>review-body</code> elements, so no review text ships in the HTML.</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe">Structured-data sample (4 page types)</td><td data-label="Observation">Zero <code>application/ld+json</code> blocks on the product page, Hindi homepage, bestsellers page or miniTV page. Zero <code>hreflang</code> annotations on the product page despite eight language variants. Product pages carry only 2 OpenGraph tags.</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe"><code>curl https://www.amazon.in/minitv</code></td><td data-label="Observation">HTTP 200 but only a 32.5KB Next.js shell; <code>__NEXT_DATA__</code> is 3.6KB and carries no catalog. Title and meta description still read "Amazon miniTV", with no redirect, three weeks after Amazon announced the service was unified into Prime Video. <code>/minitv/st/*</code> is the one miniTV path robots.txt disallows.</td></tr>
+            <tr><td data-label="Date">2026-08-02</td><td data-label="Probe"><code>/sitemap.xml</code>, <code>/llms.txt</code></td><td data-label="Observation">Both HTTP 404 with the standard 2,186-byte Amazon error page, whose HTML comment routes automated access to <code>api-services-support@amazon.com</code>. No public sitemap surface.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Creators API is the <a href="https://affiliate-program.amazon.com/creatorsapi/docs/en-us/paapiv5-deprecation">named successor to PA-API 5.0</a>; SP-API = <a href="https://developer-docs.amazon.com/sp-api/">Selling Partner API</a>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Product titles, bullets, descriptions in 8 languages. Live ASIN count: open.</td>
+              <td data-label="Best legitimate path">Unauthenticated crawl of <code>/dp/</code>, <code>/s?k=</code>, <code>/gp/bestsellers</code> genuinely works (Probe Log) — but robots.txt permits only the English and Hindi trees.</td>
+              <td data-label="Auth &amp; quota">None for the two permitted trees. Creators API needs 10 qualifying sales / 30 days.</td>
+              <td data-label="License / display">Crawl grants no reuse licence; Associates terms bind display and require link-back.</td>
+              <td data-label="Freshness">Slow churn; seller-editable.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">620 unique CDN URLs on one sampled detail page; shared <code>m.media-amazon.com</code> namespace.</td>
+              <td data-label="Best legitimate path">URLs are in the crawlable HTML; Creators API returns sized S/M/L variants.</td>
+              <td data-label="Auth &amp; quota">Same as text.</td>
+              <td data-label="License / display">Hotlink display permitted for Associates; no copies or derivatives.</td>
+              <td data-label="Freshness">Low churn; changes on listing edit.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Amazon MX Player (ex-miniTV) free catalog, now folded into Prime Video; product videos on detail pages.</td>
+              <td data-label="Best legitimate path">None. The <code>/minitv</code> shell that robots.txt allows renders its catalog client-side and ships no titles in HTML (Probe Log).</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: no documented reuse path.</td>
+              <td data-label="Freshness">Migrating — see Risks.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Reviews / ratings</td>
+              <td data-label="Objects &amp; est. count">Star rating and review count per ASIN, both in crawlable HTML (4.3 / 572 on the sampled ASIN). Review bodies: not served.</td>
+              <td data-label="Best legitimate path">Rating and count from the detail page. No path to review text: <code>/product-reviews/</code> redirects to a bot-check interstitial, and the Creators API carries no review resource.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Rating + count displayable under Associates terms; bodies not licensable.</td>
+              <td data-label="Freshness">Append-mostly.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">ASINs, sellers, offers, browse nodes, brands — in an India-only ASIN namespace.</td>
+              <td data-label="Best legitimate path">Creators API (SearchItems, GetItems, GetVariations, GetBrowseNodes); SP-API for sellers' own catalogue and offer-change events.</td>
+              <td data-label="Auth &amp; quota">Creators API sales gate; SP-API needs a seller/developer account.</td>
+              <td data-label="License / display">Associates terms; displayed prices must stay fresh.</td>
+              <td data-label="Freshness">Offers churn in minutes; browse tree stable.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where amazon.in differs from the <a href="../../methodology.html">default platform assumptions</a> and from the amazon.com profile.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The ASIN is still the key, but the namespace is India-only, so marketplace must be part of the primary key. The harder problem is locale: one ASIN exposes up to nine URLs, and each locale page declares its <em>own</em> <code>rel=canonical</code> with a translated, percent-encoded slug instead of pointing at a single canonical. Canonicalise on <code>(marketplace, ASIN)</code> parsed from the path, never on the declared canonical.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Product (ASIN) with language as an attribute of the document, not a separate document. Treating each locale page as its own record inflates the index eightfold with machine translations of one object.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>English is the source text; the seven translations are machine output, and it shows — the sampled Hindi title renders "Self Adhesive" as a literal calque. Index translations for recall in Indic queries, but resolve entity and attribute extraction against the English page. Price, rating and review count are locale-invariant (₹249 / 4.3 / 572 across all nine variants), so they are safe to read from whichever page you fetched.</p>
+        </div>
+        <div>
+          <h4>Crawl posture</h4>
+          <p>The wall sits on the homepage, not the content: an ingestion design that probes <code>/</code> to test liveness will wrongly conclude the site is closed. Probe a detail page instead.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Image URLs, offers, ratings and browse nodes all join on ASIN and are present in the crawlable HTML, so a text+image index can be built without API access. The video corpus does not join: Amazon MX Player content carries no ASIN and is not addressable from the retail pages.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>The FDI marketplace structure concentrates volume in a few large seller entities rather than Amazon itself, so the first-party/third-party split that carries trust signal on amazon.com is absent here. Machine-translated titles also degrade lexical spam detection: keyword stuffing survives translation, fluency heuristics do not.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Because detail and search pages are crawlable, external engines can hold a genuinely current copy of amazon.in text — the structural staleness noted for amazon.com does not apply to metadata here, only to price and stock.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Expect code-mixed and transliterated queries (Latin-script Hindi) alongside native-script ones. Since only Hindi among the Indic trees is crawl-permitted, an index built from crawl alone will answer Tamil or Bengali queries with English documents.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> product = <code>(IN, ASIN)</code>, with a per-language title/description field set and offer + rating as fast-refresh sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> marketplace + ASIN parsed from the URL path; offer = ASIN + sellerId; image = CDN media ID. Do not trust the declared canonical.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Unauthenticated crawl of the English tree — the only Amazon marketplace where this actually returns product data, seeded from <code>/gp/bestsellers</code> browse nodes and <code>/s?k=</code> (ceiling 50K results per query, 19 ASINs per page). 2) The <code>/-/hi/</code> tree for Hindi text, the one Indic language robots.txt permits. 3) Creators API for offers, variations and browse nodes — gated on 10 qualifying sales / 30 days. 4) SP-API for sellers' own data. Review bodies and MX Player video: no legitimate path.</li>
+        <li><strong>Recrawl cadence:</strong> price and availability daily at minimum (they are the only fast-churn fields in the crawlable set); titles and images weekly; browse-node tree monthly; treat the translated trees as derived and recrawl only when the English page changes.</li>
+        <li><strong>Derivatives to generate:</strong> because there is no JSON-LD anywhere on the site, attribute extraction from DOM is mandatory rather than optional — budget for a parser and for it breaking. Then: transliteration index for code-mixed queries, and image embeddings for counterfeit/hijack detection.</li>
+        <li><strong>Demo to build:</strong> a locale-diff harvester — fetch one ASIN across all nine locale paths, align the fields, and show which are translated, which fall back to English, and which are locale-invariant. It makes the "8 languages, 2 crawlable, 1 source of truth" problem concrete in a way a table does not.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>PA-API 5.0 is deprecated.</strong> The locale-reference URL now 302s to a notice stating PA-API 5 "has been deprecated and is being replaced by the Creators API" (<a href="https://affiliate-program.amazon.com/creatorsapi/docs/en-us/paapiv5-deprecation">notice</a>). No sunset date is published, so any pipeline built on the June 2026 amazon.com plan needs migrating on an unknown clock.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The open crawl surface is the anomaly and should be treated as temporary.</strong> <em>Basis:</em> amazon.com serves a 404 bot wall on the identical path with the identical client (Probe Log), so the capability to close amazon.in exists and is already deployed elsewhere in the same company; the homepage WAF challenge shows it is partially deployed here.</li>
+        <li><strong>The video corpus is mid-migration.</strong> Amazon declared Prime Video and MX Player unified on 2026-07-16 (<a href="https://advertising.amazon.com/en-us/library/news/amazon-prime-video-mx-player-unification/">Amazon Ads</a>), yet <code>/minitv</code> still served the retired miniTV branding on 2026-08-02 with no redirect (Probe Log). Any video ingestion keyed to miniTV URLs will break without notice.</li>
+        <li><strong>Regulatory ground is moving.</strong> DPIIT's Press Note 3 (2026 series), issued 2026-07-23, permits FDI in inventory-based e-commerce for exports of India-made goods while keeping the domestic B2C ban (<a href="https://www.businesstoday.in/latest/corporate/story/govt-permits-fdi-in-inventory-based-ecommerce-model-for-exports-544908-2026-07-23">Business Today</a>). If Amazon takes first-party export inventory, a new first-party offer class appears in the data with different provenance from everything currently there.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>AI retrieval faces enforcement, not licensing, and the list is growing fast.</strong> <em>Basis:</em> 100 named agents sit at <code>Disallow: /</code> on 2026-08-02 versus ~30 on amazon.com on 2026-06-10, and the additions are agent-style UAs (Manus-User, Crawl4AI, Cloudflare-AutoRAG, GoogleAgent-Shopping) rather than classic training crawlers.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.aboutamazon.com/news/company-news/amazon-india-investment">About Amazon: Amazon's India investment</a> — $48B 2026–2030, $88B cumulative, 12M businesses digitized, 2.8M jobs.</li>
+        <li><a href="https://www.aboutamazon.in/news/small-business/amazon-india-exports-20-billion-milestone-global-selling">About Amazon India: $20B export milestone</a> — cumulative exports, exporter count, $80B 2030 target.</li>
+        <li><a href="https://affiliate-program.amazon.com/creatorsapi/docs">Creators API documentation</a> — eligibility gate and the four catalog operations; <a href="https://affiliate-program.amazon.com/creatorsapi/docs/en-us/paapiv5-deprecation">deprecation notice</a> for PA-API 5.0.</li>
+        <li><a href="https://advertising.amazon.com/en-us/library/news/amazon-prime-video-mx-player-unification/">Amazon Ads: Prime Video and MX Player unification</a> (2026-07-16) — the video-service merge.</li>
+        <li><a href="https://www.aboutamazon.in/news/entertainment/amazon-minitv-mx-player-merger">About Amazon India: miniTV–MX Player merger</a> — how miniTV became Amazon MX Player.</li>
+        <li><a href="https://www.businesstoday.in/latest/corporate/story/govt-permits-fdi-in-inventory-based-ecommerce-model-for-exports-544908-2026-07-23">Business Today</a> — DPIIT Press Note 3 (2026 series), 2026-07-23.</li>
+        <li>Local probes on 2026-08-02: <code>dig</code> and <code>curl</code> against robots.txt, the homepage, a product page across ten locales, search, bestsellers, the reviews path, <code>/minitv</code>, <code>sitemap.xml</code> and <code>llms.txt</code>, plus control requests to amazon.com (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>amazon.in and amazon.com run different bot-defense postures rather than one global policy. <em>Basis:</em> identical client and user agent, same day, got 200/2.4MB from an amazon.in detail page and 404 from a live amazon.com ASIN, reproduced three times.</li>
+        <li>The open crawl surface should be treated as temporary. <em>Basis:</em> the closing capability is already deployed on amazon.com and partially deployed on amazon.in's own homepage.</li>
+        <li>AI retrieval faces enforcement rather than licensing here. <em>Basis:</em> 100 named agents at <code>Disallow: /</code>, weighted toward agent-style UAs, with no published AI licensing programme.</li>
+        <li>The seven non-English titles are machine translations of the English source rather than seller-authored copy. <em>Basis:</em> price, rating and review count are byte-identical across all nine locale variants of the sampled ASIN, while the title tracks the English string structure calque-for-calque.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Live ASIN count in the India marketplace — closeable by sweeping Creators API <code>SearchItems</code> result counts across the browse-node tree, or by exhausting <code>/gp/bestsellers</code> pagination, which is crawlable today.</li>
+        <li>Amazon India segment revenue and seller count — Amazon does not break out India in its SEC filings; Amazon Seller Services Pvt Ltd's MCA annual filing would close it.</li>
+        <li>Whether the unauthenticated crawl surface is stable or a misconfiguration — closeable by re-running the same three probes weekly and recording the first date the detail page returns a challenge.</li>
+        <li>Whether Googlebot receives different markup from the anonymous client — both received a zero-byte 202 on the homepage, but no allowlisted-crawler comparison was run against a detail page.</li>
+        <li>Amazon MX Player catalog size and whether any post-merge URL pattern is crawlable — closeable once the Prime Video migration lands and <code>/minitv</code> starts redirecting.</li>
+        <li>Whether the Creators API exposes the translated Indic titles or English only — closeable with a single <code>GetItems</code> call against an India marketplace credential.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
