@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>merriam-webster.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-08-03</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>merriam-webster.com</h1>
+      <p class="lede">Merriam-Webster publishes 601K crawlable URLs and open pronunciation audio with no AI-crawler blocks — then sues OpenAI and Perplexity for using them.</p>
+      <div class="tag-row">
+        <span class="tag">Reference</span>
+        <span class="tag">Dictionary</span>
+        <span class="tag">Ad-supported</span>
+        <span class="tag">Britannica</span>
+        <span class="tag">AI litigation</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Merriam-Webster is the United States' default dictionary, owned since 1964 by Encyclopædia Britannica, Inc. and free on the web since 1996. The free site runs on display advertising plus an upsell to Merriam-Webster Unabridged; the corpus itself is also licensed through a developer API and print. For an index builder it is an unusual case: almost every technical signal says <em>take this</em>. Robots.txt carries seven narrow Disallow rules and names no AI crawler at all, a 113-file sitemap index enumerates 601K URLs, entry pages emit schema.org <code>DefinedTerm</code>, and pronunciation audio sits on an unauthenticated S3-backed CDN with a one-year cache header. The restraint is entirely legal rather than technical: Britannica and Merriam-Webster sued Perplexity in September 2025 and OpenAI in March 2026 over exactly the crawling and reproduction that robots.txt permits. <span class="evidence inferred">inferred</span> The premium corpus, not the free one, is the asset being protected. <em>Basis:</em> <code>unabridged.merriam-webster.com/robots.txt</code> returns a blanket <code>Disallow: /</code> while the free host publishes its full sitemap index (both observed in the Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>merriam-webster.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.merriam-webster.com/">https://www.merriam-webster.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Reference — dictionary, thesaurus, language editorial</dd></div>
+        <div><dt>Related hosts</dt><dd><code>media.merriam-webster.com</code> (audio CDN), <code>unabridged.merriam-webster.com</code> (paid, crawl-blocked), <code>dictionaryapi.com</code> (developer API), <code>shop.merriam-webster.com</code></dd></div>
+        <div><dt>Owner</dt><dd>Merriam-Webster, Inc., a subsidiary of Encyclopædia Britannica, Inc. (Britannica Group)</dd></div>
+        <div><dt>Founded / launched</dt><dd>1831 as G &amp; C Merriam Co.; Webster's rights acquired 1843; first website 1996</dd></div>
+        <div><dt>Business model</dt><dd>Display advertising + Unabridged subscriptions + API/print licensing</dd></div>
+        <div><dt>Scale anchor</dt><dd>601,519 sitemap-listed URLs — as of Aug 3 2026 (Probe Log census)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (audio coverage, real visitor counts) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Sitemap URL census</dt>
+          <dd>601,519 URLs across 113 child sitemaps — as of Aug 3 2026. Summed by Site Wise from every gzipped child sitemap (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Lexicographic entry URLs</dt>
+          <dd>354,236 total (58.9% of the census): dictionary 244,229, thesaurus 71,876, Learner's 18,136, medical 17,799, legal 2,196 — as of Aug 3 2026. Counted by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Generated &amp; derived pages</dt>
+          <dd>199,750 Word Finder URLs (33.2% of the census, all <code>changefreq: yearly</code>) plus 41,307 example-sentence URLs shipped as nine dated <code>exemplar-*</code> batches — as of Aug 3 2026. Counted by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Editorial corpus</dt>
+          <dd>2,335 articles, 556 galleries, 262 slang entries, 245 quizzes, 106 podcast episodes, 57 videos — as of Aug 3 2026. Counted by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>lastmod coverage</dt>
+          <dd>382,751 of 601,519 URLs carry <code>lastmod</code> (63.6%); only 67,391 of 244,229 dictionary URLs do (27.6%), and 60,886 of those share a single July 2026 stamp. As of Aug 3 2026, computed by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Unabridged entry count</dt>
+          <dd>~470,000 entries in Webster's Third New International, Unabridged, with its 1993 Addenda — publisher's own figure, page retrieved Jul 24 2026. <a href="https://www.merriam-webster.com/help/faq-how-many-english-words">MW FAQ</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>API quota &amp; catalogue</dt>
+          <dd>≤1,000 queries per day per reference work, two reference works max per developer, non-commercial only, usage reviewed monthly; 9 licensable references (Collegiate, thesaurus, Spanish-English, medical, learner's, and three school tiers), all with audio. As of Aug 3 2026. <a href="https://dictionaryapi.com/info/terms-of-service">Terms of service</a>, <a href="https://dictionaryapi.com/products/index">product list</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Audience</dt>
+          <dd>"Tens of millions of visitors" per month across websites, apps and social channels — publisher's own wording, page snapshot Aug 1 2026. <a href="https://web.archive.org/web/20260801015304/https://www.merriam-webster.com/about-us">About Us</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>AI litigation</dt>
+          <dd>v. Perplexity filed Sep 15 2025; v. OpenAI filed Mar 2026, Manhattan federal court, alleging ~100K works copied for training, RAG, and verbatim output. <a href="https://corporate.britannica.com/britannica-files-copyright-and-trademark-infringement-lawsuit-against-perplexity">Britannica release</a>, <a href="https://techcrunch.com/2026/03/16/the-dictionary-sues-openai">TechCrunch</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-03 unless noted. User agent <code>SiteWise research (kunka@apitech.ai)</code> except where stated.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-08-03</td><td><code>curl -sL https://www.merriam-webster.com/robots.txt</code></td><td>13 lines. Seven <code>Disallow</code> rules for <code>*</code>, all operational (<code>/wotd-signup-message</code>, <code>/interstitial-ad</code>, <code>/lapi</code>, saved-words internals, old games assets). <strong>No AI crawler is named</strong> — no GPTBot, ClaudeBot, CCBot, PerplexityBot, Google-Extended. One <code>Sitemap:</code> directive.</td></tr>
+            <tr><td>2026-08-03</td><td><code>curl -sI https://www.merriam-webster.com/dictionary/serendipity</code>, repeated with desktop Chrome and Googlebot user agents</td><td>All three 403 with <code>cf-mitigated: challenge</code>, <code>server: cloudflare</code> (5.5KB Turnstile interstitial). Strict headers: COEP <code>require-corp</code>, COOP and CORP <code>same-origin</code>, restrictive <code>permissions-policy</code>. The Googlebot attempt came from a datacenter IP, so its rejection is expected UA-spoof handling, not evidence that real Googlebot is blocked.</td></tr>
+            <tr><td>2026-08-03</td><td><code>dig +short www.merriam-webster.com</code>; <code>dig +short NS</code></td><td>CNAME to <code>www.merriam-webster.com.cdn.cloudflare.net</code> → 104.20.45.199, 172.66.150.196. Nameservers are AWS Route 53 (<code>ns-636.awsdns-15.net</code> and three peers). Cloudflare in front, AWS behind.</td></tr>
+            <tr><td>2026-08-03</td><td>Sitemap census: fetch <code>sitemap_index.xml</code>, then all 113 children</td><td>4.1MB gzipped, 601,519 <code>&lt;loc&gt;</code> entries, served without challenge. Families: <code>az</code> 244,229; <code>lexilicious</code> 199,750; <code>tes</code> 71,875; <code>exemplar</code> 41,305; <code>lds</code> 18,136; <code>med</code> 17,798; <code>articles</code> 2,335; <code>law</code> 2,195; remainder editorial.</td></tr>
+            <tr><td>2026-08-03</td><td>Sitemap freshness fields</td><td><code>az</code> and <code>tes</code> declare <code>changefreq: daily</code>, <code>priority: 1</code>; <code>lexilicious</code> declares <code>yearly</code>. Dictionary <code>lastmod</code> clusters hard — 60,886 in July 2026 versus 121–1,050 per month for Jan–Jun. Each entry carries an <code>xhtml:link</code> alternate to <code>android-app://com.merriamwebster/…</code>.</td></tr>
+            <tr><td>2026-08-03</td><td>Structured-data sample — <code>/dictionary/serendipity</code> via Wayback snapshot <code>20251209200941</code> (live fetch blocked)</td><td>Two <code>ld+json</code> blocks: <code>FAQPage</code> with usage Q&amp;A (answer links tagged <code>utm_content=FAQ</code>), <code>WebPage</code>, <code>WebSite</code> with a <code>SearchAction</code> template, <code>DefinedTermSet</code>+<code>Book</code>, <code>DefinedTerm</code> keyed on the canonical URL, and an <code>AudioObject</code> whose <code>contentURL</code> is a direct MP3. No per-sense markup.</td></tr>
+            <tr><td>2026-08-03</td><td><code>curl -sI https://media.merriam-webster.com/audio/prons/en/us/mp3/s/serend02.mp3</code></td><td>HTTP 200, <code>audio/mpeg</code>, 6,716 bytes, <code>server: AmazonS3</code>, <code>cache-control: max-age=31556926</code>, no auth or referer check. The same path with <code>wav</code>/<code>ogg</code> also returns 200. <code>media.merriam-webster.com/robots.txt</code> is 403 — the audio host publishes no crawl policy.</td></tr>
+            <tr><td>2026-08-03</td><td><code>…dictionaryapi.com/api/v3/references/collegiate/json/serendipity?key=NOKEY</code></td><td>Plain text <code>Invalid API key. Not subscribed for this reference.</code> — no anonymous tier. The API host is not Cloudflare-challenged.</td></tr>
+            <tr><td>2026-08-03</td><td><code>curl -sL https://unabridged.merriam-webster.com/robots.txt</code></td><td><code>User-agent: * / Disallow: /</code>. The paid Unabridged host is fully closed to crawl while the free host is fully open.</td></tr>
+            <tr><td>2026-08-03</td><td><code>curl https://www.merriam-webster.com/wotd/feed/rss2</code></td><td>HTTP 200, 49KB, 10 items, no challenge. Each item: UUID <code>guid</code>, headword title, dated permalink (<code>/word-of-the-day/highfalutin-2026-08-02</code>), and CDATA HTML with respelling, definition, examples, and etymology.</td></tr>
+            <tr><td>2026-08-03</td><td><code>/llms.txt</code>, <code>/ads.txt</code>, <code>/.well-known/security.txt</code></td><td><code>llms.txt</code> 404 — no AI-usage declaration. <code>ads.txt</code> 200 at 20KB. <code>security.txt</code> 200, pointing to <code>security@merriam-webster.com</code> and an OpenBugBounty page.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. API = <a href="https://dictionaryapi.com/">Merriam-Webster Dictionary API</a>; counts are from the Probe Log census.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text — entries</td>
+              <td>354,236 lexicographic entry URLs across five references (dictionary, thesaurus, learner's, medical, legal).</td>
+              <td>API <code>references/{ref}/json/{word}</code> returns senses, etymology, inflections. Sitemap + crawl covers the same surface but HTML is Cloudflare-challenged.</td>
+              <td>Free key: 1,000 req/day/reference, 2 references max, non-commercial only. Commercial use requires a negotiated licence.</td>
+              <td>API terms forbid redistribution and automated/recorded querying; the two AI suits show reproduction is enforced.</td>
+              <td>Batch releases, not continuous: 60,886 dictionary URLs restamped in July 2026.</td>
+            </tr>
+            <tr>
+              <td>Text — editorial</td>
+              <td>2,335 articles, 262 slang entries, 556 galleries, 245 quizzes; Word of the Day, one per day.</td>
+              <td>WOTD RSS for the daily stream; <code>articles.xml.gz</code> for the back catalogue.</td>
+              <td>None — RSS and sitemaps served unchallenged.</td>
+              <td>Standard feed etiquette: headline, snippet, link. Full-text mirroring is the conduct at issue in the OpenAI complaint.</td>
+              <td>Articles <code>changefreq: monthly</code>; WOTD daily.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Pronunciation clips on <code>media.merriam-webster.com</code>, MP3/WAV/OGG, ~7KB each. Count per entry: open.</td>
+              <td>API audio field, or the <code>AudioObject.contentURL</code> emitted in page JSON-LD.</td>
+              <td>None at the CDN — 200 with no auth or referer check.</td>
+              <td>API terms govern reuse even though the files are unauthenticated; treat as licensed, not public domain.</td>
+              <td>Effectively immutable: <code>max-age=31556926</code> (one year).</td>
+            </tr>
+            <tr>
+              <td>Images &amp; video</td>
+              <td>Illustrations across 556 galleries; 57 video URLs and 106 <em>Word Matters</em> podcast episodes. Social cards are one shared logo, not per-entry art.</td>
+              <td>Crawl of <code>galleries.xml.gz</code> and <code>video.xml.gz</code>.</td>
+              <td>None declared.</td>
+              <td>Open: no oEmbed endpoint, no published image or embed terms.</td>
+              <td><code>changefreq: monthly</code>.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>None. There is no user-generated content surface on the site.</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td><code>DefinedTerm</code> per headword inside one <code>DefinedTermSet</code>; 2,652 <code>/browse</code> nodes and 41 category/subcategory pages form the taxonomy.</td>
+              <td>JSON-LD on every entry page; browse sitemaps for the taxonomy.</td>
+              <td>None for the markup; API key for the underlying sense data.</td>
+              <td>Markup is machine-readable by design (it targets rich results).</td>
+              <td>Taxonomy <code>changefreq: yearly</code>; stable.</td>
+            </tr>
+            <tr>
+              <td>Generated pages</td>
+              <td>199,750 Word Finder pages (anagrams, rhymes, letter patterns) + 41,307 example-sentence pages.</td>
+              <td>Crawl via <code>lexilicious-*</code> and <code>exemplar-*</code> sitemaps.</td>
+              <td>None.</td>
+              <td>Derived from the same licensed corpus.</td>
+              <td>Word Finder <code>changefreq: yearly</code>; sentence pages ship in dated batches.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Merriam-Webster differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The headword slug <em>is</em> the key: <code>/dictionary/{word}</code>, URL-encoded for apostrophes and diacritics (<code>/dictionary/%27ava</code>). One namespace per reference, so <code>/dictionary/shock</code>, <code>/medical/shock</code> and <code>/legal/shock</code> are three distinct objects about the same string — a dedup trap for anything keyed on the word alone. Inflected forms redirect to the lemma, so URL count overstates distinct headwords.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The entry page is too coarse and the word too fine. The useful unit is the <strong>sense</strong>: headword + part of speech + sense number + gloss + example. Nothing on the site exposes sense-level identity — JSON-LD stops at one <code>DefinedTerm</code> per page — so sense IDs must come from the API payload or be minted locally.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Audio is the one real cross-modal join, and it is <em>not</em> derivable from the headword: <code>serendipity</code> maps to <code>serend01.mp3</code> / <code>serend02.mp3</code>, with the subdirectory taken from the filename's first character. The mapping only exists inside the entry payload or its <code>AudioObject</code> markup, so the audio index cannot be built without first parsing every entry.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Unusually, the meta description is authoritative rather than promotional — it carries the actual first gloss ("the ability to find valuable or agreeable things not sought for"). SEO distortion lives instead in the <code>FAQPage</code> block, which is written for rich results and appends <code>utm_campaign=rich_results</code> to its own internal links.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p><code>changefreq: daily</code> on 244K dictionary URLs is aspirational. The real cadence is a lexicographic release: 90% of dated dictionary entries share one July 2026 stamp, and 72% carry no <code>lastmod</code> at all. Poll the sitemap index for stamp movement rather than recrawling entries on their declared frequency.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>No UGC means no spam surface — an outlier among top-100 sites. The quality question inverts: a third of the crawlable corpus is combinatorially generated Word Finder pages that carry the brand's authority without its editorial process. An index that treats sitemap membership as an authority signal will over-rank them.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Lookup demand arrives pre-resolved from search engines straight to <code>/dictionary/{word}</code>, which is why the entry URL is a clean slug. Merriam-Webster reads its own lookup spikes as a cultural signal and ships them as a product: Word of the Year 2025 was <em>slop</em>, chosen largely from search-lookup data.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Single-token, spelling-uncertain, definition-seeking — the shortest queries on the open web. This is also the query class generative assistants answer without a click, which is the injury both complaints assert.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the sense (headword + POS + sense number), with the entry page as parent document and the pronunciation clip as an attached media child.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>reference + headword-slug</code> as the entry key; <code>entry_key + pos + sense_index</code> for senses; audio joined by the <code>contentURL</code> harvested per entry, never reconstructed from the headword.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Dictionary API — cleanest sense data, but 1,000/day/reference and non-commercial means 244K entries take ~8 months on a free key and production needs a licence first. 2) Sitemap-guided crawl of the 601K URLs — complete and unmetered, but Cloudflare-challenged, and the two active suits make unlicensed bulk ingestion a legal question rather than a technical one. 3) WOTD RSS for the daily increment — the only path unambiguously intended for third parties. 4) Audio CDN, fetched strictly from URLs discovered in 1–2.</li>
+        <li><strong>Recrawl cadence:</strong> sitemap index daily to detect release batches; entries only when their <code>lastmod</code> moves; WOTD daily; editorial monthly; Word Finder and taxonomy annually, if at all.</li>
+        <li><strong>Derivatives to generate:</strong> sense-level embeddings for definition search; phoneme alignment between the respelling and the audio clip; a lemma↔inflection map recovered from redirect chains; a cross-reference graph over the five references keyed on shared headwords.</li>
+        <li><strong>Demo to build:</strong> a sitemap-to-entry-card pipeline that samples N dictionary URLs, extracts the JSON-LD <code>DefinedTerm</code> and <code>AudioObject</code>, fetches the clip, and reports what fraction of entries actually expose pronunciation audio — closing the coverage question below.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Permissive robots.txt is not a licence.</strong> The owner is litigating against two AI companies over content its own robots.txt allows any crawler to fetch. An index built on "we obeyed robots.txt" has no defence here.</li>
+        <li><strong>Free-tier terms bar the obvious use.</strong> The API licence is explicitly non-commercial and forbids "automated or recorded queries"; a commercial index must negotiate before ingesting, not after.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The open posture may not survive the litigation.</strong> <em>Basis:</em> the site currently names zero AI crawlers in robots.txt and publishes no <code>llms.txt</code> (Probe Log), an unusual stance for a plaintiff in two AI copyright suits; the cheapest hardening step is adding the blocks its peers already have.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Cloudflare, not robots.txt, is the operative gate on HTML.</strong> <em>Basis:</em> <code>/dictionary/serendipity</code> is allowed by robots.txt yet returned 403 <code>cf-mitigated: challenge</code> to both a browser UA and a Googlebot UA (Probe Log); challenge policy can tighten without any published change.</li>
+        <li><strong>Ownership is in motion.</strong> Britannica Group confidentially submitted a draft Form S-1 on Jan 29 2024; a listing would put the licensing posture under public-market pressure.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://dictionaryapi.com/info/terms-of-service">Dictionary API terms of service</a> and <a href="https://dictionaryapi.com/products/index">product list</a> — quota, non-commercial restriction, nine reference works.</li>
+        <li><a href="https://www.merriam-webster.com/help/faq-how-many-english-words">MW FAQ: how many words are there in English?</a> — Unabridged entry count (read via Wayback snapshot Jul 24 2026; live fetch 403).</li>
+        <li><a href="https://web.archive.org/web/20260801015304/https://www.merriam-webster.com/about-us">MW About Us</a> (Wayback, Aug 1 2026) — audience wording and Britannica ownership.</li>
+        <li><a href="https://corporate.britannica.com/britannica-files-copyright-and-trademark-infringement-lawsuit-against-perplexity">Britannica v. Perplexity release</a> and <a href="https://techcrunch.com/2026/03/16/the-dictionary-sues-openai">TechCrunch on the OpenAI complaint</a> — the two AI suits.</li>
+        <li><a href="https://www.prnewswire.com/news-releases/britannica-group-announces-confidential-submission-of-draft-registration-statement-for-proposed-initial-public-offering-302046210.html">Britannica Group IPO announcement</a> — confidential Form S-1, Jan 29 2024.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Merriam-Webster">Wikipedia: Merriam-Webster</a> — 1831 founding, 1843 Webster rights, 1964 Britannica acquisition, 1996 website launch.</li>
+        <li><a href="https://www.merriam-webster.com/wordplay/word-of-the-year">Word of the Year 2025</a> — <em>slop</em>, selected largely from lookup-spike data.</li>
+        <li>Local probes on 2026-08-03 — full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The paid Unabridged, not the free site, is the protected asset. <em>Basis:</em> <code>unabridged.merriam-webster.com/robots.txt</code> is <code>Disallow: /</code> while the free host publishes a 601K-URL sitemap index (Probe Log).</li>
+        <li>Cloudflare bot management, not robots.txt, is the real crawl gate on HTML. <em>Basis:</em> a robots-allowed entry URL returned 403 with <code>cf-mitigated: challenge</code> under both browser and Googlebot user agents (Probe Log).</li>
+        <li><code>lastmod</code> is a release-batch stamp, not a per-entry edit signal. <em>Basis:</em> 60,886 of the 67,391 dated dictionary URLs carry a July 2026 stamp, against 121–1,050 per month for January–June 2026 (Probe Log).</li>
+        <li>Pronunciation audio is deliberately public. <em>Basis:</em> the clip URL is published in each page's <code>AudioObject.contentURL</code> and the CDN answers 200 for MP3, WAV and OGG with a one-year cache header and no auth (Probe Log).</li>
+        <li>A third of the crawlable surface is generated rather than lexicographic. <em>Basis:</em> 199,750 <code>/wordfinder/</code> URLs, 33.2% of the census, all stamped <code>changefreq: yearly</code> (Probe Log).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>What share of dictionary entries expose pronunciation audio — closeable by the sampling demo above (parse <code>AudioObject</code> across a random N of the 244,229 entry URLs).</li>
+        <li>How many distinct headwords sit behind 244,229 dictionary URLs once inflected-form redirects collapse — closeable by resolving redirect chains and counting terminal canonicals.</li>
+        <li>Actual monthly visits: only "tens of millions" is official, and third-party panels disagree by more than 3× — needs a publisher disclosure or an S-1.</li>
+        <li>Whether a commercial bulk licence exists and what it costs — the API terms point to negotiated licensing but publish no tier or price.</li>
+        <li>Whether verified Googlebot and Bingbot IPs pass the Cloudflare challenge — closeable by comparing Google's <code>site:</code> count against the 601,519-URL census.</li>
+        <li>How much lookup traffic the AI assistants have displaced — the injury both complaints assert, with no public figure attached.</li>
+        <li>Whether Britannica Group's Form S-1 ever went effective — no Britannica registrant appears in EDGAR full-text search as of Aug 3 2026.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
