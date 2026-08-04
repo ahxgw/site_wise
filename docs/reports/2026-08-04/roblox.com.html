@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>roblox.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-04</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>roblox.com</h1>
+      <p class="lede">Roblox blocks no AI crawler and serves open unauthenticated APIs, then forbids machine-learning use by contract. The gate is legal, not technical.</p>
+      <div class="tag-row">
+        <span class="tag">Gaming / UGC</span>
+        <span class="tag">Platform</span>
+        <span class="tag">NYSE: RBLX</span>
+        <span class="tag">Open API, closed licence</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Roblox Corporation runs a user-generated 3D games platform: creators build "experiences" in Roblox Studio, players buy Robux, and Roblox pays creators back in fiat through the Developer Exchange — $363M of a $1,469M quarter. For an index builder it is the mirror image of a paywalled publisher. Its robots.txt names <strong>zero</strong> AI crawlers, it publishes no <code>llms.txt</code>, and dozens of JSON endpoints across the subdomains below answer 200 with no auth — Roblox's own docs mark them <code>CookieNone</code>. Raw image and audio assets download unauthenticated at 3,000 requests/minute. Yet the Terms of Use forbid accessing the Services "for the purpose of using Virtual Content in connection with the training, development, or use of machine learning models or artificial intelligence," and creators grant that ML-training licence to <em>Roblox alone</em>. <span class="evidence inferred">inferred</span> The contract, not the infrastructure, is the wall. <em>Basis:</em> every API response carries <code>x-terms-message: Terms apply https://rblx.co/TOU.</code> while the same hosts return no robots.txt at all (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>roblox.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.roblox.com/">https://www.roblox.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Gaming platform — user-generated 3D experiences</dd></div>
+        <div><dt>Related hosts</dt><dd><code>apis.</code>, <code>games.</code>, <code>thumbnails.</code>, <code>assetdelivery.</code>, <code>catalog.roblox.com</code>; <code>create.roblox.com</code>, <code>devforum.roblox.com</code>, <code>*.rbxcdn.com</code></dd></div>
+        <div><dt>Owner</dt><dd>Roblox Corporation (NYSE: RBLX), CIK 0001315098</dd></div>
+        <div><dt>Founded / launched</dt><dd>Founded 2004 by David Baszucki and Erik Cassel; platform launched 2006; IPO March 2021</dd></div>
+        <div><dt>Business model</dt><dd>Robux sales, Premium subscriptions, advertising; creator revenue share via DevEx</dd></div>
+        <div><dt>Scale anchor</dt><dd>123M average DAUs and 29B hours engaged — Q2 2026 (quarter ended Jun 30 2026)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing counts (total experiences, creator population, indexed pages) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Users &amp; engagement</dt>
+          <dd>123M average DAUs (+10% YoY) and 29B hours engaged (+5% YoY) — Q2 2026. <a href="https://www.sec.gov/Archives/edgar/data/1315098/000162828026051059/ex991-robloxq22026earnin.htm">Q2 2026 shareholder letter</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Revenue, payout, payers</dt>
+          <dd>Revenue $1,469M; developer exchange fees $363M (24.7%, calculated by Site Wise); operating loss $(229)M. Only 1.6M average daily unique payers against 123M DAUs — 1.3%, calculated by Site Wise; bookings per DAU $0.14 versus $10.42 per payer. Q2 2026. <a href="https://www.sec.gov/Archives/edgar/data/1315098/000162828026051082/rblx-20260630.htm">Form 10-Q</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Declared crawl surface</dt>
+          <dd>150,600 sitemap URLs resolving to only <strong>10,040 distinct objects</strong> (10,000 experience pages + 40 nav/chart/spotlight), duplicated across 15 locale prefixes — Aug 4 2026. Counted by Site Wise across all 30 sitemap directives (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>60-URL sample of <code>sitemap-games-1.xml</code></dt>
+          <dd>56 URLs return full payloads; 4 (6.7%) are content-restricted stubs. The sitemap is a head selection, not a census: median 98.5M lifetime visits, floor 5.1M, ceiling 4.68B, with 9 of 56 above 1B and 25.7B visits plus 184M favourites in total. Coverage across the 56: description 100% (median 366 chars), <code>genre_l1</code> 100%, <code>genre_l2</code> 68%, group-owned 86%, <code>copyingAllowed</code> 0%. Churn: 37 (66%) updated within 7 days, 45 (80%) within 30. Aug 4 2026, measured by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Measured ceilings</dt>
+          <dd><code>x-ratelimit-limit</code>: 100 req/min on <code>www.roblox.com</code>, 3,000 on <code>assetdelivery</code>, 300,000 on <code>tr.rbxcdn.com</code>. Hard cap of exactly 50 universeIds per multiget (51 returns error code 9). Aug 4 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Developer forum corpus</dt>
+          <dd>478,987 topic URLs across 48 child sitemaps on <code>devforum.roblox.com</code> — 48× the main site's distinct surface. Aug 4 2026, calculated by Site Wise from 9 sampled children (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Concentration, AI volume, age gating</dt>
+          <dd>Top 10 experiences were ~20% of hours, down from ~30% three years earlier, while experiences outside the top 10 grew hours 25% YoY. Creators generate 60,000+ Cube 3D assets per day, ~1,400 experiences using Cube content daily. 57% of users age-checked; 27% of those over 18. Q2 2026. <a href="https://www.sec.gov/Archives/edgar/data/1315098/000162828026051059/ex991-robloxq22026earnin.htm">Q2 2026 shareholder letter</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-04. User agent <code>SiteWise research (kunka@apitech.ai)</code> except where stated.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-08-04</td><td data-label="Probe"><code>curl -sL https://www.roblox.com/robots.txt</code></td><td data-label="Observation">28 lowercase <code>disallow</code> rules for <code>*</code>, all operational (<code>/abusereport/</code>, <code>/ads/</code>, <code>/data/</code>, <code>/forum/</code>, <code>/badges/</code>, <code>*.aspx$</code>). <strong>No AI crawler is named</strong> — no GPTBot, ClaudeBot, CCBot, PerplexityBot, Google-Extended, Applebot-Extended. No <code>crawl-delay</code>. 30 <code>Sitemap:</code> directives.</td></tr>
+            <tr><td data-label="Date">2026-08-04</td><td data-label="Probe"><code>curl -sI https://www.roblox.com/</code>; <code>dig +short www.roblox.com</code>, <code>NS roblox.com</code></td><td data-label="Observation">200, <code>server: public-gateway</code>, <code>cache-control: no-store</code>, <code>x-ratelimit-limit: 100, 100;w=60</code>, HSTS, no <code>x-robots-tag</code>; three cookies on a logged-out GET, including <code>GuestData=UserID=-304338286</code>. Every response carries <code>x-terms-message: Terms apply https://rblx.co/TOU.</code> CNAME chain <code>titanium</code> → <code>edge-term4-sin4.roblox.com</code> → 128.116.50.3 — Roblox-operated edge, not a commercial CDN; nameservers split between NS1 and self-hosted <code>ns01–04.rbxinfra.net</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-04</td><td data-label="Probe">Sitemap census: all 30 directives</td><td data-label="Observation"><code>sitemap.xml</code> holds 40 URLs (17 <code>/charts</code>, 11 <code>/spotlight</code>, plus nav). <code>sitemap-games.xml</code> indexes exactly 10 children of exactly 1,000 URLs = 10,000 unique <code>/games/{placeId}/{slug}</code>; the 14 locale pairs repeat that set ID-for-ID under a prefix. No <code>lastmod</code>, <code>changefreq</code> or <code>priority</code> anywhere; 16 hreflang alternates per entry.</td></tr>
+            <tr><td data-label="Date">2026-08-04</td><td data-label="Probe">Structured data and open metadata — Blox Fruits (<code>/games/2753915549</code>, universe 994732206)</td><td data-label="Observation">Server-rendered 89KB HTML, no challenge, one <code>ld+json</code>: <code>["VideoGame","SoftwareApplication"]</code> with full <code>description</code>, <code>genre</code>, <code>dateModified</code>, <code>aggregateRating</code> (92.20 of 100 over 13,457,421 ratings), <code>offers</code> in <code>ROBUX</code>, <code>author</code>, <code>PlayGameAction</code>, canonical URL, OG tags, <code>data-universe-id</code>; no <code>meta robots</code>. <code>games/v1/games</code> and <code>/v1/games/votes</code> return 200 with no auth, key or cookie: description, creator, <code>playing</code> 269,327, <code>visits</code> 63.19B, <code>favoritedCount</code> 19.50M, genre tree, and 12,407,895 up / 1,049,525 down votes — summing to the JSON-LD <code>ratingCount</code> within one vote.</td></tr>
+            <tr><td data-label="Date">2026-08-04</td><td data-label="Probe">60 sitemap placeIds → universeIds → <code>/v1/games</code>, serialized at 0.35s</td><td data-label="Observation">50 universeIds per multiget succeed; 51 returns <code>code 9 "Too many universe IDs were requested."</code> Ten concurrent workers on <code>places/{id}/universe</code> tripped <code>code 4 "Too many requests"</code>; serialized, 60 of 60 resolved — the sitemap is live, and the earlier failures were self-inflicted. Result: 56 full records plus 4 stubs where name, description and creator are replaced by <code>[TITLE UNAVAILABLE]</code>/<code>[UNKNOWN]</code>, visits zeroed, <code>created: 0001-01-01</code>, flagged <code>isContentRestricted</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-04</td><td data-label="Probe"><code>assetdelivery.roblox.com/v1/asset/?id=…</code> across asset classes</td><td data-label="Observation">302 to a signed <code>fts.rbxcdn.com</code> URL, <code>x-ratelimit-limit: 3000</code>. Followed: game screenshot → 937KB PNG 1024×576; badge icon → PNG 150×150; Creator Store music 1848354536 → <strong>Ogg Vorbis 44.1kHz stereo</strong>. But audio 142376088 → 401, and the place file (2753915549) → 409 <code>"User is not authorized to access Asset."</code> Media is open per-asset; the game binary is not.</td></tr>
+            <tr><td data-label="Date">2026-08-04</td><td data-label="Probe">Unauthenticated sweep, then the metered tier</td><td data-label="Observation">200 with no auth: <code>users/v1/users/1</code>; <code>groups/v1/groups/4372130</code> (memberCount 19.16M); <code>badges</code> (per-badge <code>awardedCount</code>, <code>pastDayAwardedCount</code>); <code>games/{id}/media</code>; <code>games/{id}/servers/Public</code> (live server IDs with fps and ping); <code>catalog/v1/search/items/details</code>; <code>search-api/omni-search</code>; <code>explore-api/v1/get-sorts</code>; <code>toolbox-service/v1/marketplace/3</code>. <code>robots.txt</code> is 404 on <code>apis.</code>, <code>games.</code> and <code>catalog.roblox.com</code> — the API hosts publish no crawl policy at all. By contrast <code>cloud/v2/universes/{id}</code> → 403 and legacy datastores → 401 <code>"Missing API Key Header"</code>: Open Cloud meters writes and private data, and none of the public reads above need it. Creator Store search caps at <code>totalResults: 1000</code> for every keyword tried; <code>games/v1/games/list</code>, a documented listing endpoint, now 404s.</td></tr>
+            <tr><td data-label="Date">2026-08-04</td><td data-label="Probe"><code>/llms.txt</code>, <code>/ai.txt</code>, and Terms of Use retrieval</td><td data-label="Observation">Both 404 (SPA shell) — no AI-usage declaration of any kind. <code>www.roblox.com/info/terms</code> and <code>en.help.roblox.com/…/115004647846</code> both 403 with a Cloudflare "Just a moment…" interstitial, to the research UA and a desktop Chrome UA alike; read instead via Wayback snapshot <code>20260802221146</code>. The licence governing reuse is the one document here a crawler cannot fetch.</td></tr>
+            <tr><td data-label="Date">2026-08-04</td><td data-label="Probe"><code>devforum.roblox.com</code> robots + sitemap census</td><td data-label="Observation">robots.txt blocks <code>mauibot</code>, <code>semrushbot</code>, <code>ahrefsbot</code>, <code>blexbot</code> and <code>seo spider</code> outright — SEO crawlers named, AI crawlers still not. Sitemap index lists 48 numbered children; 9 sampled hold exactly 10,000 URLs each except the tail <code>sitemap_48.xml</code> at 8,987 → 478,987 topic URLs. <code>create.roblox.com/robots.txt</code> disallows only <code>/dashboard/</code> and <code>/talent/</code>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Counts and limits come from the Probe Log; "ToU (d)" is the clause quoted under Risks.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text — experience records</td>
+              <td data-label="Objects &amp; est. count">Name, description (median 366 chars), genre tree, creator, visit/favourite/vote counts. 10,000 in the sitemap; platform total open.</td>
+              <td data-label="Best legitimate path"><code>games/v1/games?universeIds=</code>, 50 per call. HTML carries the same fields plus JSON-LD.</td>
+              <td data-label="Auth &amp; quota">None. 100 req/min on <code>www</code>; concurrency above ~10 on <code>apis.</code> trips error code 4.</td>
+              <td data-label="License / display">ToU (d) forbids access for ML/AI training or use. Descriptions are creator UGC licensed to Roblox, not to you.</td>
+              <td data-label="Freshness">66% updated within 7 days.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text — developer forum</td>
+              <td data-label="Objects &amp; est. count">478,987 topic URLs — the platform's real prose corpus (API docs, changelogs, scripting help).</td>
+              <td data-label="Best legitimate path">Crawl guided by the 48-child sitemap index; Discourse <code>.json</code> suffix on any topic.</td>
+              <td data-label="Auth &amp; quota">None, but robots.txt bans SEO crawlers by name and disallows <code>/search</code> and per-topic <code>.rss</code>.</td>
+              <td data-label="License / display">Discourse UGC under Roblox ToU; the least ambiguously public text here.</td>
+              <td data-label="Freshness"><code>sitemap_recent.xml</code> restamped the hour of the probe.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images &amp; video</td>
+              <td data-label="Objects &amp; est. count">Per-experience icon plus an ordered screenshot carousel (<code>games/{id}/media</code> returns <code>imageId</code>s); avatar and catalog thumbnails. Video is sparse — a mostly-unfilled <code>videoHash</code> slot — and Moments, the new home-screen feed, ships gated to age-checked 16+ users, so it has no logged-out path.</td>
+              <td data-label="Best legitimate path"><code>thumbnails/v1/games/multiget/thumbnails</code> for rendered sizes; <code>assetdelivery/v1/asset/?id=</code> for source files. No Moments API observed.</td>
+              <td data-label="Auth &amp; quota">None. 300,000 req/min on <code>tr.rbxcdn.com</code>, 3,000 on <code>assetdelivery</code>.</td>
+              <td data-label="License / display">Thumbnail URLs are signed and dated — built for embedding, not mirroring.</td>
+              <td data-label="Freshness">Re-resolve rather than cache; tokens carry a 180-day prefix.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">Creator Store music and sound effects; per-experience audio lives inside the place file.</td>
+              <td data-label="Best legitimate path"><code>toolbox-service/v1/marketplace/3</code> to enumerate, <code>assetdelivery</code> to fetch — confirmed Ogg Vorbis, unauthenticated.</td>
+              <td data-label="Auth &amp; quota">None for permitted assets, but access is per-asset: one sampled ID returned 401. Enumeration caps at 1,000 results.</td>
+              <td data-label="License / display">Mixed-provenance library with a history of licensed-music takedowns; treat every clip as rights-unclear.</td>
+              <td data-label="Freshness">Immutable once versioned.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reviews</td>
+              <td data-label="Objects &amp; est. count">No review text anywhere. Sentiment exists only as an up/down tally per experience, plus group shouts.</td>
+              <td data-label="Best legitimate path"><code>games/v1/games/votes?universeIds=</code>, 50 per call.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Aggregate counts; no personal data.</td>
+              <td data-label="Freshness">Continuous.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Experience (universe), place, creator, badge with award statistics, catalog item with taxonomy, live server instance with fps/ping.</td>
+              <td data-label="Best legitimate path">One unauthenticated endpoint per entity type; <code>omni-search</code> and <code>explore-api</code> for discovery and the genre taxonomy.</td>
+              <td data-label="Auth &amp; quota">None for reads. Open Cloud key required for anything private or writable.</td>
+              <td data-label="License / display">Richest structured layer of any site profiled here, and the one most squarely inside ToU (d).</td>
+              <td data-label="Freshness">Badge <code>pastDayAwardedCount</code> and server lists are near real-time.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">The experiences themselves</td>
+              <td data-label="Objects &amp; est. count">Scene graph, scripts, meshes — the actual product. Not indexable.</td>
+              <td data-label="Best legitimate path">No legitimate bulk path. The place file returns 409; <code>copyingAllowed</code> was false for all 56 sampled.</td>
+              <td data-label="Auth &amp; quota">Hard wall.</td>
+              <td data-label="License / display">Deliberately closed.</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Roblox differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Two ID spaces, easy to confuse and not interchangeable. Every URL and sitemap entry carries a <strong>placeId</strong>; every metadata API keys on <strong>universeId</strong>. A universe owns many places, so the URL identifies a room and the API identifies the product. No bulk mapping exists — each placeId costs one <code>places/{id}/universe</code> call. The slug is decorative (<code>/games/2753915549/anything</code> resolves), so the placeId alone is the dedup key. Locale prefixes multiply each object 15×; strip them before ingest.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>universe</strong>, not the page. The page is a launcher; nothing a user plays is in the HTML. The document worth indexing is a composite the site never serves as one object: description + genre tree + creator + votes + screenshots + badges, from five endpoints. Badges are the nearest thing to a table of contents for gameplay — one named "Third Sea" with 94.5M awards describes progression no crawl can reach.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Unusually clean, because everything is an integer asset ID: <code>universeId</code> → <code>rootPlaceId</code> → <code>imageId[]</code> → signed CDN URL, with <code>creator.id</code> + <code>creator.type</code> joining to the users or groups endpoint. The one unstable link is the thumbnail URL, which embeds an expiring signature — so the durable key is the <code>imageId</code>.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>The API description and the page <code>meta description</code> disagree by design. The API returns creator text — patch notes, fruit spawn timers, anti-exploit warnings; the meta description is Roblox marketing copy ("Level up in this anime RPG fighting game…"). Creator text is the retrieval signal, meta text the snippet. And <code>aggregateRating</code> is not a rating: it is the up/down tally rescaled to 0–100.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The sitemap is useless as a change signal: zero <code>lastmod</code>, and its membership is itself the volatile part — a top-10,000 popularity snapshot, so today's list is a ranking, not a corpus. Poll the sitemap for entry and exit from the head, and <code>updated</code> per universe for content change. At 66% weekly churn, a monthly recrawl is a stale index.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Titles are optimised for a child's search box, not a semantic one: the sample holds four near-identical "Would You Rather … Tower" variants and strings like "this awesome game". Cloning is endemic and now machine-assisted at 60,000 generated 3D assets per day. Text similarity will under-separate distinct experiences; the discriminating features are numeric — visits, concurrent players, badge award curves — not lexical.</p>
+        </div>
+        <div>
+          <h4>Search demand &amp; query profile</h4>
+          <p>Roblox treats discovery as its own algorithm's job and told shareholders so: a Recommended-For-You change deliberately traded near-term monetisation for retention, and moved the bookings number. External search is not the demand channel — which explains why a top-50 site publishes 10,000 URLs and shows no sign of caring. What does arrive is navigational and title-shaped; the unmet classes are attribute-shaped ("obby games for 6 year olds"), which the site's own <code>genre_l2</code> covers for only 68% of experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the universe as a composite document — description, genre tree, creator, vote tally, badges, screenshots — with the rootPlace URL as canonical address and each screenshot an attached media child.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>universeId</code> as document key; <code>placeId</code> as URL alias (many-to-one); <code>creator.type + creator.id</code> for the author join; <code>imageId</code> — never the signed URL — for media.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The unauthenticated read APIs — complete fields, no key, but exactly the access ToU (d) prohibits, making this a legal decision before a technical one. 2) Sitemap-guided HTML crawl of the 10,000 experience pages — JSON-LD gives most of the same fields under ordinary crawl etiquette, capped at the head. 3) DevForum crawl for 479K prose URLs. 4) Open Cloud, which meters private and writable data but unlocks no third-party bulk reads. There is <em>no</em> path to the experiences themselves.</li>
+        <li><strong>Cost of the head, measured:</strong> 10,000 placeId resolutions + 200 metadata multigets = 10,200 calls minimum. Serialized at the 0.35s spacing that survived probing, ~60 minutes per full refresh — cheap enough to run daily, which the 66% weekly churn demands.</li>
+        <li><strong>Recrawl cadence:</strong> sitemap daily for head membership; universe metadata daily for the top decile by concurrent players, weekly otherwise; badges weekly; thumbnails only on <code>imageId</code> change; devforum hourly from <code>sitemap_recent.xml</code>.</li>
+        <li><strong>Derivatives to generate:</strong> embeddings over creator descriptions, not meta text; a clone-cluster signature over title + description + screenshot hashes, since near-duplicates are the dominant corpus defect; an imputed genre label for the 32% missing <code>genre_l2</code>; badge-name extraction as a progression outline for content no crawler can enter.</li>
+        <li><strong>Demo to build:</strong> a placeId→universeId→composite-record pipeline over the full 10,000-URL head, reporting how many distinct <em>products</em> those URLs represent once shared universes collapse, and what fraction are content-restricted stubs — both currently measured on only 60 URLs.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The Terms of Use ban the use case outright.</strong> "Restrictions of Use" (d): users may not "access the Services using any means for the purpose of using Virtual Content in connection with the training, development, or use of machine learning models or artificial intelligence." No robots.txt directive is needed to make an AI-facing index of this site a contract breach, and none exists.</li>
+        <li><strong>The ML-training licence runs to Roblox only.</strong> Creators grant Roblox a "nonexclusive, royalty-free, perpetual, irrevocable, and fully sublicensable" right covering "the training of machine learning and related models"; the EU addendum adds that "Roblox reserves the right to text and data mining of the Platform." Roblox can build this index and sublicense it; a third party has no route to those rights except a negotiated one.</li>
+        <li><strong>Enforcement precedent is computer-fraud, not copyright.</strong> Roblox's 10-Q describes cross-claims it filed against virtual-casino operators under the Computer Fraud and Abuse Act and California's Comprehensive Computer Data Access and Fraud Act — a theory that reaches unauthorised automated access directly, and which survived a motion to dismiss in April 2025.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The open read tier can close without notice, and partially has.</strong> <em>Basis:</em> these are <code>v1</code> legacy paths Roblox's docs mark deprecated in favour of key-gated Open Cloud, one sampled audio asset returns 401 where a sibling returns 200, and <code>games/v1/games/list</code> — a documented listing endpoint — now 404s (Probe Log).</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Sitemap membership is a ranking, so the index inherits Roblox's popularity bias.</strong> <em>Basis:</em> the games sitemap carries no <code>lastmod</code> and a sampled median of 98.5M lifetime visits with a 5.1M floor (Probe Log) — no long tail is represented, so a sitemap-only index can never answer a query about an unpopular experience.</li>
+        <li><strong>Moderation retracts published records.</strong> 6.7% of sampled sitemap URLs already return stubs with creator, title and description redacted and visits zeroed. An index must treat <code>isContentRestricted</code> as a delete signal, not a fetch failure, or it will serve content Roblox has removed.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1315098/000162828026051082/rblx-20260630.htm">Roblox Q2 2026 Form 10-Q</a> (filed Jul 30 2026) — revenue, DevEx fees, DAUs, paying users, bookings per DAU, and the CFAA cross-claims.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1315098/000162828026051059/ex991-robloxq22026earnin.htm">Q2 2026 shareholder letter (8-K Exhibit 99.1)</a> — 123M DAUs, 29B hours, top-10 concentration, Cube volume, age-check penetration, Moments and 2D roadmap.</li>
+        <li><a href="https://web.archive.org/web/20260802221146/https://www.roblox.com/info/terms">Roblox Terms of Use</a> (Wayback, Aug 2 2026; live URL Cloudflare-blocked) — "Restrictions of Use" (d), the UGC and in-experience UGC licence grants, and the EU text-and-data-mining reservation.</li>
+        <li><a href="https://create.roblox.com/docs/cloud/legacy/games/v1">Creator Hub: legacy games API reference</a> — Roblox's own docs marking these endpoints <code>CookieNone</code>, i.e. public.</li>
+        <li><a href="https://create.roblox.com/docs/cloud/reference/rate-limits">Open Cloud rate-limit documentation</a> — per-owner API-key limits, and the note that undocumented limits also apply.</li>
+        <li><a href="https://data.sec.gov/submissions/CIK0001315098.json">EDGAR submissions index, CIK 0001315098</a> — filing dates and accession numbers.</li>
+        <li>Local probes on 2026-08-04 — full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The wall is contractual, not technical. <em>Basis:</em> robots.txt names no AI crawler, <code>llms.txt</code>/<code>ai.txt</code> both 404, and the API hosts serve no robots.txt at all — yet every response carries <code>x-terms-message: Terms apply https://rblx.co/TOU.</code> pointing at a clause banning ML use (Probe Log).</li>
+        <li>The games sitemap is a popularity ranking, not a census. <em>Basis:</em> exactly 10 children of exactly 1,000 URLs with no <code>lastmod</code>, and a 60-URL sample with median lifetime visits of 98.5M against a 5.1M floor (Probe Log).</li>
+        <li><code>aggregateRating</code> is the vote tally in rating clothing. <em>Basis:</em> JSON-LD <code>ratingCount</code> 13,457,421 against votes-endpoint 12,407,895 + 1,049,525 = 13,457,420, with <code>ratingValue</code> 92.20 equal to the up-vote share (Probe Log).</li>
+        <li>External search is not a meaningful acquisition channel. <em>Basis:</em> a top-50 host declares 10,040 distinct URLs while its own developer forum declares 478,987 (Probe Log), and the shareholder letter attributes discovery shifts to internal RFY changes, not search.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many experiences exist in total. Roblox publishes DAUs and hours but has never disclosed a catalogue count; third-party figures range from ~7M active to 44M+ with no primary source. Closeable only by a Roblox disclosure or a defensible universeId-space sampling study.</li>
+        <li>How many distinct <em>products</em> the 10,000 sitemap URLs represent once places sharing a universe collapse — closeable by the full-census demo above.</li>
+        <li>What Google actually indexes against the 10,040 declared URLs — closeable with Search Console access or a large <code>site:</code> sample. It decides whether the sitemap is a floor or the ceiling.</li>
+        <li>What governs asset-level audio access: one sampled clip returned 200 and another 401 with no visible distinguishing flag. Closeable by sampling N Creator Store audio IDs against upload date and marketplace metadata.</li>
+        <li>Whether any commercial data or content licence exists for third parties, and at what price — ToU (d) forbids the use, Open Cloud does not sell it, and no licensing page was found.</li>
+        <li>The active creator population, and whether Moments will expose any third-party API surface — neither appears in the primary filings.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
