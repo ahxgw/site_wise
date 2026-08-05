@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>weather.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-05</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>weather.com</h1>
+      <p class="lede">The Weather Channel's consumer site: a 30K-city page farm over a paid-only forecast API, with its media corpus absent from every sitemap.</p>
+      <div class="tag-row">
+        <span class="tag">Weather</span>
+        <span class="tag">Location Pages</span>
+        <span class="tag">Paid API</span>
+        <span class="tag">Ephemeral Data</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>weather.com is the web front end of The Weather Company, a Francisco Partners portfolio company since February 2024 rather than an IBM unit. The brand is split: Allen Media Group owns the television channel, Francisco Partners owns the domain, the apps, and Weather Underground. The site monetizes attention through advertising against location pages, while the forecast engine is sold separately as a metered B2B API. That split defines the index problem. The valuable object is a <strong>forecast for a place at a time</strong>, and it is deliberately not in the HTML: location pages ship only <code>WebPage</code> and <code>Organization</code> JSON-LD, while the numbers arrive through an API that returns 401 without a key. <span class="evidence inferred">inferred</span> The consumer site is positioned as an ad surface and the data as a separate product, not as a crawlable dataset. <em>Basis:</em> the location-page JSON-LD sample in the Probe Log carries no forecast fields at all, while <code>api.weather.com</code> rejects unauthenticated reads with <code>CDN-0004 Missing apiKey</code>.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>weather.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://weather.com/">https://weather.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Weather forecasting, ad-supported consumer utility</dd></div>
+        <div><dt>Related hosts</dt><dd><code>api.weather.com</code> (paid API), <code>developer.weather.com</code>, <code>weathercompany.com</code> (B2B), <code>wunderground.com</code>, <code>s.w-x.co</code> (image CDN)</dd></div>
+        <div><dt>Owner</dt><dd>The Weather Company, owned by Francisco Partners since Feb 1 2024; CEO Sheri Bachstein. TV channel separately owned by Allen Media Group since 2018</dd></div>
+        <div><dt>Founded / launched</dt><dd>The Weather Channel launched May 2 1982; weather.com launched 1995</dd></div>
+        <div><dt>Business model</dt><dd>Advertising on consumer properties + metered enterprise data APIs</dd></div>
+        <div><dt>Scale anchor</dt><dd>330M monthly active users across digital properties, as of Jun 10 2025 (<a href="https://www.weathercompany.com/news/twco-widens-lead-as-worlds-most-accurate-forecaster/">The Weather Company</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (global city count, video corpus size, article archive size) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Monthly active users</dt>
+          <dd>330M across digital properties — as of Jun 10 2025. Francisco Partners cited "more than 360 million people each month" at acquisition close, Feb 1 2024. <a href="https://www.weathercompany.com/news/twco-widens-lead-as-worlds-most-accurate-forecaster/">TWC</a>, <a href="https://www.franciscopartners.com/media/francisco-partners-completes-acquisition-of-the-weather-company">Francisco Partners</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Forecast production</dt>
+          <dd>25B forecasts daily across 2.2B locations — as of Jun 10 2025. <a href="https://www.weathercompany.com/news/twco-widens-lead-as-worlds-most-accurate-forecaster/">TWC</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Forecast refresh interval</dt>
+          <dd>2.2B coordinates recalculated every 15 minutes — as of Aug 5 2026 (page undated). <a href="https://vercel.com/blog/how-the-weather-company-serves-real-time-forecasts-to-350-million-daily-active-users-on-vercel">Vercel case study</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>en-US sitemap census</dt>
+          <dd>30,538 location URLs across 25 shards, plus 254 distinct non-location URLs (93 static + 112 collections + 50 articles) — 99.2% of the sitemap is city pages. Sums calculated by Site Wise; as of Aug 5 2026. Probe Log, sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Canonical rewrite rate</dt>
+          <dd>50% of sampled monthly location URLs (20 of 40) canonicalize to a different place name — as of Aug 5 2026. Probe Log, canonical sample <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Broken sitemap IDs</dt>
+          <dd>2.2% of catalogued location entries carry <code>canonicalCityId=null</code> (36 of 1,648) — as of Aug 5 2026. Probe Log, sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>API price floor</dt>
+          <dd>$500/month for 1M calls, annual term; free trial 30 days at 50K calls/day and 100 calls/minute, "limited to enterprise customers only" — as of Aug 5 2026. <a href="https://www.weathercompany.com/weather-data-apis/weather-data-apis-packages-pricing/">Packages &amp; pricing</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Blocked crawler groups</dt>
+          <dd>27 user-agent groups set <code>Disallow: /</code>; 2 (<code>ChatGPT-User</code>, <code>AmazonAdBot</code>) get explicit <code>Allow: /</code> — as of Aug 5 2026, robots.txt stamped "Last updated by noel.madali 07/27/2026". Probe Log, robots.txt <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made 2026-08-05 (see the <a href="../../methodology.html">probe playbook</a>). The only rows that may back a <em>verified</em> tag without an external link.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Date">2026-08-05</td>
+              <td data-label="Probe"><code>curl -sL https://weather.com/robots.txt</code></td>
+              <td data-label="Observation">293 lines, stamped "Last updated by noel.madali 07/27/2026". Two explicit allows at the top: <code>ChatGPT-User</code>, <code>AmazonAdBot</code>. A "Block Bots" section sets <code>Disallow: /</code> for 27 groups including <code>GPTBot</code>, <code>ClaudeBot</code>, <code>anthropic-ai</code>, <code>CCBot</code>, <code>PerplexityBot</code>, <code>Google-Extended</code>, <code>Applebot-Extended</code>, <code>Bytespider</code>, <code>Meta-ExternalAgent</code>, <code>Diffbot</code>, <code>Scrapy</code>. <code>Disallow: /api/payload</code> with carve-out <code>Allow: /api/payload/v1/sitemaps</code>. Nine <code>Sitemap:</code> pointers, one per locale.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-08-05</td>
+              <td data-label="Probe"><code>curl -sI https://weather.com/</code>, <code>dig +short weather.com</code></td>
+              <td data-label="Observation">Akamai in front (CNAME <code>pmd-www.weather.com.edgekey.net</code>, nameservers <code>*.akam.net</code>), Vercel at origin (<code>server: Vercel</code>, <code>x-powered-by: Next.js</code>, <code>x-nextjs-prerender: 1</code>, <code>x-nextjs-stale-time: 300</code>). HTML sent <code>cache-control: no-cache, no-store</code>; <code>access-control-allow-origin: *</code>. Edge geolocated the request and set <code>twc-location-city=Hangzhou</code>, <code>twc-privacy=pipl</code> before any user input.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-08-05</td>
+              <td data-label="Probe">Sitemap census: en-US index, all 25 location shards, 8 other locale indexes</td>
+              <td data-label="Observation">en-US index lists 33 children. Location shards total 30,538 URLs, all of form <code>/weather/monthly/l/{Name}+{ST}?canonicalCityId={64-hex}</code>, all with <code>lastmod</code> 2026-08-01. Non-location: static 93, collections 112, full_articles 49, smartnews 50 (49 overlap), union 254. Articles carry no <code>lastmod</code>. The <code>smartnews</code> news sitemap spans publication dates 2024-05-04 to 2026-07-22 rather than a rolling recent window. Other locales: en-IN 88 children, fr-FR 64, es-US 59, de-DE 44, es-ES 19, en-GB 17, en-CA 15, pt-PT 13.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-08-05</td>
+              <td data-label="Probe">Media sitemap fetch, three locales</td>
+              <td data-label="Observation"><code>photos-*</code>, <code>vidfeed-*</code>, <code>vidfeed-m3u8-*</code>, <code>slideshows-*</code> return a 243-byte S3 <code>&lt;Error&gt;&lt;Code&gt;AccessDenied&lt;/Code&gt;</code> instead of a urlset. Reproduced for en-US, en-IN, fr-FR. Advertised in every locale index; serve no URLs.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-08-05</td>
+              <td data-label="Probe">Canonical sample: 40 random monthly location URLs, shard 0-1300</td>
+              <td data-label="Observation">40/40 returned a canonical. All stayed in the legacy <code>/weather/monthly/l/</code> form but rewrote the path to <code>{City}+{State}+{ZIP}</code> and swapped the key: sitemap URLs carry a 64-hex <code>canonicalCityId</code>, all 40 canonicals a 32-hex one. 20 of 40 canonicalized to a different place name (Grubbs AR → Newport AR, Moskowite Corner CA → Napa CA, Morrice MI → Antrim Township MI). The 40 resolved to 29 distinct canonical cities. Of 1,648 catalogued entries, 36 carry <code>canonicalCityId=null</code>; one such URL returned no canonical tag.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-08-05</td>
+              <td data-label="Probe">Page-type canonical probe: one city, five forecast types</td>
+              <td data-label="Observation">For <code>Ethel+MS</code>: <code>today</code>, <code>hourbyhour</code>, <code>tenday</code> canonicalize to the modern slug <code>/us/mississippi/city/kosciusko/{type}</code>; <code>weekend</code> and <code>monthly</code> canonicalize to the legacy query-string form. Two schemes coexist, split by page type. All five sent <code>meta robots: max-image-preview:large</code> only — no <code>noindex</code>.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-08-05</td>
+              <td data-label="Probe">Structured-data sample: one article, one location page</td>
+              <td data-label="Observation">Article: 8 JSON-LD blocks — <code>NewsArticle</code>, <code>VideoObject</code>, <code>BreadcrumbList</code>, <code>Organization</code>. <code>dateCreated</code> 2024-05-04 but <code>datePublished</code> and <code>dateModified</code> both 2026-07-22. Author is always the organization, never a person. Location page: 2 blocks only (<code>WebPage</code>, <code>Organization</code>), zero forecast fields, no <code>hreflang</code> despite nine locales.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-08-05</td>
+              <td data-label="Probe">Public API and feed probes</td>
+              <td data-label="Observation"><code>api.weather.com/v3/wx/forecast/daily/5day</code> returns HTTP 401 <code>CDN-0004 Missing apiKey</code>; a bogus key returns 401 <code>CDN-0001 Invalid apiKey</code>. No oEmbed (404). Four candidate RSS paths all 404. <code>llms.txt</code> is real: 8,404 bytes, 115 lines, 11 <code>##</code> sections mapping site areas, 5 outbound links. Unknown paths return 404 with a 1.2 MB HTML body.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what auth costs, what may be displayed, how fast it churns. Counts are en-US unless stated.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Forecast data</td>
+              <td data-label="Objects &amp; est. count">2.2B coordinates; 25B forecasts/day</td>
+              <td data-label="Best legitimate path"><code>api.weather.com</code> only — absent from page JSON-LD</td>
+              <td data-label="Auth &amp; quota">Hard 401; $500/mo per 1M calls, trial enterprise-only</td>
+              <td data-label="License / display">Contract terms not public <span class="evidence open">open</span></td>
+              <td data-label="Freshness">15-min recompute; HTML <code>no-store</code>, 300s prerender staleness</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Location pages</td>
+              <td data-label="Objects &amp; est. count">30,538 en-US monthly URLs; ~29K distinct cities <span class="evidence inferred">inferred</span> <em>Basis:</em> the 40-URL canonical sample collapsed to 29 distinct cities</td>
+              <td data-label="Best legitimate path">Sitemap crawl, then follow <code>rel=canonical</code></td>
+              <td data-label="Auth &amp; quota">None</td>
+              <td data-label="License / display">Indexable — no <code>noindex</code> on any of five page types probed</td>
+              <td data-label="Freshness"><code>lastmod</code> 2026-08-01 batch-set; body values change every 15 min</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text / articles</td>
+              <td data-label="Objects &amp; est. count">50 distinct sitemap URLs; archive size <span class="evidence open">open</span></td>
+              <td data-label="Best legitimate path">Sitemap for the sliver; <code>llms.txt</code> section map for the rest</td>
+              <td data-label="Auth &amp; quota">None</td>
+              <td data-label="License / display">Copyrighted editorial; training crawl disallowed for 27 UAs</td>
+              <td data-label="Freshness">No <code>lastmod</code>; <code>datePublished</code> refreshed on republish, understates age</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Served from <code>s.w-x.co</code>; count <span class="evidence open">open</span></td>
+              <td data-label="Best legitimate path"><code>image:</code> tags in article sitemaps only — <code>photos-*</code> is broken</td>
+              <td data-label="Auth &amp; quota">None</td>
+              <td data-label="License / display"><code>max-image-preview:large</code>; bulk mirroring needs rights review</td>
+              <td data-label="Freshness">Tied to parent article</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video &amp; audio</td>
+              <td data-label="Objects &amp; est. count"><code>VideoObject</code> JSON-LD on article pages; count <span class="evidence open">open</span>. No standalone audio corpus</td>
+              <td data-label="Best legitimate path">No bulk path — both <code>vidfeed-*</code> sitemaps return S3 <code>AccessDenied</code></td>
+              <td data-label="Auth &amp; quota">None available</td>
+              <td data-label="License / display">No oEmbed endpoint; official embeds only</td>
+              <td data-label="Freshness">Sampled <code>VideoObject</code> last modified 2022-11-28 on a 2026-dated article</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments</td>
+              <td data-label="Objects &amp; est. count">OpenWeb widget, flagged on <span class="evidence inferred">inferred</span> <em>Basis:</em> homepage set <code>amplitude-variants={"show-open-web-comments":{"value":"on"}}</code></td>
+              <td data-label="Best legitimate path">Third-party vendor surface, not weather.com HTML</td>
+              <td data-label="Auth &amp; quota"><span class="evidence open">open</span></td>
+              <td data-label="License / display"><span class="evidence open">open</span></td>
+              <td data-label="Freshness"><span class="evidence open">open</span></td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Cities keyed by <code>canonicalCityId</code> — two incompatible ID spaces (64-hex in sitemaps, 32-hex in canonicals)</td>
+              <td data-label="Best legitimate path">Parse from canonical URLs; no entity dump published</td>
+              <td data-label="Auth &amp; quota">None</td>
+              <td data-label="License / display">Place names and ZIPs are facts, not protected expression</td>
+              <td data-label="Freshness">Stable per city; 2.2% of sitemap rows ship <code>null</code> IDs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where weather.com departs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Answer-time allowed, training blocked</h4>
+          <p>The usual pattern is to block AI crawlers wholesale. weather.com splits them by purpose: <code>ChatGPT-User</code> (on-demand fetch for a live question) is allowed while <code>GPTBot</code> (training) is blocked, and <code>AmazonAdBot</code> is allowed while <code>Amazonbot</code> is blocked. <span class="evidence inferred">inferred</span> The site wants citation in live assistant answers without contributing to model weights. <em>Basis:</em> the paired allow/deny of both UA pairs in one file, plus a curated 8.4 KB <code>llms.txt</code>.</p>
+        </div>
+        <div>
+          <h4>The sitemap key does not join</h4>
+          <p>The most expensive trap here. Sitemap URLs carry a 64-hex <code>canonicalCityId</code>; the canonical pages they resolve to carry a 32-hex one. Different ID spaces, so a naive join on <code>canonicalCityId</code> silently yields zero matches. Key on the resolved canonical URL, not the sitemap parameter.</p>
+        </div>
+        <div>
+          <h4>Half the sitemap is aliases</h4>
+          <p>50% of sampled monthly URLs canonicalize to a <em>different named town</em> — small places fold into a nearby covered city. Treating sitemap entries as distinct places overstates the corpus by roughly a quarter and produces duplicate documents with near-identical bodies. Resolve canonicals before deduping, and keep alias names as retrievable surface forms for the canonical city.</p>
+        </div>
+        <div>
+          <h4>Two URL schemes, split by page type</h4>
+          <p>A migration is visibly in flight: <code>today</code>/<code>hourbyhour</code>/<code>tenday</code> canonicalize to clean <code>/us/{state}/city/{city}/{type}</code> slugs, while <code>weekend</code>/<code>monthly</code> keep the legacy query-string form. The sitemap ships only <code>monthly</code> — the page types users actually want are the ones not enumerated anywhere.</p>
+        </div>
+        <div>
+          <h4>Dates are refreshed, not authored</h4>
+          <p><code>dateCreated</code> 2024-05-04 against <code>datePublished</code> 2026-07-22 on the same article. Here <code>datePublished</code> is a freshness signal for search, not a fact about the text. Use <code>dateCreated</code> for age; ranking on <code>datePublished</code> rewards the republishing behaviour directly.</p>
+        </div>
+        <div>
+          <h4>The payload is not in the document</h4>
+          <p>Location pages carry <code>WebPage</code> and <code>Organization</code> JSON-LD and nothing else — no schema.org weather types, no forecast fields. Every number a user came for arrives from the metered API. A text crawl of 30K city pages yields boilerplate chrome around values already stale when fetched. Unlike back-catalog sites there is no archive tier worth crawling slowly, only a live tier no crawler can keep up with.</p>
+        </div>
+        <div>
+          <h4>Query profile is navigational</h4>
+          <p>Queries are overwhelmingly "{place} weather" plus a horizon. Retrieval is entity resolution over places, not topical matching — which makes the alias collapse the central correctness problem, and makes the missing <code>hreflang</code> across nine locales a live risk of serving the wrong language for the right city.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> two, kept apart. (a) The <em>place</em> — one document per resolved canonical city holding names, aliases, state, ZIP, and available page types; forecast values are a live lookup, never an indexed field. (b) The <em>article</em> — one document per editorial URL, indexed conventionally.</li>
+        <li><strong>Primary keys &amp; joins:</strong> key places on the resolved canonical URL, never on <code>canonicalCityId</code> (two ID spaces, 2.2% null). Carry the 32-hex ID as a secondary attribute and the 64-hex one only as crawl provenance. Join articles to places by explicit place mentions — article paths are topical (<code>/storms/tornado/news/...</code>), not geographic.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Nine locale sitemaps for discovery — free, ceilings at ~30.8K en-US URLs, enumerates only <code>monthly</code> location pages. 2) Canonical resolution on every discovered URL — one fetch each, mandatory, and the only thing that makes the corpus dedupe correctly. 3) <code>llms.txt</code> as a section map to reach editorial areas the sitemap omits. 4) Licensed <code>api.weather.com</code> at $500/month per 1M calls if live values are required; the only path to the data, and it does not scale to 2.2B coordinates. 5) No path at all for video and photo collections until the S3-backed sitemaps are fixed.</li>
+        <li><strong>Recrawl cadence:</strong> places monthly — identity is stable even though values are not, and <code>lastmod</code> moves in batch. Articles daily, since they carry no <code>lastmod</code> and get silently republished. robots.txt weekly; it was edited 9 days before this probe. Forecast values: never cached, fetched live or omitted.</li>
+        <li><strong>Derivatives to generate:</strong> an alias table mapping the ~50% of rewritten place names to their canonical city — the highest-value artifact on the site, and it exists nowhere else. Place-name embeddings for fuzzy resolution. ASR and keyframes are not justified: there is no bulk path to the video corpus.</li>
+        <li><strong>Demo to build:</strong> resolve the full 30,538-URL en-US location sitemap to canonicals and publish the true distinct-city count plus the alias table. The 40-URL sample says 50% get rewritten; running it completely turns an estimate into the one number nobody publishes, and the alias table falls out as a byproduct.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The URL migration completes and invalidates every key.</strong> Three of five page types already moved to <code>/us/{state}/city/{city}/{type}</code>. When <code>monthly</code> follows, every sitemap-derived key breaks at once and the 64-hex ID space disappears. Keying on resolved canonicals is what survives this.</li>
+        <li><strong>Private-equity ownership favors metering.</strong> Francisco Partners bought the data business in Feb 2024; the free surface is ad-supported HTML and the forecast values already sit behind a hard 401. Further enclosure raises the price of the only path to the actual data.</li>
+        <li><strong>The AI-crawler stance is unstable and freshly edited.</strong> robots.txt changed 9 days before this probe and grants <code>ChatGPT-User</code> an exception no other assistant fetcher gets. That allowance is a business decision, not a policy, and can be revoked in one commit.</li>
+        <li><strong>The broken media sitemaps may be intentional.</strong> An S3 <code>AccessDenied</code> reproduced across three locales and four sitemap classes is either a long-standing misconfiguration or a deliberate withdrawal; planning a video index on the assumption they will return is planning on a guess.</li>
+        <li><strong>Alias collapse changes without notice.</strong> Which towns fold into which covered city is a product decision inside the forecast system. If coverage expands, former aliases become canonical and cached place documents silently point at the wrong entity.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.franciscopartners.com/media/francisco-partners-completes-acquisition-of-the-weather-company">Francisco Partners — acquisition completion</a> (Feb 1 2024): assets acquired, CEO, monthly reach.</li>
+        <li><a href="https://www.weathercompany.com/news/twco-widens-lead-as-worlds-most-accurate-forecaster/">The Weather Company — ForecastWatch release</a> (Jun 10 2025): 330M MAU, 25B forecasts/day, 2.2B locations.</li>
+        <li><a href="https://www.weathercompany.com/weather-data-apis/weather-data-apis-packages-pricing/">TWC — Weather Data APIs packages &amp; pricing</a>: trial, Standard and Enterprise quotas.</li>
+        <li><a href="https://developer.weather.com/docs/getting-started">developer.weather.com — Getting Started</a>: API key issuance flow; no published rate limits or redistribution terms.</li>
+        <li><a href="https://vercel.com/blog/how-the-weather-company-serves-real-time-forecasts-to-350-million-daily-active-users-on-vercel">Vercel — Weather Company case study</a>: 15-minute recompute across 2.2B coordinates. The URL slug says "daily active users" while the body says "350 million monthly active users"; the body figure is cited here, and it still disagrees with the company's own 330M for Jun 2025.</li>
+        <li><a href="https://en.wikipedia.org/wiki/The_Weather_Channel">Wikipedia — The Weather Channel</a>: May 2 1982 cable launch; 2018 split of TV assets to Allen Media Group.</li>
+        <li><a href="https://www.fundinguniverse.com/company-histories/the-weather-channel-companies-history/">FundingUniverse — company history</a>: 1995 weather.com launch.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The consumer site is an ad surface and the data a separate product. <em>Basis:</em> location-page JSON-LD contains zero forecast fields while <code>api.weather.com</code> returns <code>CDN-0004 Missing apiKey</code> — the numbers are routed away from the crawlable document.</li>
+        <li>The site wants live assistant citations without contributing training data. <em>Basis:</em> <code>ChatGPT-User</code> allowed while <code>GPTBot</code> blocked, and <code>AmazonAdBot</code> allowed while <code>Amazonbot</code> blocked, in the same file — the split is by fetch purpose.</li>
+        <li>Distinct en-US cities number roughly 29K rather than 30,538. <em>Basis:</em> the 40-URL canonical sample resolved to 29 distinct cities, a ~27% reduction; extrapolating is an estimate, not a measurement, which is why the demo above exists to replace it.</li>
+        <li>Comments are served by OpenWeb rather than natively. <em>Basis:</em> the homepage set <code>amplitude-variants={"show-open-web-comments":{"value":"on"}}</code> as a first-party cookie.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many distinct cities does weather.com cover worldwide? Census all nine locale sitemaps and resolve every URL to its canonical, then deduplicate — the en-US half is the demo above; the other eight locales range from 13 to 88 child sitemaps and were not enumerated.</li>
+        <li>How large is the article archive? The sitemap exposes 50 URLs against a site publishing since 1995. Crawl the <code>collections-*</code> section hubs and the <code>llms.txt</code> map with pagination to establish a floor.</li>
+        <li>How many videos exist, and is there any legitimate bulk path? Ask TWC whether the <code>vidfeed-*</code> sitemaps are meant to be live; an S3 <code>AccessDenied</code> cannot distinguish misconfiguration from withdrawal.</li>
+        <li>What do the API contract terms permit — caching duration, redistribution, attribution? Neither the pricing page nor the developer docs state them; this needs the licence agreement behind the trial form.</li>
+        <li>Are the nine locales distinct city sets or translations of one set? No <code>hreflang</code> was present on sampled pages. Compare resolved canonical city sets across <code>en-US</code>, <code>en-GB</code> and <code>en-IN</code> for overlap.</li>
+        <li>What fraction of traffic is navigational versus search-referred? Needs a third-party panel; no first-party figure is published, and 330M MAU spans all properties rather than the domain.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
