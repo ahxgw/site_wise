@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>apps.apple.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-08-06</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>apps.apple.com</h1>
+      <p class="lede">Apple's App Store is a 2.17M-app catalog gated server-side by requester geography, discoverable mainly through Apple's own rate-limited JSON APIs rather than open crawl.</p>
+      <div class="tag-row">
+        <span class="tag">App Marketplace</span>
+        <span class="tag">iOS/macOS Software</span>
+        <span class="tag">Geo-gated</span>
+        <span class="tag">JSON API</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>apps.apple.com is Apple's storefront for iOS, iPadOS, macOS, tvOS, watchOS, and visionOS software: one page per app, one purchase/install flow, one review system. Apple monetizes it through commission on digital-goods transactions — 30% standard, 15% for the Small Business Program, with lower tiers now carved out by regulation (EU Digital Markets Act, Japan's Mobile Software Competition Act) — rather than through a separately disclosed revenue line; App Store income is folded into Apple's undifferentiated Services segment. For an index builder, the interesting object is the numeric <strong>trackId</strong> (Apple calls it <code>adamId</code> in older docs) printed in every <code>/app/.../id{trackId}</code> URL, plus the <code>bundleId</code> that survives app renames. The defining constraint discovered while probing this site is not a bot wall like Amazon's but a storefront gate: <span class="evidence inferred">inferred</span> the HTML site negotiates content by requester IP rather than URL path. <em>Basis:</em> requests for explicit <code>/us/</code> URLs 302-redirected to <code>/cn</code>, and the legacy <code>itunes.apple.com</code> host's 301 hop carried a <code>user-country: CN</code> response header and <code>vary: X-Apple-Store-Front, Cookie</code> (Probe Log). The JSON APIs behind the same catalog are not gated this way.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>apps.apple.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://apps.apple.com/">https://apps.apple.com/</a></dd></div>
+        <div><dt>Category</dt><dd>App marketplace / software distribution</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>itunes.apple.com</code> (legacy host; 301s HTML to apps.apple.com but serves the Search/Lookup/RSS JSON APIs directly), <code>rss.applemarketingtools.com</code> (chart feeds), <code>*.mzstatic.com</code> (icon/screenshot CDN), <code>developer.apple.com</code> (App Store Connect, Enterprise Partner Feed docs)</dd></div>
+        <div><dt>Owner</dt><dd>Apple Inc. (NASDAQ: AAPL)</dd></div>
+        <div><dt>Founded / launched</dt><dd>App Store launched 2008-07-10</dd></div>
+        <div><dt>Business model</dt><dd>Commission on in-app digital-goods transactions; folded into Apple's Services segment, not disclosed as a standalone line (Verified Metrics)</dd></div>
+        <div><dt>Scale anchor</dt><dd>2,172,472 apps, per the 2025 App Store Transparency Report published 2026-05-20. <a href="https://www.apple.com/legal/app-store/transparency/2025/">Apple Transparency Report</a></dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (current developer count, live sitemap-reachable app count) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Total apps in catalog</dt>
+          <dd>2,172,472 — as of the 2025 App Store Transparency Report, published 2026-05-20. <a href="https://www.apple.com/legal/app-store/transparency/2025/">Apple Transparency Report</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>App Review volume, 2025</dt>
+          <dd>9,100,620 submissions reviewed; 2,093,244 rejected. <a href="https://www.apple.com/legal/app-store/transparency/2025/">Same report</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Developer accounts terminated, 2025</dt>
+          <dd>193,035. <a href="https://www.apple.com/legal/app-store/transparency/2025/">Same report</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Fraudulent transactions stopped, 2025</dt>
+          <dd>Over $2.2B. <a href="https://www.apple.com/newsroom/2026/05/the-app-store-stopped-over-2-point-2-billion-usd-in-fraudulent-transactions-in-2025/">Apple Newsroom, updated 2026-05-20</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Cumulative developer earnings since 2008</dt>
+          <dd>Over $550B. <a href="https://www.apple.com/newsroom/2026/01/2025-marked-a-record-breaking-year-for-apple-services/">Apple Newsroom, 2026-01-12</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>App Store ecosystem billings/sales, 2025</dt>
+          <dd>Over $1.4T facilitated; Apple states over 90% carried no Apple commission. <a href="https://www.apple.com/newsroom/2026/06/app-store-ecosystem-reaches-1-point-4-trillion-usd-as-developers-thrive-globally/">Apple Newsroom, 2026-06-04</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Apple Services net sales, FY2025</dt>
+          <dd>$109,158M vs. $96,169M FY2024, +13.5% YoY (percentage calculated by Site Wise) — as of fiscal year ended 2025-09-27. <a href="https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm">Apple FY2025 Form 10-K</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Commission tiers</dt>
+          <dd>Standard 30% / Small Business Program 15% (since 2021-01-01); EU DMA alternative terms 10–17% + optional 3% payment processing, moving to a single 5% Core Technology Commission model by 2026-01-01; Japan MSCA terms 10–21% + optional 5% IAP fee, or 5% outside the App Store, effective 2025-12-17. <a href="https://developer.apple.com/support/dma-and-apps-in-the-eu/">EU DMA terms</a>, <a href="https://www.apple.com/newsroom/2025/12/apple-announces-changes-to-ios-in-japan/">Japan Newsroom post</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Search API rate limit</dt>
+          <dd>~20 calls/minute, unauthenticated, subject to change. <a href="https://performance-partners.apple.com/search-api">Apple Performance Partners: Search API</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-06. This machine's egress network resolves as mainland-China IP space, which itself became a probe finding.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-08-06</td><td><code>dig +short apps.apple.com</code> (default, @8.8.8.8, @1.1.1.1)</td><td>All resolve through Akamai's <code>akadns.net</code>, but the terminal CNAME differs by vantage: default/Google resolver → <code>ks-cdn.com</code>/<code>ksyuncdn.com</code> (Kingsoft Cloud, mainland China edge); Cloudflare's 1.1.1.1 → an <code>-row</code> (rest-of-world) hostname on Fastly IPs.</td></tr>
+            <tr><td>2026-08-06</td><td><code>curl -sI https://apps.apple.com/</code> and <code>.../us/app/tiktok/id835599320</code></td><td>Both return HTTP 302 <code>location: /cn</code> regardless of the requested path. <code>curl -sI https://itunes.apple.com/us/app/tiktok/id835599320</code> 301s to the apps.apple.com URL but its own response carries <code>user-country: CN</code> and <code>vary: X-Apple-Store-Front, Cookie</code>.</td></tr>
+            <tr><td>2026-08-06</td><td><code>curl -sL https://apps.apple.com/robots.txt</code></td><td>One generic <code>User-agent: *</code> block; <code>Disallow: /WebObjects/*, /api/*, /includes/*, /v1/*, */search?*</code>; no AI-crawler-specific rules; 6 <code>Sitemap:</code> directives (chart, app, new-app, story, grouping, static-url indexes).</td></tr>
+            <tr><td>2026-08-06</td><td>Sitemap census: all 6 index files plus one gzipped child sitemap sampled per family</td><td>Child-sitemap counts: app index 1,352 files, chart 7, story 20, grouping 1, static-url 1. Sampled app child (<code>sitemaps_apps_app_16_13.xml.gz</code>) held 6,647 <code>&lt;loc&gt;</code> entries across only 377 distinct app IDs (~17.6 country/locale URL variants per app); sampled chart/grouping/story/static-url children are per-country×per-device duplicates of a small set of curated pages, not per-app records.</td></tr>
+            <tr><td>2026-08-06</td><td>Structured-data sample: <code>curl -sL https://apps.apple.com/us/app/tiktok/id835599320</code></td><td>Delivered page was the redirected <code>/cn/iphone/today</code> shell, not the app detail page; only a site-level <code>schema.org/Organization</code> JSON-LD block was present, no <code>SoftwareApplication</code>/<code>Product</code> markup observed.</td></tr>
+            <tr><td>2026-08-06</td><td>Public API sample: <code>itunes.apple.com/lookup?id=835599320&amp;country=us</code>, <code>.../rss/customerreviews/id=835599320/sortby=mostrecent/json</code> (paged), <code>rss.applemarketingtools.com/api/v2/us/apps/top-free/10/apps.json</code></td><td>Lookup returns full JSON (title, version 46.3.0, size 959.7MB, rating 4.72596 / 18,336,145 ratings) unaffected by the HTML geo-block. Reviews feed returns real review text; <code>page=1</code>–<code>10</code> (500 reviews) succeed, <code>page=11</code> returns HTTP 400 with no continuation token. Marketing-tools chart feed returns a live top-10 JSON list, updated timestamp same-day.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, cost, display terms, and churn. Lookup/Search = <a href="https://performance-partners.apple.com/search-api">itunes.apple.com JSON API</a>; EPF = <a href="https://performance-partners.apple.com/epf">Enterprise Partner Feed</a>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Title, subtitle, description, release notes per app. 2,172,472 apps official (Verified Metrics); sitemap-reachable IDs are far fewer (Probe Log).</td>
+              <td>Lookup/Search JSON API for known/discovered IDs; sitemap crawl for ID discovery.</td>
+              <td>No auth; ~20 calls/min (Verified Metrics); search <code>limit</code> caps at 200/call.</td>
+              <td>Reuse terms beyond apps.apple.com's general Terms of Use not separately published for API responses — open.</td>
+              <td>Changes on developer release; no push signal, only re-poll.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>1 icon + up to ~10 screenshots per app per device class, hosted on <code>mzstatic.com</code>.</td>
+              <td>Same Lookup/Search API returns direct CDN URLs (<code>artworkUrl60/100/512</code>, <code>screenshotUrls</code>, <code>ipadScreenshotUrls</code>).</td>
+              <td>Same quota as Text row.</td>
+              <td>Hotlink CDN URLs returned by a public API; no documented bulk-mirroring right.</td>
+              <td>Updates with app version.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>App preview clips shown on listing pages; count per app open.</td>
+              <td>No field in the Lookup/Search JSON response carries preview-video URLs.</td>
+              <td>—</td>
+              <td>Open: no documented API path.</td>
+              <td>Open.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Only as the soundtrack of preview-video clips; no standalone object.</td>
+              <td>Same gap as Video.</td>
+              <td>—</td>
+              <td>Open.</td>
+              <td>Open.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>Star rating + count (e.g. 18.3M for a top app, Probe Log) plus actual review text, capped at 500 most-recent per app per storefront.</td>
+              <td><code>itunes.apple.com/{cc}/rss/customerreviews/id={id}/sortby=mostrecent/json</code>, paginated.</td>
+              <td>No auth; hard 10-page cap observed (Probe Log).</td>
+              <td>Public RSS/JSON; no redistribution license beyond apple.com's Terms of Use found.</td>
+              <td>Continuous arrival; oldest reviews fall out of the 500-item window with no backfill (Probe Log).</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>App record keyed by <code>trackId</code>/<code>bundleId</code>; developer, genre taxonomy, device compatibility, content rating, price/currency.</td>
+              <td>Lookup/Search API per-record; Enterprise Partner Feed (weekly full + daily incremental bulk dump including applications) for partners.</td>
+              <td>Lookup/Search free; EPF requires Apple Performance Partner Program membership (username/password).</td>
+              <td>EPF's license restricts use to generating links into Apple Services, not general index-building (Risks).</td>
+              <td>Live at call time via API; EPF weekly/daily per Apple's published cadence.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where apps.apple.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p><code>trackId</code> (the numeric ID in every <code>/app/.../id{trackId}</code> URL) is stable and constant across all storefront/locale variants of one app, per the sitemap's hreflang alternates (Probe Log). <code>bundleId</code> is the developer-chosen identifier that survives renames and relistings; URL slugs and the country segment are not stable and should not be treated as identity.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The app shell (name, developer, genre) barely changes; the version sub-record (release notes, size, minimum OS, current rating) refreshes on every submitted update — functionally the same two-speed split as Amazon's product-vs-offer, just triggered by app releases instead of price changes.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p><code>trackId</code> joins metadata, images, and reviews. <code>artistId</code>/<code>sellerName</code> joins one developer's full catalog. <code>bundleId</code> is the join key into developer-side systems (crash analytics, App Store Connect) that Site Wise cannot reach.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Developer-submitted description and subtitle are unmoderated ASO copy. Apple's own genre classification, content rating, and the numeric star rating are closer to ground truth — though rating itself is an adversarial surface, consistent with the 193,035 accounts Apple terminated in 2025 (Verified Metrics).</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Reviews need continuous polling, not periodic recrawl: the customer-reviews feed only ever exposes the 500 most-recent per app per storefront (Probe Log), so a slow recrawl cadence permanently loses review history rather than just serving it stale.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><span class="evidence inferred">inferred</span> Any generic crawler is plausibly subject to the same storefront gate this probe hit. <em>Basis:</em> the 302→<code>/cn</code> fired on an explicit <code>/us/</code> URL regardless of path, and the response named its negotiation axis directly (<code>vary: X-Apple-Store-Front, Cookie</code>) rather than keying off the URL (Probe Log) — whether Apple allowlists search-engine user agents around this gate is unconfirmed (Open Questions).</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Install-intent queries (app name, category + qualifier like "photo editor free"), competitive comparisons, and trust queries ("is [app] safe") given the fraud and rejection volumes in Verified Metrics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> app record keyed by <code>trackId</code>, with a version sub-record (size/notes/min-OS) and a review sub-record attached.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>trackId</code> primary; <code>bundleId</code> secondary/cross-store; storefront country is a dimension on the same <code>trackId</code>, not a separate identity (sitemap hreflang evidence).</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Lookup/Search JSON API — free, ~20 calls/min, best for refreshing known IDs, weak for discovery. 2) Sitemap crawl of the six index families — the only free ID-discovery path, but the probe sample suggests it surfaces a minority of the official catalog (Risks), so pair with (3). 3) <code>rss.applemarketingtools.com</code> chart feeds — free, no auth, strong for trending/new-app discovery, capped to top-N per chart/country. 4) Enterprise Partner Feed — full weekly + daily-incremental bulk dump including applications, gated behind Performance Partner Program membership and licensed for link-generation only (Risks). 5) Customer-reviews RSS — free per-app review text, hard-capped at 500 most-recent per storefront.</li>
+        <li><strong>Recrawl cadence:</strong> version metadata on a chart-driven schedule (daily for top-chart apps, weekly/monthly long tail); reviews via tight continuous polling to stay ahead of the 500-item eviction window; sitemap-based ID discovery weekly to catch new listings and delistings.</li>
+        <li><strong>Derivatives to generate:</strong> sentiment/topic extraction over review text (a text corpus Amazon does not expose at all); ASO-keyword-vs-actual-content divergence score from title/subtitle vs. description.</li>
+        <li><strong>Demo to build:</strong> a review-window watchdog — poll the customer-reviews feed for a seed set of app IDs on varying intervals and measure how many reviews would be silently lost between polls once arrival rate exceeds the 500-item/page=10 ceiling.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Geo-gating is server-side and silent:</strong> the Probe Log shows a storefront swap triggered by requester IP on an explicit <code>/us/</code> URL, with no error code distinguishing it from a normal 302 — a crawl fleet's own egress geography determines which storefront it can see, undetected unless checked.</li>
+        <li><strong>Sitemap coverage is a floor, not the catalog:</strong> the sampled app-sitemap child implies roughly a quarter of the officially reported app count is reachable by ID-discovery crawl alone; discovery must lean on chart/RSS feeds too.</li>
+        <li><strong>Bulk feed license is narrower than its data:</strong> the Enterprise Partner Feed's Performance Partner Program terms restrict use to generating links into Apple Services — a general-purpose index cannot cite EPF as its legal basis for redistributing that metadata.</li>
+        <li><strong>Review history has a hard eviction window:</strong> the only free review-text path exposes at most 500 most-recent reviews per app per storefront with no backfill API; missed polling cycles are permanent data loss, not staleness.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Regulatory commission carve-outs (EU DMA, Japan MSCA) signal the catalog's monetization terms are jurisdiction-dependent going forward.</strong> <em>Basis:</em> three different commission structures now apply to the same catalog depending on storefront (Verified Metrics), so a "price" or "commission" field cannot be treated as a single global constant per app.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.apple.com/legal/app-store/transparency/2025/">2025 App Store Transparency Report</a> — total apps, submissions reviewed/rejected, accounts terminated.</li>
+        <li><a href="https://www.apple.com/newsroom/2026/05/the-app-store-stopped-over-2-point-2-billion-usd-in-fraudulent-transactions-in-2025/">Apple Newsroom, fraud prevention 2025</a> — $2.2B figure.</li>
+        <li><a href="https://www.apple.com/newsroom/2026/01/2025-marked-a-record-breaking-year-for-apple-services/">Apple Newsroom, Services 2025</a> — cumulative $550B developer earnings.</li>
+        <li><a href="https://www.apple.com/newsroom/2026/06/app-store-ecosystem-reaches-1-point-4-trillion-usd-as-developers-thrive-globally/">Apple Newsroom, ecosystem 2025</a> — $1.4T billings/sales figure.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm">Apple FY2025 Form 10-K</a> (SEC EDGAR) — Services net sales.</li>
+        <li><a href="https://developer.apple.com/support/dma-and-apps-in-the-eu/">Apple Developer: DMA and apps in the EU</a> — EU commission tiers and Core Technology Commission.</li>
+        <li><a href="https://www.apple.com/newsroom/2025/12/apple-announces-changes-to-ios-in-japan/">Apple Newsroom, Japan changes</a> — MSCA commission tiers.</li>
+        <li><a href="https://performance-partners.apple.com/search-api">Apple Performance Partners: Search API</a> — rate limit, endpoints.</li>
+        <li><a href="https://performance-partners.apple.com/epf">Apple Performance Partners: Enterprise Partner Feed</a> — bulk feed scope and license.</li>
+        <li>Local probes on 2026-08-06: <code>dig</code>, <code>curl</code> against apps.apple.com and itunes.apple.com, robots.txt, six sitemap index files plus sampled children, and the public Lookup/Search/customer-reviews/marketing-tools JSON endpoints (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The HTML site negotiates storefront content by requester IP rather than URL path. <em>Basis:</em> explicit <code>/us/</code> requests 302-redirected to <code>/cn</code>, and the itunes.apple.com 301 hop carried <code>user-country: CN</code> and <code>vary: X-Apple-Store-Front, Cookie</code> (Probe Log).</li>
+        <li>Any generic crawler is plausibly subject to the same storefront gate this probe hit. <em>Basis:</em> the 302→<code>/cn</code> ignored the URL's own country segment and named its negotiation axis via the <code>vary</code> header rather than the path (Probe Log).</li>
+        <li>Regulatory commission carve-outs mean commission/price cannot be modeled as a single global constant per app. <em>Basis:</em> three concurrently active commission structures (standard, EU DMA, Japan MSCA) apply to the same catalog by storefront (Verified Metrics).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>What share of the 2,172,472-app catalog is reachable via the app-type sitemap — closeable by crawling all 1,352 child sitemaps (not just the one sampled) and deduplicating by <code>trackId</code>.</li>
+        <li>Whether app detail pages carry <code>SoftwareApplication</code>/<code>Product</code> JSON-LD for an allowed storefront — this probe's vantage geo-redirected before any app page rendered; needs a US/EU-egress fetch to check.</li>
+        <li>Whether Googlebot/Bingbot are exempted from the storefront geo-gate observed in the Probe Log — closeable by comparing a search engine's cached copy of a <code>/us/app/</code> URL against this probe's result.</li>
+        <li>Current number of registered Apple Developer Program members — last official figure is 36M+ (Apple Newsroom, May 2023); no newer disclosure found.</li>
+        <li>Whether Lookup/Search API JSON responses carry any redistribution license beyond apps.apple.com's general Terms of Use — no dedicated license page was found alongside the rate-limit note.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
