@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cambridge.org Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-10</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>cambridge.org</h1>
+      <p class="lede">Cambridge.org is two sites in one domain: a wide-open ~18M-page dictionary that draws the traffic, and a rights-reserved 2.6M-DOI scholarly platform that does not.</p>
+      <div class="tag-row">
+        <span class="tag">Academic Publishing</span>
+        <span class="tag">Dictionary</span>
+        <span class="tag">DOI Corpus</span>
+        <span class="tag">TDM Reservation</span>
+        <span class="tag">Non-profit</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Cambridge University Press &amp; Assessment is a non-teaching department of the University of Cambridge, funded by publishing and exam revenue rather than by shareholders. Two very different properties share the <code>cambridge.org</code> domain. <strong>Cambridge Core</strong> (<code>www.cambridge.org/core</code>) hosts the scholarly corpus — 2.56M registered DOIs — and is sold to institutions by subscription and article-processing charge. <strong>Cambridge Dictionary</strong> (<code>dictionary.cambridge.org</code>) is a free ad-supported learner dictionary that the organisation calls the world's number-one dictionary website by page views. For an index builder these are opposite problems. The dictionary publishes a 1,163-file sitemap, allows every crawler on entry pages, and reserves nothing. Cambridge Core publishes no working content sitemap, sets a machine-readable <code>tdm-reservation</code>, and routes commercial mining to a business-development mailbox. <span class="evidence inferred">inferred</span> Cambridge treats AI access as a licensing negotiation rather than a robots.txt line. <em>Basis:</em> the ODRL policy at <code>/core/tdm/tdm-policy.json</code> grants <code>tdm:mine</code> unconditionally only when purpose equals <code>stm:eu-dsm-article3</code> and attaches an <code>obtainConsent</code> duty otherwise, while robots.txt names no AI crawler at all (both in the Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>cambridge.org</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.cambridge.org/">https://www.cambridge.org/</a></dd></div>
+        <div><dt>Category</dt><dd>Academic publisher platform + learner dictionary + assessment</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>www.cambridge.org</code> (Core, bookshop, Higher Education, <code>/engage</code> preprints), <code>dictionary.cambridge.org</code>, <code>dictionary-api.cambridge.org</code>, <code>core-cms.prod.aop.cambridge.org</code></dd></div>
+        <div><dt>Owner</dt><dd>Cambridge University Press &amp; Assessment, a department of the University of Cambridge (Press founded 1534; merged with Cambridge Assessment in 2021)</dd></div>
+        <div><dt>Business model</dt><dd>Institutional subscriptions, APCs and book sales; school exams and English qualifications; dictionary advertising</dd></div>
+        <div><dt>Scale anchor</dt><dd>£1,038.0M turnover for the year ended 31 July 2025 (<a href="https://www.cambridge.org/sites/default/files/media/documents/Cambridge_Annual_Report_2025_0.pdf">Annual Report 2025</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing counts live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Turnover, FY2024–25</dt>
+          <dd>£1,038.0M; result for the financial year £205.2M — year ended Jul 31 2025. <a href="https://www.cambridge.org/sites/default/files/media/documents/Cambridge_Annual_Report_2025_0.pdf">Annual Report 2025, abstract of consolidated income statement</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Scholarly downloads</dt>
+          <dd>161M downloads of research, including book chapters and papers — FY2024–25. <a href="https://www.cambridge.org/sites/default/files/media/documents/Cambridge_Annual_Report_2025_0.pdf">Annual Report 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Registered DOIs</dt>
+          <dd>2.56M total (152.6K current, 2.41M backfile) under 10 prefixes led by <code>10.1017</code>. Split: 1.73M journal articles, 697K book chapters, 109K "other", 37.8K monographs, 11.8K peer reviews, 5.5K preprints — as of Aug 10 2026. <a href="https://api.crossref.org/members/56">Crossref member 56</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Metadata coverage, journal articles</dt>
+          <dd>Licences on 96.9%, abstracts on 48.7%, references on 44.5%, ORCIDs on 7.7%, funder IDs on 1.0% — as of Aug 10 2026. <a href="https://api.crossref.org/members/56">Crossref coverage-type</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Deposited licence concentration</dt>
+          <dd>2.37M works carry <code>www.cambridge.org/core/terms</code> as their deposited licence; 82.5K carry one of four CC BY 4.0 URL variants — as of Aug 10 2026. <a href="https://api.crossref.org/members/56/works?rows=0&amp;facet=license:20">Crossref licence facet</a> <span class="evidence verified">verified</span>, CC total summed by Site Wise across URL variants</dd>
+        </div>
+        <div>
+          <dt>Open-access share, 2025 articles</dt>
+          <dd>78.3% — 24,030 of 30,703 journal articles published 2025 are OA by any route, as of Aug 10 2026. Site Wise calculated from <a href="https://api.openalex.org/works?filter=primary_location.source.publisher_lineage:P4310311721,publication_year:2025,type:article&amp;group_by=open_access.is_oa">OpenAlex</a> <span class="evidence verified">verified</span>, calculated. Cambridge's own claim is "two-thirds free to read"; the gap is the green and bronze routes OpenAlex counts and Cambridge does not.</dd>
+        </div>
+        <div>
+          <dt>Dictionary sitemap size</dt>
+          <dd>1,163 child sitemaps across 332 corpus groups; ~18M URLs — as of Aug 10 2026. Site Wise calculated: mean of a 10-file sample (15.5K URLs/file) × 1,163 files, from the sitemap census in the Probe Log <span class="evidence verified">verified</span>, calculated, order-of-magnitude</dd>
+        </div>
+        <div>
+          <dt>Dictionary growth</dt>
+          <dd>18,000+ new words and phrases added; described as the world's number-one dictionary website by page views — FY2024–25. <a href="https://www.cambridge.org/sites/default/files/media/documents/Cambridge_Annual_Report_2025_0.pdf">Annual Report 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Piracy takedowns</dt>
+          <dd>53M+ links to pirated Cambridge content removed — FY2024–25. <a href="https://www.cambridge.org/sites/default/files/media/documents/Cambridge_Annual_Report_2025_0.pdf">Annual Report 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-10. Every direct fetch of a <code>cambridge.org</code> host failed; where a document was needed anyway it was retrieved from the Internet Archive and is labelled with its snapshot date.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-08-10</td><td data-label="Probe"><code>dig +short</code> both hosts; <code>curl -sI https://www.cambridge.org/core/</code></td><td data-label="Observation">104.17.111.190/104.17.110.190 and 104.18.27.47/104.18.26.47 — all Cloudflare anycast, no origin visible. HEAD returns HTTP/2 <strong>429</strong> with <code>retry-after: 5</code>, <code>server: cloudflare</code> and an <code>x-varnish</code> id: a Varnish tier sits behind the CDN.</td></tr>
+            <tr><td data-label="Date">2026-08-10</td><td data-label="Probe"><code>curl https://www.cambridge.org/robots.txt</code> (three UAs, full browser headers)</td><td data-label="Observation"><strong>403 on every attempt</strong>, body is a Cloudflare non-interactive challenge. Same on <code>dictionary.cambridge.org</code>, which returns <code>cf-mitigated: challenge</code> plus <code>critical-ch</code> UA-hint demands. robots.txt itself is unreadable without JavaScript.</td></tr>
+            <tr><td data-label="Date">2026-08-10</td><td data-label="Probe">Archived <code>www.cambridge.org/robots.txt</code> (snapshot 2026-02-04, byte-identical to 2026-02-03)</td><td data-label="Observation">5 user-agent groups only: <code>Yandex</code>, <code>ChatGPT-User</code> and <code>ChatGPT</code> at <code>Disallow: /</code>; <code>*</code>; and Twitterbot. <strong>No GPTBot, ClaudeBot, CCBot, Google-Extended or PerplexityBot rule.</strong> <code>Disallow: /core/services/aop-*</code> with a targeted <code>Allow: /core/services/aop-cambridge-core/content/view/</code>. One Sitemap directive, pointing at <code>/highereducation/sitemap_index.xml</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-10</td><td data-label="Probe">Sitemap census, <code>/highereducation/sitemap_index.xml</code> (fetched live, HTTP 200)</td><td data-label="Observation">Two children. <code>sitemap-local.xml</code> holds <strong>19</strong> marketing URLs. <code>sitemap/sitemap-1.xml</code> returns <strong>404 <code>Cannot GET</code></strong> from the Express app. The domain's only advertised sitemap yields 19 usable URLs and zero Cambridge Core content.</td></tr>
+            <tr><td data-label="Date">2026-08-10</td><td data-label="Probe"><code>curl</code> of <code>/core/services/aop-cambridge-core/content/view/S1365100525100758</code> and <code>/core/tdm/tdm-policy.json</code></td><td data-label="Observation">Both return a Varnish <code>429 Too many automated requests from this network</code> on a first, single request. The one path robots.txt explicitly allows is rate-limited at the origin.</td></tr>
+            <tr><td data-label="Date">2026-08-10</td><td data-label="Probe"><code>/.well-known/tdmrep.json</code> + <code>/core/tdm/tdm-policy.json</code> (archived copies)</td><td data-label="Observation"><code>{"location":"/","tdm-reservation":1,...}</code> for the whole of <code>www.cambridge.org</code>. The ODRL policy grants <code>tdm:mine</code> with no duty when <code>purpose = stm:eu-dsm-article3</code>, and with an <code>obtainConsent</code> duty for every other purpose; assigner contact is <code>business.development@cambridge.org</code>. <code>dictionary.cambridge.org</code> has <strong>no</strong> tdmrep file (404).</td></tr>
+            <tr><td data-label="Date">2026-08-10</td><td data-label="Probe">Archived <code>dictionary.cambridge.org/robots.txt</code> (20.2KB) and sitemap census</td><td data-label="Observation">627 Disallow lines, but they only close <code>/search/</code>, <code>/browse/</code>, <code>/autocomplete/</code>, <code>/spellcheck/</code>, <code>/info/</code> and <code>/auth/</code> across <strong>26 locale prefixes</strong>. Entry pages are allowed to <code>*</code>; no AI crawler named. <code>sitemap.xml</code> indexes <strong>1,163</strong> child files in 332 groups — 78 thesaurus, 55 English, 55 pronunciation, 33 example, 11 collocation, 11 British grammar, plus 30+ bilingual pairs. Sampled children hold 19 to 25,001 URLs (cap 25,000).</td></tr>
+            <tr><td data-label="Date">2026-08-10</td><td data-label="Probe">Crossref REST sample, <code>10.1017/s1365100525100758</code></td><td data-label="Observation">Returns title, container-title, ISSNs, JATS abstract, CC BY 4.0 licence with an 11-day embargo, and a <code>link</code> whose <code>intended-application</code> is <strong><code>similarity-checking</code></strong> — not <code>text-mining</code> — pointing at the allowed <code>content/view</code> path.</td></tr>
+            <tr><td data-label="Date">2026-08-10</td><td data-label="Probe">KBART title lists under <code>/core/services/aop-cambridge-core/kbart/metafile/</code> (archived 2026-08-07)</td><td data-label="Observation"><strong>695</strong> collection files, tab-separated, 29 columns including <code>title_url</code> (doi.org link), <code>title_id</code> (32-hex Cambridge ID), <code>coverage_depth</code> and <code>access_type</code> (P/F). Sampled file: 410 rows. Live fetch returns Varnish 429.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Two corpora with opposite postures. "Core" = Cambridge Core scholarly platform; "Dict" = Cambridge Dictionary.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text — Core metadata &amp; abstracts</td>
+              <td data-label="Objects &amp; est. count">2.56M DOIs; 892K carry a JATS abstract (48.7% of journal articles).</td>
+              <td data-label="Best legitimate path">Crossref REST by member 56. Site crawl is closed (Probe Log).</td>
+              <td data-label="Auth &amp; quota">None. Polite pool with a mailto; no commercial gate.</td>
+              <td data-label="License / display">Bibliographic metadata released <strong>CC0</strong> by Cambridge's own terms — the safest full-sentence text you can hold.</td>
+              <td data-label="Freshness">New DOIs deposited continuously; 94% of the corpus is immutable backfile.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text — Core full text</td>
+              <td data-label="Objects &amp; est. count">2.34M works expose a full-text link; 82.5K are CC BY 4.0.</td>
+              <td data-label="Best legitimate path">OA copies via OpenAlex/Unpaywall locations. The Crossref link targets <code>content/view</code>, which 429s.</td>
+              <td data-label="Auth &amp; quota">Subscription for the closed 79% of the all-time corpus.</td>
+              <td data-label="License / display">TDM allowed for non-commercial research only, with link-back and delete-after-project; <code>tdm-reservation: 1</code> otherwise, consent required.</td>
+              <td data-label="Freshness">Version of record; corrections flow through Crossref update policies (14.4% of articles).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text — Dictionary</td>
+              <td data-label="Objects &amp; est. count">~18M entry, thesaurus, example, collocation and grammar URLs across 26 locales and 30+ bilingual pairs.</td>
+              <td data-label="Best legitimate path">Sitemap-led crawl — robots.txt allows entry pages to <code>*</code>.</td>
+              <td data-label="Auth &amp; quota">Robots permits it; Cloudflare does not (403 to unverified agents). Licensed route is the Cambridge Dictionary API.</td>
+              <td data-label="License / display">No CC licence and no tdmrep file. Ordinary copyright applies.</td>
+              <td data-label="Freshness">~18K new words and phrases per year against an ~18M-URL base — near-static.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">UK and US pronunciation clips per headword; 55 dedicated <code>pronunciation/english</code> child sitemaps.</td>
+              <td data-label="Best legitimate path">Discoverable from the pronunciation sitemaps; media files themselves are behind the same wall.</td>
+              <td data-label="Auth &amp; quota">Same Cloudflare gate.</td>
+              <td data-label="License / display">Open: no published reuse terms for pronunciation audio.</td>
+              <td data-label="Freshness">Added with new headwords; otherwise static.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Figures, tables and plates inside Core articles and books; dictionary illustrations.</td>
+              <td data-label="Best legitimate path">Only inside OA full text, under that item's CC licence.</td>
+              <td data-label="Auth &amp; quota">Subscription for non-OA figures.</td>
+              <td data-label="License / display">Third-party rights are common in figures even when the article is CC BY.</td>
+              <td data-label="Freshness">Static once published.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Reviews</td>
+              <td data-label="Objects &amp; est. count">11.8K registered peer-review records (Crossref type <code>peer-review</code>), 56.5% carrying reviewer ORCIDs. No user comments anywhere on the domain.</td>
+              <td data-label="Best legitimate path">Crossref REST, same member.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">CC0 metadata; review bodies are not deposited.</td>
+              <td data-label="Freshness">Appended alongside the article.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Journals (686 sources), 695 named collections, ISSNs, ISBNs, funders, ORCIDs, RORs (0.97% of articles).</td>
+              <td data-label="Best legitimate path">KBART title lists for collections and holdings; Crossref for the rest.</td>
+              <td data-label="Auth &amp; quota">KBART files are public and unauthenticated, but robots-disallowed under <code>/core/services/aop-*</code> and 429-gated live.</td>
+              <td data-label="License / display">CC0 for the Crossref side; KBART is an industry holdings standard intended for redistribution to knowledge bases.</td>
+              <td data-label="Freshness">Collections revised at renewal; quarterly is sufficient.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where cambridge.org differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier, dedup &amp; joins</h4>
+          <p>Core has three usable keys: the DOI, the 32-hex <code>title_id</code> in KBART, and the <code>S</code>-prefixed ID in <code>content/view/S1365100525100758</code> — the DOI suffix uppercased, so DOI ↔ ISSN/ISBN ↔ <code>title_id</code> ↔ collection closes for free. The dictionary has <strong>no ID at all</strong>: the slug is the only key, the same headword recurs under 26 locales and 30+ bilingual pairs, and headword ↔ audio ↔ examples ↔ thesaurus join only by parallel slug — a string match that breaks on locale. Locale collapse is the largest dedup job on this domain.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Core: the work (article, chapter or Element) keyed by DOI, with the abstract as body. Dictionary: the <strong>sense</strong>, not the headword — a page for "run" carries dozens of independently answerable senses, so page-level retrieval returns the wrong granularity for a definition query.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>For Core the deposited Crossref abstract outranks anything scraped: publisher-supplied, CC0-licensed, JATS-tagged. But it exists for only 48.7% of journal articles and 0.2% of book chapters, so chapters are title-and-metadata only unless the book is OA.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Inverted from a typical large site: the corpus that generates the traffic barely changes. 18K new dictionary items a year against ~18M URLs is a ~0.1% annual delta, and 94% of Core's DOIs are backfile. Recrawl budget belongs almost entirely to the 152.6K current DOIs.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; duplication</h4>
+          <p>The adversarial surface here is piracy, not spam: 53M pirated links were removed in one year. A general web index will meet many more copies of a Cambridge PDF than authorised ones, so canonicalising to the DOI — rather than to whichever host ranks — is a correctness requirement.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><span class="evidence inferred">inferred</span> The dictionary is built to receive external search traffic straight onto entry pages rather than to run its own discovery. <em>Basis:</em> robots.txt disallows <code>/search/</code>, <code>/browse/</code>, <code>/autocomplete/</code> and <code>/spellcheck/</code> on all 26 locales while leaving entry pages open, and the sitemap enumerates entries but no navigational surface. The two query populations are disjoint: single-word and "meaning of X" lookups on the dictionary, citation-shaped title/author/DOI lookups on Core.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> Core = work keyed by DOI, abstract as body; Dictionary = sense, keyed by slug + locale + dictionary-pair.</li>
+        <li><strong>Primary keys &amp; joins:</strong> DOI as the spine; ISSN/ISBN → KBART <code>title_id</code> → collection; DOI suffix uppercased → the <code>content/view</code> article ID; dictionary slug with an explicit locale-collapse table.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Crossref REST — 2.56M records, CC0, no auth, no meaningful quota; covers metadata, abstracts, licences, references and peer reviews. 2) KBART title lists — 695 files giving holdings, collection membership and paid/free flags that exist nowhere else. 3) OpenAlex/Unpaywall — resolves the ~78% of 2025 articles that have a legitimate OA copy, usually not on cambridge.org. 4) Cambridge Dictionary API — the only lawful bulk route to the dictionary. 5) Direct crawl — permitted by robots for dictionary entries but blocked in practice by Cloudflare; treat as unavailable unless you hold verified-crawler status.</li>
+        <li><strong>Recrawl cadence:</strong> Crossref incremental by <code>from-index-date</code> daily; KBART quarterly; dictionary annually; backfile DOIs never.</li>
+        <li><strong>Derivatives:</strong> embeddings over abstracts and titles only; a locale-collapse map for dictionary near-duplicates; a DOI-canonicalisation table to fold pirated mirrors onto the authorised record. No ASR — the pronunciation audio is not licensed to hold.</li>
+        <li><strong>Demo to build:</strong> a TDMRep-aware ingest gate. Read <code>/.well-known/tdmrep.json</code> and the linked ODRL policy for each target host, classify the request as EU-DSM-Article-3-permitted or consent-required, and refuse to fetch the second class — turning a machine-readable reservation into an enforced pipeline rule instead of a footnote.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Absence of a robots.txt block is not permission.</strong> Cambridge names no AI crawler, yet reserves TDM rights machine-readably for the entire site. A pipeline whose only rights check is robots.txt will classify cambridge.org as open and be wrong on 2.56M works.</li>
+        <li><strong>The licensable corpus is a moving subset.</strong> Cambridge licenses AI rights only for authors who opt in to a contract addendum, so "what Cambridge may license" is smaller than "what Cambridge publishes" and changes as authors respond (<a href="https://www.thebookseller.com/news/cambridge-university-press--assessment-writes-to-20k-authors-for-ai-licensing-opt-in">The Bookseller</a>).</li>
+        <li><strong>Discovery via the site is already broken.</strong> The domain's only advertised sitemap resolves to 19 marketing URLs and a 404, and every live fetch in this report was refused. Any plan that assumes crawlable discovery of Cambridge Core has no foundation.</li>
+        <li><strong>The full-text link is mislabelled as a mining path.</strong> Crossref carries a link for 2.34M works, but its <code>intended-application</code> is <code>similarity-checking</code> and the target 429s on the first request. Counting those 2.34M as retrievable full text overstates coverage by roughly an order of magnitude.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The wall will keep hardening.</strong> <em>Basis:</em> both hosts already serve Cloudflare managed challenges on robots.txt itself, and the origin returns Varnish 429 on a single unthrottled request to the one robots-allowed service path.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.cambridge.org/sites/default/files/media/documents/Cambridge_Annual_Report_2025_0.pdf">Cambridge University Press &amp; Assessment Annual Report 2025</a> (44pp, year ended 31 July 2025) — turnover, result, downloads, dictionary growth, piracy takedowns, OA claim. Retrieved via the Internet Archive; direct fetch returned 403.</li>
+        <li><a href="https://api.crossref.org/members/56">Crossref member 56</a> and its <a href="https://api.crossref.org/members/56/works?rows=0&amp;facet=license:20">works facets</a> — DOI counts, type split, metadata coverage, licence concentration, sample record.</li>
+        <li><a href="https://api.openalex.org/publishers/P4310311721">OpenAlex publisher P4310311721</a> — 3.05M works, 686 sources, open-access status by year.</li>
+        <li><a href="https://www.cambridge.org/core/legal-notices/terms">Cambridge Core terms of use</a> — TDM permission scope, delete-after-project duty, CC0 metadata release, database-creation prohibition.</li>
+        <li><a href="https://www.thebookseller.com/news/cambridge-university-press--assessment-writes-to-20k-authors-for-ai-licensing-opt-in">The Bookseller</a> and the <a href="https://www.authorsalliance.org/2025/03/17/ai-licensing-an-interview-with-ben-denne-of-cambridge-university-press/">Authors Alliance interview with Ben Denne</a> — the author opt-in AI licensing programme and its 20% royalty.</li>
+        <li>Local probes on 2026-08-10 (full results in the Probe Log): <code>dig</code> and <code>curl</code> against both hosts, sitemap censuses, TDMRep and ODRL policy files, KBART title lists, Crossref and OpenAlex API calls. Archived copies came from the Internet Archive with snapshot dates stated inline.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Cambridge treats AI and commercial mining as a licensing negotiation, not a crawler block. <em>Basis:</em> <code>tdm-reservation: 1</code> site-wide plus an ODRL policy whose only unconditional grant is <code>purpose = stm:eu-dsm-article3</code>, with <code>obtainConsent</code> and a business-development contact for everything else — while robots.txt names no AI user agent.</li>
+        <li>The dictionary, not the press, carries the domain's traffic. <em>Basis:</em> the dictionary sitemap enumerates ~18M URLs across 26 locales and its entry pages are open to <code>*</code>, whereas Cambridge Core's 2.56M DOIs have zero working sitemap coverage; the Annual Report separately claims the number-one dictionary website by page views.</li>
+        <li>Cambridge Core has no functioning public discovery surface. <em>Basis:</em> robots.txt carries exactly one Sitemap directive, and its index resolves to a 19-URL marketing file plus <code>Cannot GET /highereducation/sitemap/sitemap-1.xml</code>.</li>
+        <li>The dictionary is designed to land external search traffic rather than to be browsed. <em>Basis:</em> <code>/search/</code>, <code>/browse/</code>, <code>/autocomplete/</code> and <code>/spellcheck/</code> are disallowed on all 26 locale prefixes while entry pages stay allowed, and the sitemap enumerates entries only.</li>
+        <li>Crossref's full-text links are not a mining route. <em>Basis:</em> the sampled record's <code>intended-application</code> is <code>similarity-checking</code>, and its target <code>content/view</code> path returned Varnish 429 on a single request.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Exact Cambridge Dictionary headword and sense counts — closeable by parsing all 1,163 child sitemaps and grouping by dictionary and locale, which would replace this report's ~18M sample-based estimate.</li>
+        <li>Current Cambridge Dictionary API pricing and quota — <code>dictionary-api.cambridge.org</code> is Cloudflare-challenged and the only public figures (£50/month, 3,000 free calls) come from a 2012 launch release. A developer-account signup would close it.</li>
+        <li>Whether any generative-AI licensing deal has actually been signed, with whom, and for how much — the Annual Report describes the opt-in programme but names no counterparty or value.</li>
+        <li>What share of the 161M scholarly downloads arrives from external search versus institutional links — would need Cambridge's own referrer breakdown.</li>
+        <li>Video and supplementary media on Cambridge Core and Elements: object count and reuse terms — nothing is enumerated publicly.</li>
+        <li>Whether Cloudflare's verified-bot exemption on these hosts extends beyond the major search engines to research or AI crawlers — closeable only by applying.</li>
+        <li>Reuse terms for pronunciation audio — no licence statement appears on the dictionary host, which also publishes no tdmrep file.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
