@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>yelp.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-09</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>yelp.com</h1>
+      <p class="lede">Yelp blocks every crawler by default, then sells the same 300M-review corpus back through a metered API — and licenses it to OpenAI.</p>
+      <div class="tag-row">
+        <span class="tag">Local Reviews</span>
+        <span class="tag">User-Generated Text</span>
+        <span class="tag">Allowlist robots.txt</span>
+        <span class="tag">Bot Wall</span>
+        <span class="tag">Data Licensing</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Yelp is a US local-business review platform that monetizes through performance advertising against high-intent local searches. Its corpus is one of the largest human-written review archives on the web, and essentially all of it is unavailable to any crawler Yelp has not individually named.</p>
+      <p>The closure is product design, not defensive posture. The methodology assumes big platforms block AI training crawlers while tolerating general crawl; Yelp inverts both halves. <code>User-Agent: *</code> is <code>Disallow: /</code>, there is no sitemap anywhere on the domain, and a DataDome edge wall enforces the policy independently of the robots file. The same corpus is then sold through the Yelp Places API by the thousand calls and licensed wholesale to OpenAI — Yelp reviews began powering ChatGPT's local experience during Q2 2026. Blocking the crawl is what makes the license worth buying.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd>yelp.com</dd></div>
+        <div><dt>Canonical URL</dt><dd>https://www.yelp.com/</dd></div>
+        <div><dt>Category</dt><dd>Local business directory, reviews, and local-services marketplace</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>www</code>, <code>m</code> (301s to <code>www</code>, Probe P3), <code>blog</code>, <code>business</code>, <code>docs.developer</code>; plus <code>yelp.co.uk</code>, <code>fr.yelp.com</code> and other international hosts</dd></div>
+        <div><dt>Owner</dt><dd>Yelp Inc. (NYSE: YELP), San Francisco; operations in US, UK, Canada, Ireland, Germany</dd></div>
+        <div><dt>Founded / launched</dt><dd>2004</dd></div>
+        <div><dt>Business model</dt><dd>Pay-per-click local advertising (~91% of revenue), plus subscriptions, data licensing, and food-ordering partnerships</dd></div>
+        <div><dt>Scale anchor</dt><dd>330.2M reviews submitted cumulatively as of 2025-12-31 — see Verified Metrics.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Each card: value, as-of date, source, evidence tag. Corpus decomposition is the load-bearing set here — the headline review count is not the retrievable count.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Review corpus decomposition</dt>
+          <dd>330.2M submitted cumulatively (up 7% from 308.1M), of which 300.3M sit on business pages and 29.9M were removed — 9.1% of all submissions. Within the 300.3M, 48.1M are flagged <em>not recommended</em>: reachable only behind a secondary link and excluded from star ratings, leaving <strong>252.2M rating-bearing reviews</strong>. As of 2025-12-31; the 9.1% and 252.2M calculated by Site Wise. <a href="https://www.sec.gov/Archives/edgar/data/1345016/000134501626000019/yelp-20251231.htm">Yelp FY2025 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>New reviews per day</dt>
+          <dd>~60.6K (22.1M added during 2025 ÷ 365) — calendar 2025, calculated by Site Wise from the 330.2M / 308.1M endpoints. <a href="https://www.sec.gov/Archives/edgar/data/1345016/000134501626000019/yelp-20251231.htm">Yelp FY2025 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Claimed locations and traffic</dt>
+          <dd>8.39M active claimed business locations, up 8%. Average monthly devices: mobile web 59.7M, desktop 37.4M, app 28.0M — twelve-month FY2025 averages, all down 2–7% year over year, and the 10-K states they must not be summed. As of 2025-12-31. <a href="https://www.sec.gov/Archives/edgar/data/1345016/000134501626000019/yelp-20251231.htm">Yelp FY2025 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap-declared URLs, whole domain</dt>
+          <dd>2,857, none of them business pages — as of 2026-08-09, first-hand census of the only two hosts that publish a sitemap at all (Probe Log P7). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Open Dataset size and coverage</dt>
+          <dd>6,990,280 reviews, 150,346 businesses, 200,100 photos across 11 metro areas; 4.35GB compressed / 8.65GB expanded JSON plus a 7.45GB photo archive. That is 2.1% of reviews ever submitted and 1.8% of claimed locations, calculated by Site Wise — as of 2026-08-09. <a href="https://business.yelp.com/data/resources/open-dataset/">Yelp Open Dataset</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Places API price and caps</dt>
+          <dd>Base $229/mo, Enhanced $299/mo, Premium $643/mo; overage $5.91–$14.13 per 1K calls; 5,000-call trial; above 150K calls/month requires sales contact. Review excerpts per business: 0 / 3 / 7 by tier; photos 0 / 3 / 12; business search returns at most 240 results and omits businesses with no reviews — as of 2026-08-09. <a href="https://business.yelp.com/data/products/fusion/">Pricing</a>, <a href="https://docs.developer.yelp.com/docs/plans.md">plan details</a>, <a href="https://docs.developer.yelp.com/reference/v3_business_reviews.md">Reviews endpoint</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>GraphQL point costs</dt>
+          <dd>A <code>business</code> node costs 10 points and a <code>review</code> node 5, against an undisclosed per-key daily allotment — as of 2026-08-09. <a href="https://docs.developer.yelp.com/docs/graphql-rate-limiting.md">GraphQL rate limiting</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt crawler tiers</dt>
+          <dd>336 lines, 11.8KB, 59 <code>Allow</code> and 204 <code>Disallow</code> rules, zero <code>Sitemap</code> lines, and four distinct AI-crawler treatments — as of 2026-08-09 (Probe Log P1, P2). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Q2 2026 revenue and advertisers</dt>
+          <dd>Net revenue $375.5M, up 1%: advertising $342.5M (down 3%) against other revenue $33.0M (up 98%), driven partly by the Places API program. Paying advertising locations averaged 510K, down 1% — 6.1% of claimed locations, calculated by Site Wise. Quarter ended 2026-06-30. <a href="https://www.sec.gov/Archives/edgar/data/1345016/000134501626000066/yelp-20260630.htm">Yelp Q2 2026 10-Q</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">All observations made 2026-08-09 from a US residential egress. Because <code>User-Agent: *</code> is <code>Disallow: /</code> (P1), probing was deliberately held to single manual requests per path — no enumeration, no crawl of <code>/biz/</code>, and no sitemap walk on <code>www</code> (there is none to walk).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ID / date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="ID / date">P1 · 2026-08-09</td>
+              <td data-label="Probe"><code>curl -sL https://www.yelp.com/robots.txt</code></td>
+              <td data-label="Observation">200, 11.8KB, 336 lines, closing with <code>User-Agent: *</code> / <code>Disallow: /</code>. <strong>Zero <code>Sitemap</code> directives.</strong> A header comment declares automated access "prohibited, except as expressly permitted by Yelp" and points crawlers at a contact form. Access is a named allowlist: Googlebot's five UAs, bingbot, Yahoo! Slurp, AdsBot-Google, BingPreview, Mediapartners-Google, STC-bot, LinkedInBot, Twitterbot, facebookexternalhit. Asimov's Three Laws appear as comments.</td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P2 · 2026-08-09</td>
+              <td data-label="Probe">AI-crawler tiering inside robots.txt (P1 file)</td>
+              <td data-label="Observation"><strong>Four tiers, not one policy.</strong> (a) Full block, <code>Disallow: /</code>: GPTBot, ClaudeBot, CCBot, Google-Extended, anthropic-ai, Claude-Web, Meta-ExternalAgent, Meta-ExternalFetcher. (b) Editorial only — <code>Allow: /article$</code> and <code>/article/</code>, then <code>Disallow: /</code>: ChatGPT-User, Claude-User, PerplexityUser, Perplexity-User, Claude-SearchBot, PerplexityBot. (c) OAI-SearchBot alone also gets <code>/spk/</code>. (d) Everything unnamed falls to <code>*</code>. No AI agent may read <code>/biz/</code>.</td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P3 · 2026-08-09</td>
+              <td data-label="Probe">Bot-wall scope: single GET to nine paths</td>
+              <td data-label="Observation">Selective, not site-wide. <strong>403 from <code>server: DataDome</code></strong> with <code>x-datadome: protected</code> on <code>/</code>, <code>/search?…</code>, <code>/biz/gary-danko-san-francisco</code> and <code>/biz_photos/…</code>. Full HTML 200 from <code>server: envoy</code> on <code>/nyc</code> (364.7KB), <code>/article</code> (91.6KB) and <code>/user_details?userid=x</code> (158.0KB). <code>/menu/{slug}</code> 301s to <code>/biz/{slug}</code>; <code>m.yelp.com/</code> 301s to <code>www</code>. The wall sits precisely on the review corpus and the search interface.</td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P4 · 2026-08-09</td>
+              <td data-label="Probe">Is the wall UA-based? Same <code>/biz/</code> path, three user-agents</td>
+              <td data-label="Observation">No. A Googlebot UA string and a current Chrome UA string both got the identical 403 / 776-byte DataDome stub, as did the research UA. The robots allowlist is enforced by verified crawler identity, so declaring a UA buys nothing — the paid API is not merely the sanctioned route but the only one that functions.</td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P5 · 2026-08-09</td>
+              <td data-label="Probe">Structured-data sample, 5 reachable pages</td>
+              <td data-label="Observation">Coverage inverts value. <code>/nyc</code>, <code>blog</code> and <code>business</code> each carry one JSON-LD <code>@graph</code> (Organization, WebSite, WebPage, ItemList, CollectionPage, MobileApplication), <code>rel=canonical</code> and 8–10 Open Graph tags. <strong><code>/article</code> and <code>/user_details</code> carry zero of all three.</strong> No <code>hreflang</code> anywhere. The surface Yelp opens to AI agents is the one with no machine-readable metadata.</td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P6 · 2026-08-09</td>
+              <td data-label="Probe">robots.txt across nine hosts</td>
+              <td data-label="Observation"><code>m.yelp.com</code> serves the <code>www</code> file byte-for-byte. <code>blog</code> puts the six user-triggered AI agents in an <code>Allow: *</code> group alongside ordinary search bots, then <code>Disallow: /</code> for <code>*</code>. <code>docs.developer</code> is fully open and links an <code>llms.txt</code>. <strong><code>yelp.co.uk</code> and <code>fr.yelp.com</code> group <code>User-Agent: *</code> with Bingbot and the AdsBot family under one <code>Disallow: /</code></strong>, and declare no Googlebot group — so the international hosts are closed to every crawler including Google. <code>business.yelp.com</code> ends with a 12-UA group, GPTBot among them, carrying no rule at all.</td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P7 · 2026-08-09</td>
+              <td data-label="Probe">Sitemap census: every sitemap Yelp publishes</td>
+              <td data-label="Observation">2,857 URLs total, all editorial or marketing. blog.yelp.com 1,603 (posts 1,555, tags 37, sections 5, categories 4, pages 2); business.yelp.com 1,254 (posts 979, pages 124, authors 60, tags 43, events 42, categories 6). On <code>www</code>, <code>/sitemap.xml</code>, <code>/sitemap_index.xml</code> and <code>/sitemap.xml.gz</code> all 404. <strong>No sitemap on the domain lists one business or review.</strong></td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P8 · 2026-08-09</td>
+              <td data-label="Probe">Unauthenticated calls to three api.yelp.com endpoints</td>
+              <td data-label="Observation">No anonymous tier. <code>/v3/businesses/search</code> → 400 <code>VALIDATION_ERROR</code>, "Authorization is a required parameter"; <code>/ai/chat/v2</code> → the same; <code>/v3/graphql</code> → 404. Also confirmed by fetching the docs: search caps at 240 businesses per query and silently omits any business with no reviews, so the API cannot enumerate the listing graph even in principle.</td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P9 · 2026-08-09</td>
+              <td data-label="Probe">Well-known paths, manifests, and <code>/spk/</code></td>
+              <td data-label="Observation"><code>/llms.txt</code>, <code>/.well-known/llms.txt</code>, <code>/ads.txt</code> and <code>/oembed</code> all 404 on <code>www</code> — <strong>no oEmbed endpoint and no LLM manifest for the review corpus</strong>; the only <code>llms.txt</code> on the domain (91.8KB, 228 links, at <code>docs.developer</code>) documents the paid API, not the content. <code>/.well-known/security.txt</code> is 200 and points at HackerOne. <code>/spk/</code>, granted to OAI-SearchBot alone, hard-404s, while <code>/spk/index</code> and <code>/spk/about</code> return <strong>200 carrying Yelp's "Oops! We can't find the page" body</strong> (181.6KB) — a dead or pre-launch grant, and inconsistent 404 handling.</td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P10 · 2026-08-09</td>
+              <td data-label="Probe">Hand-maintenance markers in robots.txt (P1 file)</td>
+              <td data-label="Observation">The Googlebot group whitelists <code>/biz_photos/</code> for exactly <strong>50 named US cities</strong>, then disallows <code>/log</code> and <code>/log_views</code> under each of the same 50, one line apiece. It also carries <code>Allow: /biz/taste-of-lurgan-lost-springs</code> — a single business in Lost Springs, Wyoming — three bare numeric disallows, and blocks on <code>*US_CENSUS_NAME*</code>, <code>*US_MALE_NAME*</code> and <code>*US_FEMALE_NAME*</code>.</td>
+            </tr>
+            <tr>
+              <td data-label="ID / date">P11 · 2026-08-09</td>
+              <td data-label="Probe"><code>dig +short</code> on four hosts</td>
+              <td data-label="Observation"><code>yelp.com</code> → 151.101.40.116; <code>www</code> and <code>m</code> → CNAME <code>yelpcdn.map.fastly.net</code> → 199.232.160.116; <code>s3-media0.fl.yelpcdn.com</code> → <code>n.sni.global.fastly.net</code>. Fastly throughout, DataDome in front, <code>envoy</code> behind. Nameservers are NS1 (<code>dns1-4.p06.nsone.net</code>) plus four <code>midtowndoornailns.com</code> vanity records.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Counts are Yelp-reported (Verified Metrics); paths are first-hand (Probe Log). Read the "Best legitimate path" column as the answer to "what does this cost," because for every row it is metered or unavailable.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Reviews (text)</td>
+              <td data-label="Objects &amp; est. count">300.3M on business pages, 252.2M rating-bearing</td>
+              <td data-label="Best legitimate path"><strong>No crawl path.</strong> Places API gives 3 excerpts per business (7 on Premium); Open Dataset holds 2.1%; bulk needs a negotiated license</td>
+              <td data-label="Auth &amp; quota">API key with no anonymous tier (Probe P8); $229–$643/mo plus overage, hard stop at 150K calls/month per Verified Metrics</td>
+              <td data-label="License / display">Excerpts for display in consumer-facing products. Open Dataset is educational only. AI training barred by robots.txt (Probe P2)</td>
+              <td data-label="Freshness">~60.6K new reviews/day. Recommended status is re-evaluated continuously, so visibility mutates without the text changing</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Business records</td>
+              <td data-label="Objects &amp; est. count">8.39M claimed locations; total including unclaimed <span class="evidence open">open</span></td>
+              <td data-label="Best legitimate path">Places API <code>/businesses/search</code>, <code>/matches</code>, <code>/search/phone</code>; GraphQL for field selection</td>
+              <td data-label="Auth &amp; quota">Search caps at 240 results and omits review-less businesses, so the graph cannot be enumerated (Probe P8). GraphQL charges 10 points per <code>business</code></td>
+              <td data-label="License / display">66 attributes at Premium, 23 at Enhanced, base only at Base — the schema is the paywall</td>
+              <td data-label="Freshness">Hours, closures and attributes churn continuously; no exposed change feed <span class="evidence open">open</span></td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Photos</td>
+              <td data-label="Objects &amp; est. count">200,100 in the Open Dataset; platform-wide count <span class="evidence open">open</span></td>
+              <td data-label="Best legitimate path">Places API, 3 per business (12 on Premium). <code>/biz_photos/</code> is 403-walled (Probe P3), robots-allowed only to Googlebot for 50 named cities (Probe P10)</td>
+              <td data-label="Auth &amp; quota">Same API meter as reviews</td>
+              <td data-label="License / display">User-contributed; hotlinking the Fastly CDN is not a display grant <span class="evidence inferred">inferred</span> <em>Basis:</em> the robots.txt header comment in Probe P1 restricts automated use of "any portion of the service or any content" absent express permission, and no photo-reuse grant appears in the API docs read in Probe P8.</td>
+              <td data-label="Freshness">Tracks review submission <span class="evidence open">open</span></td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Exists, unquantified <span class="evidence inferred">inferred</span> <em>Basis:</em> the Googlebot group in Probe P1 carries <code>Allow: /biz_photos/*?select_video=</code> and <code>Allow: /biz_photos/video_url</code>, meaningful only if business-page video objects exist.</td>
+              <td data-label="Best legitimate path">None found — no API endpoint, no sitemap, and the path is 403-walled</td>
+              <td data-label="Auth &amp; quota">n/a</td>
+              <td data-label="License / display">n/a</td>
+              <td data-label="Freshness">n/a</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Editorial articles</td>
+              <td data-label="Objects &amp; est. count">290 <code>/article/</code> slugs on the index page (Probe P5); blog 1,555 posts (Probe P7)</td>
+              <td data-label="Best legitimate path"><strong>The only AI-readable surface.</strong> Crawl <code>/article/</code> and <code>blog.yelp.com</code>, both permitted to ChatGPT-User, Claude-User, Claude-SearchBot and the Perplexity agents (Probes P2, P6)</td>
+              <td data-label="Auth &amp; quota">None</td>
+              <td data-label="License / display">Yelp editorial copy; the permission is to fetch, not redistribute</td>
+              <td data-label="Freshness">blog sitemap carries <code>lastmod</code>; <code>/article</code> has neither sitemap nor canonical (Probes P5, P7)</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Q&amp;A and owner replies</td>
+              <td data-label="Objects &amp; est. count">Volume <span class="evidence open">open</span></td>
+              <td data-label="Best legitimate path">Respond to Reviews API covers a business's own replies — not a third-party read path</td>
+              <td data-label="Auth &amp; quota">Partner approval; agents and resellers barred by policy</td>
+              <td data-label="License / display">No third-party read grant</td>
+              <td data-label="Freshness">Partner Reviews Webhooks give licensees push freshness no crawler can match</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Categories, events, service offerings, verified licenses, review highlights</td>
+              <td data-label="Best legitimate path">Dedicated Places API endpoints; <code>/nyc</code>-style city pages expose <code>ItemList</code> and <code>CollectionPage</code> JSON-LD (Probe P5)</td>
+              <td data-label="Auth &amp; quota">API key; Review Highlights is Premium-only</td>
+              <td data-label="License / display">Yelp-derived, not third-party verified</td>
+              <td data-label="Freshness">Events are time-bound; city-page lists are ranking artifacts, not stable sets</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where yelp.com departs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The curated SEO sliver is the entire crawlable surface</h4>
+          <p>The methodology expects an SEO sliver alongside a metered API. Yelp keeps both and deletes the middle: 2,857 sitemap URLs domain-wide, none a business page (Probe P7), and <code>Disallow: /</code> for everyone unnamed. General public crawl is not "being actively closed" here — it closed.</p>
+        </div>
+        <div>
+          <h4>Star ratings are computed over a filtered subcorpus</h4>
+          <p>48.1M of 300.3M on-page reviews are <em>not recommended</em>: reachable behind a link, excluded from the star rating, re-classified continuously, and exposed by no API field. An index treating page-visible text as the rating basis disagrees with Yelp by 16% of volume, and the disagreement moves.</p>
+        </div>
+        <div>
+          <h4>Freshness is a licensing tier, not a crawl cadence</h4>
+          <p>Partners get Reviews Webhooks; everyone else gets 3 excerpts per paid call. At the 150K-calls/month self-serve ceiling, one pass over 8.39M claimed locations takes <strong>~4.7 years</strong> (calculated by Site Wise) against a corpus growing 60.6K reviews/day. This is a buy-or-skip decision, not a scheduling problem.</p>
+        </div>
+        <div>
+          <h4>Identity-verified walls, and unreliable status codes</h4>
+          <p>DataDome 403s a Googlebot UA string exactly as it 403s curl (Probe P4), against the usual pattern where declaring a search-engine UA reaches the SEO sliver. Nor do status codes help: <code>/spk/index</code> returns 200 carrying a "can't find the page" body while <code>/spk/</code> hard-404s (Probe P9). Ingestion health must be measured against the API, and dead-page detection has to read the body.</p>
+        </div>
+        <div>
+          <h4>The AI-permitted surface is the least structured one</h4>
+          <p>The six user-triggered AI agents may read <code>/article/</code> and the blog. Those pages carry no JSON-LD, no canonical and no Open Graph (Probe P5), while the JSON-LD-rich city and marketing pages are closed to them. Whatever comes through the permitted door needs derived structure.</p>
+        </div>
+        <div>
+          <h4>International hosts are dark to everyone</h4>
+          <p><code>yelp.co.uk</code> and <code>fr.yelp.com</code> place <code>User-Agent: *</code> in the same blocked group as Bingbot with no Googlebot exception (Probe P6). Non-US Yelp content is not a smaller crawl target — it is zero, and non-US coverage must come from the API.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the business location, with rating, attributes and up to N review excerpts attached. The individual review is the natural unit and is not obtainable in bulk, so do not design for it.</li>
+        <li><strong>Primary keys &amp; joins:</strong> Yelp's opaque <code>business_id</code> plus the human-readable <code>alias</code> that forms the <code>/biz/{alias}</code> path — both API-returned, and the alias is what external links carry. Join outward through <code>/businesses/matches</code>, which exists to reconcile name-plus-address against Yelp's graph; that endpoint, not the URL, is the bridge to other local corpora.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) negotiated data license — the only route to the review corpus at scale, and demonstrably available given the OpenAI deal; 2) Places API Enhanced or Premium for a targeted subset, budgeting ~$55K in overage for one 3-excerpt pass over 8.39M claimed locations and accepting a ~4.7-year wall clock at the self-serve ceiling; 3) Open Dataset for offline modeling only — 2.1% coverage, educational license; 4) <code>/article/</code> and <code>blog.yelp.com</code> by ordinary crawl, ~3.1K documents, the only free ingest. There is no fifth path, and building one means defeating DataDome.</li>
+        <li><strong>Recrawl cadence:</strong> moot for reviews without a license. Weekly against blog <code>lastmod</code> for the free editorial corpus; Reviews Webhooks rather than polling on a licensed feed; quarterly attribute re-fetch on claimed locations, accepting staleness between.</li>
+        <li><strong>Derivatives to generate:</strong> the structure missing from the permitted surface — entity linking from <code>/article/</code> listicles to <code>business_id</code> via <code>/businesses/matches</code>, converting free editorial text into graph edges against paid records. Skip OCR and ASR: photos cap at 3–12 per business and video has no access path.</li>
+        <li><strong>Demo to build:</strong> a coverage-and-cost calculator that takes a target city, counts claimed locations, and prints the API spend, call count and calendar time for a 3-excerpt versus 7-excerpt pass — turning Probe P8's caps and the published price sheet into the buy-or-skip number governing every decision above.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The licensing counterparty is the competition.</strong> Yelp reviews now power ChatGPT's local experience and Request-a-Quote integration is next, per the Q2 2026 10-Q. A licensee building local search on Yelp data rents an input its supplier is simultaneously renting to the largest assistant on the market, at terms it cannot see.</li>
+        <li><strong>Nothing in the free tier is load-bearing, which cuts both ways.</strong> The 2,857 crawlable URLs and the <code>/article/</code> grant could vanish in a one-line robots edit and no API-based index would notice — but any index that <em>does</em> lean on the free surface leans on the one part Yelp has no revenue reason to keep open.</li>
+        <li><strong>Price and schema are the same lever.</strong> Attributes, photos and review excerpts are all tier-gated (66/23/base, 12/3/0, 7/3/0). Yelp can degrade a competitor's index quality by moving a field between tiers, without changing any access rule — a risk with no technical mitigation.</li>
+        <li><strong>The rating basis is not reproducible from retrievable data.</strong> 48.1M reviews are excluded from star ratings by a classifier that re-runs continuously and exposes no flag, so any independently computed rating drifts from Yelp's displayed one, unauditably.</li>
+        <li><strong>Demand is shrinking while the corpus grows.</strong> All three traffic metrics fell in FY2025, paying locations fell 1% in Q2 2026, and advertising fell 3% while other revenue grew 98%. The commercial logic of tightening access strengthens as the ad business weakens <span class="evidence inferred">inferred</span> <em>Basis:</em> the 10-Q attributes other-revenue growth specifically to "our Yelp Places API program" and the OpenAI partnership, in the same quarter advertising declined — the two lines move in opposite directions.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1345016/000134501626000019/yelp-20251231.htm">Yelp Inc. Form 10-K for FY2025, filed 2026-02-27</a> — review-corpus decomposition, recommendation-software description, traffic metrics, active claimed locations, FY2025 revenue.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1345016/000134501626000066/yelp-20260630.htm">Yelp Inc. Form 10-Q for Q2 2026, filed 2026-08-07</a> — Q2 revenue split, paying advertising locations, the OpenAI partnership and ChatGPT local experience, Places API as a named revenue driver.</li>
+        <li><a href="https://business.yelp.com/data/resources/open-dataset/">Yelp Open Dataset</a> and <a href="https://business.yelp.com/data/products/fusion/">Places API pricing</a> — dataset composition and archive sizes; plan prices, overage rates, call ceilings. Fetched 2026-08-09.</li>
+        <li><a href="https://docs.developer.yelp.com/llms.txt">docs.developer.yelp.com</a> — endpoint inventory, plan feature matrix, excerpt and photo caps, the 240-result search limit, GraphQL point costs, Respond to Reviews policy. Fetched 2026-08-09 via the site's own <code>llms.txt</code> and Markdown mirrors.</li>
+        <li>First-hand probes on 2026-08-09, all in the Probe Log: robots.txt on nine hosts, single GETs against the <code>www</code> paths named above, three UA variants on one path, a five-page structured-data sample, a full sitemap census, <code>dig</code>, well-known path checks, and unauthenticated calls to three <code>api.yelp.com</code> endpoints.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The crawl lockdown exists to make the data license saleable, not to reduce server load. <em>Basis:</em> the same corpus barred to every AI crawler in robots.txt (Probe P2) is sold per-thousand-calls through the Places API and licensed to OpenAI, and the 10-Q names the Places API program as a driver of 98% other-revenue growth in the quarter advertising revenue fell 3%.</li>
+        <li>Yelp's robots.txt is maintained by hand, rule by rule, rather than generated. <em>Basis:</em> it enumerates 50 US cities twice over for <code>/biz_photos/</code> Allow and <code>/log</code> Disallow, allowlists one single business page in Lost Springs, Wyoming, carries three bare numeric path blocks, and includes Asimov's Three Laws as comments (Probes P1, P10).</li>
+        <li>OpenAI holds a materially different crawl position than the other AI vendors. <em>Basis:</em> OAI-SearchBot is the only agent given its own robots group and the only one granted <code>/spk/</code> (Probe P2), while Claude and Perplexity agents share a group limited to <code>/article/</code> — and the 10-Q discloses a live OpenAI partnership with none named for the others.</li>
+        <li>The <code>business.yelp.com</code> group containing GPTBot is a configuration defect, not a permission. <em>Basis:</em> that group lists 12 user-agents and then terminates with no <code>Allow</code> or <code>Disallow</code> line before the <code>Sitemap</code> directive (Probe P6); a rule-less group is a no-op, and every other Yelp host blocks GPTBot explicitly.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Whether a commercial license permits indexing full review text, or only the same excerpt counts as the self-serve tiers. This is the single fact that decides whether Yelp is indexable at all, and nothing public states it. Closeable only by requesting terms from Yelp's data-licensing team.</li>
+        <li>Total business listings including unclaimed pages — 8.39M is the <em>claimed</em> count, and unclaimed listings carry reviews too. Closeable by sampling <code>/businesses/search</code> across a dense geographic grid with an API key and measuring the claimed fraction of returned records.</li>
+        <li>Platform-wide photo and video counts, and the video access path if one exists. Closeable by counting <code>photos</code> array lengths across an API sample and asking Yelp whether any endpoint returns business video, since <code>/biz_photos/*?select_video=</code> implies objects with no documented route.</li>
+        <li>The GraphQL daily points allotment per key, which sets the real bulk ceiling — the docs give point costs but show the allotment only inside an authenticated dashboard. Closeable by registering a key and reading the Manage App page.</li>
+        <li>Whether the AI API early-access allowance is 20 or 100 calls per day — the plan-details doc and the pricing page disagree as of 2026-08-09. Closeable by reading the <code>RateLimit-DailyLimit</code> response header on a live key.</li>
+        <li>What <code>/spk/</code> is, given that it is granted to OAI-SearchBot alone and resolves to soft 404s (Probe P9). Closeable by re-probing over time, or by watching for a ChatGPT local surface citing a <code>yelp.com/spk/</code> URL.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
