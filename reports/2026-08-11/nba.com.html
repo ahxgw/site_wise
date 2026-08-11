@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nba.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-08-11</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>nba.com</h1>
+      <p class="lede">One host, two regimes: a hostile league app that blocks AI crawlers, and 30 team subsites handing out 12TB of MP4s unauthenticated.</p>
+      <div class="tag-row">
+        <span class="tag">Sports League</span>
+        <span class="tag">Video Corpus</span>
+        <span class="tag">Sitemap-Led</span>
+        <span class="tag">AI-Blocked</span>
+        <span class="tag">Akamai</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>NBA.com is the official site of the National Basketball Association, launched November 3 1995 and operated by NBA Media Ventures, LLC with NBA TV, LLC and NBA Properties, Inc. The league is a private joint venture of 30 franchises and publishes no accounts, so the durable public numbers are audience figures and media-rights terms, not revenue. Money reaches the site indirectly: national media agreements running 2025-26 through 2035-36, sponsorship, League Pass, a Fanatics-run store, and betting-data licensing through Sportradar and Genius Sports. The domain matters to an index builder for one structural reason — it is <strong>two products on one host</strong>. The league property at <code>/game/</code>, <code>/player/</code>, <code>/watch/</code> and <code>/stats/</code> is a Next.js app behind Akamai Bot Manager that blocks nine AI crawlers outright and serves its own video from a 403-only S3 bucket. The 30 team subsites at <code>/hawks/</code>, <code>/celtics/</code> and so on are a WordPress-backed network whose sitemaps publish 226,795 directly downloadable MP4 URLs, 183,794 dated news articles and ~1.03M gallery images. One robots.txt governs both; the enforcement does not.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>nba.com</code> (apex 301s to <code>www</code>)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.nba.com/">https://www.nba.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Official sports-league property + 30 team subsites + stats platform</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>www.nba.com</code>, <code>cdn.nba.com</code> (media), <code>stats.nba.com</code>, <code>pr.nba.com</code>. Team sites are <em>paths</em> on <code>www.nba.com</code>, not subdomains.</dd></div>
+        <div><dt>Owner</dt><dd>NBA Media Ventures, LLC — with NBA TV, LLC and NBA Properties, Inc., collectively "the Operator" (<a href="https://www.nba.com/termsofuse">Terms of Use</a>)</dd></div>
+        <div><dt>Founded / launched</dt><dd>NBA founded 1946; nba.com launched Nov 3 1995 with Starwave (<a href="https://www.spokesman.com/stories/1995/nov/03/nba-introduces-internet-site/">Spokesman-Review, Nov 3 1995</a>)</dd></div>
+        <div><dt>Business model</dt><dd>National media rights, sponsorship, League Pass, merchandise via Fanatics, official betting-data licensing</dd></div>
+        <div><dt>Scale anchor</dt><dd>170M people in the U.S. watched NBA games in the 2025-26 regular season, up 86% year over year (<a href="https://www.nba.com/news/nba-viewership-highs-2025-26-season">NBA, Apr 16 2026</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing counts live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Sitemap-reachable URLs</dt>
+          <dd>599,879 total — 84,105 from the league sitemaps plus 515,774 from the 30 team sitemaps, as of Aug 11 2026. Site Wise summed the full census in the Probe Log <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Team video corpus</dt>
+          <dd>226,795 MP4 URLs declared in team sitemaps, ≈<strong>12.3TB</strong> — as of Aug 11 2026. Count is exact from the sitemap census; volume is Site Wise's estimate from a 40-file random HEAD sample (mean 54.4MB, median 45.4MB, 40/40 returned HTTP 200) <span class="evidence verified">verified</span>, calculated, order-of-magnitude</dd>
+        </div>
+        <div>
+          <dt>Team news archive</dt>
+          <dd>183,794 articles, every one carrying a <code>news:publication_date</code>, spanning 1997 to 2026 and peaking in 2015 (15,415) — as of Aug 11 2026. Languages: 181,130 <code>en</code>, 1,475 <code>zh-hans</code>, 654 <code>es</code>, 280 <code>he</code>, 162 <code>ja</code>, 93 <code>ru</code>. From the sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Gallery images</dt>
+          <dd>63,154 gallery pages holding ≈1.03M images — as of Aug 11 2026. Site Wise calculated: mean 16.3 distinct <code>cdn.nba.com</code> images across a 12-gallery sample × 63,154 pages (sitemap census) <span class="evidence verified">verified</span>, calculated, order-of-magnitude</dd>
+        </div>
+        <div>
+          <dt>Game and player entities</dt>
+          <dd>19,595 distinct 10-digit game IDs covering the 2012-13 through 2026-27 seasons (17,085 regular season, 1,250 preseason, 1,174 playoffs, 46 all-star, 37 play-in, 4 NBA Cup final) and 5,487 distinct player IDs — as of Aug 11 2026. From the sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Social video views</dt>
+          <dd>228B views across the league's social platforms in 2025-26, up 13% year over year, per Videocites; LeBron James alone 2.85B — as of Apr 16 2026. <a href="https://www.nba.com/news/nba-viewership-highs-2025-26-season">NBA</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Live coverage consumed</dt>
+          <dd>More than 1.3B hours of live NBA game coverage on linear and streaming platforms globally, excluding League Pass, up 93% year over year — 2025-26 regular season, as of Apr 16 2026. <a href="https://www.nba.com/news/nba-viewership-highs-2025-26-season">NBA</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Media agreements</dt>
+          <dd>11 years, 2025-26 through 2035-36, with Disney, NBCUniversal and Amazon; ~75 regular-season games on broadcast TV per season, up from a minimum of 15 — announced Jul 24 2024. <a href="https://pr.nba.com/nba-walt-disney-company-nbcuniversal-amazon-prime-video-media-agreements/">NBA Communications</a> <span class="evidence verified">verified</span>. The NBA has never stated a value; the widely cited ~$76B is <a href="https://www.espn.com/nba/story/_/id/40535771/reports-nba-agrees-terms-76-billion-media-rights-deal">reported, not official</a>.</dd>
+        </div>
+        <div>
+          <dt>robots.txt size</dt>
+          <dd>2,715 bytes: 15 user-agent groups, 82 <code>Disallow</code> lines, 19 <code>Allow</code> lines, one <code>Sitemap</code> directive, no <code>Crawl-delay</code> — as of Aug 11 2026, from the Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-11. Default-UA <code>curl</code> is refused by Akamai on every path; every fetch below therefore sent a desktop-Chrome user-agent, and that alone was enough for HTML and sitemaps.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-08-11</td><td><code>dig +short</code> on four hosts; <code>curl -sI https://www.nba.com/</code></td><td><code>www.nba.com</code> → <code>www.nba.com-v1.edgekey.net</code> → <code>e8017.dscb.akamaiedge.net</code> → 23.48.178.80; <code>cdn.nba.com</code> lands on the same edge, <code>stats.nba.com</code> on <code>e8017.dsci</code>. Headers expose three origin layers — <code>x-envoy-upstream-service-time</code>, <code>x-varnish</code>, <code>x-vcl-version: NBA.com prod 1.7b</code>. Homepage is <code>no-cache, no-store</code> with <code>x-cache-ability: uncacheable</code>; HSTS only <code>max-age=86400</code>. Akamai Bot Manager sets <code>_abck</code> and <code>bm_sz</code>.</td></tr>
+            <tr><td>2026-08-11</td><td><code>curl -sL https://www.nba.com/robots.txt</code>, default UA then browser UA</td><td>Default UA → Akamai <strong>403 "Access Denied"</strong>. Browser UA → <strong>200</strong>, 2,715 bytes. Nine AI agents blocked at <code>/</code>: <code>Amazonbot</code>, <code>anthropic-ai</code>, <code>Applebot-Extended</code>, <code>CCBot</code>, <code>ChatGPT-User</code>, <code>ClaudeBot</code>, <code>Claude-Web</code>, <code>Quora-Bot</code>, <code>PerplexityBot</code>. <code>GPTBot</code> and <code>Google-Extended</code> get <code>Disallow: /</code> plus a 9-line allowlist (<code>/standings</code>, <code>/schedule</code>, <code>/players</code>, <code>/player/*profile$</code>, <code>/team/*</code>, four <code>/stats/</code> reference pages) — then <strong>both are declared again, lower in the file, as a bare <code>Disallow: /</code></strong>. <code>OAI-SearchBot</code> is <code>Allow: /</code>.</td></tr>
+            <tr><td>2026-08-11</td><td>Test the GPTBot allowlist against the site's real player URLs</td><td><code>/player/*profile$</code> matches <strong>0 of the 10,974</strong> player URLs the sitemap advertises — those are <code>/player/{id}/{slug}</code> and <code>/player/{id}/{slug}/bio</code>, 5,487 each. The <code>/profile</code> alias does resolve (200, same page ±16 bytes), but its <code>rel=canonical</code> points at the bare player URL, which the same group disallows.</td></tr>
+            <tr><td>2026-08-11</td><td>Fetch <code>/sitemap_index.xml</code> and every child</td><td>25 <code>&lt;loc&gt;</code> elements, several holding <strong>comma-joined filenames inside one element</strong> — e.g. <code>.../sitemap_games_1.xml,sitemap_games_2.xml</code>. Requested as advertised they return <strong>403 AccessDenied from S3</strong>; split by hand they are valid. After splitting: 79 files, of which <strong>27 parse as XML totalling 84,105 URLs</strong>. All <strong>52</strong> files under <code>/sitemaps/</code> — the entire <code>sitemap_videos_2025_*</code> and <code>_1..40</code> back catalog — return S3 403.</td></tr>
+            <tr><td>2026-08-11</td><td>Recurse <code>/sitemap_team_index.xml</code> (second tier)</td><td>30 per-team indexes; 29 fetch. <code>sitemap_team_trail blazers_index.xml</code> holds a <strong>literal unencoded space</strong> and cannot be requested. Every team index also lists <code>&lt;loc&gt;https://nba.com/&lt;/loc&gt;</code> inside a <code>&lt;sitemap&gt;</code> element — the homepage declared as a sitemap file — and the comma-joining bug recurs. 184 leaf files resolve to <strong>515,774 URLs</strong>: videos 226,883, news 183,794, photos 63,154, games 37,689, base 3,372, players 882. Not one leaf carries a <code>&lt;lastmod&gt;</code>.</td></tr>
+            <tr><td>2026-08-11</td><td>HEAD 40 random <code>video:content_loc</code> URLs from team sitemaps, then the same on league sitemaps</td><td><strong>Team:</strong> 226,795 of 226,883 entries (99.96%) declare a <code>content_loc</code>, all on <code>cdn.nba.com</code>; <strong>40 of 40 returned HTTP 200, <code>video/mp4</code></strong>, no auth, referer or cookie — mean 54.4MB, median 45.4MB, range 4.3–277.6MB. <strong>League:</strong> 39,245 videos, 2026 only; the 28,644 <code>content_loc</code> URLs (73%) sit on <code>mst-vod-prod-normalflow.s3.us-west-2.amazonaws.com</code> and return <strong>403</strong> on HEAD and ranged GET alike; the remaining 10,601 give a <code>player_loc</code> under <code>/watch/embed/</code>. No <code>duration</code>, <code>publication_date</code>, <code>tag</code> or <code>uploader</code> element anywhere in either set.</td></tr>
+            <tr><td>2026-08-11</td><td>Structured-data sample: 3 team page types, 4 league page types, 12 galleries</td><td>Team pages are the rich ones: <code>Article</code> with <code>datePublished</code>/<code>dateModified</code>/<code>author</code>, and <code>VideoObject</code> carrying <code>contentUrl</code>, <code>duration</code> <em>and</em> <code>embedUrl</code> — fields the sitemap omits. League <code>/game/</code> gives <code>SportsEvent</code> with <code>startDate</code> and <code>location</code>; league <code>/watch/video/</code> carries <strong>zero</strong> JSON-LD; <code>/standings</code> only <code>BreadcrumbList</code>. Galleries emit <code>ImageGallery</code> declaring exactly <strong>one</strong> <code>ImageObject</code> (12/12 sampled) against a mean of 16.3 full-size images on the page.</td></tr>
+            <tr><td>2026-08-11</td><td>Validate the league player entity</td><td><code>/player/1628369/jayson-tatum</code> emits <code>"@type": "person"</code> — <strong>lowercase, not a schema.org type</strong> — puts the full name in <code>givenName</code>, writes <code>birthDate</code> as <code>"March 3, 1998"</code> rather than ISO 8601, gives <code>height</code> as <code>"6-8"</code>, and uses relative <code>@id</code> values. Useful parts survive: the numeric player ID, a <code>SportsTeam</code> link with current <code>coach</code>, and a headshot at <code>cdn.nba.com/headshots/nba/latest/1040x760/{playerId}.png</code> — 200 for 4/4 IDs tested.</td></tr>
+            <tr><td>2026-08-11</td><td>Public API sample, soft-404 test, feed and policy-file discovery</td><td><code>/static/json/liveData/scoreboard/todaysScoreboard_00.json</code>, its boxscore and play-by-play equivalents, and <code>staticData/scheduleLeagueV2_32.json</code> all return <strong>Akamai 403</strong> with and without browser UA, <code>Referer</code>, <code>Origin</code> and <code>Accept</code>. <code>stats.nba.com/stats/scoreboardv3</code> is worse than a block: <strong>HTTP 200 with <code>content-type: text/html</code></strong>, serving the page shell where JSON belongs. League <code>/news/&lt;nonexistent&gt;</code> likewise returns <strong>200</strong> titled <code>Page Not Found</code> with a self-referencing canonical, while team <code>/hawks/news/&lt;nonexistent&gt;</code> correctly 404s. No <code>/rss</code>, <code>/feed</code>, <code>/news/rss.xml</code>, <code>/opensearch.xml</code>, <code>llms.txt</code> or <code>ai.txt</code>; <code>/.well-known/tdmrep.json</code> is 403, so there is no machine-readable TDM reservation to read.</td></tr>
+            <tr><td>2026-08-11</td><td>Read the Terms of Use in full (72.5K characters of text)</td><td><strong>Last updated July 13 2026.</strong> Clause 1: no Basketball Content — "video, audio, photos, text, images, statistics, updated scores, logos" — may be "reproduced, republished, uploaded, posted, modified, reused, transmitted, reproduced, distributed, copied, publicly displayed, <strong>linked to</strong>, or otherwise used" without written permission. Clause 6 permits search engines only an unframed <em>word</em> link "to the Services' home page or to the homepage of a particular team." Clause 9 governs NBA Statistics in seven parts: attribution required; news-reporting or private non-commercial use only; no gambling, fantasy, sponsorship or commercial use; nothing presenting "live, near-live, or other real-time or archived play-by-play"; and <strong>no "database … of comprehensive, regularly updated statistics"</strong> without express consent.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"League" = the Next.js property (<code>/game/</code>, <code>/player/</code>, <code>/watch/</code>, <code>/stats/</code>). "Team" = the 30 subsites under <code>/hawks/</code>, <code>/celtics/</code>, etc. Counts are from the Aug 11 2026 census in the Probe Log.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text — team news</td>
+              <td>183,794 articles, 1997–2026, six languages.</td>
+              <td>Team news sitemaps: date, title, language and publisher come in-band, so date-filtered ingestion needs no page fetch.</td>
+              <td>None beyond a browser-shaped UA.</td>
+              <td>Ordinary copyright; ToS clause 1 forbids reproduction and even linking without written permission. No CC licence anywhere on the domain.</td>
+              <td>~3.9K new items in 2026 so far. No <code>lastmod</code>, so edits are invisible — see Open Questions.</td>
+            </tr>
+            <tr>
+              <td>Text — league news &amp; stats pages</td>
+              <td><code>sitemap_news.xml</code> holds only 10 URLs (a Google News window). 5,558 <code>/stats/</code> URLs, 3,366 <code>/nbabet/</code> articles.</td>
+              <td>Sitemap-led crawl. Beware the soft-404: unknown <code>/news/</code> paths answer 200.</td>
+              <td>Bot Manager gates on request shape, not a key.</td>
+              <td>Stats carry the clause 9 regime: attribution, non-commercial, and no comprehensive statistics database without consent.</td>
+              <td>News window is 48-hour-shaped; stats recompute nightly in season.</td>
+            </tr>
+            <tr>
+              <td>Video — team</td>
+              <td>226,883 entries; 226,795 direct MP4 URLs, ≈12.3TB.</td>
+              <td><strong>The MP4 in <code>video:content_loc</code>.</strong> No auth, no referer check, 40/40 sampled fetches succeeded.</td>
+              <td>None. The largest unauthenticated asset on the domain.</td>
+              <td>Technically open, contractually closed. Holding the files is what clause 1 forbids; the display path is the <code>embedUrl</code> from the page's <code>VideoObject</code>.</td>
+              <td>Continuous in season. No <code>lastmod</code>; the file's <code>last-modified</code> header is the only signal.</td>
+            </tr>
+            <tr>
+              <td>Video — league</td>
+              <td>39,245 for 2026 only. Pre-2026 back catalog is <span class="evidence open">open</span> — its 52 sitemaps all 403.</td>
+              <td><code>/watch/embed/</code> player URLs (10,601 of the 2026 entries). The 28,644 advertised S3 MP4s are 403 to everyone.</td>
+              <td>Embed is public; the file is not addressable at all.</td>
+              <td>Embed-only in practice, which happens to match the ToS.</td>
+              <td><code>lastmod</code> on all 39,245 entries — the only place on the domain it appears.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>≈1.03M gallery images across 63,154 pages, plus 5,487 ID-templated headshots and 30 team logos.</td>
+              <td>Headshots by template. Gallery images only by parsing the page — no sitemap uses the <code>image:</code> extension, and the JSON-LD names one image per gallery.</td>
+              <td>None on <code>cdn.nba.com</code>.</td>
+              <td>Game-action photography is named in clause 1 as exclusive IP of NBA Properties.</td>
+              <td>Effectively immutable once published; the sample reached back to 2008.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>12 podcast series URLs. Episode-level objects are <span class="evidence open">open</span>.</td>
+              <td><code>sitemap_podcast_series.xml</code> gets you series pages only; episodes live on third-party podcast platforms.</td>
+              <td>Unknown at episode level.</td>
+              <td>Same ToS.</td>
+              <td>Weekly-to-daily by series.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td><strong>None.</strong> No UGC surface exists on the domain; robots.txt disallows <code>/{team}/users/</code> and <code>/{team}/node/</code> for all 30 teams — the remains of a retired Drupal community.</td>
+              <td>n/a</td>
+              <td>n/a</td>
+              <td>n/a</td>
+              <td>n/a</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>5,487 players, 19,595 games (2012-13 →), 30 teams, plus standings, draft and lineup tables.</td>
+              <td>Sitemaps for URLs; JSON-LD for the entity shell; <code>__NEXT_DATA__</code> for what the page renders. The licensed feed is Sportradar or Genius Sports.</td>
+              <td>Sitemap and page: none. <code>cdn.nba.com</code> JSON and <code>stats.nba.com</code>: hard-blocked. Licensed feeds: enterprise contract.</td>
+              <td>Clause 9's seventh restriction targets exactly a comprehensive stats database.</td>
+              <td>Games mutate through the day played, then freeze. Rosters churn at trades and signings.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where nba.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier, dedup &amp; joins</h4>
+          <p>The keys are unusually clean because they are the league's operational IDs, not web artefacts. The 10-digit game ID decomposes: <code>00</code> league, one digit game type, two season, four sequence — so <code>0022500507</code> is regular-season game 507 of 2025-26, parseable without a lookup table. Player ID templates the headshot; team ID templates the team path. The URL <em>slug</em> is not a key: the 5,487 player IDs produce name collisions (three distinct <code>charles-smith</code>) and one game URL has lost its team abbreviations entirely. Canonicalise on the ID; treat the slug as a label.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The game, not the page. A single game ID fans out to a league <code>/game/</code> page, a team <code>/{team}/game/</code> page, several highlight videos, a gallery and multiple articles across both teams' subsites. Indexing pages independently produces five near-duplicate answers to "what happened in Celtics–Magic"; indexing the game and attaching the rest produces one.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Game ID ↔ team ID ↔ player ID all close for free. The join that <em>fails</em> is video → game: no video sitemap entry, and no <code>VideoObject</code>, carries a game ID. The only bridge is the title string — <span class="evidence inferred">inferred</span> reliably parseable for the automated classes, unreliable for the rest. <em>Basis:</em> league video titles follow a fixed <code>"{Away} vs. {Home} - {N} Quarter Highlights"</code> template with the date restated in <code>video:description</code>, while team-site titles sampled in the Probe Log are free-form editorial prose with no date at all.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Inverted from the usual case. On team pages the <code>VideoObject</code> beats the sitemap, adding <code>duration</code> and <code>embedUrl</code> the sitemap omits. On league player pages the JSON-LD is the <em>worst</em> source — invalid lowercase type, non-ISO birth date, full name in <code>givenName</code> — and <code>__NEXT_DATA__</code> is what the page renders from.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Only the 39,245 league video entries carry <code>lastmod</code>; all 515,774 team URLs carry none, so change detection on the largest corpus has to come from HTTP validators. Against that, the news archive is 98% pre-2026, so cadence should track the season calendar rather than the corpus: hourly on game days, weekly on the back catalog, never on 2008 galleries.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>There is no spam surface — no UGC, single publisher, retired community paths blocked. The manipulation risk points the other way: this is the definitional source, so <em>errors</em> matter more than <em>abuse</em>. The concrete trap is the league soft-404, which mints an unbounded set of HTTP 200 pages with self-referencing canonicals; a crawler that trusts status codes will index "Page Not Found" as content.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><code>Disallow: /search</code> plus no OpenSearch document and no feeds: <span class="evidence inferred">inferred</span> the site is built to be entered from external search on entity pages, not searched. <em>Basis:</em> the sitemaps enumerate 5,487 players, 19,595 games and 30 teams as individual URLs while <code>/search</code>, <code>/api/*</code> and <code>/amp/</code> are disallowed, and there is no feed of any kind to subscribe to.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Entity-plus-time, and overwhelmingly recent: "warriors score", "tatum stats", "who won last night". <span class="evidence inferred">inferred</span> the league's own SEO priority is exactly that head, not the archive. <em>Basis:</em> the AI-crawler allowlist admits only <code>/standings</code>, <code>/schedule</code>, <code>/players</code>, <code>/team/*</code> and four static reference pages — the live-state surface — while the 183,794-article archive stays behind <code>Disallow: /</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the game (keyed by the 10-digit ID) for anything match-related; the article for editorial text; the player for biography and career queries. Videos and galleries attach to a game or player rather than standing alone.</li>
+        <li><strong>Primary keys &amp; joins:</strong> game ID (type/season/sequence parsed from the digits) as the spine; player ID → headshot template and roster; team ID → 30 subsite path prefixes. Build a title-parser for video → game and record its match rate as a stored confidence, not a silent assumption.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>Team sitemaps</strong> — 515,774 URLs, no auth, and the only complete news archive and video back catalog on the domain; requires hand-repairing the comma-joined <code>&lt;loc&gt;</code> values and URL-encoding the Trail Blazers space. 2) <strong>League sitemaps</strong> — 84,105 URLs; the only authoritative game and player entity list, plus the only <code>lastmod</code> values. 3) <strong>Page-level JSON-LD</strong> — the cheapest way to get durations, embed URLs and publication dates; skip the league player entity and read <code>__NEXT_DATA__</code> instead. 4) <strong>Licensed stats feed</strong> (Sportradar / Genius Sports) — the only path that clears clause 9 for structured statistics at scale. 5) <strong>Direct media download</strong> — technically trivial for 12.3TB of team MP4s, contractually prohibited; ingest thumbnails and embeds, not files. 6) <code>cdn.nba.com</code> liveData and <code>stats.nba.com</code> — treat as unavailable; both are blocked, and the second returns 200 with HTML, so a naive pipeline stores garbage rather than erroring.</li>
+        <li><strong>Recrawl cadence:</strong> game pages hourly on game days and frozen a week after; standings and schedule daily in season; team news sitemaps weekly with HTTP validators standing in for the missing <code>lastmod</code>; player pages at each transaction window; galleries once, never again.</li>
+        <li><strong>Derivatives:</strong> embeddings over article text and video titles; a game-ID decoder table; a video-title → game-ID resolver with per-class confidence; an alias table folding <code>/profile</code> onto the canonical player URL. No ASR and no keyframes — the MP4s that would justify them are the assets the ToS most clearly forbids holding.</li>
+        <li><strong>Demo to build:</strong> a <strong>sitemap-integrity linter</strong>. Point it at a sitemap index and have it report what is unreachable and why: comma-joined <code>&lt;loc&gt;</code> values, unencoded whitespace, non-sitemap entries inside <code>&lt;sitemap&gt;</code>, children that answer 403, declared <code>content_loc</code> media that does not resolve, and pages that return 200 while titling themselves "Page Not Found". On nba.com it would find every defect in this report's Probe Log — and it turns "the sitemap says 600K URLs" into "600K are reachable and 28,644 declared MP4s are not."</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Clause 9 forbids the deliverable, not the crawl.</strong> A comprehensive, regularly updated statistics database is prohibited by name without express consent. Any index that normalises NBA box scores into queryable structure is the thing the clause describes, however politely it was fetched — and the licensed alternative is an enterprise contract, not a rate limit.</li>
+        <li><strong>The ToS restricts linking itself.</strong> Clause 1 lists "linked to" among the prohibited uses; clause 6 confines even search engines to unframed word links to the home page or a team home page. Deep-linking a result to <code>/game/bos-vs-orl-0011900039</code> — ordinary search-product behaviour — sits outside what the terms permit.</li>
+        <li><strong>The 12.3TB is a temporary accident.</strong> Team MP4s are reachable because the sitemap publishes the file URL and the CDN checks nothing. The enforced posture already exists on the league side; it simply has not reached the WordPress network. <span class="evidence inferred">inferred</span> the team tier will converge on the league tier. <em>Basis:</em> both sit behind the same Akamai edge and the same robots.txt, yet 28,644 league <code>content_loc</code> URLs return 403 while 226,795 team ones return 200 with no gate at all.</li>
+        <li><strong>The pre-2026 league video catalog has already vanished from discovery.</strong> All 52 <code>/sitemaps/</code> files 403, so a crawler starting today enumerates 2026 highlights and nothing older through league paths. Whatever survives, survives in the team sitemaps.</li>
+        <li><strong>Two silent failure modes corrupt a pipeline before they break it.</strong> <code>stats.nba.com</code> answers 200 with HTML where JSON belongs, and league <code>/news/</code> answers 200 for URLs that do not exist. Both need content-level validation; neither shows up in a status-code dashboard.</li>
+        <li><strong>The AI stance is self-contradictory,</strong> so an interpretation of it is not safe to cache. <code>GPTBot</code> and <code>Google-Extended</code> each appear twice — once with an allowlist, once as a bare <code>Disallow: /</code> — and the allowlist's player pattern matches nothing the sitemap advertises. Re-read and re-resolve rather than storing a verdict.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.nba.com/termsofuse">NBA.com Terms of Use</a>, last updated Jul 13 2026 — operator identity, clause 1 ownership and use restrictions, clause 6 linkage restrictions, clause 9 NBA Statistics restrictions (i)–(vii), Fanatics store arrangement.</li>
+        <li><a href="https://www.nba.com/news/nba-viewership-highs-2025-26-season">NBA, "NBA sets multiple viewership highs during 2025-26 regular season"</a> (Apr 16 2026) — 170M U.S. viewers, 1.3B+ hours, 228B social views per Videocites, 2.85B for LeBron James, 22.18M three-season attendance. Corroborated by <a href="https://www.nba.com/news/nba-regular-season-2025-26-most-viewers-24-years">the AP write-up</a> (Apr 15 2026).</li>
+        <li><a href="https://pr.nba.com/nba-walt-disney-company-nbcuniversal-amazon-prime-video-media-agreements/">NBA Communications, media agreements announcement</a> (Jul 24 2024) — 11-year term, 2025-26 to 2035-36, per-partner packages, ~75 broadcast games per season. The <a href="https://www.espn.com/nba/story/_/id/40535771/reports-nba-agrees-terms-76-billion-media-rights-deal">~$76B figure is ESPN's reporting</a>, not an NBA disclosure.</li>
+        <li><a href="https://www.nba.com/news/nba-sportradar-genius-sports-partnership-official-release">NBA, betting-data partnerships with Sportradar and Genius Sports</a> (Nov 28 2018) — the licensed route for official NBA data, non-exclusive, to licensed operators.</li>
+        <li><a href="https://www.spokesman.com/stories/1995/nov/03/nba-introduces-internet-site/">Spokesman-Review, "NBA introduces Internet site"</a> (Nov 3 1995) — launch date and the Starwave partnership.</li>
+        <li>Local probes on 2026-08-11 (results in the Probe Log): <code>dig</code> and <code>curl</code> against four hosts; robots.txt at two user-agents; recursive census of both sitemap tiers, 263 files fetched; 40-URL random HEAD sample of team MP4s; 12-gallery image sample; JSON-LD extraction from seven page types; liveData and <code>stats.nba.com</code> calls; soft-404, feed and policy-file discovery; full-text read of the Terms of Use.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The team tier's open media will be closed to match the league tier. <em>Basis:</em> identical Akamai edge and robots.txt across both, yet 28,644 league <code>content_loc</code> URLs return S3 403 while 226,795 team ones return 200 <code>video/mp4</code> with no auth, referer or cookie check.</li>
+        <li>Video → game joins are parseable for automated highlight classes, not editorial ones. <em>Basis:</em> league video titles follow a fixed <code>"{Away} vs. {Home} - {N} Quarter Highlights"</code> template with the date repeated in <code>video:description</code>; sampled team titles are free-form prose carrying no date and no ID.</li>
+        <li>The site is designed to be entered from external search rather than searched. <em>Basis:</em> <code>Disallow: /search</code>, no OpenSearch document and no feed at five tested paths, while the sitemaps enumerate 5,487 players, 19,595 games and 30 teams as individual URLs.</li>
+        <li>The league's SEO and AI priority is live state, not archive. <em>Basis:</em> the <code>GPTBot</code> and <code>Google-Extended</code> allowlist covers only <code>/standings</code>, <code>/schedule</code>, <code>/players</code>, <code>/team/*</code> and four static reference pages, leaving the 183,794-article archive under <code>Disallow: /</code>.</li>
+        <li>The AI allowlist is not a tested configuration. <em>Basis:</em> <code>/player/*profile$</code> matches 0 of 10,974 sitemap-advertised player URLs; the <code>/profile</code> alias it does match canonicalises to a URL the same group disallows; and both agents are declared twice in one file with contradictory rules.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Size and reuse terms of the pre-2026 league video catalog — the 52 <code>/sitemaps/</code> files that would enumerate it all return S3 403. Closeable only by a restored sitemap or a partner feed.</li>
+        <li>Whether the team sitemaps' 226,883 video entries overlap the league's 39,245 for 2026, and by how much — closeable by resolving both sets to game IDs and intersecting, which needs the title-parser this report only specifies.</li>
+        <li>Episode-level podcast objects: count, transcripts and licence. <code>sitemap_podcast_series.xml</code> stops at 12 series pages.</li>
+        <li>Whether page content actually mutates without a <code>lastmod</code> — measurable by re-fetching a fixed sample of 500 team URLs weekly and diffing <code>etag</code> and <code>last-modified</code>, which would replace this report's assumption that the archive is near-immutable.</li>
+        <li>Whether <code>Applebot</code> and <code>Bingbot</code> receive the curated allowlist that <code>GPTBot</code> and <code>Google-Extended</code> get — neither is named in robots.txt at all, so their treatment is a Bot Manager policy invisible from outside.</li>
+        <li>What Akamai Bot Manager actually keys on, given that a UA string alone passed every fetch in this report — closeable by replaying identical requests across TLS fingerprints.</li>
+        <li>nba.com's own traffic: no official figure exists. The league publishes viewership and social views but no site sessions or page views, and third-party panel estimates are not treated as official here.</li>
+        <li>Whether any NBA entity has licensed content for AI training, and on what terms — nine crawlers are blocked and <code>OAI-SearchBot</code> is allowed, but no agreement has been announced either way.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
