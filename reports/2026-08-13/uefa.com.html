@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>uefa.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-08-13</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>uefa.com</h1>
+      <p class="lede">UEFA.com is European football's official site: 15K sitemap URLs, open unauthenticated match APIs, permissive robots.txt — and terms of use forbidding systematic indexing.</p>
+      <div class="tag-row">
+        <span class="tag">Sports governing body</span>
+        <span class="tag">Editorial + live data</span>
+        <span class="tag">Open API, closed licence</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>UEFA is the governing body of European football — an association of 55 national federations, not a company. It was founded 15 June 1954 in Basel and has been headquartered in Nyon since 1999. Its money comes almost entirely from selling broadcast and sponsorship rights to competitions it owns (Champions League, Europa League, Euro), then redistributing most of it to clubs and associations.</p>
+      <p>uefa.com is the owned-and-operated publishing surface for that portfolio: editorial news, match centres with live data, video clips, and regulatory documents across roughly 300 competitions. For a full-modal index it is unusual in two ways. It is a <em>primary</em> source of structured sports facts — fixtures, results, squads, stadiums — rather than a re-publisher, so its records are canonical rather than copies. And its technical and legal postures point in opposite directions: the crawl controls are among the most permissive of any site profiled here, the terms of use among the most restrictive.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd>uefa.com</dd></div>
+        <div><dt>Canonical URL</dt><dd>https://www.uefa.com/ (apex 301s to www — probe log)</dd></div>
+        <div><dt>Category</dt><dd>Sports governing body — editorial, live match data, video</dd></div>
+        <div><dt>Grouped hosts</dt><dd>www / en / fr / de / es / it / pt / ru .uefa.com; editorial.uefa.com (media), img.uefa.com (static), comp.uefa.com + match.uefa.com (APIs), uefa.tv</dd></div>
+        <div><dt>Owner</dt><dd>Union of European Football Associations (UEFA), a Swiss association of 55 members</dd></div>
+        <div><dt>Founded</dt><dd>15 June 1954, Basel; Nyon HQ since 1999</dd></div>
+        <div><dt>Business model</dt><dd>Media + commercial rights sales, redistributed to clubs and associations. The website is promotion and rights-protection, not a revenue line.</dd></div>
+        <div><dt>Scale anchor</dt><dd>€5,014.2M total revenue, financial year 2024/25 — see Verified Metrics.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Each card: value, as-of date, source, evidence tag. Missing figures live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Total revenue</dt>
+          <dd>€5,014.2M — financial year 2024/25 (to 30 June 2025); down from €6,776.6M in 2023/24, which included the men's Euro. <a href="https://editorial.uefa.com/resources/02a1-1fcc539a26d9-78ac6793e755-1000/20260113_enclosure_04_financial_report_2024-25_en.pdf">UEFA Financial Report 2024/25</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Media rights share</dt>
+          <dd>€4,064.8M = 81.1% of revenue — 2024/25. Commercial rights €786.9M (15.7%); tickets and hospitality €100.0M (2.0%). <a href="https://editorial.uefa.com/resources/02a1-1fcc539a26d9-78ac6793e755-1000/20260113_enclosure_04_financial_report_2024-25_en.pdf">Financial Report 2024/25</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Distribution to participating teams</dt>
+          <dd>€3,860.7M — 2024/25, i.e. 77.0% of total revenue paid back out (ratio calculated by Site Wise). <a href="https://editorial.uefa.com/resources/02a1-1fcc539a26d9-78ac6793e755-1000/20260113_enclosure_04_financial_report_2024-25_en.pdf">Financial Report 2024/25</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Competitions in the public API</dt>
+          <dd>307 — as of 2026-08-13 probe. Split: 238 domestic, 48 continental, 21 worldwide; 233 male, 71 female; 243 football, 61 futsal; 56 country codes. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap census</dt>
+          <dd>15,259 unique URLs across all six declared sitemaps — 2026-08-13 probe. 16,192 raw entries before dedup, so 5.8% of advertised URLs are duplicates (calculated by Site Wise). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap split by class</dt>
+          <dd>Unique: 10,285 editorial/section pages, 2,971 video, 1,767 match, 185 document, 65 news — 2026-08-13 sitemap probe. Video is 19.5% of the advertised corpus (calculated by Site Wise). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Match archive depth</dt>
+          <dd>Back to at least 1994-05-18 — the Milan–Barcelona Champions League final is returned by <code>match.uefa.com</code> for <code>seasonYear=1993</code>, observed 2026-08-13. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>API page ceiling</dt>
+          <dd><code>limit=500</code> succeeds, <code>limit=1000</code> returns a type-conversion error — 2026-08-13 probe. No auth, no key, no rate-limit headers observed. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Member associations</dt>
+          <dd>55 — as of 2026-08-13. <a href="https://en.wikipedia.org/wiki/UEFA">UEFA overview</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made for this report on 2026-08-13. These are the only rows that may back a <em>verified</em> tag without an external link.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>2026-08-13</td>
+              <td><code>dig +short uefa.com</code></td>
+              <td>Resolves via <code>uefa.com.edgekey.net</code> → <code>e10061.dsca.akamaiedge.net</code>. Akamai fronts the site; the apex 301 to www is served by an Azure edge (<code>x-azure-ref</code> header).</td>
+            </tr>
+            <tr>
+              <td>2026-08-13</td>
+              <td><code>curl -sL https://www.uefa.com/robots.txt</code></td>
+              <td>Nine <code>Disallow</code> rules under a single <code>User-agent: *</code> — all operational paths (<code>/generic/</code>, <code>/images/</code>, <code>/libraries/</code>, <code>/thirdparties/</code>, <code>/test/</code>, <code>/uc3/</code>, <code>/*/_content</code>, <code>/disciplinary/</code>, preview tokens). <strong>No AI-crawler blocks at all</strong> — no GPTBot, ClaudeBot, Google-Extended or equivalent. Six sitemaps declared.</td>
+            </tr>
+            <tr>
+              <td>2026-08-13</td>
+              <td><code>curl -sI https://www.uefa.com/</code></td>
+              <td>HTTP/2, <code>cache-control: max-age=300</code>, HSTS one year, <code>x-frame-options: DENY</code>, CSP <code>frame-ancestors 'self'</code>. Also <code>access-control-allow-origin: *</code> on the HTML origin. <code>request-context: appId=cid-v1:…</code> indicates Azure App Service behind Akamai.</td>
+            </tr>
+            <tr>
+              <td>2026-08-13</td>
+              <td>Sitemap census — fetch all 6 declared sitemaps and 91 child sitemaps, count and dedup <code>&lt;loc&gt;</code></td>
+              <td>16,192 raw entries, 15,259 unique. Ten of 23 video sitemaps return <em>exactly</em> 200 URLs — a truncation cap, not a count. Twenty-two of 27 news sitemaps are empty; almost all news lives in <code>news/latest.xml</code>.</td>
+            </tr>
+            <tr>
+              <td>2026-08-13</td>
+              <td>Sitemap integrity — md5 of sorted <code>&lt;loc&gt;</code> sets per match sitemap</td>
+              <td>Three women's match sitemaps (<code>womenseuro</code>, <code>womenseuropeanqualifiers</code>, <code>womensnationsleague</code>) are byte-identical, 391 URLs each, all starting <code>2044383--england-vs-spain</code>. Accounts for 782 of the 933 duplicate entries.</td>
+            </tr>
+            <tr>
+              <td>2026-08-13</td>
+              <td>Structured-data sample — JSON-LD on news, match and video pages</td>
+              <td>News: <code>NewsArticle</code> with 17 fields including <code>articleBody</code>, <code>genre</code>, <code>inLanguage</code>, <code>copyrightHolder</code>. Match: <code>LiveBlogPosting</code> wrapping a <code>SportsEvent</code> in <code>mainEntity</code> (stadium, postal address, start/end). Video: <code>WebPage</code> only — <strong>no <code>VideoObject</code>, no <code>og:video</code></strong>.</td>
+            </tr>
+            <tr>
+              <td>2026-08-13</td>
+              <td><code>articleBody</code> length check on two articles</td>
+              <td>Populated with the standfirst, not the body: 100 characters on the Super Cup match report, one sentence on the financial-results release. The field name promises full text and does not deliver it.</td>
+            </tr>
+            <tr>
+              <td>2026-08-13</td>
+              <td>Public API sample — <code>comp.uefa.com/v2/competitions</code>, <code>match.uefa.com/v5/matches</code></td>
+              <td>Both return JSON with no auth: 546KB / 307 competitions, and full match objects (teams, stadium, referees, matchday, round, kickoff, status) with per-field translations in 6+ languages. <code>access-control-allow-origin</code> is pinned to <code>https://www.uefa.com</code>, but that is browser-only — server-side requests are unrestricted. The CORS preflight advertises <code>x-api-key</code> and <code>x-api-consumer-id</code>.</td>
+            </tr>
+            <tr>
+              <td>2026-08-13</td>
+              <td>Feeds and language coverage</td>
+              <td><code>/llms.txt</code> → 404. No RSS/Atom link on any sampled page. <code>hreflang</code> alternates appear on exactly 1 of 10,285 root sitemap entries (the homepage). <code>fr.uefa.com</code> serves the same content-ID path with a 200 but returned English copy for the sampled article.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what auth costs, what may be displayed, how fast it churns. The licence column is the binding constraint on this site — see Retrieval Notes.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; count</th><th>Best path</th><th>Auth &amp; quota</th><th>Licence</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text — editorial</td>
+              <td>65 unique news URLs advertised; 10,285 section/editorial pages (sitemap probe). True article archive is larger than advertised.</td>
+              <td>Crawl the HTML; <code>news/latest.xml</code> for incremental. JSON-LD gives clean title/date/genre.</td>
+              <td>None. robots.txt permits all UAs.</td>
+              <td>T&amp;C §6.2 — personal, non-commercial viewing only.</td>
+              <td><code>max-age=300</code>; news sitemap <code>lastmod</code> moved within hours of the probe.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>editorial.uefa.com resources, one hero per article; team and competition logos on img.uefa.com at 70/240/700px.</td>
+              <td><code>image:image</code> in the news sitemap; <code>og:image</code> (2048×1152 on the sample); logo URLs inline in API records.</td>
+              <td>None.</td>
+              <td><code>/images/*</code> is Disallowed in robots.txt even though the CDN host is not — mirroring is off the table.</td>
+              <td>Tied to parent article; stable once published.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>2,971 unique URLs (sitemap probe) — a floor, since 10 competitions are capped at exactly 200.</td>
+              <td>The <code>video:</code> sitemap extension, which carries title, description, thumbnail, publication date, category and <strong>duration in seconds</strong>. The page itself carries none of this.</td>
+              <td>None for metadata. Media files themselves are not exposed — <code>video:content_loc</code> points at an HTML <code>/index</code> route, not a stream.</td>
+              <td>Rights-encumbered match footage; no embed API found.</td>
+              <td>Sitemap <code>lastmod</code> within 24h of probe for active competitions.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>No standalone audio surface found. One podcast-like path in 10,285 root sitemap URLs.</td>
+              <td>None. Any audio is the track inside video objects.</td>
+              <td>n/a</td>
+              <td>n/a</td>
+              <td>n/a</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>None. No comment markup, count field, or third-party widget on sampled news, match or video pages.</td>
+              <td>n/a — this site carries no public UGC corpus.</td>
+              <td>n/a</td>
+              <td>T&amp;C §6.3 contemplates "User Submissions", but none are exposed on the open web.</td>
+              <td>n/a</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>307 competitions; 1,767 advertised match pages against an API archive reaching back to 1994; plus teams, associations, stadiums, referees, cities.</td>
+              <td><code>comp.uefa.com/v2</code> and <code>match.uefa.com/v5</code> — the richest and cleanest surface on the site by a wide margin.</td>
+              <td>None observed. Pagination capped at <code>limit=500</code>; no key, no rate-limit headers.</td>
+              <td>Undocumented and unversioned publicly — no published terms grant use of these endpoints.</td>
+              <td>Live during matches; <code>s-maxage=300</code> at the edge.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <div class="subgrid">
+        <div>
+          <h4>The robots/terms contradiction</h4>
+          <p>This is the defining fact about indexing uefa.com. robots.txt blocks no crawler, names no AI agent, and advertises six sitemaps — more permissive than nearly any major platform. Terms &amp; Conditions §6.2 then prohibits systematically collecting content "to create a collection, database, or directory", bans "robots, spiders, or scripts", and explicitly forbids using content "to develop or train any software, model, algorithm, or AI tool, including machine learning systems or generative AI models". <span class="evidence inferred">inferred</span> The permissive robots.txt reflects neglect rather than a grant of rights. <em>Basis:</em> the file's Disallow list is entirely operational paths (<code>/test/</code>, <code>/libraries/</code>, <code>/thirdparties/</code>, preview tokens) with no content-policy rule of any kind, while the T&amp;C carries a specific, current AI-training clause — the two were plainly written by different functions, and only one was updated for the AI era.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Two schemes, both usable. Editorial content uses a four-part hex ID — <code>02a8-215538a51719-2eeabf96b5c7-1000</code> — appearing in the article URL <em>and</em> the <code>editorial.uefa.com</code> image path, so text and hero image join without heuristics. Matches use a plain integer identical in the sitemap slug and the API <code>id</code>: <code>/match/2049220--lyon-vs-fenerbahce/</code> ↔ <code>id: "2049220"</code>. The trailing slug is decorative; key on the ID.</p>
+        </div>
+        <div>
+          <h4>Sitemaps are a window, not a census</h4>
+          <p>Treat every sitemap count as a floor. Ten of 23 video sitemaps return exactly 200 URLs, 22 of 27 news sitemaps are empty, and three match sitemaps are byte-identical duplicates. An indexer that trusts the advertised 16,192 entries will simultaneously over-count (5.8% dupes) and badly under-count the real archive — the match API alone reaches back to 1994 while the match sitemap advertises 1,767 URLs.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Do not trust <code>articleBody</code>. It carries the standfirst — 100 characters on the sampled match report — not the article. The rendered HTML body is authoritative for text; JSON-LD is authoritative for date, genre, language and rights. For matches the reverse holds: the API record beats the page, because the page wraps the event in <code>LiveBlogPosting</code> whose <code>liveBlogUpdate</code> array was empty pre-kickoff.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Match ID is the universal spine: it joins the match page, the API record, the stadium entity, both team entities, and referee assignments. Video is the weak link — clips carry their own editorial hex ID with no match ID reference in the sitemap or on the page, so associating a highlight with its fixture requires matching on title text and date. <span class="evidence inferred">inferred</span> No exposed video→match foreign key exists. <em>Basis:</em> the <code>video:</code> sitemap extension has seven fields, none of them an identifier, and the sampled video page emitted no JSON-LD beyond <code>WebPage</code>.</p>
+        </div>
+        <div>
+          <h4>Language handling</h4>
+          <p>Eight language subdomains exist (en, fr, de, es, it, pt, ru plus www as x-default), but <code>hreflang</code> is declared on exactly one of 10,285 root sitemap entries. Content IDs are stable across subdomains — <code>fr.uefa.com</code> serves the same path with a 200 — but the sampled article returned English copy there, so a 200 does not prove a translation exists. Verify per object; do not assume 8× the corpus. By contrast the API embeds a <code>translations</code> map directly in each record, which is the reliable multilingual surface.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Sharply bimodal and calendar-driven rather than continuous. Match records mutate by the second during a fixture and then freeze permanently; editorial is near-static once published; regulatory documents in the document sitemaps show <code>lastmod</code> values from 2019. Recrawl should follow the fixture calendar, which is itself published through the API — the site tells you when to come back.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Effectively absent as a concern, and that is the point. Every object is first-party editorial or first-party competition data with <code>copyrightHolder: UEFA</code> and no UGC surface. This is a small, clean, high-authority corpus — the opposite of the ranking-manipulation profile that dominates the default assumptions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> two of them. The <em>match</em> (keyed on integer match ID, carrying teams, competition, stage, venue, officials, status, score) and the <em>article</em> (keyed on editorial hex ID, carrying headline, body, genre, date, hero image). Video attaches to neither cleanly and should be its own unit until a match join is established.</li>
+        <li><strong>Primary keys &amp; joins:</strong> match ID joins page ↔ API ↔ team ↔ stadium. Editorial hex ID joins article ↔ hero image. Competition ID (307 values) is the partition key for the whole corpus. Video → match is unsolved; see Open Questions.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>comp.uefa.com/v2</code> + <code>match.uefa.com/v5</code> — no auth, 500/page, multilingual, archive to 1994; by far the best value, and the only path whose ceiling is pagination rather than discovery. 2) The <code>video:</code> sitemap extension — the only source of video duration and thumbnails; ceiling ~200/competition. 3) HTML crawl of editorial for article bodies, since JSON-LD will not supply them; ceiling is discovery, because the news sitemaps are mostly empty. 4) Nothing else — no RSS, no llms.txt, no oEmbed, no bulk dump.</li>
+        <li><strong>Recrawl cadence:</strong> drive it off the fixture calendar pulled from the API. Live matches: seconds while <code>status</code> is in play. Upcoming fixtures: daily, since lineups and referees land late. Finished matches: once, then never. Editorial: daily on <code>news/latest.xml</code>. Documents: quarterly at most — several have not changed since 2019.</li>
+        <li><strong>Derivatives to generate:</strong> ASR on video is the highest-value derivative here, because it is the only route to a video→match join (team and player names in the commentary) and the only way to make 2,971 clips searchable at all given the absence of transcripts. Article-level embeddings are worth it; image OCR is not, since the corpus is match photography rather than text-bearing graphics.</li>
+        <li><strong>Demo to build:</strong> a match-ID resolver — paste any uefa.com match URL, strip the slug, and fan out to the competition and match APIs to render the full entity graph (both squads, stadium with postal address, referees, competition stage) from public endpoints alone. It makes the central claim of this report concrete: the richest data on this site is the part with no auth and no documentation.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The terms are the risk, not the tech.</strong> Every measured signal says this corpus is easy to take; §6.2 says taking it is prohibited, with an explicit AI-training ban. Ingestion beyond personal viewing needs a licence conversation before an engineering plan. Safest read: index for discovery and linking, do not redistribute, do not train.</li>
+        <li><strong>The APIs are undocumented and so unversioned in practice.</strong> The <code>v2</code> and <code>v5</code> paths imply earlier versions are already gone. They exist to serve uefa.com's own front end and can be retired in a redesign without notice; the CORS preflight already advertises <code>x-api-key</code>, so the plumbing to close them is in place.</li>
+        <li><strong>robots.txt is a lagging indicator.</strong> Against a T&amp;C that names generative AI explicitly, the absence of any AI-crawler directive reads as an unclosed gap, not a settled position. Assume it closes; design ingestion that degrades gracefully.</li>
+        <li><strong>Rights fragmentation on video.</strong> Match footage is licensed territory by territory to the broadcasters paying the €4.06B that funds the organisation — the modality most likely to be geo-fenced or withdrawn from third-party surfaces.</li>
+        <li><strong>Sitemap defects mislead capacity planning.</strong> Identical match sitemaps and hard-capped video sitemaps make the advertised corpus wrong in both directions at once. Size the index off API pagination, not <code>&lt;loc&gt;</code> counts.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://editorial.uefa.com/resources/02a1-1fcc539a26d9-78ac6793e755-1000/20260113_enclosure_04_financial_report_2024-25_en.pdf">UEFA Financial Report 2024/25</a> — revenue, media/commercial split, distributions. Tabled at the 2026 UEFA Congress.</li>
+        <li><a href="https://www.uefa.com/news-media/news/02a2-1fe83965a42a-37e08e26c799-1000--uefa-s-2024-25-financial-results-growing-the-game-at-every-/">UEFA, "2024/25 financial results"</a>, 12 February 2026 — club competition revenue and club distributions.</li>
+        <li><a href="https://www.uefa.com/termsconditions/">UEFA.com Terms &amp; Conditions</a> — §6.2 content licence and anti-scraping/anti-AI-training clause, §6.9 no-framing clause.</li>
+        <li><a href="https://www.uefa.com/about/our-history/">UEFA, "Our history"</a> and <a href="https://en.wikipedia.org/wiki/UEFA">UEFA overview</a> — founding date, Nyon HQ, 55 members.</li>
+        <li>First-hand probes, 2026-08-13 — all counts, header, robots.txt, sitemap, structured-data and API observations. See Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The permissive robots.txt reflects neglect rather than a deliberate grant. <em>Basis:</em> every Disallow rule is an operational path with no content-policy rule of any kind, while the T&amp;C carries a current, specific AI-training prohibition — stated in Retrieval Notes.</li>
+        <li>No video→match foreign key is exposed. <em>Basis:</em> the seven-field <code>video:</code> sitemap extension contains no identifier, and the sampled video page emitted only <code>WebPage</code> JSON-LD — stated in Retrieval Notes.</li>
+        <li>Video sitemap counts are truncated rather than complete. <em>Basis:</em> ten of 23 competition video sitemaps return exactly 200 URLs, a round number no natural distribution produces — recorded in the Probe Log.</li>
+        <li>An official metered API tier exists behind the public endpoints. <em>Basis:</em> the CORS preflight on <code>comp.uefa.com</code> advertises <code>x-api-key</code> and <code>x-api-consumer-id</code> in <code>access-control-allow-headers</code>, which are meaningless unless some consumer sends them.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How large is the real match archive? The API returns 1994 fixtures but exposes no total. Closed by paginating <code>match.uefa.com/v5/matches</code> at <code>limit=500</code> across all 307 competition IDs and every season year, then deduping on match ID.</li>
+        <li>Is there a licensed data feed, and on what terms? UEFA sells rights but publishes no developer portal. Closed by a direct enquiry to UEFA's media/marketing function, or by finding an existing licensee's attribution requirements.</li>
+        <li>Can video clips be joined to fixtures without ASR? Closed by sampling ~50 clips across competitions and testing whether any internal player configuration or undocumented endpoint carries a match ID.</li>
+        <li>How much of the corpus is genuinely translated across the seven language subdomains? Closed by fetching a fixed sample of article IDs on each subdomain and diffing <code>og:title</code> against the English original — a 200 alone proved insufficient in the probe.</li>
+        <li>What is uefa.com's actual traffic and its seasonality amplitude? No first-party figure is published, and match-driven sites peak violently. Closed by a panel estimate with the estimator named, or by UEFA disclosing digital reach in a future annual report.</li>
+        <li>Why are three women's match sitemaps byte-identical? Closed by re-probing after the next fixture round to establish whether it is a persistent generation bug or a transient deploy artefact.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
