@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>finance.yahoo.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-15</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>finance.yahoo.com</h1>
+      <p class="lede">Yahoo Finance is a ~590K-instrument global quote catalog wrapped in syndicated news, and its richest pages answer only to allowlisted search crawlers.</p>
+      <div class="tag-row">
+        <span class="tag">Finance</span>
+        <span class="tag">Market Data</span>
+        <span class="tag">News Syndication</span>
+        <span class="tag">Subscription</span>
+        <span class="tag">Apollo-owned</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Yahoo Finance is the largest free finance destination in the US, launched January 1997 and now owned by Apollo Global Management (90%) with Verizon holding 10% after the $5B Verizon Media sale closed September 2021. It earns money from advertising against quote pages and from three consumer subscription tiers. For an index builder the site splits cleanly in two. The <strong>news half</strong> is a syndication surface: a random sample of 12 articles returned 12 third-party providers — Motley Fool, Zacks, 24/7 Wall St., Simply Wall St. — and four of the twelve were press wires (Business Wire, PR Newswire, GlobeNewswire, CNW Group). That corpus is mostly duplicate content whose canonical home is elsewhere. The <strong>quote half</strong> is the genuinely unique asset: a global multi-asset instrument catalog spanning equities, futures, indices, mutual funds and foreign listings, keyed by exchange-suffixed ticker. <span class="evidence inferred">inferred</span> Yahoo treats that catalog as an SEO asset rather than a public dataset. <em>Basis:</em> the same history URL returns HTTP 200 with a full year of OHLCV to Googlebot, bingbot and Slurp but HTTP 404 to a Chrome user agent (Probe Log), and no official API has existed since 2017.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>finance.yahoo.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://finance.yahoo.com/">https://finance.yahoo.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Financial data portal, business news aggregator</dd></div>
+        <div><dt>Related hosts</dt><dd><code>query1.finance.yahoo.com</code> (undocumented JSON), <code>feeds.finance.yahoo.com</code> (RSS), <code>s.yimg.com</code> and <code>media.zenfs.com</code> (media CDNs), <code>pinhole.finance.yahoo.com</code> (chart screenshots), <code>guce.yahoo.com</code> (consent)</dd></div>
+        <div><dt>Owner</dt><dd>Yahoo Inc. — Apollo Global Management 90%, Verizon Communications 10%</dd></div>
+        <div><dt>Founded / launched</dt><dd>January 19, 1997</dd></div>
+        <div><dt>Business model</dt><dd>Display advertising + Bronze/Silver/Gold subscriptions + affiliate finance products</dd></div>
+        <div><dt>Scale anchor</dt><dd>100M+ average monthly visitors, #1 US Business/Finance News site — Comscore Media Metrix Multi-Platform, averaged Mar 2025–Feb 2026 (<a href="https://www.yahooinc.com/press/yahoo-finance-launches-dedicated-hub-for-ai-news-and-analysis">Yahoo Inc. press release, Jun 1 2026</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Audience</dt>
+          <dd>100M+ average monthly visitors; #1 US Business/Finance News site — Comscore Media Metrix Multi-Platform, averaged Mar 2025–Feb 2026. <a href="https://www.yahooinc.com/press/yahoo-finance-launches-dedicated-hub-for-ai-news-and-analysis">Yahoo Inc. press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Quote corpus size</dt>
+          <dd>5.85M advertised URLs over ~590K distinct instruments — 234 child sitemaps × 25,000 URLs (11 of 234 sampled, every one exactly 25,000), divided by a sampled mean of 9.89 URLs per instrument (per-sitemap range 6.76–14.00 by asset class). As of Aug 15 2026, sitemap census in the Probe Log. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>News rate &amp; discovery window</dt>
+          <dd>287–300 articles/hour (~6.9K/day) inside a rolling ~3-hour, ~900-URL sitemap window — two <code>news-sitemap.xml</code> fetches ~10 min apart held 901 and 897 URLs across 3.00h and 3.12h, with 42 added and 46 dropped between them. As of Aug 15 2026, Probe Log. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Subscription pricing</dt>
+          <dd>Bronze $9.95/mo ($7.95/mo annual, billed $95.40); Silver $24.95/mo ($19.95, $239.40); Gold $49.95/mo ($39.95, $479.40) — read from the plan JSON embedded in the Gold promo page, Aug 15 2026. Probe Log. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Crawler-visible history depth</dt>
+          <dd>256 daily OHLCV rows (Aug 14 2025 – Aug 14 2026) server-rendered per history page, as of Aug 15 2026 — Probe Log, Googlebot user agent. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap lastmod staleness</dt>
+          <dd>Every entry in the quote sitemap index and its children carries <code>lastmod</code> 2022-12-29T18:48:49.406Z — unchanged for ~3.6 years as observed Aug 15 2026. Probe Log. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt AI/aggregator block</dt>
+          <dd>44 user agents share a single <code>Disallow: /</code>, including ClaudeBot, GPTBot, anthropic-ai, CCBot, Bytespider, PerplexityBot, Google-Extended, Amazonbot, Diffbot and Scrapy — 114 lines total, one Sitemap directive, observed Aug 15 2026. Probe Log. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Article provenance</dt>
+          <dd>12 of 12 randomly sampled articles credited a third-party provider (4 of them press wires); 84 distinct providers appeared across the 901-URL news sitemap. As of Aug 15 2026, Probe Log. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Ownership transaction</dt>
+          <dd>$5B — $4.25B cash plus $750M preferred interests, Verizon retaining 10% — as announced <a href="https://www.apollo.com/insights-news/pressreleases/2021/05/verizon-media-to-be-acquired-by-apollo-funds-130247212">May 3 2021</a>; deal <a href="https://www.apollo.com/insights-news/pressreleases/2021/09/apollo-funds-complete-acquisition-of-yahoo-161530593">closed Sep 1 2021</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-15 (local UTC+8; server clock read Aug 14 16:0x UTC). Requests used a desktop Chrome user agent unless the row names another.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe"><code>curl -sL https://finance.yahoo.com/robots.txt</code></td><td data-label="Observation">114 lines, three groups: <code>Mediapartners-Google</code> (23 Disallow), a 44-agent AI/scraper group at <code>Disallow: /</code>, and <code>*</code> with 32 Disallow + 7 Allow. The Allow list whitelists exactly five comparison URLs (<code>/compare?comps=NVDA,INTC</code>, <code>NVDA,AMD</code>, <code>GOOG,AMZN</code>, <code>AAPL,MSFT</code>, <code>TSLA,RIVN</code>) and permits earnings pages only when the filename carries a 2025 or 2026 date. One Sitemap directive.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe"><code>curl -sI https://finance.yahoo.com/</code></td><td data-label="Observation">HTTP/2 200, <code>server: ATS</code>, <code>x-sveltekit-page: true</code>, <code>x-envoy-decorator-operation: finance-nimbus--mtls-production-gq1.finance-k8s:4080</code>, <code>cache-control: private, no-store</code>. HSTS max-age 31536000 without <code>includeSubDomains</code> or <code>preload</code>. Homepage body 909KB.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe"><code>dig +short finance.yahoo.com</code></td><td data-label="Observation">CNAME to <code>fo-finance-ycpi-cf.gycpi.b.yahoodns.net</code> → 69.147.80.12, 69.147.80.15 — Yahoo-operated edge, not a third-party CDN.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe">Sitemap census</td><td data-label="Observation">robots.txt points to one sitemap: <code>sitemap_en-us_quotes_index.xml</code> → 234 child sitemaps. 11 sampled children each held exactly 25,000 <code>&lt;loc&gt;</code> entries → 5.85M URLs. Every <code>lastmod</code> across index and children reads 2022-12-29T18:48:49.406Z. URLs fan out per instrument by asset class (equities get <code>/financials/ /holders/ /options/ /analysis/</code> and more, funds ~11 tabs); distinct instruments per child ranged 1,786–3,699, mean 9.89 URLs each. Namespace spans suffixed foreign listings (<code>.L</code>, <code>.TO</code>, <code>.VI</code>, <code>.MU</code>), ISIN-style codes (<code>XS247334629.MU</code>), fund IDs (<code>0P0001HOK1.TO</code>), futures (<code>=F</code>), indices (<code>^HTL</code>) and private companies (<code>PEAI.PVT</code>). <code>/sitemap.xml</code> returns 200 <em>as HTML</em> (the app shell), not XML.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe">User-agent gating on <code>/quote/AAPL/history/</code></td><td data-label="Observation">Same URL, different agents: Googlebot 200 (174KB), bingbot 200 (181KB), Yahoo Slurp 200 (174KB), Chrome <strong>404</strong> (502-byte JS redirect to <code>/?err=404</code>), curl/8.7.1 429, ClaudeBot 429, custom research UA 503. Re-tested interleaved with 8s spacing: Chrome 404 / Googlebot 200 / Chrome 404 / Googlebot 200 — agent-based, not rate-limiting. The Googlebot UA came from an ordinary non-Google IP, so the allowlist does not verify by reverse DNS. Canonicalization compounds it: <code>/quote/AAPL/history</code> 301s to the trailing-slash form that then 404s, while <code>/quote/AAPL/summary/</code> 302s back to <code>/quote/AAPL/</code> — which does return 200 to Chrome with Market Cap, P/E, EPS, Previous Close, day and 52-week ranges, Beta and dividend in HTML plus 44 <code>application/json</code> hydration blocks.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe">Structured-data sample</td><td data-label="Observation">Article page: exactly one JSON-LD <code>NewsArticle</code> with headline, description, datePublished, dateModified, author, creator, provider, publisher, image, thumbnailUrl, articleSection — but <strong>no</strong> <code>articleBody</code>; full OG and Twitter card. Quote page <code>/quote/AAPL/</code>: <strong>zero</strong> JSON-LD, OG only, <code>og:image</code> pointing at <code>pinhole.finance.yahoo.com/chart/AAPL/__screenshot</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe"><code>news-sitemap.xml</code> (undeclared)</td><td data-label="Observation">Not referenced in robots.txt but returns 200 XML: 901 URLs, each with <code>news:publication_date</code>, <code>news:title</code>, <code>news:keywords</code> and an <code>image:loc</code>; dates spanned exactly 3.00 hours. Re-fetch ~10 min later: 897 URLs, 42 added, 46 dropped, 855 overlapping.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe">Article body + provenance</td><td data-label="Observation">A sampled article served 909 words over 29 paragraphs inside <code>&lt;article&gt;</code> with 5 images and auto-linked <code>/quote/TICKER/</code> mentions — no truncation, and it served fine to a plain research UA. 12 random news-sitemap URLs returned CryptoProwl, Business Wire, Simply Wall St., GlobeNewswire, Motley Fool (×3), 24/7 Wall St., Quartz, PR Newswire, CNW Group, Zacks — no Yahoo original.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe"><code>query1.finance.yahoo.com</code></td><td data-label="Observation"><code>/v8/finance/chart/AAPL?range=1d&amp;interval=1d</code> returns 200 JSON with no auth, key or quota challenge — currency, exchange, instrumentType, regularMarketPrice, 52-week high/low, volume, trading calendar. That host's own robots.txt is <code>User-agent: * / Disallow: /</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe">Feeds &amp; licensing artifacts</td><td data-label="Observation"><code>feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL</code> returns 200 XML with 14 items over ~8h, carrying only title, link, description and pubDate — headlines, no body. <code>/llms.txt</code>, <code>/ai.txt</code>, <code>/.well-known/ai.txt</code>, <code>/rsl.xml</code> and <code>/.well-known/rsl.xml</code> all 404; no <code>License:</code> directive in robots.txt on either <code>finance.yahoo.com</code> or <code>www.yahoo.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-15</td><td data-label="Probe">Plans &amp; other surfaces</td><td data-label="Observation"><code>/about/promos/gold/</code> embeds the plan catalogue: Bronze (<code>sku YFIN_BRNZ_MON</code>) 9.95/7.95, Silver 24.95/19.95, Gold (<code>YFIN_GP_FT</code>) 49.95/39.95; annual billing is described as a 20% discount worth up to $120/year, and Gold copy advertises "40+ years of downloadable data". Separately, <code>/videos/</code> and <code>/live/</code> both 200 (Googlebot UA) but appear in no sitemap; <code>/quote/AAPL/earnings/</code> 302s; <code>/quote/*/community/</code> is listed 3,698 times in one child sitemap yet 404s for browser agents.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third party may display, and how fast it churns. "Crawler-gated" means the URL serves content only to Googlebot/bingbot/Slurp user agents (Probe Log).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text — news</td>
+              <td data-label="Objects &amp; est. count">~6.9K articles/day; total archive open. Bodies fully server-rendered (~900 words sampled).</td>
+              <td data-label="Best legitimate path"><code>news-sitemap.xml</code> for discovery, then a normal GET — the only modality that answers a generic user agent.</td>
+              <td data-label="Auth &amp; quota">None technically. ToS §2(c)(ix) forbids automated collection without prior permission.</td>
+              <td data-label="License / display">Provider-owned, not Yahoo's — dedup to the origin publisher instead of licensing here.</td>
+              <td data-label="Freshness">Discoverable for ~3 hours only; poll at ≤3h or lose articles permanently.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text — quote fundamentals</td>
+              <td data-label="Objects &amp; est. count">5.85M URLs over ~590K instruments: history, financials, holders, options, analysis, profile.</td>
+              <td data-label="Best legitimate path">Crawler-gated server render. No public API since the 2017 shutdown; no partner feed published.</td>
+              <td data-label="Auth &amp; quota">No purchasable path exists. Gold ($479.40/yr) grants in-product download, not redistribution rights.</td>
+              <td data-label="License / display">ToS §2(c)(x) specifically bans building a competing "database, archive… data feed… or aggregated data source".</td>
+              <td data-label="Freshness">Daily bars; 256 rows (1 year) per history page. Sitemap <code>lastmod</code> is useless — frozen since 2022.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">~590K instruments keyed by exchange-suffixed ticker; quote summary stats rendered on each <code>/quote/TICKER/</code>.</td>
+              <td data-label="Best legitimate path">1) <code>/quote/TICKER/</code> root — 200 to browsers, the one open structured surface. 2) <code>query1</code> JSON — works unauthenticated but robots-disallowed.</td>
+              <td data-label="Auth &amp; quota">Root page: none. <code>query1</code>: none technically, prohibited by its own robots.txt.</td>
+              <td data-label="License / display">Same ToS §2(c)(x) restriction; no attribution scheme is offered.</td>
+              <td data-label="Freshness">Quotes intraday; profile and share-count metadata churn over weeks.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">~1 hero image per article (901 <code>image:loc</code> entries in one sitemap window), plus generated chart screenshots.</td>
+              <td data-label="Best legitimate path"><code>image:loc</code> in the news sitemap; <code>og:image</code> on both articles and quote pages.</td>
+              <td data-label="Auth &amp; quota">None; CDN hotlink from <code>s.yimg.com</code> / <code>media.zenfs.com</code>.</td>
+              <td data-label="License / display">Third-party provider copyright — the zenfs path encodes the syndicator, not Yahoo.</td>
+              <td data-label="Freshness">Tracks its article; chart screenshots regenerate on demand.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count"><code>/videos/</code> and <code>/live/</code> hubs return 200; corpus size open.</td>
+              <td data-label="Best legitimate path">None found — no sitemap, feed or oEmbed endpoint.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: no documented reuse path.</td>
+              <td data-label="Freshness">Open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio / transcripts</td>
+              <td data-label="Objects &amp; est. count">Earnings-call pages: robots.txt deliberately allows <code>/quote/*/earnings/*-2025-*.html</code> and the 2026 equivalent. Count open.</td>
+              <td data-label="Best legitimate path">Crawl the robots-allowed earnings filenames; the <code>/earnings/</code> tab itself 302s.</td>
+              <td data-label="Auth &amp; quota">Open beyond the allowlisted two years.</td>
+              <td data-label="License / display">Transcript rights normally sit with the vendor; unstated here.</td>
+              <td data-label="Freshness">Event-driven, quarterly per issuer.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / community</td>
+              <td data-label="Objects &amp; est. count">Listed at ~3,698 per child sitemap (≈1 per instrument), so ~590K advertised URLs.</td>
+              <td data-label="Best legitimate path">None: every <code>/quote/*/community/</code> tested 404s for browser agents despite being in the sitemap.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">—</td>
+              <td data-label="Freshness">Effectively closed; treat the sitemap entries as phantom URLs.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Yahoo Finance differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The exchange-suffixed ticker is the whole key: <code>AAPL</code>, <code>CDIS.L</code>, <code>0P0001HOK1.TO</code>, <code>ZWT=F</code>, <code>^HTL</code>, <code>PEAI.PVT</code>. It is stable and printed in every URL, which makes it an unusually good cross-site join. Canonicalize to the trailing-slash form, since the bare path always 301s to it.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Two units, not one. <strong>Instrument</strong> for the quote layer, with an instrument-day sub-record for price history. <strong>Article</strong> for news — but an article here is a copy, so the useful unit is the (provider, original headline) pair used for dedup rather than the Yahoo URL.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>The ticker joins everything: article bodies auto-link <code>/quote/TICKER/</code>, the news sitemap's <code>news:keywords</code> names companies, and earnings filenames embed the symbol. This is the site's real contribution — an entity-tagged news stream over a global instrument namespace.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>For news, Yahoo is not the authority: JSON-LD <code>provider</code> names the real publisher, and a third of the sample were press releases, i.e. paid placement rather than reporting. Trust the provider field over the <code>publisher</code> field and over <code>og:site_name</code>, which both say Yahoo Finance.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The 3-hour news-sitemap window is the binding constraint and the tightest Site Wise has measured. No archive sitemap sits behind it, so anything missed loses its discovery path. Meanwhile the quote sitemap's <code>lastmod</code> has been frozen since December 2022, forcing content-hash change detection.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>The manipulation surface is wire-service placement rather than user spam: anyone can push a press release onto the domain with its authority attached. An index equating domain authority with content quality will systematically over-rank paid small-cap announcements.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>The gated tabs mean Google's index, not the site's own visitors, is the intended reader of the fundamentals corpus — optimised for a reader allowlisted by user-agent string alone. The five hand-picked <code>/compare?comps=</code> URLs are the same instinct applied to comparison pages.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Overwhelmingly navigational-by-ticker plus dated history lookups — queries with one correct answer, so namespace coverage and freshness matter far more than ranking sophistication.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> instrument (with instrument-day price sub-records) for the quote layer; article for news, carrying a provider-dedup key.</li>
+        <li><strong>Primary keys &amp; joins:</strong> exchange-suffixed ticker as the universal key; article joined to instruments via in-body <code>/quote/TICKER/</code> links and <code>news:keywords</code>; earnings objects via symbol + fiscal period parsed from the filename.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>news-sitemap.xml</code> polled every ≤2h — the only open, complete, legitimate feed, ~6.9K articles/day, but it yields duplicate third-party content. 2) <code>/quote/TICKER/</code> root pages — 200 to normal agents and carrying the summary stats; ~590K pages, so a full sweep is the real cost driver. 3) <code>feeds.finance.yahoo.com</code> RSS per ticker — cheap change-detection for watchlist instruments, headlines only. 4) Robots-allowed earnings filenames for the 2025–2026 window. 5) Fundamentals and history tabs — <strong>no legitimate path</strong>; reaching them requires impersonating an allowlisted crawler, so design the index without them.</li>
+        <li><strong>Recrawl cadence:</strong> news sitemap ≤2h (hard requirement); quote roots tiered by liquidity — daily for large caps, monthly for the long tail of funds and foreign listings; ignore sitemap <code>lastmod</code> entirely and diff on content hash.</li>
+        <li><strong>Derivatives to generate:</strong> a provider-normalisation table mapping the 84 observed syndicators to canonical publishers; a press-release classifier to demote wire content; ticker-mention extraction to build the entity-tagged news graph; instrument-namespace concordance (ticker ↔ ISIN ↔ exchange) since the suffix scheme already exposes it.</li>
+        <li><strong>Demo to build:</strong> a news-sitemap window monitor — poll <code>news-sitemap.xml</code> on a timer, persist every URL seen, and plot the eviction rate against the 3-hour window to show exactly how much of the corpus a slower crawler loses. It turns the report's central freshness claim into a live measurement.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The terms name this use case explicitly.</strong> Yahoo's ToS §2(c)(x) prohibits using its content to create a "database, archive… data feed… or aggregated data source that competes with or constitutes a material substitute for the Services" — a finance index is precisely that. This is a stronger, more specific bar than the generic anti-scraping clause in §2(c)(ix).</li>
+        <li><strong>No machine-readable licence exists to rely on.</strong> Yahoo joined the RSL Collective when it launched in September 2025, but as of Aug 15 2026 <code>finance.yahoo.com</code> publishes no <code>rsl.xml</code>, <code>ai.txt</code>, <code>llms.txt</code> or robots <code>License:</code> directive (Probe Log). There is nothing to negotiate against programmatically.</li>
+        <li><strong>The unauthenticated <code>query1</code> endpoint is not a plan.</strong> It answers today with no key, but it is undocumented, robots-disallowed on its own host, and was already withdrawn once in 2017. Any pipeline depending on it inherits an unannounced deprecation.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The crawler allowlist is a soft wall that will harden.</strong> <em>Basis:</em> gating is by user-agent string only — a Googlebot UA from an ordinary non-Google IP got 200 while Chrome got 404 on the same URL (Probe Log). Adding reverse-DNS verification is a small change that would close the fundamentals corpus completely, so treat any access obtained this way as temporary as well as non-compliant.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Ad-funded ownership pushes content behind subscriptions, not toward licensing.</strong> <em>Basis:</em> three paid tiers up to $479.40/year gate 40+ years of downloadable data (Probe Log) while 44 AI and aggregator agents are blocked outright in robots.txt and no bulk path is published — the monetisation path runs through end users, not data customers.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.yahooinc.com/press/yahoo-finance-launches-dedicated-hub-for-ai-news-and-analysis">Yahoo Inc. press release, Jun 1 2026</a> — the 100M+ monthly visitor and #1 US Business/Finance ranking claim, attributed to Comscore Media Metrix Multi-Platform averaged Mar 2025–Feb 2026; also the AI hub's syndication partners (Axios, Fortune, TechCrunch, Fast Company).</li>
+        <li><a href="https://www.apollo.com/insights-news/pressreleases/2021/05/verizon-media-to-be-acquired-by-apollo-funds-130247212">Apollo Global Management, May 3 2021</a> — $5B transaction value, $4.25B cash / $750M preferred split, Verizon's retained 10%; the <a href="https://www.apollo.com/insights-news/pressreleases/2021/09/apollo-funds-complete-acquisition-of-yahoo-161530593">Sep 1 2021 notice</a> confirms the close and the retained stake but omits the terms.</li>
+        <li><a href="https://legal.yahoo.com/us/en/yahoo/terms/otos/index.html">Yahoo Terms of Service</a> — §2(c)(ix) automated-collection prohibition and §2(c)(x) competing-database prohibition.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Yahoo_Finance">Wikipedia: Yahoo Finance</a> — Jan 19 1997 launch date, ownership split, Nov 2023 redesign.</li>
+        <li>Local probes on 2026-08-15 against robots.txt, response headers, DNS, the quote sitemap index and 11 of its children, <code>news-sitemap.xml</code> (twice), 12 sampled article pages, <code>/quote/AAPL/</code> and its tabs under eight user agents, <code>query1.finance.yahoo.com</code>, the per-ticker RSS feed, the Gold promo page, and six licensing-artifact paths. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The instrument catalogue is an SEO asset, not a public dataset. <em>Basis:</em> the history URL serves a year of OHLCV to Googlebot, bingbot and Slurp but 404s to Chrome; no official API since 2017; only five hand-picked comparison URLs are crawl-allowed.</li>
+        <li>The news corpus is a syndication reservoir, not an original archive. <em>Basis:</em> 12 of 12 sampled articles credited third-party providers in JSON-LD, four of them press wires; 84 syndicators across one sitemap window.</li>
+        <li>The crawler allowlist matches user-agent strings without IP verification. <em>Basis:</em> a Googlebot UA from an ordinary non-Google address got 200 where Chrome got 404.</li>
+        <li>Ads and subscriptions, not data licensing, monetise the corpus. <em>Basis:</em> three tiers to $479.40/year gate downloadable history, against 44 AI/aggregator agents at <code>Disallow: /</code> and no published bulk path.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Exact distinct-instrument count — ~590K extrapolates a 9.89 URLs/instrument mean from 11 of 234 children with a 6.76–14.00 spread. Closeable by parsing all 234 (~1.2GB) and deduplicating symbols.</li>
+        <li>Total news archive size, and whether any discovery path predates the 3-hour window — closeable by finding an archive sitemap or running the window-monitor demo for months.</li>
+        <li>Whether <code>/videos/</code> and <code>/live/</code> expose any feed, count or embed path — nothing discoverable from robots.txt or the sitemap index.</li>
+        <li>Depth and rights status of earnings-call transcripts, including whether pre-2025 filenames exist behind the robots allowlist — closeable by enumerating the allowed pattern across a seed of issuers.</li>
+        <li>Whether Yahoo will publish RSL terms for the domain, and at what price — no artifact exists despite membership since Sep 2025.</li>
+        <li>Yahoo Finance revenue and subscriber counts — Apollo-owned and private, so no segment disclosure exists.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
