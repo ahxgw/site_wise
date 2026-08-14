@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>discord.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-08-14</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>discord.com</h1>
+      <p class="lede">Discord's vast conversation corpus is uncrawlable by design; its indexable surface is a 51K-page directory shell plus exactly 265 public announcement posts.</p>
+      <div class="tag-row">
+        <span class="tag">Communications</span>
+        <span class="tag">Community chat</span>
+        <span class="tag">Closed corpus</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Discord is a real-time chat platform organised into user-run servers ("guilds") of text, voice, video and forum channels. It launched in May 2015 as a gaming voice tool and became general-purpose community infrastructure. It remains private, monetising through Nitro subscriptions, server boosts, in-app commerce, and an advertising business built out across 2025&ndash;2026 (Quests, Orbs, mobile ad formats).</p>
+      <p>For an index builder Discord is the sharpest example of a corpus that is enormous, current, and almost entirely out of reach. Conversation lives at <code>/channels/…</code>, which robots.txt disallows and which requires an authenticated session regardless. What is crawlable is a directory shell: listing pages for servers that opted into Discovery, plus an app directory — a catalogue of communities, not of what they say. The one exception is small and precise: 265 announcement posts from 8 partner-scale servers are published as full public pages with message text in JSON-LD (Probe 9). The interesting asymmetry is that Discord's robots.txt carries no AI-crawler directives at all — it does not need them, because architecture already does the work robots.txt does elsewhere.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd>discord.com</dd></div>
+        <div><dt>Canonical URL</dt><dd>https://discord.com</dd></div>
+        <div><dt>Category</dt><dd>Communications / community chat</dd></div>
+        <div><dt>Grouped hosts</dt><dd>discordapp.com (legacy), cdn.discordapp.com (media), docs.discord.com (developer docs), support.discord.com, support-dev.discord.com</dd></div>
+        <div><dt>Owner</dt><dd>Discord Inc. — private; no public financials (see Probe Log, EDGAR)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Product launched May 2015; founders Jason Citron and Stanislav Vishnevskiy. <a href="https://discord.com/company">Source</a> <span class="evidence verified">verified</span></dd></div>
+        <div><dt>Leadership</dt><dd>Humam Sakhnini appointed CEO 2025-04-23, effective 2025-04-28; Citron moved to advisor and board. <a href="https://discord.com/press-releases/discord-appoints-new-ceo-humam-sakhnini">Source</a> <span class="evidence verified">verified</span></dd></div>
+        <div><dt>Business model</dt><dd>Nitro subscriptions, server boosts, commerce, advertising</dd></div>
+        <div><dt>Scale anchor</dt><dd>90M+ daily active users — as of Q4 2025. <a href="https://discord.com/company">Source</a> <span class="evidence verified">verified</span></dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Value, as-of date, source, evidence tag. Figures without a source live in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Daily active users</dt>
+          <dd>90M+ — as of Q4 2025. <a href="https://discord.com/company">discord.com/company</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Crawlable server pages</dt>
+          <dd>32,252 URLs in the servers sitemap — as of 2026-08-14, sitemap generated 2026-08-13. Probe 3. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Crawlable app pages</dt>
+          <dd>18,392 unique application IDs (36,786 sitemap URLs across two URL forms, plus 2 index pages) — as of 2026-08-14. Probe 3; division calculated by Site Wise. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Public announcement pages</dt>
+          <dd>265 message pages plus 8 server index pages, across 8 distinct servers — as of 2026-08-14. Probe 9. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Total crawlable surface</dt>
+          <dd>51,087 pages (32,252 servers + 18,392 apps + 273 announcements + 164 trending-games + 6 category) — as of 2026-08-14. Sum calculated by Site Wise from Probes 3 and 9. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured-data coverage, server pages</dt>
+          <dd>34 of 35 sampled pages carried exactly one JSON-LD block; the miss returned HTTP 404 — as of 2026-08-14. Probes 4 and 5. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Member-count distribution, Discovery servers</dt>
+          <dd>25-page stratified sample: min 1,230, median 8,365, max 188,303 — as of 2026-08-14. Probe 5; percentiles calculated by Site Wise. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Unauthenticated invite API payload</dt>
+          <dd>12 top-level fields, 13 guild fields, 20 profile fields, 54 feature flags, 168 hourly activity bins — as of 2026-08-14. Probe 6. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Bot API global rate limit</dt>
+          <dd>50 requests/second per bot token (or per IP when unauthenticated) — documented as of 2026-08-14. <a href="https://docs.discord.com/developers/topics/rate-limits">Discord docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Invalid-request ban threshold</dt>
+          <dd>10,000 responses of 401/403/429 per 10 minutes triggers a temporary IP-level block — documented as of 2026-08-14. <a href="https://docs.discord.com/developers/topics/rate-limits">Discord docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Security incident scope</dt>
+          <dd>~70,000 users may have had government-ID photos exposed via a third-party customer-service vendor; access ran 58 hours from 2025-09-20, disclosed 2025-10-03. <a href="https://discord.com/press-releases/update-on-security-incident-involving-third-party-customer-service">Discord</a>, <a href="https://techcrunch.com/2025/10/09/discord-suffers-data-breach-impacting-at-least-70000-users/">TechCrunch</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Age-verification exposure</dt>
+          <dd>Discord states ~90% of users will not need to verify; global rollout moved from March 2026 to H2 2026 after backlash — as of 2026-02-24. <a href="https://techcrunch.com/2026/02/24/discord-delays-global-rollout-of-age-verification-after-backlash/">TechCrunch</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Blog feed depth</dt>
+          <dd>10 items in the RSS feed, newest dated 2026-08-11 — as of 2026-08-14. Probe 8. <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made for this report on 2026-08-14 (see the <a href="../../docs/methodology.html">probe playbook</a>). These rows are the only ones that may back a <em>verified</em> tag without an external link.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>1</td><td>2026-08-14</td>
+              <td><code>curl -sL https://discord.com/robots.txt</code></td>
+              <td>No AI-crawler directives at all — no GPTBot, ClaudeBot, Google-Extended or Applebot-Extended lines; the only blanket <code>Disallow: /</code> targets <code>User-agent: nsa</code>. Allows <code>/invite</code>, <code>/api/v*/invite</code>, <code>/api/v*/discovery</code>, <code>/api/v*/applications</code>, <code>/api/v*/store</code>; disallows <code>/channels</code>, <code>/api</code>, <code>/widget</code>, <code>/profile/</code>, <code>/oauth2</code>. Six sitemap/feed pointers.</td>
+            </tr>
+            <tr>
+              <td>2</td><td>2026-08-14</td>
+              <td><code>curl -sI https://discord.com/</code> and <code>dig +short discord.com</code></td>
+              <td>Cloudflare (five 162.159.x addresses), HSTS <code>preload</code>, <code>x-frame-options: DENY</code>, long CSP, <code>cf-cache-status: HIT</code>. Preconnect hints and <code>surrogate-key: prod-wf1.discord.com</code> place the marketing shell on Webflow, separate from the app.</td>
+            </tr>
+            <tr>
+              <td>3</td><td>2026-08-14</td>
+              <td>Sitemap census across all four sitemap indexes</td>
+              <td>Each index points to exactly one child. Servers: 32,252 <code>&lt;loc&gt;</code>, zero <code>&lt;lastmod&gt;</code>, filename stamped <code>20260813-234833</code>. App directory: 36,786 <code>&lt;loc&gt;</code> &rarr; 18,392 unique app IDs, each published at both <code>/application-directory/{id}</code> and <code>/discovery/applications/{id}</code>. Parent-search: 6 category pages. Rows 9 covers the other two.</td>
+            </tr>
+            <tr>
+              <td>4</td><td>2026-08-14</td>
+              <td>Structured-data sample, 10 server pages at fixed stride</td>
+              <td>9 of 10 returned one JSON-LD block: <code>ProfilePage</code> &rarr; <code>Organization</code> with <code>identifier</code> (guild snowflake), <code>image</code> (CDN splash) and <code>interactionStatistic.userInteractionCount</code> as a live member count, plus a <code>BreadcrumbList</code> naming the Discovery category. The tenth returned HTTP 404 despite sitting in a sitemap generated the previous night.</td>
+            </tr>
+            <tr>
+              <td>5</td><td>2026-08-14</td>
+              <td>Member-count distribution, 25 further server pages</td>
+              <td>25 of 25 carried parseable JSON-LD. Counts ranged 1,230 to 188,303, median 8,365; none fell below 1,000. Googlebot and generic user agents returned byte-identical pages (differing only in CSP nonce), so no UA gating on this surface.</td>
+            </tr>
+            <tr>
+              <td>6</td><td>2026-08-14</td>
+              <td><code>curl https://discord.com/api/v10/invites/discord-developers?with_counts=true</code></td>
+              <td>HTTP 200, no auth. Returns guild ID, name, description, icon/banner/splash hashes, 54 feature flags, vanity URL, verification and NSFW levels, boost count and tier, <code>approximate_member_count</code>, <code>approximate_presence_count</code>, and <code>liveliness.msg_activity_bins</code> — 168 integers, one per hour of the past week, max value exactly 100. Two calls ~2 minutes apart differed (296,703&rarr;296,710 members; 55,197&rarr;54,987 present), so counts are live, not cached.</td>
+            </tr>
+            <tr>
+              <td>7</td><td>2026-08-14</td>
+              <td>Adjacent endpoints: widget, discovery, attachment CDN</td>
+              <td><code>/api/guilds/{id}/widget.json</code> &rarr; HTTP 403 <code>{"message":"Widget Disabled","code":50004}</code> (opt-in per guild). <code>/api/v10/discovery/categories</code> &rarr; HTTP 401. A media object on <code>cdn.discordapp.com</code> served HTTP 200 with <code>access-control-allow-origin: *</code> and <code>cache-control: public, max-age=2678400</code>.</td>
+            </tr>
+            <tr>
+              <td>8</td><td>2026-08-14</td>
+              <td>Feeds and llms.txt across hosts</td>
+              <td><code>discord.com/blog/rss.xml</code>: 10 items, newest 2026-08-11. <code>discord.com/llms.txt</code> &rarr; HTTP 404, but <code>docs.discord.com/llms.txt</code> &rarr; HTTP 200, 29.2KB, 171 lines of <code>.md</code> documentation URLs.</td>
+            </tr>
+            <tr>
+              <td>9</td><td>2026-08-14</td>
+              <td>Announcements and trending-games sitemaps, plus structured data on one announcement page</td>
+              <td>Announcements: 273 URLs — 265 at <code>/announcements/{guild_id}/{message_id}</code> plus 8 server index pages, across only 8 distinct servers. A sampled post carried <code>SocialMediaPosting</code> JSON-LD with the full <code>articleBody</code>, <code>headline</code>, <code>author.name</code>, publisher guild ID, <code>datePublished</code>, <code>dateModified</code> and a <code>ReactAction</code> count — real message content, publicly crawlable. Trending-games: 164 URLs, 144 of them category pages, the rest index or dated weekly snapshots.</td>
+            </tr>
+            <tr>
+              <td>10</td><td>2026-08-14</td>
+              <td><code>curl -sL https://docs.discord.com/robots.txt</code></td>
+              <td>Carries <code>Content-Signal: ai-train=yes, search=yes, ai-input=yes</code> — an explicit training grant, the inverse of the usual large-platform posture. Only <code>/cdn-cgi/</code> and <code>/_next/</code> disallowed.</td>
+            </tr>
+            <tr>
+              <td>11</td><td>2026-08-14</td>
+              <td>Help-center reachability: support.discord.com, support-dev.discord.com</td>
+              <td>Four articles (Server Discovery eligibility, Discovery Guidelines, Developer Policy, Developer Terms) returned HTTP 403 to both a declared research agent and a Chrome UA string. Discord's authoritative policy text is thus unreadable by machine, while its API reference invites crawlers.</td>
+            </tr>
+            <tr>
+              <td>12</td><td>2026-08-14</td>
+              <td>EDGAR company search, <code>company=discord&amp;type=S-1</code></td>
+              <td>Zero filings (feed dated 2026-08-13). No public registration statement exists, so no audited revenue, user or server figures are available.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, auth and quota cost, display rights, and churn rate.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; count</th><th>Best path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Messages (general)</td>
+              <td>The main corpus. No public count.</td>
+              <td>None. <code>/channels</code> is disallowed and session-gated; the bot API reaches only guilds that installed your bot.</td>
+              <td>Bot token + per-guild install + Message Content privileged intent.</td>
+              <td>Developer Policy bars mining/scraping and bars commercialising API Data (see Sources).</td>
+              <td>Continuous; edits and deletions are retroactive.</td>
+            </tr>
+            <tr>
+              <td>Messages (announcements)</td>
+              <td>265 posts from 8 servers — the only public message content on the site.</td>
+              <td>Public crawl via the announcements sitemap; full text in <code>SocialMediaPosting</code> JSON-LD.</td>
+              <td>None.</td>
+              <td>Author-attributed posts from brand and game servers. Snippet and link; the publisher is a third party.</td>
+              <td><code>dateModified</code> is exposed per post, so edits are detectable without refetching text.</td>
+            </tr>
+            <tr>
+              <td>Trending games</td>
+              <td>164 pages: 144 category pages plus dated weekly snapshots.</td>
+              <td>Public crawl via the trending-games sitemap.</td>
+              <td>None.</td>
+              <td>Discord-authored rankings; game titles are third-party marks.</td>
+              <td>Weekly — snapshot URLs are dated at 7-day intervals (Probe 9).</td>
+            </tr>
+            <tr>
+              <td>Server directory text</td>
+              <td>32,252 listing pages: name, description, category.</td>
+              <td>Public crawl via servers sitemap.</td>
+              <td>None.</td>
+              <td>User-authored blurbs; no reuse grant beyond snippet/link.</td>
+              <td>Sitemap regenerated nightly; no <code>lastmod</code>. Dead entries observed same-day (Probe 4).</td>
+            </tr>
+            <tr>
+              <td>App directory text</td>
+              <td>18,392 apps: name, description, publisher.</td>
+              <td>Public crawl via app-directory sitemap.</td>
+              <td>None.</td>
+              <td>Developer-authored; OG tags present, no JSON-LD.</td>
+              <td>Nightly sitemap regeneration.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Guild records: ID, features, boost tier, member and presence counts, 168-bin activity histogram.</td>
+              <td>Unauthenticated <code>/api/v10/invites/{code}?with_counts=true</code>, explicitly robots-allowed.</td>
+              <td>None, but 50 req/s and a 10K-invalid-per-10-min IP ban apply. Requires knowing an invite code.</td>
+              <td>Same Developer Policy limits apply to API Data.</td>
+              <td>Live per request; activity bins stamped hourly.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Guild icons, banners, splashes; app icons. Bounded by the 51K-page directory.</td>
+              <td><code>cdn.discordapp.com</code> paths built from hashes in JSON-LD or the invite API.</td>
+              <td>None for directory art; CORS is open.</td>
+              <td>Third-party artwork. Hotlink or thumbnail; do not re-host in bulk.</td>
+              <td>31-day cache TTL; hash changes on update, so the hash is the version key.</td>
+            </tr>
+            <tr>
+              <td>Media, audio, video, comments</td>
+              <td>Channel attachments; voice and Stage audio; screen shares. No public reply or rating surface exists at all.</td>
+              <td>None. Attachment URLs are unguessable and channel-scoped; voice is never persisted to a retrievable object.</td>
+              <td>Unreachable at any tier.</td>
+              <td>Out of scope for indexing.</td>
+              <td>Voice is ephemeral by design.</td>
+            </tr>
+            <tr>
+              <td>Documentation</td>
+              <td>Developer docs, 171 entries enumerated in llms.txt.</td>
+              <td><code>docs.discord.com/llms.txt</code> &rarr; per-page <code>.md</code> URLs.</td>
+              <td>None.</td>
+              <td><code>ai-train=yes, search=yes, ai-input=yes</code> (Probe 10). The one surface with an affirmative grant.</td>
+              <td>Ships with API releases.</td>
+            </tr>
+            <tr>
+              <td>Blog / announcements</td>
+              <td>10 items in feed; press releases separately listed.</td>
+              <td>RSS at <code>/blog/rss.xml</code>.</td>
+              <td>None.</td>
+              <td>First-party editorial.</td>
+              <td>Roughly weekly; feed truncates to 10, so poll faster than the publish rate or lose items.</td>
+            </tr>
+            <tr>
+              <td>Help-center articles</td>
+              <td>Support and developer policy corpus.</td>
+              <td>No machine path — HTTP 403 to non-browser clients (Probe 11). <span class="evidence open">open</span></td>
+              <td>n/a</td>
+              <td>n/a</td>
+              <td>n/a</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Discord departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>No AI-crawler stance to read</h4>
+          <p>The default assumption is that robots.txt blocks AI crawlers and the report notes deltas. Discord has no such lines at all (Probe 1), and its docs host affirmatively grants training rights (Probe 10). Read this as architecture substituting for policy: the valuable corpus was never on a crawlable URL, so there is nothing for robots.txt to defend. The binding constraint is the Developer Policy, not the crawl file.</p>
+        </div>
+        <div>
+          <h4>The two-track split collapses</h4>
+          <p>Methodology expects a curated SEO sliver plus a metered API. Discord has the sliver — 51.1K pages — but the API track does not lead to content: a bot only sees guilds that installed it, so there is no coverage ceiling to raise by paying. No credential tier turns Discord into a crawlable corpus.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Snowflake IDs are the real key and embed a creation timestamp. Directory URLs are <code>slug-{snowflake}</code>, and the slug is derived from a mutable server name — index on the trailing snowflake and treat the slug as a label. Apps are deliberately dual-published at two paths (Probe 3); canonicalise to <code>/application-directory/{id}</code> or you double-count 18,392 objects.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit &amp; authoritative field</h4>
+          <p>The community, not the page or the message: a Discord result answers "which server should I join for X". Across the 32K directory the self-written description is the only topical text and it is promotional, so ranking should lean on the measured fields — member count, presence ratio, the 168-bin histogram — which are far harder to fake. Announcement pages invert this: <code>articleBody</code> is genuine prose, so index those 265 at full text and the directory as metadata.</p>
+        </div>
+        <div>
+          <h4>Freshness, staleness &amp; spam</h4>
+          <p>Two clocks: listing text is near-static, while counts and activity are live per request (Probe 6). Sitemaps carry no <code>lastmod</code> and already contain dead URLs within a day (Probe 4), so treat one as a candidate set to verify, not a change feed. The ~1,000-member Discovery floor pre-filters the directory, so listing spam is milder than an open UGC index; the real failure mode is servers that cleared the bar once and have since emptied, which the presence-to-member ratio detects.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>In-app search covers only servers the user has joined, so cross-server discovery has no native answer and users leave for external search and third-party server lists. That gap is the actual retrieval opportunity here — and it is the reason the directory is SEO-indexable at all.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the guild, keyed by snowflake. One record per server carrying description, category breadcrumb, member and presence counts, boost tier, feature flags, activity histogram, and icon/banner hashes. A second, smaller unit for apps.</li>
+        <li><strong>Primary keys &amp; joins:</strong> guild snowflake joins the directory page, the invite API record, and CDN asset paths built from the icon/banner/splash hashes. Application snowflake joins the two app URL forms. The vanity URL code is a soft alias — transferable, so never a primary key.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) servers sitemap &rarr; 32,252 pages, no auth, gives text plus JSON-LD, ceiling is Discovery-eligible servers only; 2) invite API on vanity codes harvested from those pages, no auth, adds live counts and the activity histogram, ceiling is 50 req/s and only servers with a resolvable code; 3) app-directory sitemap &rarr; 18,392 apps, no auth; 4) announcements sitemap &rarr; 265 posts with full message text, no auth, ceiling is 8 participating servers; 5) docs llms.txt, trending-games and blog RSS for first-party text. There is no sixth path — general message content has no legitimate bulk route at any price.</li>
+        <li><strong>Recrawl cadence:</strong> directory text monthly; member and presence counts weekly for the head, monthly for the tail; sitemap diffed nightly to catch additions and 404s. Docs on release; blog RSS every few days, since the feed holds only 10 items.</li>
+        <li><strong>Derivatives to generate:</strong> category and topic labels from description text; an activity score from the 168-bin histogram (peak, mean, and dead-hours count); a liveness flag from presence ÷ members; embeddings over name plus description for semantic community search. Skip OCR and ASR entirely — there is no qualifying media.</li>
+        <li><strong>Demo to build:</strong> "find me an active server about X" over the full 32K directory, ranked by embedding similarity and then re-ranked by the measured activity score — the one claim worth demonstrating is that the histogram beats the self-description at predicting whether a community is actually alive.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The invite API is the fragile leg.</strong> It is the only unauthenticated source of live counts and the histogram, and <code>liveliness</code> is undocumented on an endpoint whose robots allowance could narrow without notice. Anything downstream should degrade to listing-page JSON-LD.</li>
+        <li><strong>Age verification hardens the shell.</strong> Rollout slipped to H2 2026; if verification reaches directory or invite resolution for age-restricted communities, part of the crawlable surface moves behind a login.</li>
+        <li><strong>Policy, not robots.txt, is the enforceable limit.</strong> "You may not mine or scrape any data, content, or information available on or through Discord services" is broad enough to cover directory crawling even where robots.txt allows it, and the authoritative text sits behind a 403 (Probe 11). Any programme here needs a written read from counsel, not a robots parser.</li>
+        <li><strong>An IPO would change disclosure, not access.</strong> A public S-1 would settle revenue and server counts without opening the corpus; public-company scrutiny of data handling tends to tighten third-party access.</li>
+        <li><strong>Discovery eligibility is a moving floor.</strong> The indexable set is defined by a threshold Discord sets unilaterally; raising it shrinks the corpus overnight with no signal but sitemap shrinkage. Alert on it.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://discord.com/company">Discord — About</a>: 90M+ DAU (Q4 2025), founders, launch dates.</li>
+        <li><a href="https://discord.com/press-releases/discord-appoints-new-ceo-humam-sakhnini">Discord press release, 2025-04-23</a>: CEO appointment.</li>
+        <li><a href="https://discord.com/press-releases/update-on-security-incident-involving-third-party-customer-service">Discord press release, 2025-10-03</a>: third-party customer-service incident.</li>
+        <li><a href="https://discord.com/newsroom">Discord newsroom</a>: advertising and commerce launches across 2025&ndash;2026 (Orbs 2025-07-14, ad formats 2025-03-20 and 2025-10-02, commerce 2025-12-02, teen default 2026-02-09).</li>
+        <li><a href="https://docs.discord.com/developers/topics/rate-limits">Discord developer docs — Rate Limits</a>: 50 req/s global limit, <code>X-RateLimit-*</code> headers, invalid-request ban threshold.</li>
+        <li><a href="https://raw.githubusercontent.com/discord/discord-api-docs/48d3c2d324796d8236355262ace3b22c1d29acb0/docs/policies_and_agreements/Developer_Policy.md">Discord Developer Policy</a>, read at a pinned commit in Discord's own docs repository because the live copy is 403-blocked (Probe 11): scraping ban, purpose limitation, no commercialisation of API Data.</li>
+        <li><a href="https://techcrunch.com/2026/02/24/discord-delays-global-rollout-of-age-verification-after-backlash/">TechCrunch, 2026-02-24</a>: age-verification delay and the ~90% figure. <a href="https://techcrunch.com/2026/01/07/discords-ipo-could-happen-in-march/">TechCrunch, 2026-01-07</a>: reported confidential IPO filing. <a href="https://techcrunch.com/2025/10/09/discord-suffers-data-breach-impacting-at-least-70000-users/">TechCrunch, 2025-10-09</a>: breach scope.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Discovery listing requires roughly 1,000 members. <em>Basis:</em> Probe 5 — across 25 pages sampled at fixed stride, the minimum was 1,230 and none fell below 1,000, which is what a hard floor looks like in a stratified sample. Discord's eligibility article is 403-blocked (Probe 11), so the exact rule is unconfirmed.</li>
+        <li>The crawlable directory is a small fraction of all servers. <em>Basis:</em> 32,252 listed (Probe 3) against 90M+ daily active users. Even at hundreds of members per community the listed set is a sliver.</li>
+        <li>The marketing site is served from Webflow, separately from the app. <em>Basis:</em> Probe 2 — <code>surrogate-key: prod-wf1.discord.com</code> plus preconnect/preload hints at <code>cdn.prod.website-files.com</code>.</li>
+        <li><code>liveliness.msg_activity_bins</code> is a one-week hourly activity histogram. <em>Basis:</em> Probe 6 — exactly 168 integers (7&times;24) beside a <code>last_updated_ts</code>, under a field named <code>msg_activity</code>. The unit is undocumented.</li>
+        <li>CDN asset hashes act as version keys. <em>Basis:</em> Probe 7 — a 31-day <code>max-age</code> on a hashed path means a changed icon must mint a new hash, since the old URL stays cached.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many servers exist, and how many are active? No official figure is published; EDGAR returns nothing (Probe 12). A public S-1 or a company post would close it.</li>
+        <li>What is Discord's revenue? Third-party estimates conflict (Sacra put ARR near $725M entering 2025; aggregators cite lower figures) and none is auditable. Only a public S-1 closes this.</li>
+        <li>What unit are the <code>msg_activity_bins</code> integers — raw message counts or a normalised 0&ndash;100 index? The observed series peaks at exactly 100 once, hinting at normalisation without establishing it. Sampling guilds of very different sizes would distinguish the two.</li>
+        <li>Is the servers sitemap complete or a capped sample? Compare its count against paginated <code>/servers</code> category totals over several days.</li>
+        <li>What are the Discovery eligibility rules in Discord's own words? The support articles 403 automated clients (Probe 11); a browser session or archived snapshot would settle it.</li>
+        <li>Does any licensing path exist for message content — research programme or partner access? Nothing appears in the developer docs; a direct inquiry to developer relations would answer it.</li>
+        <li>Why do only 8 servers publish public announcements, and is the surface growing? The set is small enough to look like a partner pilot. Diffing the announcements sitemap weekly is the best leading indicator that Discord will expose message content to the open web.</li>
+        <li>Are announcement pages a durable archive or a rolling window? With only 265 posts it is unclear whether old ones are removed. Re-fetching today's URL set in 90 days would settle it.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
