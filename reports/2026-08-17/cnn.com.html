@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cnn.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-08-17</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>cnn.com</h1>
+      <p class="lede">CNN publishes full article text in JSON-LD on every paywalled page, ships 4MB of HTML to deliver it, and abandoned its RSS feeds in 2023.</p>
+      <div class="tag-row">
+        <span class="tag">News</span>
+        <span class="tag">Broadcast + digital</span>
+        <span class="tag">Metered paywall</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>CNN is the original 24-hour cable news network, now a digital news site with a metered paywall over a free ad-supported core. It matters to an index builder for one reason: it is a paywalled publisher that still emits the complete article body as machine-readable <code>articleBody</code> in JSON-LD on every article page — the Google "flexible sampling" bargain made unusually literal. The question is not whether CNN's text is reachable but what it costs to reach: ~4MB of single-page-app HTML per 470-word story. Meanwhile the corporate ground is moving: owner Warner Bros. Discovery agreed in February 2026 to a Paramount Skydance takeover, shareholder-approved in April and still in litigation, so any contract signed with "CNN" today may be administered by a different company within a year.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd>cnn.com</dd></div>
+        <div><dt>Canonical URL</dt><dd>https://www.cnn.com/ (apex 301s to www — see Probe Log)</dd></div>
+        <div><dt>Category</dt><dd>General news</dd></div>
+        <div><dt>Grouped hosts</dt><dd>www.cnn.com, edition.cnn.com, transcripts.cnn.com, media.cnn.com, rss.cnn.com</dd></div>
+        <div><dt>Owner</dt><dd>Warner Bros. Discovery — <code>OWNERDOMAIN=wbd.com</code> declared in CNN's own ads.txt (Probe Log) <span class="evidence verified">verified</span></dd></div>
+        <div><dt>Founded</dt><dd>1980-06-01, per <code>foundingDate</code> in CNN's own JSON-LD publisher block (Probe Log) <span class="evidence verified">verified</span></dd></div>
+        <div><dt>Business model</dt><dd>Display advertising + metered subscription (Basic, All Access) + cable carriage</dd></div>
+        <div><dt>Scale anchor</dt><dd>~327K article URLs in the public sitemap tree (sitemap census, Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <dl class="fact-list">
+        <div>
+          <dt>Article URLs in sitemap tree</dt>
+          <dd>~327K — as of 2026-08-17. Sitemap census: 1,728 child sitemaps, 24 sampled, mean 189 URLs. Calculated by Site Wise. <span class="evidence inferred">inferred</span> <em>Basis:</em> extrapolation from a 24-of-1,728 child-sitemap sample; see Probe Log for the sampled counts.</dd>
+        </div>
+        <div>
+          <dt>Video URLs in sitemap tree</dt>
+          <dd>~210K — as of 2026-08-17. 1,580 child sitemaps, 8 sampled, mean 133. Calculated by Site Wise. <span class="evidence inferred">inferred</span> <em>Basis:</em> same sitemap census method, smaller sample.</dd>
+        </div>
+        <div>
+          <dt>Gallery URLs</dt>
+          <dd>~24K — as of 2026-08-17. 1,584 child sitemaps, mean 15. Calculated by Site Wise. <span class="evidence inferred">inferred</span> <em>Basis:</em> sitemap census sample of 8 children.</dd>
+        </div>
+        <div>
+          <dt>Ticker entity pages</dt>
+          <dd>5,671 — as of 2026-08-17. Exact <code>&lt;loc&gt;</code> count in <code>/sitemap/markets/stocks.xml</code>, a flat urlset (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Article page weight</dt>
+          <dd>4.19MB raw / 818KB gzipped to deliver a 470-word story — measured 2026-08-17 via curl (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Transcript page weight</dt>
+          <dd>28.9KB HTML for 22.4K characters of speech text — measured 2026-08-17 via curl (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sample video asset size</dt>
+          <dd>162.6MB for one 1080p news clip, fetched unauthenticated over HTTP Range (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured-data coverage</dt>
+          <dd>6 of 6 sampled news URLs carried exactly one JSON-LD block with full <code>articleBody</code> — sampled 2026-08-17 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Basic subscription</dt>
+          <dd>$3.99/mo or $29.99/yr, launched 2024-10-01. <a href="https://www.hollywoodreporter.com/business/business-news/cnn-launches-paywall-digital-1236018756/">Hollywood Reporter</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>All Access subscription</dt>
+          <dd>$6.99/mo or $69.99/yr, launched 2025-10-28. <a href="https://www.cnn.com/2025/10/28/media/cnn-all-access-subscriptions-service">CNN Business</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>US unique visitors</dt>
+          <dd>90.9M — July 2025, down 31% year over year; Fox News Digital passed CNN that month at 92.4M. Comscore, via <a href="https://thedesk.net/2025/08/fox-news-july-2025-comscore-report/">The Desk</a>. Third-party panel estimate, not a CNN figure. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Paramount Skydance offer</dt>
+          <dd>$31/share, ~$111B including debt; deemed superior 2026-02-26, shareholder-approved April 2026. <a href="https://en.wikipedia.org/wiki/Proposed_acquisition_of_Warner_Bros._Discovery_by_Paramount_Skydance">Deal record</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made 2026-08-17 for this report.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-08-17</td><td><code>curl -sL https://www.cnn.com/robots.txt</code></td><td>129 lines, 3,456 bytes. 13 <code>Sitemap:</code> lines. One block of ~90 named crawlers sharing a single <code>Disallow: /</code> — ClaudeBot, Claude-SearchBot, GPTBot, OAI-SearchBot, CCBot, Google-Extended, GoogleOther, Applebot-Extended, PerplexityBot, Bytespider, Diffbot, FacebookBot, Scrapy, news-please, NewsNow, <strong>Archive.org_bot</strong>. <code>User-agent: *</code> blocks ~35 legacy paths plus <code>/search</code> and <code>/api/</code>. The only <code>Allow:</code> in the file is <code>/partners/ipad/live-video.json</code>.</td></tr>
+            <tr><td>2026-08-17</td><td><code>curl -sI https://www.cnn.com/</code></td><td>HTTP/2 200, <code>content-length: 5098021</code> (5.1MB homepage). <code>cache-control: max-age=60</code>. Fastly (<code>via: 1.1 varnish</code>, <code>x-served-by: cache-chi…, cache-pao…</code>). Sets <code>geoData=san leandro|CA|94578|US|…|37.700|-122.120</code> — city and lat/long echoed back in a cookie. CSP present but <code>script-src</code> allows <code>'unsafe-inline' *</code>. Apex <code>cnn.com</code> returns 301 to www.</td></tr>
+            <tr><td>2026-08-17</td><td><code>dig +short www.cnn.com</code></td><td><code>cnn-tls.map.fastly.net</code> → 199.232.163.5; apex resolves to four 151.101.x.5 Fastly anycast addresses.</td></tr>
+            <tr><td>2026-08-17</td><td>Sitemap census</td><td><code>article.xml</code> is a <em>sitemapindex</em> of 1,728 children keyed <code>section/YYYY/MM</code>, spanning 2010-03 to 2026-08 across 41 sections. Sampled 24 children: counts ranged 0 (cnn10) to 517 (world 2013-07, politics 2015-04), mean 189. <code>video.xml</code> 1,580 children, <code>gallery.xml</code> 1,584, <code>live-story.xml</code> 543. Flat urlsets: <code>section.xml</code> 195, <code>tve.xml</code> 419, <code>markets/stocks.xml</code> 5,671, <code>news.xml</code> 90.</td></tr>
+            <tr><td>2026-08-17</td><td>Structured-data sample (6 URLs from <code>news.xml</code>)</td><td>6/6 carried exactly one <code>application/ld+json</code> block. Types: 5 <code>NewsArticle</code>, 1 <code>LiveBlogPosting</code> (nesting 26 <code>BlogPosting</code> updates). Every block had <code>articleBody</code>, <code>wordCount</code>, <code>datePublished</code>, <code>dateModified</code>, <code>articleSection</code>, <code>inLanguage</code>, <code>thumbnailUrl</code>. Open Graph was thin: only <code>og:image</code> and <code>og:url</code> — no <code>og:title</code>, no <code>og:description</code>.</td></tr>
+            <tr><td>2026-08-17</td><td>Payload measurement</td><td>Ebola article: 4,186,620 bytes raw, 817,992 gzipped, carrying a 2,995-character <code>articleBody</code> (470 words). Stock page <code>/markets/stocks/AAPL</code>: 5.5MB, and its only JSON-LD is a bare <code>WebPage</code> with <code>dateModified</code> three days stale — no quote, price, or <code>FinancialProduct</code> markup at all.</td></tr>
+            <tr><td>2026-08-17</td><td>Paywall flag check (4 page types)</td><td>All three sampled articles — including the <em>live blog</em>, which CNN's own launch coverage said was excluded from the paywall — declare <code>"isAccessibleForFree": false</code> plus <code>hasPart</code> with <code>cssSelector: ".article__content"</code>. The full body is present in JSON-LD regardless. The video page carries a <code>VideoObject</code> with no paywall field.</td></tr>
+            <tr><td>2026-08-17</td><td>Video asset reachability</td><td><code>video.xml</code> children publish <code>&lt;video:content_loc&gt;</code> pointing at direct MP4s. Range request to one → 302 to <code>clips-mp4-aka.warnermediacdn.com</code> → HTTP 206, <code>content-type: video/mp4</code>, <code>content-length: 162571592</code>, <code>access-control-allow-origin: *</code>, AkamaiNetStorage. No auth, no token, no referer check.</td></tr>
+            <tr><td>2026-08-17</td><td>Feed check</td><td><code>rss.cnn.com</code> is a CNAME to <code>feedproxy.ghs.google.com</code> — still on FeedBurner. HTTPS fails outright (<code>SSL_ERROR_SYSCALL</code>); HTTP 200. <code>cnn_topstories.rss</code>: 7 items, <code>lastBuildDate</code> 2024-08-22, newest item dated <strong>2023-04-19</strong>. Same pattern on cnn_world, cnn_tech, edition_us; <code>money_latest</code>'s newest item is from 2018. <code>/services/rss/</code> returns the 5MB SPA shell. No <code>llms.txt</code> (404). No oEmbed (<code>/oembed</code> and <code>/services/oembed</code> both 404).</td></tr>
+            <tr><td>2026-08-17</td><td><code>curl -sL https://transcripts.cnn.com/</code></td><td>Live and current — the index lists transcripts through 2026-08-16. Plain 2001-era HTML, no <code>robots.txt</code> (404 to the SPA). One segment page: 28,889 bytes yielding 22,412 characters of speaker-attributed text. Archive depth: <code>/date/2001-06-15</code> returns 76 transcript links, <code>/date/2000-11-15</code> returns 0.</td></tr>
+            <tr><td>2026-08-17</td><td>Image API</td><td><code>media.cnn.com/api/v1/images/…</code> takes open resize parameters, unauthenticated: <code>?c=original</code> 583KB, <code>?c=original/w_800</code> 92KB, <code>?c=16x9&amp;q=w_800,c_fill</code> 79KB.</td></tr>
+            <tr><td>2026-08-17</td><td>Odds and ends</td><td>The sole robots-allowlisted endpoint <code>/partners/ipad/live-video.json</code> returns <code>{}</code> — 2 bytes. <code>ads.txt</code> opens with <code>OWNERDOMAIN=wbd.com</code>. No server-rendered comments on any sampled page; <code>OPENWEB_SPOT_ID</code> / <code>SPOTIM</code> symbols are bundled in the JS, so comments are third-party-hosted. WebFetch from Anthropic egress got <strong>HTTP 451 Unavailable For Legal Reasons</strong> on an article that local curl fetched at 200.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Article text</td>
+              <td>~327K articles (Verified Metrics)</td>
+              <td>Sitemap tree → page fetch → parse JSON-LD <code>articleBody</code>. No API. <span class="evidence verified">verified</span></td>
+              <td>None, but 818KB gzipped per article — the meter is bandwidth, not credentials. Named AI crawlers are <code>Disallow: /</code> in robots.txt.</td>
+              <td>Pages declare <code>isAccessibleForFree: false</code>; all rights reserved. Snippet-and-link only.</td>
+              <td><code>lastmod</code> on every sitemap entry; homepage <code>max-age=60</code>.</td>
+            </tr>
+            <tr>
+              <td>Live blogs</td>
+              <td>543 child sitemaps under <code>live-story.xml</code> (sitemap census)</td>
+              <td>Same page fetch; body arrives as <code>LiveBlogPosting</code> with nested <code>BlogPosting</code> updates — one sampled page held 26. <span class="evidence verified">verified</span></td>
+              <td>None. Highest churn per byte on the site.</td>
+              <td>Also flagged <code>isAccessibleForFree: false</code> despite CNN's stated carve-out.</td>
+              <td>Minutes during breaking news; each update timestamped individually.</td>
+            </tr>
+            <tr>
+              <td>Broadcast transcripts</td>
+              <td>~20–46 segments/day, 2001-06 to present (Probe Log)</td>
+              <td><code>transcripts.cnn.com/date/YYYY-MM-DD</code> → <code>/show/{id}/date/{d}/segment/{n}</code>. Static HTML. <span class="evidence verified">verified</span></td>
+              <td>None. Not covered by the main robots.txt — the subdomain serves no robots.txt at all.</td>
+              <td>Speaker-attributed broadcast text; same copyright, but no paywall markup present.</td>
+              <td>Same-day. Index page listed 2026-08-16 segments on 2026-08-17.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>~210K video URLs (Verified Metrics)</td>
+              <td><code>video.xml</code> children give title, description, thumbnail, player URL <em>and</em> a direct MP4 <code>content_loc</code>. <span class="evidence verified">verified</span></td>
+              <td>None on the MP4 — one clip fetched at 162.6MB with <code>access-control-allow-origin: *</code> (Probe Log). Storage, not auth, is the ceiling.</td>
+              <td>No oEmbed endpoint exists, so there is no blessed embed path — a real gap. Mirroring needs rights review.</td>
+              <td>Sitemap <code>lastmod</code> per clip.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>≥1 per article; ~24K galleries (Verified Metrics)</td>
+              <td><code>media.cnn.com</code> API with open resize params; <code>image:image</code> in news sitemaps. <span class="evidence verified">verified</span></td>
+              <td>None. Serve the <code>w_800</code> variant — 6.3× smaller than <code>c=original</code> (Probe Log).</td>
+              <td>Heavy Getty/Reuters wire content — third-party rights, not CNN's to license.</td>
+              <td>Follows parent article.</td>
+            </tr>
+            <tr>
+              <td>Comments</td>
+              <td><span class="evidence open">open</span> — see Open Questions</td>
+              <td>None server-side. OpenWeb/Spot.IM is loaded client-side (Probe Log), so comments live on a vendor's infrastructure.</td>
+              <td>Would require OpenWeb terms, not CNN's.</td>
+              <td>Vendor-governed.</td>
+              <td>Unknown.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>5,671 ticker pages (Verified Metrics)</td>
+              <td>Crawl <code>/markets/stocks/{TICKER}</code>. <span class="evidence verified">verified</span></td>
+              <td>None, but 5.5MB per ticker for values rendered client-side.</td>
+              <td>Market data is licensed from a vendor; redistribution almost certainly barred.</td>
+              <td>Sitemap carries <code>changefreq</code> but no <code>lastmod</code>; sampled page's <code>dateModified</code> was 3 days stale (Probe Log).</td>
+            </tr>
+            <tr>
+              <td>Feeds / bulk</td>
+              <td>None usable</td>
+              <td>No API, no dump, no working RSS. Feeds return HTTP 200 with content frozen in 2023 (Probe Log). <span class="evidence verified">verified</span></td>
+              <td>n/a</td>
+              <td>n/a</td>
+              <td>Dead. Do not poll.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <div class="subgrid">
+        <div>
+          <h4>The JSON-LD is the product</h4>
+          <p>On most paywalled news sites you scrape prose out of HTML and hope. Here the full body arrives pre-extracted with <code>wordCount</code>, <code>articleSection</code>, and both timestamps in one script block. Parse it and ignore the DOM — the 4MB around it contains nothing the JSON-LD lacks.</p>
+        </div>
+        <div>
+          <h4>Bandwidth is the paywall</h4>
+          <p>CNN meters humans with subscriptions and machines with page weight: ~273 bytes transferred per byte of text. A 327K-article backfill is roughly 260GB of transfer for well under 1GB of prose. That ratio, not any credential, is what makes ingestion expensive.</p>
+        </div>
+        <div>
+          <h4>Two CNNs, one brand</h4>
+          <p>The modern SPA and <code>transcripts.cnn.com</code> are different internet eras on one domain. The transcript archive is ~1,000× more text-efficient per byte, spans 2001 to today, and is untouched by the robots.txt banning every AI crawler on the main host. Best corpus CNN exposes, least defended.</p>
+        </div>
+        <div>
+          <h4>Paywall markup is not a reliable signal</h4>
+          <p>Treat <code>isAccessibleForFree: false</code> as a blanket template default, not a per-object access statement. <span class="evidence inferred">inferred</span> <em>Basis:</em> the live-blog page carries the flag while CNN Business's own launch article lists live blogs among the paywall exclusions.</p>
+        </div>
+        <div>
+          <h4>Freshness has no incremental path</h4>
+          <p>With RSS dead and no API, the only way to learn what changed is diffing sitemap <code>lastmod</code> values. <code>news.xml</code> (90 URLs) is the cheap high-frequency poll; the article index gives month-granularity change detection for the rest.</p>
+        </div>
+        <div>
+          <h4>Geo-conditioned serving</h4>
+          <p>Crawl identity and location change what you get. <span class="evidence inferred">inferred</span> <em>Basis:</em> 451 vs 200 on the same URL from two egress points, plus the city-level <code>geoData</code> and 20-slot <code>FastAB</code> cookies observed in the header probe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the article, from JSON-LD, not the HTML page. For live blogs, the individual nested <code>BlogPosting</code> update. For broadcast, the transcript <em>segment</em> — CNN already splits shows into segment URLs, which is close to the right chunk size for retrieval.</li>
+        <li><strong>Primary keys &amp; joins:</strong> canonical URL is the key and it encodes <code>/YYYY/MM/DD/section/slug</code>, so date and section come free without parsing. Join video to article via <code>thumbnailUrl</code> and the CMS instance ID visible in <code>player_loc</code>. Transcripts key on <code>(show_id, date, segment)</code> — note there is <em>no</em> join from a transcript to the video of the same broadcast, which is the biggest structural gap in CNN's data.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>transcripts.cnn.com</code> — best text-per-byte, 25 years deep, no crawl restrictions; 2) <code>news.xml</code> polled every few minutes for breaking news, 90 URLs and cheap; 3) sitemap-<code>lastmod</code> diffing against the 1,728-child article index for backfill; 4) video sitemaps for metadata only — take title, description, thumbnail, skip the 162MB MP4s unless a clip earns transcoding. There is no fifth path: no API, no dump, no working feed.</li>
+        <li><strong>Recrawl cadence:</strong> live blogs every 2–5 minutes while active; <code>news.xml</code> every 5 minutes; published articles once at ingest, then only when <code>lastmod</code> moves; transcripts daily; ticker pages never — buy market data from a vendor rather than crawl 5.5MB pages for stale numbers.</li>
+        <li><strong>Derivatives to generate:</strong> ASR is largely unnecessary — CNN hands you human transcripts. Spend that budget aligning transcript segments to video clips by title and timestamp, creating the cross-modal join CNN itself does not publish. Generate <code>w_800</code> thumbnails, not originals.</li>
+        <li><strong>Demo to build:</strong> a JSON-LD-only article extractor that fetches a CNN URL, pulls <code>articleBody</code>, and reports bytes-transferred vs. bytes-of-text — making the ~273:1 ratio visible and doubling as the argument for prioritizing the transcript host.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Ownership change mid-flight.</strong> The Paramount Skydance acquisition is shareholder-approved and in litigation (Verified Metrics). New owners routinely revisit licensing posture, and a pipeline built on today's open surfaces has no contractual protection.</li>
+        <li><strong>The JSON-LD body could be truncated tomorrow.</strong> Publishing full <code>articleBody</code> on paywalled pages is a choice made for Google, not for us. Emitting only a snippet is a one-line CMS change that would eliminate the cheapest text path on the site.</li>
+        <li><strong>The transcript host is an orphan.</strong> A 2001-era subdomain with no robots.txt running beside a modern SPA is a decommissioning candidate. Archive it early rather than planning to crawl it steadily.</li>
+        <li><strong>Archive.org_bot is in the banned block.</strong> Blocking the Internet Archive leaves no third-party historical mirror — if CNN removes or rewrites something, that version is simply gone.</li>
+        <li><strong>Wire-photo rights are not CNN's to grant.</strong> Getty and Reuters imagery dominates the article corpus; no image licensing conversation with CNN can cover it.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.cnn.com/2025/10/28/media/cnn-all-access-subscriptions-service">CNN Business — CNN charts new course with All Access subscriptions</a> (2025-10-28): All Access pricing, launch date, the "18 million US cord-cutters willing to pay" research figure, and the paywall-exclusion list.</li>
+        <li><a href="https://www.hollywoodreporter.com/business/business-news/cnn-launches-paywall-digital-1236018756/">Hollywood Reporter — CNN launches digital paywall</a> (2024-10): Basic tier pricing and 2024-10-01 launch.</li>
+        <li><a href="https://thedesk.net/2025/08/fox-news-july-2025-comscore-report/">The Desk, citing Comscore</a> (2025-08): July 2025 US unique visitors for CNN.com and Fox News Digital.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Proposed_acquisition_of_Warner_Bros._Discovery_by_Paramount_Skydance">Proposed acquisition of Warner Bros. Discovery by Paramount Skydance</a>: deal timeline, price, approval and litigation status.</li>
+        <li><a href="https://www.wbd.com/news/warner-bros-discovery-separate-two-leading-media-companies">Warner Bros. Discovery</a> (2025-06-09): the separation plan that would place CNN in Discovery Global.</li>
+        <li>First-hand probes against cnn.com, transcripts.cnn.com, media.cnn.com, rss.cnn.com and warnermediacdn.com — see Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Object counts for articles, video, and galleries are extrapolations. <em>Basis:</em> child-sitemap sampling described in the Probe Log; the article sample of 24 spans counts from 0 to 517, so the true figure could move materially.</li>
+        <li>CNN's crawl posture is "search engines yes, AI no, archives no." <em>Basis:</em> robots.txt lists ~90 AI and scraper agents under a single <code>Disallow: /</code> while leaving Googlebot and Bingbot unrestricted, and includes Archive.org_bot in the banned block.</li>
+        <li>The paywall is enforced client-side, not at the origin. <em>Basis:</em> the full <code>articleBody</code> is returned to an unauthenticated curl on pages declaring <code>isAccessibleForFree: false</code>, and <code>hasPart</code> names a CSS selector — a rendering-layer instruction.</li>
+        <li>RSS is abandoned rather than broken. <em>Basis:</em> five feeds return HTTP 200 with well-formed XML but content frozen at 2023-04, HTTPS was never fixed on the FeedBurner CNAME, and <code>/services/rss/</code> now falls through to the SPA catch-all.</li>
+        <li>Ticker pages are rendered client-side from an XHR. <em>Basis:</em> a 5.5MB page whose only JSON-LD is a bare <code>WebPage</code> with no price fields, while <code>/api/</code> is disallowed in robots.txt.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many comments exist and on which content? Measure: render a sampled article set headlessly and capture the OpenWeb conversation payload, then read OpenWeb's terms to see whether that content is licensable from CNN at all.</li>
+        <li>Exact article count — replace the ~327K estimate by fetching all 1,728 child sitemaps and counting <code>&lt;loc&gt;</code> directly (roughly 1,728 requests, a few hundred MB).</li>
+        <li>Does <code>edition.cnn.com</code> serve a distinct corpus or alias www? Measure: compare sitemap trees and canonical tags across the two hosts.</li>
+        <li>What triggers the 451 seen from Anthropic egress — ASN, geography, or UA? Measure: request one article from several egress points and UA strings and tabulate status codes.</li>
+        <li>How many transcript segments exist in total? Measure: enumerate <code>/date/</code> pages from 2001-06 to present (~9,200 requests) and count segment links.</li>
+        <li>Is a paid CNN content-licensing tier available to index builders? Measure: direct inquiry — no public API, rate card, or partner documentation surfaced in any probe.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
