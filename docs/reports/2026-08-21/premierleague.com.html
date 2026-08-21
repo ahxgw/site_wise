@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>premierleague.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-21</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>premierleague.com</h1>
+      <p class="lede">The Premier League ships a contentless HTML shell over an unauthenticated Opta-backed API: 99K fixtures free to fetch, terms forbidding you keep them.</p>
+      <div class="tag-row">
+        <span class="tag">Sports</span>
+        <span class="tag">League Operator</span>
+        <span class="tag">Opta Data</span>
+        <span class="tag">Fantasy Game</span>
+        <span class="tag">Client-Rendered</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>The Premier League is a rights-selling cooperative owned by its 20 member clubs, which sell broadcast rights collectively and split the proceeds. <code>premierleague.com</code> services that business — a shop window and a fantasy game, not a destination monetised by page views. That shapes what an index builder finds. The site publishes almost no crawlable HTML: the homepage renders client-side and the sitemap lists landing pages, not content (Probe Log). Meanwhile the platform holding the data — an undocumented JSON API operated by Sony's Pulselive — answers without a key, without an <code>Origin</code> check and without a rate limit, and hands back Opta's own match and player identifiers in an <code>altIds</code> field. <span class="evidence inferred">inferred</span> The open API is an unguarded internal service, not a public offering. <em>Basis:</em> no documentation, versioning, auth or terms page of its own, while the site's terms forbid building a database from the same material (Sources).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>premierleague.com</code> (apex 301s to <code>www</code>, Probe Log)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.premierleague.com/en/">https://www.premierleague.com/en/</a></dd></div>
+        <div><dt>Category</dt><dd>Sports league operator; results/stats reference; fantasy game</dd></div>
+        <div><dt>Related hosts</dt><dd><code>fantasy.premierleague.com</code> (FPL, separate API), <code>footballapi.pulselive.com</code> (data API), <code>resources.premierleague.pulselive.com</code> (media CDN)</dd></div>
+        <div><dt>Owner</dt><dd>The Football Association Premier League Limited — 20 member clubs each hold one share; The FA holds a special share (<a href="https://www.premierleague.com/en/about/governance">Governance</a>)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Competition founded 1992; first season 1992/93</dd></div>
+        <div><dt>Business model</dt><dd>Collective sale of broadcast and sponsorship rights, distributed to clubs. The website is promotion and fan retention, not a revenue line.</dd></div>
+        <div><dt>Scale anchor</dt><dd>£6.8B combined member-club revenue in 2024/25 (<a href="https://www.deloitte.com/uk/en/services/consulting/research/annual-review-of-football-finance-premier-league-clubs.html">Deloitte Annual Review of Football Finance</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers live once in Open Questions. Counts marked <em>probe</em> were read from API <code>pageInfo.numEntries</code> on 2026-08-21.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Member-club revenue, 2024/25</dt>
+          <dd>£6.8B combined, +8% YoY; wages £4.4B; matchday revenue passed £1B for the first time — as of the 2024/25 season. <a href="https://www.deloitte.com/uk/en/services/consulting/research/annual-review-of-football-finance-premier-league-clubs.html">Deloitte ARFF</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>UK live broadcast rights, 2025/26–2028/29</dt>
+          <dd>£6.7B over four seasons; Sky a minimum 215 matches/season, TNT Sports 52 — announced Dec 2023. <a href="https://www.sportspro.com/news/premier-league-tv-rights-deal-sky-tnt-amazon-2025-2029/">SportsPro</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Broadcast reach</dt>
+          <dd>188 of 193 UN member countries; 878M homes; 1.5B cumulative live audience — as of the 2019/20 season, the League's most recent published breakdown. <a href="https://www.premierleague.com/en/news/1693131">Premier League: Broadcast</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Fixtures in the football API</dt>
+          <dd>13.5K for the Premier League alone; 99.3K across all 115 competitions it carries — probe, 2026-08-21. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Archive depth</dt>
+          <dd>35 Premier League seasons addressable, 1992/93 (compSeason 1) through 2026/2027 (compSeason 841) — probe, 2026-08-21. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Current-season corpus</dt>
+          <dd>380 fixtures, 20 teams, 1.3K players registered in a single compSeason — probe of the fixtures, teams and players endpoints, 2026-08-21. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Match payload depth</dt>
+          <dd>29KB JSON per completed match: 28 timed events, both team lists (11 starters + 9 substitutes + formation), 5 named officials, attendance, half-time score — probe of one completed fixture, 2026-08-21. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Fantasy Premier League registrations</dt>
+          <dd>7,472,918 managers — read live from <code>bootstrap-static</code> on 2026-08-21, hours before the Gameweek 1 deadline (2026-08-21T17:30Z). Payload is 1.6MB and covers 599 players × 109 fields. <span class="evidence verified">verified</span>, probe</dd>
+        </div>
+        <div>
+          <dt>Crawlable surface</dt>
+          <dd>865 URLs per locale × 3 locales (en/es/ar) = 2,595 sitemap entries, of which 138 per locale sit under <code>/test</code>; zero individual articles, players or matches — sitemap census, 2026-08-21. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt composition</dt>
+          <dd>30 lines, 641 bytes, one <code>User-agent: *</code> group, 24 Disallow rules — all 24 are query-parameter patterns, none blocks a path, and no AI crawler is named. Probe, 2026-08-21. <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-21. API calls used a desktop browser UA; the <code>Origin</code> header was sent and then omitted to test whether it was enforced.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe"><code>dig +short premierleague.com / www</code></td><td data-label="Observation">Apex returns 76.223.3.101 and 13.248.130.246 and 301s to <code>www</code> via <code>server: awselb/2.0</code>; <code>www</code> is a CNAME to <code>d37qqn66ibgx63.cloudfront.net</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe"><code>curl -sI https://www.premierleague.com/</code></td><td data-label="Observation">HTTP/2 200 via CloudFront (pop SFO53-P1, <code>x-cache: Hit</code>). <code>cache-control: max-age=30, stale-while-revalidate=600, stale-if-error=86400</code>. HSTS 1 year; no CSP, no <code>x-frame-options</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe"><code>curl -sL .../robots.txt</code></td><td data-label="Observation">30 lines, one <code>User-agent: *</code> group. All 24 Disallow rules are query-param patterns (<code>/*utm_source=</code>, <code>/*ref=</code>, <code>/*match=</code>…); no path blocked, no AI crawler named. Points to <code>/en/sitemap/index.xml</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe">Sitemap census</td><td data-label="Observation">3 child sitemaps (en/es/ar), each 865 URLs. Landing pages only — <code>/en/news</code>, <code>/en/clubs</code>, <code>/en/players</code> exist but no article, club or player page does. 138 per locale sit under <code>/test</code> (e.g. <code>/en/test/awards/sep/motm</code>); 76 are prize-draw terms.</td></tr>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe">Structured-data sample: homepage + article</td><td data-label="Observation">Homepage is 121KB of HTML with <strong>zero</strong> JSON-LD, only <code>og:title</code>/<code>og:description</code>, and zero occurrences of any club name — content hydrates from <code>data-widget</code> attributes. Of 150 <code>href</code>s only 2 point at <code>/en/</code> content. An article page adds <code>og:image</code> and <code>og:type</code>, still no JSON-LD.</td></tr>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe"><code>curl footballapi.pulselive.com/football/*</code></td><td data-label="Observation">HTTP 200 with no API key, and identically with the <code>Origin</code> header removed. 115 competitions; 35 PL compSeasons; 13,546 PL fixtures; 1,301 players; 20 teams with ground capacity and lat/long stamped <code>"source":"OPTA"</code>. Completed matches expose <code>altIds: {"opta":"g2562265"}</code>; players <code>altIds: {"opta":"p232980"}</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe">Rate-limit and pagination test</td><td data-label="Observation">20 rapid consecutive requests all 200, no rate-limit headers, no throttling. <code>pageSize=100</code> served; <code>pageSize=1000</code> returns HTTP 504. Content endpoints cap at 30 items regardless of requested size.</td></tr>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe"><code>/content/premierleague/{text,video,photo,audio}/EN/</code></td><td data-label="Observation">Text, video and photo return objects; <code>audio</code> returns 200 with zero items. Of 30 text items only <strong>2</strong> had a populated <code>body</code> — 28 were tagged <code>External</code> + <code>club-produced-content:*</code>, i.e. pointers to club sites; 28 of 30 carried an <code>OptaID_t*</code> tag. Video objects expose <code>duration</code>, <code>closedCaptioned</code>, <code>allowedTerritories</code>, <code>thumbnailUrl</code>, <code>onDemandUrl</code>, <code>views</code>; the sampled clip had <code>closedCaptioned: false</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe"><code>curl fantasy.premierleague.com/api/*</code></td><td data-label="Observation"><code>bootstrap-static</code> returns 1.6MB unauthenticated (8 consecutive calls, all 200): 599 players × 109 fields, 26 stat definitions, 38 gameweeks, <code>total_players: 7,472,918</code>. <code>/api/fixtures/</code> returns all 380 fixtures with a <code>pulse_id</code> join field — <code>0</code> on all 380 pre-season. <code>element-summary</code> adds 5 prior seasons per player.</td></tr>
+            <tr><td data-label="Date">2026-08-21</td><td data-label="Probe">Feed discovery and media CDN</td><td data-label="Observation"><code>/llms.txt</code>, <code>/rss</code>, <code>/feed</code>, <code>/en/rss</code>, <code>/sitemap.xml</code> all 404; <code>/.well-known/ai.txt</code> 403. Images resolve only from API-returned <code>resources.premierleague.pulselive.com</code> URLs — the conventional headshot path <code>/premierleague/photos/players/250x250/p{id}.png</code> returns 403, so image addressing is not derivable from IDs.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third party may display, and how fast it churns. "Football API" = <code>footballapi.pulselive.com</code>; "FPL API" = <code>fantasy.premierleague.com/api</code>. Both are undocumented and unauthenticated (Probe Log); neither publishes terms of its own, so the site <a href="https://www.premierleague.com/en/terms-and-conditions">Terms of Use</a> govern.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Editorial articles + syndicated club pointers. Only 2 of 30 sampled items carried body text (Probe Log); total count open.</td>
+              <td data-label="Best legitimate path">Content API <code>text/EN</code>. HTML carries no body without JS execution.</td>
+              <td data-label="Auth &amp; quota">None enforced; 30-item page cap.</td>
+              <td data-label="License / display">Terms permit private/personal use only and forbid creating a database from the material.</td>
+              <td data-label="Freshness">Publish-time only; <code>lastModified</code> equalled <code>publishFrom</code> on the sample.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Editorial photos and player headshots on <code>resources.premierleague.pulselive.com</code>; count open.</td>
+              <td data-label="Best legitimate path">Content API <code>photo/EN</code> returns <code>imageUrl</code>; paths are not guessable from IDs (403 on the conventional headshot path).</td>
+              <td data-label="Auth &amp; quota">Same as text.</td>
+              <td data-label="License / display"><code>copyright</code> null and <code>allowedTerritories</code> empty on the sample — no machine-readable grant. Treat as all-rights-reserved.</td>
+              <td data-label="Freshness">Daily during a match round.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Highlights, interviews, FPL explainers. Match highlights are the broadcast partners' asset, not the site's.</td>
+              <td data-label="Best legitimate path">Content API <code>video/EN</code> gives <code>mediaId</code>, <code>duration</code>, <code>thumbnailUrl</code>, <code>onDemandUrl</code> (Probe Log).</td>
+              <td data-label="Auth &amp; quota">Same as text; rights-controlled playback is geo-gated.</td>
+              <td data-label="License / display"><code>allowedTerritories</code> is a first-class API field — the licensing boundary sits in the data model itself. Empty on the sampled clip.</td>
+              <td data-label="Freshness">Minutes after final whistle.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">None on this host: the <code>audio</code> endpoint returns 200 with zero items (Probe Log). UK radio commentary sits with the BBC.</td>
+              <td data-label="Best legitimate path">No path.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">—</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reviews</td>
+              <td data-label="Objects &amp; est. count">No public corpus. Content objects carry a <code>commentsOn</code> flag but expose no comment collection (Probe Log).</td>
+              <td data-label="Best legitimate path">No path.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">—</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">The real corpus: 99.3K fixtures, 35 seasons, 115 competitions, geocoded grounds, players, per-match events and lineups (Verified Metrics).</td>
+              <td data-label="Best legitimate path">Football API, ~100 items/page. FPL API adds 599 player-seasons × 109 fields plus 5 seasons of history.</td>
+              <td data-label="Auth &amp; quota">None: no key, no <code>Origin</code> check, no observed throttle; ~136 pages sweeps all PL fixtures.</td>
+              <td data-label="License / display">Same Terms restriction. Underlying data is Opta's, sub-licensed — reuse is not the League's alone to grant.</td>
+              <td data-label="Freshness">In-play <code>clock</code> ticks in seconds; the 35-season archive is immutable.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site departs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Four ID namespaces coexist and none is canonical. One player carried <code>playerId: 740861</code>, <code>id: 19970</code> and <code>altIds.opta: p232980</code> in a single record (Probe Log); FPL assigns a fifth. The Opta ID is the only one that means anything outside this site, and the site gives it away for free — unusual for a licensed feed.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>match</strong>, not the page. A completed fixture is a self-contained 29KB document with events, lineups and officials attached; the HTML page rendering it contains none of that text. Indexing pages here yields nothing — index the JSON.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Editorial content is tagged with Opta team IDs (<code>OptaID_t8</code> alongside <code>club-produced-content:chelsea</code>), so articles join to fixtures without any name matching. But two joins are unstable: <code>altIds.opta</code> was <code>None</code> on unplayed fixtures and populated only after the match, and FPL's <code>pulse_id</code> was <code>0</code> on all 380 fixtures pre-season. <span class="evidence inferred">inferred</span> Both keys are stamped by post-match reconciliation rather than at fixture creation. <em>Basis:</em> the completed fixture probed carried <code>opta: g2562265</code> while every 2026/27 fixture carried none, on the same day.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Inverted relative to most sites: the API JSON is authoritative and the HTML is an empty shell. There is no SEO distortion to correct for because there is almost no SEO text.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Two regimes with no middle: an in-play match mutates every few seconds (<code>clock</code>, <code>events</code>, <code>goals</code>) for ~2 hours, then freezes permanently. Recrawling a settled fixture is pure waste — almost the entire corpus never changes again.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>No adversarial surface — no UGC, no ranking to game. The risk is duplication instead: 28 of 30 sampled "articles" were bodyless pointers to club sites, so an unfiltered ingest fills the index with headline stubs whose content lives on another domain.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>The declared crawl surface cannot explain how this site is indexed at all: 865 sitemap URLs with no articles, and a homepage with two internal links. Whatever Google holds came from JS rendering or a surface not advertised in robots.txt — see Open Questions.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Sharply time-boxed and answer-shaped: score, table position, fixture time, player stat, FPL price, spiking at kickoff and the weekly FPL deadline. Almost none are exploratory, so retrieval is judged on freshness and exactness, not ranking nuance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the fixture document (match + events + lineups + officials), with player-season and team-season as secondary units and articles as a thin third.</li>
+        <li><strong>Primary keys &amp; joins:</strong> key on Opta IDs (<code>g*</code> match, <code>p*</code> player, <code>t*</code> team) because they survive outside this site; carry pulselive <code>id</code> and FPL <code>element</code> as aliases. Join editorial to entities via the <code>OptaID_t*</code> content tags, not by name.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Football API — the whole structured corpus, ~136 pages at <code>pageSize=100</code>, no auth; the only path that scales. 2) FPL API — one 1.6MB call for the current-season player table plus 5 seasons of history. 3) Content API — editorial, capped at 30 items/page and mostly bodyless. 4) HTML crawl — worthless without JS execution, not worth the renderer budget.</li>
+        <li><strong>Recrawl cadence:</strong> poll live fixtures every 30s during their ~2-hour window, sweep the current compSeason nightly, never re-fetch a settled season. Re-check <code>altIds.opta</code> and FPL <code>pulse_id</code> the morning after each match round, since both are stamped late.</li>
+        <li><strong>Derivatives to generate:</strong> a natural-language summary per fixture (the API gives events but no prose), an Opta↔pulselive↔FPL concordance table, and embeddings for player name variants across the four namespaces. Skip ASR — no audio, and the sampled video was not closed-captioned.</li>
+        <li><strong>Demo to build:</strong> a fixture-graph builder that sweeps one compSeason, resolves the three ID namespaces into one concordance, and reports which join keys were unpopulated at ingest — turning the pre-season <code>pulse_id: 0</code> observation into a coverage number.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The terms forbid exactly what an index is.</strong> The Terms of Use permit downloading "for your own private and personal use" and then prohibit reproduction or redistribution, "including, by way of example, creating a database (electronic or otherwise) that includes material downloaded or otherwise obtained from the Website or App" (<a href="https://www.premierleague.com/en/terms-and-conditions">Terms of Use</a>). Technical openness is not permission; the gap between them is the whole risk.</li>
+        <li><strong>UK database right applies on top of copyright.</strong> The same terms assert "copyright, database rights and other intellectual property". Fixture lists and match data have been litigated in the EU/UK as protectable compilations, so a defence based on facts-are-not-copyrightable is weaker here than in a US-only analysis.</li>
+        <li><strong>The data is Opta's, sub-licensed.</strong> Ground records are stamped <code>"source":"OPTA"</code> and Opta IDs ride in <code>altIds</code> (Probe Log). Reuse rights sit with Stats Perform as much as the League, so a licence from the League alone may not cover the payload.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The open API can close without notice.</strong> <em>Basis:</em> no documentation, no version prefix, no auth and no deprecation policy, and <code>pageSize=1000</code> already fails with a 504 — nothing in it is contractual.</li>
+        <li><strong>Platform consolidation is live.</strong> Pulselive, which operates the API, is being folded into Sony sister company Beyond Sports and its brand retired (<a href="https://www.pulselive.com/news/4412430/a-new-chapter-pulselive-and-beyond-sports-join-forces">Pulselive</a>) — the most likely trigger for endpoint churn.</li>
+        <li><strong>No robots-level AI signal to rely on.</strong> robots.txt names no AI crawler and blocks no path (Probe Log). That is an absence of a stated position, not consent, and such gaps get filled with restrictive rules rather than permissive ones.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.deloitte.com/uk/en/services/consulting/research/annual-review-of-football-finance-premier-league-clubs.html">Deloitte Annual Review of Football Finance — Premier League clubs</a> — £6.8B combined 2024/25 revenue, £4.4B wages, £1B matchday.</li>
+        <li><a href="https://www.sportspro.com/news/premier-league-tv-rights-deal-sky-tnt-amazon-2025-2029/">SportsPro: Premier League UK rights 2025–2029</a> — £6.7B, Sky 215 matches, TNT 52.</li>
+        <li><a href="https://www.premierleague.com/en/news/1693131">Premier League: Broadcast</a> — 188 countries, 878M homes, 1.5B cumulative live audience (2019/20).</li>
+        <li><a href="https://www.premierleague.com/en/about/governance">Premier League: Governance</a> — 20 clubs as equal shareholders, FA special share, 14-vote threshold.</li>
+        <li><a href="https://www.premierleague.com/en/terms-and-conditions">Premier League Terms of Use</a> — personal-use permission and the explicit database-creation prohibition.</li>
+        <li><a href="https://www.premierleague.com/en/news/4675508/premier-league-fixture-schedulereleased-for-season-202627">Premier League: 2026/27 fixture schedule</a> — season opens 2026-08-21, Arsenal v Coventry City at the Emirates.</li>
+        <li><a href="https://www.pulselive.com/news/4412430/a-new-chapter-pulselive-and-beyond-sports-join-forces">Pulselive: joining forces with Beyond Sports</a> — Sony subsidiary consolidation and brand retirement.</li>
+        <li>Local probes on 2026-08-21: <code>dig</code> and <code>curl</code> against the homepage, an article, robots.txt, the sitemap index and its three children, the pulselive football and content APIs, the FPL API, and feed discovery paths (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The football API is an unguarded internal service, not a public product. <em>Basis:</em> no documentation, no version prefix, no auth, no <code>Origin</code> enforcement and no terms of its own, while the site's Terms of Use forbid building a database from the same material.</li>
+        <li>Opta match and player IDs are stamped by post-match reconciliation, not at fixture creation. <em>Basis:</em> on 2026-08-21 a completed fixture carried <code>altIds.opta: g2562265</code> while all 380 unplayed 2026/27 fixtures carried none, and FPL's <code>pulse_id</code> was <code>0</code> on every one of them.</li>
+        <li><code>OptaID_t8</code> denotes Chelsea. <em>Basis:</em> it co-occurred with the <code>club-produced-content:chelsea</code> tag on the same content objects in the 30-item sample.</li>
+        <li>The 30-second CDN <code>max-age</code> is sized for the live-match window, not editorial. <em>Basis:</em> settled fixtures are immutable in the API, so nothing but in-play state justifies a 30-second TTL on a 35-season archive.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How is this site indexed by general search engines at all, given 865 sitemap URLs with no articles and a homepage with two internal links? Closeable by comparing a <code>site:premierleague.com</code> result count against the sitemap census and fetching an article as Googlebot to test for UA-conditional server rendering.</li>
+        <li>Total editorial articles and videos ever published — the content endpoints report <code>numEntries: 0</code> and cap at 30 items, so paging <code>text/EN</code> and <code>video/EN</code> to exhaustion is the only way to a real number.</li>
+        <li>Whether the football API rate-limits above the 20 requests tested, and where the page ceiling sits between <code>pageSize=100</code> (served) and <code>1000</code> (504). Closeable with a bisecting sweep and a sustained request run.</li>
+        <li>Current global audience and household reach — the League's latest published figures are from 2019/20; newer numbers need a fresh League disclosure.</li>
+        <li>Whether <code>allowedTerritories</code> is ever populated on rights-controlled video, or geo-gating happens only at playback. Closeable by sampling highlight objects during a live match round rather than pre-season clips.</li>
+        <li>Which Opta/Stats Perform licence terms govern onward reuse of the <code>altIds</code> payload — needs the Stats Perform agreement, not the site.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
