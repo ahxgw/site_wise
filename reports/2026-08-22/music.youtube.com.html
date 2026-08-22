@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>music.youtube.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-08-22</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>music.youtube.com</h1>
+      <p class="lede">YouTube Music is a music catalog trapped inside a video index: no API, no sitemap, yet every entity leaks structured metadata to plain HTML.</p>
+      <div class="tag-row">
+        <span class="tag">Music Streaming</span>
+        <span class="tag">Google</span>
+        <span class="tag">Art Tracks</span>
+        <span class="tag">SPA</span>
+        <span class="tag">Subscription</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>YouTube Music is Google's streaming service built on top of YouTube's video corpus rather than beside it. It sells the same subscription as YouTube Premium and rides the same ad inventory — YouTube's "twin engine" — so Alphabet never discloses a Music revenue or subscriber line of its own. For an index builder the useful object is the <strong>recording</strong>, and the awkward fact is that one recording usually maps to <em>two</em> YouTube video IDs: a label-delivered "Art Track" (audio plus static art on an auto-generated <code>… - Topic</code> channel) and the official music video. The music layer adds identifiers on top — <code>MPRE…</code> releases, <code>UC…</code> artists — and those are what make the catalog navigable as music rather than as video. Access posture inverts the usual pattern for a platform this size: robots.txt is eleven lines and forbids nothing but the internal API, there is no sitemap and no official Music API, yet the server hands normalized per-entity metadata to any unauthenticated <code>curl</code>. <span class="evidence inferred">inferred</span> Google treats YouTube Music as a client of the video graph, not an independent corpus. <em>Basis:</em> no sitemap of its own and absent from all 23 entries of the youtube.com sitemap index (Probe Log), while oEmbed resolves music.youtube.com URLs to <code>youtube.com/embed</code> video payloads.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>music.youtube.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://music.youtube.com/">https://music.youtube.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Music streaming, subscription audio</dd></div>
+        <div><dt>Related hosts</dt><dd><code>www.youtube.com</code> (canonical video graph, oEmbed endpoint, Premium marketing pages), <code>i.ytimg.com</code> (thumbnail/art CDN, observed in <code>og:image</code>), <code>artists.youtube</code>, <code>charts.youtube.com</code></dd></div>
+        <div><dt>Owner</dt><dd>YouTube LLC / Google LLC (Alphabet Inc., NASDAQ: GOOGL); Lyor Cohen, Global Head of Music</dd></div>
+        <div><dt>Founded / launched</dt><dd>Nov 12 2015 as the first YouTube Music app; rebuilt and relaunched as a full streaming service May 22 2018</dd></div>
+        <div><dt>Business model</dt><dd>Subscription (Music Premium / YouTube Premium) + advertising on free tier; revenue reported inside Alphabet's Google Services, never broken out</dd></div>
+        <div><dt>Scale anchor</dt><dd>125M+ Music and Premium subscribers including trials, as of Mar 5 2025 (<a href="https://blog.youtube/inside-youtube/20-years-125-million-subscribers-lyor-cohen/">YouTube blog</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Standalone YouTube Music subscribers and catalog composition live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Music + Premium subscribers</dt>
+          <dd>125M+ globally, including trials — as of Mar 5 2025. Combined figure; no standalone Music count is published. <a href="https://blog.youtube/inside-youtube/20-years-125-million-subscribers-lyor-cohen/">YouTube blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Payout to music industry</dt>
+          <dd>$8B+ across the 12 months July 2024–June 2025, from ads and subscriptions combined; up from $6B in July 2021–June 2022 — as of Oct 23 2025. <a href="https://blog.youtube/news-and-events/8-billion-youtubes-twin-engine-continues-to-fuel-the-future-of-music/">YouTube blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Stated catalog size</dt>
+          <dd>"over 100 million songs" plus albums, playlists, remixes, music videos, live performances and covers — as of Aug 22 2026, read first-hand from the homepage <code>meta name="description"</code> and <code>og:description</code> (Probe Log). Marketing copy, not an audited count. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>YouTube ads revenue, Q2 2026</dt>
+          <dd>$11.06B, up 13% from $9.80B in Q2 2025 — as of Jun 30 2026. <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">Alphabet Q2 2026 earnings release (SEC exhibit 99.1)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Google subscriptions, platforms &amp; devices, Q2 2026</dt>
+          <dd>$12.91B, up from $11.20B — as of Jun 30 2026. This is the line that contains Music Premium; the release does not decompose it. <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">Same release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt footprint</dt>
+          <dd>186 bytes / 11 lines on music.youtube.com versus 792 bytes / 33 lines on www.youtube.com — as of Aug 22 2026 (Probe Log). Two <code>Disallow</code> rules for <code>*</code> against roughly twenty on the parent host. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured payload per search GET</dt>
+          <dd>232KB of decoded JSON carrying 30 typed result rows (song / album / EP / playlist), 14 distinct <code>videoId</code>s and 44 <code>browseId</code>s, from one unauthenticated request to <code>/search?q=</code> — measured Aug 22 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Artist audience exposed in markup</dt>
+          <dd>Adele 345M monthly audience, Rick Astley 16M — read from <code>og:description</code> on artist channel pages with no auth, Aug 22 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>YouTube Data API v3 default quota</dt>
+          <dd>10,000 units/day for general endpoints plus a separate allocation of 100 <code>search.list</code> calls/day; quota resets midnight Pacific. Covers videos and playlists only — no music entities. <a href="https://developers.google.com/youtube/v3/getting-started">API docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-22, desktop Chrome user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-08-22</td><td><code>curl -sL https://music.youtube.com/robots.txt</code></td><td>11 lines, 186 bytes. <code>User-agent: *</code> gets only <code>Disallow: /youtubei/</code> and <code>Disallow: /api/</code>. <code>Mediapartners-Google*</code> is explicitly unrestricted; <code>bingbot</code> alone is told <code>Disallow: /manifest.webmanifest</code>. <strong>No Sitemap directive and no AI-crawler rules at all</strong> — GPTBot, ClaudeBot, CCBot and Google-Extended are unmentioned, so uncontested. The parent www.youtube.com file (792 bytes) does declare two sitemaps but likewise names no AI agent.</td></tr>
+            <tr><td>2026-08-22</td><td><code>curl -sI https://music.youtube.com/</code></td><td>HTTP/2 200, <code>server: ESF</code>. Three separate CSP headers reporting to <code>csp.withgoogle.com/csp/youtube_music/</code> — its own policy group, distinct from youtube.com — including <code>require-trusted-types-for 'script'</code>. <code>cache-control: no-cache, no-store, max-age=0, must-revalidate</code>; <code>x-frame-options: SAMEORIGIN</code>; HSTS <code>max-age=31536000</code> (no <code>preload</code>); <code>alt-svc</code> advertises h3. Client-hint <code>accept-ch</code> requests UA arch, model and platform version.</td></tr>
+            <tr><td>2026-08-22</td><td><code>dig +short music.youtube.com</code> @1.1.1.1, @8.8.8.8</td><td>Every resolver tried returned unrelated IP space (Facebook and Twitter ranges), so this vantage point's egress proxy is intercepting resolution and hosting posture was <strong>not measurable locally</strong>. Google origin confirmed instead from the <code>server: ESF</code> header and the <code>csp.withgoogle.com</code> report-uri above.</td></tr>
+            <tr><td>2026-08-22</td><td><code>curl</code> of <code>/sitemap.xml</code>, <code>/llms.txt</code>, and a nonsense path</td><td>All three return <strong>HTTP 200</strong> with the ~384KB app shell (<code>og:type=website</code>, <code>og:title=YouTube Music</code>). There is no sitemap and no llms.txt; the host is a catch-all SPA, so <strong>status codes carry zero existence information</strong> and every bad URL is a soft 404.</td></tr>
+            <tr><td>2026-08-22</td><td>Fetch youtube.com sitemap index and grep for the music host</td><td>23 child sitemaps, all marketing/corporate (<code>trends</code>, <code>creators</code>, <code>jobs</code>, <code>artists.youtube</code>…). Zero <code>music.youtube.com</code> entries. The closest match, <code>/sitemaps/musicpremium.xml</code>, holds exactly 4 URLs — the Premium pricing pages (<code>/musicpremium</code>, <code>/annual</code>, <code>/family</code>, <code>/student</code>) — and no catalog.</td></tr>
+            <tr><td>2026-08-22</td><td><code>og:</code> extraction across five URL shapes</td><td>Real entities are server-rendered and typed, with body size as a second signal: track <code>/watch?v=</code> → 92KB, <code>og:type=video.other</code>, title = clean track name, description = artist; artist <code>/channel/UC…</code> → 891KB, <code>og:type=profile</code>, description = <code>"Artist • 345M monthly audience"</code> (non-artist channels get <code>"Profile • @handle"</code> instead); album <code>/browse/MPRE…</code> → <code>og:type=music.album</code>, description = <code>"Album • Rick Astley"</code>. <strong>Exception:</strong> the album-playlist alias <code>/playlist?list=OLAK5uy_…</code> returns 95KB with <em>no</em> <code>og:</code> tags at all. No JSON-LD anywhere.</td></tr>
+            <tr><td>2026-08-22</td><td><code>curl "https://music.youtube.com/search?q=rick+astley"</code>, then decode the inline blob</td><td>Search results ship inside the initial HTML as hex-escaped JSON (<code>\x22</code>/<code>\x7b</code>) under an <code>initialData.push({path:'/search', data:'…'})</code> call — <em>not</em> the <code>ytInitialData</code> variable used on youtube.com. Decodes to 232KB and 30 <code>musicResponsiveListItemRenderer</code> rows with title, type, artist, duration, play count, album year and playlist length ("Never Gonna Give You Up | Song | 3:34 | 2B plays"). No JS execution and no auth required; <code>/search</code> is robots-permitted.</td></tr>
+            <tr><td>2026-08-22</td><td>oEmbed on both video IDs for one recording</td><td><code>youtube.com/oembed</code> accepts a music.youtube.com URL but answers as the video graph. For the Art Track <code>lYBUbBu4W08</code>: title "Never Gonna Give You Up", <code>author_name</code> "Rick Astley - Topic". For the music video <code>dQw4w9WgXcQ</code>: title "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)", author "Rick Astley". Both embed HTML points at <code>youtube.com/embed</code>. On music.youtube.com <em>both</em> IDs render the identical normalized pair (<code>og:title</code> "Never Gonna Give You Up", <code>og:description</code> "Rick Astley").</td></tr>
+            <tr><td>2026-08-22</td><td><code>curl /opensearch?locale=en_US</code> and <code>/manifest.webmanifest</code></td><td>Valid OpenSearchDescription, but its only <code>Url</code> template is <code>text/html</code> → <code>/search?q={searchTerms}</code>; no JSON result type is offered. Manifest is a normal PWA descriptor (<code>display: minimal-ui</code>, <code>start_url: /?source=pwa</code>, icons on gstatic).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. "og layer" = server-rendered <code>og:</code> tags; "inline JSON" = the hex-escaped <code>initialData</code> blob; both measured in the Probe Log.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Track, artist and album titles, album years, playlist lengths, per-artist monthly audience. Stated corpus 100M+ songs (Verified Metrics); true entity counts open.</td>
+              <td>og layer per entity URL; inline JSON from robots-permitted <code>/search?q=</code>, 30 typed rows per GET. No sitemap, so discovery must be seeded.</td>
+              <td>None. Unauthenticated, no documented limit — the ceiling is undeclared throttling, not quota.</td>
+              <td>ToS-bound. No licence grants bulk retention; metadata for linking, not republication.</td>
+              <td>Catalog metadata near-static; play counts and monthly audience drift continuously.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Album art and video thumbnails on <code>i.ytimg.com</code>, one or more per recording/release.</td>
+              <td><code>og:image</code> gives a direct CDN URL (<code>i.ytimg.com/vi/{videoId}/maxresdefault.jpg</code>); oEmbed returns <code>hqdefault.jpg</code> with dimensions.</td>
+              <td>None for the URL; the asset itself is public CDN.</td>
+              <td>Hotlink for attributed display. Label-owned artwork — no copies or derivatives.</td>
+              <td>Low churn; changes on release re-delivery.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Official music videos, live performances, remixes, covers — the same objects as youtube.com, re-presented as music.</td>
+              <td>YouTube Data API v3 for video metadata; oEmbed for embed HTML. The <code>youtube.com/embed</code> player is the only sanctioned playback surface.</td>
+              <td>API key, 10,000 units/day (Verified Metrics). oEmbed unauthenticated.</td>
+              <td>Embed only. <code>x-frame-options: SAMEORIGIN</code> blocks framing the YTM UI itself (Probe Log).</td>
+              <td>Append-mostly; regional blocks and takedowns mutate availability.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Art Tracks — label-delivered audio on <code>… - Topic</code> channels — plus the audio of every music video.</td>
+              <td>No path. Streams are DRM-adjacent and subscriber-gated; only the metadata is reachable.</td>
+              <td>—</td>
+              <td>No reuse path. Do not plan for audio possession.</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>None native. YouTube Music exposes no comment or rating surface; comments live on the youtube.com rendering of the same video.</td>
+              <td>YouTube Data API v3 <code>commentThreads</code> against the video ID, not the music entity.</td>
+              <td>Same 10,000 units/day.</td>
+              <td>API terms; attribution required.</td>
+              <td>Continuous on active videos.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Recordings (11-char <code>videoId</code>, often two each), releases (<code>MPRE…</code>), artists (<code>UC…</code>), editorial playlists (<code>OLAK5uy_…</code>), typed via <code>og:type</code> ∈ {<code>video.other</code>, <code>music.album</code>, <code>profile</code>}.</td>
+              <td>og layer for typed identity; inline JSON for relationships. <strong>InnerTube at <code>/youtubei/</code> is the only complete path and the one thing robots.txt forbids.</strong></td>
+              <td>None for permitted paths. InnerTube needs client-spoofing and cookies — robots-disallowed.</td>
+              <td>No official Music API, so no licence covers bulk entity extraction.</td>
+              <td>Release and artist records stable; editorial playlists re-curated often.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where YouTube Music differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The central problem: one recording commonly has <strong>two</strong> <code>videoId</code>s — an Art Track and an official music video (Probe Log). Neither is canonical; both are legitimate. The reliable discriminator is oEmbed's <code>author_name</code>, where a <code>… - Topic</code> suffix marks the Art Track channel. Dedup on (normalized title, artist, duration) and keep both IDs as aliases rather than picking a winner.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>recording</strong>, not the page and not the video: a recording carries 1–n video IDs, belongs to 0–n releases, and is the object users actually name. Release (<code>MPRE…</code>) and artist (<code>UC…</code>) are separate units worth their own documents; the app shell is not a document at all.</p>
+        </div>
+        <div>
+          <h4>Existence detection</h4>
+          <p>HTTP status is useless here: the catch-all SPA answers 200 for everything. Validity must come from the body instead — a specific <code>og:type</code>, plus size (real entity ≈ 92–95KB, shell ≈ 384KB). A crawler that trusts status codes ingests an unbounded pile of identical shells.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Inverted from the usual case: the site's own <code>og:title</code> is <em>cleaner</em> than the official oEmbed API. og gives "Never Gonna Give You Up" / "Rick Astley"; oEmbed gives the uploader-authored "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)". For music metadata, prefer scraped og over the sanctioned endpoint — then use oEmbed only for the Art Track discriminator.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p><code>videoId</code> is the stable join key to everything on youtube.com: thumbnails (<code>i.ytimg.com/vi/{id}/</code>), comments, captions, the embed player. Music-layer IDs (<code>MPRE…</code>, the <code>OLAK5uy_…</code> album-playlist alias) join only inside YouTube Music with no documented mapping outward — and the playlist alias is unrendered, so it cannot be resolved by fetching it.</p>
+        </div>
+        <div>
+          <h4>Crawl policy</h4>
+          <p>The opposite of the default assumption. Rather than banning AI crawlers, both robots.txt files never mention them, leaving GPTBot and peers formally unrestricted. The single meaningful prohibition is <code>/youtubei/</code> — exactly the endpoint that would make the catalog machine-readable. Permission is broad; usefulness is withheld.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Nothing on this host is search-engine-visible by design: no sitemap, no JSON-LD, <code>no-store</code> on the shell. External music queries land on youtube.com video pages instead, so the web index knows the videos and not the music entities. On-site search is strong but HTML-only — OpenSearch offers no JSON result type.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Short entity lookups — artist, song, album, "artist + song" — plus mood/activity phrases ("focus", "workout") that map to editorial playlists rather than recordings. Lyric fragments are a first-class query type here, and nothing in the accessible surface exposes lyrics, so that intent cannot be served from this corpus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> recording, with alias list of video IDs; release and artist as sibling document types.</li>
+        <li><strong>Primary keys &amp; joins:</strong> recording = normalized (title, artist, duration) with <code>videoId[]</code> aliases; release = <code>MPRE…</code>; artist = <code>UC…</code>; <code>videoId</code> joins outward to the youtube.com video graph.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>/search?q=</code> inline JSON — robots-permitted, unauthenticated, ~30 typed rows per GET; the only path yielding relationships in bulk. 2) og layer per entity URL — typed confirmation plus artist monthly audience, one entity per request. 3) YouTube Data API v3 — authoritative video metadata and comments, 10,000 units/day, no music entities. 4) oEmbed — Art Track discrimination and embed HTML. 5) <code>/youtubei/</code> InnerTube — complete but robots-disallowed; excluded.</li>
+        <li><strong>Seeding strategy:</strong> discovery is the binding constraint, so bootstrap from an external music authority (e.g. MusicBrainz artist/release names) and resolve each through <code>/search?q=</code> to acquire YouTube-side IDs. The index is only as complete as its seed list.</li>
+        <li><strong>Recrawl cadence:</strong> recording and release metadata quarterly; artist monthly-audience monthly; editorial playlists weekly; never recrawl the shell.</li>
+        <li><strong>Derivatives to generate:</strong> title normalization to strip "(Official Video)", "(Remaster)", "(feat. …)" noise; an Art-Track ↔ music-video alias table; text embeddings over (title, artist, album) for fuzzy lookup. No ASR — audio is unobtainable, and captions belong to the video-side pipeline.</li>
+        <li><strong>Demo to build:</strong> a music.youtube.com entity resolver — paste artist/song names, hit <code>/search?q=</code>, decode the hex-escaped <code>initialData</code> blob, emit JSONL recording records with both video IDs, and flag which rows would have been silently accepted as valid by a status-code-trusting crawler.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The primary path is undocumented, not promised.</strong> The inline <code>initialData</code> blob is an internal rendering detail, and its variable name already differs from youtube.com's <code>ytInitialData</code> (Probe Log) — the shape is host-specific and can change with no notice or deprecation window. Parse defensively and alert on schema drift.</li>
+        <li><strong>Permissive robots.txt is a lagging indicator.</strong> Eleven lines with no AI-crawler rules reads as a page nobody has had reason to maintain, and it is the cheapest thing on the site to change. Do not treat today's open access as durable.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Rendering the catalog server-side is not a goal, so the og layer may thin rather than thicken.</strong> <em>Basis:</em> the album-playlist alias <code>/playlist?list=OLAK5uy_…</code> already returns no <code>og:</code> tags at all while <code>/browse/MPRE…</code> does (Probe Log) — per-entity metadata is inconsistent today, which is what a surface nobody optimizes for looks like.</li>
+        <li><strong>No licence covers the useful path.</strong> Because no official Music API exists, there is no terms document that contemplates bulk music-entity extraction — so there is nothing to comply with and nothing to rely on. Legal posture rests on ToS interpretation, and the rights holders are labels, not Google.</li>
+        <li><strong>Metric provenance is unstable.</strong> The 125M subscriber and $8B payout figures are advocacy disclosures published when favourable, not periodic reporting; Alphabet's filings never decompose them (Verified Metrics). Expect gaps, not a series.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://blog.youtube/inside-youtube/20-years-125-million-subscribers-lyor-cohen/">YouTube blog, "20 years &amp; 125 million subscribers later…" (Mar 5 2025)</a> — 125M+ Music and Premium subscribers including trials.</li>
+        <li><a href="https://blog.youtube/news-and-events/8-billion-youtubes-twin-engine-continues-to-fuel-the-future-of-music/">YouTube blog, "$8 billion: YouTube's twin engine…" (Oct 23 2025)</a> — $8B+ payout for July 2024–June 2025, prior $6B baseline.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">Alphabet Q2 2026 earnings release, SEC exhibit 99.1 (filed Jul 22 2026)</a> — YouTube ads $11,055M vs $9,796M; Google subscriptions, platforms and devices $12,911M vs $11,203M.</li>
+        <li><a href="https://developers.google.com/youtube/v3/getting-started">YouTube Data API v3 getting started</a> — default 10,000 units/day plus 100 <code>search.list</code> calls/day.</li>
+        <li><a href="https://ytmusicapi.readthedocs.io/en/stable/index.html">ytmusicapi documentation</a> — states it is "not supported nor endorsed by Google" and works by emulating the web client's requests; corroborates that no official Music API exists.</li>
+        <li><a href="https://en.wikipedia.org/wiki/YouTube_Music">Wikipedia: YouTube Music</a> — Nov 12 2015 launch and May 22 2018 relaunch dates.</li>
+        <li>Local probes on 2026-08-22, full results in the Probe Log: <code>curl</code> against robots.txt (both hosts), headers, the sitemap index, five entity URL shapes, <code>/search?q=</code> with blob decoding, oEmbed on two video IDs, OpenSearch and the manifest; <code>dig</code> via two public resolvers.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Google treats YouTube Music as a client of the video graph rather than an independent corpus. <em>Basis:</em> no sitemap of its own and zero presence across all 23 youtube.com sitemap-index entries, while oEmbed resolves music.youtube.com URLs to <code>youtube.com/embed</code> video payloads.</li>
+        <li>The og layer may thin rather than thicken over time. <em>Basis:</em> <code>/playlist?list=OLAK5uy_…</code> serves no <code>og:</code> tags while <code>/browse/MPRE…</code> serves <code>og:type=music.album</code> — coverage is already inconsistent per entity type.</li>
+        <li>Broad crawl permission coexists with withheld usefulness by design rather than oversight. <em>Basis:</em> the only <code>Disallow</code> rules that bind <code>*</code> are <code>/youtubei/</code> and <code>/api/</code> — precisely the machine-readable paths — while every human-facing entity path is permitted.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Standalone YouTube Music subscribers and revenue — only the combined Music + Premium figure is ever published; closeable only by an Alphabet disclosure that decomposes the subscriptions line.</li>
+        <li>True catalog composition behind "100M+ songs" — how many are Art Tracks versus user uploads, covers and remixes. Closeable by sampling <code>/search?q=</code> rows at scale and classifying by <code>… - Topic</code> author, then extrapolating.</li>
+        <li>What share of recordings carry two or more video IDs — measurable by resolving a MusicBrainz-seeded sample through search and counting distinct IDs per (title, artist, duration).</li>
+        <li>Whether the <code>OLAK5uy_…</code> album-playlist alias maps deterministically to an <code>MPRE…</code> release ID — needs a paired sample of both identifiers for the same album.</li>
+        <li>The undeclared request-rate ceiling on the og and search paths — measurable only by a deliberate ramp, which was out of scope for this report.</li>
+        <li>Hosting and CDN posture for this host — not measurable from this vantage point (Probe Log); needs a run from an unproxied network.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
