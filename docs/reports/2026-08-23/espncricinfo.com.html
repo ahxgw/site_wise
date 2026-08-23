@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>espncricinfo.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-23</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>espncricinfo.com</h1>
+      <p class="lede">Cricket's archive of record, caught mid-rebrand: two hosts serve one corpus, and 89% of the declared crawl surface is edge-refused.</p>
+      <div class="tag-row">
+        <span class="tag">Sports Media</span>
+        <span class="tag">JioStar</span>
+        <span class="tag">Cricket</span>
+        <span class="tag">Akamai Bot Manager</span>
+        <span class="tag">Mid-Migration</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Cricinfo is the sport's system of record — scorecards, careers and match reports reaching back to the 18th century, assembled since 1993 and never seriously rivalled. It matters to an index builder less as a news site than as the <strong>only</strong> comprehensive structured store of cricket facts, and the joins it publishes (player ID, match ID, series ID) are the de-facto keys the rest of the cricket web borrows.</p>
+      <p>The site is caught mid-move. After the November 2024 Disney Star–Viacom18 merger put it inside JioStar, the platform was renamed back to plain <em>Cricinfo</em> on 23 June 2026 and pointed at <code>cricinfo.com</code>. Two months later that migration is visibly half-finished, and the resulting contradictions dominate this report's retrieval notes. <span class="evidence inferred">inferred</span> Discovery infrastructure was not part of the cutover. <em>Basis:</em> the news sitemap's newest entry is 2026-06-24, one day after the rename, and it has not advanced since (Probe Log) — the incremental feed stopped at the cutover rather than following the brand.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.espncricinfo.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.cricinfo.com/">https://www.cricinfo.com/</a> — declared by every page sampled, though the sitemaps still list the old host</dd></div>
+        <div><dt>Category</dt><dd>Sports media; cricket statistics and live scoring</dd></div>
+        <div><dt>Related hosts</dt><dd><code>www.cricinfo.com</code> (rebrand target, identical corpus), <code>stats.cricinfo.com</code> (StatsGuru), <code>static.espncricinfo.com</code> (site search), <code>img1.hscicdn.com</code> + <code>wassets.hscicdn.com</code> (media CDN), <code>hs-consumer-api.espncricinfo.com</code> (internal JSON API)</dd></div>
+        <div><dt>Owner</dt><dd>JioStar (Reliance-controlled JV of Viacom18 and Disney Star, formed Nov 2024); Sambit Bal, Editor-in-Chief</dd></div>
+        <div><dt>Founded / launched</dt><dd>15 Mar 1993 by Simon King as a Usenet/IRC cricket bot; Wisden Group took a two-thirds stake in 2003; ESPN bought it June 2007; renamed to Cricinfo 23 Jun 2026</dd></div>
+        <div><dt>Business model</dt><dd>Advertising plus funnel into JioStar's cricket rights and JioHotstar streaming; no subscription on the site, no revenue line disclosed</dd></div>
+        <div><dt>Scale anchor</dt><dd>2.03M distinct URLs declared across 60 child sitemaps — measured first-hand 2026-08-23 (Probe Log)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Entity counts below are sitemap-derived lower bounds, not editorial totals; unmeasured quantities live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Declared crawl surface</dt>
+          <dd>2,237,865 <code>&lt;loc&gt;</code> entries across 60 child sitemaps, resolving to <strong>2,030,332 distinct URLs</strong> (9.3% duplication) and 549MB of uncompressed sitemap XML — measured 2026-08-23 by fetching every child (Probe Log). Calculated by Site Wise. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Share of that surface the edge refuses</dt>
+          <dd><strong>1,803,202 of 2,030,332 URLs (88.8%)</strong> sit under <code>/records/</code> or <code>/cricketers/</code>, and every sample from both returned HTTP 403 — 21 of 21 URLs tested, versus 22 of 23 returning 200 under <code>/story/</code> and <code>/cricket-videos/</code>. Measured 2026-08-23 (Probe Log). Calculated by Site Wise. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Records pages as a share of the sitemap</dt>
+          <dd><code>/records/</code> = 1,702,882 URLs (83.9%), of which head-to-head permutations alone are 1,597,833 (78.7%) — combinatorial team-pair × record-type × format pages, including fixtures that have never been played (observed: Australia vs St Helena, South Africa vs Jersey). As of 2026-08-23 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Entity counts and URL inflation</dt>
+          <dd>100,320 cricketers, 41,195 videos, 32,381 stories, 17,917 matches, 16,099 series, 6,596 teams, 12,310 Hindi URLs — sitemap lower bounds as of 2026-08-23 (Probe Log). URLs per entity: teams exactly 6.00 (root, schedule, videos, squads, gallery, photo), series 3.19, matches 2.77, cricketers 1.58 including a 25.8% duplicate rate inside <code>overall-cricketer.xml.gz</code> alone. Calculated by Site Wise. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>News sitemap staleness</dt>
+          <dd>915 entries spanning 2021-06-22 to <strong>2026-06-24</strong> — the newest article is 60 days old at probe time, in a feed whose purpose is 48-hour freshness. 906 of 915 carry an <code>image:loc</code>; all 915 are <code>en</code>. Measured 2026-08-23 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Traffic split across the rebrand</dt>
+          <dd>Similarweb estimates for July 2026: <code>espncricinfo.com</code> 76.6M visits, −39.1% month-over-month, global rank #827; <code>cricinfo.com</code> 121.2M visits, +119.3% month-over-month, global rank #399. Third-party estimates, not official figures. <a href="https://www.similarweb.com/website/espncricinfo.com/">Similarweb: espncricinfo.com</a> / <a href="https://www.similarweb.com/website/cricinfo.com/">cricinfo.com</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt footprint</dt>
+          <dd>1,347 bytes / 56 lines on espncricinfo.com; 1,340 bytes / 57 lines on cricinfo.com. The two differ only in their two <code>Sitemap:</code> lines and a trailing newline — measured by diff, 2026-08-23 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>JioStar valuation</dt>
+          <dd>JV valued at ₹70,352 crore (~US$8.5B) post-money at close, Nov 2024; ownership 46.82% Viacom18, 36.84% Disney, 16.34% Reliance Industries. <a href="https://www.jiostar.com/news/reliance-and-disney-announce-completion-of-transaction-to-form-joint-venture-to-bring-together-the-most-iconic-and-engaging-entertainment-brands-in-india/">JioStar completion release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-23. Unless noted, requests carry a desktop Chrome 124 header set; see the bot-gate row for why that matters.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe"><code>curl -sL https://www.espncricinfo.com/robots.txt</code>, then line-by-line structure</td><td data-label="Observation">1,347 bytes / 56 lines. Named groups: <code>Googlebot</code> → <code>Allow: /</code>; <code>GPTBot</code> and <code>Google-Extended</code> → <code>Disallow: /</code>; <code>*</code> → <code>Allow: /*</code>. <strong>ClaudeBot, CCBot, PerplexityBot, Bytespider, Applebot-Extended and Amazonbot are mentioned zero times</strong> — formally unrestricted. And <strong>the 41 <code>Disallow</code> rules are orphaned</strong>: lines 13–14 are <code>Sitemap:</code>, line 15 is blank, and lines 16–56 are bare <code>Disallow</code> directives under <em>no</em> <code>User-agent</code> group. Under RFC 9309 a rule must follow a user-agent line, so this block binds nothing — including <code>/video/</code>, <code>/audio/</code> and <code>/db/ARCHIVE/</code>. The <code>*</code> group's effective content is <code>Allow: /*</code> and nothing else.</td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe">Header drop-one-out and additive sweep against <code>/robots.txt</code>, 20 requests</td><td data-label="Observation">Akamai Bot Manager (<code>bm_s</code>/<code>bm_so</code> cookies) gates on <strong>header fingerprint, not user agent</strong>. Minimum passing set = UA + the four <code>Sec-Fetch-*</code> headers + <code>Accept</code> + <code>Accept-Language</code>. Drop the Sec-Fetch group → 403; drop <code>Accept-Language</code> → 403; drop <code>sec-ch-ua</code>, <code>Accept-Encoding</code> or <code>Upgrade-Insecure-Requests</code> → still 200. UA identity is irrelevant: a Googlebot UA with a thin header set 403s, and no single Sec-Fetch header alone suffices.</td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe">Fetch all 60 child sitemaps and count <code>&lt;loc&gt;</code></td><td data-label="Observation">2,237,865 entries → 2,030,332 distinct URLs, 549MB uncompressed. All 2,030,332 are on <code>www.espncricinfo.com</code>; <strong>zero</strong> on <code>cricinfo.com</code>. Families: records 1,702,882 · cricketers 158,485 (100,320 unique IDs) · series 101,639 · videos 41,195 · team 39,576 · story 32,381 · hindi 12,310.</td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe">Status sampling by path family, 44 URLs drawn at random from the sitemaps</td><td data-label="Observation"><code>/records/</code> 0/11 reachable (11× 403, including 6 head-to-head and 5 format-record URLs). <code>/cricketers/</code> 0/10 reachable (10× 403). <code>/story/</code> 10/10 → 200. <code>/cricket-videos/</code> 12/13 → 200, one confirmed dead (<code>…perth-576433</code> is in the sitemap and returns 404). <strong>The two largest and most structured families are exactly the ones the edge refuses.</strong></td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe">Structured-data extraction across four page types</td><td data-label="Observation">Every page declares <code>og:type=website</code> — including articles. Story → JSON-LD <code>NewsArticle</code>; match → <code>SportsEvent</code>; <strong>team and video pages carry no entity-level JSON-LD at all</strong> and no <code>og:video</code>, so 41,195 video URLs publish no duration, thumbnail, contentUrl or upload date. All four declare <code>canonical</code> and <code>og:url</code> on <code>www.cricinfo.com</code>, while the JSON-LD <code>url</code>/<code>mainEntityOfPage</code> on story and match point at <code>www.espncricinfo.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe">Inspect the <code>NewsArticle</code> payload</td><td data-label="Observation"><code>articleBody</code> is <strong>32 characters — the headline repeated</strong>, not the article text. Author is properly keyed (<code>/author/partab-ramchand-156</code>), <code>isAccessibleForFree: true</code>, image resolves to <code>img1.hscicdn.com</code>. On the match page, <code>SportsEvent.endDate</code> for a 1999 fixture reads <code>2016-10-06T22:06:41Z</code> — a CMS migration timestamp — and its <code>url</code> points at the <code>/live-cricket-score</code> tab rather than the <code>/full-scorecard</code> page actually served.</td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe">Google News sitemap census</td><td data-label="Observation">915 entries, publication dates 2021-06-22 → 2026-06-24 — spanning five years in a feed specified for the last two days, and frozen 60 days before probe date. The parent index dates it <code>lastmod 2026-06-17</code>. 906/915 carry <code>image:loc</code> (all <code>img1.hscicdn.com</code>); 915/915 are <code>en</code>, so the 12,310 Hindi URLs have no news feed.</td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe">Compare the two hosts' discovery layers</td><td data-label="Observation"><code>cricinfo.com</code>'s sitemap index lists <strong>61 children, all 61 pointing back at <code>www.espncricinfo.com</code></strong>. The old host's index lists 60. Both duplicate <code>overall-team.xml.gz</code>. The one child unique to the new host, <code>overall-match-1.xml.gz</code>, returns a gzipped HTML error page under an <code>.xml.gz</code> name — a soft-404. Head-to-head shards skip 9, 14, 24, 36 and 42; <code>overall-series</code> (51,386) and <code>overall-cricketer</code> (50,001) exceed the 50,000-URL sitemaps.org cap.</td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe"><code>curl -sI</code> on a 200 story page; <code>dig</code> on both hosts</td><td data-label="Observation">No CSP, no <code>X-Frame-Options</code>, no <code>X-Content-Type-Options</code>, no <code>Referrer-Policy</code>. HSTS <code>max-age=15552000</code> without <code>preload</code>; <code>cache-control: no-cache, no-store</code>; custom <code>x-hsci-cache-time</code>. Seven cookies set on a logged-out GET including a 20-year <code>SWID</code>. <code>www</code> resolves through <code>wildcard-espncricinfo.edgekey.net</code> to Akamai (23.200.55.x); the apex is AWS EC2 in <code>ap-southeast-1</code> behind Varnish and 302s to <code>https://www.cricinfo.com/</code>; nameservers are Route 53. <strong>The old host's article URLs do not redirect — they answer 200 in place.</strong></td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe"><code>curl -sL https://stats.cricinfo.com/robots.txt</code>, one permitted StatsGuru query, and <code>hs-consumer-api</code></td><td data-label="Observation">StatsGuru has a separate, <strong>well-formed</strong> 155-byte file: <code>GPTBot</code> and <code>Google-Extended</code> denied, <code>*</code> gets <code>Crawl-delay: 15</code> and — decisively — <code>Disallow: /*template=results</code>, the exact parameter that renders a result table. The permitted query form returns 105KB and 7 tables but <strong>zero data rows</strong>: the query builder is crawlable, the answers are not. Site search redirects off to <code>static.espncricinfo.com</code>. <code>hs-consumer-api.espncricinfo.com</code> — the JSON API behind the site's own live scoring — 403s to both browser- and XHR-shaped header sets, including with <code>Origin</code>/<code>Referer</code> set to the site.</td></tr>
+            <tr><td data-label="Date">2026-08-23</td><td data-label="Probe">Image CDN transform test on <code>img1.hscicdn.com</code></td><td data-label="Observation">Cloudinary-style transforms accepted unauthenticated: <code>/f_auto</code> → 108,178 bytes, <code>/w_1600</code> → 123,621, <code>/w_200,h_200,c_fill</code> → 7,163, all <code>image/jpeg</code> 200. Arbitrary derivative sizes can be requested without generating them locally.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. "Edge-refused" means robots.txt permits it but Akamai returns 403 (Probe Log).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">32,381 stories plus 12,310 Hindi URLs (Verified Metrics); match reports, analysis and obituaries reaching to the 1990s.</td>
+              <td data-label="Best legitimate path">Crawl <code>story.xml.gz</code>, fetch each page, take the body from rendered HTML — the JSON-LD <code>articleBody</code> is the headline only (Probe Log).</td>
+              <td data-label="Auth &amp; quota">No auth, no published quota. Costs a browser-complete header set; the ceiling is undeclared throttling.</td>
+              <td data-label="License / display">ToS-bound, all rights reserved. Snippet and link; no republication.</td>
+              <td data-label="Freshness">Immutable after publication. The declared feed is 60 days stale, so recency needs recrawl.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">The crown jewels: 100,320 cricketers, 17,917 matches, 16,099 series, 6,596 teams, plus 1.70M records pages (Verified Metrics).</td>
+              <td data-label="Best legitimate path"><strong>Mostly blocked.</strong> <code>/cricketers/</code> and <code>/records/</code> are 403 at the edge; StatsGuru result tables are robots-disallowed. Match and team pages do resolve.</td>
+              <td data-label="Auth &amp; quota">No path priced or offered. No public API; the internal one 403s.</td>
+              <td data-label="License / display">Database rights over compiled statistics are the live question — see Open Questions.</td>
+              <td data-label="Freshness">Append-only; historical rows effectively immutable.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">41,195 video URLs (Verified Metrics) — highlights, interviews, analysis.</td>
+              <td data-label="Best legitimate path">Pages fetch 200, but carry no <code>VideoObject</code>, no <code>og:video</code> and no <code>contentUrl</code> (Probe Log). Only the title and page URL are extractable.</td>
+              <td data-label="Auth &amp; quota">None for the page; the media itself has no exposed endpoint.</td>
+              <td data-label="License / display">Rights sit with JioStar and the boards. No mirroring.</td>
+              <td data-label="Freshness">Append-mostly; at least one sitemap entry already 404s.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Editorial photography and player portraits on <code>img1.hscicdn.com</code>; 906 of 915 news entries carry one.</td>
+              <td data-label="Best legitimate path"><code>image:loc</code> in the news sitemap and <code>og:image</code> per page, both giving direct CDN URLs with working on-demand transforms (Probe Log).</td>
+              <td data-label="Auth &amp; quota">None. Unauthenticated, arbitrary transform strings accepted.</td>
+              <td data-label="License / display">Agency-owned in large part (Getty/AFP credits appear inline). Hotlink with attribution; do not copy.</td>
+              <td data-label="Freshness">Low churn once published.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio / comments</td>
+              <td data-label="Objects &amp; est. count">Podcasts under <code>/audio/</code>; no public comment or rating surface anywhere.</td>
+              <td data-label="Best legitimate path">None. <code>/audio/</code> appears only in the orphaned robots block and nothing in the sitemaps points there.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">No reuse path.</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Live state</td>
+              <td data-label="Objects &amp; est. count">Ball-by-ball commentary and live scores — 8,716 <code>ball-by-ball-commentary</code> URLs and 17,917 <code>live-cricket-score</code> URLs in the match sitemap.</td>
+              <td data-label="Best legitimate path">Only <code>hs-consumer-api.espncricinfo.com</code>, which 403s to third parties (Probe Log). HTML pages hydrate client-side from it.</td>
+              <td data-label="Auth &amp; quota">No third-party access offered.</td>
+              <td data-label="License / display">Live scores are contractually sensitive; treat as off-limits without a deal.</td>
+              <td data-label="Freshness">Sub-minute during play. Not indexable at that cadence anyway.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Cricinfo differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Numeric IDs are the site's great gift: every entity carries one in its slug (<code>ted-a-beckett-3931</code>, <code>…-4th-match-65196</code>, <code>england-1</code>), and the slug text can change while the ID does not. Key on the trailing integer, never the slug. The dedup hazard is <strong>host</strong>, not path: the identical object exists at <code>espncricinfo.com</code> and <code>cricinfo.com</code>, both returning 200 (Probe Log).</p>
+        </div>
+        <div>
+          <h4>Canonical is contested</h4>
+          <p>Three signals on one page disagree. <code>rel=canonical</code> and <code>og:url</code> say <code>cricinfo.com</code>; JSON-LD <code>url</code> says <code>espncricinfo.com</code>; both sitemap indexes list <code>espncricinfo.com</code> exclusively. Follow the <code>rel=canonical</code> — it is the signal the operator is actively changing — but store the ID, not the URL, as the identity, so the eventual redirect cutover costs nothing.</p>
+        </div>
+        <div>
+          <h4>The sitemap is not an access grant</h4>
+          <p>The sharpest delta here. The methodology's usual split is curated-sliver versus metered API; Cricinfo instead advertises 2.03M URLs in robots-permitted sitemaps and then has the CDN refuse 88.8% of them. Sitemap presence carries <em>no</em> information about fetchability, so a crawler must probe rather than trust — and should not read the 403s as a rate limit to back off from, because they are unconditional by path.</p>
+        </div>
+        <div>
+          <h4>Robots.txt is a fossil, and structurally void</h4>
+          <p>The 41 <code>Disallow</code> rules bind nothing (Probe Log), so the file's real content is <code>Allow: /*</code> plus three AI-crawler groups. Their targets — <code>/db/SUPPORT/DAWSON/</code>, <code>/icc_cricket_worldcup2011/</code>, a single 2013-14 series — describe a site two rewrites ago. A careful crawler should honour the orphaned rules anyway; they are a clear statement of intent even where they are not enforceable.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Four units: the <strong>story</strong>, the <strong>match</strong>, the <strong>player</strong>, the <strong>record query</strong>. Only the first two are fetchable. Never treat a URL as a unit — teams publish exactly 6.00 URLs per entity and matches 2.77, so URL-level indexing triples the corpus and splits each entity's evidence across near-duplicate tabs.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Trust rendered HTML over structured data, inverting the usual preference. <code>articleBody</code> holds the headline; <code>og:type</code> is <code>website</code> on every page type; a 1999 match carries a 2016 <code>endDate</code> (Probe Log). The JSON-LD is reliable for <em>identity</em> — author URL, image, datePublished — and unreliable for content and time.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Inverted from a normal news site: the archive is enormous and immutable, the fresh layer small and its feed dead. With <code>lastmod</code> unreliable and the news sitemap frozen at 2026-06-24, recency must come from crawling <code>/story/</code> listing pages, not from any published signal.</p>
+        </div>
+        <div>
+          <h4>Thin-content combinatorics</h4>
+          <p>1.60M head-to-head URLs are team-pair × record-type × format, including matchups never played (Australia vs St Helena). Even if the 403 lifted, most would be empty tables. Treat the records family as a <em>query space</em> to sample, never a document set to enumerate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> story, match, player, team — each keyed by its numeric ID, with the multi-tab URLs folded in as faces of one document rather than separate records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> trailing integer from the slug for every entity type; <code>author/{slug}-{id}</code> joins bylines across stories; match ID joins scorecard, commentary and report tabs; <code>img1.hscicdn.com</code> path joins images to both stories and players. Store host-agnostic IDs so the rebrand cutover is a no-op.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>story.xml.gz</code> → fetch each page, take body from rendered HTML — 32,381 documents, the only large family that is both permitted and reachable. 2) <code>overall-match.xml.gz</code> and <code>overall-team.xml.gz</code>, deduped to 17,917 and 6,596 entities. 3) News-sitemap <code>image:loc</code> for image-to-story joins, useful despite the staleness. 4) <code>overall-videos.xml.gz</code> for titles and URLs only — no media metadata exists to collect. 5) <code>/cricketers/</code> and <code>/records/</code>: <strong>excluded</strong>, edge-refused. 6) StatsGuru results: <strong>excluded</strong>, robots-disallowed.</li>
+        <li><strong>Coverage ceiling, stated plainly:</strong> roughly 227K of 2.03M declared URLs (11.2%) are actually ingestible, and the excluded remainder contains the structured cricket data that is the site's whole reason for existing. This corpus is worth indexing for its journalism, not for its statistics — the statistics require a licence.</li>
+        <li><strong>Recrawl cadence:</strong> <code>/story/</code> listing pages daily, since no working feed exists; match pages once after the fixture concludes, then never; team and player pages quarterly if access opens; archive stories never.</li>
+        <li><strong>Derivatives to generate:</strong> entity linking from story text to player and team IDs — the single highest-value derivative, because it reconstructs part of the statistical graph from the prose that <em>is</em> reachable. Thumbnails via CDN transform rather than local resize. No ASR: no audio is obtainable.</li>
+        <li><strong>Demo to build:</strong> a fetchability auditor that reads all 60 child sitemaps, samples each path family, and produces the declared-versus-reachable table in the Verified Metrics above — turning "the sitemap lies" from an assertion into a reproducible measurement, and re-runnable to detect the day the 403s lift or the hosts finally redirect.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The migration will move under you.</strong> Two hosts serve one corpus with contradictory canonical and sitemap signals, and traffic is visibly shifting between them (Verified Metrics). When the redirect finally lands, every stored <code>espncricinfo.com</code> URL breaks at once. Key on IDs and treat the host as a mutable attribute, not identity.</li>
+        <li><strong>The bot gate is a scoring model, not a rule.</strong> Access today depends on presenting a browser-complete header set, and the passing threshold is undocumented and tunable from Akamai's console (Probe Log). This is the least durable assumption in the plan; a single policy change can take the reachable 11% to zero.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The 403s on records and cricketers look deliberate rather than incidental.</strong> <em>Basis:</em> they are unconditional by path — 21 of 21 samples across two families and several URL shapes — while stories and videos on the same host, same headers, same session return 200. A rate limiter or a misconfiguration would not sort so cleanly along the boundary of the site's proprietary statistical data.</li>
+        <li><strong>The AI-crawler stance is unfinished and will be finished.</strong> GPTBot and Google-Extended are named; ClaudeBot, CCBot, PerplexityBot, Bytespider and Amazonbot are not (Probe Log). That silence is an artefact of a file nobody has maintained, not a grant. Meanwhile the owner has announced AI plans of its own, which cuts against third-party reuse.</li>
+        <li><strong>Statistical compilations may carry database rights independent of copyright.</strong> Cricinfo's scorecards are a compiled dataset assembled over three decades, and the operator is now an Indian JV rather than a US broadcaster — a different legal posture for any bulk-extraction argument. Do not build on the records family even if the 403 lifts, without checking this first.</li>
+        <li><strong>Do not build freshness on the news sitemap.</strong> It has been frozen since 2026-06-24 (Verified Metrics). Any pipeline that treats it as a change feed will silently index nothing and report success.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.jiostar.com/news/espncricinfo-is-back-to-being-cricinfo/">JioStar, "ESPNcricinfo is back to being Cricinfo" (23 Jun 2026)</a> — rename date, move to <code>cricinfo.com</code>, the promise that old links "will continue to be directed to the site without interruption", Sambit Bal on AI-powered storytelling, 1993 founding.</li>
+        <li><a href="https://www.jiostar.com/news/reliance-and-disney-announce-completion-of-transaction-to-form-joint-venture-to-bring-together-the-most-iconic-and-engaging-entertainment-brands-in-india/">JioStar / Reliance–Disney JV completion release (Nov 2024)</a> — ₹70,352 crore valuation and the 46.82% / 36.84% / 16.34% split.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Cricinfo">Wikipedia: Cricinfo</a> — 15 Mar 1993 launch by Simon King, 2003 Wisden two-thirds stake (~$3M), June 2007 ESPN purchase, product history.</li>
+        <li><a href="https://www.forbes.com/2007/06/12/disney-espn-cricinfo-markets-equity-cx_vr_0612markets17.html">Forbes, "Bowling For Walt Disney" (12 Jun 2007)</a> — contemporaneous account of the ESPN acquisition; terms undisclosed.</li>
+        <li><a href="https://www.similarweb.com/website/espncricinfo.com/">Similarweb: espncricinfo.com</a> and <a href="https://www.similarweb.com/website/cricinfo.com/">cricinfo.com</a> — July 2026 visit estimates and rank movement. Third-party estimates, named as such.</li>
+        <li>Local probes on 2026-08-23, full results in the Probe Log: robots.txt on three hosts, a 20-request header drop-one-out sweep, a full 60-child sitemap census, 44 sampled URLs across four path families, structured-data extraction on four page types, image-CDN transform tests, and <code>dig</code> against both hosts.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Discovery infrastructure was not part of the June 2026 rebrand cutover. <em>Basis:</em> the news sitemap's newest entry is 2026-06-24, one day after the 23 June rename, and has not advanced in the 60 days since; meanwhile both hosts' sitemap indexes still enumerate <code>espncricinfo.com</code> exclusively while every page's <code>rel=canonical</code> already points at <code>cricinfo.com</code>.</li>
+        <li>The 403s on <code>/records/</code> and <code>/cricketers/</code> are a deliberate policy rather than throttling. <em>Basis:</em> 21 of 21 samples across both families failed unconditionally while 22 of 23 samples from <code>/story/</code> and <code>/cricket-videos/</code> succeeded in the same session with identical headers — a split that follows the boundary of the site's proprietary statistical data, not a request-rate curve.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Whether the <code>/records/</code> and <code>/cricketers/</code> 403s are global or specific to this vantage point's IP range — closeable by repeating the 21-URL sample from two unrelated networks and a residential connection.</li>
+        <li>Whether Googlebot is exempted from those 403s by verified reverse-DNS rather than UA — closeable by checking whether those URLs appear in Google's index via <code>site:</code> queries, which would prove the edge serves someone.</li>
+        <li>Whether <code>espncricinfo.com</code> will 301 to <code>cricinfo.com</code>, and when — closeable by scheduled re-probe of the header response on a known story URL.</li>
+        <li>Official audience figures — JioStar has published none since taking ownership; only third-party estimates exist. Closeable by a JioStar disclosure or an audited panel.</li>
+        <li>Whether the compiled scorecard database attracts sui generis database rights or contractual protection under Indian law post-JioStar, and whether any partner or paid statistics feed exists — no developer portal, pricing or terms were found. Needs a licensing conversation, not a probe.</li>
+        <li>Whether the Hindi edition's 12,310 URLs are translations or original reporting, and whether they share numeric IDs with the English corpus — closeable by sampling Hindi URLs for ID overlap.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
