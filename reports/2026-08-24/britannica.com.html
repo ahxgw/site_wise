@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>britannica.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-08-24</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>britannica.com</h1>
+      <p class="lede">Britannica's robots.txt invites every AI crawler; Cloudflare 403s them all. The real door is a key-gated syndication API with reading-level tiers.</p>
+      <div class="tag-row">
+        <span class="tag">Reference</span>
+        <span class="tag">Encyclopedia</span>
+        <span class="tag">Editorial</span>
+        <span class="tag">Licensing</span>
+        <span class="tag">Litigation</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Encyclopædia Britannica, Inc. is a privately held Chicago reference publisher, founded 1768, that ended its print edition in 2012 and now runs an ad-supported free web encyclopedia, a premium membership, a school/library subscription business, and Merriam-Webster. Its corpus is entirely <strong>editorially commissioned and signed</strong> — no user-generated layer, and so none of the trust-tiering most platforms require. That provenance is what makes it attractive as a grounding corpus for answer engines, and Britannica has responded by suing one: it filed against Perplexity in September 2025 over verbatim copying and hallucinated attribution. For an index builder the site is unusual twice over. Its crawl surface is closed by infrastructure rather than policy — robots.txt is permissive and enforcement lives entirely in Cloudflare (Probe Log). And its licensed path is genuinely good: a syndication API with an incremental <code>lastUpdated</code> filter, stable numeric article IDs, and the same topic published at five reading levels.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>britannica.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.britannica.com/">https://www.britannica.com/</a></dd></div>
+        <div><dt>Category</dt><dd>General reference encyclopedia; education publishing</dd></div>
+        <div><dt>Related hosts</dt><dd><code>cdn.britannica.com</code> (media, CloudFront), <code>syndication.api.eb.com</code> (licensed API), <code>kids.britannica.com</code>, <code>school.eb.com</code> (subscription), <code>merriam-webster.com</code>, <code>corporate.britannica.com</code>, <code>encyclopediaapi.com</code> (developer portal)</dd></div>
+        <div><dt>Owner</dt><dd>Encyclopædia Britannica, Inc. (private; majority owner Jacqui Safra). Jorge Cauz was CEO at the time of the September 2025 Perplexity filing.</dd></div>
+        <div><dt>Founded / launched</dt><dd>1768 (first edition, Edinburgh); britannica.com launched 1999; print discontinued 2012</dd></div>
+        <div><dt>Business model</dt><dd>Display ads on free articles + Britannica Premium membership + school/library subscriptions + content syndication licensing + Merriam-Webster</dd></div>
+        <div><dt>Scale anchor</dt><dd>200M+ monthly sessions across Britannica platforms, as of Sep 2025 (<a href="https://corporate.britannica.com/britannica-files-copyright-and-trademark-infringement-lawsuit-against-perplexity">Britannica press release</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (revenue, live sitemap count, premium share) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Monthly sessions</dt>
+          <dd>200M+ across Britannica platforms — as of Sep 2025. <a href="https://corporate.britannica.com/britannica-files-copyright-and-trademark-infringement-lawsuit-against-perplexity">Britannica press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap URL census</dt>
+          <dd>307,163 URLs across 109 child sitemaps — as of the 2026-02-02 archived index (live sitemap is 403, see Probe Log). Summed by Site Wise from each class's terminal-shard offset plus its entry count. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Sitemap composition</dt>
+          <dd><code>topic</code> 255.8K · <code>facts</code> 16.8K · <code>collection</code> 13.5K · <code>contributors</code> 7.3K · <code>video</code> 5.3K · <code>alpha</code> 3.4K · <code>highengagement</code> 2.5K · <code>browse</code> 2.1K · <code>biographies</code> 270 · <code>podcasts</code> 139 · <code>money</code> 5 — as of 2026-02-02, calculated by Site Wise from the same census probe. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Licensed article counts by reading level</dt>
+          <dd>Encyclopædia Britannica 87K+ · Concise 25K+ · Intermediate 22K+ · Elementary (US) 4.8K+ · Primary (UK) 4.8K+ · Portuguese Primary 2.9K+ — as of Aug 24 2026. <a href="https://encyclopediaapi.com/products/json">Britannica Syndication API docs</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Marketed corpus size</dt>
+          <dd>130K+ fact-checked articles, 60K+ images and videos, 1,100+ biographies — as of Aug 24 2026. <a href="https://corporate.britannica.com/legal/frequently-asked-questions-about-britannica-membership">Britannica membership FAQ</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Free API quota</dt>
+          <dd>1,000 queries per day per API key, non-commercial use only, maximum two reference APIs; commercial use is negotiated case by case — as of Aug 24 2026. <a href="https://encyclopediaapi.com/">Britannica developer portal</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Article length spread</dt>
+          <dd>255 to 131,706 words across a 10-article structured-data sample (median 3,908); <code>/place/France</code> is the 131.7K outlier. Measured 2026-08-24 in the structured-data probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured-data coverage</dt>
+          <dd>9/10 sampled articles carry <code>Article</code> JSON-LD and a Wikidata <code>sameAs</code>; 8/10 carry <code>FAQPage</code>; 10/10 carry <code>BreadcrumbList</code>. Sample of 10 measured 2026-08-24 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Images per article</dt>
+          <dd>2.0 image entries per URL in the terminal <code>topic</code> sitemap shard (1,525 <code>image:image</code> tags / 757 URLs) — as of 2026-02-02, calculated by Site Wise. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Perplexity litigation</dt>
+          <dd><em>Encyclopaedia Britannica, Inc. v. Perplexity AI, Inc.</em>, S.D.N.Y. No. 1:25-cv-07546, announced Sep 2025; Perplexity moved to dismiss the amended complaint on Mar 17 2026, opposed by Britannica; no ruling found as of Aug 24 2026. <a href="https://www.courtlistener.com/docket/71313411/encyclopaedia-britannica-inc-v-perplexity-ai-inc/">CourtListener docket</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-24. Because the live origin refuses automated clients, the sitemap and structured-data probes were run against Wayback Machine snapshots; each row states the snapshot date it measured.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-08-24</td><td><code>curl -sL https://www.britannica.com/robots.txt</code></td><td>HTTP 200, 48 lines. For <code>User-agent: *</code> only two rules: <code>Disallow: /search</code> and <code>Disallow: /cdn-cgi/</code>. <strong>Zero AI-crawler blocks</strong> — no GPTBot, ClaudeBot, CCBot, PerplexityBot, Google-Extended, Bytespider or any other. The only named agents are ~20 ad-tech and brand-safety crawlers (AdsBot-Google, CriteoBot, Grapeshot, IAS_crawler, Peer39_crawler, Proximic, TTD-Content …), each given <code>Allow: /</code>. One <code>Sitemap:</code> directive.</td></tr>
+            <tr><td>2026-08-24</td><td><code>curl -sI https://www.britannica.com/</code></td><td>HTTP <strong>403</strong> with <code>cf-mitigated: challenge</code>, <code>server: cloudflare</code>, and a 5.6KB Cloudflare interstitial. Also <code>cross-origin-embedder-policy: require-corp</code>, <code>referrer-policy: same-origin</code>, and a long <code>accept-ch</code>/<code>critical-ch</code> client-hints list used for fingerprinting.</td></tr>
+            <tr><td>2026-08-24</td><td>UA matrix on <code>/animal/lion</code></td><td>403 for all four attempts: research UA, desktop Chrome UA, Googlebot UA, and no UA at all. Only <code>/robots.txt</code> returned 200. The advertised sitemap and <code>/sitemap.xml</code> also 403; <code>/llms.txt</code> 404s. WebFetch against an article likewise returned 403.</td></tr>
+            <tr><td>2026-08-24</td><td>Sitemap census (2026-02-02 snapshot)</td><td>Archived index lists <strong>109 child sitemaps</strong> named <code>bps-ssl-gsm-{class}-{offset}-3000.xml</code>. The offset encoding plus each class's terminal-shard count yields 307,163 URLs (Verified Metrics). Child sitemaps carry <code>image:image</code> extensions but <strong>no <code>video:video</code> extensions</strong>, even in the <code>video</code> class.</td></tr>
+            <tr><td>2026-08-24</td><td><code>lastmod</code> audit, 4 shards (2026-02-01 snapshots)</td><td>All 5,280 <code>&lt;lastmod&gt;</code> values across the <code>topic</code>, <code>highengagement</code>, <code>biographies</code> and <code>facts</code> shards are the identical string <code>2026-01-30</code>. It is a build stamp, not a content-modification date.</td></tr>
+            <tr><td>2026-08-24</td><td>Structured-data sample, 10 articles (2026-06 to 2026-08 snapshots)</td><td><code>Article</code> JSON-LD carries <code>wordcount</code>, <code>datePublished</code>, <code>dateModified</code>, an <code>author</code> Person with a numeric <code>/contributor/Name/{id}</code> URL, and <code>sameAs</code> pointing at Wikidata (lion→Q140, Einstein→Q937, France→Q142, WWII→Q362). <code>dateModified</code> spreads genuinely (2026-03-16 to 2026-08-15), unlike <code>lastmod</code>. The one miss, <code>/money/inflation</code>, is a separate Britannica Money template carrying only <code>BreadcrumbList</code>. Pages set <code>robots: max-image-preview:large</code>.</td></tr>
+            <tr><td>2026-08-24</td><td><code>curl -sI https://cdn.britannica.com/55/2155-050-604F5A4A/lion.jpg</code></td><td>HTTP <strong>200</strong>, <code>image/jpeg</code>, 144KB, from CloudFront (<code>x-amz-cf-pop: HIO52-P4</code>; A records in 13.226.244.0/24). The media CDN is open to the same client the HTML origin refuses.</td></tr>
+            <tr><td>2026-08-24</td><td><code>curl https://syndication.api.eb.com/production/articles?articleTypeId=1</code></td><td>Live and key-gated: HTTP 400, body <code>{"message":"Unauthorized"}</code> without an <code>x-api-key</code> header. On CloudFront (143.204.181.0/24), not behind the Cloudflare wall.</td></tr>
+            <tr><td>2026-08-24</td><td><code>dig +short www.britannica.com</code></td><td>CNAME to <code>www.britannica.com.cdn.cloudflare.net</code> → 104.18.4.110 / 104.18.5.110; apex resolves elsewhere (32.195.145.85, 52.5.112.187). Two edges in play: Cloudflare for HTML, CloudFront for media and API.</td></tr>
+            <tr><td>2026-08-24</td><td>Sibling-host posture</td><td><code>merriam-webster.com</code> mirrors the pattern: no AI-crawler blocks in robots.txt, origin 403. <code>school.eb.com</code> serves <code>User-agent:*&nbsp;/&nbsp;Disallow:/</code> — the paid school product is closed by policy too. <code>corporate.britannica.com</code> and <code>encyclopediaapi.com</code> return 200 to plain curl.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. "Syndication API" = <a href="https://encyclopediaapi.com/products/json">Britannica Syndication API</a> at <code>syndication.api.eb.com</code>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Encyclopedia articles: 87K+ in the full product, 130K+ marketed on the site, 255.8K <code>/topic/</code> URLs in the sitemap (three different denominators — see Retrieval Notes).</td>
+              <td>Syndication API: <code>/articles</code> for the list, <code>/article/{articleId}/xml</code> for the body. Public crawl is Cloudflare-403 for every UA tested.</td>
+              <td><code>x-api-key</code> header. Free tier 1,000 queries/day/key, non-commercial, max two reference APIs; commercial terms negotiated case by case.</td>
+              <td>Contractual, per licence. No open licence; all rights reserved. Free-tier output may not be monetized by ads or fees.</td>
+              <td>Real churn is visible in JSON-LD <code>dateModified</code>, not sitemap <code>lastmod</code>. API exposes a <code>lastUpdated</code> filter for deltas.</td>
+            </tr>
+            <tr>
+              <td>Reading-level variants</td>
+              <td>Same topics re-authored at five levels: Advanced/full, Concise (25K+), Intermediate (22K+), Elementary US (4.8K+), Primary UK (4.8K+), plus Portuguese (2.9K+).</td>
+              <td>Syndication API <code>articleTypeId</code> (1 / 45 / 31 / 38 / 94 / 108 / 153).</td>
+              <td>Each level is a separate authorized product on the key; the free tier's two-API cap means at most two levels.</td>
+              <td>Same contractual terms per product.</td>
+              <td>Tracks the parent article; no separate cadence published.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>60K+ images and videos marketed; ~2.0 image entries per article URL in the sitemap; 42 distinct <code>cdn.britannica.com</code> assets on the sampled lion article.</td>
+              <td>Two open paths: <code>image:image</code> entries inside child sitemaps, and direct CloudFront fetch from <code>cdn.britannica.com</code> (200 to plain curl). API returns relative paths to prepend with the same CDN base.</td>
+              <td>None technically enforced on the CDN. API media requires the key.</td>
+              <td>Rights are per-image and often third-party (captions carry credits). Open reuse is not granted; treat hotlinking as the ceiling. Site sets <code>max-image-preview:large</code> for search engines.</td>
+              <td>Low churn; assets are content-addressed by ID in the path.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>5,313 <code>/video/</code> URLs in the sitemap, each with a numeric ID suffix (e.g. <code>/video/Overview-cakes-Viennese/-192542</code>).</td>
+              <td>Syndication API returns a video reference resolved through a two-step JW Player call. Sitemaps list video pages with image thumbnails only — no <code>video:video</code> extension, so no public duration/thumbnail/content-loc metadata.</td>
+              <td>API key.</td>
+              <td>Open: no published embed or reuse terms for Britannica video.</td>
+              <td>Open.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>139 <code>/podcasts/</code> URLs; API XML wraps audio in the same <code>&lt;assembly&gt;</code> element as images and video.</td>
+              <td>Syndication API media assemblies; CDN base for the files.</td>
+              <td>API key.</td>
+              <td>Open: no published reuse terms.</td>
+              <td>Episodic; open.</td>
+            </tr>
+            <tr>
+              <td>Q&amp;A / quizzes / facts</td>
+              <td>16.8K <code>/facts/</code> URLs and 13.5K <code>collection</code> URLs (mostly <code>/question/</code> and <code>/quiz/</code>), plus <code>FAQPage</code> JSON-LD on 8/10 sampled articles.</td>
+              <td><code>FAQPage</code> JSON-LD, reachable only via cache/archive given the origin 403.</td>
+              <td>None — but no live access either.</td>
+              <td>All rights reserved, as with article text.</td>
+              <td>Follows the parent article.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td data-label="Objects" colspan="5"><strong>None.</strong> Britannica publishes no user-generated content — the defining structural difference from Wikipedia and from every social platform in this series.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Numeric <code>articleId</code>; 7.3K contributor URLs with numeric IDs; a 9-value category taxonomy; <code>BreadcrumbList</code> topic hierarchy; Wikidata QIDs on 9/10 sampled articles.</td>
+              <td>Wikidata <code>sameAs</code> in JSON-LD is the highest-value field on the page and requires no licence to <em>use as a key</em>. Category and contributor IDs come from the API.</td>
+              <td>Wikidata joins: free. Article payloads: API key.</td>
+              <td>Identifiers are facts and freely usable; the prose they point at is not.</td>
+              <td>Entity mapping is near-static.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Britannica differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Policy and enforcement have separated</h4>
+          <p>The methodology's default is that robots.txt blocks AI crawlers. Britannica <em>inverts</em> it: robots.txt names no AI agent and allows ~20 ad-tech crawlers, while Cloudflare 403s everything — including Googlebot's UA and the sitemap robots.txt itself advertises. <span class="evidence inferred">inferred</span> The allow-list is an ad-verification whitelist, not a crawl policy; crawl policy has moved into Cloudflare bot management, where it is unpublishable and unauditable. <em>Basis:</em> every named agent is a brand-safety or ad-verification vendor (Grapeshot, IAS_crawler, Peer39_crawler, DoubleVerifyBot, Proximic, TTD-Content), no editorial or search agent appears, and the origin returns <code>cf-mitigated: challenge</code> to all four UAs tested.</p>
+        </div>
+        <div>
+          <h4>Three article counts, three denominators</h4>
+          <p>87K+ (API, full product), 130K+ (marketing), 255.8K (<code>/topic/</code> sitemap URLs). They are not in conflict: the API counts licensable article records, marketing counts web articles including non-syndicated verticals, and the sitemap counts URLs including redirect aliases and sub-topic pages. Pick the denominator that matches your ingestion path and never mix them in a coverage metric.</p>
+        </div>
+        <div>
+          <h4>Do not trust <code>lastmod</code></h4>
+          <p>All 5,280 sampled sitemap <code>lastmod</code> values are one build stamp (Probe Log). Any recrawl scheduler keyed on it will either refetch the entire 307K corpus every build or never refetch at all. The real signals are JSON-LD <code>dateModified</code> on the page and the API's <code>lastUpdated</code> query parameter — the latter is the only one that supports a server-side delta.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit: section, not article</h4>
+          <p>Article length spans 255 to 131,706 words. <code>/place/France</code> as one document is useless for retrieval and would dominate any BM25 or embedding index. The API's XML carries an explicit <code>h1</code>–<code>h6</code> hierarchy, so the natural unit is the <strong>section</strong>, keyed <code>articleId + section path</code>, with the article as the parent record.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p><code>articleId</code> is the spine; media attach through <code>&lt;assembly&gt;</code> and <code>&lt;inlinemedia&gt;</code> elements inside the article body, so image–text association is authored rather than inferred — no OCR or co-occurrence heuristics needed. The Wikidata QID joins Britannica to the wider entity graph, and contributor IDs join articles to signed experts, a provenance edge no UGC site can offer.</p>
+        </div>
+        <div>
+          <h4>No spam surface, but a staleness surface</h4>
+          <p>With no user-generated content and no incentive to game ranking, trust tiering is unnecessary. The quality risk is inverted: an editorially-maintained corpus decays quietly. <code>/technology/API</code> is 255 words last modified 2026-03-16; <code>/event/World-War-II</code> is 46K words touched 2026-08-15. Depth tracks editorial priority, not traffic.</p>
+        </div>
+        <div>
+          <h4>Reading levels are a real asset</h4>
+          <p>Five parallel renderings of one topic is something almost no other corpus in this series offers. It supports audience-conditioned retrieval and yields free supervised pairs for summarization and simplification — provided the licence covers derivative training, which it does not obviously do.</p>
+        </div>
+        <div>
+          <h4>Query profile</h4>
+          <p>Definitional and entity-lookup: "what is X", "who was X", "when did X happen" — precisely the class that answer engines absorb before a click happens. That substitution is the injury pleaded against Perplexity and the reason the crawl wall exists.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> article <em>section</em> (from the API XML heading hierarchy), keyed <code>articleId + section path</code>; the article record is the parent, carrying title, contributors, category, Wikidata QID and <code>dateModified</code>.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>articleId</code> internally; Wikidata QID for external entity resolution; <code>contributorId</code> for provenance; <code>articleTypeId</code> to align reading-level variants of the same topic; media by CDN path.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>Syndication API</strong> — the only sanctioned bulk path; <code>/articles?articleTypeId=&amp;lastUpdated=</code> paginates 1,000 per page and gives true incremental deltas, but the free tier's 1,000 queries/day and two-product cap means a full 87K-article pull is a licensing conversation, not an engineering one. 2) <strong>Wikidata QID join</strong> — free, unlicensed, and lets you place Britannica in your entity graph before you have any text rights at all. 3) <strong>cdn.britannica.com</strong> — technically open for media, but rights are per-asset and frequently third-party; hotlink, do not mirror. 4) <strong>Public crawl</strong> — closed. Every UA tested gets a Cloudflare 403; budget nothing for it.</li>
+        <li><strong>Recrawl cadence:</strong> poll <code>/articles?lastUpdated={last_run}</code> daily per licensed product — cheap, server-side, and the whole reason to prefer the API. Ignore sitemap <code>lastmod</code> entirely. Re-resolve Wikidata mappings monthly; treat media as immutable by path.</li>
+        <li><strong>Derivatives to generate:</strong> section-level embeddings; a reading-level alignment table (same topic × 5 levels) as summarization training pairs, licence permitting; a contributor-authority table; a Britannica↔Wikipedia coverage diff keyed on QID, which is directly useful as an editorial gap-finder for both sides.</li>
+        <li><strong>Demo to build:</strong> a <em>lastmod liar</em> checker — feed it a sitemap index, compare declared <code>lastmod</code> against JSON-LD <code>dateModified</code> on a sample of its URLs, and report the fraction of the corpus whose freshness signal is a build stamp. Britannica scores 0% useful; the interesting output is running it across the sites already profiled in this series.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The wall is a dial, not a door.</strong> Enforcement lives in Cloudflare bot management, so Britannica can change who gets through without editing a single published policy file. An index built on any residual crawl access can lose it silently and with no diffable signal.</li>
+        <li><strong>Litigation defines the licence terms.</strong> Britannica's public position on AI grounding is a lawsuit (S.D.N.Y. 1:25-cv-07546), and no AI licensing programme is published on the developer portal. The free tier's non-commercial limit plus case-by-case commercial terms means an AI-facing index has no priced path today — only a negotiation whose outcome the pending motion to dismiss will influence.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The free API tier is not designed for corpus ingestion.</strong> <em>Basis:</em> 1,000 queries/day against an 87K-article product is a ~87-day full pull even before media, and the two-reference-API cap blocks the reading-level ladder that is the corpus's most distinctive feature.</li>
+        <li><strong>Media rights are per-asset and unstated.</strong> The CDN is open (Probe Log) but captions carry third-party credits; the open CDN is an availability fact, not a licence, and mistaking one for the other is the easiest way to acquire liability here.</li>
+        <li><strong>Ownership is in motion.</strong> A confidentially-filed IPO has been reported since 2024 and has not completed. A public listing or a sale would likely re-price syndication and could either open a formal AI licence or harden the wall further.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://corporate.britannica.com/britannica-files-copyright-and-trademark-infringement-lawsuit-against-perplexity">Britannica press release on the Perplexity lawsuit</a> (Sep 2025) — 200M+ monthly sessions; the copyright, trademark and hallucinated-attribution claims.</li>
+        <li><a href="https://www.courtlistener.com/docket/71313411/encyclopaedia-britannica-inc-v-perplexity-ai-inc/">CourtListener docket, S.D.N.Y. 1:25-cv-07546</a> — case number and the Mar 17 2026 motion to dismiss.</li>
+        <li><a href="https://encyclopediaapi.com/products/json">Britannica Syndication API documentation</a> — endpoints, <code>x-api-key</code> auth, <code>articleTypeId</code>/<code>categoryId</code>/<code>lastUpdated</code> parameters, 1,000-per-page pagination, per-product article counts, XML media assemblies, CDN base-URL construction, JW Player video resolution.</li>
+        <li><a href="https://encyclopediaapi.com/">Britannica developer portal</a> — free-tier quota and the non-commercial / two-API limits.</li>
+        <li><a href="https://corporate.britannica.com/legal/frequently-asked-questions-about-britannica-membership">Britannica membership FAQ</a> — 130K+ articles, 60K+ images and videos, 1,100+ biographies.</li>
+        <li><a href="https://blog.cloudflare.com/introducing-pay-per-crawl/">Cloudflare, "Introducing pay per crawl"</a> (Jul 2025) — context for why an AI-crawl decision on a Cloudflare-fronted site now lives at the edge rather than in robots.txt.</li>
+        <li>Local probes on 2026-08-24: <code>dig</code> and <code>curl</code> against the origin, robots.txt, the CDN, the syndication API and sibling hosts; Wayback-snapshot fetches of the sitemap index, eleven child sitemaps and ten article pages (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>robots.txt is an ad-verification allow-list, not a crawl policy; crawl policy now lives in Cloudflare bot management. <em>Basis:</em> all ~20 named agents are brand-safety/ad-verification vendors, no AI or search agent appears anywhere in the file, and the origin returns <code>cf-mitigated: challenge</code> to research, Chrome, Googlebot and empty UAs alike.</li>
+        <li>The free API tier is not designed for corpus ingestion. <em>Basis:</em> 1,000 queries/day against 87K+ articles implies a ~87-day full pull, and the two-reference-API cap excludes the reading-level ladder.</li>
+        <li>Sitemap <code>lastmod</code> is a build stamp. <em>Basis:</em> 5,280 values across four independent shards resolve to the single date <code>2026-01-30</code>, while JSON-LD <code>dateModified</code> on sampled articles spreads across 2026-03 to 2026-08.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Current live sitemap size and composition — the 307,163 figure is from a 2026-02-02 archive because the live sitemap 403s; closeable with an allow-listed crawler agreement or an authenticated fetch.</li>
+        <li>Commercial syndication pricing and whether any tier permits AI training or grounding — the portal states only "case by case"; closeable by requesting commercial terms through the developer portal.</li>
+        <li>Britannica's revenue and profitability — the company is private, the reported IPO has not completed, and press figures around $100M are neither current nor official; closeable only by an S-1 becoming public.</li>
+        <li>Whether Britannica has signed any AI licensing deal — none found in public reporting as of Aug 24 2026; closeable by a company announcement or a partner disclosure.</li>
+        <li>Structured-data coverage across the full corpus — measured 9/10 on a 10-article sample; closeable by extracting JSON-LD from a stratified sample of a few thousand sitemap URLs, which requires crawl access the origin currently refuses.</li>
+        <li>Video corpus metadata — duration, transcript availability and captions are absent from sitemaps and undocumented in the API; closeable with a licensed key and one <code>/article/{id}/xml</code> call against a video-bearing article.</li>
+        <li>Who is currently CEO — Jorge Cauz held the role at the September 2025 filing and secondary sources suggest a 2026 transition to board chairman without naming a successor; closeable by a Britannica leadership-page or press-release check.</li>
+        <li>Share of Britannica traffic arriving from AI answer engines versus classic search — the traffic-substitution injury central to the Perplexity complaint; closeable only with Britannica's own referrer analytics.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
