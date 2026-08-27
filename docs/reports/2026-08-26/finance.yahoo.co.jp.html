@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>finance.yahoo.co.jp Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-26</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>finance.yahoo.co.jp</h1>
+      <p class="lede">Yahoo!ファイナンス renders 24K instruments into 181K fully crawlable pages, blocks no AI crawler, and forbids reuse of every number on them.</p>
+      <div class="tag-row">
+        <span class="tag">Finance</span>
+        <span class="tag">Market Data</span>
+        <span class="tag">Forums / UGC</span>
+        <span class="tag">News Aggregator</span>
+        <span class="tag">Japan</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Yahoo!ファイナンス launched 1997-03-04 as Yahoo! JAPAN's stock-quote content and is now run by LY Corporation, the October 2023 merger of Yahoo Japan and LINE. It sells display advertising against the pages and a <strong>VIP倶楽部</strong> subscription against the data the free pages withhold. What makes it worth a report is that it is an <em>aggregator, not a publisher</em>: the site's own footer names eight upstream suppliers — 東京証券取引所, 大阪取引所, 名古屋証券取引所, 野村総合研究所, 東洋経済新報社, ウエルスアドバイザー, リフィニティブ・ジャパン, LINE FX — and then states 「株式情報の転用、販売は固く禁じます」. So the crawl economics invert the usual arrangement. The market data is technically wide open (no AI-crawler block, no user-agent gate, full server-side rendering, an unadvertised sitemap index) and legally closed. The one corpus LY actually owns is the stock message board, which absorbed the 株式 and FX categories of Yahoo!掲示板 when that service closed in 2019 and now takes ~29M posts a year. For an index builder the asset here is the forum and the AI-derived commentary layered on top of it, not the prices.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>finance.yahoo.co.jp</code> (no <code>www</code> variant; serves directly)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://finance.yahoo.co.jp/">https://finance.yahoo.co.jp/</a></dd></div>
+        <div><dt>Category</dt><dd>Financial portal — quotes, fundamentals, filings, news aggregation, retail message boards</dd></div>
+        <div><dt>Related hosts</dt><dd><code>finance-frontend-pc-dist.west.edge.storage-yahoo.jp</code> (Next.js bundles <em>and</em> rehosted TDnet / EDINET PDFs), <code>s.yimg.jp</code> (static images), <code>news.yahoo.co.jp</code> (article bodies), <code>www.yahoo.co.jp</code> (portal, different robots policy), <code>support.yahoo-net.jp</code> (help), <code>developer.yahoo.co.jp</code> (API portal — no finance API)</dd></div>
+        <div><dt>Owner</dt><dd>LY Corporation (LINEヤフー株式会社), formed 2023-10-01; CEO Takeshi Idezawa</dd></div>
+        <div><dt>Founded / launched</dt><dd>1997-03-04; real-time quote updates from 2012; US listings added 2015; board absorbed from Yahoo!掲示板 in 2019</dd></div>
+        <div><dt>Business model</dt><dd>Display advertising (LY's Media segment) plus the VIP倶楽部 subscription at ¥2,838/month tax-included, which gates CSV export, trade-breakdown time series, fundamentals before 2008, and paid articles</dd></div>
+        <div><dt>Scale anchor</dt><dd>181,459 sitemap URLs covering 24,226 distinct instruments, measured 2026-08-27 (Probe Log)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Sitemap, pagination and fetch figures are first-hand and dated 2026-08-27. Moderation figures are LY Corporation's own transparency reporting and cover the message board only.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Crawlable surface</dt>
+          <dd>181,459 URLs across 14 sitemap files, resolving to <strong>24,226 distinct instruments</strong>: 12,676 US tickers, 5,279 funds, 4,822 Japanese listings, 1,423 FX pairs, 26 indices — plus 780 navigation, NISA-article and feature URLs. Ratio of URLs to instruments is 7.5:1 because each instrument is published once per tab. As of Aug 27 2026, summed by Site Wise from the sitemap index (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Tab expansion per asset class</dt>
+          <dd>Japanese equities carry the most tabs at 12.29 URLs per symbol (13 tab types, of which <code>financials</code>, <code>performance</code> and <code>dividend</code> reach only 4,225 of 4,822 symbols — ETFs and REITs have no fundamentals). US equities are a flat 6.0, funds 8.0, FX 2.13. As of Aug 27 2026, calculated by Site Wise from the sitemaps (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Message board volume</dt>
+          <dd>29,415,652 posts in FY2024 (2024-04-01 – 2025-03-31), a monthly mean of 2,451,304, up from 27.42M in FY2023. Deletions were 487,773 posts, a <strong>1.7%</strong> removal rate; 91,187 of those were automatic. FY2021 for contrast: 27.73M posts and a 4.0% removal rate. Board moderation runs 24/7 with a 92-person team shared across ヤフコメ, 知恵袋 and the finance board, as of March 2025. <a href="https://www.lycorp.co.jp/ja/company/transparencyreport2024.pdf">Media Transparency Report FY2024</a>, <a href="https://www.lycorp.co.jp/ja/privacy-security/archive/Y/about_yahoo_co_jp_common_transparencyreport_2021_.PDF">FY2021 edition</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Cumulative board depth, five tickers</dt>
+          <dd>11,389,633 posts on five boards alone: 9984 SoftBank Group 4,945,997; 285A Kioxia 1,999,341; 8306 MUFG 1,841,221; 7203 Toyota 1,611,926; 6758 Sony 991,148. Read off the highest post number visible on each board at 10:29 JST, Aug 27 2026; summed by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Free-tier depth ceilings</dt>
+          <dd>Daily price history is capped at <strong>243 rows</strong> — exactly one trading year, 2025-08-27 to 2026-08-26 — served 20 per page over 13 pages, with page 14 empty. Per-ticker news is 415 items over 21 pages for 7203.T. CSV export, the volume-breakdown time series and fundamentals back to FY2008 are VIP-only. Measured Aug 27 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Fetch cost and rate posture</dt>
+          <dd>20 consecutive quote-page fetches from one client all returned HTTP 200 with no throttling; median 1.84s, max 2.12s. Pages run 95KB (US ticker) to 477KB (a board page). At that serial rate the 181,459-URL surface is roughly 93 machine-hours. Measured Aug 27 2026 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Owner scale and segment pressure</dt>
+          <dd>LY Corporation reported ¥553.9B revenue for Q1 of FY2027/3 (April–June 2026), up 13.1%, guiding to ¥2.24T for the year. The Media segment that carries Yahoo!ファイナンス advertising grew <strong>2.6%</strong>, with display and search advertising both down year on year, against 34.9% in the PayPay-led Strategic segment. Per the Q1 決算短信 dated 2026-08-03. <a href="https://finance.yahoo.co.jp/quote/4689.T/financials">4689.T financials</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-27 from a US vantage point (this report backfills the 2026-08-26 slot). User-agent is a descriptive research string unless a row says otherwise.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-08-27</td><td data-label="Probe"><code>dig +short</code> and <code>curl -sI</code> on the apex and a quote page</td><td data-label="Observation">Apex resolves through <code>edge12.g.yimg.jp</code> to 124.83.184.124 — Yahoo Japan's own edge, not a third-party CDN; nameservers are all <code>ns*.yahoo.co.jp</code>. HTTP/2, no redirect. Next.js App Router fingerprints throughout (<code>x-middleware-rewrite: /pc/</code>, a <code>vary</code> listing <code>rsc, next-router-state-tree</code>). <code>cache-control: private, no-cache, no-store, must-revalidate</code> on every page — no conditional-request savings. <strong>HSTS appears on the quote page but not on the homepage</strong>, and no CSP anywhere.</td></tr>
+            <tr><td data-label="Date">2026-08-27</td><td data-label="Probe"><code>curl -sL</code> robots.txt on <code>finance.yahoo.co.jp</code> vs <code>www.yahoo.co.jp</code></td><td data-label="Observation">The finance file is <strong>107 bytes</strong>: one <code>User-Agent: *</code> group with four <code>Disallow</code> lines (<code>/cm/personal/history/comment</code>, <code>/cm/jump</code>, <code>/portfolio</code>, <code>/my</code>). No AI-crawler group, no crawl-delay, and <strong>no <code>Sitemap:</code> line at all</strong>. The portal file at <code>www.yahoo.co.jp</code> is 87 bytes and does the opposite: <code>Google-Extended</code> and <code>GPTBot</code> each get <code>Disallow: /</code>, then an empty <code>User-agent: *</code> group. Quote pages, board pages and the earnings-summary pages are all outside the four finance disallows.</td></tr>
+            <tr><td data-label="Date">2026-08-27</td><td data-label="Probe">Sitemap discovery and census</td><td data-label="Observation"><code>/sitemap.xml</code> and <code>/sitemap_index.xml</code> both 404. The live index is at <strong><code>/sitemaps.xml</code></strong> — plural, and referenced from nothing crawlable. It lists 14 children (counts in Verified Metrics); detail files cap at 50,000 URLs. Every child is a bare <code>&lt;urlset&gt;</code>: <strong>no <code>lastmod</code>, <code>changefreq</code>, <code>priority</code>, <code>image:</code>, <code>video:</code> or <code>news:</code> extensions</strong> on any instrument URL. Only the article, JP-stock-navigation and feature sitemaps carry <code>lastmod</code>. <code>/llms.txt</code> 404s.</td></tr>
+            <tr><td data-label="Date">2026-08-27</td><td data-label="Probe">User-agent matrix on one board page</td><td data-label="Observation">Four clients, same URL, no cookies: <code>GPTBot/1.2</code>, <code>ClaudeBot/1.0</code>, the full <code>Googlebot/2.1</code> string and bare <code>curl/8.7.1</code> each returned HTTP 200 and <strong>470,988 bytes — byte-identical across all four</strong>. No user-agent discrimination, no age or region gate, no JS requirement for the content itself.</td></tr>
+            <tr><td data-label="Date">2026-08-27</td><td data-label="Probe">Structured-data sample, 7 pages (JP stock, US stock, fund, FX pair, board, earnings, news index)</td><td data-label="Observation">All 7 carry exactly two JSON-LD blocks, both navigational: a site-wide <code>WebSite</code> with LY's postal address, and a <code>BreadcrumbList</code>. JP stock pages add a bare <code>WebPage</code>; the earnings tab alone carries <code>dateModified</code>. <strong>No <code>Product</code>, <code>FinancialProduct</code>, <code>Dataset</code>, <code>NewsArticle</code>, <code>DiscussionForumPosting</code> or <code>AggregateRating</code> anywhere</strong> — not one price, ticker or rating is marked up. All 7 share one identical <code>og:image</code>, the Yahoo!ファイナンス logo card.</td></tr>
+            <tr><td data-label="Date">2026-08-27</td><td data-label="Probe">SSR content density, <code>/quote/7203.T</code></td><td data-label="Observation">423KB of HTML yielding ~10.3KB of visible text, fully server-rendered with no JS. In markup: a real-time price stamped 10:28 plus previous close, open, high, low, volume, turnover and daily limit each with its own timestamp; a separate overnight-PTS block sourced to ジャパンネクスト証券; 16 valuation fields (market cap, shares outstanding, yield, DPS, forward PER, PBR, EPS, BPS, ROE, equity ratio, 52-week range); five margin-trading fields dated to the prior Friday; a five-bucket sentiment histogram from board posts; and an <strong>AI値動き解説</strong> block stamped 2026/8/26 15:52. The dense record is in the HTML and in none of the JSON-LD.</td></tr>
+            <tr><td data-label="Date">2026-08-27</td><td data-label="Probe">Tab inventory and paywall behaviour</td><td data-label="Observation">A JP quote page links 22 in-ticker URLs across 13 tab types. <code>/disclosure</code> lists TDnet filings with dates, sizes and PDF links; <code>/post</code> republishes third-party X/Twitter posts with handle and timestamp; <code>/ai-topics</code> renders the AI commentary across a stated 14 categories, each with a 情報源 list linking the news items and filings it drew on. <strong><code>/breakdown</code> ships fabricated numbers to anonymous clients</strong>: the paywalled trade-breakdown table renders six rows of <code>1,234,567,890</code> / <code>12,345,678</code> / <code>12.3 %</code> dated <code>1234/56/78</code> beneath a VIP upsell. The fund page shows a comparable pattern — a +63.92% one-year return in the summary, zeros across the return/risk grid below it.</td></tr>
+            <tr><td data-label="Date">2026-08-27</td><td data-label="Probe">Pagination depth and rate probe</td><td data-label="Observation">Ceilings in Verified Metrics; <code>?page=</code> beyond the last populated page returns a 142KB shell with zero rows rather than a 404. Twenty consecutive quote fetches drew no 429, no CAPTCHA and no slowdown.</td></tr>
+            <tr><td data-label="Date">2026-08-27</td><td data-label="Probe">Document reachability and API surface</td><td data-label="Observation">Toyota's 決算短信 PDF (723KB) and 有価証券報告書 (2.9MB) both return HTTP 200 <code>application/pdf</code> to a plain anonymous client from <code>finance-frontend-pc-dist.west.edge.storage-yahoo.jp</code> — <strong>LY rehosts the filings rather than deep-linking TDnet/EDINET</strong>. That host's own <code>robots.txt</code> returns an S3 <code>AccessDenied</code> 403. Yahoo!デベロッパーネットワーク's catalogue lists Shopping, YOLP, text analysis, news-comment ranking, ID federation and mail — <strong>no finance API</strong>, and no oEmbed or RSS endpoint responded on this host.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third party may display, and how fast it churns. Note that "legitimate path" and "licensed" come apart here more than on most sites.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">181,459 crawlable pages over 24,226 instruments (Verified Metrics), each quote page a ~30-field record rendered server-side.</td>
+              <td data-label="Best legitimate path"><code>/sitemaps.xml</code> enumeration, then page fetch and HTML parse. Nothing is JS-gated.</td>
+              <td data-label="Auth &amp; quota">None. No account, no key, no rate limit observed at 20 requests.</td>
+              <td data-label="License / display"><strong>Blocked upstream.</strong> The footer's 「株式情報の転用、販売は固く禁じます」 covers the numbers that make the pages worth having; the eight named suppliers hold the underlying rights.</td>
+              <td data-label="Freshness">TSE, Fukuoka and Sapporo prices are real-time; all other markets ≥15 min delayed; volume and turnover ≥15 min delayed on every market including TSE.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Effectively none. All 7 sampled pages shared one identical <code>og:image</code> logo card; board avatars are 10 stock <code>default_profile_*.png</code> files.</td>
+              <td data-label="Best legitimate path">n/a — charts render client-side, so no chart raster exists to fetch.</td>
+              <td data-label="Auth &amp; quota">n/a</td>
+              <td data-label="License / display">Site chrome only.</td>
+              <td data-label="Freshness">Static.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count"><span class="evidence open">open</span> — the profile tab advertises IR動画, but none appeared in the sample and no video sitemap or <code>VideoObject</code> exists.</td>
+              <td data-label="Best legitimate path">None measured.</td>
+              <td data-label="Auth &amp; quota">Unestablished.</td>
+              <td data-label="License / display">Unestablished.</td>
+              <td data-label="Freshness">Unestablished.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">None. The earnings tab offers 決算説明会書き起こし — a <em>transcript</em> of the call, not the audio.</td>
+              <td data-label="Best legitimate path">The earnings tab's transcript pane.</td>
+              <td data-label="Auth &amp; quota">None for the tab itself.</td>
+              <td data-label="License / display">Derived work; LY reserves rights over its generated text (see Structured entities).</td>
+              <td data-label="Freshness">Per reporting quarter.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reviews</td>
+              <td data-label="Objects &amp; est. count"><strong>The corpus that matters.</strong> ~29.4M posts/year (Verified Metrics); 11.4M cumulative on five boards alone. One thread per ticker, users cannot open threads. Each post carries a per-board sequential ID, handle, minute-resolution timestamp, body, and helpful/unhelpful vote counts.</td>
+              <td data-label="Best legitimate path">Crawl <code>/quote/{sym}/forum</code>, 72 posts per page, fully server-rendered and outside every robots disallow.</td>
+              <td data-label="Auth &amp; quota">None. Byte-identical response to GPTBot, ClaudeBot, Googlebot and curl.</td>
+              <td data-label="License / display">User-generated Japanese text with no stated licence. Copyright-based deletion demands are live: 30 of 56 out-of-court removal requests in FY2024 cited copyright.</td>
+              <td data-label="Freshness">Minutes during market hours. Boards for delisted tickers move to 上場廃止・償還済み and are deleted after a period without notice — this is the main deletion risk.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Documents</td>
+              <td data-label="Objects &amp; est. count">TDnet timely-disclosure PDFs and EDINET annual reports, rehosted by LY and listed per ticker on <code>/disclosure</code> with date, time, source and byte size.</td>
+              <td data-label="Best legitimate path">Parse <code>/disclosure</code>, then fetch the PDF from the Yahoo storage host directly.</td>
+              <td data-label="Auth &amp; quota">None. Both sampled PDFs returned 200 to an anonymous client.</td>
+              <td data-label="License / display">Issuer documents; TDnet and EDINET are the authoritative distributors and the better citation target.</td>
+              <td data-label="Freshness">Same-day. Toyota's tab showed filings timestamped to the half-hour.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Company profiles, fund attribute records, 株主優待 entitlement rules, per-ticker analyst-target aggregates, and the AI derivatives: 決算短信 summaries, 14-category AI値動き解説 with source links, call transcripts.</td>
+              <td data-label="Best legitimate path">Tab pages only. There is no API, no JSON-LD and no bulk export at any price — VIP buys CSV of price series, not of entities.</td>
+              <td data-label="Auth &amp; quota">None for the free tabs; ¥2,838/month for CSV and the deeper series.</td>
+              <td data-label="License / display"><strong>Most restrictive cell on the page.</strong> The earnings-summary notice reserves rights over the AI output to LY and expressly forbids 転用・複製・販売・加工・再利用・再配信 to third parties.</td>
+              <td data-label="Freshness">AI commentary regenerated at least daily (sample stamped 15:52 the prior session); profiles and 優待 change with corporate actions.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site departs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The AI-crawler policy is per-subdomain and points the wrong way</h4>
+          <p>The methodology's default is that big platforms block AI crawlers. Here the <em>portal</em> blocks Google-Extended and GPTBot in 87 bytes while the finance property, holding the far more valuable corpus, names no AI crawler at all and falls through to a four-line permissive group (Probe Log). Nothing in the enforcement layer compensates: four wildly different user-agents got the same 470,988 bytes.</p>
+        </div>
+        <div>
+          <h4>One track, and it is a legal wall</h4>
+          <p>The default assumes a curated SEO sliver plus a metered API. This site has neither — no allowlist, and no finance API on Yahoo!デベロッパーネットワーク — so anonymous HTML is the only track and it is the complete one. The constraint is instead contractual and upstream: LY licenses its prices and fundamentals from eight named vendors and passes through a blanket reuse ban. A crawler faces no obstacle and an index faces no permission, which is the usual ordering reversed.</p>
+        </div>
+        <div>
+          <h4>URL count is not object count</h4>
+          <p>181,459 sitemap URLs are 24,226 instruments times a per-tab fan-out of 7.5. Treating URLs as documents inflates the corpus 7.5× and shreds one record across a dozen pages. The fan-out is also uneven — 12.29 for JP equities, 6.0 for US, 2.13 for FX — so a naive per-URL budget over-samples Japan.</p>
+        </div>
+        <div>
+          <h4>Identifiers are three different schemes</h4>
+          <p>JP listings use <code>{code}.{market}</code> (<code>7203.T</code>), joining cleanly to TSE and EDINET on the four-digit code. Funds use the 8-character 協会コード (<code>01311002</code>), a real external key. US tickers are bare and exchange-unqualified, and 174 of them carry a leading space encoded as <code>%20</code> — <code>/quote/%20GMGT</code> — which will silently fork into duplicate documents unless normalised at ingest.</p>
+        </div>
+        <div>
+          <h4>Paywalled tables ship fabricated numbers</h4>
+          <p>The trade-breakdown tab renders <code>1,234,567,890</code> across six rows dated <code>1234/56/78</code> to anonymous clients (Probe Log). These are well-formed, parse cleanly, and are entirely fake. Any numeric extractor that does not detect the VIP upsell adjacent to them will ingest garbage — this site's crawler trap is a paywall teaser, not a bot gate.</p>
+        </div>
+        <div>
+          <h4>Freshness is per-field, not per-page</h4>
+          <p>One quote page mixes a real-time TSE print, a ≥15-minute-delayed volume figure, an overnight-PTS block from a different venue, margin balances from the prior Friday, and AI commentary from the prior session's close. Each field carries its own timestamp in the markup. A page-level <code>lastmod</code> would be meaningless, which is presumably why the sitemaps omit it entirely.</p>
+        </div>
+        <div>
+          <h4>Free depth is a hard cliff, not a taper</h4>
+          <p>Price history stops dead at 243 rows — one trading year — and page 14 returns a shell, not a 404. Backfilling beyond one year is impossible at any crawl rate; it is a subscription purchase or nothing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the <em>instrument</em> — one record per <code>(market, symbol)</code> assembled from all of its tabs, with the field-level timestamps preserved rather than flattened to a page date. The board <em>post</em> is a second, independent unit; it is the only unit here that is a document in the ordinary sense.</li>
+        <li><strong>Primary keys &amp; joins:</strong> key JP equities on the four-digit code with <code>{code}.T</code> as an alias — that code joins outward to TDnet, EDINET and the rehosted PDFs without a crosswalk. Key funds on the 協会コード. Key US tickers on <code>(ticker, exchange)</code> resolved from the profile tab, never on the bare URL segment, and strip leading <code>%20</code> before hashing. Join posts to instruments on the board URL, and posts to each other on the per-board number, which the <code>&gt;&gt;1611921</code> reply convention references directly.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>/quote/{sym}/forum</code> — the only modality both freely crawlable and plausibly LY's to license, at 72 posts per page over a corpus adding ~2.45M posts monthly. 2) <code>/disclosure</code> plus the rehosted PDFs, a document corpus whose provenance is issuer-side and citable. 3) <code>/ai-topics</code>, valuable less for the prose than for its source lists, which are a ready-made per-ticker event-to-evidence graph. 4) Quote and profile tabs for entity attributes, ingested but flagged no-display pending a licence review. 5) Price series last — one year deep, expensive per page, least reusable.</li>
+        <li><strong>Recrawl cadence:</strong> boards for the ~100 tickers on the 掲示板投稿数 ranking every few minutes during the 09:00–15:30 JST session and hourly otherwise; the long tail weekly. <code>/disclosure</code> daily at 15:30 and 19:00 JST, when TDnet batches land. AI commentary daily after the close. Profiles and 優待 monthly. Instrument discovery weekly from <code>/sitemaps.xml</code>, the only signal that a ticker was added or dropped since it carries no <code>lastmod</code>.</li>
+        <li><strong>Derivatives to generate:</strong> a symbol normaliser across the three ID schemes, before anything else. Then a <em>placeholder detector</em> — numbers in the <code>1,234,567,890</code> / <code>1234/56/78</code> family, or a value grid of zeros contradicting a non-zero summary above it, dropped rather than stored. Then per-post sentiment and entity extraction over the board, which is where cross-modal value lies: linking a post to the filing or news item it reacts to, using the <code>/ai-topics</code> source lists as weak supervision.</li>
+        <li><strong>Demo to build:</strong> the placeholder trap. Fetch <code>/quote/7203.T/breakdown</code> anonymously, run a naive table extractor over it, and print the six rows of <code>1,234,567,890</code> it happily returns. Two minutes, and it makes a point most crawl-trap demos do not: the defence that costs an index most is not the one designed to stop crawlers.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The board is now a regulated surface.</strong> On 2025-04-30 LY Corporation was designated under Japan's revised platform law (情報流通プラットフォーム対処法) for four services including the finance board, obliging faster removals and published operating disclosures. Regulatory pressure on a UGC corpus reliably shortens retention and widens deletion — the single largest threat to the one asset here worth indexing.</li>
+        <li><strong>Delisted boards vanish by policy.</strong> Both transparency reports state that boards for delisted issuers move to 上場廃止・償還済み and may be deleted after a period without notice. An index of Japanese retail sentiment loses exactly the cases most interesting in hindsight — failures — unless it archives eagerly and never re-derives from live pages.</li>
+        <li><strong>The reuse ban is upstream and unilateral.</strong> LY cannot grant rights it licensed from TSE, NRI, Toyo Keizai, Wealth Advisor and Refinitiv. Any vendor renegotiation changes what may be displayed without a single robots.txt line moving, and gives no crawl-visible signal that it happened. The AI layer is fenced separately and harder: the earnings-summary notice assigns rights in the generated text to LY and forbids reuse, redistribution and derivative processing outright.</li>
+        <li><strong>The paywall is advancing.</strong> The VIP announcements date the trade-breakdown series to May and June 2026 and the portfolio expansion to August 2026, against a Media segment growing 2.6% with display and search advertising both down. Free surfaces are being converted while the segment that funds them stalls.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The permissive finance robots.txt is an oversight rather than a decision, and is likely to be brought into line with the portal.</strong> <em>Basis:</em> <code>www.yahoo.co.jp</code> carries an explicit <code>Google-Extended</code> and <code>GPTBot</code> block while <code>finance.yahoo.co.jp</code>, holding the ~29M-posts-per-year board, names no AI crawler and omits even a <code>Sitemap:</code> line for the sitemap index it actually publishes at a non-default path (Probe Log, 2026-08-27) — the finance file has not been maintained alongside the portal's.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Post numbers are per-board sequential counters, so board depth can be read without crawling it — and that shortcut breaks the moment numbering changes.</strong> <em>Basis:</em> page one of each of five boards showed 72 posts in a contiguous descending run (7203.T spanned 1,611,853–1,611,926, a span of 73 for 72 posts), with five distinct magnitudes across the five boards, and LY's transparency reports state each ticker board is a single non-user-creatable thread (Probe Log, 2026-08-27).</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.lycorp.co.jp/ja/company/transparencyreport2024.pdf">LINEヤフー メディア透明性レポート（2024年度版）, May 2025</a> — FY2024 board post and deletion counts, AI auto-deletion volume, FY2023 comparatives, moderation staffing, the 情プラ法 designation of 2025-04-30, the one-thread-per-ticker structure, and the delisted-board deletion policy.</li>
+        <li><a href="https://www.lycorp.co.jp/ja/privacy-security/archive/Y/about_yahoo_co_jp_common_transparencyreport_2021_.PDF">Yahoo メディア透明性レポート（2021年度版）</a> — FY2021 board volume and the 4.0% deletion rate, for the multi-year trend.</li>
+        <li><a href="https://ja.wikipedia.org/wiki/Yahoo!%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%B3%E3%82%B9">Yahoo!ファイナンス (ja.wikipedia)</a> — the 1997-03-04 launch, real-time quotes from 2012, US listings from 2015, and the 2019 migration of the 株式 and FX board categories from Yahoo!掲示板.</li>
+        <li><a href="https://www.lycorp.co.jp/en/company/">LY Corporation company profile</a> — the October 2023 formation and CEO.</li>
+        <li><a href="https://www.lycbiz.com/jp/column/ly-ads/displayads-guarantee/service-information/yahoo_japan_finance/">LINEヤフー for Business — Yahoo!ファイナンス media page</a> — the 1997 launch, the advertising model, and the audience skew (male, 40+, one in five earning ¥8M or more), sourced to Nielsen NetView and LY panel research.</li>
+        <li><a href="https://finance.yahoo.co.jp/quote/4689.T/financials">LY Corporation Q1 FY2027/3 決算短信 (2026-08-03)</a> — revenue, guidance and the Media-segment growth figure, read through the site's own AI summary of the filing.</li>
+        <li>Local probes on 2026-08-27, all in the Probe Log: <code>dig</code>; <code>curl</code> against robots.txt on two hosts; sitemap discovery and a full 14-file census; a four-user-agent matrix on a board page; seven pages sampled for JSON-LD, Open Graph and canonical tags; all 13 quote tabs for 7203.T; history and news pagination to exhaustion; a 20-request rate probe; two rehosted PDFs; and the Yahoo!デベロッパーネットワーク API catalogue.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Nothing on this host requires JavaScript for its content. <em>Basis:</em> all seven sampled pages carry a visible 「現在 JavaScriptが無効になっています」 warning yet still render the complete record in server-side HTML — a 423KB quote page yielded 10.3KB of text including live prices, and a board page yielded 72 full posts (Probe Log, 2026-08-27).</li>
+        <li>The trade-breakdown table's numbers are placeholders, not data. <em>Basis:</em> six identical rows of <code>1,234,567,890</code>, <code>12,345,678</code> and <code>12.3 %</code> under the date <code>1234/56/78</code>, rendered directly above the VIP subscription upsell for that exact dataset (Probe Log, 2026-08-27).</li>
+        <li>Two further inferences — that the permissive finance robots.txt is unmaintained rather than deliberate, and that board post numbers are per-board sequential counters — are stated with their bases in Risks to the Index.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Yahoo!ファイナンス's current audience size. The last public figure is 18M monthly unique browsers claimed in 2018 and the LY media page now publishes only demographics; closeable only by a Nielsen or Similarweb panel pull with the property broken out.</li>
+        <li>Total cumulative posts across all 4,822 JP boards. Reading the top post number on every board settles it in one sweep, but the five sampled boards are all mega-caps and cannot be extrapolated.</li>
+        <li>How far back the boards actually retain posts, given that deletion is by policy rather than by age; closeable by walking one long-lived board's pagination to its floor and comparing the oldest surviving post number against 1.</li>
+        <li>Whether VIP's CSV export carries a redistribution licence distinct from the site's blanket reuse ban — the promotion page describes the feature and not its terms; needs the subscription agreement.</li>
+        <li>Whether the board accepts user-uploaded images. The FY2024 report describes generative-AI auto-deletion of obscene and violent <em>images</em> here, but all 45 distinct image sources on the sampled board page were site chrome or the ten default avatars.</li>
+        <li>Which supplier backs which asset class — the footer names all eight collectively, so licence terms on the FX and index pages cannot be separated from the equity ones without the vendor agreements.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
