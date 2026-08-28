@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>investing.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-08-28</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>investing.com</h1>
+      <p class="lede">Investing.com mirrors 329K pages across 31 language editions with no hreflang, blocks nearly every crawler at the edge, and forbids storage outright.</p>
+      <div class="tag-row">
+        <span class="tag">Finance</span>
+        <span class="tag">Market Data</span>
+        <span class="tag">News</span>
+        <span class="tag">Forums / UGC</span>
+        <span class="tag">Multi-edition</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Investing.com launched in 2007 as Forexpros, rebranded in late 2012, and was bought by Hong Kong private-equity firm Joffre Capital in April 2021 for $500M. It runs on advertising, broker referrals, and the InvestingPro subscription launched May 2022. What makes it worth a report is not the data but the <em>packaging</em>: the same instrument corpus is published 31 times over, once per language edition, on subdomains that self-canonicalise and carry no <code>hreflang</code> — nothing in the markup tells an index the copies are copies. Two rendering stacks split the corpus: equities, ETFs, bonds and indices ship a 1.5MB Next.js page whose embedded JSON carries an ISIN, while the 112K funds and certificates pages run a legacy jQuery template with no embedded JSON at all. The newsroom is largely machine-written — 62% of the current news window is earnings-call transcripts, and bodies carry an explicit AI-generation notice. The retrieval problem here is deduplication and provenance, not discovery.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.investing.com</code>; apex redirects to <code>www</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.investing.com/">https://www.investing.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Financial portal — quotes, fundamentals, news, transcripts, economic calendar, retail forums</dd></div>
+        <div><dt>Related hosts</dt><dd>30 edition subdomains (<code>uk</code>, <code>de</code>, <code>jp</code>, <code>br</code>, <code>ru</code>, <code>cn</code> …), each a full mirror; <code>i-invdn-com.investing.com</code> (static images), <code>content-media.investing.com</code> (article media, user avatars)</dd></div>
+        <div><dt>Owner</dt><dd>M.S Fusion Media Ltd (Cyprus), owned by Joffre Capital since April 2021; chairman Ding'an Fei; most staff in Israel</dd></div>
+        <div><dt>Founded / launched</dt><dd>2007 as Forexpros; renamed Investing.com late 2012; InvestingPro launched May 2022; acquired StreetInsider March 2023</dd></div>
+        <div><dt>Business model</dt><dd>Display advertising and broker referral, plus InvestingPro subscription tiers</dd></div>
+        <div><dt>Scale anchor</dt><dd>328,740 distinct sitemap URLs on <code>www</code> alone, measured 2026-08-28 (Probe Log)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Sitemap, page-weight, pagination and rate figures are first-hand and dated 2026-08-28. Company scale figures are Investing.com's own published claims.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Crawlable surface, one edition</dt>
+          <dd>328,740 distinct URLs (330,779 entries, 2,039 duplicated) across 53 child sitemaps: 106,239 funds, 99,301 equities, 36,554 ETFs, 18,061 bonds, 18,024 crypto, 17,142 indices, 16,956 <code>/pro/</code>, 6,222 certificates, 3,890 currencies, 2,499 news, 2,090 economic-calendar, 814 studios, 673 commodities, 166 analysis. As of Aug 28 2026, summed by Site Wise from the sitemap index (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Edition multiplier</dt>
+          <dd>30 edition subdomains resolve alongside <code>www</code>, each publishing its own <code>sitemap_index.xml</code> over an <strong>identical slug set</strong> — <code>equities_ov_sitemap.xml</code> returns the same 10,000 URLs and same first entry on <code>www</code>, <code>uk</code>, <code>de</code>, <code>jp</code> and <code>br</code>. Total crawlable surface is <strong>~10.19M URLs</strong> for one underlying corpus. As of Aug 28 2026, calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Page weight and crawl cost</dt>
+          <dd>Mean <strong>1,557KB</strong> across 20 consecutive equity fetches, all HTTP 200 with no throttling; median 1.72s, max 2.94s, <strong>0.57 pages/s</strong> serial. An AAPL page is 1,704,811 bytes yielding 32,655 characters of visible text — a <strong>1.9% text yield</strong>, with 1.04MB of it a single <code>__NEXT_DATA__</code> blob. One edition is ~0.48TB and ~160 machine-hours; all 31 ~14.8TB and ~4,966 machine-hours. As of Aug 28 2026, calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Comment corpus and its decline</dt>
+          <dd>Comment IDs are a single site-wide counter reaching <strong>47,475,188</strong> by 2026-08-27. Dated anchors read off deep forum pages give the issuance rate: 1,493/day (2013–14), rising to a peak of <strong>19,742/day</strong> (2020-09 → 2022-05), then falling to <strong>6,416/day</strong> (2025-01 → 2026-08) — a <strong>68% decline</strong> from peak. The Apple board holds 29,333 comments back to 2013-01-09. As of Aug 28 2026, calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>News velocity and composition</dt>
+          <dd>The news sitemap holds 628 URLs spanning 2026-08-25T22:44 to 2026-08-27T22:14 — a rolling ~2-day window, roughly <strong>314 articles/day</strong> on the English edition. <strong>388 of 628 (61.8%) are earnings-call transcripts</strong> and a further 149 are earnings items, so 85.5% of the window is earnings-derived. Measured Aug 28 2026 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Free-tier depth ceilings</dt>
+          <dd>Server-rendered price history is fixed at <strong>23 daily rows</strong> (2026-07-28 to 2026-08-27) and ignores every date or interval URL parameter tried. Forums serve 25 comments per page to a real floor at page 1174 for Apple; page 1175 and beyond <strong>silently re-serve page 1</strong> rather than 404. Measured Aug 28 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Company-reported scale</dt>
+          <dd>50M monthly investors, 180,000 instruments across 250 exchanges, 300,000 active paying subscribers, 130M app downloads, 250 employees, 33 languages — all self-reported, undated on the page itself. Note the instrument claim is <em>below</em> the ~289K instrument URLs the sitemaps actually publish. <a href="https://www.investing.com/about-us/">About Investing.com</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-28 from a US vantage point. Where a row does not say otherwise, the client is <code>curl</code> with no cookies.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-08-28</td><td><code>dig +short</code> and <code>curl -sI</code></td><td>Resolves to 104.18.32.151 / 172.64.155.105 behind Cloudflare nameservers. Origin fingerprints leak through: <code>inv-version: c76c455</code>, <code>x-environment: dal-prod</code>. <code>cache-control: private, no-cache, no-store</code> on every page. <strong>No HSTS</strong>; CSP is only <code>upgrade-insecure-requests; block-all-mixed-content</code>. Sets geo cookies <code>gcc=US</code> / <code>gsc=CA</code> and a year-long <code>udid</code> on first contact.</td></tr>
+            <tr><td>2026-08-28</td><td>User-agent matrix, 6 clients × 2 URLs, repeated 5×</td><td>Desktop Chrome, Googlebot, GPTBot, Bingbot and bare <code>curl/8.7.1</code> all returned <strong>HTTP 403 with a 3-byte body</strong>. A <code>ClaudeBot/1.0</code> string returned <strong>HTTP 200</strong> on both, across all five runs. Substring isolation: the bare token <code>ClaudeBot</code> passes; <code>claudebot</code>, <code>Claude</code>, <code>anthropic</code>, <code>PerplexityBot</code>, <code>CCBot</code>, <code>Amazonbot</code> and <code>meta-externalagent</code> all 403. The gate is a <strong>case-sensitive UA substring match with no IP verification</strong>. Every other probe here ran under that string.</td></tr>
+            <tr><td>2026-08-28</td><td><code>curl -sL</code> robots.txt</td><td>2,292 bytes. One <code>User-agent: *</code> group with 26 disallows (<code>/research/</code>, <code>/brokers2/</code>, <code>/warrenai/conversation/</code>, <code>/news/press-releases</code>), then a hand-maintained <code>/pro/</code> allowlist of ~35 exact patterns. <strong>No AI-crawler group of any kind</strong> — no GPTBot, ClaudeBot, Google-Extended or CCBot directive. The only named user-agents are four ad and contextual-targeting crawlers (<code>Mediapartners-Google</code>, <code>grapeshot</code>, <code>proximic</code>, <code>AmazonAdBot</code>), each granted a blanket exemption. <code>/llms.txt</code> and <code>/.well-known/security.txt</code> 404.</td></tr>
+            <tr><td>2026-08-28</td><td>Sitemap census, 53 children</td><td>Counts in Verified Metrics. Detail files cap at 10,000 URLs, not the standard's 50,000. <strong>Not one <code>&lt;lastmod&gt;</code>, <code>&lt;changefreq&gt;</code> or <code>&lt;priority&gt;</code> in any of the 53 files</strong>; the six news sitemaps carry <code>&lt;news:&gt;</code> extensions and are the only dated ones. No <code>image:</code> or <code>video:</code> extensions at all. 2,039 URLs appear in more than one file.</td></tr>
+            <tr><td>2026-08-28</td><td>Edition comparison, 4 subdomains</td><td>An Apple page on <code>www</code>, <code>uk</code>, <code>de</code> and <code>jp</code> each <strong>self-canonicalises to its own subdomain</strong> with <strong>zero <code>hreflang</code> tags</strong>. ISIN <code>US0378331005</code> is byte-identical across all four. <code>uk</code>'s sitemap index lists 52 of <code>www</code>'s 53 children. 30 of 31 tested edition hosts answered; <code>el</code> did not resolve.</td></tr>
+            <tr><td>2026-08-28</td><td>Structured-data sample, 10 page types</td><td>Quote pages carry two near-useless JSON-LD blocks: a <code>FAQPage</code> and, on equities only, a bare <code>Corporation</code>. <strong>No <code>FinancialProduct</code>, <code>Dataset</code>, <code>AggregateRating</code> or price markup anywhere</strong>; every non-article page shares one <code>og:image</code> logo card. News articles carry a full <code>NewsArticle</code> — with <code>author: {"@type":"Person","name":""}</code>, an <strong>empty byline</strong>, plus <code>expires: 2028-08-27</code> and a <code>speakable</code> xPath block.</td></tr>
+            <tr><td>2026-08-28</td><td><code>__NEXT_DATA__</code> extraction</td><td>1.04MB blob on the Apple page holding <strong>53 MobX stores and 758KB of state</strong> — the record the JSON-LD omits: ISIN, <code>instrumentId</code> 6408, exchange, currency, sector, industry, employee count, 25 forum comments with user IDs and real names, forecasts, dividends, ownership. It also embeds an anonymous <code>accessToken</code>: an HS256 JWT issued by <code>investing.com</code> with a one-hour expiry, present on every anonymous load.</td></tr>
+            <tr><td>2026-08-28</td><td>Template split, funds and certificates</td><td>A <strong>different stack</strong>: ~330KB, jQuery, <strong>no <code>__NEXT_DATA__</code>, no JSON-LD, no Next.js assets</strong>; identifiers sit in <code>pair_id</code> attributes and the page title. A fund exposes Morningstar-style secid <code>0P0000XUZ6</code>; a certificate exposes ISIN <code>SE0010825299</code>. Together 112,461 URLs — 34% of the census — with no machine-readable record.</td></tr>
+            <tr><td>2026-08-28</td><td><code>/pro/</code> surface, 5 URLs</td><td>Every <code>/pro/</code> URL tested — <code>/pro/ideas</code>, <code>/pro/AAPL/explorer/pe_ltm</code>, <code>/pro/AAPL/financials/income_statement</code>, <code>/pro/propicks</code>, <code>/pro/MSFT/health</code> — returns the <strong>same ~41KB contentless SPA shell</strong> (<code>html { display: none; }</code> plus a module-loading error screen); normalising the Cloudflare ray ID makes two identical. All 16,956 <code>/pro/</code> sitemap URLs, 11,917 of them <code>/pro/*/explorer</code>, are this shell.</td></tr>
+            <tr><td>2026-08-28</td><td>Placeholder scan and deep tabs</td><td><code>aaaa aaaaa aaaa a</code> appears <strong>45 times in the raw HTML of every Next.js page</strong> — the gated ProPicks sidebar — and zero times on legacy fund pages. All 14 equity tabs (<code>-historical-data</code>, <code>-balance-sheet</code>, <code>-ownership</code>, <code>-dividends</code> …) return HTTP 200 with populated state, yet the sitemaps list only 469 <code>-historical-data</code> and 174 <code>-technical</code> URLs against 82,591 equity slugs: <strong>reachable by suffix convention, essentially unenumerated</strong>.</td></tr>
+            <tr><td>2026-08-28</td><td>Pagination, rate and feed probe</td><td>Ceilings in Verified Metrics. Forum page 1175+ returns page 1's 25 comments verbatim, so a naive walker loops forever on duplicates. Twenty consecutive fetches drew no 429 and no CAPTCHA. RSS is vestigial: <code>/rss/news.rss</code> holds <strong>10 items spanning 11 minutes</strong>, with title, link, pubDate, author and enclosure but <strong>no body</strong>; <code>/rss/investing_news.rss</code> is largest at 150 items.</td></tr>
+            <tr><td>2026-08-28</td><td>Article body inspection</td><td>An earnings-transcript article renders its full ~74K-character body server-side, ending with <strong>"This article was generated with the support of AI and reviewed by an editor. For more information see our T&amp;C."</strong> The transcript is speaker-attributed prose, not a summary.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third party may display, and how fast it churns. As on many financial portals, "reachable" and "licensed" are far apart here.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text (instruments)</td>
+              <td>~289K instrument pages per edition (Verified Metrics), ×31 editions. Equities/ETFs/bonds/indices carry a ~40-field record in embedded JSON; funds and certificates carry none.</td>
+              <td>Sitemap enumeration on <code>www</code> only, then <code>__NEXT_DATA__</code> parse. Deep tabs by URL-suffix convention, since they are unenumerated.</td>
+              <td>No account or key, no rate limit at 20 requests — but the edge 403s every user-agent tested except one.</td>
+              <td><strong>Prohibited.</strong> Terms forbid using, <em>storing</em>, reproducing, displaying or distributing site data without written permission, reserving all rights to providers and exchanges.</td>
+              <td>Quotes intraday; the instrument record changes rarely. No <code>lastmod</code> distinguishes the two.</td>
+            </tr>
+            <tr>
+              <td>Text (news)</td>
+              <td>~314 articles/day per edition, 85.5% earnings-derived, bodies rendered server-side in full.</td>
+              <td>News sitemaps with <code>&lt;news:publication_date&gt;</code> — the only dated discovery surface. RSS is too shallow to rely on.</td>
+              <td>None.</td>
+              <td>Publisher is Investing.com; <code>isAccessibleForFree: True</code>. Bodies carry an AI-generation notice; schema declares a two-year <code>expires</code>.</td>
+              <td>Minutes. The 2-day sitemap window means older items are reachable only via per-instrument news tabs.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Effectively none. Every non-article page shares one <code>og:image</code> logo card; article images sit on <code>content-media.investing.com</code>.</td>
+              <td>Article <code>og:image</code> / RSS <code>enclosure</code>.</td>
+              <td>None.</td>
+              <td>Often third-party wire or stock photography; per-image provenance is not stated.</td>
+              <td>Per article.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td><span class="evidence open">open</span> — <code>studios_sitemap.xml</code> publishes 814 URLs, but no <code>video:</code> extension or <code>VideoObject</code> exists in the census.</td>
+              <td>None measured.</td>
+              <td>Unestablished.</td>
+              <td>Unestablished.</td>
+              <td>Unestablished.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>None. Earnings-call <em>transcripts</em> are published as text; the calls are not hosted.</td>
+              <td>n/a — the transcript is the primary object.</td>
+              <td>None.</td>
+              <td>Derived from third-party calls, AI-assisted; see news row.</td>
+              <td>Per quarter, clustered in earnings season.</td>
+            </tr>
+            <tr>
+              <td>Comments / forums</td>
+              <td><strong>The one corpus Investing.com plausibly owns.</strong> ~47.5M comment IDs issued since Jan 2013 (Verified Metrics), across ~22.8K forum pages. Each has a global ID, author ID, display name, timestamp, body, vote counts and parent ID.</td>
+              <td>Crawl <code>{slug}-commentary/{n}</code>, 25 per page, from <code>__NEXT_DATA__</code>.</td>
+              <td>None.</td>
+              <td>User-generated text, no stated licence, carrying real display names and profile links — personal data, not just content.</td>
+              <td>Minutes on active tickers. Retention is <strong>total</strong>: Apple's board still serves January 2013.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Company profiles, financial statements, dividends, ownership, analyst forecasts, economic-calendar events (2,090 URLs), in embedded JSON on the Next.js stack. ISIN on equities, ETFs, bonds and most indices.</td>
+              <td><code>__NEXT_DATA__</code> on the relevant tab. No public API, bulk export or oEmbed.</td>
+              <td>None for free tabs. The <code>/pro/</code> tier serves crawlers nothing.</td>
+              <td><strong>Most restrictive cell here.</strong> Exchange- and vendor-licensed data Fusion Media cannot sublicense; the storage ban bites hardest on these fields.</td>
+              <td>Statements quarterly; forecasts continuously; calendar daily.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The edge gate is backwards, and it is the whole access story</h4>
+          <p>The methodology expects robots.txt to carry the AI-crawler stance. Here robots.txt names <em>no</em> AI crawler, and the real policy lives at Cloudflare — which 403s Chrome, Googlebot, GPTBot, Bingbot and curl alike while admitting a bare <code>ClaudeBot</code> string with no IP verification (Probe Log). Rejecting a spoofed Googlebot from a non-Google IP is correct; granting an unverified <code>ClaudeBot</code> the same way is not. <strong>Observed access here proves nothing about permitted access</strong> — the door that opened is a misconfiguration, and the terms behind it prohibit storage regardless.</p>
+        </div>
+        <div>
+          <h4>31 editions, self-canonical, zero hreflang</h4>
+          <p>The defining defect. The same ~329K URLs are published on 31 subdomains, each canonicalising to itself, with no <code>hreflang</code> anywhere (Probe Log). Nothing signals that <code>de.investing.com/equities/apple-computer-inc</code> and the <code>www</code> copy are one object. Crawl the sitemaps naively and 96.8% of the corpus is duplicate. The only reliable cross-edition key is the ISIN inside <code>__NEXT_DATA__</code>, so dedup costs a megabyte of JSON parsed per page.</p>
+        </div>
+        <div>
+          <h4>Two stacks, two identifier schemes</h4>
+          <p>Equities, ETFs, bonds and indices give up an ISIN from embedded JSON. Funds and certificates — 112,461 URLs, 34% of the corpus — have none, so their identifiers come from the page title (ISIN) or an HTML attribute (Morningstar <code>0P…</code> secid). One extractor will not cover the corpus, and the larger half is the poorer-instrumented one.</p>
+        </div>
+        <div>
+          <h4>Sitemaps enumerate the wrong axis</h4>
+          <p>The census lists ~1.2 URLs per instrument while 14 populated tabs per equity are reachable by suffix and almost entirely unlisted (469 <code>-historical-data</code> URLs against 82,591 equity slugs). The sitemap simultaneously <em>overstates</em> the corpus 31× through edition mirroring and <em>understates</em> it ~14× through tab omission. Neither error is visible without probing.</p>
+        </div>
+        <div>
+          <h4>No lastmod, on a site whose value is recency</h4>
+          <p>Zero <code>lastmod</code>, <code>changefreq</code> or <code>priority</code> across all 53 sitemaps (Probe Log). Only the news sitemaps carry dates, over a rolling two-day window. Elsewhere there is no incremental-crawl signal at all, and <code>cache-control: no-store</code> removes conditional requests too — recrawl must be scheduled blind, on a corpus averaging 1.5MB a page.</p>
+        </div>
+        <div>
+          <h4>Pagination wraps instead of ending</h4>
+          <p>Forum page 1175 returns page 1's comments rather than a 404 or empty shell (Probe Log). A crawler that walks until it sees an empty page never stops, and every page past the floor duplicates page 1 under a fresh URL. Termination must be detected by falling comment IDs, not by emptiness.</p>
+        </div>
+        <div>
+          <h4>The newsroom is largely machine output, and says so</h4>
+          <p>62% of the current news window is earnings-call transcripts, bodies carry an explicit "generated with the support of AI" notice, and the <code>NewsArticle</code> schema declares a <code>Person</code> author with an empty name (Probe Log). Provenance must be assigned at ingest rather than read off a byline. The two-year <code>expires</code> value is the only retention hint published.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the <em>instrument</em>, one record per ISIN (or <code>0P…</code> secid for funds), assembled from its overview plus the tabs worth having — never one document per URL, which inflates the corpus ~31× through editions before any tab fan-out. The <em>comment</em> and the <em>article</em> are the secondary units that are genuine documents.</li>
+        <li><strong>Primary keys &amp; joins:</strong> ISIN first — identical across all 31 editions, and joins outward to any security master without a crosswalk. Fall back to <code>(exchange, symbol)</code> from <code>__NEXT_DATA__</code>; use the URL slug only as a last resort, since the slug is shared across editions and is the thing being deduplicated. Funds key on the Morningstar secid from the title. Comments key on the global comment ID, which is site-wide monotonic and so doubles as a timestamp proxy and a completeness check.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) News sitemaps — the only dated discovery surface and the only corpus with a plausible first-party licence claim, though AI provenance must be recorded. 2) Forums via <code>{slug}-commentary</code>, the one corpus Investing.com owns, with full retention to 2013. 3) Instrument records from <code>__NEXT_DATA__</code> on <code>www</code> only, ingested but flagged no-display pending a licence the current terms do not grant. 4) Economic-calendar events, small and well-structured. 5) Nothing under <code>/pro/</code> — 16,956 URLs of empty shell, wasted budget despite being explicitly robots-allowed.</li>
+        <li><strong>Recrawl cadence:</strong> news sitemaps every 15 minutes, since a two-day window at 314 articles/day is all that stands between you and permanent loss. Active-ticker forums hourly during market hours, the long tail monthly. Instrument records weekly, accepting that no <code>lastmod</code> and no conditional requests make this guesswork. Sitemap index weekly to detect added or delisted instruments — the only signal available.</li>
+        <li><strong>Derivatives to generate:</strong> an edition-collapsing key over ISIN before anything is stored, or the index is 97% duplicate. Then a <em>shell-and-placeholder detector</em> — the ~41KB <code>/pro/</code> bootstrap and the 45 <code>aaaa aaaaa</code> runs on every Next.js page must be stripped before text extraction, or every document inherits the same gated-widget noise. Then provenance tagging on news, since the byline will not supply it.</li>
+        <li><strong>Demo to build:</strong> the duplication meter. Fetch one instrument slug from all 31 editions, show 31 self-canonical pages with zero <code>hreflang</code>, and print the single ISIN identical across all of them. The point lands in one screen: the dedup key exists, but it is buried a megabyte deep in a JSON blob instead of in the HTML attribute built for the job.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The terms forbid storage, not merely redistribution.</strong> "It is prohibited to use, store, reproduce, display, modify, transmit or distribute the data contained in this website without the explicit prior written permission of Fusion Media and/or the data provider." Indexing <em>is</em> storage. Unlike a display-only restriction, this one has no compliant read-and-discard reading, and it is the governing fact for everything except the forum corpus.</li>
+        <li><strong>The rights are not Fusion Media's to grant.</strong> Terms reserve all intellectual property to "the providers and/or the exchange providing the data," so any licence negotiation runs to exchanges and vendors, not to Investing.com. Vendor terms can change with no crawl-visible signal.</li>
+        <li><strong>The edge allowance is a bug and will close.</strong> An index built on the current <code>ClaudeBot</code> pass-through is one Cloudflare rule edit from total loss of access, with no deprecation window and no warning. Any plan that depends on it is not a plan.</li>
+        <li><strong>Personal data sits inside the one indexable corpus.</strong> Forum comments carry real display names, stable user IDs and profile links, retained unbroken since 2013. That is the asset and the liability in the same object, and erasure requests reach a 13-year archive with no deletion signal published anywhere.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The forum corpus is in structural decline and its recent volume no longer justifies aggressive recrawl.</strong> <em>Basis:</em> global comment-ID issuance measured from dated deep pages fell from 19,742/day across 2020-09 → 2022-05 to 6,416/day across 2025-01 → 2026-08, a 68% drop, while the ID counter itself confirms no renumbering (Probe Log, 2026-08-28).</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The <code>/pro/</code> robots allowlist is maintained for a rendering path crawlers do not get, so those URLs will stay empty rather than fill in.</strong> <em>Basis:</em> robots.txt hand-lists ~35 exact <code>/pro/*</code> Allow patterns including per-metric explorer paths, and the sitemaps publish 16,956 matching URLs, yet all five sampled return the identical ~41KB SPA bootstrap with <code>html { display: none; }</code> and no content (Probe Log, 2026-08-28).</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.investing.com/about-us/">About Investing.com</a> — self-reported monthly investors, instrument and exchange counts, paying subscribers, app downloads, employees, languages, offices, and the M.S Fusion Media Ltd operating entity.</li>
+        <li><a href="https://www.investing.com/about-us/terms-and-conditions">Investing.com Terms and Conditions</a> — the storage and redistribution prohibition and the reservation of intellectual property to data providers and exchanges.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Investing.com">Investing.com (en.wikipedia)</a> — 2007 founding as Forexpros, the founders, the late-2012 rename, the April 2021 Joffre Capital acquisition at $500M and Ding'an Fei's chairmanship, the May 2022 InvestingPro launch, edition growth, and the reporting that more than half of the site's content was AI-created in the first half of 2025.</li>
+        <li><a href="https://www.axios.com/pro/media-deals/2023/03/27/investingcom-buys-streetinsider-for-10m">Axios, "Investing.com buys StreetInsider for $10M" (2023-03-27)</a> — the StreetInsider acquisition.</li>
+        <li>Local probes on 2026-08-28, all in the Probe Log: <code>dig</code> and headers; a six-user-agent matrix repeated five times plus ten-variant substring isolation; <code>robots.txt</code>; a 53-file sitemap census; edition comparison across four subdomains and a 31-host sweep; structured data over ten page types; <code>__NEXT_DATA__</code> store analysis; the legacy fund and certificate templates; five <code>/pro/</code> URLs; all fourteen equity tabs; historical-data parameter tests; forum pagination bisected to its floor; a twenty-request rate probe; eight RSS endpoints; and an article body inspection.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The <code>ClaudeBot</code> allowance is an unverified user-agent string match rather than a deliberate, authenticated grant. <em>Basis:</em> the exact token <code>ClaudeBot</code> returns HTTP 200 from an ordinary residential IP while <code>claudebot</code>, <code>Claude</code> and <code>anthropic</code> all return 403, and a spoofed <code>Googlebot</code> from the same IP is correctly rejected — so the rule keys on a case-sensitive substring and performs no reverse-DNS or IP verification (Probe Log, 2026-08-28).</li>
+        <li>Funds and certificates are served by an older, separately maintained application rather than a variant of the Next.js template. <em>Basis:</em> those pages are ~330KB against ~1.1–1.7MB, contain no <code>/_next/</code> asset references, no <code>__NEXT_DATA__</code> and no JSON-LD, and carry jQuery plus <code>pair_id</code> HTML attributes that appear on no Next.js page (Probe Log, 2026-08-28).</li>
+        <li>Comment IDs are a single site-wide sequential counter, not per-forum. <em>Basis:</em> comments timestamped within the same hours on the Apple, Tesla, EUR/USD and S&amp;P 500 boards all carry IDs in the 47.47M range, while Apple's own deep pages descend monotonically with date to ID 52,368 at 2013-01-09 (Probe Log, 2026-08-28).</li>
+        <li>Two further inferences — that the forum corpus is in structural decline, and that the <code>/pro/</code> allowlist targets a rendering path crawlers never receive — are stated with their bases in Risks to the Index.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Whether real Googlebot and GPTBot traffic from their published IP ranges is admitted while the same user-agents are blocked from other addresses. Closeable only by observing from a verified crawler IP, or by an Investing.com statement of its bot policy.</li>
+        <li>Whether the 30 edition subdomains carry translated instrument records or only translated chrome over one English record. Closeable by diffing <code>__NEXT_DATA__</code> instrument objects across editions field by field; this report sampled only ISIN equality.</li>
+        <li>Total live comment count as opposed to IDs issued. The 47.5M counter includes deletions and any non-forum comment surfaces sharing the sequence; closeable by summing paginated floors across the ~22.8K forum URLs.</li>
+        <li>What share of published articles is AI-generated today. Wikipedia cites reporting of more than 50% for the first half of 2025; the on-page notice appears per article, so a census over one full news-sitemap window would give a current first-hand figure.</li>
+        <li>Whether the studios corpus is video and where it is hosted — 814 URLs, no <code>VideoObject</code>, no video sitemap extension, no media host identified in this sample.</li>
+        <li>Whether any licensed bulk or API path exists at a price. No public API, oEmbed endpoint or developer portal responded on this host; only direct commercial contact with Fusion Media would settle it.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
