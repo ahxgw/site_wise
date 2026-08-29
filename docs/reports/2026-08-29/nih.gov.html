@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nih.gov Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-29</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>nih.gov</h1>
+      <p class="lede">NIH runs the world's biomedical corpus: 41M PubMed records and 12.6M full texts, wide open by API while its own homepage blocks robots.</p>
+      <div class="tag-row">
+        <span class="tag">Government</span>
+        <span class="tag">Scholarly</span>
+        <span class="tag">Public Domain</span>
+        <span class="tag">Bulk Dumps</span>
+        <span class="tag">Life Sciences</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>NIH is the U.S. government's medical research agency, funded by a $47.2B FY2026 appropriation across 27 institutes and centers. For an index builder the agency's public-affairs site is nearly irrelevant; what matters is the <strong>National Library of Medicine</strong> subtree on <code>ncbi.nlm.nih.gov</code>, which operates PubMed, PubMed Central and 36 Entrez databases holding billions of sequence and variant records. This is the inverted case among high-traffic sites: no ad model, no engagement ranking, no revenue meter on access. The corpus is a U.S. government work distributed under terms requiring attribution but not permission, and NIH publishes bulk dumps of its own catalog. The binding constraints are structural rather than commercial — a migration of PMC bulk distribution off FTP onto AWS that completed within the last four days (Probe Log), and a widening gap between an HTML surface hardening against automation and an API surface that remains completely open.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>nih.gov</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.nih.gov/">https://www.nih.gov/</a></dd></div>
+        <div><dt>Category</dt><dd>Government research agency; scholarly literature and biomedical data archive</dd></div>
+        <div><dt>Related hosts</dt><dd><code>pubmed.ncbi.nlm.nih.gov</code>, <code>pmc.ncbi.nlm.nih.gov</code>, <code>www.ncbi.nlm.nih.gov</code>, <code>eutils.ncbi.nlm.nih.gov</code> (API), <code>ftp.ncbi.nlm.nih.gov</code> (bulk), <code>api.reporter.nih.gov</code> (grants), <code>pubchem.ncbi.nlm.nih.gov</code>. <code>clinicaltrials.gov</code> and <code>medlineplus.gov</code> are NLM products on separate registrable domains.</dd></div>
+        <div><dt>Owner</dt><dd>U.S. Department of Health and Human Services; NLM operates NCBI</dd></div>
+        <div><dt>Founded / launched</dt><dd>NIH traces to 1887; MEDLINE 1971; PubMed 1996; PubMed Central 2000</dd></div>
+        <div><dt>Business model</dt><dd>Congressional appropriation. No advertising, no subscription, no paid API tier.</dd></div>
+        <div><dt>Scale anchor</dt><dd>41.08M PubMed records as of Aug 29 2026 (E-utilities <code>esearch</code> count, Probe Log)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Counts marked "probe" were read first-hand from E-utilities on 2026-08-29; see the Probe Log for the commands.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>PubMed records</dt>
+          <dd>41.08M — as of Aug 29 2026, read from the E-utilities <code>esearch</code> count probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>PubMed records with abstracts</dt>
+          <dd>29.42M, or 71.6% of PubMed — as of Aug 29 2026, from the <code>hasabstract</code> esearch probe; share calculated by Site Wise. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>PMC full-text articles</dt>
+          <dd>12.56M — as of Aug 29 2026, esearch probe against <code>db=pmc</code>. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>PMC Open Access Subset</dt>
+          <dd>8.19M articles, or 65.2% of PMC — as of Aug 29 2026, from the <code>open access[filter]</code> esearch probe; share calculated by Site Wise. This is the redistributable slice. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>PMC Author Manuscript Dataset</dt>
+          <dd>1.08M manuscripts — as of Aug 29 2026, <code>author manuscript[filter]</code> esearch probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Entrez sequence and variant scale</dt>
+          <dd>Across the 36 databases exposed by <code>einfo</code>: Protein 1.64B, dbSNP 1.20B, Nucleotide 739.2M, Gene 99.3M, BioSample 59.0M, SRA 46.3M runs, ClinVar 4.56M, Taxonomy 3.12M, Bookshelf 1.33M, MeSH 355.8K — all read from <code>einfo</code> probes on Aug 29 2026; every database except dbSNP reported a last-update timestamp of Aug 28 2026. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>PubMed 2026 publication year</dt>
+          <dd>1.33M records carry a 2026 publication date — as of Aug 29 2026 (esearch probe), a partial-year figure. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>PubMed bulk baseline</dt>
+          <dd>1,334 gzipped XML files in the 2026 annual baseline plus 270 daily update files — as of Aug 29 2026, counted from the <a href="https://ftp.ncbi.nlm.nih.gov/pubmed/baseline/">FTP directory listing</a> (probe). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>PMID/PMCID/DOI crosswalk file</dt>
+          <dd>253MB gzipped CSV, last modified Aug 28 2026. <a href="https://ftp.ncbi.nlm.nih.gov/pub/pmc/PMC-ids.csv.gz">PMC-ids.csv.gz</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>E-utilities rate limit</dt>
+          <dd>3 requests/second without an API key, 10/second with a free key — as of Aug 29 2026. <a href="https://www.ncbi.nlm.nih.gov/books/NBK25497/">E-utilities usage guidelines</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>NIH RePORTER grants</dt>
+          <dd>76,271 FY2025 projects, 45 fields per record including abstract text, award amount, and geocoordinates — as of Aug 29 2026, from an unauthenticated <a href="https://api.reporter.nih.gov/">RePORTER API</a> POST (probe). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>NIH FY2026 appropriation</dt>
+          <dd>$47.216B across 27 institutes and centers, up $301M from FY2025 — as of the FY2026 enacted bill. <a href="https://officeofbudget.od.nih.gov/pdfs/FY26/br/Overview%20of%20FY%202026%20Overall%20Appropriations.pdf">NIH Office of Budget</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Official MEDLINE statistics (stale)</dt>
+          <dd>36.56M PubMed citations, 30.97M MEDLINE citations, 5,294 indexed journals — as of FY2023, page last reviewed Apr 30 2024. NLM's published statistics now understate the live API count by ~4.5M records (calculated by Site Wise). <a href="https://www.nlm.nih.gov/bsd/medline_pubmed_production_stats.html">NLM production statistics</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-29. User agent <code>SiteWise research (kunka@apitech.ai)</code> unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe"><code>curl -sL https://www.nih.gov/robots.txt</code></td><td data-label="Observation">HTTP 403 Cloudflare block page ("Sorry, you have been blocked"), <code>server: cloudflare</code>, <code>cf-ray</code> present; a desktop Chrome user agent got the same 403. The agency's flagship site will not serve even its own robots.txt to a non-browser client.</td></tr>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe"><code>dig +short nih.gov www.nih.gov</code></td><td data-label="Observation">Apex → 156.40.212.210 (NIH space); <code>www</code> CNAMEd to <code>www.nih.gov.cdn.cloudflare.net</code> → 172.65.90.24-27; authoritative NS self-hosted (<code>ns.nih.gov</code>, <code>ns2</code>, <code>ns3</code>). NCBI resolves elsewhere: <code>pubmed</code> and <code>www.ncbi</code> both → 34.107.134.59 (Google Cloud), responses carrying <code>via: 1.1 google</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe"><code>curl -sL https://www.ncbi.nlm.nih.gov/robots.txt</code></td><td data-label="Observation">390 lines. Named blocks for <code>htdig</code>, <code>Baiduspider</code>, <code>Googlebot</code>, <code>bingbot</code>, <code>Slurp</code>, <code>Exabot</code>, <code>yacybot</code>, <code>Teleport Pro</code>, <code>Browsershots</code>, <code>Twitterbot</code>, then <code>User-agent: *</code> with <code>Crawl-delay: 5</code>. <strong>No AI crawler is named anywhere</strong> — no GPTBot, ClaudeBot, CCBot, PerplexityBot, Google-Extended or Applebot-Extended. 20 sitemap directives cover Structure, Traces, assembly, books, clinvar, gene, gtr, medgen, mesh, nlmcatalog, snp and sra.</td></tr>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe"><code>curl -sL https://pmc.ncbi.nlm.nih.gov/robots.txt</code></td><td data-label="Observation">219 bytes, built as an allowlist: <code>Disallow: /</code> preceded by <code>Allow:</code> for <code>/$</code>, <code>/about/</code>, <code>/articles/</code>, <code>/sitemap/</code>, <code>/tools/</code>, <code>/pub/</code>, <code>/api/</code>, <code>/tagging-guidelines/</code>, plus <code>Crawl-delay: 1</code>. Full-text paths are explicitly permitted to every agent. The legacy <code>www.ncbi</code> robots still disallows the retired <code>/pmc/articles/</code> path.</td></tr>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe"><code>curl -sL https://pubmed.ncbi.nlm.nih.gov/31978945/</code></td><td data-label="Observation">HTTP <strong>203</strong> with a 5.6KB JS/cookie interstitial (<code>body { visibility: hidden }</code>, "cookies-required") instead of the record; zero <code>citation_*</code> meta, zero JSON-LD. Identical under a desktop Chrome UA and a two-pass cookie jar. PubMed record HTML is no longer retrievable by a plain HTTP client.</td></tr>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe"><code>curl .../efetch.fcgi?db=pubmed&amp;id=31978945</code></td><td data-label="Observation">Same record over E-utilities: HTTP 200, 29.7KB XML, 63 distinct elements, 20 MeSH headings, 784-character abstract, full affiliations and a structured reference list. No key, cookie or challenge; four rapid unkeyed calls all returned 200 in 0.76–1.19s.</td></tr>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe"><code>curl -sL https://pmc.ncbi.nlm.nih.gov/articles/PMC7092803/</code></td><td data-label="Observation">HTTP 200, 169KB, complete <code>citation_*</code> meta block (<code>citation_doi</code>, <code>citation_pmid</code>, <code>citation_author</code>, <code>citation_author_institution</code>, <code>citation_pdf_url</code>, <code>citation_fulltext_html_url</code>, journal/issue/page). PMC HTML is machine-readable where PubMed HTML is not.</td></tr>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe">Sitemap census: <code>pmc.../sitemap/</code> vs <code>pubmed.../sitemap?p=index.xml</code></td><td data-label="Observation">PMC returns a 119KB index of 1,352 child sitemaps; child page 0 holds 8,215 <code>&lt;loc&gt;</code> entries like <code>/articles/PMC13900/</code>. PubMed's sitemap, advertised in its own robots.txt, returns a <strong>104-byte empty <code>&lt;sitemapindex&gt;</code></strong>.</td></tr>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe"><code>curl -sL https://ftp.ncbi.nlm.nih.gov/pub/pmc/</code></td><td data-label="Observation">The directory now holds only <code>PMC-ids.csv.gz</code> and <code>readme.txt</code>. <code>oa_bulk/</code>, <code>oa_package/</code>, <code>manuscript/</code> and the transitional <code>deprecated/</code> directory all 404, as does the <code>oa.fcgi</code> OA Web Service on both the legacy and current hosts. The readme, dated Aug 25 2026, states all legacy PMC dataset files "are in the process of being removed from the FTP Service." <code>/llms.txt</code> also 404s on both the ncbi and pubmed hosts — no LLM-specific declaration exists anywhere in the subtree.</td></tr>
+            <tr><td data-label="Date">2026-08-29</td><td data-label="Probe"><code>curl "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2"</code></td><td data-label="Observation">The replacement AWS bucket lists without credentials, keyed by versioned PMCID (<code>PMC10000000.1/</code>). Each prefix holds <code>.json</code> metadata, <code>.xml</code> (JATS), <code>.txt</code>, <code>.pdf</code> and media files. The per-article JSON carries <code>pmcid</code>, <code>version</code>, <code>pmid</code>, <code>doi</code>, <code>mid</code>, <code>title</code>, <code>citation</code>, <code>license_code</code> (<code>CC0</code> in the sample), and <code>is_pmc_openaccess</code> / <code>is_manuscript</code> / <code>is_historical_ocr</code> / <code>is_retracted</code> flags, with an md5 checksum on every asset URL.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what may be redisplayed, and how fast it churns. E-utils = <a href="https://www.ncbi.nlm.nih.gov/books/NBK25501/">Entrez Programming Utilities</a>; OA bucket = <a href="https://pmc.ncbi.nlm.nih.gov/tools/cloud/">PMC Cloud Service on AWS</a>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text — citations</td>
+              <td data-label="Objects &amp; est. count">PubMed records, 71.6% with abstracts (counts in Verified Metrics).</td>
+              <td data-label="Best legitimate path">FTP annual baseline plus daily update files; E-utils <code>efetch</code> for deltas. Do not crawl record HTML — it returns a 203 challenge (Probe Log).</td>
+              <td data-label="Auth &amp; quota">None. 3 req/s unkeyed, 10/s keyed.</td>
+              <td data-label="License / display">U.S. government work; NLM terms require the credit line "Courtesy of the U.S. National Library of Medicine" and no implied endorsement. Publisher-supplied abstracts stay publisher-copyrighted.</td>
+              <td data-label="Freshness">Daily update files; baseline reissued annually.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text — full text</td>
+              <td data-label="Objects &amp; est. count">PMC articles; the Open Access Subset is the redistributable 65.2%.</td>
+              <td data-label="Best legitimate path">OA bucket on S3 for the subset; PMC article HTML (200, full <code>citation_*</code> meta) or sitemap crawl for the remainder.</td>
+              <td data-label="Auth &amp; quota">None. Unauthenticated S3 list and GET.</td>
+              <td data-label="License / display">Per-article <code>license_code</code> in the JSON sidecar is authoritative. Outside the subset PMC grants reading, not redistribution.</td>
+              <td data-label="Freshness">Continuous; versions increment the PMCID suffix.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Figures, plates and scanned pages bundled per article; total count <span class="evidence open">open</span>.</td>
+              <td data-label="Best legitimate path">OA bucket <code>media_urls</code>, each md5-checksummed (probe).</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Inherits the article <code>license_code</code>; the sampled historical-OCR article was <code>CC0</code>.</td>
+              <td data-label="Freshness">Only on version increment.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video / audio</td>
+              <td data-label="Objects &amp; est. count">Marginal — occasional PMC supplementary media; NIH VideoCast is a separate small surface. No transcript corpus.</td>
+              <td data-label="Best legitimate path">OA bucket supplementary files where present.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Article license.</td>
+              <td data-label="Freshness">Static.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reviews</td>
+              <td data-label="Objects &amp; est. count">Absent by design — no user-generated layer. The editorial equivalents are retractions, errata and corrections, carried as <code>CommentsCorrections</code> elements in the efetch XML (probe).</td>
+              <td data-label="Best legitimate path">E-utils <code>efetch</code>; <code>is_retracted</code> flag in the OA bucket JSON.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Same as citations.</td>
+              <td data-label="Freshness">Retractions land unpredictably; sweep, don't schedule.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Sequence, variant, gene, sample and vocabulary records across 36 Entrez databases (counts in Verified Metrics).</td>
+              <td data-label="Best legitimate path">E-utils <code>esearch</code>/<code>esummary</code>/<code>elink</code>; per-database FTP dumps; 20 sitemap indexes named in robots.txt.</td>
+              <td data-label="Auth &amp; quota">None. Same 3/10 req/s ceiling.</td>
+              <td data-label="License / display">Public domain with the NLM credit line; individual submissions may carry their own terms.</td>
+              <td data-label="Freshness">Most stamped Aug 28 2026; dbSNP last built Mar 2025.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Grants &amp; funding</td>
+              <td data-label="Objects &amp; est. count">NIH-funded projects with abstract, PI, institution, award amount and geocoordinates (counts in Verified Metrics).</td>
+              <td data-label="Best legitimate path">RePORTER API v2 <code>POST /projects/search</code>.</td>
+              <td data-label="Auth &amp; quota">None observed; no key required.</td>
+              <td data-label="License / display">U.S. government work.</td>
+              <td data-label="Freshness"><code>date_added</code> supports incremental pulls.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Agency web pages</td>
+              <td data-label="Objects &amp; est. count"><code>www.nih.gov</code> news, institute sites, health topics. Count <span class="evidence open">open</span> — no sitemap reachable.</td>
+              <td data-label="Best legitimate path">No programmatic path; Cloudflare 403s non-browser clients, robots.txt included (Probe Log).</td>
+              <td data-label="Auth &amp; quota">Browser-equivalent rendering required.</td>
+              <td data-label="License / display">U.S. government work.</td>
+              <td data-label="Freshness">Slow.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where nih.gov departs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The AI-crawler default is inverted</h4>
+          <p>The methodology assumes robots.txt blocks GPTBot, ClaudeBot and peers. NCBI names none of them across 390 lines, and PMC explicitly allows <code>/articles/</code> to <code>User-agent: *</code>. <span class="evidence inferred">inferred</span> The omission is policy, not oversight. <em>Basis:</em> the same file actively curates per-agent blocks for ten named crawlers including obscure ones (<code>yacybot</code>, <code>Browsershots</code>), and PMC's allowlist was rewritten for the new host without adding AI agents.</p>
+        </div>
+        <div>
+          <h4>No revenue meter</h4>
+          <p>The default two-track model — SEO sliver plus revenue-metered API — does not apply. No paid tier, no sales requirement, no partner agreement. The only throttle is a 3 req/s courtesy limit a free key lifts to 10. Access is bounded by politeness, not price.</p>
+        </div>
+        <div>
+          <h4>HTML hardens while the API stays open</h4>
+          <p>PubMed record pages return HTTP 203 with a cookie challenge and no metadata; <code>www.nih.gov</code> 403s every non-browser client. Meanwhile efetch serves the same record as 29.7KB of unauthenticated XML. <span class="evidence inferred">inferred</span> The challenge shapes transport rather than withholding data. <em>Basis:</em> the identical record is served in richer form over the open API from the same organization on the same day (Probe Log).</p>
+        </div>
+        <div>
+          <h4>Do not trust PubMed's sitemap</h4>
+          <p>PubMed advertises a sitemap in robots.txt that resolves to an empty index. A crawler treating sitemaps as the coverage plan would conclude PubMed has zero indexable URLs. PMC's index is real (1,352 children); PubMed's is a stub, and bulk FTP is the intended path.</p>
+        </div>
+        <div>
+          <h4>Identifiers are unusually clean</h4>
+          <p>PMID, PMCID, DOI and MID are stable, curated, and cross-walked by NIH itself in a 253MB CSV refreshed daily. Article versioning is explicit in the S3 key (<code>PMC10000000.1</code>), so supersession is detectable without diffing content.</p>
+        </div>
+        <div>
+          <h4>Quality signal replaces spam signal</h4>
+          <p>With no engagement ranking to game, the usual manipulation surface is absent. The analogous risk is scientific: retracted and corrected articles remain live and citable. The <code>is_retracted</code> flag and <code>CommentsCorrections</code> elements are the trust signals to carry into the index.</p>
+        </div>
+        <div>
+          <h4>Internal search is the query workhorse</h4>
+          <p>PubMed's field-tagged syntax (<code>[dp]</code>, <code>[sb]</code>, <code>[filter]</code>, MeSH explosion) expresses queries a general web index cannot — every count in Verified Metrics came through it. Users want Boolean recall over a controlled vocabulary, not ranked relevance. Records are also near-immutable once indexed, so churn is append-only rather than editorial.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <p class="muted">How Site Wise would build this index.</p>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the article, at two granularities — the PubMed citation (title + abstract + MeSH, 41.08M units, complete coverage) and the PMC full text section (8.19M articles chunked by JATS <code>&lt;sec&gt;</code>, for passage retrieval).</li>
+        <li><strong>Primary keys &amp; joins:</strong> PMID as the spine; PMCID (versioned) for full text; DOI for external joins; MID for author manuscripts. Load <code>PMC-ids.csv.gz</code> once as the crosswalk table rather than resolving identifiers per record. MeSH descriptor IDs join citations to the 355.8K-term controlled vocabulary; RePORTER <code>core_project_num</code> joins publications to the funding graph.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) PubMed FTP baseline + daily update files — complete metadata coverage, no auth, no rate limit, one annual full rebuild. 2) The <code>pmc-oa-opendata</code> S3 bucket for full text, figures and PDFs — unauthenticated, checksummed, version-keyed, ceiling 8.19M articles. 3) E-utilities for reconciliation and for the 28 non-literature Entrez databases — 10 req/s keyed, so reserve it for deltas rather than backfill. 4) RePORTER API for the grants layer. 5) Browser-equivalent rendering for <code>www.nih.gov</code> only, and only if agency prose is worth the cost — it is a rounding error against 41M citations.</li>
+        <li><strong>Recrawl cadence:</strong> daily for PubMed update files and the S3 inventory; weekly for RePORTER by <code>date_added</code>; annually for the baseline rebuild; on-publication for retraction sweeps. Sequence databases refresh nightly upstream, so pull only the identifiers actually referenced.</li>
+        <li><strong>Derivatives to generate:</strong> embeddings over title+abstract for all 41.08M citations and over full-text sections for the 8.19M OA articles; figure-caption pairs from JATS for cross-modal image retrieval (captions are already structured — no OCR needed); OCR only for the historical-OCR subset, where the scans are the primary artifact. Skip ASR entirely.</li>
+        <li><strong>Demo to build:</strong> a retraction-aware citation lookup — resolve any PMID/PMCID/DOI through the crosswalk, return the abstract from efetch, and surface the <code>is_retracted</code> flag and <code>CommentsCorrections</code> links alongside it. It exercises the join table, both open paths, and the one quality signal that actually matters here.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The PMC bulk migration is live right now.</strong> Legacy FTP datasets and the OA Web Service API were removed within days of this report (readme dated Aug 25 2026; all bulk paths 404 on Aug 29). Any pipeline pointed at <code>ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/</code> is already broken. The replacement drops compressed packages entirely for per-article objects, turning ingestion from "fetch N archives" into "enumerate 8.19M prefixes" — a cost profile that needs the daily inventory CSV to stay tractable.</li>
+        <li><strong>The 203 challenge may spread.</strong> PubMed record HTML went from crawlable to cookie-gated; <code>www.nih.gov</code> is fully Cloudflare-walled. If the same treatment reaches PMC article HTML, the 4.37M non-OA full texts (calculated by Site Wise: 12.56M less 8.19M) lose their only access path, being absent from the S3 bucket by definition.</li>
+        <li><strong>Appropriation risk is index risk.</strong> This corpus has no revenue backstop; distribution infrastructure is a budget line. A funding disruption degrades bulk services rather than the underlying data.</li>
+        <li><strong>License heterogeneity inside the OA Subset.</strong> "Open Access" is not one license — per-article <code>license_code</code> ranges from CC0 to non-commercial terms, so treating the subset as uniformly redistributable is a licensing error at 8.19M-article scale. The COVID-19 collection is the precedent: publishers retroactively pulled articles from bulk distribution when emergency terms expired, and NLM published removal lists for downstream correction.</li>
+        <li><strong>Official statistics lag the live corpus.</strong> NLM's published production statistics are three years stale. Any figure taken from documentation rather than the API will be wrong by millions of records.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK25501/">Entrez Programming Utilities Help</a> and <a href="https://www.ncbi.nlm.nih.gov/books/NBK25497/">usage guidelines</a> — API surface and rate limits.</li>
+        <li><a href="https://ncbiinsights.ncbi.nlm.nih.gov/2026/02/12/pmc-article-dataset-distribution-services/">NCBI Insights: PMC Article Dataset Distribution Services (Feb 12 2026)</a> — the migration announcement; confirms FTP retirement and OA Web Service API removal in August 2026.</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/tools/cloud/">PMC Cloud Service on AWS</a>, <a href="https://ftp.ncbi.nlm.nih.gov/pub/pmc/readme.txt">PMC FTP readme (Aug 25 2026)</a>, and the <a href="https://registry.opendata.aws/ncbi-pmc/">AWS Open Data registry entry</a>.</li>
+        <li><a href="https://www.nlm.nih.gov/databases/download/terms_and_conditions.html">NLM data terms and conditions</a> — attribution and currency requirements.</li>
+        <li><a href="https://www.nlm.nih.gov/bsd/medline_pubmed_production_stats.html">NLM MEDLINE/PubMed production statistics</a> — FY2023 official counts.</li>
+        <li><a href="https://officeofbudget.od.nih.gov/pdfs/FY26/br/Overview%20of%20FY%202026%20Overall%20Appropriations.pdf">NIH Office of Budget, FY2026 appropriations overview</a>.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>NCBI's silence on AI crawlers is deliberate policy, not neglect. <em>Basis:</em> ten named per-agent blocks including rarely-seen ones are actively maintained in the same file, and PMC's allowlist was rewritten for the new host without adding AI agents (Probe Log).</li>
+        <li>The PubMed 203 challenge is transport shaping, not data withholding. <em>Basis:</em> the same record returns richer structured content over unauthenticated efetch on the same day (Probe Log).</li>
+        <li>The PMC sitemap covers roughly 11.1M URLs. <em>Basis:</em> 1,352 child sitemaps observed in the index × 8,215 <code>&lt;loc&gt;</code> entries counted in child page 0, calculated by Site Wise assuming uniform page size; the final page is likely partial, so treat this as an upper bound consistent with the 12.56M PMC total.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>What is the license split inside the 8.19M-article OA Subset? Entrez license filters returned zero, so the breakdown needs a full pass over the <code>license_code</code> field in the S3 per-article JSON sidecars.</li>
+        <li>Where is the daily CSV inventory documented for the OA bucket? The cloud-service page describes a 30-day-retained daily inventory, but no <code>inventory/</code> or <code>_inventory/</code> prefix was listable; closing this requires the AWS access documentation or a support query, and it determines whether incremental ingestion is cheap or requires full re-enumeration.</li>
+        <li>How many figures and media objects exist across the OA Subset? Closable by summing <code>media_urls</code> lengths across the per-article JSON during the first full ingest.</li>
+        <li>What is nih.gov's actual traffic and its split between <code>www.nih.gov</code> and the NCBI subtree? No official analytics are published; a federal Digital Analytics Program export or a named third-party estimator would close it.</li>
+        <li>Is <code>www.nih.gov</code> Cloudflare policy configured to admit declared search crawlers? The 403 was observed from a residential path with two user agents; verifying requires a reverse-DNS-verifiable Googlebot request or the agency's own statement.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
