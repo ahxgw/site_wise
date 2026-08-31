@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mail.yahoo.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-09-01</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>mail.yahoo.com</h1>
+      <p class="lede">Yahoo Mail moves 25B messages a day behind exactly one public page; the only legitimate index path is per-user OAuth2 IMAP.</p>
+      <div class="tag-row">
+        <span class="tag">Webmail</span>
+        <span class="tag">Auth-Walled</span>
+        <span class="tag">IMAP / OAuth2</span>
+        <span class="tag">Apollo-Owned</span>
+        <span class="tag">Zero-Crawl</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Yahoo Mail launched Oct 8 1997 out of Yahoo's RocketMail (Four11) acquisition and is now run by Yahoo Inc., which Apollo funds bought from Verizon for $5.0B, closing Sep 1 2021. It monetizes a free ad-supported inbox against Mail Plus ($5/mo, ad-free, 200 GB) and standalone storage plans. For an index builder this is the useful inverse of every other top-200 site: the corpus is one of the largest text-and-attachment collections in existence, and essentially none of it is addressable. The public web surface is a single 18.9KB JavaScript shell with no links, no JSON-LD, and no sitemap; every other path 302s to <code>login.yahoo.com</code> (Probe Log). What can be indexed is indexed <em>per mailbox, with the account holder's consent</em>, over standard IMAP, CalDAV and CardDAV — and Yahoo gates those OAuth2 scopes behind a manual partner review rather than a developer console. The engineering question is therefore not "how do we crawl this" but "given a delegated token, what is the retrieval unit and what does the protocol let us sync incrementally".</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>mail.yahoo.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://mail.yahoo.com/">https://mail.yahoo.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Consumer webmail; private-corpus platform</dd></div>
+        <div><dt>Related hosts</dt><dd><code>imap.mail.yahoo.com</code>, <code>smtp.mail.yahoo.com</code>, <code>pop.mail.yahoo.com</code>, <code>caldav.calendar.yahoo.com</code>, <code>carddav.address.yahoo.com</code>, <code>api.login.yahoo.com</code> (OAuth2/OIDC), <code>senders.yahooinc.com</code> (developer access)</dd></div>
+        <div><dt>Owner</dt><dd>Yahoo Inc., majority-owned by funds managed by Apollo Global Management; Verizon retains 10%. CEO Jim Lanzone.</dd></div>
+        <div><dt>Founded / launched</dt><dd>Oct 8 1997, following the Four11 / RocketMail acquisition</dd></div>
+        <div><dt>Business model</dt><dd>Inbox advertising (free tier) + Mail Plus subscription + metered storage plans</dd></div>
+        <div><dt>Scale anchor</dt><dd>"We now handle over 25 billion emails a day" — Yahoo Inc., page observed Sep 1 2026 (<a href="https://www.yahooinc.com/about">yahooinc.com/about</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Mailbox counts, corpus size, and message-churn rates have no published figure and live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Messages handled per day</dt>
+          <dd>25B+ — Yahoo's own about page, undated by Yahoo; observed Sep 1 2026. <a href="https://www.yahooinc.com/about">Yahoo Inc. about</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Free storage per account</dt>
+          <dd>20 GB (United States) — as of Sep 1 2026. Yahoo notes plans differ outside the US. <a href="https://help.yahoo.com/kb/new-yahoo-mail/yahoo-mail-storage-faq-sln37064.html">Yahoo Mail Storage FAQ</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Paid storage ceiling</dt>
+          <dd>Mail Plus 200 GB at $5/mo; add-on plans of 100 GB and 1 TB; 1.2 TB maximum when Plus and a storage plan are combined — as of Sep 1 2026. <a href="https://mail.yahoo.com/plus/mail/">Mail Plus page</a>, <a href="https://help.yahoo.com/kb/new-yahoo-mail/yahoo-mail-storage-faq-sln37064.html">Storage FAQ</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Maximum message size</dt>
+          <dd>41,697,280 bytes (39.8 MiB) — identical on the send and store paths: SMTP <code>SIZE 41697280</code> and IMAP <code>APPENDLIMIT=41697280</code>, both observed in the Sep 1 2026 probes. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Inactivity deletion window</dt>
+          <dd>Messages "may be subject to deletion" after 12 months of account inactivity; Mail Plus accounts are exempt ("Continuous account") — as of Sep 1 2026. <a href="https://help.yahoo.com/kb/new-yahoo-mail/yahoo-mail-storage-faq-sln37064.html">Storage FAQ</a>, <a href="https://mail.yahoo.com/plus/mail/">Mail Plus page</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Alias addresses per account</dt>
+          <dd>3 on the free tier, up to 500 on Mail Plus — as of Sep 1 2026. <a href="https://mail.yahoo.com/plus/mail/">Mail Plus page</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Public crawlable surface</dt>
+          <dd>1 URL, 18,863 bytes, 0 anchors, 0 JSON-LD blocks, no <code>&lt;link rel=canonical&gt;</code>; byte-identical across nine fetches spanning six user agents — measured Sep 1 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt size</dt>
+          <dd>229 bytes, 13 <code>Disallow</code> rules, one <code>User-agent</code> group, zero <code>Sitemap</code> directives — observed Sep 1 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Apollo acquisition</dt>
+          <dd>$5.0B, closed Sep 1 2021; Verizon received $4.25B cash plus $750M preferred and kept 10%. <a href="https://www.apollo.com/insights-news/pressreleases/2021/09/apollo-funds-complete-acquisition-of-yahoo-161530593">Apollo press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-01. Mail protocol probes are unauthenticated banner/capability calls only — no login was attempted and no mailbox was accessed.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-09-01</td><td><code>curl -sL https://mail.yahoo.com/robots.txt</code></td><td>229 bytes. One <code>User-agent: *</code> group with 13 <code>Disallow</code> rules covering the app routes (<code>/d/*</code>, <code>/n/*</code>, <code>/b/*</code>, <code>/m/*</code>, <code>/mb/*</code>, <code>/mrd/*</code>, <code>/mailboxes</code>, the <code>/c/</code> mirrors, <code>/am/*</code>). No <code>Sitemap</code> line and — unlike <code>www.yahoo.com</code>, whose 1.6KB file names ~30 AI agents — <strong>no AI-crawler rules at all</strong>.</td></tr>
+            <tr><td>2026-09-01</td><td><code>curl -sI https://mail.yahoo.com/</code></td><td>HTTP/2 200 via <code>server: ATS</code> (Apache Traffic Server). HSTS <code>max-age=31536000</code> without <code>includeSubDomains</code> or <code>preload</code>; <code>x-frame-options: SAMEORIGIN</code>, <code>cross-origin-opener-policy: same-origin-allow-popups</code>, <code>nosniff</code>. Upstream pod name leaks in <code>x-omg-env</code>.</td></tr>
+            <tr><td>2026-09-01</td><td>Path sweep: <code>/sitemap.xml</code>, <code>/llms.txt</code>, <code>/d/folders/1</code>, <code>/pro/</code></td><td>All four return 200 — but only after a cross-host 302 to <code>login.yahoo.com/?.src=ym&amp;…&amp;.done=&lt;path&gt;</code>. There is no 404 for unknown paths: <strong>every route that is not <code>/</code> is an authentication prompt</strong>. <code>/.well-known/jmap</code> is the lone 404 (9 bytes) — no JMAP.</td></tr>
+            <tr><td>2026-09-01</td><td>Structured-data sample on <code>/</code></td><td>18,863 bytes of JS shell. Title and <code>meta description</code> present; <code>og:image</code> and <code>twitter:image</code> present but no <code>og:title</code>/<code>og:type</code>; zero <code>&lt;a&gt;</code> elements, zero JSON-LD, no canonical, no <code>robots</code> meta. Repeated three times against three UAs: 18,863 bytes every time.</td></tr>
+            <tr><td>2026-09-01</td><td>UA sweep on <code>/</code> from one IP, same minute</td><td><code>ClaudeBot/1.0</code>, <code>GPTBot/1.0</code>, <code>PerplexityBot/1.0</code> and <code>CCBot/2.0</code> each get <code>HTTP 429</code> with a 23-byte body, <code>Edge: Too Many Requests</code>. <code>curl/8.7.1</code>, <code>randomstring/9.9</code>, Googlebot and bingbot strings all get 200 in the same sweep. Same 429 on <code>www.yahoo.com</code>.</td></tr>
+            <tr><td>2026-09-01</td><td><code>openssl s_client imap.mail.yahoo.com:993</code> → <code>CAPABILITY</code></td><td><code>IMAP4rev1 SASL-IR AUTH=PLAIN AUTH=XOAUTH2 AUTH=OAUTHBEARER ID MOVE NAMESPACE XYMHIGHESTMODSEQ UIDPLUS LITERAL+ CHILDREN UNSELECT X-MSG-EXT OBJECTID IDLE ENABLE UIDONLY X-UIDONLY LIST-EXTENDED LIST-STATUS SPECIAL-USE PARTIAL APPENDLIMIT=41697280</code>. <code>OBJECTID</code> is present; <code>CONDSTORE</code> and <code>QRESYNC</code> are absent.</td></tr>
+            <tr><td>2026-09-01</td><td><code>openssl s_client smtp.mail.yahoo.com:465</code> → <code>EHLO</code> / <code>pop.mail.yahoo.com:995</code> → <code>CAPA</code></td><td>SMTP: <code>PIPELINING ENHANCEDSTATUSCODES 8BITMIME SIZE 41697280 AUTH PLAIN LOGIN XOAUTH2 OAUTHBEARER</code>. POP: <code>jpop-0.1</code>, <code>EXPIRE-NEVER UIDL TOP SASL PLAIN XOAUTH2</code> — POP offers no <code>OAUTHBEARER</code>.</td></tr>
+            <tr><td>2026-09-01</td><td><code>curl -X OPTIONS</code> on the DAV hosts</td><td><code>caldav.calendar.yahoo.com</code> → <code>DAV: 1, 3, calendar-access</code> with <code>MKCALENDAR</code>/<code>REPORT</code>. <code>carddav.address.yahoo.com</code> → <code>DAV: 1, 2, 3, access-control, version-control, addressbook, extended-mkcol</code>. Unauthenticated <code>PROPFIND</code> returns 401 on both.</td></tr>
+            <tr><td>2026-09-01</td><td><code>dig</code> + <code>/.well-known/openid-configuration</code></td><td><code>mail.yahoo.com</code> CNAMEs to <code>edge.gycpi.b.yahoodns.net</code> (self-hosted edge, not a third-party CDN). <code>login.yahoo.com</code> publishes OIDC discovery with issuer <code>api.login.yahoo.com</code>, but <code>scopes_supported</code> lists only <code>openid, openid2, profile, email</code> — <strong>no mail scope is advertised in discovery</strong>. <code>yahoo.com</code> DMARC is <code>p=reject; pct=100</code>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what may be displayed, and how fast it churns. Every path below except the last row requires an end-user OAuth2 grant on a mailbox you were invited into; nothing here is a bulk corpus.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Message bodies (<code>text/plain</code> + <code>text/html</code> alternatives), subjects, headers. 25B/day system-wide; per-mailbox count is open.</td>
+              <td>IMAP <code>FETCH BODY[]</code> / <code>BODYSTRUCTURE</code> on <code>imap.mail.yahoo.com:993</code>.</td>
+              <td><code>AUTH=XOAUTH2</code> / <code>OAUTHBEARER</code> with the partner-gated mail scope; Yahoo reserves the right to "impose rate limiting" without publishing numbers.</td>
+              <td>User's own data under delegated consent. Yahoo's developer terms forbid selling or transferring it and confine use to "user-facing functionality".</td>
+              <td>Append-driven, seconds. <code>IDLE</code> gives push; flags mutate continuously.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Inline <code>cid:</code> parts, attached photos, and remote-hosted marketing images referenced by URL.</td>
+              <td>Same IMAP fetch, addressing the MIME part number from <code>BODYSTRUCTURE</code>; <code>PARTIAL</code> supports ranged fetch.</td>
+              <td>Same grant. 39.8 MiB per message caps any single object (Verified Metrics).</td>
+              <td>Third-party copyright travels with the message; a mailbox grant is not a licence to the sender's content.</td>
+              <td>Immutable once delivered; remote-hosted images rot independently of the message.</td>
+            </tr>
+            <tr>
+              <td>Documents, video, audio</td>
+              <td>PDF, Office and archive attachments — the densest per-byte text in the corpus — plus clips and voice notes. No first-party media product on this host; the 39.8 MiB cap bounds every object.</td>
+              <td>Same IMAP MIME-part fetch. The UI's "all attachments in one place" view has no protocol equivalent.</td>
+              <td>Same grant. No server-side extracted-text or OCR field is exposed.</td>
+              <td>Same as images.</td>
+              <td>Immutable once delivered.</td>
+            </tr>
+            <tr>
+              <td>Threads / conversation</td>
+              <td>Reply chains — the nearest analogue to comments on a public site.</td>
+              <td>IMAP <code>OBJECTID</code>'s <code>THREADID</code>, server-assigned. Fallback: <code>References</code>/<code>In-Reply-To</code> headers.</td>
+              <td>Same grant.</td>
+              <td>Same as text.</td>
+              <td>Grows for days then goes cold; the threading key itself is stable.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Contacts (vCard) and calendar events (iCalendar) — the only genuinely schema'd objects on the platform.</td>
+              <td>CardDAV on <code>carddav.address.yahoo.com</code>, CalDAV on <code>caldav.calendar.yahoo.com</code>; both advertise <code>REPORT</code> for sync queries (Probe Log).</td>
+              <td>Same OAuth2 partner grant; the same review covers IMAP, CalDAV and CardDAV.</td>
+              <td>Same as text.</td>
+              <td>Contacts near-static; calendar mutates on RSVP and reschedule.</td>
+            </tr>
+            <tr>
+              <td>Public web</td>
+              <td><strong>One page.</strong> 18,863 bytes, zero outbound links (Verified Metrics).</td>
+              <td>Ordinary GET of <code>/</code>. Product documentation lives off-host on <code>help.yahoo.com</code>.</td>
+              <td>None — but named AI-crawler UAs are refused at the edge with 429 (Probe Log).</td>
+              <td>Standard Yahoo terms; it is a marketing page.</td>
+              <td>Effectively static.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Yahoo Mail departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The default assumption that a canonical URL keys the object fails outright: nothing here has a URL. Yahoo advertises <code>OBJECTID</code> (RFC 8474), so the server issues an <code>EMAILID</code> that survives moves between folders and a <code>MAILBOXID</code> that survives renames — strictly better than the IMAP <code>UID</code>, which is per-folder and dies on a <code>MOVE</code>. Key on <code>EMAILID</code>; keep the sender's <code>Message-ID</code> header as the cross-provider dedup key, since the same thread indexed from a Gmail participant will collide there and nowhere else.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Three units, and the message is the wrong default for two of them. Retrieve the <strong>message</strong> for recall, the <strong>thread</strong> (<code>THREADID</code>) for presentation, and the <strong>attachment</strong> as its own document — a 39.8 MiB-capped PDF carries more indexable text than the mail that delivered it, and users search for the file, not the covering note.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Stable: <code>EMAILID</code> → MIME part number → attachment bytes; <code>THREADID</code> → messages. Semi-stable: the participant email address joins messages to CardDAV contacts and CalDAV attendees, but Mail Plus permits 500 aliases per account (Verified Metrics), so one human legitimately fans out across hundreds of addresses. Alias resolution is a first-class entity problem here, not a cleanup step.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Reverse of the SEO case. Bulk mail ships a keyword-thin <code>text/plain</code> alternative beside a rich <code>text/html</code> part; personal mail is the opposite. Index both alternatives rather than picking one. The subject line is the least reliable field — it is copied unchanged down long reply chains and stops describing the content by the fourth message.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The sharpest constraint on this host. Yahoo omits <code>CONDSTORE</code> and <code>QRESYNC</code> (RFC 7162), exposing a proprietary <code>XYMHIGHESTMODSEQ</code> instead, so the standard "give me everything changed since MODSEQ <em>n</em>" resync is unavailable. <code>IDLE</code> covers new arrivals while connected; flag and delete changes that happen while disconnected require re-listing UIDs per folder. Budget for full UID sweeps, not deltas. Deletion has a floor: 12 months of inactivity can remove messages outright on free accounts (Verified Metrics).</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Elsewhere spam is a contaminated minority of the corpus; in a mailbox it is most of the arriving volume and it is <em>already labelled</em> — <code>SPECIAL-USE</code> marks the Junk folder, giving a free, user-corrected training signal. The manipulation to defend against is inbound phishing aimed at the mailbox owner, not ranking abuse aimed at a search result.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>There is no external option to escape to — <code>site:mail.yahoo.com</code> can only ever return one page. Yahoo's own answer is AI in the client rather than a better query box: one-line generated summaries, a priority inbox, and Quick Actions that lift bills, verification codes, and tracking numbers out of message bodies (announced Nov 14 2024).</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Known-item retrieval over a small personal corpus: "the flight confirmation", "the invoice from March", sender- and date-bounded lookups. Ranking matters far less than recall and precise filtering, which inverts the usual web-index priority.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> message, with the thread as the presentation envelope and each attachment promoted to a sibling document.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>accountId + EMAILID</code> (RFC 8474) as the primary key — never the folder <code>UID</code>. <code>THREADID</code> groups; the RFC 5322 <code>Message-ID</code> header dedups against the same thread arriving through another provider; normalized participant address joins to CardDAV contacts and CalDAV attendees.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) IMAP with <code>XOAUTH2</code> — the only path to message bodies, and it requires the manual partner review at <a href="https://senders.yahooinc.com/developer/developer-access/">senders.yahooinc.com</a>, not a console signup. 2) CardDAV + CalDAV under the same grant, for the entity layer. 3) SMTP <code>OAUTHBEARER</code> for send-side actions only — it indexes nothing. 4) POP: last resort, no folders and no <code>OBJECTID</code>. 5) Public crawl: one page, permanently.</li>
+        <li><strong>Recrawl cadence:</strong> <code>IDLE</code> on Inbox and Sent for arrivals; a per-folder UID sweep nightly to catch flag and delete drift, because <code>CONDSTORE</code> is unavailable (Retrieval Notes); CalDAV/CardDAV <code>REPORT</code> sync weekly; the marketing page quarterly.</li>
+        <li><strong>Derivatives to generate:</strong> attachment text extraction and OCR — the highest-value derivative here, since documents carry the densest text and Yahoo exposes no extracted-text field; alias→identity resolution tables; thread summarization; and entity extraction for the order/booking/invoice records that Quick Actions proves are reliably parseable.</li>
+        <li><strong>Demo to build:</strong> a consent-scoped IMAP indexer run against a mailbox the operator owns — resolve <code>EMAILID</code>/<code>THREADID</code> via <code>OBJECTID</code>, split attachments into their own documents, and measure the cost the missing <code>CONDSTORE</code> imposes by timing a full UID resync against a simulated delta sync.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Access is a relationship, not a key.</strong> Yahoo states it "no longer support[s] proprietary Mail APIs" and that the mail scopes "are not available for self-served setup in the developer console"; approval runs through a form or <code>mail-api@yahooinc.com</code> and is revocable for misuse (<a href="https://senders.yahooinc.com/developer/developer-access/">developer access</a>). An index built on it can be switched off by a policy review rather than a rate limit.</li>
+        <li><strong>Quota is undefined.</strong> The same page reserves the right to "impose rate limiting if appropriate or necessary" with no published figure, so ingestion throughput cannot be capacity-planned before approval.</li>
+        <li><strong>The corpus is shrinking by design.</strong> Free storage moved to 20 GB with over-limit mailboxes blocked from sending and receiving, and inactive accounts face deletion at 12 months (Verified Metrics). Historical mail is being actively pruned out of the very accounts most likely to hold long archives.</li>
+        <li><strong>Incremental sync depends on a proprietary extension.</strong> <code>XYMHIGHESTMODSEQ</code> is Yahoo-specific and undocumented publicly; anything built on it is unportable and unversioned, while the standard <code>CONDSTORE</code> alternative is simply absent (Probe Log).</li>
+        <li><span class="evidence inferred">inferred</span> <strong>AI-crawler policy is enforced in infrastructure and will not be visible in robots.txt.</strong> <em>Basis:</em> mail.yahoo.com's 229-byte robots.txt names no AI agent, yet ClaudeBot, GPTBot, PerplexityBot and CCBot each received <code>429 Edge: Too Many Requests</code> while curl, Googlebot, bingbot and a nonsense UA received 200 from the same IP in the same sweep (Probe Log). A crawler that only parses robots.txt will read this host as unrestricted and be wrong.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Mail data sits outside Yahoo's OIDC self-service surface entirely.</strong> <em>Basis:</em> the <code>login.yahoo.com</code> discovery document advertises <code>scopes_supported</code> of only <code>openid, openid2, profile, email</code> (Probe Log), so the mail scope is not merely unapproved by default — it is not published to the standard OAuth discovery path that client libraries read.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.yahooinc.com/about">Yahoo Inc. — About</a> — "over 25 billion emails a day"; 1997 RocketMail origin; CEO Jim Lanzone.</li>
+        <li><a href="https://help.yahoo.com/kb/new-yahoo-mail/yahoo-mail-storage-faq-sln37064.html">Yahoo Mail Storage FAQ</a> — 20 GB free (US), 100 GB / 1 TB plans, 1.2 TB combined ceiling, over-limit send/receive block, 12-month inactivity deletion.</li>
+        <li><a href="https://mail.yahoo.com/plus/mail/">Yahoo Mail Plus</a> — $5/mo, 200 GB, ad-free, 3 vs 500 aliases, "Continuous account" inactivity exemption.</li>
+        <li><a href="https://senders.yahooinc.com/developer/developer-access/">Yahoo Sender Hub — Developer Access</a> — no proprietary Mail APIs; IMAP/CalDAV/CardDAV with OAuth2; scopes not self-serve; application via form or <code>mail-api@yahooinc.com</code>; rate limiting reserved; no-resale and user-facing-use conditions.</li>
+        <li><a href="https://help.yahoo.com/kb/sln27791.html">Yahoo Help — Ways to securely access Yahoo Mail</a> — OAuth2 required, legacy password access blocked by default, app passwords as the fallback.</li>
+        <li><a href="https://www.apollo.com/insights-news/pressreleases/2021/09/apollo-funds-complete-acquisition-of-yahoo-161530593">Apollo — Funds Complete Acquisition of Yahoo</a> — $5.0B close on Sep 1 2021, Verizon's retained 10%.</li>
+        <li><a href="https://www.yahooinc.com/press/yahoo-mail-launches-a-new-app-experience-with-mobile-first-ai-features">Yahoo Inc. press release, Nov 14 2024</a> — one-line AI summaries, priority inbox, Quick Actions for bills, codes, and package tracking.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Yahoo_Mail">Wikipedia — Yahoo Mail</a> — Oct 8 1997 launch date and the Four11 acquisition.</li>
+        <li>Local probes on 2026-09-01: <code>curl</code> against robots.txt, headers, and the path sweep; <code>openssl s_client</code> capability calls to IMAP, SMTP and POP; <code>OPTIONS</code> against the CalDAV and CardDAV hosts; <code>dig</code>; OIDC discovery fetch. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>AI-crawler policy is enforced at the edge, not declared in robots.txt. <em>Basis:</em> four named AI UAs got 429 while four non-AI UAs got 200 from one IP in one sweep, against a robots.txt containing no AI rules (2026-09-01).</li>
+        <li>The mail scope is absent from Yahoo's published OAuth discovery. <em>Basis:</em> <code>scopes_supported</code> at <code>login.yahoo.com/.well-known/openid-configuration</code> lists only <code>openid, openid2, profile, email</code> (observed 2026-09-01).</li>
+        <li>Incremental IMAP sync is structurally more expensive here than on providers that ship CONDSTORE. <em>Basis:</em> the CAPABILITY response advertises <code>XYMHIGHESTMODSEQ</code> but neither <code>CONDSTORE</code> nor <code>QRESYNC</code> (observed 2026-09-01), so no standard MODSEQ-delta command is available.</li>
+        <li>Attachments deserve promotion to first-class documents. <em>Basis:</em> the 39.8 MiB <code>APPENDLIMIT</code>/<code>SIZE</code> ceiling admits full PDFs and Office files, and no server-side extracted-text field appears anywhere in the advertised capability set.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Yahoo Mail's active mailbox count — Yahoo publishes none; the widely repeated 225M traces to a Feb 2017 figure. Closeable only by a Yahoo disclosure or an Apollo portfolio filing.</li>
+        <li>Total stored corpus size and the median mailbox size — no public figure; the 20 GB cap bounds the free tier from above but says nothing about the distribution.</li>
+        <li>The actual IMAP/CalDAV/CardDAV rate limits for approved partners — undefined in public docs; closeable only by completing the developer-access application and reading the terms issued with approval.</li>
+        <li>What <code>XYMHIGHESTMODSEQ</code> and <code>X-MSG-EXT</code> actually return and whether either restores a usable delta sync — closeable with an authenticated session on a mailbox the operator owns.</li>
+        <li>Whether the 12-month inactivity deletion removes message bodies or only account status, and what the limits are outside the US — Yahoo's FAQ scopes its figures to the United States and leaves enforcement vague. Closeable by a longitudinal test on a dormant owned account.</li>
+        <li>Whether the 429 issued to AI crawler UAs is permanent policy or an adaptive throttle — closeable by repeating the UA sweep on a schedule from varied IPs.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
