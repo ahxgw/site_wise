@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>telegram.org Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-08-31</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>telegram.org</h1>
+      <p class="lede">Telegram ships no robots.txt, serves every public channel's full archive as plain HTML, and forbids indexing it in the terms.</p>
+      <div class="tag-row">
+        <span class="tag">Messaging</span>
+        <span class="tag">Public Broadcast</span>
+        <span class="tag">Private Company</span>
+        <span class="tag">Crypto-Adjacent</span>
+        <span class="tag">No Crawl Policy</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Telegram is a messaging app with a broadcast product bolted onto it. The messaging half is private and structurally out of reach. The broadcast half — public channels and groups with <code>@username</code> handles — is a mass-media system that renders to the open web at <code>t.me</code>, and it is the only part an index can touch. The apex host <code>telegram.org</code> is marketing and documentation, <code>core.telegram.org</code> the developer surface, <code>telegra.ph</code> a long-form publishing sidecar. Money comes from Premium subscriptions, channel advertising, and Stars/Gifts on the TON blockchain, under a privately held BVI/Dubai structure. For an index builder the site is a paradox: technically it is one of the most openly crawlable large corpora on the web — no <code>robots.txt</code>, no auth wall, server-rendered archives back to 2015 — while its <a href="https://telegram.org/tos/content-licensing">Content Licensing and AI Scraping Terms</a> prohibit exactly the activity the markup invites. The wall here is contractual, not technical.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>telegram.org</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://telegram.org/">https://telegram.org/</a></dd></div>
+        <div><dt>Category</dt><dd>Messaging app with a public broadcast/channel layer</dd></div>
+        <div><dt>Related hosts</dt><dd><code>t.me</code> (link resolver and public web preview — the indexable surface), <code>core.telegram.org</code> (API docs), <code>web.telegram.org</code> (web client), <code>api.telegram.org</code> (Bot API), <code>telegra.ph</code> + <code>api.telegra.ph</code> (Telegraph publishing), <code>cdn*.telesco.pe</code> (media CDN), <code>fragment.com</code> (username/number auctions), <code>promote.telegram.org</code> (ads)</dd></div>
+        <div><dt>Owner</dt><dd>Telegram Group Inc (BVI), parent; Telegraph Inc (BVI) and Telegram FZ-LLC (Dubai) as group members — <a href="https://telegram.org/privacy">Privacy Policy §8.2</a></dd></div>
+        <div><dt>Founded / launched</dt><dd>Launched Aug 14 2013 by Pavel and Nikolai Durov; the app marked its 13th birthday on Aug 14 2026 (<code>t.me/durov/541</code>, Probe Log)</dd></div>
+        <div><dt>Business model</dt><dd>Premium subscriptions, channel advertising, Stars/Gifts, and TON-linked assets; convertible bonds rather than equity rounds</dd></div>
+        <div><dt>Scale anchor</dt><dd>"Significantly over 1 billion" monthly active users — Durov, Mar 19 2025 (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Rows marked "probe" were measured first-hand on 2026-08-31 (UTC); see the Probe Log for commands.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Users, engagement, profit</dt>
+          <dd>"Significantly over 1 billion" monthly active users, second-largest messenger excluding WeChat; 21 app opens and 41 minutes per user per day; $547M profit for full-year 2024 — all as of Mar 19 2025, read first-hand from the founder's own channel post <code>t.me/durov/404</code> (probe), which carried 4.69M views at read time. Self-reported; there is no audited filing. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Premium subscribers</dt>
+          <dd>Over 15M paid subscribers, doubled year on year — as of May 27 2025, from <code>t.me/durov/420</code> (probe). Against the 1B MAU anchor that is roughly 1.5% paid conversion, calculated by Site Wise. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>EU monthly active recipients</dt>
+          <dd>"Significantly fewer than 45 million" averaged over the preceding six months — as of Aug 2026. <a href="https://telegram.org/tos/eu-dsa">Telegram's EU DSA disclosure</a>. The 45M line is the DSA's very-large-platform threshold, so this is a self-declaration of staying under regulation. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>In-app media corpora</dt>
+          <dd>Over 100M emoji and stickers searchable in 36 languages, as of <a href="https://telegram.org/blog/ai-bot-revolution-11-new-features">May 7 2026</a>; 350M GIFs in 36 languages, and the single-message ceiling raised to 32,768 characters, as of <a href="https://telegram.org/blog/communities-editor-invisible-messages">Jul 14 2026</a>. Both corpora are app-only — neither is reachable from the web surface. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Channel archive depth</dt>
+          <dd>The <code>@telegram</code> channel's public web view walks unbroken from message 460 (Aug 26 2026) back to message 2 (Sep 21 2015) — 11 years of history, 20 messages per request, no auth (probe). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Crawl cost per channel</dt>
+          <dd>20 sequential archive pages returned 20&times;HTTP 200 in 28.1s and 2.55MB — 128KB and 6.4KB per message, about 14 messages/second single-threaded, with no throttling observed (probe). A 460-message channel is therefore ~23 requests and ~3MB. Calculated by Site Wise. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Public engagement signals</dt>
+          <dd>Exposed as plain text without auth, as of Aug 31 2026 (probe): view counts on 20/20 messages sampled (1.26M–2M per post on <code>@telegram</code>); reaction blocks on 20/20 for channels that enable them; reply and forward attribution where applicable; and subscriber counts in the page header — <code>@durov</code> 11M, <code>@telegram</code> 9.69M, <code>@notcoin</code> 8.97M, <code>@Bloomberg</code> 172K. Bot pages carry an equivalent field: <code>@BotFather</code> shows 8,722,420 monthly users. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Bot API rate limits</dt>
+          <dd>~1 message/second to one chat, 20 messages/minute into one group, ~30 messages/second in bulk; paid broadcasts raise the ceiling to 1,000/second at 0.1 Stars per message above the free tier — as of Aug 31 2026. <a href="https://core.telegram.org/bots/faq">Bot API FAQ</a>. These are write limits; there is no documented read quota because there is no bulk read. <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-08-31 (UTC). User agent <code>SiteWise research (kunka@apitech.ai)</code> throughout.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe"><code>curl -sL https://&lt;host&gt;/robots.txt</code> across five hosts</td><td data-label="Observation"><strong>No robots.txt exists anywhere in the estate.</strong> <code>telegram.org</code>, <code>t.me</code>, <code>core.telegram.org</code> and <code>telegra.ph</code> all return HTTP 404 from <code>nginx/1.30.1</code>; <code>web.telegram.org</code> returns a 302. There is no crawl policy to read, no AI-crawler stanza, no <code>Crawl-delay</code>, and no sitemap pointer. <code>/sitemap.xml</code> is 404 on all four. <code>/llms.txt</code> and <code>/blog/rss</code> on <code>telegram.org</code> return HTTP 200 but serve the homepage, not a feed.</td></tr>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe"><code>curl -sI</code> and <code>dig +short</code> on <code>telegram.org</code>, <code>t.me</code></td><td data-label="Observation">Both resolve to <code>149.154.167.99</code> in Telegram's own allocation — no third-party CDN, cloud or edge vendor anywhere in the path, and no vendor headers on any response. HTTP/2 200 from <code>nginx/1.30.1</code>, <code>cache-control: no-store</code>, HSTS with <code>preload</code>. <code>t.me</code> sends <code>x-frame-options: ALLOW-FROM https://web.telegram.org</code> with a matching <code>frame-ancestors</code> CSP, so the preview surface is framable only by Telegram's own client.</td></tr>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe">Soft-404 check: <code>GET /zzz-nonexistent-abc123</code></td><td data-label="Observation">Returns <strong>HTTP 200 with the homepage body</strong> (19,912 bytes vs 19,919 for <code>/</code>; the delta is a per-request nonce). Any mistyped or stale path on <code>telegram.org</code> looks live to a crawler — <code>/dsa</code> and <code>/transparency</code> both fall into this trap, while the real DSA page sits at <code>/tos/eu-dsa</code>. <code>core.telegram.org</code> at least serves a titled "Page not found" body, still under HTTP 200.</td></tr>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe">Archive walk: <code>GET https://t.me/s/telegram?before=&lt;id&gt;</code></td><td data-label="Observation">Fully server-rendered HTML — 20 <code>tgme_widget_message</code> blocks per page, each with <code>data-post="telegram/&lt;n&gt;"</code>, an ISO-8601 <code>datetime</code>, text, media and a view count. Pagination is a <code>rel="prev"</code> link plus <code>?before=</code>, and it walked cleanly from id 460 back to id 2 (Sep 21 2015). No JavaScript, auth, cookie or rate limit across ~60 requests.</td></tr>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe"><code>GET https://t.me/s/telegram?q=gift</code></td><td data-label="Observation"><strong>An undocumented full-text search endpoint.</strong> <code>?q=</code> returns 20 matches drawn from across the channel's history (ids 381–401, not the newest 441–460), with 44 <code>&lt;mark&gt;</code> highlight tags; 17/20 result bodies contain the literal term, the rest matching on captions or link previews. Unauthenticated, scoped to one channel per call, and documented nowhere on <code>core.telegram.org</code>.</td></tr>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe">Single-message reads: <code>GET https://t.me/durov/&lt;id&gt;?embed=1</code></td><td data-label="Observation">Returns one message as a ~17KB standalone fragment with its own <code>datetime</code>, text and view count — cheap random access, which made binary search over a channel's timeline by date practical. Used to read the founder's statements cited in Verified Metrics from the platform rather than press coverage: <code>404</code> (Mar 19 2025, 1B MAU), <code>420</code> (May 27 2025, 15M Premium), <code>541</code> (Aug 14 2026, 13th birthday), <code>544</code> (Aug 24 2026, Paris detention anniversary).</td></tr>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe">Media extraction from a channel page</td><td data-label="Observation">35 distinct <code>cdn1.telesco.pe</code> URLs on one page. The path is content-shaped (<code>/file/&lt;hash&gt;.mp4</code>) and stable across repeated renders, with a signed <code>?token=</code> riding along. Fetching one returned a complete 7.4MB <code>video/mp4</code> with <code>access-control-allow-origin: *</code> — full-resolution media, no auth, CORS wide open.</td></tr>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe">Metadata census and channel-availability matrix</td><td data-label="Observation">Open Graph and App Links only (<code>og:*</code>, <code>twitter:*</code>, and <code>al:ios:*</code>/<code>al:android:*</code> pointing at <code>tg://resolve?domain=&lt;name&gt;</code>), and <strong>zero JSON-LD blocks</strong> on any page sampled. <code>og:description</code> holds the channel bio rather than the post, so it is byte-identical across every message page in a channel. Of five handles tested, four served the archive view and <code>NASA</code> returned a 302 with no body; invite links <code>t.me/+&lt;hash&gt;</code> return 200 but show only a join card.</td></tr>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe">Public API samples: Telegraph and Bot API</td><td data-label="Observation"><code>api.telegra.ph/getPage/&lt;path&gt;?return_content=true</code> returns full JSON — title, description, <code>author_name</code>, a structured <code>content</code> node tree and a <code>views</code> counter — <strong>with no token and no documented rate limit</strong>. <code>getViews</code> is equally open but <code>getPageList</code> needs a token, so you can read any Telegraph page you can name and cannot discover the names. By contrast <code>api.telegram.org/bot&lt;fake&gt;/getMe</code> returns <code>{"ok":false,"error_code":401}</code> — the Bot API has no anonymous surface at all.</td></tr>
+            <tr><td data-label="Date">2026-08-31</td><td data-label="Probe"><code>curl -sL https://telegram.org/tos/content-licensing</code></td><td data-label="Observation">1,898 characters, no effective date. Operative text: "Access to user-generated content for any purpose other than ordinary, legitimate, and intended use of the Telegram platform as its user is prohibited," and "Telegram firmly prohibits the scraping, indexing, harvesting, aggregation or use of data obtained from its platform to train, fine-tune, validate or otherwise engage in the development, enhancement, benchmarking or deployment of artificial intelligence, machine learning models and similar technologies." The only carve-out is a "retractable, limited, non-exclusive, non-transferable and non-sublicensable" licence to run a third-party client, bot or mini app; per-user consent is possible but non-transferable and scoped to one chat.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what may be redisplayed, and how fast it churns. Every "license / display" cell inherits the Content Licensing prohibition quoted in the Probe Log. Private chats and groups are omitted entirely: they are almost certainly the bulk of the platform by volume and are structurally unreachable — a bot added to a group sees only what privacy mode allows and cannot read history.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text — channel posts</td>
+              <td data-label="Objects &amp; est. count">The corpus. Posts up to 32,768 characters in public channels; total post count across all public channels <span class="evidence open">open</span>. Per channel, ids are dense and monotonic from 1.</td>
+              <td data-label="Best legitimate path"><code>t.me/s/&lt;name&gt;?before=&lt;id&gt;</code>, 20 posts per request, back to channel creation. No sitemap, no feed, no dump, no directory — you must already know the handle.</td>
+              <td data-label="Auth &amp; quota">None. No key, no cookie, no rate limit observed at ~14 msg/s (Verified Metrics).</td>
+              <td data-label="License / display">Terms prohibit indexing and aggregation outright. Official embeds via <code>?embed=1</code> are the only sanctioned display path.</td>
+              <td data-label="Freshness">Channels are append-mostly, but posts are editable and deletable in place with no tombstone in the web view.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text — Telegraph</td>
+              <td data-label="Objects &amp; est. count">Long-form posts at <code>telegra.ph/&lt;slug&gt;-&lt;MM-DD&gt;</code>, widely used as the overflow surface when a channel post exceeds the message limit. Count <span class="evidence open">open</span>.</td>
+              <td data-label="Best legitimate path"><code>api.telegra.ph/getPage</code> returns a structured node tree, not HTML — the cleanest text extraction anywhere in the estate (Probe Log).</td>
+              <td data-label="Auth &amp; quota">None for reads. But <code>getPageList</code> needs a token, so slugs must be harvested from channel posts that link them.</td>
+              <td data-label="License / display">Same prohibition; <code>Telegraph Inc.</code> is a named group member in the privacy policy.</td>
+              <td data-label="Freshness">Pages are editable by their creator indefinitely; <code>views</code> increments continuously.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Photos attached to channel posts, plus 100M+ stickers and custom emoji and 350M GIFs (Verified Metrics) reachable only inside the app.</td>
+              <td data-label="Best legitimate path">Read <code>cdn*.telesco.pe</code> URLs out of the rendered channel page. Full resolution, CORS <code>*</code> (Probe Log).</td>
+              <td data-label="Auth &amp; quota">None, though URLs carry a signed token.</td>
+              <td data-label="License / display">Uploader-owned; Telegram grants no redistribution right. Sticker and GIF packs are third-party uploads with no licence metadata at all.</td>
+              <td data-label="Freshness">Media is immutable once posted; the containing message is not.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Video dominates: 39 video elements against 6 photos on the one <code>@telegram</code> page sampled, plus video notes, stories and live streams. Audio — voice messages, music files, voice chats — rides the same path and carries no public transcript.</td>
+              <td data-label="Best legitimate path">Same CDN extraction as images; a 7.4MB MP4 fetched complete and unauthenticated (Probe Log). Voice chats leave no public artefact.</td>
+              <td data-label="Auth &amp; quota">None observed. Whether large files are range-limited is <span class="evidence open">open</span>.</td>
+              <td data-label="License / display">As images. Stories expire, so mirroring them outlives the uploader's intent. Telegram's own transcription is Premium and in-app only.</td>
+              <td data-label="Freshness">Stories are ephemeral by design; channel video persists with the post.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reactions</td>
+              <td data-label="Objects &amp; est. count">Reactions are exposed on every sampled message. Comments live in a linked discussion group, reachable at <code>t.me/&lt;chan&gt;/&lt;id&gt;?comment=1</code>.</td>
+              <td data-label="Best legitimate path">Parse the reaction block from the archive page. Comment threads render at the <code>?comment=</code> URL but not in the <code>/s/</code> archive view, so they cost one extra request per post.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">As post text.</td>
+              <td data-label="Freshness">Reaction and view counters move continuously and are never final — a snapshot is a timestamped observation, not a fact.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Channels, groups, bots and users share one flat <code>@username</code> namespace, auctioned on <code>fragment.com</code>. Public metadata: display name, bio, subscriber count, avatar; bots additionally publish a monthly-user count.</td>
+              <td data-label="Best legitimate path">Fetch <code>t.me/&lt;name&gt;</code> and parse. There is <strong>no directory and no enumeration endpoint</strong> — handle discovery is the binding constraint on corpus coverage.</td>
+              <td data-label="Auth &amp; quota">None per lookup.</td>
+              <td data-label="License / display">Handles are transferable and resellable, so an entity key can change hands.</td>
+              <td data-label="Freshness">Subscriber counts drift daily; handle ownership changes are silent.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Telegram departs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>No robots.txt is not permission</h4>
+          <p>The methodology assumes robots.txt names AI crawlers and marks the boundary. Across five hosts there is no file at all, so the Robots Exclusion Protocol is silent here — and the terms are not. <strong>The policy layer and the technical layer point in opposite directions, and only the policy layer binds.</strong></p>
+        </div>
+        <div>
+          <h4>Discovery, not access, is the ceiling</h4>
+          <p>Every other large platform meters access and publishes a sitemap. Telegram inverts it: access is free and unmetered, but there is no sitemap, directory, enumeration API or way to list public channels, so coverage is a function of how many handles you can name. Worse, a public <code>@username</code> does not imply a public archive — <code>t.me/s/NASA</code> returned a bodiless 302 while four other handles each served 20 messages. Treat "has a handle" and "has a crawlable archive" as separate booleans and re-check the second, since an admin can withdraw it silently. <span class="evidence inferred">inferred</span> Handle discovery has to come from outside Telegram. <em>Basis:</em> <code>/sitemap.xml</code> is 404 on all four hosts, <code>getPageList</code> is Telegraph's only listing method and needs a token, and the archive view accepts only an exact handle (Probe Log).</p>
+        </div>
+        <div>
+          <h4>An undocumented per-channel search endpoint</h4>
+          <p><code>?q=</code> on the archive URL runs full-text search over a channel's whole history and returns highlighted matches (Probe Log). It makes targeted retrieval cheap without a full crawl. <span class="evidence inferred">inferred</span> It is also the most fragile surface here. <em>Basis:</em> it appears in no documentation on <code>core.telegram.org</code>, so nothing constrains Telegram from changing or removing it, and no deprecation notice would be owed.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field, and the OG trap</h4>
+          <p>There is no title/body split and no JSON-LD to disagree with — the message body is the whole object. But <code>og:description</code> holds the <em>channel bio</em>, repeated identically on every message page, so an indexer that trusts OG metadata stores the same description for all 460 posts in a channel. Take the message text node, never the meta tag.</p>
+        </div>
+        <div>
+          <h4>Free live metrics, and missing tombstones</h4>
+          <p>View counts, reaction tallies and subscriber counts sit in the HTML with no auth — signals most platforms hide behind a key. They make excellent ranking features and terrible facts, being monotonic counters read at an instant, so store them as <code>(value, observed_at)</code> pairs. Deletions, meanwhile, leave no marker at all. <span class="evidence inferred">inferred</span> Dense integer ids make deletion detectable where nothing else does. <em>Basis:</em> ids ran contiguously from 2 upward in the archive walk, so a missing id is a signal rather than noise (Probe Log).</p>
+        </div>
+        <div>
+          <h4>Query profile is entity-first</h4>
+          <p>Telegram's own Post Search — <a href="https://telegram.org/blog/post-search-story-albums-and-more">launched Jul 31 2025</a>, scoped to public channels, gated behind Premium — reveals what users could not do before: search across channels. Off-platform the dominant intent is <code>site:t.me &lt;handle&gt;</code> navigation, because that is what external engines can serve. <span class="evidence inferred">inferred</span> Cross-channel topical search is the unmet need. <em>Basis:</em> Telegram built and monetised exactly that feature 12 years after launch, and it remains Premium-only.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <p class="muted">How Site Wise would build this index — assuming the licensing question in Risks is resolved first, because it is not a formality here.</p>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the message, keyed <code>(channel_handle, message_id)</code> — a natural atom, self-contained, individually addressable and embeddable at <code>t.me/&lt;chan&gt;/&lt;id&gt;</code>, carrying its own timestamp, view count and media. Telegraph articles are a second unit keyed by slug, joined wherever a message links one.</li>
+        <li><strong>Primary keys &amp; joins:</strong> the handle is the entity spine but is <em>transferable</em>, so resolve it once to the numeric internal id if a client path is available and treat the handle as an alias. Media joins by CDN path hash (stable across renders, unlike the signed token), which gives free cross-channel dedup of the forwarded images that dominate this corpus. Forward attribution joins a post back to its origin channel and is the only provenance signal on the surface.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>t.me/s/&lt;handle&gt;?before=</code> archive walk — complete per channel, free, ~23 requests for a 460-message channel, and the only bulk path that exists. 2) <code>?q=</code> per-channel search for targeted refresh without a full re-walk, accepting that it is undocumented and may vanish. 3) <code>api.telegra.ph/getPage</code> for linked long-form, which returns a clean node tree. 4) A registered MTProto client under the <a href="https://core.telegram.org/api/terms">API Terms</a> for anything the web view omits — but those terms carry the same AI/ML prohibition, so this path buys access, not rights. There is no fifth path: no dump, no firehose, no partner feed, and the Bot API is 401 without a token and blind outside its own chats.</li>
+        <li><strong>Recrawl cadence:</strong> two loops. A one-request head-poll of page 1 per channel detects the newest id; only a moved id triggers a walk. A monthly integrity sweep re-reads older pages to catch edits and to read missing ids as deletions — enough for a back catalogue that is effectively frozen. Counters need their own cadence: sample views on a schedule if you want velocity, and stop treating them as attributes.</li>
+        <li><strong>Derivatives to generate:</strong> ASR is the highest-value derivative and the one with no shortcut — nothing here carries a public transcript, and the modality mix skewed video-heavy on the page sampled. OCR matters more than usual, since a large share of channel content is screenshots of text. Skip thumbnails, which the CDN already serves sized, and skip alt-text extraction, of which there is none.</li>
+        <li><strong>Demo to build:</strong> a channel-archive walker that takes a handle, pages back to id 1, and emits one JSONL record per message with id, timestamp, text, media hashes, view count and reaction tallies. It proves the claim the whole plan rests on — an 11-year archive in ~23 unauthenticated requests — and doubles as the deletion detector, since a complete id sequence makes gaps visible.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The terms prohibit the index, in the exact words.</strong> "Scraping, indexing, harvesting, aggregation" is a direct hit, and the AI/ML clause covers training, fine-tuning, validation, benchmarking and deployment. The only exception requires "explicit, informed, affirmative and continued consent" from every relevant user, per chat, non-transferable — which is not obtainable at corpus scale by design. Unlike the usual robots.txt negotiation, there is nothing here to comply with incrementally: the prohibition is categorical and there is no licensing programme to buy into. Any index built on this corpus is a legal decision made before a technical one.</li>
+        <li><strong>Nothing machine-readable reflects that prohibition.</strong> No robots.txt, <code>noindex</code>, <code>llms.txt</code> or meta directive, so an automated compliance check reads the estate as fully permissive. Every crawler that respects only machine-readable policy is already non-compliant here and will not know it.</li>
+        <li><strong>Both bulk surfaces are undocumented and therefore unowned.</strong> The archive view is an admin toggle, not a platform guarantee — one handle in five already returned a bodiless 302 — and a default flip would remove the only bulk path overnight with no deprecation window, because it was never published as an interface. The <code>?q=</code> search endpoint is load-bearing for cheap refresh in the plan above and has no documentation, versioning or stability commitment at all. Build the full-walk fallback before depending on either.</li>
+        <li><strong>Jurisdictional pressure is live and pointed at this exact surface.</strong> Telegram self-declares "significantly fewer than 45 million" EU monthly active recipients (Verified Metrics), keeping it below the DSA's very-large-platform threshold, and the founder was detained in France in Aug 2024 over platform content — an episode he was still writing about two years later (<code>t.me/durov/544</code>, Probe Log). <span class="evidence inferred">inferred</span> Regulatory outcomes will land on public channels first. <em>Basis:</em> the enforcement theory in both the French case and the DSA framing concerns publicly distributed content, which is exactly the layer this index would consume.</li>
+        <li><strong>Provenance is weak where it matters most.</strong> Channels forward each other constantly and forward attribution is the only chain-of-custody signal in the markup. With no author identity beyond a transferable handle, a retrieved passage often cannot be traced to an origin — a citation-correctness problem with no technical fix on the public surface.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://telegram.org/tos/content-licensing">Telegram Content Licensing and AI Scraping Terms</a> — the prohibition on scraping, indexing, harvesting and aggregation; the limited third-party-client exception; the per-chat consent carve-out.</li>
+        <li><a href="https://core.telegram.org/api/terms">Telegram API Terms of Service</a> — <code>api_id</code> requirements for MTProto clients and the parallel AI/ML prohibition.</li>
+        <li><a href="https://telegram.org/privacy">Telegram Privacy Policy</a> — §8.2 names Telegram Group Inc (BVI), Telegraph Inc (BVI) and Telegram FZ-LLC (Dubai).</li>
+        <li><a href="https://telegram.org/tos/eu-dsa">Telegram EU DSA user guidance</a> — the "significantly fewer than 45 million" EU recipients declaration, Aug 2026.</li>
+        <li><a href="https://core.telegram.org/bots/faq">Telegram Bot API FAQ</a> — rate limits and privacy mode; <a href="https://telegra.ph/api">Telegraph API docs</a> — which methods require a token.</li>
+        <li>Telegram blog: <a href="https://telegram.org/blog/post-search-story-albums-and-more">Post Search (Jul 31 2025)</a>, <a href="https://telegram.org/blog/ai-bot-revolution-11-new-features">100M+ emoji and stickers (May 7 2026)</a>, <a href="https://telegram.org/blog/communities-editor-invisible-messages">350M GIFs and 32,768-character messages (Jul 14 2026)</a>.</li>
+        <li><a href="https://t.me/durov/404">Pavel Durov, <code>t.me/durov/404</code> (Mar 19 2025)</a> and <a href="https://t.me/durov/420"><code>t.me/durov/420</code> (May 27 2025)</a> — the MAU, engagement, profit and Premium figures, read first-hand through the archive probe.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Handle discovery must come from outside Telegram. <em>Basis:</em> <code>/sitemap.xml</code> is 404 on all four hosts probed, Telegraph's only listing method requires a token, and the archive view resolves exact handles only (Probe Log).</li>
+        <li>The <code>?q=</code> search endpoint is the most fragile surface in the plan. <em>Basis:</em> it returns highlighted cross-history matches but appears in no <code>core.telegram.org</code> documentation, so no stability commitment attaches to it.</li>
+        <li>Dense integer message ids make deletions detectable. <em>Basis:</em> the archive walk returned contiguous ids from 2 upward, so a gap in the sequence is a signal rather than sampling noise.</li>
+        <li>Cross-channel topical search is the unmet retrieval need. <em>Basis:</em> Telegram shipped Post Search over public channels in Jul 2025 and gated it behind Premium — it monetised the gap rather than closing it.</li>
+        <li>Regulatory pressure will land on public channels before private chats. <em>Basis:</em> both the French criminal case and the DSA active-recipient framing turn on publicly distributed content, which is the layer this index consumes.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many public channels exist, and how many expose the web archive? No directory, no enumeration endpoint, no sitemap. Closable only by an external handle corpus — harvesting <code>t.me/</code> links from a general web crawl, then testing each for a 200 on <code>/s/</code> — which measures reachability, never the true total.</li>
+        <li>How many total messages sit in the public-channel corpus? Per-channel maxima are readable from page 1, so a handle census would yield a defensible lower bound; without one, any figure is a guess.</li>
+        <li>Where is Telegram's rate limit on <code>t.me/s/</code>? Sixty requests at ~14 msg/s drew no throttling. Closable by a stepped-concurrency probe against the 429 boundary — necessary before scheduling any real ingest.</li>
+        <li>Do <code>cdn*.telesco.pe</code> tokens expire, and are large files range-limited? The path was stable across two renders minutes apart and a 7.4MB MP4 came down whole, but neither expiry nor a multi-gigabyte file was tested. Closable by re-requesting a captured URL at 1h/6h/24h and by fetching a large file with and without a <code>Range</code> header; the answer decides whether media URLs can be stored or must be re-derived at fetch time.</li>
+        <li>Does any commercial content licence exist? The terms describe no partner programme, paid tier or dataset. Closable only by a direct enquiry — and given the categorical wording, a negative answer is the likely one.</li>
+        <li>What is Telegram's current revenue and profitability? The $547M figure is self-reported for 2024 in a founder's channel post; bondholder disclosures are not public. Closable by a prospectus or an IPO filing, neither of which exists yet.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
