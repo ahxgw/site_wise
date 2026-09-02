@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>quora.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-09-02</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>quora.com</h1>
+      <p class="lede">Quora gates a 400M-visitor Q&amp;A corpus behind a licensing email: ten named crawlers pass, eighteen AI bots and everyone else get <code>Disallow: /</code>.</p>
+      <div class="tag-row">
+        <span class="tag">Q&amp;A / UGC</span>
+        <span class="tag">Allowlist Crawl</span>
+        <span class="tag">No Public API</span>
+        <span class="tag">Cloudflare-Challenged</span>
+        <span class="tag">AI-Licensing</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Quora was founded Jun 25 2009 by ex-Facebook employees Adam D'Angelo (still CEO) and Charlie Cheever, and opened publicly Jun 21 2010. It remains private and independent, last marked at $2B in May 2019 (<a href="https://en.wikipedia.org/wiki/Quora">Wikipedia</a>). Revenue comes from display advertising, the Quora+ subscription (Aug 5 2021), and <strong>Poe</strong>, the multi-model AI chat product launched Feb 3 2023 on shared infrastructure.</p>
+      <p>For an index builder Quora is the sharpest case in the top 200 of a site enormously valuable to retrieval and almost entirely closed to it. The corpus is long-form natural-language answers to explicit natural-language questions — the exact shape of a RAG or training target — and roughly half of Quora's traffic arrives from organic search, so it demonstrably ranks. Yet there is no public API, no sitemap, no bulk dump, and a robots.txt whose opening lines are a contract notice rather than a rule. Access is not metered; it is negotiated. The one unauthenticated machine-readable endpoint in the estate belongs to Poe, and it describes models, not answers.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>quora.com</code> (canonical <code>www.quora.com</code>)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.quora.com/">https://www.quora.com/</a></dd></div>
+        <div><dt>Category</dt><dd>User-generated Q&amp;A; AI chat aggregator (Poe)</dd></div>
+        <div><dt>Related hosts</dt><dd><code>poe.com</code> / <code>api.poe.com</code> / <code>creator.poe.com</code> (AI product, API, bot docs), <code>help.quora.com</code>, <code>business.quora.com</code>, <code>qph.cf2.quoracdn.net</code> and <code>qph.cf2.poecdn.net</code> (media), plus 24 language editions such as <code>es.quora.com</code></dd></div>
+        <div><dt>Owner</dt><dd>Quora, Inc. — private, independent; CEO Adam D'Angelo. HQ Mountain View, California.</dd></div>
+        <div><dt>Founded / launched</dt><dd>Founded Jun 25 2009; public launch Jun 21 2010</dd></div>
+        <div><dt>Business model</dt><dd>Display advertising + Quora+ subscription + Poe subscriptions and API points</dd></div>
+        <div><dt>Scale anchor</dt><dd>"Reach over 400 million monthly unique visitors on Quora" — Quora for Business, page dated April 2025 (<a href="https://business.quora.com/resources/reach-over-400-million-monthly-unique-visitors-on-quora">business.quora.com</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Answer counts, corpus size, Poe usage, and revenue have no primary figure and live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Audience, languages, topics</dt>
+          <dd>400M+ monthly unique visitors across 24 languages and 300,000+ topics — Quora's own advertiser claim, page dated April 2025. <a href="https://business.quora.com/resources/reach-over-400-million-monthly-unique-visitors-on-quora">Quora for Business</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Third-party traffic estimate</dt>
+          <dd>~299.1M monthly visits, global rank #150, organic search 49.57% of visits — Similarweb estimate for July 2026, not an official figure. <a href="https://www.similarweb.com/website/quora.com/">Similarweb</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt size and shape</dt>
+          <dd>18,792 bytes / 824 lines / <strong>29</strong> <code>User-agent</code> groups; <strong>zero</strong> <code>Sitemap</code> directives and <strong>zero</strong> <code>Crawl-delay</code> lines — measured Sep 2 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Crawler allowlist split</dt>
+          <dd>10 agents get path-level rules (62–65 <code>Disallow</code> lines each, no blanket block); 18 get a bare <code>Disallow: /</code>; <code>*</code> gets <code>Disallow: /</code> plus exactly <strong>7</strong> <code>Allow</code> exceptions — counted Sep 2 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Reachable public surface, unnamed agent</dt>
+          <dd><strong>2 files.</strong> <code>/robots.txt</code> and <code>/ads.txt</code> return 200; all 7 robots-permitted HTML paths return <code>HTTP 403</code> with <code>cf-mitigated: challenge</code> — measured Sep 2 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Poe model catalog (public, unauthenticated)</dt>
+          <dd>345 models from 36 distinct <code>owned_by</code> providers; 192 carry per-token pricing; 345/345 carry a description and an icon URL. Output modalities: 236 text, 51 image, 48 video, 14 audio. Records stamped Sep 13 2023 through Aug 31 2026 — retrieved Sep 2 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-02, all unauthenticated. No login was attempted and no challenge was solved or bypassed.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-09-02</td><td data-label="Probe"><code>curl -sL https://www.quora.com/robots.txt</code></td><td data-label="Observation">200, 18,792 bytes, <code>max-age=14400</code>. The file opens with a <strong>legal notice, not a rule</strong>: bots are "strictly prohibited from using Quora platform content for the purposes of training AI models … except where explicit prior permission has been granted by Quora through a contractual licensing agreement," followed by "If you operate a search engine and would like to crawl Quora, you can email <code>robotstxt@quora.com</code>." No <code>Sitemap</code> line anywhere.</td></tr>
+            <tr><td data-label="Date">2026-09-02</td><td data-label="Probe">User-agent census of the 29 groups</td><td data-label="Observation">Path-level (crawl permitted): <code>Googlebot</code>, <code>Google-Extended</code>, <code>Applebot</code>, <code>Amazonbot</code>, <code>AASA-Bot</code>, <code>Facebot</code>, <code>Twitterbot</code>, <code>LinkedInBot</code>, <code>Feedly</code>, <code>Pingdom</code>. Blanket <code>Disallow: /</code> — 18 agents, spanning every non-Google AI operator (<code>GPTBot</code>, <code>OAI-SearchBot</code>, <code>ChatGPT-User</code>, <code>ClaudeBot</code>, <code>Claude-User</code>, <code>Claude-SearchBot</code>, <code>PerplexityBot</code>, <code>Applebot-Extended</code>, <code>Bytespider</code>, <code>Diffbot</code>), the scraping and archiving tools (<code>Scrapy</code>, <code>ImagesiftBot</code>, <code>ia_archiver</code>, <code>Arquivo-web-crawler</code>, <code>JamesBOT</code>) and three ad/search minors. <strong>Absent entirely — and therefore falling to the <code>*</code> block's <code>Disallow: /</code>: <code>Bingbot</code>, <code>DuckDuckBot</code>, <code>Yandex</code>, <code>Baiduspider</code>, <code>CCBot</code>.</strong></td></tr>
+            <tr><td data-label="Date">2026-09-02</td><td data-label="Probe">Rule diff: <code>Googlebot</code> vs <code>Google-Extended</code></td><td data-label="Observation">Identical except that <strong>Googlebot carries three extra disallows the AI agent does not</strong>: <code>*/answer/</code>, <code>*/answers/</code>, <code>*/unanswered/*</code>. Google-Extended's 62-rule block matches Applebot's and Amazonbot's. Separately, the <code>ia_archiver</code> block is preceded by a 20-line comment framing the Wayback opt-out as author-anonymity protection, offering to opt back in if archive.org ships selective removal.</td></tr>
+            <tr><td data-label="Date">2026-09-02</td><td data-label="Probe"><code>curl</code> sweep of the 7 <code>*</code>-permitted paths (<code>/</code>, <code>/about</code>, <code>/about/</code>, <code>/press</code>, <code>/challenges</code>)</td><td data-label="Observation">Every one returns <code>HTTP/2 403</code>, ~5.4KB, <code>cf-mitigated: challenge</code>, body "Just a moment…" with <code>noindex,nofollow</code>. <strong>The paths robots.txt permits are the paths the edge refuses.</strong> Same 403 for <code>/sitemap.xml</code>, <code>/sitemap_index.xml</code>, <code>/opensearch.xml</code>; <code>/llms.txt</code> and <code>/.well-known/security.txt</code> are true 404s.</td></tr>
+            <tr><td data-label="Date">2026-09-02</td><td data-label="Probe"><code>GET</code> vs <code>HEAD</code> on the two fetchable files</td><td data-label="Observation"><code>/ads.txt</code> returns 200 and 264 lines (45 DIRECT : 215 RESELLER, <code>OWNERDOMAIN=quora.com</code>), setting six <code>m-*</code> cookies on a plain-text fetch. On both it and <code>/robots.txt</code>, <code>GET</code> → 200 from origin (<code>x-q-stat</code> present) but <code>HEAD</code> → <strong>403</strong> — a crawler that probes with <code>HEAD</code> concludes they do not exist.</td></tr>
+            <tr><td data-label="Date">2026-09-02</td><td data-label="Probe">DNS over HTTPS via <code>1.1.1.1/dns-query</code></td><td data-label="Observation"><code>www.quora.com</code> CNAMEs to <code>www.quora.com.cdn.cloudflare.net</code> → <code>162.159.152.17</code>, <code>162.159.153.247</code>. Apex resolves to three AWS EC2 addresses (TTL 60); NS are four <code>awsdns</code> servers — <strong>origin on AWS, edge on Cloudflare</strong>. Plain <code>dig</code> through the local resolver returned contradictory Meta- and IBM-owned addresses across repeat queries and an A record in answer to an NS query, so DoH backs every DNS figure quoted here.</td></tr>
+            <tr><td data-label="Date">2026-09-02</td><td data-label="Probe"><code>curl -s https://api.poe.com/v1/models</code></td><td data-label="Observation"><strong>200 with no credentials</strong> — 637KB, 345 model records; a deliberately invalid bearer token also returns 200, so the endpoint is genuinely unauthenticated. Each record carries <code>id</code>, <code>owned_by</code>, <code>description</code>, input/output modalities, <code>context_window</code>, per-token <code>pricing</code>, a <code>created</code> epoch-ms stamp and an icon on <code>qph.cf2.poecdn.net</code>. <code>POST</code> to the three inference endpoints returns 400, not 401 — validation runs before auth.</td></tr>
+            <tr><td data-label="Date">2026-09-02</td><td data-label="Probe">Subdomain robots sweep</td><td data-label="Observation"><code>poe.com</code> (509 bytes) takes the inverse posture: <code>Googlebot</code>, <code>Bingbot</code>, <code>msnbot</code>, <code>DuckDuckBot</code> get <code>Allow: /</code>, and <code>GPTBot</code>/<code>Google-Extended</code> are restricted only to <code>Disallow: /p/*</code> rather than blocked; <code>*</code> still ends in <code>Disallow: /</code>. One fetch of <code>poe.com/GPT-5</code> — outside that allowance, not repeated — returned 200 and 113,907 bytes of server-rendered HTML, versus 403 at equivalent depth on quora.com. <code>business.quora.com</code> <strong>blocks <code>Google-Extended</code>, <code>Applebot</code> and <code>Amazonbot</code> outright</strong> though all three are path-level-permitted on the main site. <code>poe.com</code> emits the same <code>x-q-stat</code> header as <code>www.quora.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-09-02</td><td data-label="Probe">Structured-data sample</td><td data-label="Observation"><strong>Not obtainable.</strong> Every HTML path permitted to an unnamed agent is challenge-blocked, and every path that would carry JSON-LD (questions, profiles, Spaces) is <code>Disallow</code>ed for <code>*</code>. <code>WebFetch</code> against <code>/about/tos</code> and <code>help.quora.com</code> returned 403 from different infrastructure than the curl probes. Metadata coverage here is measurable only from an allowlisted user-agent.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what may be displayed, and how fast it churns. Every row except the last is gated on a bilateral agreement reached through <code>robotstxt@quora.com</code> — there is no self-serve tier anywhere on quora.com.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Questions, answers, and Space posts across 24 languages and 300K+ topics (Verified Metrics). Answer count open.</td>
+              <td data-label="Best legitimate path"><strong>Allowlisted crawl only.</strong> Email <code>robotstxt@quora.com</code> to be added as a named group. Question pages are permitted to the 10 named agents; <code>/*/answer/</code> permalinks to every named agent <em>except</em> Googlebot (Probe Log).</td>
+              <td data-label="Auth &amp; quota">No published limit — no <code>Crawl-delay</code> in 824 lines. The binding constraint is the Cloudflare challenge, not a quota.</td>
+              <td data-label="License / display">The robots.txt notice forbids AI-training use without a contractual licensing agreement (Probe Log).</td>
+              <td data-label="Freshness">Answers are edited in place; revision history exists at <code>&lt;url&gt;/log</code> but <code>/*/log</code> is <code>Disallow</code>ed for every agent.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Inline answer images and avatars on <code>qph.cf2.quoracdn.net</code>. Count open.</td>
+              <td data-label="Best legitimate path">Referenced from within a permitted question page; no image sitemap or separate endpoint.</td>
+              <td data-label="Auth &amp; quota">Same allowlist. <code>ImagesiftBot</code> is blanket-blocked (Probe Log) — image-specific crawling is refused by name.</td>
+              <td data-label="License / display">Third-party copyright travels with user uploads; Quora's grant does not clear the original photographer.</td>
+              <td data-label="Freshness">Immutable per URL; the referencing answer mutates independently.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments</td>
+              <td data-label="Objects &amp; est. count">The reply layer under every answer.</td>
+              <td data-label="Best legitimate path"><strong>None.</strong> <code>/*/comment</code>, <code>/*/comments</code>, <code>/*/all_comments</code>, <code>/*/answer_comments</code> and <code>/comment/</code> are <code>Disallow</code>ed in all 29 groups <em>including Googlebot</em> (Probe Log).</td>
+              <td data-label="Auth &amp; quota">Unavailable at any tier.</td>
+              <td data-label="License / display">—</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video / audio</td>
+              <td data-label="Objects &amp; est. count">Marginal — no first-party product; embedded YouTube dominates. Poe's 48 video- and 14 audio-output models (Verified Metrics) <em>generate</em> media rather than host a corpus.</td>
+              <td data-label="Best legitimate path">None.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">—</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Topics (300K+), profiles, Spaces at <code>/q/&lt;space&gt;</code>.</td>
+              <td data-label="Best legitimate path">Landing pages only — the entity-shaped views (<code>/*/topics</code>, <code>/*/followers</code>, <code>/*/following</code>, <code>/*/all_questions</code>, <code>/*/related</code>) are <code>Disallow</code>ed in every group.</td>
+              <td data-label="Auth &amp; quota">Same allowlist.</td>
+              <td data-label="License / display">Same as text.</td>
+              <td data-label="Freshness">Taxonomy slow; follower graphs fast and unavailable.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Model catalog (Poe)</td>
+              <td data-label="Objects &amp; est. count">345 models, 36 providers, 192 priced (Verified Metrics). The only structured corpus in the estate.</td>
+              <td data-label="Best legitimate path"><code>GET https://api.poe.com/v1/models</code>. <strong>No credential required</strong> (Probe Log).</td>
+              <td data-label="Auth &amp; quota">None observed for the catalog; the inference endpoints require a key.</td>
+              <td data-label="License / display">Poe API terms govern; the records are Poe's own descriptive metadata, not user content.</td>
+              <td data-label="Freshness">Live. Newest record stamped Aug 31 2026, two days before this probe.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Quora departs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>No exposed numeric object ID; the slug <em>is</em> the key, and it is unusually unstable. Questions get merged (<code>/*/merged</code> exists as a blocked path), silently redirecting one slug into another, and the 24 language editions restate the same question under different hosts with no published <code>hreflang</code> join. Treat the answer permalink <code>/&lt;Question-Slug&gt;/answer/&lt;Author-Slug&gt;</code> as the durable unit and expect the question slug alone to alias.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>answer</strong>, not the page. A question page is an ordered list of independent, competing documents by different authors; indexing the page concatenates a dozen unrelated arguments into one blob and destroys authorship. It matters more here than on article-shaped sites because the question is the natural query and the answer is the natural result — the corpus is pre-shaped as query/document pairs.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Every join key here is a blocked path: author→answers (<code>/*/all_posts</code>), question→topics (<code>/*/topics</code>), answer→discussion (<code>/*/comments</code>), question→variants (<code>/*/merged</code>) are <code>Disallow</code>ed in all 29 groups. Even an allowlisted crawler must <em>reconstruct</em> the graph from bylines and inline links rather than fetch it.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Quora inverts the usual decay curve: answers are edited in place indefinitely and old questions keep accruing new answers for years, so content changes long after the URL stops being new. Revision history exists at <code>&lt;url&gt;/log</code> — Quora says so in its own robots.txt comment — but <code>/*/log</code> is disallowed to every agent, so there is no cheap change-detection signal. Recrawl must be blind and periodic.</p>
+        </div>
+        <div>
+          <h4>Authoritative field, quality &amp; spam</h4>
+          <p>The title is a genuine user question in natural language, not an SEO construct — the highest-value field on the site and the reason Quora ranks. The distortion sits below it: the answer body is where marketing spam lives, since the incentive is to place a link inside a question that already ranks. Trust the title, score the body. The site-specific hazard is retroactive anonymization: Quora's robots.txt argues at length that authors must be able to anonymize sensitive answers after publication, so an indexed byline can become <em>wrong</em> rather than merely stale. That is a live de-anonymization risk — and a standing deletion obligation — for anyone caching this corpus.</p>
+        </div>
+        <div>
+          <h4>Query profile &amp; search escape</h4>
+          <p>The URLs are the query log: a slug like <code>/What-is-the-number-of-questions-on-Quora</code> is a verbatim natural-language question, making Quora's URL space a rare public sample of long-tail informational intent — subjective, experiential, comparative — the class that returns badly from document-centric indexes. Quora's stance on external search is explicit: <code>/search?q=</code> is <code>Disallow</code>ed in all 29 groups while question pages are not, so engines must enter at the answer. With roughly half of visits arriving from organic search (Verified Metrics), Google is effectively Quora's search box.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the individual answer, carrying its question title as the paired query, its author byline, and its rank position on the question.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>/&lt;Question-Slug&gt;/answer/&lt;Author-Slug&gt;</code> as primary key; question slug as a soft group key that must tolerate merge-aliasing; author slug as the identity join; language subdomain as a facet, with cross-language linking treated as unsolved entity resolution rather than a lookup.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>Write to <code>robotstxt@quora.com</code></strong> — Quora publishes this address in robots.txt and the entire text corpus sits behind it. 2) <code>api.poe.com/v1/models</code> — free, unauthenticated, live, but models only. 3) Rendered browser crawl: solving the challenge is <em>not</em> a legitimate path here, since <code>*</code> is <code>Disallow: /</code> — excluded on policy, not capability. 4) Third-party mirrors and scraper packages: prohibited by the robots.txt notice and the terms.</li>
+        <li><strong>Recrawl cadence:</strong> robots.txt weekly — it is the actual contract and it changes; question pages monthly under an agreement, since edits are invisible without <code>/log</code>; the Poe catalog daily (records stamped two days before this probe).</li>
+        <li><strong>Derivatives to generate:</strong> question→answer pairs as native retrieval training data — the highest-value derivative here and the reason the site is a licensing target; author-reputation features from byline frequency; per-answer promotion scoring; cross-language question clustering to collapse the 24 editions.</li>
+        <li><strong>Demo to build:</strong> a <strong>robots.txt diff monitor</strong>. The 824-line file names 29 agents individually and is the single mechanism controlling access to the whole corpus; a daily fetch alerting on group additions, removals and rule-level diffs would detect a new licensing deal — or a new blanket block — the day it lands, using the only endpoint on the site that reliably answers.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Access is a contract revocable by editing one file.</strong> Ten agents are permitted by name; adding or removing a group is a one-line change on a 4-hour cache TTL. An index built on allowlisted crawl has no notice period.</li>
+        <li><strong>Declared policy and enforced policy disagree.</strong> robots.txt permits seven paths to unnamed agents; all seven return a Cloudflare challenge (Probe Log). Anything built by reading robots.txt alone misjudges what is reachable.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Google holds a materially better position than every other AI operator, and it is visible in the file.</strong> <em>Basis:</em> <code>Google-Extended</code> receives the same 62-rule path-level block as Googlebot rather than the bare <code>Disallow: /</code> given to <code>GPTBot</code>, <code>ClaudeBot</code>, <code>PerplexityBot</code>, <code>OAI-SearchBot</code> and thirteen others — and is permitted three answer-permalink patterns Googlebot itself is denied (Probe Log). A policy this asymmetric is a commercial arrangement expressed as configuration.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Bing, DuckDuckGo, Yandex and Baidu are excluded by omission.</strong> <em>Basis:</em> none appears among the 29 groups, so each falls through to <code>*</code> = <code>Disallow: /</code> (Probe Log). Quora's search distribution is a Google monoculture by policy, and any index sourced from a non-Google engine's coverage will be structurally short of Quora.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Quora and Poe share origin infrastructure, so a policy change at one host can move both.</strong> <em>Basis:</em> both emit the proprietary <code>x-q-stat</code> header, and both media CDNs use the <code>qph.cf2.</code> prefix (Probe Log). Poe's open API should not be assumed to be governed independently of Quora's closed one.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The open Poe catalog endpoint is likely to close.</strong> <em>Basis:</em> it is the only unauthenticated JSON surface across the three hosts, it returns 200 even with an invalid bearer token, and adjacent inference endpoints are metered (Probe Log). Snapshot it on a schedule rather than depending on it.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://business.quora.com/resources/reach-over-400-million-monthly-unique-visitors-on-quora">Quora for Business</a> (page dated April 2025) — 400M+ monthly uniques, 24 languages, 300,000+ topics.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Quora">Wikipedia — Quora</a> — founded Jun 25 2009 by D'Angelo and Cheever; public launch Jun 21 2010; $2B valuation May 2019 (Valor Equity, $60M); Quora+ Aug 5 2021; Poe launched Feb 3 2023.</li>
+        <li><a href="https://creator.poe.com/docs/external-applications/openai-compatible-api">Poe — OpenAI-compatible API</a> — <code>https://api.poe.com/v1</code>, bearer key from <code>poe.com/api/keys</code>, 500 rpm, billed in subscription points.</li>
+        <li><a href="https://www.similarweb.com/website/quora.com/">Similarweb — quora.com</a> — ~299.1M monthly visits, rank #150, organic search 49.57% (July 2026 estimate; estimator named per methodology).</li>
+        <li>Local probes on 2026-09-02 — robots censuses across four hosts, header and method differentials, ads.txt parse, DNS-over-HTTPS, and the unauthenticated <code>api.poe.com/v1/models</code> field census. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <p class="muted">Four inferences carry their basis in Risks to the Index and are not restated: Google-Extended's privileged position, exclusion of Bing/DuckDuckGo/Yandex/Baidu by omission, shared Quora–Poe infrastructure, and the Poe catalog as a transitional state. Two sit only here:</p>
+      <ul>
+        <li>Per-profile and per-topic RSS feeds exist. <em>Basis:</em> <code>Disallow: /profile/*/Rss</code> and <code>Disallow: /topic/*/Rss</code> appear in all ten path-level groups — a site does not write disallow rules for endpoints it never built (2026-09-02).</li>
+        <li>Spaces live under <code>/q/&lt;space&gt;</code> and carry a creator-earnings surface. <em>Basis:</em> eight <code>/q/*/…</code> admin paths (<code>admin_log</code>, <code>stats</code>, <code>settings</code>, <code>queue</code>, <code>suggestions</code>, <code>submissions</code>, <code>quality</code>, <code>earnings</code>) are enumerated in every path-level group (2026-09-02).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total live questions and answers — Quora has published no figure since its early years, and the widely cited "200M+ questions" traces to a 2024 user answer, not a company statement. Closeable only by an allowlisted crawl census or a Quora disclosure.</li>
+        <li>Structured-metadata coverage (JSON-LD <code>QAPage</code>/<code>Question</code>/<code>Answer</code>) on question pages — unmeasurable from an unnamed agent, since every candidate path is both challenge-blocked and <code>Disallow</code>ed. Closeable by one fetch from an allowlisted user-agent.</li>
+        <li>Whether an actual AI-training licensing agreement exists between Quora and Google — the robots.txt asymmetry is strong circumstantial evidence but neither party has announced a deal. Closeable by a company statement or a filing.</li>
+        <li>Poe monthly active users and Quora's revenue split across ads, Quora+ and Poe — every figure in circulation (18M Poe MAU, $190M 2026 revenue) traces to SEO statistics aggregators with no named methodology, which the estimator rule excludes. Closeable only by a Quora disclosure.</li>
+        <li>What the ten allowlisted agents actually receive, and whether the challenge is uniform or IP-reputation dependent — every request here came from one address under one identity. The IP half is closeable by repeating the seven-path sweep from varied addresses; the user-agent half only from an allowlisted position, since testing it otherwise means misrepresenting a crawler identity.</li>
+        <li>The terms offered through <code>robotstxt@quora.com</code> — price, volume caps, redistribution rights, and whether AI-training rights are separable from search-indexing rights. Closeable by initiating the correspondence.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
