@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>theguardian.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-09-03</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>theguardian.com</h1>
+      <p class="lede">The Guardian hands its entire 2.7M-item archive to a documented full-text API, then bans AI crawlers and prices training rights separately.</p>
+      <div class="tag-row">
+        <span class="tag">News</span>
+        <span class="tag">Open API</span>
+        <span class="tag">Reader-Funded</span>
+        <span class="tag">RSL Licensing</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>The Guardian is a British daily published since 1821 and owned through the Scott Trust, whose remit is perpetual editorial independence. It has no paywall: 1.3M recurring digital supporters fund open access for everyone else. That produces an index-builder anomaly. Most publishers meter the <em>reading</em> of their journalism; the Guardian meters the <em>machine reuse</em> of it. Its Open Platform Content API serves full body text and a deep tag taxonomy for essentially everything it has published, and a shared demo key returns all of it. Meanwhile robots.txt opens with a licensing notice, blocks 40 named AI and archival crawlers, and points at an RSL <code>license.xml</code> that permits <code>ai-train</code> only under paid subscription. <span class="evidence inferred">inferred</span> The Guardian has separated <em>access</em> from <em>rights</em> and sells only the second. <em>Basis:</em> the free developer tier documents "access to article text" for non-commercial use while the commercial tier names "training models for generative artificial intelligence services" as its priced case (see Verified Metrics), and <code>license.xml</code> attaches a payment URL to AI training rather than a prohibition.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>theguardian.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.theguardian.com/">https://www.theguardian.com/</a></dd></div>
+        <div><dt>Category</dt><dd>General news, reader-funded</dd></div>
+        <div><dt>Related hosts</dt><dd><code>content.guardianapis.com</code> (Content API), <code>discussion.guardianapis.com</code> (comments), <code>i.guim.co.uk</code> (signed image resizer), <code>media.guim.co.uk</code> (unsigned image origin), <code>audio.guim.co.uk</code> (podcast files), <code>open-platform.theguardian.com</code></dd></div>
+        <div><dt>Owner</dt><dd>Guardian Media Group plc, wholly owned by the Scott Trust; editor-in-chief Katharine Viner, GMG chief executive Anna Bateson</dd></div>
+        <div><dt>Founded / launched</dt><dd>Newspaper 1821 (as the Manchester Guardian); web 1999; US and Australia editions 2011 and 2013; European edition 2023</dd></div>
+        <div><dt>Business model</dt><dd>Voluntary reader contributions and subscriptions + advertising + content licensing; no article paywall</dd></div>
+        <div><dt>Scale anchor</dt><dd>£275.9m group revenue in FY2024/25, as of Mar 31 2025 (<a href="https://www.theguardian.com/gnm-press-office/2025/sep/11/the-guardian-media-group-publishes-2020425-annual-report">GMG annual report release</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus counts come from the Content API census in the Probe Log. Missing numbers live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Total indexable items</dt>
+          <dd>2,688,844 — as of Sep 3 2026. Probe Log Content API census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Corpus by type</dt>
+          <dd>Articles 2.56M (95.2%) · liveblogs 37.2K · galleries 27.6K · videos 26.5K · audio 12.2K · pictures 11.6K · crosswords 9.1K · interactives 5.6K — as of Sep 3 2026. The eight totals sum to exactly 2,688,844, so types partition the corpus with no residue. Probe Log <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Archive depth by era</dt>
+          <dd>Pre-1999 5.1K (0.19%) · 1999–2005 586K · 2006–2012 849K · 2013–2019 733K · 2020–Sep 2026 516K — as of Sep 3 2026. Probe Log date-range census <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Publishing rate</dt>
+          <dd>1,306 items in the 7 days to Sep 2 2026 ≈ 187/day. Probe Log <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Tag vocabulary</dt>
+          <dd>25,956 keywords · 36,146 contributors · 7,435 series · 338 newspaper books · 41 tones · 19 types, across 81 sections — as of Sep 3 2026. Probe Log <code>/tags</code> and <code>/sections</code> census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Lifetime comment IDs</dt>
+          <dd>≈175.5M. ID 175,509,473 resolves to Aug 31 2026; 176,000,000 returns 404 — as of Sep 3 2026. Probe Log Discussion API walk <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Developer API tier</dt>
+          <dd>1 call/sec, 500 calls/day, article text only, free for non-commercial use — as of Sep 3 2026. <a href="https://open-platform.theguardian.com/access/">Open Platform access page</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Commercial API tier</dt>
+          <dd>Custom throttle and quota; adds images, audio and video; covers the entire content store; explicitly scoped to "training models for generative artificial intelligence services", text and data mining, and sentiment analysis; priced on usage — as of Sep 3 2026. <a href="https://open-platform.theguardian.com/access/">Open Platform access page</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Group revenue, FY2024/25</dt>
+          <dd>£275.9m, +£18.1m YoY; 72% digital; £105.5m (38%) from outside the UK; digital reader revenue £107.3m, +21.7%, from 1.3M recurring supporters — as of Mar 31 2025. <a href="https://www.theguardian.com/gnm-press-office/2025/sep/11/the-guardian-media-group-publishes-2020425-annual-report">GMG annual report release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>OpenAI licensing partnership</dt>
+          <dd>Announced Feb 14 2025: Guardian reporting and archive available as a ChatGPT news source with attributed extracts, in exchange for compensation and ChatGPT Enterprise access. <a href="https://www.theguardian.com/gnm-press-office/2025/feb/14/guardian-media-group-announces-strategic-partnership-with-openai">GMG press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-03. API probes use the public shared <code>test</code> key documented on the Open Platform site.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-09-03</td><td><code>dig +short</code>; <code>curl -sI</code> on the five edition fronts</td><td>CNAME to <code>dualstack.guardian.map.fastly.net</code>. HSTS <code>max-age=63072000; preload</code>, CSP with <code>object-src 'none'</code>, <code>cache-control: max-age=60, stale-while-revalidate=6, stale-if-error=864000</code>, <code>x-robots-tag: bingbot: noarchive</code>, and an <code>onion-location</code> Tor mirror. <code>/uk</code>, <code>/us</code>, <code>/au</code>, <code>/europe</code> and <code>/international</code> all return 200 and all return <code>x-gu-edition: us</code> from a US IP, with a <code>GU_geo_country=US</code> cookie.</td></tr>
+            <tr><td>2026-09-03</td><td><code>curl -sL /robots.txt</code></td><td>104 lines opening with a licensing notice naming LLMs and ML as non-permitted uses. <code>User-agent: *</code> carries ~55 Disallow rules including <code>/search</code>, <code>/discussion/*</code>, <code>/embed/</code> and <code>/articles</code>. One blanket <code>Disallow: /</code> block covers 40 named agents — ClaudeBot, anthropic-ai, CCBot, PerplexityBot, Bytespider, meta-externalagent, Amazonbot, DuckAssistBot, Google-CloudVertexBot, Applebot-Extended, AhrefsBot among them. <strong>GPTBot, OAI-SearchBot and Google-Extended are absent.</strong> Two Sitemap directives, both <code>http://</code>. Closes with <code>License: https://theguardian.com/license.xml</code>.</td></tr>
+            <tr><td>2026-09-03</td><td><code>curl -sL /license.xml</code>; <code>/llms.txt</code>; <code>/ai.txt</code></td><td>336 bytes of RSL 1.0 (<code>xmlns="https://rslstandard.org/rsl"</code>) covering <code>url="/"</code>: <code>permits ai-train ai-input</code> with <code>payment type="subscription"</code> pointing at <code>licensing.theguardian.com</code>, and <code>prohibits all</code> otherwise. <code>llms.txt</code> and <code>ai.txt</code> both 404 — RSL is the only machine-readable AI-terms surface.</td></tr>
+            <tr><td>2026-09-03</td><td>Sitemap census</td><td><code>/sitemaps/news.xml</code> 517 entries, <code>/sitemaps/video.xml</code> 17 — 534 URLs against a 2.69M corpus (0.02%). No sitemap index exists. Video entries carry title, duration, date and thumbnail but <strong>no <code>content_loc</code> or <code>player_loc</code></strong>.</td></tr>
+            <tr><td>2026-09-03</td><td>Content API census (<code>/search</code>, <code>/tags</code>, <code>/sections</code>)</td><td>Totals, type split, era split, rate and vocabulary as recorded in Verified Metrics. Headers on the shared <code>test</code> key advertise <code>X-RateLimit-Limit-Minute: 720</code> and <code>X-RateLimit-Limit-Day: 50000</code> — 100&times; the documented 500/day developer tier.</td></tr>
+            <tr><td>2026-09-03</td><td>Single item, <code>show-fields=all&amp;show-blocks=all&amp;show-rights=all</code></td><td>A liveblog returned 38.6KB of <code>bodyText</code> and 88.1KB of <code>body</code> HTML on the free key, split into 107 addressable blocks, across 26 fields including <code>wordcount</code>, <code>lastModified</code>, <code>productionOffice</code> and <code>legallySensitive</code>. Rights were <code>syndicatable: true</code>, <code>subscriptionDatabases: true</code>, <code>developerCommunity: true</code> — identical across a 50-item sample.</td></tr>
+            <tr><td>2026-09-03</td><td>Pagination and media tiering</td><td><code>page-size</code> caps at 200 (201 &rarr; 400). Page 190 returns 200, page 191 returns 400 "does not support paging this far… consider filtering using a date range" — a ~38K ceiling per query. On the free key <code>type=video</code> and <code>type=audio</code> return <strong>zero</strong> elements, while <code>type=gallery</code> returns 20 image elements &times; 3 assets, each with <code>altText</code>, <code>caption</code>, <code>credit</code>, <code>photographer</code>, <code>source</code>, <code>mediaId</code> and dimensions. 10 of 10 sampled articles returned image elements (19 total), all with <code>altText</code>.</td></tr>
+            <tr><td>2026-09-03</td><td>Image CDN signing</td><td><code>i.guim.co.uk</code> requires an HMAC: the published URL with its <code>s=</code> hash returns 200, but dropping the query, altering <code>width</code> while keeping the hash, or passing <code>?width=400</code> alone all return <strong>401</strong>. The <code>media.guim.co.uk</code> origins returned by the API are unsigned and serve real bytes (range GET &rarr; 206, JFIF confirmed).</td></tr>
+            <tr><td>2026-09-03</td><td>Discussion API and comment-ID walk</td><td><code>discussion.guardianapis.com</code> is unauthenticated and absent from the Open Platform docs; <code>/discussion-api/discussion/p/&lt;shortId&gt;</code> returns comment bodies, <code>isoDateTime</code>, <code>numRecommends</code>, moderation <code>status</code> and a <code>userProfile</code> with numeric <code>userId</code>. Five Comment-is-free pieces from Aug 31 2026 held 150–574 comments each; removed comments return as <code>status: blocked</code> tombstones. IDs walk monotonically: 1,000 &rarr; Mar 2006; 1M &rarr; Feb 2009; 10M &rarr; Mar 2011; 50M &rarr; Apr 2015; 100M &rarr; Jun 2017; 150M &rarr; Jun 2021; 175M &rarr; Jun 2026; 176M &rarr; 404.</td></tr>
+            <tr><td>2026-09-03</td><td>Feeds and structured data</td><td>The Today in Focus and Politics Weekly <code>podcast.xml</code> feeds return 296 and 294 items with unauthenticated MP3 enclosures on <code>flex.acast.com/audio.guim.co.uk</code>. <code>/international/rss</code> returns 110 items with <code>dc:creator</code>. An article page carries one JSON-LD block — <code>NewsArticle</code> plus <code>WebPage</code>, with <code>isAccessibleForFree</code>, <code>author</code>, <code>publisher</code>, <code>dateModified</code> — and 10 Open Graph tags; a video article emitted <strong>no</strong> <code>VideoObject</code>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">CAPI = <a href="https://open-platform.theguardian.com/documentation/">Content API</a>. Counts and quotas are the Verified Metrics figures.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; count</th><th>Best path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>2.69M items: 2.56M articles, 37.2K liveblogs (block-addressable), 5.6K interactives, 9.1K crosswords.</td>
+              <td>CAPI <code>/search</code> with <code>show-fields=bodyText,body</code>. Sitemaps reach 0.02%; on-site <code>/search</code> is robots-blocked.</td>
+              <td>Developer key 1/s, 500/day, non-commercial; commercial key negotiated. ~38K paging ceiling per query forces date slicing.</td>
+              <td>Items report <code>syndicatable: true</code>, but <code>license.xml</code> prohibits all usage except paid <code>ai-train</code>/<code>ai-input</code>.</td>
+              <td>≈187 new/day; <code>lastModified</code> per item; liveblogs mutate for hours.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>27.6K galleries (≈20 each), 11.6K standalone pictures, ≈1.9 in-body images per article.</td>
+              <td>CAPI <code>show-elements=image</code> returns unsigned <code>media.guim.co.uk</code> origins at up to 3 sizes.</td>
+              <td>Free key returns them though the access page reserves images for the commercial tier; treat as undocumented.</td>
+              <td>Wire photos carry <code>credit</code>/<code>source</code>, not the Guardian's to sublicense. Display via signed <code>i.guim.co.uk</code>; unsigned resizes 401.</td>
+              <td>Bound to parent item; rarely revised.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>26.5K video items.</td>
+              <td>Sitemap gives title, duration, date and thumbnail only; media URLs need a commercial key.</td>
+              <td>Commercial key; no asset URLs on the free tier.</td>
+              <td>No documented embed path; <code>/embed/</code> is robots-disallowed. Rights vary by supplier.</td>
+              <td>17 URLs live in the sitemap; back catalog only via CAPI <code>type=video</code>.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>12.2K audio items across 7,435 series.</td>
+              <td><strong>Per-series podcast RSS</strong> at <code>/&lt;section&gt;/series/&lt;slug&gt;/podcast.xml</code> — unauthenticated MP3 enclosures.</td>
+              <td>None for RSS; commercial key for CAPI audio assets.</td>
+              <td>Standard podcast conventions, hosted via Acast. No published transcripts.</td>
+              <td>~290 episodes retained per flagship feed; daily on news podcasts.</td>
+            </tr>
+            <tr>
+              <td>Comments</td>
+              <td>≈175.5M lifetime IDs since Mar 2006; 150–574 per active opinion piece.</td>
+              <td>Unauthenticated Discussion API, joined via the item's <code>shortUrl</code>.</td>
+              <td>No key observed. Undocumented, so quota and stability are unknown (see Open Questions).</td>
+              <td>Reader-authored UGC, outside the Guardian's syndication rights.</td>
+              <td>Threads close ~3 days after publication (<code>commentCloseDate</code>), then freeze.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>26.0K keywords, 36.1K contributors, 7.4K series, 41 tones, 81 sections; median 12.5 tags/item.</td>
+              <td>CAPI <code>/tags</code> and <code>/sections</code>; <code>show-tags=all</code> per item.</td>
+              <td>Same as text.</td>
+              <td>Internal taxonomy; IDs are stable URL paths.</td>
+              <td>Vocabulary grows slowly; assignment fixed at publication.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The CAPI <code>id</code> <em>is</em> the URL path — one key for the API row, the web page and the tag join, with no numeric ID to reconcile. The base-36 <code>shortUrl</code> (<code>/p/x5qxd8</code>) is the only alias, and it is the join key into comments. Editions are presentation, not namespace: all five fronts return 200 and <code>x-gu-edition</code> tracks the requester's geo, so articles need no per-edition dedup.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The article is the unit for 95% of the corpus, but liveblogs are the exception worth engineering for: one sampled liveblog held 107 separately timestamped blocks and 38.6KB of text under a single ID. Indexed whole, it buries the update the user is searching for. Split on block, retain the parent ID.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>All stable and free: <code>id</code> &rarr; tags &rarr; contributors; <code>shortUrl</code> &rarr; comment threads; <code>mediaId</code> &rarr; cross-item photo reuse. The broken join is media: video and audio return zero elements on the free tier, so text rows and media files cannot be linked without a commercial key.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Prefer CAPI <code>bodyText</code> over scraped HTML: it ships the editorial body without navigation, consent banners, or reader-contribution appeals. <code>headline</code> and <code>webTitle</code> diverge — the sampled liveblog had an SEO-shaped <code>webTitle</code> and a live-updated <code>headline</code>. Display <code>headline</code>, index both.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; date hygiene</h4>
+          <p>Publishing peaked in 2006–2012 (849K items) and has fallen roughly a third since; the pre-web archive is negligible at 0.19%. Separately, <code>order-by=oldest</code> surfaces an item dated <code>0012-11-16</code> — a data-entry artifact. Date-sliced ingestion starting at the true minimum wastes slices on a millennium of empty range; clamp the lower bound to 1821.</p>
+        </div>
+        <div>
+          <h4>Quality tiering</h4>
+          <p>A single-publisher editorial corpus has no ranking-driven spam surface. Tier on the 41-value <code>tone</code> vocabulary instead — it separates news from comment, obituary, review and advertisement-feature, exactly the distinction retrieval needs and most news sites never expose. On comments, filter <code>status: blocked</code> tombstones.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Inverted from the norm: <code>/search</code> is <code>Disallow</code>ed to crawlers, yet the CAPI <code>q</code> parameter gives any third party full-text search over the whole archive. The retrieval capability is more open than the crawl surface.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the content item keyed by CAPI <code>id</code>, with liveblogs exploded to body blocks carrying <code>{parentId, blockId, blockPublishedAt}</code>.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>id</code> (canonical, = URL path) · <code>shortUrl</code> &rarr; Discussion API · tag IDs &rarr; contributor / series / section / tone facets · <code>mediaId</code> &rarr; image dedup.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>Commercial CAPI key</strong> — the only path clearing both the quota and the RSL licence, and the only one returning video and audio assets. 2) <strong>Developer key</strong>, evaluation only: 2.69M ÷ 200 per call = 13,445 calls minimum, or ~27 days of continuous polling at 500/day for a single pass. 3) <strong>Podcast and article RSS</strong> — unauthenticated, the cheapest freshness signal. 4) <strong>Discussion API</strong> for comments. 5) <strong>Public crawl</strong>, last: 534 sitemap URLs and a robots.txt that names most AI agents explicitly.</li>
+        <li><strong>Recrawl cadence:</strong> liveblogs every 5 min while <code>isLive</code>; news RSS every 15 min; comment threads once at <code>commentCloseDate</code> + 1 day, then never; back catalog by <code>lastModified</code> sweep quarterly; tag vocabulary monthly.</li>
+        <li><strong>Derivatives:</strong> ASR on the 12.2K audio items — no transcripts are published, so this is the largest missing text layer, and podcast MP3s are the one media class reachable without a commercial key. Skip OCR (all sampled images carry editorial <code>altText</code> and captions). Skip thumbnailing: <code>i.guim.co.uk</code> returns 401 on any unsigned resize, so derive from <code>media.guim.co.uk</code> origins or not at all.</li>
+        <li><strong>Demo to build:</strong> block-level search over one day of <code>type=liveblog</code> items, shown against whole-document hits from the same corpus — the clearest demonstration that document granularity, not ranking, is what fails on live coverage.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The free tier is a demo, not a supply.</strong> The shared <code>test</code> key advertises 50,000 calls/day against a documented developer limit of 500 — a 100&times; gap with no terms behind it, revocable without notice.</li>
+        <li><strong>RSL makes "we only read robots.txt" indefensible.</strong> <code>license.xml</code> permits AI training <em>only</em> under paid subscription and prohibits all other usage. Unlike a <code>Disallow</code>, it is a positive licensing offer, so ignoring it is a rights decision, not a crawl-policy one.</li>
+        <li><strong>The crawler allowlist tracks who has signed.</strong> Its membership changes with commercial deals, not with policy — re-read robots.txt every crawl, never cache it.</li>
+        <li><strong>The Discussion API is undocumented.</strong> 175.5M comments sit behind an unauthenticated endpoint absent from the Open Platform site, while <code>/discussion/*</code> is robots-disallowed on the web surface. That reads as an internal endpoint left reachable; treat its availability as temporary.</li>
+        <li><strong>Wire photography is not the Guardian's to license.</strong> Image assets name third-party agencies in <code>credit</code> and <code>source</code>. A commercial key covers Guardian rights, not the supplier's, so reuse needs per-asset rights logic keyed on those fields.</li>
+        <li><strong>The paging cap fails silently.</strong> A naive page-through stops at 1.4% of the corpus and returns HTTP 400, not an empty page — easy to log as a transient error and never notice.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://open-platform.theguardian.com/access/">Guardian Open Platform — access tiers</a> and <a href="https://open-platform.theguardian.com/documentation/">Content API documentation</a></li>
+        <li><a href="https://www.theguardian.com/gnm-press-office/2025/sep/11/the-guardian-media-group-publishes-2020425-annual-report">GMG publishes 2024/25 annual report</a>, Sep 11 2025, and <a href="https://www.theguardian.com/gnm-press-office/2025/feb/14/guardian-media-group-announces-strategic-partnership-with-openai">GMG announces strategic partnership with OpenAI</a>, Feb 14 2025 — both retrieved through the Content API, since <code>theguardian.com</code> pages are not fetchable by this agent's web tool</li>
+        <li><a href="https://rslstandard.org/rsl">RSL 1.0 specification</a> — the standard behind <code>license.xml</code>, launched Sep 10 2025</li>
+        <li>First-hand probes on 2026-09-03 as recorded in the Probe Log</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The unblocked AI crawlers are the ones that have paid. <em>Basis:</em> GPTBot, OAI-SearchBot and Google-Extended are absent from a robots.txt naming 40 other AI agents for <code>Disallow: /</code>, and the OpenAI licensing partnership was announced Feb 14 2025.</li>
+        <li>Comment IDs are one global counter, making ≈175.5M a sound lower bound on lifetime comments. <em>Basis:</em> the Probe Log walk — eight IDs from 1,000 to 175M return strictly increasing dates from Mar 2006 to Jun 2026, and 176M returns 404.</li>
+        <li>Free-tier image access is unintended rather than granted. <em>Basis:</em> the access page lists images under the commercial tier only, yet the <code>test</code> key returned 20 gallery image elements with three assets each and full credit metadata.</li>
+        <li>The <code>x-gu-edition</code> header is geo-derived, not path-derived. <em>Basis:</em> all five edition fronts returned <code>x-gu-edition: us</code> from a single US request, alongside a <code>GU_geo_country=US</code> cookie.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>What does theguardian.com's audience actually measure? No official reach figure appears in the FY2024/25 release. <em>To close:</em> the ABC/Ipsos iris UK panel, or a GMG media pack with a stated methodology and date.</li>
+        <li>What does a commercial key cost, and is AI training priced per call, per item, or as a flat licence? <em>To close:</em> a quote from <code>licensing.theguardian.com</code>, or a licensing revenue line in the FY2025/26 report.</li>
+        <li>Does the commercial tier reach beyond the 2.69M items the public API counts? The access page advertises "over 1,900,000 pieces" for developers against a measured 2,688,844, so the documented figures are stale in at least one direction. <em>To close:</em> a total count from a commercial key, compared against the free-key census.</li>
+        <li>Are podcast transcripts held internally? If so, ASR on 12.2K audio items is redundant. <em>To close:</em> check whether a commercial key exposes a transcript field on <code>type=audio</code>.</li>
+        <li>What is the Discussion API's real rate limit and support status? <em>To close:</em> a sustained request run watching for 429s, plus a question to Open Platform support.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
