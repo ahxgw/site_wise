@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>support.microsoft.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-09-05</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>support.microsoft.com</h1>
+      <p class="lede">Microsoft's consumer help corpus publishes two disjoint sitemap namespaces and zero JSON-LD, yet hands clean article markdown to an unauthenticated MCP endpoint.</p>
+      <div class="tag-row">
+        <span class="tag">Support &amp; Docs</span>
+        <span class="tag">Knowledge Base</span>
+        <span class="tag">40 Locales</span>
+        <span class="tag">Git-Backed</span>
+        <span class="tag">Azure Front Door</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>support.microsoft.com holds Microsoft's end-user help for Windows, Office/Microsoft 365, Surface, Teams and billing, plus the archived KB and hotfix corpus. It sells nothing: it is a cost-deflection surface whose job is keeping users out of paid support queues. That gives it an unusual posture for a top-150 host — it <em>wants</em> to be crawled, and its robots.txt blocks no AI crawler at all, a real deviation from the platform default. The welcome mat is thinner than it looks. The corpus ships as raw HTML with no JSON-LD, no feed and no content API, split across two URL namespaces that share nothing, behind an edge that 403s every user agent under load. <span class="evidence inferred">inferred</span> Microsoft optimises this host for search engines and human readers, not programmatic reuse. <em>Basis:</em> robots.txt names no AI crawler and lists two sitemaps, yet <code>/api/</code> is disallowed, 0/10 sampled pages carry JSON-LD, no feed responds, and the Learn Catalog API excludes documentation (see Verified Metrics).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>support.microsoft.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://support.microsoft.com/en-us/">https://support.microsoft.com/en-us/</a></dd></div>
+        <div><dt>Category</dt><dd>Vendor support knowledge base, consumer + IT-pro</dd></div>
+        <div><dt>Related hosts</dt><dd><code>learn.microsoft.com</code> (technical docs, Q&amp;A, MCP endpoint); <code>answers.microsoft.com</code> (community forums, now redirected away — see Probe Log)</dd></div>
+        <div><dt>Owner</dt><dd>Microsoft Corporation (NASDAQ: MSFT)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Successor to the Microsoft Knowledge Base, online since the 1990s; current platform is git/Markdown-backed</dd></div>
+        <div><dt>Business model</dt><dd>None on-host: support-cost deflection and retention. No ads, subscription or commerce</dd></div>
+        <div><dt>Scale anchor</dt><dd>1.62M URLs advertised in the collection sitemap across 40 locales, as of 2026-09-05 (Probe Log, counted by Site Wise)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (deduplicated article count, media counts) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Sitemap URLs, collection system</dt>
+          <dd>1,621,352 across 40 locales — a complete fetch of all 640 child sitemaps with zero failures. As of 2026-09-05, counted by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Sitemap URLs, en-us</dt>
+          <dd>84,113 — 49,664 from <code>/sitemap/collection.xml</code> plus 34,449 from <code>/_sitemaps/sitemapindex.xml</code>, <strong>zero overlap</strong>. As of 2026-09-05, counted by Site Wise from all 16 + 75 en-us child sitemaps (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Locale coverage</dt>
+          <dd>40 locales in the collection sitemap (640 children); 37 locales × 72 product buckets in <code>_sitemaps</code> (2,266 children). As of 2026-09-05, counted by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Translation depth</dt>
+          <dd>Locale coverage spans 45–100% of the en-us count (49,664): es-es 45,866, de-de 45,333 and ja-jp 44,873 near the top; sl-si 22,447, fi-fi 23,664 and da-dk 25,396 at the bottom. Median locale 42,384. As of 2026-09-05, counted by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Back-catalog skew</dt>
+          <dd>Of the 49,663 en-us collection URLs carrying a <code>lastmod</code>, 27,118 (54.6%) are stamped 2021 and 4,254 (8.6%) 2026; the newest URL-level stamp is 2026-07. As of 2026-09-05, counted by Site Wise (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Legacy-URL redirect rate</dt>
+          <dd>75% — 30 of 40 randomly sampled collection URLs returned 301, 10 returned 200, none errored; 29 of 30 targets drop the GUID for a readable slug, 17 land under <code>/servicing/</code>. As of 2026-09-05 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Structured-data coverage</dt>
+          <dd>0/10 pages carry JSON-LD; 10/10 carry all ten Learn meta fields (<code>document_id</code>, <code>awa-articleGuid</code>, <code>word_count</code>, <code>ms.date</code>, <code>updated_at</code>, <code>ms.topic</code>, <code>ms.service</code>, <code>depot_name</code>, <code>locale</code>, <code>gitcommit</code>) and are self-canonical. Median <code>word_count</code> 485, mean 556, range 107–1,622. As of 2026-09-05 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Official AI-index coverage</dt>
+          <dd>0 of 30 <code>microsoft_docs_search</code> results across three consumer-support queries came from support.microsoft.com; all 30 came from learn.microsoft.com. As of 2026-09-05 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Learn Catalog API scope</dt>
+          <dd>No auth, no charge, but "doesn't output documentation, code samples, shows, or events". Successor Learn Platform API is rate-limited to 100 calls/minute. As of 2026-09-05. <a href="https://learn.microsoft.com/en-us/training/support/catalog-api">Catalog API overview</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Microsoft revenue, FY2026</dt>
+          <dd>$331.8B, +18% YoY; net income $133.7B — fiscal year ended Jun 30 2026. <a href="https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast">FY26 Q4 press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made for this report on 2026-09-05 (see the <a href="../../methodology.html">probe playbook</a>). These are the only rows that may back a <em>verified</em> tag without an external link.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Date">2026-09-05</td>
+              <td data-label="Probe"><code>curl -sL https://support.microsoft.com/robots.txt</code></td>
+              <td data-label="Observation">1,080 bytes, a single <code>User-agent: *</code> group. <strong>No AI crawler is named</strong> — no GPTBot, ClaudeBot, PerplexityBot, Google-Extended or Applebot-Extended directive. Disallows <code>/api/</code>, <code>/search/</code>, <code>/support/</code>, <code>/gethelp/</code>, <code>/authoring/</code>, <code>/hotfix/</code> and the sign-in paths, and advertises both sitemaps.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-09-05</td>
+              <td data-label="Probe"><code>curl -sI https://support.microsoft.com/en-us</code>; <code>dig +short support.microsoft.com</code></td>
+              <td data-label="Observation">HTTP/2 301 to <code>/en-us/</code>. <code>x-azure-ref</code> and <code>x-cache: CONFIG_NOCACHE</code> confirm Azure Front Door with HTML uncached at the edge. HSTS <code>max-age=31536000</code>, <code>x-frame-options: SAMEORIGIN</code>, CSP <code>frame-ancestors 'self'</code>. Sets a one-year <code>EXPID</code> experiment cookie. DNS resolves CNAME <code>emerald-prod-…b02.azurefd.net</code> → <code>mr-b02.tm-azurefd.net</code> → <code>150.171.110.131</code>: Azure Front Door end to end, no third-party CDN.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-09-05</td>
+              <td data-label="Probe">Sitemap census — all 640 collection children plus all 75 en-us <code>_sitemaps</code> children</td>
+              <td data-label="Observation"><code>collection.xml</code>: 640 children (40 locales × 16 hex buckets) holding <strong>1,621,352 URLs</strong>, fetched complete with 0 failures; its 16 en-us children yield 49,664, of which 99.9% end in a 36-character GUID. <code>_sitemaps/sitemapindex.xml</code>: 2,266 children (72 product buckets × 37 locales; <code>servicing</code> alone has 163); its 75 en-us children yield 34,449 readable-slug URLs. Intersecting the two en-us sets gives <strong>0 shared URLs</strong>.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-09-05</td>
+              <td data-label="Probe">Redirect fate — 40 random collection URLs, redirects not followed, 2s spacing</td>
+              <td data-label="Observation">30 × 301, 10 × 200, 0 errors. Only 1 of 30 targets keeps a GUID; 17 of 30 land under <code>/servicing/</code>, and one resolves to the bare homepage — a dead article.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-09-05</td>
+              <td data-label="Probe">Structured-data sample — 14 random slug URLs, 5s spacing (10 fetched, 4 throttled)</td>
+              <td data-label="Observation">No <code>application/ld+json</code> on any page. All 10 carry the same Learn-platform meta block: <code>document_id</code>, <code>document_version_independent_id</code>, <code>awa-articleGuid</code>, <code>word_count</code>, <code>ms.date</code>, <code>updated_at</code>, <code>ms.topic</code>, <code>ms.service</code>, <code>depot_name</code>, <code>locale</code>, <code>gitcommit</code>, <code>git_commit_id</code>. All 10 canonicals equal the requested URL; 7/10 render an "Applies To" product list. Raw HTML shows 1 <code>&lt;img&gt;</code> on 9/10 pages (the Copilot banner) — body media is not in the served HTML.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-09-05</td>
+              <td data-label="Probe">Cross-locale identity, one article in en-us / de-de / ja-jp / fr-fr; <code>api.github.com/repos/&lt;gitcommit repo&gt;</code></td>
+              <td data-label="Observation"><code>awa-articleGuid</code> is identical in all four locales (<code>95215f5a-b8e8-4629-a62b-a37271c93d83</code>); <code>document_id</code> appears <em>only</em> on the en-us page; <code>word_count</code> differs per locale (135 / 147 / 368 / 144). The repos named in <code>gitcommit</code> — <code>MicrosoftDocs/enduser-account-pr</code> and <code>enduser-archived-pr</code> — both return GitHub API 404, while control <code>MicrosoftDocs/microsoft-365-docs</code> returns 200.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-09-05</td>
+              <td data-label="Probe">Rate-limit probe — sustained parallel sitemap fetch, then single requests</td>
+              <td data-label="Observation">Under load the edge returns 403 to <em>every</em> UA tested — desktop Chrome, Googlebot, bingbot, ClaudeBot, <code>curl/8.0</code> — including URLs that had just returned 200; serial retries at 3s spacing did not help. After ~3 minutes idle, three consecutive control requests returned 200. The 403 is load-based, not UA- or content-based.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-09-05</td>
+              <td data-label="Probe">Official MCP endpoint — <code>POST https://learn.microsoft.com/api/mcp</code>, no auth</td>
+              <td data-label="Observation"><code>tools/list</code> returns <code>microsoft_docs_search</code>, <code>microsoft_code_sample_search</code>, <code>microsoft_docs_fetch</code>. Search on three consumer-support queries ("how to reset my Windows 11 password", "sign in using two-step verification security info", "insert a title into a form or report in Access") returned 30/30 results from learn.microsoft.com, none from this host. Yet <code>microsoft_docs_fetch</code> returned clean article Markdown for all four support.microsoft.com URLs tested — a slug page, a <code>/servicing/</code> KB page (21.7K chars), a ja-jp page, and a GUID page resolved through its redirect.</td>
+            </tr>
+            <tr>
+              <td data-label="Date">2026-09-05</td>
+              <td data-label="Probe"><code>curl -sL https://answers.microsoft.com/en-us/windows/forum</code>; feed sweep</td>
+              <td data-label="Observation">Three redirect hops into <code>learn.microsoft.com/en-us/answers/tags/824/windows-home</code>; even <code>/robots.txt</code> on that host now serves the Q&amp;A hub page. On support.microsoft.com, <code>/llms.txt</code>, <code>/en-us/rss</code> and <code>/opensearch.xml</code> return no feed and <code>/api/content/…</code> is refused: no incremental feed exists on this host.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what auth/quota costs, what a third-party UI may display, and how fast it churns. Every cell is verifiable, tagged, or <em>open</em>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Help articles + KB/hotfix records; 1.62M collection URLs across 40 locales, 84,113 of them en-us (Verified Metrics)</td>
+              <td data-label="Best legitimate path"><code>_sitemaps</code> for URL discovery, then <code>microsoft_docs_fetch</code> on the Learn MCP endpoint for clean Markdown; HTML crawl as fallback</td>
+              <td data-label="Auth &amp; quota">No auth either way. Edge 403s under load (Probe Log); MCP quota <span class="evidence open">open</span></td>
+              <td data-label="License / display">Linking permitted; republication restricted, attribution required — <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/permissions">permissions policy</a> <span class="evidence verified">verified</span></td>
+              <td data-label="Freshness">Bimodal: 54.6% stamped 2021, 8.6% in 2026 (Verified Metrics); servicing KBs ship on Patch Tuesday</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Screenshots and UI diagrams in article bodies; count <span class="evidence open">open</span></td>
+              <td data-label="Best legitimate path">No image sitemap; needs a rendered-DOM crawl</td>
+              <td data-label="Auth &amp; quota">No auth; same edge limit</td>
+              <td data-label="License / display">Same permissions policy; UI screenshots also fall under its trademark rules</td>
+              <td data-label="Freshness">Tracks the parent article's <code>ms.date</code></td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">How-to clips on a minority of Office/Windows articles; 0/10 sampled pages carried video markers</td>
+              <td data-label="Best legitimate path">Rendered-DOM crawl to recover the player URL; no video sitemap, no oEmbed</td>
+              <td data-label="Auth &amp; quota">No auth; Microsoft-hosted players, not YouTube</td>
+              <td data-label="License / display"><span class="evidence open">open</span> — no embed licence published</td>
+              <td data-label="Freshness">Rarely revised; re-shot on UI redesigns</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">No standalone corpus; speech exists only as video audio</td>
+              <td data-label="Best legitimate path">None; derive ASR from video if the player is reachable</td>
+              <td data-label="Auth &amp; quota">n/a</td><td data-label="License / display">n/a</td><td data-label="Freshness">n/a</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / UGC</td>
+              <td data-label="Objects &amp; est. count"><strong>None on this host.</strong> Article feedback is a write-only widget (<code>feedback_system: Standard</code>); the forum corpus moved to learn.microsoft.com/answers</td>
+              <td data-label="Best legitimate path">Learn MCP endpoint — <code>microsoft_docs_search</code> returns <code>learn.microsoft.com/answers/a/&lt;id&gt;</code> results directly (Probe Log)</td>
+              <td data-label="Auth &amp; quota">No auth</td>
+              <td data-label="License / display">User-contributed; rights differ from first-party articles <span class="evidence open">open</span></td>
+              <td data-label="Freshness">Continuous — threads, not articles</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Per-article meta block (10 fields, 10/10 coverage), "Applies To" product list on 7/10 pages, <code>ms.service</code> / <code>depot_name</code> taxonomy</td>
+              <td data-label="Best legitimate path">Parse <code>&lt;meta&gt;</code> from HTML — no JSON-LD, no feed, and the Catalog API excludes documentation (Verified Metrics)</td>
+              <td data-label="Auth &amp; quota">No auth; same edge limit</td>
+              <td data-label="License / display">Metadata is factual; the article text carries the restriction</td>
+              <td data-label="Freshness"><code>updated_at</code> per render; <code>ms.date</code> is editorial</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Two namespaces, one corpus</h4>
+          <p>The defining structural fact: the collection sitemap publishes GUID-suffixed legacy URLs, <code>_sitemaps</code> publishes readable slugs, and the two en-us sets share zero URLs. <span class="evidence inferred">inferred</span> Only the slug namespace is canonical; the collection sitemap is a redirect index kept alive for inbound links. <em>Basis:</em> 99.9% of collection URLs are GUID-suffixed, 30/40 sampled 301 into slug targets with only 1 target retaining a GUID, and 10/10 slug pages are self-canonical (Probe Log). Ingesting both indexes naively duplicates most of the corpus.</p>
+        </div>
+        <div>
+          <h4>Cross-locale join key</h4>
+          <p>The site inverts the usual pattern — zero JSON-LD, but a ten-field meta block at 100% coverage — so extraction targets <code>&lt;meta&gt;</code>, not schema.org. Within it, <code>awa-articleGuid</code> is the article's identity across translations, identical in en-us, de-de, ja-jp and fr-fr for the same page, while <code>document_id</code> appears only on the en-us original (Probe Log). Join translations on <code>awa-articleGuid</code>; never key on the slug, which is localised.</p>
+        </div>
+        <div>
+          <h4>Freshness is bimodal, and the sitemap lies about it</h4>
+          <p>Half the en-us corpus carries a 2021 <code>lastmod</code> from a bulk migration. <span class="evidence inferred">inferred</span> Sitemap-index <code>lastmod</code> is a build stamp, not a content signal. <em>Basis:</em> all 640 collection children are stamped <code>2026-09-05T00:00:00Z</code> while the URLs inside top out at a single 2026-07 entry (Probe Log). Recrawl from <code>ms.date</code>, not sitemap <code>lastmod</code>.</p>
+        </div>
+        <div>
+          <h4>Crawl-friendly policy, hostile edge</h4>
+          <p>The second delta from the platform default: robots.txt names no AI crawler, so there is no policy barrier — but the edge 403s every user agent under sustained load and recovers after roughly three minutes idle (Probe Log). The constraint is throughput, not permission: budget one patient crawler with exponential backoff, not a fleet.</p>
+        </div>
+        <div>
+          <h4>Git-backed authoring, private repos</h4>
+          <p>Every page names its source Markdown file and commit. <span class="evidence inferred">inferred</span> No bulk Markdown path exists despite that provenance. <em>Basis:</em> both <code>MicrosoftDocs/enduser-*-pr</code> repos named in the meta return GitHub API 404 while the public <code>microsoft-365-docs</code> control returns 200 (Probe Log). The commit hash remains useful as a change-detection key.</p>
+        </div>
+        <div>
+          <h4>Absent from Microsoft's own AI index</h4>
+          <p>The most surprising finding: <code>microsoft_docs_search</code> returned 0/30 results from this host across three queries squarely in its subject area, routing even "how to reset my Windows 11 password" to learn.microsoft.com/answers threads — yet <code>microsoft_docs_fetch</code> retrieves these pages as clean Markdown. Retrieval and fetch are decoupled: bring your own URLs.</p>
+        </div>
+        <div>
+          <h4>Query profile</h4>
+          <p>Two disjoint audiences share one host: consumer troubleshooting in natural language ("Outlook won't open") and IT-pro lookup by exact identifier ("KB5015901"). The <code>/servicing/</code> subtree — the largest <code>_sitemaps</code> bucket at 163 children — serves the second and should have its KB number extracted as a first-class entity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <p class="muted">The actionable conclusion: how Site Wise would build the index for this site.</p>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the H2 section of a locale-specific article, carrying the parent's product taxonomy. At a 485-word median, whole-article units are viable — but <code>/servicing/</code> KB pages run past 20K characters and must be split.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>awa-articleGuid</code> as the cross-locale article identity; <code>document_id</code> as the en-us source pointer; canonical slug URL as the display key; <code>git_commit_id</code> as the change-detection key; KB number parsed from <code>/servicing/</code> titles as the entity join to Windows update data.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>_sitemaps/sitemapindex.xml</code> for the canonical slug URL set — no auth, 34,449 en-us URLs, the only namespace worth enumerating. 2) <code>microsoft_docs_fetch</code> for clean Markdown per URL — no auth, quota undocumented, measure before depending on it. 3) Direct HTML crawl with <code>&lt;meta&gt;</code> extraction as fallback, and the only route to embedded media — throttled to 403 under load. 4) <code>collection.xml</code> <em>only</em> as a redirect table for inbound legacy links, never as a content source.</li>
+        <li><strong>Recrawl cadence:</strong> <code>/servicing/</code> update KBs weekly, tightening around Patch Tuesday; articles with a <code>ms.date</code> inside 12 months monthly; the 2021-stamped back catalogue quarterly, since 54.6% of it has not moved in five years. Trigger on <code>git_commit_id</code> change, not sitemap <code>lastmod</code>.</li>
+        <li><strong>Derivatives to generate:</strong> OCR on embedded UI screenshots, which carry menu paths and dialog labels the prose omits and users type verbatim into search. Embeddings on en-us text only, joined to translations via <code>awa-articleGuid</code> — re-embedding 40 near-identical locales buys little. Skip ASR; there is no meaningful audio corpus.</li>
+        <li><strong>Demo to build:</strong> a legacy-URL resolver — resolve the 49,664 en-us GUID URLs to their canonical slugs and publish the mapping. It turns the site's biggest dedup hazard into a lookup table and measures what share of the old KB corpus is dead rather than merely moved; the 40-URL sample already found one redirecting to the bare homepage.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Consolidation into learn.microsoft.com.</strong> answers.microsoft.com was absorbed wholesale (Probe Log) and Microsoft Docs was folded into Learn in 2022. Support content is the remaining outlier, and its absence from the Learn search index reads as unfinished migration rather than deliberate exclusion. A move would invalidate every URL key at once; <code>awa-articleGuid</code> is the only key likely to survive.</li>
+        <li><strong>MCP fetch is an undocumented dependency.</strong> The cleanest text path is a tool whose published purpose is Learn documentation — no stated quota, no support commitment for this host, no guarantee it keeps resolving these URLs. Never make it the only ingestion path.</li>
+        <li><strong>Republication is restricted.</strong> Microsoft's permissions policy allows linking but not independent republication, and notes Microsoft does not own every article and image on its pages. Snippets and links are safe; mirroring article bodies is not.</li>
+        <li><strong>Edge throttling caps throughput invisibly.</strong> The 403 is indistinguishable from a genuine block unless you test recovery — a naive crawler records half the corpus as forbidden, and any coverage metric computed during a throttled run is wrong.</li>
+        <li><strong>KB deprecation churn.</strong> Articles for end-of-life products retire to landing pages rather than 404s, so a redirect chain that still returns 200 can silently mean the content is gone.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast">Microsoft FY26 Q4 press release</a> — FY2026 revenue and net income.</li>
+        <li><a href="https://learn.microsoft.com/en-us/training/support/catalog-api">Microsoft Learn Catalog API overview</a> — no auth, no charge, documentation explicitly out of scope.</li>
+        <li><a href="https://learn.microsoft.com/en-us/training/support/integrations-learn-platform-api-get-started">Microsoft Learn Platform API</a> — 100 calls/minute default rate limit.</li>
+        <li><a href="https://www.microsoft.com/en-us/legal/intellectualproperty/permissions">Microsoft copyright permissions policy</a> — linking permitted, republication restricted, attribution required, third-party rights caveat.</li>
+        <li>Probe Log, 2026-09-05 — all counts, coverage rates, redirect rates, header/DNS observations and MCP behaviour in this report.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Only the slug namespace is canonical; the collection sitemap is a legacy redirect index. <em>Basis:</em> 99.9% GUID-suffixed URLs, 30/40 sampled 301s into slug targets with 1/30 retaining a GUID, 10/10 slug pages self-canonical, zero overlap between the two en-us sets.</li>
+        <li>Sitemap-index <code>lastmod</code> is a build stamp, not a freshness signal. <em>Basis:</em> all 640 collection children stamped <code>2026-09-05T00:00:00Z</code> while URL-level stamps top out at one 2026-07 entry and cluster 54.6% on 2021.</li>
+        <li>No bulk Markdown path exists despite git-backed authoring. <em>Basis:</em> <code>enduser-account-pr</code> and <code>enduser-archived-pr</code> return GitHub API 404 while public control <code>microsoft-365-docs</code> returns 200.</li>
+        <li>The host is optimised for search engines and human readers, not programmatic reuse. <em>Basis:</em> robots.txt names no AI crawler and advertises two sitemaps, yet <code>/api/</code> is disallowed, 0/10 pages carry JSON-LD, no feed responds, and the Catalog API excludes documentation.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many <em>distinct</em> articles exist once both namespaces, all 40 locales and all redirects collapse? Resolve the 49,664 en-us GUID URLs to canonical targets, union with the 34,449 slug URLs, then group by <code>awa-articleGuid</code>. The 1.62M figure counts advertised URLs, not articles.</li>
+        <li>How many URLs does the <code>_sitemaps</code> system hold across all 37 locales? Only its 75 en-us children were fetched here; a full pass over the remaining 2,191, throttled to avoid the 403 wall, would give the second half of the corpus size.</li>
+        <li>Does <code>microsoft_docs_fetch</code> have a rate limit or terms-of-use position on bulk retrieval of support.microsoft.com URLs? Ask Learn Integrations Support, or measure the throttle against the endpoint.</li>
+        <li>What is the per-IP request budget before the edge 403s, and the exact recovery window? Ramp concurrency stepwise against a fixed control URL, recording first failure and time to first success.</li>
+        <li>How many images and videos does the corpus hold? Raw HTML shows one <code>&lt;img&gt;</code> on most pages, but body media loads client-side — a headless render of a stratified sample would give a real count.</li>
+        <li>Are community answers on learn.microsoft.com/answers licensed for third-party display? Locate the Q&amp;A contributor agreement covering the post-migration corpus.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
