@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kinopoisk.ru Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-09-09</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>kinopoisk.ru</h1>
+      <p class="lede">Kinopoisk is Yandex's film database and streaming service: a 7.4M-URL catalogue whose richest metadata sits in HTML, not its structured data.</p>
+      <div class="tag-row">
+        <span class="tag">Film Database</span>
+        <span class="tag">Streaming</span>
+        <span class="tag">Russia</span>
+        <span class="tag">UGC Reviews</span>
+        <span class="tag">Open to Crawlers</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Kinopoisk launched on 7 November 2003 as a hobby project by Vitaly Tatsiy and Dmitry Sukhanov — a Russian-language IMDb with a community grafted on. Yandex bought it in October 2013 and, from 2018, bolted a streaming service onto the reference database; the catalogue is now the discovery funnel for a Yandex Plus subscription. That two-layer structure is what makes it interesting to index: the <strong>reference layer is wide open and the video layer is entirely closed</strong>, with a single ID space joining them. Unlike every other Russian property in this series, Kinopoisk does not challenge crawlers — <span class="evidence inferred">inferred</span> it treats bot traffic as SEO supply rather than abuse. <em>Basis:</em> <code>robots.txt</code> carries zero AI-crawler directives, and Googlebot, ClaudeBot and GPTBot each received full 120KB server-rendered HTML from a US IP while a bare <code>curl/8.7.1</code> agent was bounced to Yandex SSO (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>kinopoisk.ru</code> (apex 301s to <code>www</code>)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.kinopoisk.ru/">https://www.kinopoisk.ru/</a></dd></div>
+        <div><dt>Category</dt><dd>Film/TV reference database, review community, online cinema</dd></div>
+        <div><dt>Related hosts</dt><dd><code>rating.kinopoisk.ru</code> (public ratings XML), <code>avatars.mds.yandex.net</code> (image CDN), <code>strm-playlists.kp.yandex.net</code> (video delivery), <code>sso.passport.yandex.ru</code> (auth gate)</dd></div>
+        <div><dt>Owner</dt><dd>Yandex (MKPAO «Яндекс», MOEX: YDEX); acquired October 2013</dd></div>
+        <div><dt>Founded / launched</dt><dd>7 November 2003; online cinema from 2018</dd></div>
+        <div><dt>Business model</dt><dd>Yandex Plus subscription bundle + advertising + cinema-ticket affiliate; the database itself is unmonetized inventory</dd></div>
+        <div><dt>Scale anchor</dt><dd>7.42M URLs across 154 child sitemaps — measured 2026-09-09 (Probe Log)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (total review count, catalogue-wide rating coverage, Kinopoisk-only MAU) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Sitemap URL census</dt>
+          <dd>7.42M URLs across 154 child sitemaps — measured 2026-09-09, calculated by Site Wise from a full fetch of every child sitemap (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Corpus composition</dt>
+          <dd>People 5,627,041 (75.8%); titles 1,093,531; media galleries 387,790; trailer pages 195,804; title-review indexes 79,014; editorial 35,400; auto-lists 1,556; showtimes 930; curated lists 769; specials 654. Titles split 91.8% <code>/film/</code> to 8.2% <code>/series/</code> (45,897 vs 4,103 in one 50,000-URL shard) — as of 2026-09-09, calculated by Site Wise from the same sitemap census (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured-data coverage</dt>
+          <dd>25/25 randomly sampled title pages carry JSON-LD (<code>Movie</code> ×23, <code>TVSeries</code> ×2, plus <code>BreadcrumbList</code> on all 25). Field presence: <code>name</code>/<code>genre</code>/<code>director</code>/<code>actor</code>/<code>producer</code>/<code>countryOfOrigin</code>/<code>url</code> 25/25, <code>datePublished</code> 23/25, <code>timeRequired</code> 15/25, <code>description</code> 5/25, <code>image</code> 4/25, <code>aggregateRating</code> <strong>2/25</strong> — measured 2026-09-09 by the structured-data probe, calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Ratings endpoint coverage</dt>
+          <dd>Same 25 IDs against <code>rating.kinopoisk.ru</code>: 25/25 returned HTTP 200, 18/25 carried a non-zero Kinopoisk rating, 11/25 also carried an IMDb rating and vote count — measured 2026-09-09, calculated by Site Wise (Probe Log). The unauthenticated endpoint therefore beats the page's own markup 18-to-2 on rating coverage. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt shape</dt>
+          <dd>128 lines, 2 user-agent groups (<code>Yandex</code> and <code>*</code>, byte-identical rule sets), 79 Yandex-only <code>Clean-param</code> lines, 44 <code>Disallow</code> rules, 1 <code>Sitemap:</code> directive, and <strong>0</strong> GPTBot/ClaudeBot/CCBot/PerplexityBot/Google-Extended/Applebot-Extended directives — retrieved 2026-09-09. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Parent-reported scale, Q2 2026</dt>
+          <dd>Yandex Plus subscribers 49.4M (+14.4% YoY); Plus &amp; entertainment revenue ₽34.9B (+27% YoY); 8.7M Plus subscribers watched 2026 World Cup matches on Kinopoisk, whose sports section has grown 2.5× since its 2024 launch — quarter ended 30 Jun 2026. <a href="https://yandex.ru/company/news/29-07-2026">Yandex Q2 2026 results, 29 Jul 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Streaming market position</dt>
+          <dd>26.9% of Russia's 72.3M online-cinema subscriptions (Okko 18.7%, Ivi 16.8%), total +7.8% YoY — Q2 2026, estimated by Telecom Daily; ≈19.4M subscriptions, calculated by Site Wise. <a href="https://www.kommersant.ru/doc/8862698">Kommersant</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>"Where to watch" module reach</dt>
+          <dd>≈1.4M monthly uniques on the <em>Где смотреть</em> section; 65 titles passed 1M views in Jan–May 2026 — stated 18 Jun 2026 by Ksenia Boletskaya, Yandex director of industry relations. <a href="https://www.kinometro.ru/analytics/show/name/pilot2026_delovaya_kinopoisk_18062026">Kinometro</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Acquisition price</dt>
+          <dd>$80M (≈₽2.58B) for 100% of OOO Kinopoisk — announced 15 Oct 2013, price disclosed in Yandex's SEC filings that December. <a href="https://www.vedomosti.ru/business/articles/2013/12/11/yandeks-kupil-kinopoiskru-za-80-mln">Vedomosti</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Review depth, sampled title</dt>
+          <dd>457 long-form reviews on <code>/film/435/</code> (409 positive, 21 negative, 27 neutral), server-rendered up to 200 per page — observed 2026-09-09 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-09 from a US residential IP (108.224.92.165, AS7018, San Francisco). Desktop Chrome user agent with the <code>disable_server_sso_redirect=1</code> cookie unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-09-09</td><td><code>curl -sL https://www.kinopoisk.ru/robots.txt</code></td><td>200, 128 lines. Two groups only — <code>Yandex</code> and <code>*</code> — carrying <em>identical</em> 22-rule Disallow sets: <code>/api/*</code>, <code>/user/*</code>, <code>/new-search/*</code>, <code>/webview/*</code>, <code>/s/</code>, <code>/query/</code>, <code>/link/</code>, <code>/handler_*</code>, <code>/channel*</code>, <code>/top/navigator/</code>, four <code>/level/NN/</code> paths and five demographic <code>/community/</code> facets. 79 Yandex-only <code>Clean-param</code> lines, one <code>Sitemap:</code> line, no AI-crawler section of any kind.</td></tr>
+            <tr><td>2026-09-09</td><td><code>curl -sI https://www.kinopoisk.ru/</code></td><td>HTTP/2 <strong>302</strong> to <code>sso.passport.yandex.ru/push?retpath=…</code>. Sets <code>yandexuid</code>, <code>yashr</code>, <code>i</code> (2-year, <code>.kinopoisk.ru</code>) and — decisively — <code>disable_server_sso_redirect=1</code>, <code>Max-Age=3600</code>: replaying that one cookie clears the gate for an hour. CSP is ~9KB and enumerates the whole Yandex ad/metrics estate; HSTS 1 year without <code>includeSubDomains</code>. Apex 301s to <code>www</code>.</td></tr>
+            <tr><td>2026-09-09</td><td>User-agent comparison on <code>/film/435/</code>, no cookie jar</td><td>Googlebot 200 (120,818B), ClaudeBot 200 (122,263B), GPTBot 200 (119,697B), YandexBot 429 then 200 on retry, <code>curl/8.7.1</code> <strong>302 to SSO</strong> (192B). The ClaudeBot response contained the full <code>Movie</code> JSON-LD, not a stub. The gate keys on user-agent shape, not IP or reverse DNS.</td></tr>
+            <tr><td>2026-09-09</td><td>Full sitemap census (154 child fetches)</td><td>Index at <code>/sitemaps/sitemap.xml</code>, 686B gzipped, 154 children: 113 <code>people</code>, 22 <code>film</code>, 8 <code>related</code> (posters 27,082 / photos 12,346 / stills 9,626 / wallpapers 946 per shard), 4 <code>trailers</code>, 2 <code>film_review</code>, one each of <code>content</code>, <code>autolists</code>, <code>afisha</code>, <code>lists</code>, <code>manual</code>. Shards cap at 50,000 URLs; totals in Verified Metrics. The <code>content</code> shard holds 35,400 editorial URLs on one line — news 25,001, article 8,871, podcast 718, video 588, game 154. <strong>Every</strong> entry in every shard carried the same <code>&lt;lastmod&gt;2026-09-08&lt;/lastmod&gt;</code>, <code>&lt;priority&gt;0.5&lt;/priority&gt;</code> and <code>&lt;changefreq&gt;weekly&lt;/changefreq&gt;</code>: regenerated wholesale each night, with no per-object change signal.</td></tr>
+            <tr><td>2026-09-09</td><td>Structured-data sample (25 random title URLs from shard <code>sitemap_film1</code>)</td><td>Every page carried exactly one <code>Movie</code>/<code>TVSeries</code> block plus a <code>BreadcrumbList</code>. Cast is capped at 10 <code>actor</code> entries whose <code>url</code> is a <em>relative</em> <code>/name/&lt;id&gt;/</code> path. <code>timeRequired</code> is a bare minute count ("189"), not ISO-8601; <code>datePublished</code> is a bare year. Field counts in Verified Metrics. By contrast the sampled editorial piece <code>/media/article/4013297/</code> carried OpenGraph but <strong>no JSON-LD at all</strong> — structured markup exists on the catalogue, not on the magazine.</td></tr>
+            <tr><td>2026-09-09</td><td>Rendered HTML vs JSON-LD on the same page</td><td>The SSR body of <code>/film/435/</code> yields 48.6KB of visible text carrying budget ($60M), marketing spend, US gross ($136,801,374), worldwide gross, admissions by country, premiere dates with distributor, DVD date, MPAA rating, slogan, top-250 rank ("3 место"), vote count, 58 credited actors, dubbing cast and full crew across 10 roles — <strong>none of which appears in the JSON-LD.</strong></td></tr>
+            <tr><td>2026-09-09</td><td><code>curl https://rating.kinopoisk.ru/&lt;id&gt;.xml</code></td><td>Unauthenticated, no key, no referer check. Returns <code>&lt;kp_rating num_vote="1098451"&gt;9.079&lt;/kp_rating&gt;&lt;imdb_rating num_vote="1600000"&gt;8.6&lt;/imdb_rating&gt;</code> as <code>text/xml; charset=Windows-1251</code>; unknown IDs 404 cleanly. Coverage over the 25-ID sample is in Verified Metrics. Two fetches minutes apart returned <code>num_vote</code> 1,098,451 then 1,098,247.</td></tr>
+            <tr><td>2026-09-09</td><td>Reviews page <code>/film/435/reviews/</code></td><td>200, 112KB of legacy server-rendered HTML on a different, older stack than the Next.js title page. Header exposes exact counts (Все 457 / Положительные 409 / Отрицательные 21 / Нейтральные 27 / 93.7%); full review bodies are in the HTML. URL grammar <code>/ord/{date,rating,name}/status/{all,good,bad,neutral}/perpage/{10..200}/</code> is stated inline in a <code>self_url</code> variable. <strong>No JSON-LD <code>Review</code> markup.</strong></td></tr>
+            <tr><td>2026-09-09</td><td>Trailer page + share player</td><td><code>/film/667252/video/67537/</code> returns <code>og:type=video.movie</code>, <code>og:duration=88</code> and <code>og:video:url=/trailer/player/share/67537/?share=true</code>. That player URL, fetched without the bypass cookie, 302s to SSO — the embed is advertised in OG but is not anonymously loadable. No <code>.mp4</code> or <code>.m3u8</code> appears in the page HTML.</td></tr>
+            <tr><td>2026-09-09</td><td>Image CDN <code>avatars.mds.yandex.net</code></td><td>Unauthenticated and unchallenged; an arbitrary path token sets the size: <code>100x150</code> → 4.0KB, <code>300x450</code> → 22KB, <code>600x900</code> → 85KB, <code>1920x</code> and <code>orig</code> → 351KB, all JPEG. <code>cache-control: max-age=604800,immutable</code>, <code>access-control-allow-origin: *</code>, <code>last-modified: 21 Jun 2020</code>, bare <code>server: nginx</code>.</td></tr>
+            <tr><td>2026-09-09</td><td>Feed discovery</td><td><code>/llms.txt</code>, <code>/ai.txt</code>, <code>/.well-known/security.txt</code>, <code>/rss/</code>, <code>/media/rss/</code> and <code>/rss.xml</code> all 404. A live feed exists at <code>/news.rss</code>: 15 items, each with <code>link</code> and <code>guid</code> (both the canonical <code>/media/news/&lt;id&gt;/</code> URL), <code>pubDate</code> to the second, and an <code>&lt;enclosure&gt;</code> on the image CDN; newest item 8h old. It is discoverable <em>only</em> from a <code>&lt;link rel="alternate"&gt;</code> on <code>/media/</code> — in neither robots.txt nor the sitemap. Its <code>&lt;copyright&gt;</code> permits copying only with the authors' permission and makes a link back mandatory.</td></tr>
+            <tr><td>2026-09-09</td><td><code>dig +short kinopoisk.ru</code></td><td>Single A record 213.180.199.9 for both apex and <code>www</code>; <code>NS ns3/ns4.yandex.ru</code>, <code>MX mx.yandex.ru</code>. No CDN header on any response — the whole property sits on Yandex-operated infrastructure.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. Every path below was tested in the Probe Log.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>1.09M title pages, 5.63M person pages, 35.4K editorial pieces.</td>
+              <td><strong>Sitemap-driven crawl of rendered HTML</strong> — all 7.42M URLs enumerable, all served to bot UAs unchallenged. Editorial adds <code>/news.rss</code>.</td>
+              <td>None. No rate limit across ~250 fetches; one transient 429 on a spoofed YandexBot UA.</td>
+              <td>ToS §5.2 forbids automated extraction, §6.6 copying without permission; RSS notice requires attribution and a link back. Snippet-and-link only.</td>
+              <td>Catalogue facts near-static; editorial hourly (newest RSS item 8h old); sitemap <code>lastmod</code> is uniform and useless as a signal.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>387,790 gallery index pages — posters 27,082 / photos 12,346 / stills 9,626 / wallpapers 946 per sampled shard — each fronting many assets, plus a poster and headshot per entity in JSON-LD/OG.</td>
+              <td><strong>Direct CDN fetch by media ID</strong> on <code>avatars.mds.yandex.net</code> with server-side resizing. IDs come from JSON-LD <code>image</code>, <code>og:image</code>, RSS <code>enclosure</code> or the gallery pages.</td>
+              <td>None — no auth, no referer check, CORS <code>*</code>.</td>
+              <td>Studio and distributor rights, not Kinopoisk's to sublicense. Official size tokens are the only defensible display form.</td>
+              <td>Immutable: 7-day <code>immutable</code> cache and a 2020 <code>last-modified</code> on a live asset.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>195,804 enumerable trailer/clip pages; feature-catalogue size is <span class="evidence open">open</span> and its streams are not on this surface at all.</td>
+              <td>Metadata only — title, <code>og:duration</code> in seconds, thumbnail. No anonymous stream path for trailers or features.</td>
+              <td>Trailer share player redirects to SSO; features need an active Plus subscription. No public embed token.</td>
+              <td>Licensed distribution — the strongest wall on the site. No third-party display right.</td>
+              <td>Trailers land pre-release; the streaming catalogue rotates as licences expire.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>718 podcast pages under <code>/media/podcast/</code>, plus dubbing-cast credits on title pages.</td>
+              <td>Podcast pages are crawlable HTML with OG only; no audio file URL appeared in the sampled markup.</td>
+              <td>Open pages, unknown for the media files.</td>
+              <td>Kinopoisk editorial audio; same §6.6 restriction.</td>
+              <td>Episodic, low volume.</td>
+            </tr>
+            <tr>
+              <td>Comments / reviews</td>
+              <td>79,014 titles carry a review index; the sampled title held 457 long-form reviews with sentiment class. Site-wide total <span class="evidence open">open</span>.</td>
+              <td><strong>The legacy <code>/film/&lt;id&gt;/reviews/</code> stack</strong> — full bodies server-rendered, sortable and paginable to 200 per page via a URL grammar the page states inline.</td>
+              <td>None for reading; author profiles under <code>/user/*</code> are <code>Disallow</code>ed for every agent.</td>
+              <td>ToS §6.5 gives Kinopoisk a perpetual sublicensable licence over user reviews — the platform can relicense, the crawler cannot. Author names are real display handles.</td>
+              <td>Continuous accrual; the header counts are the cheap change signal.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Titles keyed by <code>/film/&lt;id&gt;/</code> or <code>/series/&lt;id&gt;/</code>, people by <code>/name/&lt;id&gt;/</code>, plus 769 curated lists, 1,556 generated facet lists and 930 city showtime pages.</td>
+              <td>JSON-LD on every title and person page (25/25 sampled) for the skeleton, plus <code>rating.kinopoisk.ru/&lt;id&gt;.xml</code> for ratings and the IMDb cross-reference.</td>
+              <td>Both unauthenticated. <code>/api/*</code> is <code>Disallow</code>ed; no public API is documented.</td>
+              <td>Facts are not copyrightable, but the assembled database is defended by §5.2/§6.6, and §6.6 requires prior permission plus attribution to reuse the Kinopoisk Rating.</td>
+              <td>Identity permanent; ratings drift continuously and are replica-inconsistent within minutes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Kinopoisk differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The structured data is the worst view</h4>
+          <p>The usual assumption is that JSON-LD is the cheap, clean extraction target. Here it is the <em>impoverished</em> one: it omits budget, box office, admissions, premiere dates, crew beyond director/producer, the top-250 rank, and — on 23 of 25 sampled pages — the rating that is the site's whole reason for existing. All of it sits in the rendered HTML. Budget an HTML parser and use the JSON-LD only as a type discriminator.</p>
+        </div>
+        <div>
+          <h4>A UA-conditional auth gate, not an anti-bot</h4>
+          <p><span class="evidence inferred">inferred</span> The SSO redirect is a login-continuity feature that incidentally filters unrecognised clients, not an abuse control. <em>Basis:</em> it is defeated by replaying a cookie the server itself sets on the redirecting response, it exempts every bot user agent tested including two AI crawlers, and there is no challenge to solve. The consequence inverts Ozon: identify honestly and you are served; identify as <code>curl</code> and you are not.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The key is the numeric ID in <code>/film/&lt;id&gt;/</code>, <code>/series/&lt;id&gt;/</code> or <code>/name/&lt;id&gt;/</code> — no slug, so no slug drift. But <code>film</code> and <code>series</code> share one ID space and <code>rating.kinopoisk.ru</code> answers for both, so the path segment is a type hint, not part of the key. The 79 <code>Clean-param</code> tokens are the canonical strip list, and unlike Ozon's they are short, readable and stable (<code>sort</code>, <code>perpage</code>, <code>ord</code>, <code>status</code>, <code>from</code>).</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Unusually clean, and one is free money: <code>rating.kinopoisk.ru</code> returns an <strong>IMDb rating and vote count alongside the Kinopoisk one</strong> (11/25 sampled) — an implicit entity link to another catalogue, unauthenticated, one request per title, advertised by neither site. Internally, title ↔ person joins run through relative <code>/name/&lt;id&gt;/</code> URLs in JSON-LD <code>actor</code>/<code>director</code>, capped at 10 actors in markup versus 58 credited in the HTML.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Sitemap <code>lastmod</code> is uniformly the previous day across all 7.42M entries, so the one signal most crawlers rely on carries zero information. Use instead <code>/news.rss</code> <code>pubDate</code> for editorial, <code>num_vote</code> from the ratings XML as a per-title change counter, and the review-page header counts for UGC. The ratings endpoint is replica-inconsistent, so require a threshold delta before triggering a recrawl.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Reviews arrive pre-classified by the site into positive/negative/neutral with a computed positive percentage, and they are long-form prose rather than one-line ratings. Labelled sentiment at that length, in one language, across 79K titles is worth indexing for its own sake, independent of the film metadata.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> one document per numeric title ID carrying the HTML-extracted field set — Russian and original titles, year, country, genres, full crew, budget/box office, premiere dates, age rating, runtime, top-250 rank, rating and vote count — plus the poster media ID. Person IDs are a second document class; reviews are children keyed by title ID + author handle + date.</li>
+        <li><strong>Primary keys &amp; joins:</strong> numeric title ID as root; <code>/name/&lt;id&gt;/</code> for the credit graph; the IMDb rating pair from <code>rating.kinopoisk.ru</code> as the external reconciliation hint; <code>avatars.mds.yandex.net</code> media ID for imagery.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>Sitemap → rendered HTML fetch</strong> under an honest user agent — complete enumeration, no auth, no challenge, richest fields; the cost is 7.42M fetches and the ToS §5.2 question. 2) <strong>Ratings XML</strong> — ~150 bytes per ID, supplies the rating and the IMDb link, and backfills the 92% of titles whose JSON-LD lacks one. 3) <strong><code>/news.rss</code></strong> — the only true incremental feed, editorial only. 4) <strong>Image CDN by media ID</strong> — free, strictly downstream of 1. There is no fifth path: <code>/api/*</code> is disallowed and no public API is documented.</li>
+        <li><strong>Recrawl cadence:</strong> people annually — 5.6M documents that barely move and dominate the corpus by count, not by value; title metadata quarterly; ratings weekly via the XML endpoint; reviews monthly where the header count moved; editorial hourly off RSS; images never.</li>
+        <li><strong>Derivatives to generate:</strong> Russian-language embeddings over synopsis + review bodies — the review corpus is the differentiated asset. Skip thumbnailing and request the CDN's own size tokens. ASR is unjustified: no anonymous audio or video stream path exists.</li>
+        <li><strong>Demo to build:</strong> an IMDb ↔ Kinopoisk reconciler driven purely by <code>rating.kinopoisk.ru</code> — pull both rating pairs for a sample of title IDs and score how reliably the (rating, vote-count) tuple identifies the same film in an IMDb dump. It tests whether the site's most overlooked endpoint is a usable cross-catalogue join key.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The open door is undocumented and therefore revocable.</strong> The absence of AI-crawler rules is an omission, not a grant, and the <code>disable_server_sso_redirect</code> bypass is an implementation detail one deploy away from vanishing. Record the ToS §5.2 conflict explicitly rather than infer permission from the 200s.</li>
+        <li><strong>ToS §6.6 targets the rating specifically.</strong> Reusing the Kinopoisk Rating requires prior permission plus attribution — and that rating is the single field making this catalogue more valuable than a generic film database. Settle display rights before the number reaches a UI.</li>
+        <li><strong>The reference layer exists to feed the subscription.</strong> If Yandex decides open metadata leaks discovery to competitors, the cheapest lever is moving title pages behind the same SSO gate that already fronts the player — the mechanism is deployed and tested.</li>
+        <li><strong>Review indexing carries author identity.</strong> Reviews are signed with real display handles while <code>/user/*</code> profiles are crawler-blocked, so ingesting reviews reconstructs what robots.txt withholds. Handle retention needs a privacy decision up front.</li>
+        <li><strong>Single-jurisdiction, single-operator infrastructure.</strong> One IP, Yandex nameservers, Yandex mail, Yandex CDN, a wholly Russian issuer — no third-party edge to fall back on and no non-Russian contracting route for a licensed feed.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://yandex.ru/company/news/29-07-2026">Yandex Q2 2026 financial results, 29 Jul 2026</a> — primary source for every parent-reported figure here.</li>
+        <li><a href="https://www.kommersant.ru/doc/8862698">Kommersant, Q2 2026 online-cinema subscriptions</a> — market shares and the 72.3M total, estimated by Telecom Daily. A third-party estimate, not an official figure.</li>
+        <li><a href="https://www.kinometro.ru/analytics/show/name/pilot2026_delovaya_kinopoisk_18062026">Kinometro, "Pilot" 2026 conference report, 18 Jun 2026</a> — <em>Где смотреть</em> uniques and the 65 million-view titles, stated by Yandex's director of industry relations.</li>
+        <li><a href="https://www.vedomosti.ru/business/articles/2013/12/11/yandeks-kupil-kinopoiskru-za-80-mln">Vedomosti, 11 Dec 2013</a> — acquisition price, sourced to Yandex's SEC filings.</li>
+        <li><a href="https://yandex.ru/legal/kinopoisk_termsofuse/">Kinopoisk Terms of Use</a> — §5.2 automated extraction prohibited; §6.5 perpetual sublicensable licence over user content; §6.6 no copying without permission, and Rating reuse requires permission plus attribution.</li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD%D0%BE%D0%BF%D0%BE%D0%B8%D1%81%D0%BA">Kinopoisk, Russian Wikipedia</a> — founders and the 2018 online-cinema rollout; used only for uncontested chronology.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Kinopoisk treats crawler traffic as SEO supply, and its SSO redirect is a login-continuity mechanism rather than an anti-bot control — stated with their bases in Context and Retrieval Notes respectively.</li>
+        <li>The ratings endpoint reads from a lagging replica set. <em>Basis:</em> <code>num_vote</code> for the same title returned 1,098,451 then 1,098,247 minutes apart — a decrease a monotonic counter cannot produce from one source.</li>
+        <li>The sitemap is regenerated wholesale nightly rather than maintained per object. <em>Basis:</em> all 7.42M entries across 154 shards carry an identical <code>lastmod</code>, <code>priority</code> and <code>changefreq</code>.</li>
+        <li>Review pages run a materially older stack than title pages, so one parser will not cover both. <em>Basis:</em> inline <code>self_url</code> variables and URL-segment pagination on <code>/reviews/</code> versus <code>data-tid</code> Next.js markup on <code>/film/</code>, plus the Windows-1251 encoding still emitted by <code>rating.kinopoisk.ru</code>.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total review count across the catalogue — the sitemap names 79,014 titles that <em>have</em> reviews but not how many exist; needs a crawl of those review-index headers, which expose exact counts, and a sum.</li>
+        <li>Catalogue-wide rating coverage — 18/25 is too small to project onto 1.09M titles; needs a stratified sample of several thousand IDs against <code>rating.kinopoisk.ru</code>, cheap at ~150 bytes per response.</li>
+        <li>Size of the streaming catalogue as distinct from the reference database — no external probe separates "has a page" from "is watchable"; needs an authenticated Plus session or a Yandex disclosure.</li>
+        <li>Kinopoisk's own MAU, separate from the Plus bundle — Yandex reports subscribers, not per-service audience; needs a Mediascope panel figure or a Yandex Radar export.</li>
+        <li>Whether verified Googlebot/YandexBot receive anything the spoofed user agents did not — resolvable only from a reverse-DNS-verifiable crawler IP or via Yandex Webmaster access for the domain.</li>
+        <li>Whether the metadata surface differs from a Russian IP — every probe here came from one US address and none was geo-blocked, but showtimes and availability flags may vary; needs a paired run from a Russian egress.</li>
+        <li>Whether any partner or licensed metadata feed exists — no public API is documented and <code>/api/*</code> is crawler-blocked; needs a direct approach to Yandex industry relations.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
