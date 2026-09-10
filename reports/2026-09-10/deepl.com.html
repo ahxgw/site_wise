@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>deepl.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-09-10</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>deepl.com</h1>
+      <p class="lede">DeepL publishes 27K near-identical URLs and no corpus, while its own subsidiary Linguee holds 74M attributed bilingual sentence pages, closed to everyone.</p>
+      <div class="tag-row">
+        <span class="tag">Language AI</span>
+        <span class="tag">German SE</span>
+        <span class="tag">Metered API</span>
+        <span class="tag">Parallel Corpus</span>
+        <span class="tag">Split Estate</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>DeepL translates text, documents, speech and images. It is the corporate continuation of <strong>Linguee</strong>, the bilingual concordance engine Gereon Frahling and Leonard Fink launched in 2009: Linguee spent a decade crawling the web for professionally translated document pairs, and in 2017 a team under Jarosław Kutyłowski trained a neural translator on that corpus and renamed the company. Revenue is subscriptions plus a character-metered API. For an index builder this is the sharpest <em>surface versus corpus</em> split Site Wise has measured. The surface — <code>deepl.com</code> — is a text box whose output is generated per request, never given a URL, never published; its 27K sitemap URLs are one marketing template fanned across 19 locales and 961 language pairs, differing by two words per page. The corpus is on the other host: <code>linguee.com</code> publishes <strong>74.5M</strong> pages of human-translated sentence pairs, each linking to the document it came from — and blocks every crawler except six named search engines, under an explicit litigation threat and an admission that the data is deliberately salted.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.deepl.com</code> (apex 301-redirects to <code>www</code>) — Probe Log</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.deepl.com/en/translator">https://www.deepl.com/en/translator</a></dd></div>
+        <div><dt>Category</dt><dd>Machine translation / language AI — web app, browser extension, and metered API</dd></div>
+        <div><dt>Related hosts</dt><dd><code>www.linguee.com</code> (the corpus), <code>api.deepl.com</code> / <code>api-free.deepl.com</code>, <code>developers.deepl.com</code> (docs), <code>static.deepl.com</code>. Linguee and both API hosts share one address, <code>194.124.204.71</code> — Probe Log</dd></div>
+        <div><dt>Owner</dt><dd>DeepL SE (Cologne, Germany). Its <code>schema.org/Organization</code> block lists <a href="https://www.crunchbase.com/organization/linguee">crunchbase.com/organization/linguee</a> under <code>sameAs</code> — the company still identifies as the Linguee entity (Probe Log)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Linguee 2009; DeepL Translator 2017. JSON-LD declares <code>foundingDate: "2017"</code> (Probe Log)</dd></div>
+        <div><dt>Business model</dt><dd>Consumer/team subscriptions plus a character-metered API (free tier 500K chars/month). No advertising — <code>/ads.txt</code> 404s (Probe Log)</dd></div>
+        <div><dt>Scale anchor</dt><dd>"millions of individuals and over 200,000 business teams worldwide" — DeepL's own JSON-LD <code>description</code>, 2026-09-10 (Probe Log). No dated user disclosure exists (Open Questions)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Every count below was taken first-hand on 2026-09-10; the census method is in the Probe Log.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>deepl.com published URL count</dt>
+          <dd><strong>27,064 URLs</strong> across 3 child sitemap trees — 2026-09-10, counted by Site Wise (Probe Log): <code>tdlp-*</code> language-pair pages 20,026, <code>nx-*</code> marketing/academy 6,978, static <code>p-*</code> 60 <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Language-pair page duplication</dt>
+          <dd><code>/en/translator/l/en/de</code> and <code>/en/translator/l/en/fr</code> render to <strong>1,969 visible words each, of which exactly 2 differ</strong> — the string "German" replaced by "French", twice. Word-level <code>difflib</code> similarity <strong>0.999</strong>; both HTML bodies are 285,877 bytes. 2026-09-10 (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Locale fan-out and pair coverage</dt>
+          <dd>The <code>tdlp</code> tree is an exact cross product — <strong>19 locales × 1,054 paths = 20,026</strong>, every locale identical — covering <strong>961 directed pairs over 32 languages</strong>, 96.9% of the 992-cell matrix. The <code>nx</code> tree is not a cross product: per-locale counts range <strong>287 to 593</strong>, English being the superset. 2026-09-10 (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Languages the API actually supports</dt>
+          <dd><strong>125 entries — 114 base languages plus 11 variants</strong>, all with <code>translation: true</code>. Feature coverage is far narrower: glossaries 43, translation memory 43, style rules 33, text improvement 14. From the language table in <a href="https://developers.deepl.com/docs/getting-started/supported-languages.md">supported-languages.md</a>, 2026-09-10 <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Linguee corpus size</dt>
+          <dd><strong>74,496,585 translation URLs</strong> across <strong>8,940 child sitemaps</strong> and <strong>48 directed language pairs</strong> — 2026-09-10, full per-pair census by Site Wise (Probe Log). Concentrated in the founding pairs: german-english 11.2M, english-german 7.7M, english-french and french-english 7.6M each, spanish-english 7.5M, english-spanish 6.4M <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Sentence pairs and provenance per entry</dt>
+          <dd><code>/english-german/translation/example.html</code> carries <strong>30 aligned sentence pairs</strong> and <strong>58 <code>source_url</code> attributions over 31 distinct domains</strong> — eur-lex.europa.eu and oami.europa.eu 4 each, then europarl, espacenet, otif.org and corporate reports. 2026-09-10 (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Linguee shard disjointness</dt>
+          <dd>Two german-english shards 114 apart share <strong>2 URLs out of 22,316</strong> (0.009%) — shards partition the corpus rather than paginating one view, so 74.5M counts distinct pages. 2026-09-10 (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Free API quota and request ceiling</dt>
+          <dd><strong>500,000 characters per month</strong> on API Free; request size <strong>128 KiB</strong>, header <strong>16 KiB</strong>. Document uploads cap at 500K characters (Free) / 1M (Pro), per-format byte limits from 150 KB (SRT) to 100 MB (Word, PDF). <a href="https://developers.deepl.com/docs/resources/usage-limits.md">Usage and limits</a>, 2026-09-10 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Funding and valuation</dt>
+          <dd><strong>$300M Series C at a $2B valuation</strong>, May 2024, led by Index Ventures — carried on DeepL's own <a href="https://www.deepl.com/en/press">press page</a> as "$300 Million Investment at $2 Billion Valuation", read 2026-09-10 <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-10, user agent <code>SiteWise research (kunka@apitech.ai)</code> unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-09-10</td><td><code>curl -s https://www.deepl.com/robots.txt</code></td><td>1,722 bytes, comment "Last full revision: 2026-08-31". Three groups: ads bots (<code>AdsBot-Google</code>, <code>Mediapartners-Google</code>, <code>Ads-Naver</code>, <code>Y!J-BR*</code>) get <code>Allow: /</code>; organic engines (<code>Googlebot</code>, <code>Bingbot</code>, <code>Yeti</code>, <code>Slurp</code>) lose <code>*/translator/c/</code> and any <code>utm_campaign=</code> URL; <code>User-agent: *</code> <strong>re-allows</strong> <code>*/translator/c/</code>. Only site-wide exclusions are Cloudflare internals and legacy API docs. <strong>No AI crawler is named</strong> — GPTBot, ClaudeBot, CCBot, PerplexityBot, Google-Extended, Applebot-Extended all absent, so all inherit the permissive wildcard.</td></tr>
+            <tr><td>2026-09-10</td><td><code>curl -sI https://www.deepl.com/en/translator</code></td><td>HTTP/2 200, <code>server: cloudflare</code>, Next.js origin (<code>x-nextjs-cache: HIT</code>, <code>x-nextjs-prerender: 1</code>) behind an Envoy mesh (<code>x-deepl-ingress-type: acheron</code>). HSTS 2 years preload, nosniff, <code>frame-ancestors 'self' *.deepl.com</code>. Sets <code>userCountry=US</code> and <code>verifiedBot=false</code>, mirrored in <code>x-verified-bot: false</code> — the edge classifies each client and records the verdict.</td></tr>
+            <tr><td>2026-09-10</td><td><code>dig +short</code> on four hosts</td><td><code>www.deepl.com</code> is Cloudflare anycast. <code>www.linguee.com</code>, <code>api.deepl.com</code> and <code>api-free.deepl.com</code> all resolve to the <strong>same address, 194.124.204.71</strong> — self-hosted, no CDN. Corpus and paid API share one estate; only the marketing shell is on Cloudflare.</td></tr>
+            <tr><td>2026-09-10</td><td>Sitemap census — <code>deepl.com</code>, index + 66 shards</td><td>3 opaque children (<code>tdlpi-*</code>, <code>p-*</code>, <code>nxi-*</code>); first and third are themselves indexes, of 41 and 25 shards. 27,064 <code>&lt;loc&gt;</code> entries. No <code>lastmod</code>, <code>changefreq</code> or <code>hreflang</code> anywhere — locale variants are unrelated entries.</td></tr>
+            <tr><td>2026-09-10</td><td>Near-duplicate diff — <code>/l/en/de</code> vs <code>/l/en/fr</code></td><td>Word-level <code>difflib</code> over stripped visible text (result in Verified Metrics). Pair-specific content is one <code>&lt;title&gt;</code>/<code>og:title</code> substitution; the rest is a shared template. Nothing on the page contains a translation.</td></tr>
+            <tr><td>2026-09-10</td><td>Structured-data sample — pair page and home</td><td>Exactly 2 JSON-LD blocks, identical across pages: one <code>Organization</code> (incl. <code>foundingDate</code> and 6 <code>sameAs</code>) and one <code>WebSite</code>. No <code>WebPage</code>, <code>Article</code>, <code>BreadcrumbList</code> or <code>SoftwareApplication</code>. Open Graph is generic — one shared <code>og:image</code>. <code>hreflang</code> count: 0.</td></tr>
+            <tr><td>2026-09-10</td><td>API sample — <code>POST /v2/translate</code>, <code>GET /v2/languages</code>, no key</td><td>Both HTTP <strong>403</strong>: <code>{"message":"Missing Authorization header, expected 'Authorization: DeepL-Auth-Key &lt;API key&gt;'..."}</code>. Even the static language list is behind the key — no unauthenticated read of any kind, no oEmbed or public metadata endpoint.</td></tr>
+            <tr><td>2026-09-10</td><td>Feeds and policy files</td><td><code>/.well-known/security.txt</code> 200; <code>/ads.txt</code>, <code>/.well-known/ai.txt</code>, <code>/llms.txt</code>, <code>/sitemap_index.xml</code> all 404; <code>/feed</code> and <code>/rss</code> 301 into marketing rather than serving a feed. <strong><code>developers.deepl.com/llms.txt</code> is 200</strong> — 143 lines indexing the API docs, each a <code>.md</code> URL plus description. The docs are published for machine ingestion; the product is not.</td></tr>
+            <tr><td>2026-09-10</td><td><code>curl -s https://www.linguee.com/robots.txt</code></td><td>1,270 lines, and the most explicit anti-training notice Site Wise has recorded. Before any directive: "<em>In ANY CASE, you are NOT ALLOWED to train Machine Translation Systems on data crawled on Linguee. Linguee contains fake entries — changes in the wording of sentences, complete fake entries. These entries can be used to identify even small parts of our material if you try to copy it without our permission. … We will take all legal measures against anyone training Machine Translation systems on data crawled from this website.</em>" Fifteen groups follow, naming only Googlebot, Bingbot/msnbot, Yahoo! Slurp, YandexBot, Baiduspider, Applebot and Ask Jeeves/Teoma, each with <code>Allow: /</code> plus a <code>/sitemap</code> and <code>/top</code> allowlist. The file ends <code>User-agent: * / Disallow: /</code>. No AI crawler is named, so all are excluded by the wildcard.</td></tr>
+            <tr><td>2026-09-10</td><td>Sitemap census — <code>linguee.com</code>, index + 96 shards</td><td>8,940 children, all stamped <code>lastmod 2026-09-10</code> (the fetch date). Shard size is constant within a pair but varies across pairs (207 to 36,549 URLs), so the total was computed exactly as <em>(shards − 1) × first + last</em> per pair rather than sampled. Shard budgets tier at 500 for the 16 major pairs, then 101, 21, 5, 2, 1. <strong><code>english-danish</code> and <code>danish-english</code> declare 21 shards each and every one returns zero URLs</strong> — 42 sitemaps advertising an empty corpus.</td></tr>
+            <tr><td>2026-09-10</td><td>Linguee entry page — structure and headers</td><td><code>server: Apache</code>, <code>max-age=86400</code>, <code>charset="iso-8859-15"</code> — legacy single-byte, not UTF-8. 150 KB of HTML, <strong>zero JSON-LD</strong>, no Open Graph. Content sits in hand-rolled classes: <code>sentence left</code>/<code>sentence right2</code> for the aligned pair, <code>source_url</code> for attribution, <code>tag_type</code>/<code>tag_trans</code> for part-of-speech and gloss. Served 200 to this non-search-engine agent despite the wildcard <code>Disallow</code>; the block is declared, not enforced.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Three disjoint estates: an open but empty marketing shell, a closed 74.5M-page corpus one host away, and a key-metered transform with no public objects.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text — deepl.com shell</td>
+              <td>27,064 URLs collapsing to ~1,600 unique documents: 593 marketing/academy pages, ~1,023 pair-page paths that are one template, 60 static (Verified Metrics).</td>
+              <td>Open crawl — robots.txt restricts only campaign URLs and Cloudflare internals; the sitemap is the sole discovery path (Probe Log).</td>
+              <td>None. No rate limiting observed across ~200 fetches.</td>
+              <td>No reuse grant; standard copyright, snippet-only.</td>
+              <td>No <code>lastmod</code> anywhere. Marketing cadence; use body hashes.</td>
+            </tr>
+            <tr>
+              <td>Text — Linguee corpus</td>
+              <td><strong>74.5M</strong> entry pages, ~30 aligned sentence pairs each, over 48 directed pairs (Verified Metrics) — the largest publicly addressable parallel corpus Site Wise has counted.</td>
+              <td><strong>None available to you.</strong> <code>User-agent: * / Disallow: /</code>; only named search engines permitted (Probe Log). No API, dump or feed — <code>api.linguee.com</code> does not resolve, <code>/api</code> 404s.</td>
+              <td>N/A — there is no authenticated tier to buy.</td>
+              <td>Explicit prohibition on MT training, backed by a stated litigation threat and admitted canary entries (Probe Log).</td>
+              <td>Sitemap <code>lastmod</code> is the fetch date, so it carries no signal. Real edit rate is <span class="evidence open">open</span>.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Per entry: headword, part-of-speech tag, gloss, and a source-document URL per sentence pair — 58 attributions over 31 domains on one sampled page (Verified Metrics).</td>
+              <td>Same wildcard block as the text. Fields parse from HTML classes only; no markup layer to lean on (Probe Log).</td>
+              <td>N/A.</td>
+              <td>As above. Note the <em>attributed sources</em> — eur-lex, europarl, espacenet — carry their own, often permissive, licences.</td>
+              <td>Tied to the entry page.</td>
+            </tr>
+            <tr>
+              <td>Translation service</td>
+              <td><strong>Zero publicly addressable objects.</strong> Output is generated per request, never given a URL. 125 languages; 961 pairs advertised on the shell (Verified Metrics).</td>
+              <td>None exists. The API is a transform you feed, not a repository you read — you supply the input, so there is nothing to index.</td>
+              <td><code>Authorization: DeepL-Auth-Key</code> on every call including <code>/v2/languages</code>; 500K chars/month free, 128 KiB per request (Verified Metrics, Probe Log).</td>
+              <td>Terms assign output rights to the customer but bar using it to "develop, market or train a machine translation algorithm" — <a href="https://www.deepl.com/en/pro-license">Pro licence §8.1.1(g), §7.4–7.5</a>.</td>
+              <td>Live. Model version is not exposed per response (Open Questions).</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Voice API: speech-to-text and translated speech, billed in minutes. Croatian and Tagalog voice output added 2026-09-01, French <code>fr-FR</code>/<code>fr-CA</code> 2026-09-08 — <a href="https://developers.deepl.com/docs/resources/roadmap-and-release-notes.md">changelog</a>.</td>
+              <td>WebSocket session API. No public audio objects.</td>
+              <td>API key with the relevant scope; metered in <code>speech_to_text_minutes</code> / <code>speech_to_speech_minutes</code>.</td>
+              <td>Customer audio; some voices flagged <code>"external": true</code> — third-party synthesis.</td>
+              <td>Live.</td>
+            </tr>
+            <tr>
+              <td>Documents</td>
+              <td>15 upload formats (docx, pptx, xlsx, pdf, idml, mif, xliff, srt, dita, xml, json, html, txt, jpeg, png) — <a href="https://developers.deepl.com/docs/resources/usage-limits.md">usage limits</a>.</td>
+              <td>Upload-and-poll endpoint. Nothing is retained as a public object.</td>
+              <td>Per-format byte and character caps (Verified Metrics). Image translation is beta and unbilled.</td>
+              <td>Customer content throughout.</td>
+              <td>N/A.</td>
+            </tr>
+            <tr>
+              <td>API documentation</td>
+              <td>143 documents indexed in <code>developers.deepl.com/llms.txt</code>, each a clean <code>.md</code> rendering with a description (Probe Log).</td>
+              <td><strong>Best-in-class.</strong> Fetch <code>llms.txt</code>, then each <code>.md</code>. Machine-readable by design; OpenAPI spec published alongside.</td>
+              <td>None.</td>
+              <td>Standard docs copyright; snippet-and-cite.</td>
+              <td>Dated changelog with entries through 2026-09-08 — the only genuinely dated surface on the estate.</td>
+            </tr>
+            <tr>
+              <td>Images / video / comments</td>
+              <td>Site chrome and one shared <code>og:image</code>. No user-generated media, comments or reviews on either host.</td>
+              <td>Nothing to index.</td>
+              <td>N/A.</td>
+              <td>N/A.</td>
+              <td>N/A.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The <code>tdlp</code> tree needs collapsing before ingest, not after: 20,026 URLs carry one document. With no <code>hreflang</code> and no cross-locale <code>rel=canonical</code>, nothing in the markup says the variants are related — the only signal is the URL grammar <code>/{locale}/translator/l/{src}/{tgt}</code>. Linguee keys cleanly by contrast: <code>/{pair}/translation/{headword}.html</code>, headword percent-encoded with <code>+</code> for spaces, treating multi-word phrases ("einverstanden sein mit") as first-class entries.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>On <code>deepl.com</code> the useful unit is the <em>document</em>, and there are about 1,600 of them — the page is the wrong unit by a factor of 17. On Linguee the useful unit is not the page but the <strong>sentence pair</strong>: ~30 per entry, each with its own source attribution. Indexing Linguee at page granularity throws away the alignment that is the entire point of the corpus.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>The join that matters runs <em>outward</em>. Each Linguee sentence pair carries a <code>source_url</code> to the document it came from — eur-lex, europarl, espacenet, corporate annual reports. That key joins a sentence pair back to a full document you may already hold under a permissive licence: a different and more durable asset than the Linguee page.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>On the pair pages, <code>&lt;title&gt;</code> and <code>og:title</code> are the <em>only</em> fields carrying page-specific information; the body is constant. Treating body text as the signal here produces 20,026 identical documents. On Linguee, trust the aligned <code>sentence left</code>/<code>sentence right2</code> cells over the summary gloss.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>The manipulation risk here is inverted: the publisher, not a spammer, states that the corpus is deliberately salted with reworded and wholly fabricated entries as copy-detection canaries (Probe Log). Any pipeline that ingests Linguee inherits both the poison and the fingerprint that proves where it came from.</p>
+        </div>
+        <div>
+          <h4>Encoding</h4>
+          <p>Linguee serves <code>charset="iso-8859-15"</code>, not UTF-8. A pipeline that assumes UTF-8 will mojibake German umlauts and the euro sign across 74.5M pages, silently and consistently. Decode against the declared charset per response.</p>
+        </div>
+        <div>
+          <h4>Query profile &amp; on-site search</h4>
+          <p>Two populations that never overlap. DeepL takes a paste-in text and returns a transform — no on-site search, and no query log a retrieval system could serve. Linguee <em>is</em> a search engine, answering word-and-phrase lookups with evidence of how professionals translated them in context; that long tail is why its URL count is five orders of magnitude larger. Its <code>/sitemap</code> and <code>/top</code> allowlist shows it is built to be found through Google, not browsed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the <em>document</em> on <code>deepl.com</code> (~1,600, after collapsing the locale cross-product); the <em>sentence pair</em> on <code>linguee.com</code>, if and only if a licence is obtained.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>{locale, path}</code> with locale stripped for dedup on the shell; <code>{pair, headword, pair_index}</code> on Linguee, joined outward to the source corpus by <code>source_url</code>.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <code>developers.deepl.com/llms.txt</code> → 143 <code>.md</code> documents — unrestricted, dated, machine-formatted, and the only surface here that repays crawling. 2) The English <code>nx</code> subtree, 593 documents, skipping the other 18 locales. 3) The <code>tdlp</code> tree reduced to one template plus a 961-row pair table extracted from the URLs — do not fetch 20,026 pages to learn two words each. 4) Linguee: <strong>no legitimate bulk path exists</strong>; the only route is a negotiated licence, and the terms rule out the training use that would motivate one.</li>
+        <li><strong>Recrawl cadence:</strong> changelog weekly (it moves — three entries in the first eight days of September 2026); marketing pages quarterly; the pair-page template on change-detection only. Nothing on the estate carries a usable <code>lastmod</code>, so cadence must be policy, not signal.</li>
+        <li><strong>Derivatives to generate:</strong> none from the shell — there is no media and no long-form text worth embedding. The one derivative worth building is a <em>capability table</em>: 125 languages × 6 features, parsed from the language data and diffed on each crawl, which turns an undated marketing claim into a dated time series.</li>
+        <li><strong>Demo to build:</strong> the surface-versus-corpus contrast on one page. Left: the 27,064-URL sitemap collapsing to ~1,600 documents, with the en/de vs en/fr diff highlighting its two changed words. Right: the 74.5M-URL Linguee census by pair, greyed out, annotated with the wildcard <code>Disallow</code>. One screen showing that this estate's crawlable half is empty and its full half is closed.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Poisoned corpus with attribution built in.</strong> Linguee's robots.txt states the data contains fabricated entries designed to identify copied material. Ingesting it risks both factual corruption and a provable provenance trail — the rare case where the defensive measure is disclosed in advance and still binding.</li>
+        <li><strong>The shell's openness is worth nothing, and could still close.</strong> DeepL names no AI crawler, which reads as permissive — but the permissive surface is 1,600 marketing documents, and <code>x-verified-bot: false</code> shows the edge already classifies clients (Probe Log). The enforcement mechanism is in place ahead of any policy that would use it.</li>
+        <li><strong>Two hosts, two postures, one owner.</strong> Any crawl policy inferred from <code>deepl.com</code> is wrong for <code>linguee.com</code>, and they share an origin IP. Estate-level rules keyed on the registrable domain will get this backwards in both directions.</li>
+        <li><strong>Documentation drift is the real freshness risk.</strong> The API is the product, the docs are the only dated surface, and the changelog shows v2→v3 migrations in progress (languages, translation memories). A stale docs index misdescribes a live API rather than merely aging.</li>
+        <li><strong>Empty declared surfaces.</strong> 42 Danish sitemaps advertise zero URLs (Probe Log). A crawler that trusts sitemap declarations as a coverage estimate will over-count this corpus; only fetching the shards reveals it.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.deepl.com/robots.txt">deepl.com/robots.txt</a> and <a href="https://www.linguee.com/robots.txt">linguee.com/robots.txt</a> — crawl policy, anti-training notice (2026-09-10).</li>
+        <li><a href="https://developers.deepl.com/llms.txt">developers.deepl.com/llms.txt</a> — documentation index; <a href="https://developers.deepl.com/docs/resources/usage-limits.md">usage and limits</a>; <a href="https://developers.deepl.com/docs/getting-started/supported-languages.md">supported languages</a>; <a href="https://developers.deepl.com/docs/resources/roadmap-and-release-notes.md">changelog</a> (all 2026-09-10).</li>
+        <li><a href="https://www.deepl.com/en/pro-license">DeepL Pro licence agreement</a> — output ownership §7.4–7.5, MT-training prohibition §8.1.1(g).</li>
+        <li><a href="https://www.deepl.com/en/press">DeepL press page</a> — funding and valuation coverage.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Linguee">Wikipedia: Linguee</a> and <a href="https://slator.com/linguees-founder-launches-deepl-attempt-challenge-google-translate/">Slator, "Linguee's Founder Launches DeepL"</a> — 2009 founding, Kutyłowski as Linguee CTO 2012–2017, corpus-to-model lineage.</li>
+        <li>Site Wise censuses of both sitemap trees, the near-duplicate diff, the API 403 sample and the Linguee page teardown — Probe Log, 2026-09-10.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The SEO surface reflects a superseded product generation. <em>Basis:</em> the <code>tdlp</code> tree covers 961 directed pairs over 32 languages, while the API language table lists 125 (Verified Metrics) — the landing pages were generated against the pre-expansion language set and have not been regenerated <span class="evidence inferred">inferred</span></li>
+        <li>Pair-specific content is rendered client-side or not at all, so a non-executing crawler sees one document 20,026 times. <em>Basis:</em> both sampled pair pages returned 285,877-byte bodies differing only in the title, with <code>x-nextjs-prerender: 1</code> indicating a single prerendered shell (Probe Log) <span class="evidence inferred">inferred</span></li>
+        <li>Linguee is maintained as a static asset rather than developed. <em>Basis:</em> Apache origin with no CDN, ISO-8859-15 encoding, zero structured data, a dead <code>api.linguee.com</code>, and 42 Danish sitemaps declared but empty (Probe Log) <span class="evidence inferred">inferred</span></li>
+        <li>Linguee's sitemap <code>lastmod</code> values are generated at request time and carry no editorial signal. <em>Basis:</em> all 8,940 children returned <code>lastmod 2026-09-10</code>, the fetch date, on a corpus whose German-English half alone holds 11.2M pages (Probe Log) <span class="evidence inferred">inferred</span></li>
+        <li>DeepL treats its documentation, but not its product, as a corpus for machine consumption. <em>Basis:</em> <code>developers.deepl.com/llms.txt</code> returns 200 with a 143-entry index while <code>deepl.com/llms.txt</code> 404s and every API read requires a key (Probe Log) <span class="evidence inferred">inferred</span></li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many DeepL users and paying subscribers are there? The JSON-LD claim ("millions of individuals, over 200,000 business teams") is undated and unaudited. Closed by a dated first-party disclosure or a filing for DeepL SE in the German <em>Unternehmensregister</em>.</li>
+        <li>How many distinct sentence pairs does Linguee hold, as opposed to pages? Closed by sampling N entry pages per language pair, counting <code>sentence left</code> rows, and multiplying by the per-pair page census in Verified Metrics — the one measurement that would turn 74.5M pages into a corpus size.</li>
+        <li>What is Linguee's real edit and growth rate? The sitemap <code>lastmod</code> is useless (see Inferences). Closed by hashing a fixed sample of entry pages weekly over a quarter.</li>
+        <li>What fraction of Linguee's attributed sources are themselves openly licensed? EU institutional domains led the one page sampled (Verified Metrics). Closed by extracting <code>source_url</code> across a stratified sample and classifying domains by licence — it would size the portion of this corpus obtainable legitimately from the original publishers instead.</li>
+        <li>Which model version served a given API response? No version header is exposed and the changelog does not map dates to model builds. Closed by a documented model-version field, or by a fixed probe set translated on a schedule to detect output drift.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
