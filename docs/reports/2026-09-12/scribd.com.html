@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>scribd.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-09-12</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>scribd.com</h1>
+      <p class="lede">Scribd is a ~220M-document upload archive whose sitemaps list every URL but whose page text lives on a crawl-banned host, sometimes glyph-scrambled.</p>
+      <div class="tag-row">
+        <span class="tag">Documents</span>
+        <span class="tag">UGC Archive</span>
+        <span class="tag">Subscription</span>
+        <span class="tag">SEO-Led</span>
+        <span class="tag">Everand</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Scribd.com is the user-upload half of Scribd Inc.: hundreds of millions of PDFs, Word files, spreadsheets and scans that people uploaded to share or to unlock someone else's. Its sibling <code>everand.com</code> holds the licensed catalog and <code>slideshare.net</code> the presentations; one subscription spans all three. Distribution is search: a document page exists mainly to rank for phrases inside a file nobody else put on the open web. That makes the site unusually interesting to an index builder and unusually hostile to one. The retrieval object is a numeric document ID, and the ID is <em>all</em> that is normalized — path, slug and language subdomain are free variables that all answer HTTP 200 (Probe Log). The body text is complete and reachable, but it is served from an asset host whose robots.txt is <code>Disallow: /</code>, and on some documents it is run through a glyph substitution first. <span class="evidence inferred">inferred</span> Scribd deliberately ranks on text it does not let crawlers read. <em>Basis:</em> zero inline <code>text_layer</code> markup in 42/42 sampled document pages, every page's text delivered only as <code>html.scribdassets.com</code> JSONP, and that host banning all agents (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>scribd.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.scribd.com/">https://www.scribd.com/</a></dd></div>
+        <div><dt>Category</dt><dd>User-uploaded document archive; reading subscription</dd></div>
+        <div><dt>Related hosts</dt><dd><code>everand.com</code> (licensed books/audiobooks), <code>slideshare.net</code> (presentations), <code>sitemaps.scribd.com</code> (CloudFront), <code>html.scribdassets.com</code> (page text layers), <code>imgv2-{1,2}-f.scribdassets.com</code> (thumbnails); language subdomains <code>es.</code>, <code>pt.</code>, <code>id.</code>, <code>ru.</code>, <code>fr.</code>, <code>de.</code>, <code>ro.</code></dd></div>
+        <div><dt>Owner</dt><dd>Scribd, Inc., San Francisco; private (Redpoint, Spectrum Equity, LGT, Tencent). CEO Tony Grimminck since 2023</dd></div>
+        <div><dt>Founded / launched</dt><dd>2007, by Trip Adler, Jared Friedman and Tikhon Bernstam (Y Combinator S06). Document ID 1 is still live and attributed to co-founder Jared Friedman (Probe Log)</dd></div>
+        <div><dt>Business model</dt><dd>Reading subscription (credit-based on Everand since 2024) + ad-supported and upload-gated free access to user documents</dd></div>
+        <div><dt>Scale anchor</dt><dd>400M+ pieces of content across Scribd Inc. properties, as of the page fetched 2026-09-12 (<a href="https://www.scribdinc.com/about">scribdinc.com/about</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (upload rate, deletion rate, bot-rendered text) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Company-stated scale</dt>
+          <dd>400M+ pieces of content; 250M+ monthly unique visitors; 30M+ hours read/month; 2M+ paying subscribers; 50+ languages — as of the page fetched 2026-09-12, which carries no as-of date of its own. <a href="https://www.scribdinc.com/about">Scribd Inc. About</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap-listed document URLs</dt>
+          <dd>~217M (95% CI ±36M) — as of 2026-09-12. Stratified sitemap census: 30 random shards per language × 9 languages (270 fetches), mean URLs/shard × 21,591 shards. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Language split of that corpus</dt>
+          <dd>en 71M · es 43M · "other" 43M · id 26M · pt 16M · fr 9.2M · ro 5.1M · de 2.3M · ru 0.7M — as of 2026-09-12, same sitemap census. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Document ID space</dt>
+          <dd>1.0796B (21,591 shards × 50,000 consecutive IDs); highest ID seen 1,079,500,010. Sitemap-listed documents fill ~20% of it — as of 2026-09-12 sitemap census. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Author / user URLs</dt>
+          <dd>~2.7M across 112 child sitemaps (12 shards sampled, mean 23.7K) — as of 2026-09-12 sitemap census. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Everand catalog sitemaps</dt>
+          <dd>Child-sitemap counts, exact: books_en 18,833 · series_en 13,970 · books_other 11,756 · audiobooks_en 6,594 · audiobooks_other 1,467 · topics 661 — as of 2026-09-12 sitemap fetch. An 8-shard sample puts English book URLs in the low millions, but per-shard variance is too high for a point estimate. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured-data coverage (n=42 random sitemap documents)</dt>
+          <dd>JSON-LD <code>MediaObject</code>, <code>noarchive</code> meta, <code>isAccessibleForFree: true</code>, <code>show_archive_paywall: true</code> and JSONP refs ≥ <code>page_count</code>: all 42/42. <code>hasScrambledFonts: true</code> 3/42 (7%); <code>aggregateRating</code> 4/42 (10%); AI outline/keyphrase blocks 0/42 — 2026-09-12 probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Freshness oracle accuracy</dt>
+          <dd>The Unix timestamp in a document page's <code>image_url</code> equals its HTTP <code>Last-Modified</code> epoch in 20/20 sampled documents — 2026-09-12 probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap rebuild window</dt>
+          <dd>Nightly. Sitemap <code>docs/en/0.xml</code> carried <code>Last-Modified 2026-09-12 00:00:09Z</code>, <code>docs/en/21590.xml</code> 01:51:08Z, <code>users/0.xml</code> 01:52:01Z — a ~2h pass from 00:00 UTC. <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-12, UA <code>SiteWise research (kunka@apitech.ai)</code> unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe"><code>curl -sL https://www.scribd.com/robots.txt</code></td><td data-label="Observation">96 Disallow rules for <code>*</code> (<code>/search?</code>, <code>/read/</code>, <code>/fullscreen/</code>, <code>/embeds/</code>, <code>/api/</code>, <code>/download/</code>) but <code>/document/</code>, <code>/doc/</code> and <code>/author/</code> stay open. Eight agents get <code>Disallow: /</code>: Bytespider, CCBot, Claude-Web, ClaudeBot, Diffbot, ImagesiftBot, omgili, AI2Bot. GPTBot, OAI-SearchBot, Google-Extended, PerplexityBot and Applebot-Extended are <em>not</em> named anywhere in the file.</td></tr>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe"><code>curl -sI https://www.scribd.com/</code></td><td data-label="Observation">Fastly (<code>via: 1.1 varnish</code>, <code>x-cache: HIT</code>, age 400,422s) over an Envoy/Next.js origin; Signal Sciences WAF (<code>x-sigsci-requestid</code>). <code>vary: … X-Language-Locale, X-Scribd-Country-Code, X-Bot</code>. HSTS 2 years; no CSP. <code>dig</code>: <code>www</code> → <code>scribd.map.fastly.net</code>, sitemaps → <code>d1baplcs38qbp5.cloudfront.net</code>; the apex has no A record.</td></tr>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe">Sitemap census — 9 language indexes, 270 child fetches</td><td data-label="Observation">All nine language indexes (<code>en, es, pt, de, fr, id, ro, ru, other</code>) contain exactly 21,591 child sitemaps. Shard <var>N</var> covers document IDs [<var>N</var>×50,000, (<var>N</var>+1)×50,000). Children carry <code>&lt;image:image&gt;</code> on 2,281/2,281 URLs in <code>docs/en/0.xml</code> (<code>image:title</code> 100%, <code>image:caption</code> 45%), <code>changefreq weekly</code>, <code>priority 1.0</code> — and <strong>no <code>&lt;lastmod&gt;</code> anywhere</strong>.</td></tr>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe"><code>curl -sL https://html.scribdassets.com/robots.txt</code></td><td data-label="Observation">Two lines: <code>User-agent: *</code> / <code>Disallow: /</code>. This is the host that serves every document's page text.</td></tr>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe">Structured-data sample, n=42 documents drawn at random from six sitemap shards across five languages</td><td data-label="Observation">Coverage figures in Verified Metrics. Every page is ~1.1–1.3MB of HTML carrying a state blob (<code>page_count</code>, <code>formats</code> with PDF/TXT filesizes, <code>publisher_info</code>, <code>is_downloadable</code>, <code>show_archive_paywall</code>, <code>hasScrambledFonts</code>) but <strong>zero</strong> inline <code>text_layer</code> markup — only one <code>.jsonp</code> URL per page of the document.</td></tr>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe">Gunzip of one already-retrieved page asset, <code>…/pages/1-850337a39e.jsonp</code> (host disallows crawling; one file fetched to characterize the format, nothing further)</td><td data-label="Observation">867 bytes: a <code>window.page1_callback([...])</code> wrapper holding a positioned <code>text_layer</code> (absolute px offsets, per-font spans) plus an <code>image_layer</code> pointing at the rendered page JPEG. The text read <code>ZLM BA OENHE MITOPM / V]OKB[ZFPZ P]AM[</code>; one monoalphabetic substitution resolves it to <code>THE KLINGON EMPIRE / QUICKSTART RULES</code>. That document's state blob sets <code>"hasScrambledFonts": true</code>.</td></tr>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe">Canonicalization: <code>/doc/500000050/anything</code>, <code>/document/500000050/WRONG-SLUG</code>, <code>/document/500000050</code>, <code>https://es.scribd.com/document/500000050/x</code></td><td data-label="Observation">All four answer HTTP 200 — no redirect — and all four emit the same <code>rel="canonical"</code>. The canonical form is per-document, not global: doc 2854 canonicalizes to <code>https://es.scribd.com/doc/2854/…</code>, keeping both the language subdomain and the legacy <code>/doc/</code> path.</td></tr>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe"><code>curl -sI</code> on 20 sampled documents, comparing <code>Last-Modified</code> to the digits in <code>image_url</code></td><td data-label="Observation">Exact match 20/20 (e.g. <code>1710545473</code> ↔ <code>Fri, 15 Mar 2024 23:31:13 GMT</code>). Sitemap thumbnail URLs carry a different, build-time stamp, so only the page-level value is a content signal.</td></tr>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe"><code>curl "https://www.scribd.com/services/oembed?url=…&amp;format=json"</code></td><td data-label="Observation">Works unauthenticated for <code>/document/</code> URLs: <code>title</code>, <code>author_name</code>, <code>author_url</code>, <code>thumbnail_url</code> (164×212), an iframe to <code>/embeds/{id}/content</code>, <code>cache_age: 604800</code>. Document ID 1 resolves to "Improved Statistical Test" by Jared Friedman. The same call on an <code>everand.com/book/</code> URL returns HTTP 404. <code>/llms.txt</code> is 404 and <code>/developers</code> and <code>/api</code> resolve to ordinary user profiles — there is no developer portal.</td></tr>
+            <tr><td data-label="Date">2026-09-12</td><td data-label="Probe">Everand book and audiobook pages + <code>everand.com/robots.txt</code>, <code>slideshare.net/robots.txt</code></td><td data-label="Observation">Book pages carry <code>schema.org/Book</code> JSON-LD (<code>isbn</code>, <code>publisher</code>, <code>datePublished</code>, <code>numberOfPages</code>, accessibility metadata, <code>BreadcrumbList</code>) and no text layer, no <code>noarchive</code>. Audiobooks use <code>schema.org/Audiobook</code> (<code>isbn</code>, <code>readBy</code>, <code>duration</code>, <code>abridged</code>, <code>reviewCount</code>). Both siblings ship the identical 8-agent AI blocklist; SlideShare adds <code>archive.org_bot</code> and <code>Archive-It</code>; Everand adds <code>Disallow: /*?</code>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. "Crawl" below means robots-permitted fetching of <code>www.scribd.com</code> document pages.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text — metadata</td>
+              <td data-label="Objects &amp; est. count">Title, author, language, page count, formats and filesizes for ~217M documents (Verified Metrics).</td>
+              <td data-label="Best legitimate path">Sitemap → document page → JSON-LD <code>MediaObject</code> + state blob; 100% coverage measured.</td>
+              <td data-label="Auth &amp; quota">None. ~1.2MB HTML each is the real cost: a full sweep is ~260TB.</td>
+              <td data-label="License / display"><code>noarchive</code> on every page: snippet + link, no cached copy.</td>
+              <td data-label="Freshness">Per-document <code>Last-Modified</code>; most sampled documents last changed years ago.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text — document body</td>
+              <td data-label="Objects &amp; est. count">Full positioned text for every page of every document; JSONP refs ≥ page count in 42/42 sampled.</td>
+              <td data-label="Best legitimate path"><strong>None.</strong> Only <code>html.scribdassets.com</code> has it, and that host is <code>Disallow: /</code> for all agents. Nothing on <code>www</code> carries the body.</td>
+              <td data-label="Auth &amp; quota">n/a</td>
+              <td data-label="License / display">Uploader-supplied content of unknown provenance; no bulk licence offered.</td>
+              <td data-label="Freshness">Tracks the document's <code>Last-Modified</code>.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text — generated derivatives</td>
+              <td data-label="Objects &amp; est. count">LLM-written section outlines (<code>title</code>, <code>description</code>, <code>start_page</code>) and keyphrase glossaries (<code>keyphrase</code>, <code>definition</code>, <code>pageNum</code>); 44 keyphrases on the one document observed carrying them, 0/42 in the random sample.</td>
+              <td data-label="Best legitimate path">Same crawl of the document page — these ship in the HTML.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Scribd-generated summaries of third-party uploads; display rights unresolved (Open Questions).</td>
+              <td data-label="Freshness">Regenerated on unknown trigger.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">One rendered JPEG per document page, plus a thumbnail per document in 5+ sizes; sitemaps ship <code>image:title</code> on 100% and <code>image:caption</code> on 45% of URLs.</td>
+              <td data-label="Best legitimate path">Thumbnails via sitemap <code>&lt;image:loc&gt;</code> and oEmbed <code>thumbnail_url</code>. Full-page renders sit on the same Disallow-all host as the text.</td>
+              <td data-label="Auth &amp; quota">None for thumbnails.</td>
+              <td data-label="License / display">Thumbnail hotlink is the intended display path (oEmbed); full-page renders are effectively closed.</td>
+              <td data-label="Freshness">Thumbnail URL path embeds the content timestamp — a changed URL <em>is</em> the change notification.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video / audio</td>
+              <td data-label="Objects &amp; est. count">No video corpus. Licensed audiobooks live on <code>everand.com</code>: 6,594 English + 1,467 other child sitemaps.</td>
+              <td data-label="Best legitimate path">Metadata only: <code>schema.org/Audiobook</code> JSON-LD.</td>
+              <td data-label="Auth &amp; quota">None for metadata; audio itself is subscriber-only.</td>
+              <td data-label="License / display">Publisher-licensed; no transcript or audio access for third parties.</td>
+              <td data-label="Freshness">Catalog churns with licensing deals.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / reviews</td>
+              <td data-label="Objects &amp; est. count">Star ratings on a minority of documents (4/42 sampled); review bodies on Everand titles.</td>
+              <td data-label="Best legitimate path">JSON-LD <code>aggregateRating</code> on the document page; <code>reviewCount</code> on Everand.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Rating value + count only; robots blocks <code>/documents/*/comments?</code> and <code>/profiles/more_reviews</code>.</td>
+              <td data-label="Freshness">Slow.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Document ID (≤1.0796B), uploader ID (~2.7M profile URLs), Everand ISBN / publisher / series, 661 topic pages, category breadcrumbs.</td>
+              <td data-label="Best legitimate path">Sitemaps for IDs; JSON-LD for the bibliographic fields.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">ISBN and publisher are facts, freely usable as join keys.</td>
+              <td data-label="Freshness">Stable.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Scribd differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The numeric ID is the only normalized component. Path (<code>/doc/</code> vs <code>/document/</code>), slug and language subdomain are free, and every combination answers 200, not 301 (Probe Log) — so with 7 subdomains × 2 path forms × arbitrary slugs the alias space per document is unbounded. Key on the ID, verify against <code>rel="canonical"</code>, and never treat the URL string as identity. The canonical is not always the <code>www</code> + <code>/document/</code> form.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>One record per document ID — title, author, page count, language, formats, thumbnail, any generated outline. A card, not a body. Page-level retrieval, which the positioned text layer would support beautifully, has no permitted ingestion path.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Document ID joins the page, its thumbnail, its oEmbed record and its page assets. Uploader ID joins to <code>/author/{id}/{slug}</code> — but <code>author</code> there means the uploading account, not the work's author, which appears separately in the JSON-LD. On Everand the join key is the <strong>ISBN</strong>, connecting the catalog to every other bibliographic index; nothing comparable exists for user documents.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Title is uploader-supplied and often meaningless (<code>"2"</code> and <code>"139-En"</code> both appeared in the sample); JSON-LD <code>name</code>, OG title and the generated outline can all disagree. Where an outline exists it is the most descriptive field a crawler can get — and it is a model's summary of a file the crawler cannot read, so it inherits that model's errors unverifiably.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Sitemaps carry <code>changefreq: weekly</code> on every URL and <code>&lt;lastmod&gt;</code> on none, so the declared cadence is noise across 217M URLs. The working substitute is the timestamp inside the page's <code>image_url</code>, which matched <code>Last-Modified</code> 20/20 — but the sitemap overwrites that segment with its own build stamp, so it cannot be read from the sitemap. Change detection therefore costs one HEAD per document. Discovery is bounded by the nightly ~2h index rebuild (Verified Metrics).</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Upload-to-unlock earns free access by uploading, manufacturing a steady supply of re-uploaded copies of the same file under different IDs — and near-duplicate detection must run on thumbnails or generated outlines, since the text is unreachable. Provenance is uploader-only: exam papers, leaked manuals and pirated books share the URL shape of original work, with no rights signal in the markup.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Inverted from the usual platform: on-site search is robots-blocked (<code>/search?</code>, <code>/documents/search</code>) and the document-page surface exists to capture external search traffic. Users arrive from Google on a long-tail phrase and meet a login wall — <code>show_archive_paywall: true</code> on 42/42 sampled pages despite <code>isAccessibleForFree: true</code> in the same documents' JSON-LD.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Verbatim-phrase queries: a sentence remembered from a syllabus, a form number, a manual's part number. It is the one intent the site is built for and the one an external index cannot serve, because the phrase being searched lives only in the layer nobody may crawl.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> one record per document ID — JSON-LD fields, page count, formats, uploader, thumbnail, canonical URL, plus the generated outline/keyphrases when present. Body text is out of scope by policy, not by difficulty.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>scribd:doc:{id}</code>, uploader <code>scribd:user:{id}</code>, Everand titles on ISBN. Canonical URL is an attribute, never the key.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Sitemaps — complete ID enumeration, free, rebuilt nightly, no <code>lastmod</code>. 2) Document-page crawl — the only source of metadata and generated derivatives; at ~1.2MB each, transfer cost (~260TB for a full sweep), not rate limiting, is what forces selectivity. 3) oEmbed — cheap per-object refresh of title/author/thumbnail plus the sanctioned embed HTML; documents only. 4) Everand and SlideShare sitemaps — separate corpora. 5) Body text — no path; do not plan one.</li>
+        <li><strong>Recrawl cadence:</strong> discovery from the nightly sitemap diff (new IDs only); change detection by HEAD on <code>Last-Modified</code>, prioritized by uploader activity and rating presence. Everand weekly — licensing churn moves titles in and out.</li>
+        <li><strong>Derivatives to generate:</strong> thumbnail perceptual hashes for the re-upload duplicate clusters; language from JSON-LD <code>inLanguage</code>, not the sitemap bucket; an ISBN concordance for the Everand half.</li>
+        <li><strong>Demo to build:</strong> a Scribd identity resolver — paste any URL form (<code>/doc/</code>, <code>/document/</code>, bare ID, wrong slug, any language subdomain), show that all answer 200, and collapse them to one ID plus the site's declared canonical.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The text layer is one robots.txt edit from legitimate, and one from gone.</strong> The whole indexable value of the site sits behind <code>html.scribdassets.com</code>'s two-line file.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Scrambling is expanding, not retreating.</strong> <em>Basis:</em> the platform ships an explicit per-document <code>hasScrambledFonts</code> flag, true on 3/42 sampled documents and on the one decoded in the Probe Log — the shape of a per-document rollout, not a legacy artifact.</li>
+        <li><strong>AI-crawler policy is selective and unstable.</strong> Eight agents are banned outright while GPTBot, OAI-SearchBot, Google-Extended, PerplexityBot and Applebot-Extended go unnamed and therefore allowed (Probe Log). A list curated agent-by-agent will keep moving; re-read it every sweep rather than caching the stance.</li>
+        <li><strong>Generated outlines are Scribd's editorial layer over other people's files.</strong> Indexing them republishes a model's description of a document that may itself be infringing, with no rights signal attached.</li>
+        <li><strong>No API, no contract.</strong> oEmbed is the entire public interface and there is no developer portal (Probe Log), so it can be withdrawn without deprecating anything.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.scribdinc.com/about">Scribd Inc. — About</a> — company-stated scale figures, investor list, CEO tenure, Fable acquired 2025.</li>
+        <li><a href="https://news.linkedin.com/2020/august/digital-library-leader-scribd-is-acquiring-slideshare">LinkedIn newsroom, Aug 11 2020</a> — SlideShare acquisition and its stated 100M users.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Scribd">Wikipedia: Scribd</a> — 2007 founding, founders, Y Combinator S06, 2023 split into Scribd / Everand / SlideShare. Secondary; these facts are not on Scribd's own About page.</li>
+        <li><a href="https://www.scribd.com/robots.txt">scribd.com/robots.txt</a> and <a href="https://www.everand.com/robots.txt">everand.com/robots.txt</a> — crawl policy and sitemap directives.</li>
+        <li>Local probes on 2026-09-12: <code>dig</code> and <code>curl</code> against the homepage, robots.txt on three hosts, 270 sitemap children, 42 document pages, 20 HEAD requests, oEmbed, and an Everand book and audiobook (Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Scribd ranks on text it does not let crawlers read. <em>Basis:</em> zero inline <code>text_layer</code> markup in 42/42 sampled pages, body text delivered only as <code>html.scribdassets.com</code> JSONP, and that host serving <code>Disallow: /</code>.</li>
+        <li>Font scrambling is an active per-document defence, not a PDF-extraction artifact. <em>Basis:</em> the state blob carries an explicit <code>hasScrambledFonts</code> boolean, true on 3/42 sampled documents, and the flagged document's page-1 text resolves under one monoalphabetic substitution to text matching its cover.</li>
+        <li>Sitemap language buckets are routing decisions, not document language. <em>Basis:</em> all nine indexes carry exactly 21,591 shards over the same ID ranges, and sampled JSON-LD <code>inLanguage</code> returned values (<code>tl</code>, <code>zh</code>, <code>pt-br</code>) with no bucket of their own.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Does Scribd server-render the body text inline for allowlisted search crawlers? <code>vary: X-Bot</code> says rendering is bot-dependent — closeable only from a verified Googlebot or GPTBot address, which Site Wise cannot originate.</li>
+        <li>Upload and deletion rate: sitemap-listed documents fill ~20% of the 1.0796B ID space, and whether the gap is deletions, private uploads or reserved ranges is unresolved. Closeable by re-running the shard census weekly and differencing the top shards.</li>
+        <li>What share of documents carry the generated outline/keyphrase layer, and what triggers it? 0/42 in a uniform sample versus its presence on a busier document suggests popularity-gating — closeable by sampling stratified on rating presence or recency.</li>
+        <li>Everand title counts — closeable with a 200-shard census by the method used here for documents.</li>
+        <li>Display rights for the generated outlines and keyphrases: nothing in the terms or markup says whether a third party may show them.</li>
+        <li>Whether the glyph substitution is per-document, per-font or global — closeable by comparing recovered maps across several flagged documents.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
