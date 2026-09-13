@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>blog.naver.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-09-13</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>blog.naver.com</h1>
+      <p class="lede">Naver Blog bans every AI crawler from Korea's largest blog corpus, then pays its own creators to feed Naver's AI.</p>
+      <div class="tag-row">
+        <span class="tag">Blogging</span>
+        <span class="tag">UGC</span>
+        <span class="tag">Korean</span>
+        <span class="tag">Portal</span>
+        <span class="tag">Walled</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Naver Blog launched as "페이퍼" on Jun 4 2003 and took its current name on Oct 13 2003. It is not a standalone blogging product but the user-generated supply side of Naver Search, which held 62.86% of Korean search in 2025. Blog posts are what Naver's own search — and now its AI Briefing — answers with, which is why the platform's economics run backwards from a normal blog host: Naver does not sell blogging, it sells the search results the blogs fill, and since Jun 2026 it pays 3,000 creators a month according to how often AI Briefing cites them.</p>
+      <p>The crawl posture follows from that: robots.txt names nine AI agents at <code>Disallow: /</code> under a header calling AI training and RAG "strictly prohibited", and blocks Naver's own crawler Yeti first of all. Meanwhile the corpus is already inside a model — blog text was the single largest source in HyperCLOVA's pretraining mix. The asymmetry, not the content, is the story for an outside index.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>blog.naver.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://blog.naver.com/">https://blog.naver.com/</a> — posts at <code>/{blogId}/{logNo}</code></dd></div>
+        <div><dt>Category</dt><dd>Portal-owned blogging platform / search supply side</dd></div>
+        <div><dt>Related hosts</dt><dd><code>m.blog.</code> (mobile, the indexable surface), <code>section.blog.</code> (discovery, fully disallowed), <code>rss.blog.</code> (per-blog feeds), <code>blog.like.</code> + <code>apis.naver.com/blogserver/like</code> (reactions), <code>postfiles.pstatic.net</code> / <code>blogthumb.pstatic.net</code> (media), <code>openapi.naver.com</code> (Open API). Legacy alias <code>{blogId}.blog.me</code> retired 2020.</dd></div>
+        <div><dt>Owner</dt><dd>NAVER Corporation (네이버 주식회사), KRX 035420</dd></div>
+        <div><dt>Founded / launched</dt><dd>Jun 4 2003 as 페이퍼; renamed Naver Blog Oct 13 2003</dd></div>
+        <div><dt>Business model</dt><dd>No direct monetization of the blog. Feeds Naver Search inventory; creators earn through AdPost, Brand Connect and the Naver Mate citation fund</dd></div>
+        <div><dt>Scale anchor</dt><dd>330M posts published in 2025, 45M unique visitors — as of Dec 22 2025 (<a href="https://sports.khan.co.kr/en/article/202512221355267">Naver 2025 Blog Report</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Cumulative corpus size, blog count and platform-wide CCL coverage live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Posts published, 2025</dt>
+          <dd>330M posts, described as an all-time high, ≈600/minute; 45M unique visitors; 140M neighbor (이웃) connections formed, ≈400K/day; ≈70M posts carried an attached 글감, up 77% year over year — as of Dec 22 2025. <a href="https://sports.khan.co.kr/en/article/202512221355267">Naver 2025 Blog Report via Sports Khan</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Post-ID issuance rate, measured</dt>
+          <dd>1.118M <code>logNo</code> values issued per day — 408M/year, 777/minute, 12.9/second — from an OLS fit over 100 posts from two independent blogs spanning 301 days, R²=0.9976, as of 2026-09-13 (Probe Log). Naver's published 330M posts/year is 81% of that, calculated by Site Wise. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Blog text in HyperCLOVA pretraining</dt>
+          <dd>273.6B of 561.8B pretraining tokens came from blogs — the largest single source at 48.7%, calculated by Site Wise — ahead of cafe 83.3B, news 73.8B, comments 41.1B and Knowledge-iN 27.3B. From the EMNLP 2021 HyperCLOVA paper, reported Oct 2 2023; the 1.96TB Korean dataset. Naver's stated basis for the use is its terms of service. <a href="https://www.khan.co.kr/article/202310021556001">Kyunghyang Shinmun</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Naver Mate citation fund</dt>
+          <dd>₩1T over five years for the AI content ecosystem, of which ₩20B/year goes to Naver Mate: a ₩300K monthly base to 3,000 creators, plus ₩3M/month to 100 (10 in each of 10 categories) and ₩10M/month to 10 category leads. Selection is by AI Briefing citation count across 10 categories and 25 sub-topics; launched Jun 2026 for blog, Cafe, Knowledge-iN and Premium Content. The tiers sum to ₩1.3B/month, matching the ₩1.3B Naver reported paying in Jun 2026 — calculated by Site Wise. <a href="https://en.sedaily.com/news/2026/05/28/naver-to-invest-1-trillion-won-over-five-years-to-build-ai">Seoul Economic Daily, May 28 2026</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>AI Briefing scale and creator income</dt>
+          <dd>30M monthly unique users as of Jun 2026. Combined AdPost, Brand Connect and Naver Mate payouts to blog creators roughly doubled between Feb 2025 and Jun 2026; AI Briefing launched Mar 2025. Per-program figures were not disclosed. <a href="https://en.sedaily.com/technology/2026/08/08/naver-ai-briefing-doubles-blogger-earnings-and-support">Seoul Economic Daily, Aug 8 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Korean search share</dt>
+          <dd>Naver 62.86%, Google 29.55%, Bing 3.12%, Daum 2.94% for calendar 2025 — the first year above 60% since 2022 — measured by InternetTrend from domestic visit logs, reported Jan 4 2026. StatCounter, which weights pageviews through embedded tracking code, instead put Google ahead at 47.31% to Naver's 42.47% in Apr 2026; the methods disagree and neither is official. <a href="https://www.koreatimes.co.kr/business/companies/20260104/naver-tops-60-in-koreas-search-market-data">Korea Times</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>NAVER Corp FY2025</dt>
+          <dd>Revenue ₩12.035T (+12.1% YoY), operating profit ₩2.2081T (+11.6%); Search Platform segment ₩4.1689T (+5.6%) — the segment Naver Blog supplies. <a href="https://navercorp.com/en/media/pressReleasesDetail?seq=10034311">NAVER Q4 2025 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Open API quota and result ceiling</dt>
+          <dd>Blog Search returns at most <code>display=100</code> per call with <code>start</code> capped at 1000, so any single query yields at most 1,000 results; the Search API allows 25,000 calls/day per client ID. Covering one year's 330M posts would need ≥330K non-overlapping queries at 10 calls each — 3.3M calls, 132 days of full quota, calculated by Site Wise. <a href="https://developers.naver.com/docs/serviceapi/search/blog/blog.md">Naver Developers, Blog Search API</a> <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Structured-data coverage, measured</dt>
+          <dd>20/20 sampled posts carried a machine-readable CCL badge in the post footer; 12/12 carried six Open Graph properties and zero JSON-LD blocks; 102 image components across the sample each carried an explicit <code>"ai"</code> flag, all <code>false</code> — as of 2026-09-13 (Probe Log). The sample is two corporate Naver blogs, so the CCL rate is not platform-representative. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-13, desktop Chrome user agent unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-09-13</td><td><code>curl -sL https://blog.naver.com/robots.txt</code></td><td>64 lines, no <code>Allow</code>, no <code>Sitemap</code>. Lines 1–2 are <code>User-agent: Yeti / Disallow: /</code> — Naver's own search crawler, blocked first. Then a comment, "BOT ACCESS FOR THE PURPOSES OF AI TRAINING AND RETRIEVAL-AUGMENTED GENERATION (RAG) IS STRICTLY PROHIBITED", over nine agents at <code>Disallow: /</code>: GPTBot, OAI-SearchBot, PerplexityBot, Google-Extended, ClaudeBot, Claude-SearchBot, meta-externalagent, Applebot-Extended, CCBot. The <code>*</code> group blocks only endpoints — <code>PostList</code>, <code>PostPrint</code>, <code>PostPreview</code>, <code>BlogInfo</code>, buddy/guestbook/comment handlers, <code>/post/</code>, <code>/main/</code> — in both <code>.nhn</code> and <code>.naver</code> spellings. <code>/PostView.naver</code> is not among them.</td></tr>
+            <tr><td>2026-09-13</td><td><code>curl -sL</code> robots.txt on <code>m.blog.</code> and <code>section.blog.</code></td><td>Mobile repeats the Yeti and nine-agent blocks, then gives <code>*</code> a ~600-line endpoint blocklist that never touches the <code>/{blogId}/{logNo}</code> post path. <code>section.blog.naver.com</code> — blog home, topic directories, on-site blog search — carries the same AI block and then <code>User-agent: * / Disallow: /</code>. Discovery is closed to everyone; posts are open to all but AI agents.</td></tr>
+            <tr><td>2026-09-13</td><td>WebSearch restricted to <code>blog.naver.com</code></td><td>Refused before any request: "The following domains are not accessible to our user agent." The ClaudeBot/Claude-SearchBot block is enforced in practice, not just declared.</td></tr>
+            <tr><td>2026-09-13</td><td><code>curl -sL https://blog.naver.com/{blogId}/{logNo}</code></td><td><strong>The canonical post URL is a 2.9KB frameset shell</strong> carrying <code>&lt;meta name="robots" content="noindex,follow"&gt;</code>, zero Open Graph tags, and the blog's generic title rather than the post's. The post body lives in an iframe at <code>/PostView.naver?blogId=…&amp;logNo=…&amp;redirect=Dlog&amp;widgetTypeCall=true</code>. A crawler that fetches the canonical URL and stops there records an empty document.</td></tr>
+            <tr><td>2026-09-13</td><td><code>curl -sL</code> on <code>PostView.naver</code> and <code>m.blog.naver.com/{blogId}/{logNo}</code>, under three user agents</td><td>PostView returns 239KB, <code>index,follow</code>, the full SmartEditor body. Mobile returns 96KB, <code>index,follow</code>, six OG properties including an <code>og:url</code> pointing back at the desktop canonical — but no <code>&lt;link rel="canonical"&gt;</code> and no JSON-LD, so mobile is the only surface at once crawlable, indexable and self-describing. The same PostView URL under <code>curl/8.7.1</code>, Googlebot and Chrome returned 239,181 / 239,177 / 239,179 bytes with 50 <code>se-component</code> nodes each: no UA gating, no JS requirement, no cloaked SEO sliver. The wall here is policy, not rendering.</td></tr>
+            <tr><td>2026-09-13</td><td>SmartEditor markup sample, 20 posts across two blogs</td><td>Body is typed components — <code>se-documentTitle</code>, <code>se-text</code>, <code>se-image</code>, <code>se-imageGroup</code>, <code>se-table</code>, <code>se-quotation</code>, <code>se-horizontalLine</code> — each with a UUID. Every image carries <code>data-linkdata</code> JSON (<code>src</code>, <code>originalWidth</code>, <code>originalHeight</code>, <code>fileSize</code>) and a <code>data-module-v2</code> block with an <code>"ai"</code> flag. Post footers carry a CCL badge: <code>by-nc-nd 2.0 kr</code> on all 10 <code>naverofficial</code> posts, <code>by-sa 2.0 kr</code> on all 10 <code>naver_search</code> posts — one license per blog, not per post.</td></tr>
+            <tr><td>2026-09-13</td><td><code>curl https://rss.blog.naver.com/{blogId}.xml</code>, 9 IDs tried</td><td>Real blogs return RSS 2.0 with exactly 50 items; unknown or empty IDs return HTTP 200 with a 327-byte empty channel. Items carry <code>guid</code> (the canonical post URL), <code>author</code>, <code>category</code>, <code>tag</code>, <code>img</code>, <code>pubDate</code> and a truncated <code>description</code> — 543 characters plus one thumbnail on the item measured. Found via <code>&lt;link rel="alternate"&gt;</code> on the blog home; robots.txt never mentions it. The 50-item cap makes it an update feed with no backfill.</td></tr>
+            <tr><td>2026-09-13</td><td><code>logNo</code> vs <code>pubDate</code> regression, 100 RSS items from <code>naverofficial</code> and <code>naver_search</code>, Nov 7 2025 – Sep 4 2026</td><td><code>logNo</code> is a platform-global sequence, not a per-blog counter: values interleave across the two blogs with only 14 inversions in 99 pairs, 12 of them within a single day. OLS slope 1,118,255 IDs/day at R²=0.9976 over a 333.3M-value span. Naver's published 330M posts/year is 81% of the 408M/year issued.</td></tr>
+            <tr><td>2026-09-13</td><td><code>GET blog.like.naver.com/v1/search/contents?q=BLOG[{blogId}_{logNo}]</code></td><td>Unauthenticated, batchable with pipe-separated keys, no Referer needed. Returns per-type reaction counts against <code>contentsId = {blogId}_{logNo}</code> — one sampled post returned like 146, impressive 2, thanks 1 — plus the six-reaction taxonomy (like, thanks, haha, sad, impressive, wow) localized into ko/ja/zh. Found in the PostView <code>reaction.init</code> config, which also names the comment backend <code>apis.naver.com/commentBox/blogid</code>; a guessed cbox route returned error 054, so comments need the page's own parameters.</td></tr>
+            <tr><td>2026-09-13</td><td><code>curl -sI</code> on <code>postfiles.pstatic.net</code> originals, no Referer</td><td>HTTP 200 with no hotlink protection. <code>?type=</code> selects a server-side derivative — <code>w966</code> returned 920,197 bytes, matching the <code>fileSize: 920193</code> declared in the page's own <code>data-linkdata</code>; <code>s3</code> returned 236KB. The originals are directly addressable at full resolution.</td></tr>
+            <tr><td>2026-09-13</td><td><code>curl -sI</code> on desktop and mobile post URLs; <code>dig</code></td><td><code>Server: nfront</code> on both, <code>Cache-Control: no-cache</code>, <code>referrer-policy: unsafe-url</code>, <code>JSESSIONID</code> on every request. No HSTS, no CSP, no <code>x-frame-options</code> — consistent with a product that must render inside its own frameset. Desktop answered HTTP/1.1, mobile HTTP/2. DNS was unusable: this environment returned Facebook and Twitter address space for every blog host through two resolvers, so hosting was not measurable here.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Every row below sits under one policy fact: nine named AI agents, including both Anthropic crawlers, are at <code>Disallow: /</code> on every blog host. The paths are described as they exist; for an AI index none of them is licensed without a negotiated agreement.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Posts at <code>{blogId}/{logNo}</code>; 330M published in 2025, cumulative total open. Bodies are typed SmartEditor components.</td>
+              <td><code>m.blog.</code> or the <code>PostView.naver</code> iframe — never the desktop canonical, a <code>noindex</code> frameset shell. Open API returns title, passage and <code>postdate</code> only.</td>
+              <td>None for the HTML. Open API needs a client ID/secret from a phone-verified app: 25K calls/day, 1,000 results per query.</td>
+              <td>Per-blog CCL badge in the footer where set — <code>by-nc-nd</code> and <code>by-sa</code> both observed. Otherwise all rights reserved.</td>
+              <td>≈777 new IDs/minute platform-wide (measured). Posts are editable in place with no revision marker.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Inline post images on <code>postfiles.pstatic.net</code>; 102 across 20 sampled posts. Profile and thumbnail variants on <code>blogpfthumb-</code> / <code>blogthumb.pstatic.net</code>.</td>
+              <td>Direct fetch, no hotlink protection; <code>?type=</code> selects a server-rendered derivative. Dimensions, byte size and an AI flag come free in the markup.</td>
+              <td>None.</td>
+              <td>Inherits the post's CCL where set. Deriving thumbnails is unnecessary — Naver already serves the sizes.</td>
+              <td>Immutable per URL: filenames encode an upload timestamp, so edits mint new URLs.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Naver-hosted clips as <code>se-video</code> components, plus Moment short-form. Volume open — none appeared in the 20-post sample.</td>
+              <td>Same page fetch; the component carries a video ID and play-time fields.</td>
+              <td>None observed for metadata. Stream access not probed.</td>
+              <td><span class="evidence open">open</span> — whether the post's CCL extends to hosted video is unstated.</td>
+              <td>Tied to the parent post.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>No native audio object; the desktop frameset carries only a licensed background-music player (<code>framesetMusicController</code>).</td>
+              <td>None worth building.</td>
+              <td>—</td>
+              <td>Third-party licensed; not indexable.</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Comments / reactions</td>
+              <td>Comments plus a six-type reaction set per post; one sampled post carried 149 reactions across three types.</td>
+              <td>Reactions: <code>blog.like.naver.com/v1/search/contents</code>, unauthenticated and batchable. Comments: <code>apis.naver.com/commentBox/blogid</code>, needing parameters lifted from the rendering page.</td>
+              <td>None for reactions. Comment writes and the buddy graph are disallowed in robots.txt for all agents.</td>
+              <td><span class="evidence open">open</span> — the footer CCL badge says nothing about commenter text.</td>
+              <td>Reactions drift for the life of the post; comments cluster in the first days.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Blog (author), category, user tags, 글감 attachments (≈70M posts in 2025) and the 이웃 graph.</td>
+              <td>RSS exposes <code>author</code>, <code>category</code> and <code>tag</code> per item. 글감 and the neighbor graph have no public read path; <code>section.blog.</code> holds the directories at <code>Disallow: /</code>.</td>
+              <td>Buddy-list endpoints explicitly disallowed on both hosts.</td>
+              <td>Graph data is personal data under Korean law regardless of licence.</td>
+              <td>≈400K new neighbor edges/day (2025 report).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The canonical URL is the wrong URL</h4>
+          <p>The default assumption is that the canonical URL serves the content. Here it serves a <code>noindex</code> frameset carrying the blog's title, not the post's, with the body one iframe deeper. Crawl <code>m.blog.naver.com/{blogId}/{logNo}</code>, take identity from <code>og:url</code>, and treat a 2.9KB response on a post URL as a redirect to follow, not a thin page to score.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The key is <code>(blogId, logNo)</code>, and <code>logNo</code> is a platform-global sequence — measured in the Probe Log — so it is unique on its own and orderable by creation time across the whole corpus. Three live URL forms per post (desktop canonical, <code>m.</code>, <code>PostView.naver</code>) plus the retired <code>{blogId}.blog.me</code> alias; the reaction API's <code>{blogId}_{logNo}</code> is the same key underscore-joined.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Not the page. SmartEditor emits typed, UUID-bearing components — <code>se-text</code>, <code>se-image</code>, <code>se-table</code>, <code>se-quotation</code> — so the document arrives pre-segmented into passages with stable IDs. Index the component as the passage and the post as the parent; the usual heuristic paragraph splitting is wasted work here.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Every image carries its <code>fileSize</code>, source dimensions and an <code>"ai"</code> generation flag in <code>data-module-v2</code>, sharing a component UUID with its position in the text — a platform labelling AI-generated media inline. Store the flag: it is the cheapest synthetic-content signal in this corpus, and it is lost if you extract images by URL scrape rather than by component.</p>
+        </div>
+        <div>
+          <h4>Licensing is per blog, not per post</h4>
+          <p>The badge was identical across all 10 posts of each sampled blog and differed between them: a blog-level setting stamped into every footer. Resolve it once per <code>blogId</code> and re-check slowly — but a change is retroactive across the whole back catalogue, the opposite of how per-post licences behave.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>There is no sitemap and no platform-wide feed; the only incremental path is the per-blog RSS, capped at 50 items with no pagination. For a high-volume blog that is a window of days. Recrawl therefore scales with the number of blogs tracked, not with the corpus — and backfill has no feed path at all.</p>
+        </div>
+        <div>
+          <h4>Discovery is the binding constraint</h4>
+          <p>Post pages are open to any non-AI agent, but every surface that lists them is not: <code>section.blog.</code> is <code>Disallow: /</code> for <code>*</code>, the directory and popular-post endpoints are disallowed on mobile, and there is no sitemap. You may read any post you can name and may not use the site to learn its name. The global <code>logNo</code> sequence is the only structural way across that gap, and walking it would be exactly the bulk access the policy exists to prevent.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>The spam gradient runs through commerce: sponsored 체험단 review posts are written to rank in Naver Search for product and local queries, and Naver Mate now adds a second incentive to write whatever AI Briefing cites. Both pressures land in the same review categories that make the corpus valuable, so trust scoring cannot be separated from topic here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the SmartEditor component as passage, the post as parent document, with the blog-level CCL and the per-image <code>ai</code> flag attached at ingest.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>logNo</code> alone is globally unique and time-orderable; <code>(blogId, logNo)</code> for readability; <code>{blogId}_{logNo}</code> joins to reactions; component UUID joins passages to their images; <code>blogId</code> joins to licence, author and RSS feed.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) A negotiated agreement — the only path licensed for an AI index, and the one Naver has an apparatus for, since it already pays creators by AI-citation count. 2) The Open API for discovery within its ceiling: 25K calls/day, 1,000 results per query, snippet-only bodies, and result links the published example returns as opaque <code>openapi.naver.com/l?</code> redirects. 3) Per-blog RSS for incremental updates on a curated blog list, 50 items deep. 4) The reaction API for ranking signal, free and batchable. There is no bulk path and no sitemap: the corpus is not reachable in full by any published mechanism.</li>
+        <li><strong>Recrawl cadence:</strong> RSS poll per tracked blog on an activity-weighted schedule, since the 50-item window is the real constraint; reaction counts weekly for the first month then quarterly; blog-level licence monthly, because a change rewrites the rights on the entire back catalogue; post bodies once, then edit checks only — posts mutate in place with no revision marker.</li>
+        <li><strong>Derivatives to generate:</strong> none for images — Naver already serves every size through <code>?type=</code>, with dimensions and byte sizes in the markup. Spend the budget on Korean sponsored-post classification, on carrying the <code>ai</code> flag into the index as a first-class field, and on an entity resolver for the place and product names that make the review corpus worth retrieving.</li>
+        <li><strong>Demo to build:</strong> a <code>logNo</code> clock. Fit the ID-to-timestamp line from a handful of RSS feeds, then expose date → expected ID range and ID → estimated creation date. It dates any post from its URL with no fetch, prices the corpus for any window, and shows how much a public sequence leaks from 100 samples.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The AI block is explicit, enforced, and names Anthropic twice.</strong> ClaudeBot and Claude-SearchBot are both at <code>Disallow: /</code> under a header calling AI training and RAG "strictly prohibited", and the Probe Log shows a real AI search crawler refusing the domain. There is no ambiguity to read around and no opt-in programme to join.</li>
+        <li><strong>Naver trains on this corpus and pays its authors to keep feeding it.</strong> Blog text was 48.7% of HyperCLOVA's pretraining tokens on a terms-of-service basis, and Naver Mate now pays 3,000 creators a month by AI Briefing citation count. An outside index competes with a first-party pipeline holding both the data and the creators — a commercial negotiation, not a crawl problem.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The public HTML is not Naver's own ingestion path, so it can harden at no cost — and discovery is already hardening first.</strong> <em>Basis:</em> the Yeti block and the closed discovery surfaces, both set out once under Inferences below.</li>
+        <li><strong>The frameset is a silent failure mode.</strong> A crawler that takes the canonical URL at face value gets HTTP 200, valid HTML, a plausible title and no content — no error, no redirect, no signal. The index looks healthy and is empty.</li>
+        <li><strong>Licence state is mutable and retroactive.</strong> One author's CCL toggle silently rewrites the rights on their entire archive, so an index that resolves licence at crawl time and never re-checks drifts out of compliance without any content changing.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://sports.khan.co.kr/en/article/202512221355267">Sports Khan, Dec 22 2025</a> — Naver's 2025 Blog Report figures.</li>
+        <li><a href="https://www.khan.co.kr/article/202310021556001">Kyunghyang Shinmun, Oct 2 2023</a> — HyperCLOVA token breakdown from the EMNLP 2021 paper, the 1.96TB dataset, and Naver's terms-of-service basis for training on blogs.</li>
+        <li><a href="https://en.sedaily.com/news/2026/05/28/naver-to-invest-1-trillion-won-over-five-years-to-build-ai">Seoul Economic Daily, May 28 2026</a> — the ₩1T/5yr investment, Naver Mate tiers and selection criteria.</li>
+        <li><a href="https://en.sedaily.com/technology/2026/08/08/naver-ai-briefing-doubles-blogger-earnings-and-support">Seoul Economic Daily, Aug 8 2026</a> — AI Briefing MUU, its Mar 2025 launch, and the creator-income comparison.</li>
+        <li><a href="https://www.koreatimes.co.kr/business/companies/20260104/naver-tops-60-in-koreas-search-market-data">Korea Times, Jan 4 2026</a> — 2025 Korean search share by InternetTrend.</li>
+        <li><a href="https://navercorp.com/en/media/pressReleasesDetail?seq=10034311">NAVER Corp Q4 2025 results</a> — FY2025 revenue, operating profit and Search Platform segment.</li>
+        <li><a href="https://developers.naver.com/docs/serviceapi/search/blog/blog.md">Naver Developers — Blog Search API</a> — auth, quota, <code>display</code>/<code>start</code> ceilings, item fields, and the redirect form of <code>link</code> in the published example.</li>
+        <li><a href="https://ko.wikipedia.org/wiki/%EB%84%A4%EC%9D%B4%EB%B2%84_%EB%B8%94%EB%A1%9C%EA%B7%B8">Korean Wikipedia: 네이버 블로그</a> — 2003 launch dates and the 2020 retirement of the <code>blog.me</code> alias.</li>
+        <li>Local probes on 2026-09-13: <code>curl</code> and <code>dig</code> against three robots.txt files, the desktop canonical, <code>PostView.naver</code>, <code>m.blog.</code>, nine RSS endpoints, 20 post pages, the reaction API and the image CDN — results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Naver Search ingests blog content from the database rather than by crawling it, so the public HTML is a third-party surface it can restrict cheaply. <em>Basis:</em> Yeti at <code>Disallow: /</code> on <code>blog.</code> and <code>m.blog.</code> while blog posts rank throughout Naver Search, plus the measured absence of UA gating — identical bytes to curl, Googlebot and Chrome.</li>
+        <li>Discovery closes before content does. <em>Basis:</em> <code>section.blog.</code> at <code>Disallow: /</code> for <code>*</code>, the mobile directory and popular-post endpoints disallowed, and no sitemap on any blog host.</li>
+        <li>CCL is a blog-level setting, not a per-post one. <em>Basis:</em> all 10 sampled <code>naverofficial</code> posts carried <code>by-nc-nd 2.0 kr</code> and all 10 <code>naver_search</code> posts carried <code>by-sa 2.0 kr</code>, spanning ten months of publication in each case.</li>
+        <li>The gap between 408M IDs issued and 330M posts published is drafts, private posts and deletions. <em>Basis:</em> the sequence advances on creation while the published figure counts surviving public posts, and the 81% ratio holds across the fitted 301-day span.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Cumulative post count and number of blogs ever created — Naver publishes annual flow, never stock; closeable by an Open API <code>total</code> reading on an unrestricted query.</li>
+        <li>Whether <code>logNo</code> increments exactly once per post creation — closeable by publishing two posts from a controlled blog a known interval apart and differencing the assigned IDs against the fitted rate.</li>
+        <li>Platform-wide CCL coverage — the 20/20 rate comes from two corporate Naver blogs and is not representative; closeable by sampling several hundred blogs found through the Open API and counting footer badges.</li>
+        <li>What share of images carries <code>"ai": "true"</code> — all 102 in the sample were <code>false</code>; closeable by extending the same markup sample across blogs in AI-heavy categories.</li>
+        <li>Whether the Open API <code>link</code> field still returns the opaque <code>openapi.naver.com/l?</code> redirect shown in the docs — this decides whether discovery needs a resolve step per result; closeable with one authenticated call.</li>
+        <li>Whether Naver licenses the blog corpus to third-party AI developers at any price, and through which channel — no public programme or contact path was found; closeable only by approaching Naver's partnership channel.</li>
+        <li>Video and Moment object counts and licence status — no <code>se-video</code> appeared in the 20-post sample; closeable by sampling video-heavy categories and reading the component metadata.</li>
+        <li>Hosting and CDN posture — DNS here returned unrelated address space for every blog host through two resolvers; closeable by resolving from an unfiltered network, ideally in Korea.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
