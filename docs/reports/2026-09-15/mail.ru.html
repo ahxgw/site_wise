@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mail.ru Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-09-15</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>mail.ru</h1>
+      <p class="lede">mail.ru's front door is closed to every crawler but Google and Yandex; its content subdomains publish full article text under attribution-only terms.</p>
+      <div class="tag-row">
+        <span class="tag">Russian Portal</span>
+        <span class="tag">News</span>
+        <span class="tag">Q&amp;A</span>
+        <span class="tag">VK</span>
+        <span class="tag">Sanctioned</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>mail.ru is Russia's original free-email service, launched 1998, grown into the consumer portal of VK, the country's dominant internet holding. Products dropped the domain suffix in branding — "Почта Mail", "Новости Mail" — but the hostnames persist. Revenue is advertising across VK's media surfaces plus paid mail and cloud subscriptions. For a full-modal index the site matters because it is <em>two</em> sites under one name. The root behaves like a login wall: <code>robots.txt</code> disallows everything, and the origin serves the portal only to user-agent strings containing "Googlebot" or "YandexBot". The content subdomains behave like an open publisher — 815K news URLs, an estimated 200M questions on <code>otvet.mail.ru</code>, half a million film entities on <code>kino.mail.ru</code> — served to anonymous clients with complete schema.org payloads, under terms that grant unlimited republication of first-party news in exchange for a link.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>mail.ru</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://mail.ru/">https://mail.ru/</a> — reachable only as Googlebot/YandexBot; all other agents 302 to <code>account.mail.ru/login</code> (Probe Log)</dd></div>
+        <div><dt>Category</dt><dd>Consumer web portal — email, news, Q&amp;A, media verticals</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>news</code>, <code>otvet</code>, <code>kino</code>, <code>lady</code>, <code>health</code>, <code>auto</code>, <code>pogoda</code>, <code>my</code>, <code>e</code> (webmail), <code>cloud</code> — all <code>.mail.ru</code></dd></div>
+        <div><dt>Owner</dt><dd>VK — МКПАО «ВК» (MOEX: VKCO). Copyright asserted by ООО «ВК» in the <a href="https://help.mail.ru/legal/terms/news/policy/">news content-use terms</a></dd></div>
+        <div><dt>Founded / launched</dt><dd>Email launched 15 October 1998 by Port.ru; Mail.ru Group renamed VK Company Limited 12 October 2021; redomiciled from the BVI to the Kaliningrad special administrative region 26 September 2023</dd></div>
+        <div><dt>Business model</dt><dd>Advertising plus paid Mail/Cloud subscriptions</dd></div>
+        <div><dt>Scale anchor</dt><dd>Почта Mail average monthly audience in Russia 48.6M — Q4 2025 (<a href="https://vk.company/ru/press/releases/12255/">VK FY2025 results</a>, published 19 March 2026)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (portal audience, AFP/partner share, exact Q&amp;A count) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Portal access</dt>
+          <dd><code>robots.txt</code> is 433 bytes, 32 lines, 4 groups, zero AI-crawler directives. Of 10 user-agents tested against <code>https://mail.ru/</code>, exactly 2 received the portal (HTTP 200, 197,086 bytes): any UA containing "Googlebot" or "YandexBot". The other 8 got HTTP 302 into the login flow — measured 2026-09-15, Probe Log. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>News corpus, declared</dt>
+          <dd><strong>815,097</strong> URLs across 28 child sitemaps — 809,702 articles plus 5,395 entity and section URLs — measured 2026-09-15 by full census, Probe Log. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>News publication rate</dt>
+          <dd><strong>≈1,700 articles/day</strong> — the Google News feed held exactly 1,000 items spanning 14.12 h (2026-09-14T12:58 to 2026-09-15T03:05), all <code>ru</code>; society 652, politics 175, incident 110, economics 34, svo 29 — measured 2026-09-15, Probe Log. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Q&amp;A corpus</dt>
+          <dd><strong>≈200M</strong> question URLs (95% CI 162M–238M) — 9,041 numeric shards in the <code>otvet.mail.ru</code> sitemap index; simple random sample of 60 shards gave mean 22,138 URLs/shard (sd 16,694) — measured 2026-09-15, Probe Log. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Film entity corpus</dt>
+          <dd><strong>539,581</strong> URLs across 28 sitemaps on <code>kino.mail.ru</code> — 144,691 episodes, 67,419 roles, 63,632 films, 55,969 trailers, 24,192 series, plus season, venue and studio shards — measured 2026-09-15 by full census, Probe Log. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Article payload</dt>
+          <dd>All 8 sampled recent articles carried a complete <code>NewsArticle</code> JSON-LD block including <code>articleBody</code> (495–2,268 chars, mean 1,058), <code>creator</code> with job title, <code>inLanguage: ru</code> and a <code>license</code> URL — measured 2026-09-15, Probe Log. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Republication licence</dt>
+          <dd>VK-owned material "may be reproduced in any mass medium, on Internet servers or on any other carrier without any restrictions as to volume or period of publication"; the sole condition is a source link, and online a hyperlink reading «Новости Mail». AFP material is carved out — storage on a computer, whole or in part, is prohibited except for private or non-commercial use. Partner material stays with the partner. <a href="https://help.mail.ru/legal/terms/news/policy/">News content-use terms</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>VK financials and audiences</dt>
+          <dd>FY2025 revenue RUB 160bn, +8% YoY; the "Ecosystem services and other" segment holding Почта Mail and Облако Mail, RUB 27.7bn, +13%. Q4 2025 Russian monthly audiences (Mediascope, 0+, 12+, desktop and mobile): Облако Mail 20.5M, Дзен 67M, VKontakte 93.4M. <a href="https://vk.company/ru/press/releases/12255/">VK FY2025 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>EU sanctions</dt>
+          <dd>Asset freeze on VK Company and a prohibition on EU companies making funds available to it, adopted 13 July 2026 under the EU human-rights sanctions regime. <a href="https://www.euronews.com/my-europe/2026/07/13/eu-sanctions-russias-vk-company-for-helping-expose-putins-critics">Euronews</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made for this report on 2026-09-15 (see the <a href="../../methodology.html">probe playbook</a>). These are the only rows that may back a <em>verified</em> tag without an external link.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-09-15</td><td data-label="Probe"><code>curl -sL https://mail.ru/robots.txt</code></td><td data-label="Observation">HTTP 200, 433 bytes, 32 lines — one of the smallest crawl policies in this series. <code>*</code> and <code>Yandex</code> → <code>Disallow: /</code> with asset carve-outs; <code>Googlebot</code> → full site minus <code>*?</code>, <code>*search</code>, <code>*auth</code>, <code>*api</code>; <code>Twitterbot</code> → <code>Allow: /?logo=</code> only. No <code>Sitemap:</code> line. Zero matches for GPTBot, ClaudeBot, CCBot, PerplexityBot, Google-Extended or Applebot-Extended.</td></tr>
+            <tr><td data-label="Date">2026-09-15</td><td data-label="Probe">User-agent matrix, 10 agents against <code>https://mail.ru/</code> (run twice)</td><td data-label="Observation">Stable across both runs. "Googlebot" and "YandexBot" → HTTP 200, 197,086 bytes, <code>&lt;title&gt;Mail: Почта, Облако, Календарь…&lt;/title&gt;</code>. bingbot, CCBot, ClaudeBot, GPTBot, Twitterbot, Chrome 140, curl → HTTP 302, 37 bytes, following to <code>account.mail.ru/login?…errorCode=11300&amp;errorText=invalid+user</code>. The bare string <code>Googlebot</code>, with no URL or version, was sufficient to pass.</td></tr>
+            <tr><td data-label="Date">2026-09-15</td><td data-label="Probe"><code>curl -sI</code> on root and on an article; <code>dig</code></td><td data-label="Observation">Root: <code>nginx/1.28.0</code>, <code>x-host: 47.lf.home-release.pc.mrucl.ru</code>, <strong>no HSTS</strong>. News: <code>server: kittenx</code>, HSTS <code>max-age=16070400; preload</code>, <code>vary: User-Agent</code>, <code>cache-control: private, no-cache, no-store</code>. DNS: 3 A (185.180.201.1, 90.156.232.4, 89.221.239.1) and 3 AAAA records, NS <code>ns1/ns2.mail.ru</code>, all PTRs resolving back to <code>mail.ru</code> — first-party infrastructure, no third-party CDN.</td></tr>
+            <tr><td data-label="Date">2026-09-15</td><td data-label="Probe">Crawl-policy discovery across the portal and 9 subdomains</td><td data-label="Observation"><code>mail.ru/sitemap.xml</code>, <code>/sitemap_index.xml</code> and <code>/llms.txt</code> all 302 into the login flow. Eight subdomain <code>robots.txt</code> files (news, otvet, pogoda, lady, health, auto, kino, my) return 200 and allow general crawl with only path-level exclusions; <code>e.mail.ru</code> is <code>Disallow: /</code> bar login and signup. Across all nine, zero AI-crawler directives; six still carry Yandex <code>Clean-param:</code> lines.</td></tr>
+            <tr><td data-label="Date">2026-09-15</td><td data-label="Probe">News sitemap census: index → 28 children, all fetched and counted</td><td data-label="Observation">815,097 <code>&lt;loc&gt;</code> total; 17 article shards (16 × 50,000 + 9,702). Entity shards restamped 2026-09-15T03:03, article shards 2026-09-14T10:03. A second feed, <code>/sitemap/news/google/news/</code>, held exactly 1,000 recent items with <code>news:title</code> and <code>news:publication_date</code>.</td></tr>
+            <tr><td data-label="Date">2026-09-15</td><td data-label="Probe">Structured-data sample: 5 user-agents on one article, then 8 recent articles</td><td data-label="Observation">Unlike the root, <code>news.mail.ru</code> serves everyone: curl, Googlebot, ClaudeBot, GPTBot and Chrome all got HTTP 200 at 167,580–167,836 bytes. One <code>ld+json</code> block per page, holding a <code>BreadcrumbList</code> plus a <code>NewsArticle</code> with 19 keys including the full <code>articleBody</code>. All 8 articles carried a body and the identical licence URL.</td></tr>
+            <tr><td data-label="Date">2026-09-15</td><td data-label="Probe">Q&amp;A census and thread sample on <code>otvet.mail.ru</code></td><td data-label="Observation">Sitemap index is 1.1MB listing 9,044 children — 9,041 numeric ID-range shards plus tags, post_types, spaces. Shard IDs run 0 to 270,460,000 but the space is not contiguous: nothing covers 99,550,000–164,500,000 or 243,090,000–267,000,000. SRS of 60 shards: mean 22,138 URLs (sd 16,694), clustering at ~4K, ~8K and ~40K. A question page fetched with plain curl returned 466,757 bytes holding a complete <code>QAPage</code> graph — question text, author handle and profile URL, <code>answerCount</code>, <code>upvoteCount</code>, <code>acceptedAnswer</code> and every <code>suggestedAnswer</code> with its own author and timestamps. Across 9 further threads with <code>answerCount</code> 1–15, emitted array length equalled <code>answerCount</code> every time. Separately, a burst of 10-way parallel fetching drew 14 consecutive transport-level failures that cleared within ~5 minutes — throttling, not a block.</td></tr>
+            <tr><td data-label="Date">2026-09-15</td><td data-label="Probe">Incremental-feed and public-API sample</td><td data-label="Observation"><code>news.mail.ru/rss/</code> is 200 but holds only 20 items, whose <code>description</code> is the lede rather than the body and whose <code>guid</code> is an opaque hash unrelated to the article ID. No oEmbed anywhere; guessed content endpoints return HTML 404s. The only public developer portal, <code>api.mail.ru</code>, is a WordPress 6.8.2 site still loading classic <code>ga.js</code>; it documents social plugins for «Мой Мир» and its newest announcement is dated "1 year ago", the rest 9–10 years old.</td></tr>
+            <tr><td data-label="Date">2026-09-15</td><td data-label="Probe">Video sitemap field census and <code>lastmod</code> distribution</td><td data-label="Observation">All 1,771 <code>player_loc</code> values point off-site — vkvideo.ru (1,042), vk.ru (374), vk.com (355) — with thumbnails on i.mycdn.me (588), iv.okcdn.ru (493) and userapi hosts. View count present on 1,718 (median 14,474, max 18.7M); median duration 52 s; publication years 2024 (86), 2025 (844), 2026 (841). Article <code>lastmod</code> across 3 shards (n=109,702): 2026 55,383; 2024 37,122; 2018–2023 11,741; 2025 only 4,319; pre-2018 137, including two stamped 1979-02-11 and 1979-02-18.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what auth/quota costs, what a third party may display, and how fast it churns.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects</th><th>Best path</th><th>Auth / quota</th><th>License</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Portal root</td>
+              <td data-label="Objects">1 hub page, 14 outbound subdomain links</td>
+              <td data-label="Best path">None — <code>robots.txt</code> disallows all crawlers but Googlebot</td>
+              <td data-label="Auth / quota">n/a: off-limits by crawl policy regardless of the UA gate</td>
+              <td data-label="License">n/a</td>
+              <td data-label="Freshness">n/a — holds no indexable content (see Retrieval Notes)</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">News text</td>
+              <td data-label="Objects">809,702 articles; ≈1,700/day added; plus 773 tags, 909 explainer cards, 634 company pages</td>
+              <td data-label="Best path">Anonymous crawl of the sitemap; <code>articleBody</code> in JSON-LD, no rendering needed. Live edge via the 1,000-item Google News feed (the 20-item RSS is useless)</td>
+              <td data-label="Auth / quota">None — no key, no quota observed at survey rates</td>
+              <td data-label="License">Unlimited republication of VK-owned items with a source link and a «Новости Mail» hyperlink; AFP items may not be stored at all</td>
+              <td data-label="Freshness">Shards restamped daily; the news feed covers only ~14 h, so poll hourly or lose articles</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Q&amp;A text</td>
+              <td data-label="Objects">≈200M questions with threaded answers</td>
+              <td data-label="Best path">Anonymous crawl; complete <code>QAPage</code> graph per page, untruncated to at least 15 answers</td>
+              <td data-label="Auth / quota">None, but burst fetching drew short-lived throttling (Probe Log) — pace the crawl</td>
+              <td data-label="License"><span class="evidence open">open</span> — user-generated content is not covered by the news terms</td>
+              <td data-label="Freshness">Archive-dominated; most of the corpus is effectively frozen</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Film / TV entities</td>
+              <td data-label="Objects">539,581 URLs: films, series, episodes, roles, persons, studios, venues</td>
+              <td data-label="Best path">Anonymous crawl; <code>Movie</code> JSON-LD with <code>sameAs</code> links to person pages</td>
+              <td data-label="Auth / quota">None</td>
+              <td data-label="License"><span class="evidence open">open</span> — a separate «Кино Mail» terms page exists but was not parsed</td>
+              <td data-label="Freshness">Catalogue churn; forthcoming-title shards are small and move fast</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects">1,771 indexed news clips</td>
+              <td data-label="Best path">Sitemap gives title, duration, thumbnail, view count and a player URL — but every file lives on VK/OK infrastructure</td>
+              <td data-label="Auth / quota">Metadata free; the media itself is a VK Video asset under VK's terms</td>
+              <td data-label="License">Embed via the supplied <code>player_loc</code>; no rehosting path</td>
+              <td data-label="Freshness">Median duration 52 s; 95% published 2025–2026</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects">Article social previews and film stills on <code>resizer.mail.ru</code></td>
+              <td data-label="Best path">URLs in JSON-LD <code>image</code> and <code>Movie.image</code></td>
+              <td data-label="Auth / quota">None</td>
+              <td data-label="License">Follows the parent item; partner and AFP photos carved out</td>
+              <td data-label="Freshness">Tracks the parent object</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Any official API</td>
+              <td data-label="Objects">None for content</td>
+              <td data-label="Best path">No oEmbed, no content API, no bulk dump. <code>api.mail.ru</code> covers only legacy «Мой Мир» social plugins</td>
+              <td data-label="Auth / quota">n/a</td>
+              <td data-label="License">n/a</td>
+              <td data-label="Freshness">Portal last updated ~1 year ago; most entries 9–10 years old</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <div class="subgrid">
+        <div>
+          <h4>Policy shape</h4>
+          <p>The methodology's default two-track split — an SEO sliver for approved crawlers, metered APIs for everyone else — does not describe this site. The split here is by <em>hostname</em>: the root is closed to everyone with no API behind it, the content subdomains are open to everyone and need no API, and there is no metered tier to buy into. Nor is there an AI-crawler stance: across nine <code>robots.txt</code> files, not one names a single AI crawler. <span class="evidence inferred">inferred</span> That silence is neglect rather than permission, and is the most likely thing to change. <em>Basis:</em> the same files still carry Yandex <code>Clean-param:</code> lists of stale tracking parameters, and the only developer portal is a WordPress site on classic <code>ga.js</code> whose newest post is a year old (Probe Log).</p>
+        </div>
+        <div>
+          <h4>The root is not worth the exception</h4>
+          <p><span class="evidence inferred">inferred</span> Even for the two crawlers allowed in, the portal root carries nothing indexable. <em>Basis:</em> the 197,086-byte Googlebot-only response contains zero <code>ld+json</code> blocks and its body is a link hub pointing at 14 subdomains (Probe Log). Treat <code>mail.ru</code> and <code>news.mail.ru</code> as separate acquisition targets sharing nothing but a suffix.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>News articles are keyed by a numeric ID inside a section path (<code>/politics/72359456/</code>), so the section is part of the key and a re-sectioned article would alias. <span class="evidence inferred">inferred</span> Those IDs are not densely allocated to this host, so enumeration by increment is not viable. <em>Basis:</em> 1,000 consecutive feed items span IDs 72,285,965–72,359,456, a delta of 73,491 over 14.12 hours — roughly 73 unused IDs per published article (Probe Log). Crawl the sitemap, never the ID range.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>News: the article, already delivered whole in JSON-LD — no boilerplate stripping, no readability heuristics. Q&amp;A: the <em>thread</em>, not the answer, because the accepted answer and its rivals arrive in one payload with vote counts attached and only make sense together. Film: the title entity, with roles and episodes as satellites joined by the <code>sameAs</code> person URLs.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>The video join leaves the domain entirely. <span class="evidence inferred">inferred</span> News video is VK Video inventory surfaced on a Mail page, not a Mail corpus. <em>Basis:</em> all 1,771 <code>player_loc</code> values resolve to vkvideo.ru, vk.ru or vk.com, and 1,081 thumbnails sit on i.mycdn.me or iv.okcdn.ru, the Odnoklassniki CDNs (Probe Log). Index the metadata here, resolve the media against VK, and expect the two to be governed by different terms.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p><code>lastmod</code> is unsafe as a change signal on the news archive. <span class="evidence inferred">inferred</span> Part of the corpus is stamped with the date of the <em>event</em> rather than the file. <em>Basis:</em> <code>lastmod</code> values of 1979-02-11, 1979-02-18, 1993, 1995, 1999 and 2003 on a site launched in 1998 (Probe Log). Use the Google News feed for the live edge and content hashing for the archive.</p>
+        </div>
+        <div>
+          <h4>Licence granularity</h4>
+          <p>The terms define three regimes — VK-owned, AFP, third-party partner — with sharply different storage rights, but <span class="evidence inferred">inferred</span> the machine-readable layer cannot tell them apart. <em>Basis:</em> all 8 sampled articles emitted the same single <code>license</code> URL, pointing at the page that defines all three buckets (Probe Log). Per-item provenance has to be recovered from the rendered page or the corpus stays legally undifferentiated.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the news article, the Q&amp;A thread, and the film entity — three units on three hosts. The portal root is not a unit and should not be fetched.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>(section, article_id)</code> for news; <code>question_id</code> for Q&amp;A, with author handle joining threads to <code>/profile/</code> pages; the numeric-slug film ID for kino, with <code>sameAs</code> person URLs joining roles to people. Video joins outward to VK by <code>player_loc</code>, not by any Mail key.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Google News sitemap hourly for the live edge — free, timestamped, no auth, 14-hour window. 2) Full sitemap crawl of news (815K), kino (540K) and otvet (≈200M) — free and permitted, with JSON-LD removing the extraction step entirely; otvet is the only one needing real crawl budget and it throttles under burst load. 3) Nothing else exists: no oEmbed, no content API, no bulk dump, and no commercial feed an EU or US buyer could lawfully purchase.</li>
+        <li><strong>Recrawl cadence:</strong> hourly for the news feed; daily for the news and kino entity shards, which restamp daily; the otvet archive is effectively static and warrants one pass plus a thin tail for recent ID ranges.</li>
+        <li><strong>Derivatives to generate:</strong> Russian-language embeddings and translation on the article and Q&amp;A bodies, which arrive clean. Skip ASR — the video corpus is 1,771 clips of median 52 s whose files belong to VK. Skip OCR; the image layer is social previews and stills, not documents.</li>
+        <li><strong>Demo to build:</strong> a per-host crawl-policy differ that fetches the same URL shape across all nine subdomains under six user-agents and reports which host/agent pairs yield content — turning "mail.ru is closed" into the measured statement that only its front door is.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Sanctions foreclose the paid path, not the free one.</strong> The EU asset freeze of 13 July 2026 bars EU entities from making funds available to VK, so no licensing deal or paid endpoint is purchasable even if VK later offers one. An index here is permanently restricted to what anonymous crawling yields, and counsel review should cover the crawl itself, not just payments.</li>
+        <li><strong>The open policy is stale, not deliberate.</strong> Nine <code>robots.txt</code> files with zero AI-crawler directives is a 2026 outlier. A single policy refresh could close 200M Q&amp;A pages overnight, and unlike the UA gate on the root it would leave no diagnostic signature. Snapshot every subdomain's <code>robots.txt</code> on each crawl and diff it.</li>
+        <li><strong>Licence buckets are invisible at ingest.</strong> AFP material carries an explicit prohibition on storing it on a computer at all, and nothing in the JSON-LD distinguishes it from the freely republishable VK-owned majority. Ingesting the corpus undifferentiated means knowingly storing a slice you are told not to store.</li>
+        <li><strong>The root's UA gate is a naive substring match.</strong> The bare token "Googlebot" passed, which makes the wall trivially bypassable and therefore tempting — but <code>robots.txt</code> independently disallows the root for every agent, so the correct behaviour is to skip it.</li>
+        <li><strong>Single-jurisdiction, single-owner dependency.</strong> Every host resolves to first-party infrastructure on VK-operated nameservers with no CDN in front, so there is no third-party mirror from which the corpus could be reconstructed if access is withdrawn or blocked at network level.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://help.mail.ru/legal/terms/news/policy/">Условия использования материалов, размещенных на сайте Новости Mail</a> — VK's own content-use terms: copyright attribution to ООО «ВК», the unlimited-republication grant and its link condition, the AFP carve-out, and the partner-materials regime.</li>
+        <li><a href="https://vk.company/ru/press/releases/12255/">VK Q4 and FY 2025 results press release</a> — published 19 March 2026. Total and segment revenue, and Q4 2025 Mediascope audiences for Почта Mail, Облако Mail, Дзен and VKontakte.</li>
+        <li><a href="https://www.euronews.com/my-europe/2026/07/13/eu-sanctions-russias-vk-company-for-helping-expose-putins-critics">EU sanctions Russia's VK Company</a> — Euronews, 13 July 2026. Asset freeze and funds prohibition under the EU human-rights sanctions regime.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Mail.ru">Mail.ru</a> and <a href="https://en.wikipedia.org/wiki/VK_(company)">VK (company)</a> — Wikipedia. The 1998 launch by Port.ru, the October 2021 rename, and the 2023 redomiciliation. Secondary sources, used only for corporate chronology.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Each inference states its basis inline in the Retrieval Notes block where it is used: the missing AI-crawler directives are neglect; the root holds nothing indexable; news IDs are sparsely allocated; news video is VK inventory; part of the archive carries event dates as <code>lastmod</code>; and the <code>license</code> field cannot separate the three licence regimes.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Exact size of the <code>otvet.mail.ru</code> corpus — the estimate carries a ±19% interval. Would close by enumerating all 9,041 shards (~1.8GB gzipped), or with an official VK figure.</li>
+        <li>What share of news articles is AFP or partner-sourced rather than VK-owned, which sets how much of the corpus is legally storable. Would close by locating a per-article attribution field on the rendered page, if one exists, and sampling it across sections; the JSON-LD does not carry it.</li>
+        <li>Audience of the <code>mail.ru</code> portal itself, as distinct from Почта Mail. Would close with Mediascope Cross Web project-level data.</li>
+        <li>Whether the news sitemap is a complete back-catalogue or a rolling window — sampled shards held 55,383 entries stamped 2026 and 37,122 stamped 2024, but only 4,319 stamped 2025, which no publication pattern explains. Would close with a full <code>lastmod</code> census across all 17 article shards.</li>
+        <li>Whether <code>otvet.mail.ru</code> truncates JSON-LD answers on very large threads — 10 sampled threads emitted every answer up to <code>answerCount</code> 15, but nothing larger was tested. Would close by sampling threads above <code>answerCount</code> 50.</li>
+        <li>Licensing terms for the Q&amp;A and film corpora — the terms index lists separate documents for «Кино Mail» and other services that this report did not parse. Would close by reading each and mapping them to the corpora above.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
