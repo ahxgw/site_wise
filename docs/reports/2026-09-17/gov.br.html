@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gov.br Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-09-17</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>gov.br</h1>
+      <p class="lede">gov.br walls its HTML behind a WAF, then publishes Brazil's entire 5,711-service federal catalog as one unauthenticated 41MB JSON file.</p>
+      <div class="tag-row">
+        <span class="tag">Government</span>
+        <span class="tag">Service Catalog</span>
+        <span class="tag">Brazil</span>
+        <span class="tag">Bulk Dump</span>
+        <span class="tag">Plone</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p><a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d9756.htm">Decreto 9.756 of Apr 11 2019</a> ordered every federal executive agency onto a single portal and banned new <code>.gov.br</code> registrations from that July, folding roughly 1,600 sites into one Plone installation run by the Secretaria de Governo Digital and hosted by SERPRO. There is no business model: no ads, no paid tier, no licensing program. For an index builder the site inverts the usual shape: the crawlable HTML is the <em>worst</em> path, while an unadvertised, unauthenticated endpoint on a SERPRO host returns the whole service catalog as structured JSON, rebuilt daily, carrying millions of citizen ratings that appear nowhere on the website. The binding constraint is not access but license — every page declares CC BY-<strong>ND</strong>, permitting verbatim copying and forbidding adaptation, the reverse of the usual arrangement.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>gov.br</code> (apex 302s to <code>www.gov.br</code>, Probe Log)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.gov.br/pt-br">https://www.gov.br/pt-br</a></dd></div>
+        <div><dt>Category</dt><dd>Government service catalog and federal publishing platform</dd></div>
+        <div><dt>Related hosts</dt><dd><code>servicos.gov.br</code> and <code>api-servicos.estaleiro.serpro.gov.br</code> (service API and bulk dump), <code>dados.gov.br</code> (open data), <code>gov.br/conecta</code> (API catalog), <code>gov.br/ds</code> (design system)</dd></div>
+        <div><dt>Owner</dt><dd>Ministério da Gestão e da Inovação em Serviços Públicos (MGI), via the Secretaria de Governo Digital (SGD); infrastructure operated by SERPRO</dd></div>
+        <div><dt>Founded / launched</dt><dd>Decreto 9.756 of Apr 11 2019; agencies required to migrate by Dec 31 2020</dd></div>
+        <div><dt>Business model</dt><dd>Tax-funded public infrastructure. The stated justification is cost: centralizing ~1,600 sites for an estimated R$100M/year saving, with <a href="https://www.gov.br/pt-br/sobre">624 domains folded in</a> so far (undated)</dd></div>
+        <div><dt>Scale anchor</dt><dd>175M registered Conta gov.br accounts — as of Mar 24 2026 (see Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Counts marked "census" are computed by Site Wise from artifacts it retrieved on 2026-09-17 — the bulk service dump, and the five subsite sitemaps that actually served. Sitemap-derived counts are lower bounds on the federation, not totals.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Registered Conta gov.br accounts</dt>
+          <dd>175M, of which 83.4M at the "Ouro" assurance level; up from 136.5M in Dec 2022 — as of Mar 24 2026. <a href="https://www.gov.br/gestao/pt-br/assuntos/noticias/2026/marco/gov-br-alcanca-a-marca-de-175-milhoes-de-usuarios">MGI announcement</a> <span class="evidence verified">verified</span> — but note that this URL, like every gov.br news item, currently returns the restricted-content gate described in the Probe Log, so the figure cannot be re-read at its source today.</dd>
+        </div>
+        <div>
+          <dt>Services in the bulk catalog dump</dt>
+          <dd>5,711 service records, spanning 240 distinct agencies — as of Sep 16 2026 (the dump's <code>Last-Modified</code>). Probe Log bulk-dump census <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Citizen ratings in the dump</dt>
+          <dd>4.86M ratings (2.39M positive, 2.47M negative — 49.1% positive); 88.9% of services carry at least one — as of Sep 16 2026. Probe Log bulk-dump census <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Service record depth</dt>
+          <dd>14,203 step records (mean 2.5 per service, every service has at least one), 23,994 keyword terms, 5,957 legislation references, and 16,804 delivery-channel records across 8 types (web 9,848, in-person 2,563, e-mail 2,095, mobile app 665, phone 508, postal 413). 76.6% of services are fully digital with a direct entry link, 69.6% require a gov.br login, 100% are free — as of Sep 16 2026. Probe Log bulk-dump census <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Sitemap-listed URLs reachable</dt>
+          <dd>191,476 across the only five retrievable subsite sitemaps (fazenda 87,129 / saude 63,582 / mcom 17,709 / root 14,248 / secom 8,808); 5 substantive of 52 subsites tested — as of Sep 17 2026. Probe Log sitemap census <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Modality mix and freshness of the census</dt>
+          <dd>76.8% HTML pages (147,077), 12.5% PDF (23,893), 8.2% images (15,784), 0.4% mp3 (794), 0.1% mp4 (278), plus 1,395 office/data files; PDFs are 53.8% of everything that is not a web page. <code>lastmod</code> coverage is 100%: 12.9% modified in 2026, 27.3% last touched in 2020 or earlier, oldest 2014 — as of Sep 17 2026. Probe Log census <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Content license</dt>
+          <dd>Creative Commons Attribution-NoDerivatives 3.0 Unported, via <code>&lt;a rel="license"&gt;</code> in the footer of <code>www</code>, <code>/saude</code> and <code>/fazenda</code>. <code>dados.gov.br</code> carries no CC footer; its OpenAPI spec names <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8777.htm">Decreto 8.777/2016</a> instead — as of Sep 17 2026. <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">CC BY-ND 3.0 deed</a>, Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt permissiveness</dt>
+          <dd>72 lines, 55 <code>Disallow</code> rules — 52 scoped to two subsites (<code>/mre</code>, <code>/ebserh</code>). Zero AI-crawler directives: no GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot or Applebot-Extended. As of Sep 17 2026. <a href="https://www.gov.br/robots.txt">robots.txt</a>, Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Traffic rank</dt>
+          <dd><code>www.gov.br</code> at #888 by Tranco, stable in the #881–#890 band across Sep 1–16 2026 — as of Sep 16 2026. <a href="https://tranco-list.eu/">Tranco</a>, queried via its API <span class="evidence verified">verified</span>. The apex returns no rank: <code>gov.br</code> is a public suffix covering every Brazilian government domain, so apex-keyed estimates do not measure this portal.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-17. Desktop Chrome user agent unless noted. The sitemap census fetched each <code>/&lt;orgao&gt;/pt-br/sitemap.xml.gz</code> across 52 candidate subsites, gunzipped it, and counted <code>&lt;loc&gt;</code> entries by extension and <code>&lt;lastmod&gt;</code> year; the dump census parsed the 41MB JSON in full.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe"><code>dig</code>, <code>whois</code>, <code>curl -s -D -</code> on <code>/pt-br</code></td><td data-label="Observation">Apex and <code>www</code> resolve to one A record, 161.148.164.31, owned by <code>SERVICO FEDERAL DE PROCESSAMENTO DE DADOS - SERPRO</code>, AS10954 — no commercial CDN in the path. <code>Server: Zope/(2.13.28, python 2.7.16, linux2) ZServer/1.1</code> with <code>&lt;meta name="generator" content="Plone"&gt;</code>, behind <code>Via: 1.1 varnish (Varnish/6.0)</code>. Also <code>X-Robots-Tag: noimageindex</code>, HSTS 1y, <code>X-Frame-Options: DENY</code>, CSP <code>frame-ancestors 'self'</code>. The <code>Expires</code> header is set to 2016.</td></tr>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe"><code>curl -sI</code> vs <code>curl -s</code> on <code>/pt-br</code></td><td data-label="Observation">HEAD returns 403 even with a Chrome user agent; GET returns 200 with the default <code>curl/8.x</code> agent and no other headers. The gate is the HTTP method, not the client identity — the inverse of the usual bot wall.</td></tr>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe"><code>curl -sL https://www.gov.br/robots.txt</code></td><td data-label="Observation">72 lines. One <code>Sitemap:</code> line, pointing at <code>/sitemap.xml.gz</code>. One named agent, <code>Yandex</code>, blocked from <code>/ebserh</code> and <code>/mre</code>. The other 52 <code>Disallow</code> rules are Plone view-URL patterns scoped to those same two subsites. Nothing about AI crawlers.</td></tr>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe">Sitemap retrieval and census, 52 subsites</td><td data-label="Observation"><code>/sitemap.xml.gz</code> — the one URL robots.txt advertises — returns 403, as does <code>/sitemap.xml</code>. Per-subsite paths do serve: 5 substantive, 10 stubs of 1–13 URLs, 33 HTTP 404, and 4 (mec, mre, mcti, planalto) answering HTTP 200 with an HTML bot-challenge body and <code>Set-Cookie: TS…</code>, the F5 BIG-IP signature, instead of XML. <code>receitafederal</code>, <code>inss</code>, <code>cgu</code> and <code>mj</code> serve a 200 at their root with no sitemap at all. Media is listed inline in the page urlset — no image or video sitemap namespace anywhere.</td></tr>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe"><code>curl https://api-servicos.estaleiro.serpro.gov.br/servicos-json</code></td><td data-label="Observation"><strong>HTTP 200, 41.1MB of JSON, no auth, no challenge, 9.8s</strong> to a plain research user agent — the complete service catalog, 5,711 records of 32+ fields. Carries <code>Last-Modified: Wed, 16 Sep 2026 15:08:54 GMT</code> and an <code>ETag</code>, so it is rebuilt at least daily and supports conditional GET. Served by <code>nginx/1.22.1</code>, not the Plone stack. Not in robots.txt and not linked from the portal; the URL appears only inside the Conecta catalog entry for the services API.</td></tr>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe">Bulk dump field census</td><td data-label="Observation">Per record: numeric <code>id</code>, <code>url</code> (the web slug), <code>orgao</code> with a linked-data URI into <code>estruturaorganizacional.dados.gov.br</code>, <code>etapas</code> (ordered steps carrying documents, costs and channels), <code>avaliacoes</code> (<code>{positivas, negativas}</code>), <code>legislacoes</code>, <code>palavrasChave</code>, <code>solicitantes</code>. 21 fields at 100% coverage; aggregates in Verified Metrics. The same records are reachable individually and unauthenticated at <code>servicos.gov.br/api/v1/servicos/simples/{id}</code>.</td></tr>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe">Structured-data sample: homepage and a <code>/pt-br/servicos/</code> page</td><td data-label="Observation">Both carry the same two site-wide JSON-LD blocks — an <code>Organization</code> with only <code>url</code> and <code>logo</code>, and a <code>WebSite</code> with a <code>SearchAction</code> template. The service page adds a two-item <code>BreadcrumbList</code> and nothing else: no <code>Service</code> or <code>GovernmentService</code> type, and no <code>og:</code> tags, though the homepage has them. Every field the dump carries is rendered as untyped HTML.</td></tr>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe">News items on two agency subsites</td><td data-label="Observation"><code>/governodigital/pt-br/noticias</code> and <code>/gestao/pt-br/assuntos/noticias</code> both return <strong>HTTP 200</strong> whose body is Plone's gate: "Conteúdo Restrito — É necessário autenticar para visualizar essa página." Non-news pages on the same subsites render normally. Brazil's general election falls in Oct 2026.</td></tr>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe"><code>dados.gov.br</code> API and spec</td><td data-label="Observation"><code>/api/3/action/package_list</code> and <code>/dados/api/publico/conjuntos-dados</code> both return 401 with an empty body. <code>/v3/api-docs</code> serves the OpenAPI spec without auth: a global <code>security</code> requirement over all 20 paths, via an <code>apiKey</code> header <code>chave-api-dados-abertos</code> issued from a logged-in dashboard. Its <code>info.license</code> names Decreto 8.777/2016.</td></tr>
+            <tr><td data-label="Date">2026-09-17</td><td data-label="Probe">Feeds, <code>X-Robots-Tag</code>, and a direct PDF</td><td data-label="Observation">The RSS endpoints return RSS 1.0/RDF, 100 items, with <code>dc:subject</code> tags, <code>dc:date</code> and a typed <code>dc:type</code> (<code>Serviço</code>, <code>Órgão</code>) — but <code>description</code>, <code>content:encoded</code> and <code>dc:rights</code> are empty on every item. <code>noimageindex</code> appears on the three portal pages tested but not on <code>/pt-br/servicos</code>, while the sitemaps publish image URLs. A 3.5MB PDF fetched clean: 200, no auth, no <code>X-Robots-Tag</code>. <code>/llms.txt</code> and <code>/.well-known/security.txt</code> both 404.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns. "Dump" is the unauthenticated <code>servicos-json</code> endpoint in the Probe Log.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Services, agencies, steps, channels, keywords, legislation refs — counts in Verified Metrics.</td>
+              <td data-label="Best legitimate path">The bulk dump — one 41MB GET, fully typed.</td>
+              <td data-label="Auth &amp; quota">None. No key, no quota, no rate limit hit.</td>
+              <td data-label="License / display">CC BY-ND 3.0: verbatim redistribution with attribution; no adapted versions.</td>
+              <td data-label="Freshness">Daily; <code>ETag</code> + <code>Last-Modified</code> make conditional GET cheap.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Ratings</td>
+              <td data-label="Objects &amp; est. count">4.86M citizen ratings on 88.9% of services (Verified Metrics).</td>
+              <td data-label="Best legitimate path">Dump only — not rendered on the service pages at all.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">CC BY-ND 3.0.</td>
+              <td data-label="Freshness">Counts only, no timestamps; diff dump snapshots to recover a rate.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">147K HTML pages in the census: agency pages, guidance, news. Federation total is open.</td>
+              <td data-label="Best legitimate path">Plain GET crawl — robots.txt permits it. Per-subsite <code>sitemap.xml.gz</code> where it exists, link-following elsewhere.</td>
+              <td data-label="Auth &amp; quota">None, but HEAD is refused; use GET.</td>
+              <td data-label="License / display">CC BY-ND 3.0.</td>
+              <td data-label="Freshness">12.9% touched in 2026; news is currently gated (Probe Log).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Documents</td>
+              <td data-label="Objects &amp; est. count">23,893 PDFs plus 1,395 office/data files — the bulk of non-HTML objects.</td>
+              <td data-label="Best legitimate path">Direct GET from sitemap <code>&lt;loc&gt;</code> entries.</td>
+              <td data-label="Auth &amp; quota">None; the sampled PDF served 3.5MB unchallenged.</td>
+              <td data-label="License / display">CC BY-ND 3.0.</td>
+              <td data-label="Freshness">Per-file <code>lastmod</code>; near-immutable once published.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">15,784 image URLs in the census.</td>
+              <td data-label="Best legitimate path">Direct GET; listed in the same urlset as pages.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Contested: CC BY-ND in the footer, but <code>X-Robots-Tag: noimageindex</code> on portal pages. See Open Questions.</td>
+              <td data-label="Freshness">Tied to the publishing page.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio / video</td>
+              <td data-label="Objects &amp; est. count">1,072 self-hosted files — a rounding error; the visible video estate lives on YouTube.</td>
+              <td data-label="Best legitimate path">Direct GET; YouTube API for the rest.</td>
+              <td data-label="Auth &amp; quota">None on gov.br.</td>
+              <td data-label="License / display">CC BY-ND 3.0 for self-hosted; YouTube terms otherwise.</td>
+              <td data-label="Freshness">Low volume, low churn.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Open datasets</td>
+              <td data-label="Objects &amp; est. count">Federal open-data catalog on <code>dados.gov.br</code>; count is open.</td>
+              <td data-label="Best legitimate path">The documented REST API — every path key-gated.</td>
+              <td data-label="Auth &amp; quota"><code>chave-api-dados-abertos</code> header from a logged-in dashboard.</td>
+              <td data-label="License / display">Decreto 8.777/2016, not CC BY-ND — a separate, more permissive regime.</td>
+              <td data-label="Freshness">Per-dataset; not measurable without a key.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where gov.br departs from the <a href="../../methodology.html">default platform assumptions</a>. It departs on nearly all of them.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The bulk path is open and the crawl is the obstacle</h4>
+          <p>The default assumption is that bulk access is the metered privilege and crawling the fallback. Here it is reversed: the crawl is obstructed while the dump is anonymous, complete and daily, advertised nowhere but inside a Conecta catalog entry. Nor is the obstruction defending anything — robots.txt names no AI crawler, there is no key to buy, and the content is CC-licensed. <span class="evidence inferred">inferred</span> The wall is unmaintained infrastructure and the dump a build artifact, not a published product. <em>Basis:</em> the 403 falls on the exact sitemap URL robots.txt advertises and the F5 challenge fires on sitemaps the platform itself generates; the dump is served by <code>nginx/1.22.1</code> while the portal answers as Zope/Plone, with no version envelope and a whole-file <code>Last-Modified</code>.</p>
+        </div>
+        <div>
+          <h4>License is the real constraint, and it points the wrong way</h4>
+          <p>CC BY-ND 3.0 permits verbatim copying and redistribution, including commercially, but forbids distributing adapted material. An index that stores and serves generated summaries, translations or rewritten answers produces exactly what NoDerivatives excludes; a snippet-and-link index is squarely permitted. Most platforms ban the copying and tolerate the summarizing — gov.br is the reverse. The open-data half of the property does not inherit this: <code>dados.gov.br</code> runs on Decreto 8.777/2016 instead, so two arms of the same government carry different reuse regimes.</p>
+        </div>
+        <div>
+          <h4>Identifiers &amp; joins</h4>
+          <p>The web surface has no ID — the slug is the key, and Plone view suffixes alias it (<code>{path}</code>, <code>{path}/view</code>, <code>{path}/@@download/file</code>). The dump supplies what the pages lack: a numeric <code>servicoId</code>, a SIORG agency code, and an <code>orgao.id</code> that dereferences into the federal organizational-structure dataset. Key on those, not URLs. The dump's <code>url</code> field joins back to the crawled page, which is what makes the two corpora composable. The missing join is document-to-service: a PDF sits in an agency's folder tree, not under the service it belongs to, so that link must come from the referring page's anchor text.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit &amp; query shape</h4>
+          <p>Two units. The <strong>service</strong> is the high-value unit — 5,711 records that answer a citizen's actual question, each already decomposed into ordered steps with their own documents, costs and channels, so a step is independently retrievable. The <strong>document</strong> is the high-volume unit: 23,893 PDFs holding the regulations and forms the records merely cite. Indexing only the HTML gets neither. Queries here are task-shaped, not topic-shaped — how to obtain, renew or appeal something, named by the document (CPF, CNH, INSS) rather than the agency — and the right answer is one service record plus its entry link, which 76.6% of them carry as a field.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Two clocks. The dump moves daily and supports conditional GET, so the structured corpus costs one request per day. The HTML <code>lastmod</code> coverage is complete and appears genuine — the distribution spreads across 2014–2026 rather than collapsing onto a build date — so it can drive recrawl, and it exposes a dormant quarter untouched since 2020. Recrawl by <code>lastmod</code> age; treat that quarter as archival.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>No spam surface: no user-generated content, no ranking incentive, no commercial submitters. The quality signal is the ratings instead — 49.1% positive is a usable per-service prior, and one the site never shows a visitor. The real defects are staleness and cross-agency duplication of the same guidance; prefer the publishing agency's copy and trust <code>lastmod</code>.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>On-site search renders client-side from a SERPRO recommendation service (<code>api.recomgov…serpro.gov.br</code>, Probe Log), so the search endpoint is not an enumeration path. <span class="evidence inferred">inferred</span> External search carries most discovery. <em>Basis:</em> the site-wide <code>WebSite</code> JSON-LD ships a <code>SearchAction</code> template for <code>/search?SearchableText=</code>, which exists to hand query handling to external engines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the service record from the dump, with its steps as retrievable sub-units; the PDF corpus as a second unit joined by referring-page anchors.</li>
+        <li><strong>Primary keys &amp; joins:</strong> numeric <code>servicoId</code> as the primary key; the record's <code>url</code> field as the join to crawled HTML; SIORG code and the <code>estruturaorganizacional.dados.gov.br</code> URI as the agency key; canonical paths with Plone view suffixes stripped for the page corpus.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The bulk dump — one anonymous 41MB GET for the whole structured catalog including ratings; nothing else is close. 2) <code>servicos.gov.br/api/v1/</code> per-record reads between dumps. 3) Per-subsite <code>sitemap.xml.gz</code> for the page and document corpus — free and <code>lastmod</code>-complete, but only 5 of 52 subsites. 4) Plain GET link-following for the 33+ without one. 5) <code>dados.gov.br</code> for datasets, after registering a key.</li>
+        <li><strong>Recrawl cadence:</strong> conditional GET on the dump daily — one request keeps 5,711 records current. HTML by <code>lastmod</code> age: touched within a year weekly, the pre-2020 quarter quarterly. PDFs once, then only on <code>lastmod</code> change.</li>
+        <li><strong>Derivatives to generate:</strong> OCR and layout extraction over the 23,893 PDFs, where the regulatory text actually lives; the <code>GovernmentService</code> JSON-LD the publisher never emits, built from dump fields; a document-to-service link table from anchor text; quality priors from the ratings. Keep these internal and serve verbatim snippets — generated summaries sit outside the CC BY-ND grant.</li>
+        <li><strong>Demo to build:</strong> a dump-vs-page differ — fetch a service both ways and show, field by field, what the JSON carries that the rendered page does not, with the 4.86M ratings as the headline gap.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The best path is undocumented, so it promises nothing.</strong> The dump is not in robots.txt, not linked from the portal, and has no version envelope. It can move or close with no deprecation notice. Monitor it as infrastructure, not an API, and keep the sitemap path warm as a fallback.</li>
+        <li><strong>The license constrains the product, not just the crawl.</strong> CC BY-ND 3.0 is declared site-wide, so the exposure sits in what an index serves rather than in what it fetches — see Retrieval Notes.</li>
+        <li><strong>A whole corpus can go dark behind HTTP 200.</strong> Every gov.br news item currently returns a success status with an authentication gate in the body (Probe Log), in the run-up to Brazil's Oct 2026 general election. A crawler trusting status codes will index thousands of gate pages as content and silently lose the news corpus. Validate bodies, not statuses.</li>
+        <li><strong>The open-data half is closing while the website stays open.</strong> Both <code>dados.gov.br</code> endpoints now require a key, documented as a global requirement over all 20 paths — the structured surface trending away from anonymous access as the HTML surface stays permissive.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>A re-platform would void every path assumption here.</strong> <em>Basis:</em> the server banner reports Zope 2.13.28 on Python 2.7.16, a runtime that reached end of life in 2020; the <code>@@</code> views, <code>search_rss</code> endpoints and <code>sitemap.xml.gz</code> naming this report depends on are all Plone-specific and would not survive it.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d9756.htm">Decreto 9.756/2019</a> — institutes the portal; migration deadlines in arts. 3–6.</li>
+        <li><a href="https://www.gov.br/pt-br/sobre">gov.br "Sobre"</a> — 624 domains, ~1,600-site target, R$100M/year saving (undated).</li>
+        <li><a href="https://www.gov.br/gestao/pt-br/assuntos/noticias/2026/marco/gov-br-alcanca-a-marca-de-175-milhoes-de-usuarios">MGI announcement, Mar 24 2026</a> — 175M accounts, 83.4M at Ouro level.</li>
+        <li><a href="https://www.gov.br/conecta/catalogo/apis/api-de-servicos">Conecta: Consulta de Serviços Públicos</a> — the services API and the bulk dump URL.</li>
+        <li><a href="https://dados.gov.br/v3/api-docs">dados.gov.br OpenAPI spec</a> — API-key requirement and Decreto 8.777/2016 as license.</li>
+        <li><a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">CC BY-ND 3.0 deed</a> — the license linked from the footer.</li>
+        <li><a href="https://www.gov.br/robots.txt">gov.br robots.txt</a>; <a href="https://tranco-list.eu/">Tranco</a> — <code>www.gov.br</code> rank for Sep 1–16 2026.</li>
+        <li>Local probes on 2026-09-17, detailed in the Probe Log, plus Python censuses over the five retrieved sitemaps and the full 41MB dump.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The dump is a build artifact, and the access wall is unmaintained infrastructure rather than policy. <em>Basis:</em> the dump is served by <code>nginx/1.22.1</code> while the portal answers as Zope/Plone, with no version envelope; the 403 falls on the exact sitemap URL robots.txt advertises, and the F5 challenge fires on sitemaps the platform generates.</li>
+        <li>External search carries most discovery. <em>Basis:</em> the site-wide <code>WebSite</code> JSON-LD ships a <code>SearchAction</code> template while on-site results render client-side from a separate SERPRO service.</li>
+        <li>A re-platform would void this report's path assumptions. <em>Basis:</em> <code>Server: Zope/(2.13.28, python 2.7.16, linux2)</code> observed 2026-09-17, with Plone-specific <code>@@</code> views and <code>search_rss</code> throughout.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total indexable URL count across the federation — the 191,476 census covers 5 of 52 subsites tested. Closeable by link-crawling the 33 subsites that serve no sitemap and counting distinct canonical paths.</li>
+        <li>Number of datasets on <code>dados.gov.br</code> — the portal renders client-side and the counting endpoint is key-gated. Closeable by obtaining a <code>chave-api-dados-abertos</code> and reading the pagination total from <code>/dados/api/publico/conjuntos-dados</code>.</li>
+        <li>Whether images are meant to be indexed — <code>X-Robots-Tag: noimageindex</code> on portal pages contradicts 15,784 image URLs published in the sitemaps. Closeable by asking the SGD, or by testing whether those images appear in Google Images.</li>
+        <li>When the news gate lifts, and whether it is in fact electoral — the pages return 200 with an auth body and no explanatory notice. Closeable by re-probing the same two news indexes after Brazil's Oct 2026 election.</li>
+        <li>The as-of date for "624 domains consolidated" — the page carries no date stamp. Closeable from a Wayback capture series of <code>/pt-br/sobre</code>.</li>
+        <li>Whether the dump has a documented owner or refresh guarantee — it appears in no developer documentation found. Closeable by asking the SGD, or by sampling <code>Last-Modified</code> daily to establish the real cadence.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
