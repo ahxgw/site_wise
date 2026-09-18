@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>character.ai Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-09-18</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>character.ai</h1>
+      <p class="lede">Character.AI publishes a 280K-URL sitemap and an unauthenticated JSON API for its character catalog, then bans all automated extraction in its terms.</p>
+      <div class="tag-row">
+        <span class="tag">AI Companion</span>
+        <span class="tag">UGC</span>
+        <span class="tag">Roleplay</span>
+        <span class="tag">Character Graph</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Character.AI is a UGC platform whose unit of content is a <strong>Character</strong>: a name, a persona description, and a hidden definition that conditions a chat model. Users create them, others chat with them, and the chats stay private. Founded November 2021 by two ex-Google researchers, the company sold Google a $2.7B non-exclusive technology licence in August 2024 and lost both founders to Google DeepMind in the same deal; it remains independently owned (see Verified Metrics). Three things make it unusual for an index builder. The retrievable object is a <em>persona card</em>, not a document — the generative payload behind it is never served. The corpus is legally fragmented: the terms assign each Character to its creator, not the platform. And the crawl surface contradicts itself — <code>robots.txt</code> allows every AI crawler by omission while the terms forbid automated collection outright. <span class="evidence inferred">inferred</span> That permissiveness is SEO neglect, not an open-data stance. <em>Basis:</em> the file is 7 lines with a single <code>User-agent: *</code> group and its sitemap has not regenerated since 2026-06-30 (Probe Log), against an explicit anti-scraping clause in the terms (Verified Metrics).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>character.ai</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://character.ai/">https://character.ai/</a></dd></div>
+        <div><dt>Category</dt><dd>AI companion / character roleplay, user-generated</dd></div>
+        <div><dt>Related hosts</dt><dd><code>characterai.io</code> (avatar CDN), <code>policies.character.ai</code>, <code>plus.character.ai</code> and <code>neo.character.ai</code> (legacy/app APIs), <code>blog.character.ai</code></dd></div>
+        <div><dt>Owner</dt><dd>Character Technologies, Inc. — independent; CEO Karandeep Anand since June 2025</dd></div>
+        <div><dt>Founded / launched</dt><dd>Founded November 2021 by Noam Shazeer and Daniel De Freitas; public beta September 16 2022</dd></div>
+        <div><dt>Business model</dt><dd>Consumer subscription (c.ai+) plus display advertising; no paid API tier</dd></div>
+        <div><dt>Scale anchor</dt><dd>280K character URLs in the public sitemap, as of 2026-09-18 (Probe Log census)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Live character count, comment volume and current MAU have no sourced figure and live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Public sitemap census</dt>
+          <dd>280,000 character URLs across 28 shards of exactly 10,000, plus 40 non-character URLs — as of 2026-09-18. Counted by Site Wise from the sitemap index and its children (Probe Log); shards 1 and 28 share zero hashes. <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Sitemap staleness</dt>
+          <dd>Every shard, and all 10,000 <code>lastmod</code> values in each of shards 1 and 28, reads 2026-06-30 — 80 days stale at probe time, 2026-09-18 (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Fields per character, unauthenticated</dt>
+          <dd>34 fields from <code>/api/trpc/character.info</code> with no credentials, including <code>upvotes</code>, <code>created</code>, <code>updated</code> and lifetime chat count — as of 2026-09-18 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Corpus scale, independent census</dt>
+          <dd>2.1M English-language character greetings from ~1M creators, collected for a study submitted 2025-05-19. <a href="https://arxiv.org/abs/2505.13354">Lee &amp; Joseph, arXiv:2505.13354</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Engagement per character, sampled</dt>
+          <dd>Across 15 sampled public characters: lifetime interactions median 1.5M, min 241K, max 42.6M; upvotes median 2.2K, max 24.9K — as of 2026-09-18, read from <code>participant__num_interactions</code> and <code>upvotes</code> (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Google licensing deal</dt>
+          <dd>$2.7B non-exclusive technology licence, August 2024; both co-founders and ~30 researchers moved to Google DeepMind. Character.AI itself was not acquired. <a href="https://www.bloomberg.com/news/articles/2024-08-02/character-ai-co-founders-hired-by-google-in-licensing-deal">Bloomberg</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Venture funding</dt>
+          <dd>~$193M total: ~$43M seed (2021) and $150M Series A at ~$1B valuation, March 2023. <a href="https://en.wikipedia.org/wiki/Character.ai">Wikipedia, citing contemporaneous reporting</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Under-18 chat removal</dt>
+          <dd>Open-ended chat withdrawn from under-18 users no later than 2025-11-25, announced 2025-10-29; interim cap two hours/day; age assurance built in-house plus Persona. <a href="https://blog.character.ai/u18-chat-announcement/">Character.AI blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Terms: automated access</dt>
+          <dd>"you will not engage in or use any data mining, robots, scraping or similar automated data gathering or extraction methods" — ToS last updated 2025-08-27, read from the 2026-05-29 archive snapshot. <a href="https://policies.character.ai/tos">policies.character.ai/tos</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Terms: who owns a Character</dt>
+          <dd>"as between you and Character.AI, you own all rights in that Character" — creators also grant Character.AI a perpetual, irrevocable, <em>sublicensable and transferable</em> licence. Same ToS. <a href="https://policies.character.ai/tos">policies.character.ai/tos</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made 2026-09-18 (see the <a href="../../methodology.html">probe playbook</a>). DNS was attempted and discarded: the research host's resolver returned a different implausible address for <code>character.ai</code> on each call, so no CDN claim rests on it — that evidence comes from live response headers instead.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-09-18</td><td data-label="Probe"><code>curl -sL https://character.ai/robots.txt</code></td><td data-label="Observation">7 lines, 159 bytes. One <code>User-agent: *</code> group disallowing <code>/search</code>, <code>/__/auth/</code>, <code>/user/settings</code> and <code>/*?*</code> (all query strings), plus a <code>Sitemap:</code> pointer. Zero directives for GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot or Applebot-Extended — every AI crawler allowed by omission.</td></tr>
+            <tr><td data-label="Date">2026-09-18</td><td data-label="Probe"><code>curl -sI https://character.ai/</code></td><td data-label="Observation">HTTP 403 from <code>server: cloudflare</code> (<code>cf-ray</code> present, <code>__cf_bm</code> cookie set). Retried with a Chrome UA and the Googlebot UA: 403 both times. The wall is inverted — homepage closed, object pages open (next rows).</td></tr>
+            <tr><td data-label="Date">2026-09-18</td><td data-label="Probe">Sitemap census, index → children</td><td data-label="Observation">28 child sitemaps, all <code>lastmod</code> 2026-06-30. Shards 1, 5, 14, 22, 28 fetched: 10,000 URLs apiece (shard 1 carries 40 extra). Shard 28 being exactly full indicates a cap, not a complete census. 37 entries point at <code>/sitemap/characters_&lt;letter&gt;</code>; <code>_a</code>, <code>_m</code> and <code>_z</code> all 404 — the sitemap ships dead links.</td></tr>
+            <tr><td data-label="Date">2026-09-18</td><td data-label="Probe">Structured-data sample, 15 character pages</td><td data-label="Observation">All 15 returned HTTP 200 to plain <code>curl</code> — no UA gate at object level. <code>schema.org/Person</code> JSON-LD on only 4/15, per-object <code>og:title</code> on the same 4/15; the other 11 serve site-wide defaults. No <code>&lt;title&gt;</code> and no <code>rel=canonical</code> on any of the 15.</td></tr>
+            <tr><td data-label="Date">2026-09-18</td><td data-label="Probe">Hydration payload, same 15 pages</td><td data-label="Observation">The Next.js <code>__NEXT_DATA__</code> blob carries the full 34-field record on 15/15, server-rendered, no JS needed. Within it: <code>name</code>, <code>title</code>, <code>avatar_file_name</code>, <code>created</code>, <code>updated</code>, <code>upvotes</code> 15/15; <code>description</code> 10/14; <code>greeting</code> 0/14 despite <code>has_definition: true</code> on 9/14.</td></tr>
+            <tr><td data-label="Date">2026-09-18</td><td data-label="Probe">Public API sample, <code>/api/trpc/*</code></td><td data-label="Observation">Undocumented tRPC surface answers unauthenticated. <code>character.about</code> maps an 8-char URL hash to a 43-char <code>external_id</code>; <code>character.info</code> then returns the full record. Ran the two-hop chain over 10 sampled hashes: 20/20 HTTP 200, no auth, no 429, ~1 req/s. Malformed input returns a Zod error naming the expected parameter, so the schema is self-describing. Only <code>about</code>, <code>info</code> and <code>categories</code> exist; <code>character.search</code>, <code>character.comments</code> and <code>user.info</code> 404.</td></tr>
+            <tr><td data-label="Date">2026-09-18</td><td data-label="Probe">Adjacent surfaces</td><td data-label="Observation"><code>/profile/&lt;username&gt;</code> returns 200 and hydrates a creator record — follower counts, bio, and that creator's characters with <code>external_id</code> already resolved (16 for the creator sampled); profiles appear nowhere in the sitemap. <code>llms.txt</code> and <code>/.well-known/ai-plugin.json</code> 404. <code>ads.txt</code> is present (55 lines: AdSense DIRECT plus InMobi, Teads/Outbrain and ~15 resellers). <code>/tos</code> is a 10KB JS shell with 58 characters of visible text on both hosts — the licence terms are not server-rendered. <code>plus.character.ai</code> serves a reCAPTCHA Enterprise interstitial; <code>neo.character.ai</code> 403s. Avatar CDN serves WebP at sizes 80/200/400; 800 returns HTTP 400.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third party may display, how fast it churns. There is no official developer API; every path below is either the public HTML surface or the internal tRPC endpoints the site's own pages call.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Character name, title, description. 280K in the sitemap; ~2.1M greetings / 1M creators by independent census (Verified Metrics). Definitions and greetings withheld.</td>
+              <td data-label="Best legitimate path"><code>character.info</code> tRPC, keyed by <code>external_id</code>; the sitemap supplies only the 8-char hash, so <code>character.about</code> is a required first hop.</td>
+              <td data-label="Auth &amp; quota">None enforced at sample scale. No published quota, and no API key exists to buy one.</td>
+              <td data-label="License / display">Creator owns the Character; Character.AI holds a sublicensable licence. ToS bans automated gathering with no crawler carve-out.</td>
+              <td data-label="Freshness">Per-record <code>updated</code>; sampled characters span 2023–2026 creation dates.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">One avatar per character (WebP, 15/15 in sample); generated OG cards; optional backgrounds (0/14 populated).</td>
+              <td data-label="Best legitimate path"><code>avatar_file_name</code> resolved against <code>characterai.io/i/&lt;size&gt;/static/avatars/</code>; OG cards at <code>/api/og/chat/&lt;external_id&gt;.png</code>.</td>
+              <td data-label="Auth &amp; quota">None; unauthenticated GET. Sizes capped at 400px (Probe Log).</td>
+              <td data-label="License / display">Same ToS position. Many avatars depict third-party characters; rights are creator-asserted, not cleared.</td>
+              <td data-label="Freshness">Path is date-stamped (<code>uploaded/YYYY/M/D/</code>); changes only on character edit.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Feed videos and Character-generated scenes, promoted as the replacement surface for teen users (Verified Metrics).</td>
+              <td data-label="Best legitimate path">No public metadata endpoint found; absent from both the sitemap and the tRPC surface probed.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: no documented reuse path.</td>
+              <td data-label="Freshness">Open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio</td>
+              <td data-label="Objects &amp; est. count">Voice bindings: <code>voice_id</code> / <code>default_voice_id</code> UUIDs in the record (1/14 populated). Generated speech is per-session.</td>
+              <td data-label="Best legitimate path">IDs are exposed but no voice-catalog endpoint resolves them; synthesis is bound to a live chat session.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: voice assets carry no visible licence terms.</td>
+              <td data-label="Freshness">Session-scoped; nothing persistent to crawl.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments</td>
+              <td data-label="Objects &amp; est. count">Per-character threads; <code>comments_enabled: true</code> on 12/14 sampled, so the corpus is broad. Volume: open.</td>
+              <td data-label="Best legitimate path">None found. <code>character.comments</code> and <code>comment.list</code> both 404; the legacy host is reCAPTCHA-walled (Probe Log).</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">Open: no path, so no display question arises.</td>
+              <td data-label="Freshness">Open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Characters, creators (username, follower counts, authored list), lorebooks (<code>lorebook_id</code>, 0/14 populated), voices, categories.</td>
+              <td data-label="Best legitimate path">Characters via tRPC; creators via <code>/profile/&lt;username&gt;</code> hydration, which returns their characters with <code>external_id</code> pre-resolved — one hop instead of two.</td>
+              <td data-label="Auth &amp; quota">None enforced at sample scale.</td>
+              <td data-label="License / display">Counts and titles are factual metadata; persona text is the creator's copyright.</td>
+              <td data-label="Freshness">Follower counts churn continuously; the authored list changes on publish.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where character.ai differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Four namespaces per character: the 8-char <code>short_hash</code> in the URL, a 43-char base64url <code>external_id</code> used by the API and OG images, an <code>identifier</code> of the form <code>id:&lt;uuid&gt;</code>, and a separate <code>lorebook_id</code>. Only the first two are externally useful and neither is derivable from the other — the <code>character.about</code> hop exists purely to bridge them. Slugs are decorative and drift: one sampled character is <code>/tjVpzAWl/bl-best-friend</code> in the sitemap but <code>/tjVpzAWl/river-best-friend-sleepover</code> in its own JSON-LD. Key on the hash, treat the slug as a label.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>persona card</strong> — name, title, description, avatar, creator, engagement counts. It is not a document and has no body: the definition that makes the character behave is flagged by <code>has_definition</code> but never served, and <code>greeting</code> came back empty on 14/14. The index retrieves an <em>invitation to a conversation</em>, and the conversation is not in the corpus.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Everything hangs off <code>external_id</code>: avatar path, OG card, comment thread, voice binding. The creator join is <code>user__username</code>, resolving directly to <code>/profile/&lt;username&gt;</code> — a stable, reversible edge that makes the creator graph fully traversable even though no profile appears in the sitemap.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Inverted from the usual case: the HTML head is the <em>least</em> reliable source and the hydration payload the most — JSON-LD and per-object <code>og:title</code> render on 4/15 sampled pages while <code>__NEXT_DATA__</code> is complete on 15/15. <span class="evidence inferred">inferred</span> Head metadata is injected client-side and loses a race against response flush. <em>Basis:</em> every meta tag carries Next.js's <code>data-next-head</code> attribute, and the pages missing per-object tags serve identical site-wide defaults rather than nothing.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>The sitemap is not a freshness signal — all 280K entries share one <code>lastmod</code> 80 days stale (Verified Metrics). Per-record <code>updated</code> is the only usable timestamp. Content and engagement move on different clocks: persona text is written once and rarely edited, while the interaction counter climbs continuously.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>The dominant quality problem is rights, not spam. <span class="evidence inferred">inferred</span> Unlicensed third-party IP is the majority of the indexable corpus, not a tail. <em>Basis:</em> 8 of 15 characters drawn at fixed intervals from the sitemap are identifiable franchise or real-person personas — Gojo Satoru, Katsuki Bakugo, Shuichi Saihara, The Hashiras, The Avangers, a Wuthering Waves character, and two Stray Kids member personas.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><code>robots.txt</code> disallows <code>/search</code> and, via <code>Disallow: /*?*</code>, every query-string URL — discovery is entirely internal and no results surface is indexable. External engines can rank characters only on the thin persona card, which is why on-site browse carries the traffic.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Queries are character-name and scenario lookups ("gojo satoru c.ai", "enemies to lovers bot"), not informational. <span class="evidence inferred">inferred</span> The site treats itself as a destination rather than a search target. <em>Basis:</em> the homepage 403s even to the Googlebot UA while object pages return 200 (Probe Log), and the sitemap has gone 80 days without regeneration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the persona card, keyed by <code>external_id</code>, with the creator record as parent and engagement counters as a fast-refresh sub-record.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>external_id</code> (canonical) ↔ <code>short_hash</code> (URL); creator edge <code>user__username</code> → <code>/profile/&lt;username&gt;</code>; media via <code>avatar_file_name</code> → <code>characterai.io</code>.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>Creator profiles</strong> — highest yield per request: one fetch returns a creator plus their whole authored set with <code>external_id</code> already resolved, skipping the <code>character.about</code> hop, and reaches characters the sitemap omits. Seed from usernames harvested during (2). 2) <strong>Sitemap → tRPC chain</strong> — complete and ordered, but two requests per character and capped at 280K. 3) <strong>Character HTML</strong> — same record in one request, at ~320KB versus ~2KB of JSON; use only where the API is unavailable. 4) <strong>Head metadata</strong> — do not build on it, 4/15 coverage.</li>
+        <li><strong>Recrawl cadence:</strong> persona text monthly (write-once in practice); engagement counters weekly for the head of the distribution and never for the tail; creator profiles weekly; sitemap re-census monthly, purely to detect whether the 2026-06-30 freeze breaks.</li>
+        <li><strong>Derivatives to generate:</strong> franchise/entity linking from persona names to a canonical IP registry — the highest-value derivative, since it turns a name soup into a rights-aware, browsable facet; avatar embeddings for near-duplicate detection across re-uploads of the same character; creator-to-franchise affinity for ranking.</li>
+        <li><strong>Demo to build:</strong> a franchise-collision browser — resolve the sampled personas to their source franchises and show how many distinct creators publish a character of the same name, quantifying the duplication the <code>short_hash</code> namespace hides.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The access path is undocumented, not licensed.</strong> The tRPC endpoints answer without auth, but the ToS bans "data mining, robots, scraping or similar automated data gathering" with no search-engine carve-out and forbids evading an IP block. Building on this corpus is a terms risk, not a technical one, and the permissive <code>robots.txt</code> does not cure it.</li>
+        <li><strong>No single party can license the corpus cleanly.</strong> Creators own their Characters; Character.AI holds only a sublicensable licence (Verified Metrics). A bulk deal with the company is legally possible but would pass through rights most creators never held, given the franchise concentration measured above.</li>
+        <li><strong>The endpoints are internal and unversioned.</strong> One Next.js refactor retires <code>character.about</code> or reshapes the hydration blob, with no deprecation notice because nothing was published. The 404s on <code>character.search</code> and <code>character.comments</code> show the surface is already narrower than the client's own needs.</li>
+        <li><strong>Ownership is unsettled.</strong> The company was reported in August 2025 to be weighing a sale or new round amid rising costs. <a href="https://www.pymnts.com/news/artificial-intelligence/2025/character-ai-explores-sale-or-new-funding-amid-rising-costs/">PYMNTS</a> <span class="evidence verified">verified</span> An acquirer would likely close the open surface before monetizing it.</li>
+        <li><strong>Safety regulation shrinks the corpus.</strong> The under-18 withdrawal removed a user class rather than moderating it (Verified Metrics). Further pressure plausibly deletes character classes outright, making the deletion rate policy-driven and unpredictable rather than organic.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://policies.character.ai/tos">Character.AI Terms of Service</a>, last updated 2025-08-27 — anti-scraping clause and Character ownership; read via the 2026-05-29 Wayback snapshot because the live page renders client-side.</li>
+        <li><a href="https://blog.character.ai/u18-chat-announcement/">Character.AI blog, 2025-10-29</a> — under-18 chat withdrawal, dates and age assurance.</li>
+        <li><a href="https://arxiv.org/abs/2505.13354">Lee &amp; Joseph, arXiv:2505.13354</a> — independent corpus census, 2.1M greetings / ~1M creators.</li>
+        <li><a href="https://www.bloomberg.com/news/articles/2024-08-02/character-ai-co-founders-hired-by-google-in-licensing-deal">Bloomberg</a> — August 2024 Google licensing deal.</li>
+        <li><a href="https://www.pymnts.com/news/artificial-intelligence/2025/character-ai-explores-sale-or-new-funding-amid-rising-costs/">PYMNTS</a> — 2025 sale/funding exploration.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Character.ai">Wikipedia: Character.ai</a> — founding, beta launch, funding history.</li>
+        <li><a href="https://github.com/api-evangelist/character-ai">API Evangelist profile</a> — corroborates that no official public developer API is published.</li>
+        <li>Local probes on 2026-09-18: <code>curl</code> against robots.txt, the homepage, the sitemap index and five shards, 15 character pages, the tRPC endpoints, a creator profile, and the avatar CDN (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The permissive <code>robots.txt</code> is SEO neglect, not an open-data stance. <em>Basis:</em> 7-line file, one user-agent group, sitemap frozen at 2026-06-30, against an explicit anti-scraping clause in the terms.</li>
+        <li>Head metadata is injected client-side and loses a race against response flush. <em>Basis:</em> all meta tags carry <code>data-next-head</code>; the 11/15 pages without per-object tags serve identical site-wide defaults rather than omitting the tags.</li>
+        <li>Unlicensed third-party IP is the majority of the indexable corpus. <em>Basis:</em> 8 of 15 interval-sampled characters are identifiable franchise or real-person personas.</li>
+        <li>The 280K sitemap is a cap rather than a complete census. <em>Basis:</em> five sampled shards each hold exactly 10,000 entries, the last one included; a complete census would leave the final shard partial.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many public characters actually exist? Closed by walking the creator graph from profile pages to exhaustion and counting distinct <code>external_id</code> values.</li>
+        <li>What is the real rate limit on the tRPC endpoints? 20 sequential requests at ~1 req/s drew no 429. Closed by a controlled ramp measuring the first 429 and its reset header, run with the operator's consent given the ToS position.</li>
+        <li>How large is the comment corpus, and is any endpoint reachable? Closed by capturing the network trace of a logged-in session opening a comment thread.</li>
+        <li>What is current official MAU? The last company-confirmed figure predates the under-18 withdrawal and circulating numbers are third-party estimates. Closed by a company disclosure or a funding announcement restating it.</li>
+        <li>Does a licensed bulk path exist privately? No public API and no partner documentation. Closed by a direct partnerships enquiry.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
