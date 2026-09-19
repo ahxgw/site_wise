@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grok.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-09-19</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>grok.com</h1>
+      <p class="lede">grok.com publishes seven crawlable pages holding 356 characters of text; its real corpus is UUID-keyed shared conversations, index-allowed but body-withheld.</p>
+      <div class="tag-row">
+        <span class="tag">AI Assistant</span>
+        <span class="tag">Generative</span>
+        <span class="tag">Subscription</span>
+        <span class="tag">Zero-Corpus Host</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Grok is SpaceXAI's consumer AI assistant; <code>grok.com</code> is its web front door, alongside mobile apps, an X integration, and the xAI API. SpaceX acquired xAI in February 2026, listed on Nasdaq as SPCX on 2026-06-12, and rebranded the AI unit SpaceXAI in July 2026. Revenue comes from four Grok tiers, API access, data licensing, and X advertising.</p>
+      <p>For an index builder the site inverts the usual problem: there is almost nothing to crawl, because grok.com generates content on demand instead of hosting a corpus. Its one public object class is the <strong>shared conversation</strong> — a user-triggered permalink to a private chat, explicitly marked <code>index, follow</code>, whose body is withheld from crawlers. <span class="evidence inferred">inferred</span> The rebrand is unfinished in the site's own metadata, so name-based entity resolution will split. <em>Basis:</em> every page description reads "built by SpaceXAI" while the homepage JSON-LD <code>creator</code> node still names "xAI" (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>grok.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://grok.com/">https://grok.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Consumer AI assistant (chat, image/video generation, voice)</dd></div>
+        <div><dt>Related hosts</dt><dd><code>cdn.grok.com</code>, <code>assets.grokusercontent.com</code> (user content), <code>x.ai</code> (legal), <code>docs.x.ai</code> / <code>api.x.ai</code> (API), <code>grokipedia.com</code> (sibling corpus)</dd></div>
+        <div><dt>Owner</dt><dd>Space Exploration Technologies Corp. (Nasdaq: SPCX); AI unit rebranded SpaceXAI, July 2026</dd></div>
+        <div><dt>Founded / launched</dt><dd>xAI founded July 2023; <code>grok.com</code> launched 2024; acquired by SpaceX February 2026</dd></div>
+        <div><dt>Business model</dt><dd>Four Grok tiers (basic, SuperGrok Lite, SuperGrok, SuperGrok Heavy), metered API, data licensing, X advertising</dd></div>
+        <div><dt>Scale anchor</dt><dd>117M MAUs used Grok's AI features as of 2026-03-31 (see Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. A grok.com-only traffic number and the size of the shared-conversation corpus have no sourced figure and live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Grok AI users</dt>
+          <dd>~117M MAUs used Grok's AI features as of 2026-03-31, up from ~89M at 2025-12-31, within ~550M combined Grok + X MAUs and ~1.3B trailing-twelve-month accounts. Spans grok.com, the apps, X and the API — not grok.com alone. <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm">SpaceX 424B4 prospectus, 2026-06-12</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Crawlable surface</dt>
+          <dd>7 reachable sitemap pages carry 3.72MB of HTML and <strong>356 characters</strong> of server-rendered text between them — 0.009% of delivered bytes; 96–99% of each response is script. Measured 2026-09-19 (Probe Log). <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Sitemap staleness</dt>
+          <dd>8 URLs, no index, every <code>lastmod</code> 2025-09-15 — 369 days stale at probe time. One of the eight, <code>/highlights</code>, returns HTTP 404 (Probe Log). <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Shared conversation: payload and directive</dt>
+          <dd>A live share link yields a 65-character model-written title, a description of <strong>exactly 100 characters</strong> truncated mid-word, and 91 characters of visible body text; the transcript is absent from the HTML. It serves <code>robots: index, follow</code> to both a browser UA and Googlebot with no <code>X-Robots-Tag</code>, while an unavailable share serves <code>noindex, nofollow, noarchive, nosnippet, noimageindex</code> — the restrictive directive is the error state, not the policy. 2026-09-19 (Probe Log). <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Shared chats indexed, 2025 incident</dt>
+          <dd>More than 370K Grok share URLs in Google's index, on Google's own estimate, reported 2025-08-20; transcripts included medical questions and at least one password. <a href="https://www.forbes.com/sites/iainmartin/2025/08/20/elon-musks-xai-published-hundreds-of-thousands-of-grok-chatbot-conversations/">Forbes</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Edge AI-crawler block</dt>
+          <dd>Of 14 UAs tested against <code>/plans</code> — a path <code>robots.txt</code> explicitly allows AI crawlers — exactly 3 get HTTP 403 "Your request was blocked.": GPTBot, ClaudeBot, CCBot. The other 11, including PerplexityBot, ChatGPT-User, Google-Extended and Applebot-Extended, get 200. Stable across 3 rounds, 2026-09-19 (Probe Log). <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Sibling corpus, for contrast</dt>
+          <dd><code>grokipedia.com</code> publishes ~5.86M article URLs under a 2-line permissive <code>robots.txt</code>: an off-host index of 235 shards, of which shards 1, 50, 120, 200 and 234 each hold exactly 25,000 URLs and shard 235 holds 7,612. Counted by probe on 2026-09-19. <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>grok.com tracking litigation</dt>
+          <dd>Putative class action filed 2026-05-14 in N.D. Cal. against X.AI LLC alleging Grok.com used tracking technologies owned by Google, Meta and TikTok in violation of the ECPA, California's Invasion of Privacy Act and the state constitution. <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm">SpaceX 10-Q, filed 2026-08-04</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations made 2026-09-19 (see the <a href="../../docs/methodology.html">probe playbook</a>). DNS was not used: the research host's resolver is unreliable here, so the CDN claim rests on response headers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-09-19</td><td><code>curl -sL https://grok.com/robots.txt</code></td><td>31 lines, 552 bytes, two groups. <code>User-Agent: *</code> gets <code>Allow: /</code> minus <code>/rest</code>, <code>/share-links</code>, <code>/c/</code>, <code>/chat/</code>, <code>/project/*</code>, <code>/_worker/*</code> — <code>/share/</code> is <em>not</em> disallowed. A second group names GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended and Applebot-Extended, grants 9 anchored marketing paths, then <code>Disallow: /</code>. CCBot is never mentioned.</td></tr>
+            <tr><td>2026-09-19</td><td><code>curl -sI https://grok.com/</code></td><td>200 from <code>server: cloudflare</code> (<code>cf-ray</code>, <code>__cf_bm</code>). HSTS, <code>X-Frame-Options: DENY</code>, <code>nosniff</code>, <code>cache-control: private, no-store</code> on every route, geo echoed to the client (<code>x-country-code: US</code>), and a ~6KB nonce CSP of 62 hosts. Ad/analytics hosts in that CSP: Google Tag Manager, Analytics, DoubleClick, AdServices, Syndication, <code>analytics.tiktok.com</code>, Mixpanel — but no Meta host, so the Google and TikTok halves of the May 2026 wiretapping complaint are visible in the allowlist and the Meta half is not.</td></tr>
+            <tr><td>2026-09-19</td><td>Sitemap census, text census and structured data, 8 URLs</td><td>Flat 1.3KB <code>urlset</code>: 8 URLs, no child index, all <code>lastmod</code> 2025-09-15; seven return 200 and <code>/highlights</code> 404s despite being listed and explicitly allowed to AI crawlers. With scripts and styles stripped the seven live pages hold 157, 25, 33, 33, 33, 36 and 39 characters respectively — <code>/plans</code> ships "Plans - Grok Skip to main content" and no pricing table. Structured data is two <code>ld+json</code> blocks per route, identical site-wide: a <code>SoftwareApplication</code> node (<code>alternateName</code> including "SpaceXAI Grok", price 0) and an <code>Organization</code> node whose <code>creator</code> is <code>{"name":"xAI"}</code> while every description says "built by SpaceXAI". No per-page structured data anywhere, and no <code>rss.xml</code> or <code>feed.xml</code>.</td></tr>
+            <tr><td>2026-09-19</td><td>UA enforcement matrix, <code>/plans</code> and <code>/</code></td><td>14 UAs, 3 rounds. GPTBot, ClaudeBot and CCBot get a 25-byte <code>text/plain</code> 403 "Your request was blocked." on every path, including paths <code>robots.txt</code> allows them. ChatGPT-User, Claude-User, OAI-SearchBot, PerplexityBot, Google-Extended, Applebot-Extended, Googlebot, Bingbot, Applebot, bare <code>curl/8.7.1</code> and this project's UA all get 200.</td></tr>
+            <tr><td>2026-09-19</td><td>Share links, live and invalid</td><td><code>/share/&lt;base64&gt;_&lt;uuid&gt;</code> (prefix decodes to <code>legacy-copy</code>) returns 200 and 549KB: a model-written title, a 100-char <code>description</code> cut mid-word, <code>og:*</code>/<code>twitter:*</code> copies, <code>robots: index, follow</code>, and 91 chars of visible body — the title only. The RSC stream hands the client just <code>{"shareLinkId":"…"}</code> and the snippet phrase occurs 6 times, all inside meta tags. Two conflicting <code>rel=canonical</code> tags ship on one page, differing only in <code>%3D</code> versus <code>=</code>. An invalid id also returns 200, titled "Shared conversation" and described "This conversation is temporarily unavailable.", but with the full noindex set. The per-object <code>opengraph-image/&lt;id&gt;</code> endpoint 200s for both ids and returns <strong>byte-identical</strong> 22,451-byte 1200×630 PNGs (same MD5) — a static Grok wordmark carrying no conversation content.</td></tr>
+            <tr><td>2026-09-19</td><td>Public API sample, <code>/rest/*</code> and well-known paths</td><td>The app's REST surface is present and closed: <code>/rest/app-chat/conversations</code>, <code>…/new</code>, <code>/rest/subscriptions</code> and the response-node route return 401 <code>{"code":16,"message":"No credentials presented…"}</code>; <code>/rest/models</code> and <code>/rest/rate-limits</code> return 501 to GET. Six guessed share-content routes 404'd, so no unauthenticated path to a transcript was found. <code>llms.txt</code>, <code>ads.txt</code> and <code>/.well-known/ai-plugin.json</code> 404; <code>/.well-known/security.txt</code> is 71 bytes pointing at <code>vulnerabilities@x.ai</code>.</td></tr>
+            <tr><td>2026-09-19</td><td>Terms of service, fetch attempt</td><td>The licence terms could not be read first-hand. <code>https://x.ai/legal/terms-of-service</code> — the URL grok.com itself links — returns 403 to plain curl, to curl with a full Chrome header set, and to this project's page fetcher; a text-extraction proxy returned 401 and the Wayback availability API was rate-limited.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third party may display, how fast it churns. The governing fact is that grok.com hosts no corpus — it generates one per session, so everything obtainable in bulk comes from the metered API, which produces new content rather than exposing the site's.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>7 marketing pages holding 356 chars total, plus shared conversations at title + 100-char snippet each. Corpus size open.</td>
+              <td>Plain crawl of <code>/share/&lt;id&gt;</code>: robots-permitted and marked <code>index, follow</code>. The transcript needs a rendering crawler.</td>
+              <td>None for the head; the body costs a headless browser per object. GPTBot, ClaudeBot and CCBot are 403'd at the edge regardless.</td>
+              <td>Open — terms unreadable to any automated client (Probe Log). Snippet display is the conservative read; republishing transcripts is not.</td>
+              <td>Marketing pages frozen 369 days. Shares carry no <code>lastmod</code>; immutability open.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Imagine outputs (user-owned, behind auth) and one static OG card per share URL.</td>
+              <td>None for user images: <code>assets.grokusercontent.com</code> 404s at its root and no object URL was obtainable. OG cards fetch but are empty.</td>
+              <td>OG card: none, and worthless — byte-identical for every id. Generated images: metered API only.</td>
+              <td>API images fall under the developer terms; user-created images carry no public licence signal.</td>
+              <td>OG card static; generated assets created per request.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Imagine clips, up to 15s at 720p per the prospectus. No public catalogue.</td>
+              <td>No crawl path. <code>/imagine/feed</code> and <code>/imagine/explore</code> return the same 542KB shell as <code>/imagine</code>.</td>
+              <td>Metered API only.</td>
+              <td>Generation licence, not a corpus licence.</td>
+              <td>Generated per request; nothing to recrawl.</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Voice-mode speech, synthesized per turn. No stored public objects.</td>
+              <td>None. Voice is bound to an authenticated live session; <code>media-src</code> points at <code>wss://*.x.ai</code>.</td>
+              <td>API only.</td>
+              <td>Not applicable — no published objects.</td>
+              <td>Session-scoped.</td>
+            </tr>
+            <tr>
+              <td>Conversations</td>
+              <td>The actual corpus. Private by default; a share link is the only publication act. Total unknown — see Open Questions.</td>
+              <td>Referral discovery only: share URLs must be found off-site, since nothing on grok.com lists them and the id is a UUID.</td>
+              <td>Reading the head is free. <code>/rest/app-chat/*</code> is 401 and <code>/share-links</code> is robots-disallowed.</td>
+              <td>The most exposed and least licensed material here — published by a button press the 2025 incident showed users misread.</td>
+              <td>Revocable — an unavailable share degrades to a noindex stub, so index entries decay silently.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Two site-wide JSON-LD nodes identical on all 7 pages. Model and plan entities exist only client-side or behind auth.</td>
+              <td>Read the JSON-LD once; take the model catalogue from <a href="https://docs.x.ai/docs/models">docs.x.ai</a>, as <code>/rest/models</code> rejects GET.</td>
+              <td>None for JSON-LD. Live pricing on <code>/plans</code> is unreachable without JS.</td>
+              <td>Factual product metadata; safe to display.</td>
+              <td>JSON-LD lags the rebrand (Context inference).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where grok.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>A share id is <code>base64(prefix)_uuid4</code>; the sampled prefix decodes to <code>legacy-copy</code>, so the namespace is already versioned. The hazard is on the page itself: <strong>two</strong> conflicting <code>rel=canonical</code> tags for one object, differing only in <code>%3D</code> versus <code>=</code>. Normalize percent-encoding before keying, or the conversation enters the index twice. There is also nothing to join on: no author, account, timestamp, model name or media reference appears on a share page, and the OG image is byte-identical across objects. Each conversation is an orphan record keyed only by its own URL — a flat corpus with zero graph structure, unusual for UGC at this scale.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>head of a shared conversation</strong>: a model-written title plus a 100-character prefix of the user's opening message. It inverts a normal document — the reliable summary is machine-authored, and the human-authored body is absent.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>The <code>&lt;meta name="description"&gt;</code> is not a summary here, it <em>is</em> the only body text a non-rendering crawler gets; ranking on it means ranking 100 characters against a whole conversation. <span class="evidence inferred">inferred</span> The transcript is fetched client-side from an endpoint distinct from the public <code>/rest</code> routes. <em>Basis:</em> the RSC stream passes only <code>{"shareLinkId":"…"}</code>, the snippet phrase occurs in the payload solely inside meta tags, and six guessed <code>/rest</code> share routes returned 404 (Probe Log).</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Both signals are broken: the sitemap has not regenerated in 369 days, and share pages carry no <code>lastmod</code>, date or <code>Last-Modified</code> under <code>no-store</code>. Recrawl can only run off the crawler's own last-seen clock. Deletion is the live risk, not staleness — a revoked share flips to a noindex stub under an unchanged 200.</p>
+        </div>
+        <div>
+          <h4>Crawl policy: two layers that disagree</h4>
+          <p>The advisory and enforced policies are different documents. <code>robots.txt</code> grants six named AI agents nine marketing paths before <code>Disallow: /</code>; the edge instead 403s GPTBot, ClaudeBot and <em>CCBot</em> — never named in the file — on those same allowed paths, while PerplexityBot, Google-Extended and Applebot-Extended pass (Verified Metrics). <span class="evidence inferred">inferred</span> The block is a Cloudflare-managed bot rule applied independently of the hand-written file. <em>Basis:</em> a 25-byte <code>text/plain</code> body with <code>server: cloudflare</code> and no app headers, firing on paths the site's own file allows and for a UA it never mentions. Read robots.txt as intent; test the edge for what works.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; consent</h4>
+          <p>The failure mode is not spam but non-consensual publication: private dialogue released by a button whose consequence users did not anticipate, with over 370K transcripts reaching Google's index in weeks (Verified Metrics). The directive that permitted it is still served 13 months later. Any index here holds material its authors did not knowingly publish, which no ranking signal fixes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the shared conversation, keyed by the normalized <code>/share/&lt;id&gt;</code> URL, with title and snippet as the free tier and a rendered transcript as an optional, expensive upgrade.</li>
+        <li><strong>Primary keys &amp; joins:</strong> the normalized share URL is the only key — decode percent-encoding before hashing, per the double-canonical defect. No author, model or time key exists; do not design a schema that assumes one.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) <strong>Share URLs harvested off-site</strong> — the only route to the real corpus, cheap per object, coverage capped by what humans posted elsewhere. 2) <strong>Headless rendering of those URLs</strong> — the sole way to a transcript, at browser cost per object; reserve it for conversations already attracting links. 3) <strong>The metered API</strong> — licensed, but it generates content rather than retrieving the site's, so it is an enrichment budget, not a crawl budget. 4) <strong>The 7 marketing pages</strong> — index the JSON-LD entity once and never return. 5) <strong>grokipedia.com</strong> — for a SpaceXAI text corpus, 5.86M enumerable URLs sit one host away; grok.com is the wrong target for that goal.</li>
+        <li><strong>Recrawl cadence:</strong> marketing pages quarterly, only to detect whether the 2025-09-15 sitemap ever regenerates. Share URLs need a <em>liveness</em> check, not a freshness check — poll for the noindex stub, since revocation rather than editing is what changes. Re-run the UA matrix monthly.</li>
+        <li><strong>Derivatives to generate:</strong> the snippet is too short to embed usefully, so the high-value derivative is a <em>consent and sensitivity classifier</em> over harvested transcripts, flagging PII, credentials and medical content before anything reaches a servable index. Second, title-versus-snippet topic agreement — a free signal for whether a conversation is what its title claims.</li>
+        <li><strong>Demo to build:</strong> a share-page evidence card — fetch a share URL and show the 100 characters a crawler sees, the byte-identical OG image, the <code>index, follow</code> directive and the two conflicting canonicals, beside the same object after headless rendering.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>One meta tag deletes the corpus.</strong> The whole public surface depends on <code>index, follow</code> being served from share pages. It survived 13 months of privacy reporting, but the noindex stub for unavailable shares shows the restrictive template already ships — flipping it is a config change.</li>
+        <li><strong>The licence cannot be verified programmatically.</strong> <code>x.ai/legal/terms-of-service</code> 403s every automated client tried (Probe Log), so the terms governing reuse are not machine-readable at all. An index built here rests on an unread contract — a legal exposure, not a technical gap.</li>
+        <li><strong>The consent defect is unresolved and litigated.</strong> Transcripts were published by users who did not understand they were publishing, and grok.com is separately a defendant in a May 2026 wiretapping class action over its own tracking stack — whose Google and TikTok components are visible in the live CSP (Verified Metrics, Probe Log).</li>
+        <li><strong>Edge enforcement is unstable and undocumented.</strong> The 403 set already diverges from robots.txt and includes a UA the file never names. Any crawler identity can be added silently, mid-crawl — build the fetcher to detect the 25-byte block body and fail loudly rather than record empty pages.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm">SpaceX (SPCX) 424B4 prospectus, 2026-06-12</a> — Grok MAU and its denominators, the MAU definition, the four subscription tiers, and the 15s-720p Imagine video limit.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm">SpaceX 10-Q, quarter ended 2026-06-30</a> — AI segment revenue composition and the May 2026 grok.com tracking class action.</li>
+        <li><a href="https://www.forbes.com/sites/iainmartin/2025/08/20/elon-musks-xai-published-hundreds-of-thousands-of-grok-chatbot-conversations/">Forbes, Iain Martin, 2025-08-20</a> — the &gt;370K figure for indexed share URLs and the categories of exposed content.</li>
+        <li><a href="https://docs.x.ai/docs/models">docs.x.ai model reference</a>, read 2026-09-19 — the model catalogue and metered pricing for the paid path.</li>
+        <li><a href="https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html">CNBC, 2026-02-03</a> — the SpaceX acquisition of xAI and the combined valuation.</li>
+        <li><a href="https://en.wikipedia.org/wiki/SpaceXAI">Wikipedia: SpaceXAI</a> — the July 2026 rebrand and corporate chronology.</li>
+        <li>Local probes on 2026-09-19 — robots.txt, headers and CSP, sitemap and per-page text census, JSON-LD, a 14-UA × 3-round enforcement matrix, live and invalid share links, 14 endpoints, and a grokipedia.com census. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The SpaceXAI rebrand is unfinished in the site's metadata, so entity resolution will split on the name. <em>Basis:</em> descriptions say "built by SpaceXAI"; the JSON-LD <code>creator</code> says "xAI".</li>
+        <li>The edge 403 is a Cloudflare-managed bot rule applied independently of robots.txt. <em>Basis:</em> a 25-byte <code>text/plain</code> body with <code>server: cloudflare</code>, firing on explicitly allowed paths and for the unnamed CCBot.</li>
+        <li>Shared transcripts are fetched client-side from an endpoint outside the public <code>/rest</code> routes. <em>Basis:</em> the RSC stream passes only <code>{"shareLinkId":"…"}</code> and six guessed <code>/rest</code> routes 404'd.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many shared conversations exist, and how many are indexable now? No sitemap, no listing and UUID keys make this unknowable from the site. Closed by a licensed search-engine index count for <code>site:grok.com/share</code>, or an operator disclosure.</li>
+        <li>What is grok.com's own traffic and user count, separate from the apps, X and the API? The 117M figure covers all four. Closed by a segment breakdown in a future 10-Q; panel estimates would not qualify.</li>
+        <li>Which endpoint serves a shared transcript, and does it answer unauthenticated? Six guessed routes 404'd. Closed by capturing the network trace of a browser opening a live share link.</li>
+        <li>What do the terms permit for reuse of shared conversations, and is there a search-engine carve-out to the anti-scraping clause? The terms page 403s every automated client. Closed by reading it in an interactive browser session, or a partnerships enquiry.</li>
+        <li>Are share links immutable snapshots or live views of a continuing conversation? The <code>legacy-copy</code> prefix hints at a copy, but nothing states it. Closed by sharing a conversation, continuing it, and refetching the share URL.</li>
+        <li>Are user-generated images on <code>assets.grokusercontent.com</code> publicly addressable without auth? The host 404s at its root and no object URL was obtainable publicly. Closed by extracting an asset URL from a share containing an image and fetching it unauthenticated.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
