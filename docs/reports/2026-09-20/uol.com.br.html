@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>uol.com.br Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-09-20</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>uol.com.br</h1>
+      <p class="lede">UOL is Brazil's largest portal: a 232-article-a-day Portuguese newsroom that blocks 48 named crawlers and leaves every OpenAI agent unnamed.</p>
+      <div class="tag-row">
+        <span class="tag">News Portal</span>
+        <span class="tag">Brazil</span>
+        <span class="tag">Portuguese</span>
+        <span class="tag">Ads + Subscriptions</span>
+        <span class="tag">AI Licensing</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Universo Online launched in 1996 and is the content arm of Grupo Folha, the family group that also owns the newspaper <em>Folha de S.Paulo</em>. The legal entity, Universo Online S.A., consolidates PagBank, so its group revenue is a payments number; the media business sits in the parent-company column and earned R$885.5M net in 2024, now roughly three-quarters advertising and one-quarter a shrinking subscription base (see Verified Metrics). For an index builder the interesting thing is not the portal's size but how it sells access. In May 2026 Grupo Folha and Grupo UOL signed Brazil's first commercial content licence with <a href="https://openai.com/index/grupo-folha-grupo-uol-partnership/">OpenAI</a>, settling a 2025 Folha lawsuit. That deal is legible in the crawl policy: Folha writes it as an explicit <code>Allow: /</code> for five OpenAI agents while blocking everyone else, and UOL achieves the same result by omission — 49 named crawler groups in robots.txt, not one of them an OpenAI agent (Probe Log). Crawl policy here is a contract surface, not a hygiene file.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>uol.com.br</code> (apex 301s to <code>www.uol.com.br</code>)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.uol.com.br/">https://www.uol.com.br/</a></dd></div>
+        <div><dt>Category</dt><dd>General-interest news portal, ISP-era subscription bundle, paid-video reseller</dd></div>
+        <div><dt>Related hosts</dt><dd><code>noticias.</code>, <code>economia.</code>, <code>tab.</code> (content subdomains, Akamai-fronted), <code>conteudo.imguol.com.br</code> (image CDN), <code>play.uol.com.br</code> (video), <code>assine.uol.com.br</code> (checkout), <code>rss.uol.com.br</code>; <code>www1.folha.uol.com.br</code> is a sibling corpus with its own policy</dd></div>
+        <div><dt>Owner</dt><dd>Universo Online S.A., CNPJ 01.109.184/0001-95, controlled by Grupo Folha</dd></div>
+        <div><dt>Founded / launched</dt><dd>1996 (merged with Brasil Online the same year)</dd></div>
+        <div><dt>Business model</dt><dd>Display and native advertising + digital subscriptions + resold streaming bundles + hosting; PagBank sits under the same holding</dd></div>
+        <div><dt>Scale anchor</dt><dd>R$885.5M parent-company net revenue for FY2024, as of Dec 31 2024 (<a href="https://www.libex.org.br/pdf/uol/uol-2024.pdf">statements published in Folha, Oct 1 2025</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Missing numbers (total archive size, audited audience, podcast corpus) live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Media net revenue, FY2024</dt>
+          <dd>R$885.5M, +4.4% YoY from R$848.1M — parent-company column, as of Dec 31 2024. <a href="https://www.libex.org.br/pdf/uol/uol-2024.pdf">Universo Online S.A. financial statements</a> <span class="evidence verified">verified</span>, YoY calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Revenue mix, FY2024</dt>
+          <dd>Gross parent revenue R$997.9M: advertising and other R$734.0M (73.6%, +18.4% YoY), subscriptions R$246.8M (24.7%, <strong>−19.5% YoY</strong>), hosting and rental R$17.1M — as of Dec 31 2024. <a href="https://www.libex.org.br/pdf/uol/uol-2024.pdf">Note 26, same statements</a> <span class="evidence verified">verified</span>, shares and YoY calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Consolidated net revenue, FY2024</dt>
+          <dd>R$12.64B — dominated by PagBank intermediation fees (R$10.24B gross), not media. <a href="https://www.libex.org.br/pdf/uol/uol-2024.pdf">Same statements</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Publication rate into the discoverable window</dt>
+          <dd>676 article URLs spanning 70.0 hours of publication timestamps (2026-09-17T03:00Z → 2026-09-20T01:00Z) = <strong>≈232 articles/day</strong> — as of 2026-09-20, from the eight news sitemaps in robots.txt. Probe Log <span class="evidence verified">verified</span>, rate calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Structured-data coverage</dt>
+          <dd>619 of 674 article URLs (91.8%) carry a <code>NewsArticle</code> JSON-LD block; the 55 without are horoscopes, newsletters and car reviews — measured 2026-09-20 across the full sitemap window. Probe Log <span class="evidence verified">verified</span>, share calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Paywall rate</dt>
+          <dd>79 of 674 articles (11.7%) carry <code>isAccessibleForFree: false</code>; 78 of those 79 sit under <code>/colunas/</code>. Zero of the 346 <code>.ghtm</code> URLs are paywalled — measured 2026-09-20. Probe Log <span class="evidence verified">verified</span>, share calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Crawler groups in robots.txt</dt>
+          <dd>50 groups: <code>*</code> plus 49 named agents, 48 of them at a bare <code>Disallow: /</code>. The exception is Google-Extended, which gets <code>Disallow: /</code> then <code>Allow: /*.ghtm$</code> — as of 2026-09-20. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Article page weight</dt>
+          <dd>Median 604KB of HTML per article across a 50-URL sample; a ~400-word football story served 606,053 bytes — as of 2026-09-20. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Self-reported audience</dt>
+          <dd>114M+ unique visitors/month, 7.4B+ page views/month, 2.5M+ subscribers across all services, 30 channels above 1M visitors/month — UOL's own claim, carrying <strong>no date</strong> on the page as observed 2026-09-20. <a href="https://sobreuol.noticias.uol.com.br/">Sobre UOL</a> <span class="evidence verified">verified</span> as a company claim, not an audited figure</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-20, user agent <code>SiteWise research (kunka@apitech.ai)</code> unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe"><code>curl -sL https://www.uol.com.br/robots.txt</code></td><td data-label="Observation">115 lines, 2.5KB. <code>User-agent: *</code> gets <code>Allow: /</code> with only three Disallows (<code>/carros/dev/</code>, two <code>uol_app</code> query forms) and nine Sitemap lines. 49 named agents follow; 48 are a flat <code>Disallow: /</code> (the four Claude agents, both Perplexity agents, CCBot, Bytespider, Meta-ExternalAgent, Applebot, Twitterbot, DeepSeek, Qwen, Devin, Operator, NovaAct…). <strong>Zero matches</strong> for <code>gptbot</code>, <code>oai-</code>, <code>chatgpt</code> or <code>openai</code>.</td></tr>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe"><code>curl -sL https://www1.folha.uol.com.br/robots.txt</code></td><td data-label="Observation">Sibling corpus, opposite style: explicit <code>Allow: /</code> for GPTBot, OAI-SearchBot, OAI-AdsBot, ChatGPT-User and "ChatGPT Operator", and <code>Allow: /</code> for Google-Extended — alongside <code>Disallow: /</code> for ClaudeBot, PerplexityBot, Grok and ~150 other named groups.</td></tr>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe"><code>curl -sI https://www.uol.com.br/</code></td><td data-label="Observation">HTTP 200, 780KB. <code>server: marrakesh 1.25.0</code> (UOL's own origin), served through CloudFront (<code>x-cache: Hit from cloudfront</code>, pop SFO53-P9). <code>cache-control: max-age=10, must-revalidate</code>; HSTS 1 year; <code>vary: Accept-Encoding,User-Agent</code>. Apex <code>uol.com.br</code> 301s from a BigIP load balancer.</td></tr>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe">Sitemap census: 8 news sitemaps + <code>toca</code> index</td><td data-label="Observation">676 URLs total (esporte 371, splash 199, universa 39, tilt 38, vivabem 12, nossa 8, carros 7, ecoa 2). Only esporte paginates (<code>news-02.xml</code>, then 404). Publication timestamps span exactly 70.0h — the sitemaps are a rolling ~3-day window, not an archive. The one archival sitemap, <code>toca</code>, indexes 27 monthly files of ~16–19 URLs each. <code>/sitemap.xml</code> and <code>/llms.txt</code> both 404; <code>/ads.txt</code> returns 12.9KB.</td></tr>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe">Structured-data + paywall census over all 674 <code>.htm</code>/<code>.ghtm</code> URLs (HTTP range requests, first 60KB)</td><td data-label="Observation">619 carry <code>NewsArticle</code> JSON-LD; 55 carry none. All 346 <code>.ghtm</code> URLs are <code>isAccessibleForFree: true</code> — no exceptions. Of 328 <code>.htm</code> URLs: 194 free, 79 paywalled, 55 no marker. JSON-LD sits at byte ~9.5K and the origin honours <code>Range</code> (HTTP 206), so the corpus classifies for ~4% of full-page bytes.</td></tr>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe">Embedded payload cross-check, 25 paid + 25 free URLs</td><td data-label="Observation">Every page carries a non-JSON-LD payload with <code>mediaId</code> (32–40 hex chars ending in the publication <code>YYYYMMDD</code>), <code>mediaType</code> and <code>mediaName</code>. <code>mediaType: column</code> on 25/25 paywalled and <code>mediaType: news</code> on 25/25 free. <code>mediaId</code> present and unique on 39/40 of a separate sample.</td></tr>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe">Blocked-UA test on an article, three user agents</td><td data-label="Observation"><code>ClaudeBot/1.0</code>, <code>GPTBot/1.2</code> and plain <code>curl/8.7.1</code> all received HTTP 200 with a byte-identical 606,053-byte body. The 48 <code>Disallow: /</code> rules are policy only; nothing at the edge enforces them.</td></tr>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe">Feed sweep: <code>rss.uol.com.br</code></td><td data-label="Observation">The RSS directory advertises 36 XML feeds, including per-club football feeds. <code>rss.home.uol.com.br/index.xml</code> is live: 112 items, UTF-8, with <code>media:content</code> images, credits and <code>content:encoded</code>. Legacy feeds are ISO-8859-1 and mostly stale — <code>musica.uol.com.br/ultnot/index.xml</code>'s newest item is dated 2020-10-22.</td></tr>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe">Subdomain and video-surface checks</td><td data-label="Observation">After ~700 requests, <code>noticias.</code>, <code>economia.</code> and <code>tab.uol.com.br</code> began returning HTTP 403 from Akamai (<code>errors.edgesuite.net</code> reference) to <em>every</em> user agent including Googlebot — <code>/robots.txt</code> included — and stayed blocked for the rest of the session, while CloudFront-fronted <code>www</code> served 200 throughout. <code>play.uol.com.br/robots.txt</code> advertises a sitemap that returns HTTP 504; the Play homepage is a 10.7KB JS-only shell.</td></tr>
+            <tr><td data-label="Date">2026-09-20</td><td data-label="Probe">Image sample on one article</td><td data-label="Observation">56 distinct <code>conteudo.imguol.com.br</code> URLs resolving to 33 image bases; the lead photo alone appears in 8 crop variants (<code>_v2_16x9</code>, <code>_4x3</code>, <code>_1x1</code>…), three of which JSON-LD lists as peers under <code>image</code>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Per modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it churns.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Articles and columns at ≈232/day into the sitemap window; total archive back to 1996 is open.</td>
+              <td data-label="Best legitimate path">Eight news sitemaps (~3-day window) plus <code>rss.home.uol.com.br/index.xml</code> for the front-page slice. Plain crawl is unrestricted for unnamed agents under <code>User-agent: *</code>.</td>
+              <td data-label="Auth &amp; quota">None. No API, no key, no rate limit published — but Akamai-fronted subdomains block on volume (Probe Log).</td>
+              <td data-label="License / display">Free tier crawlable; the 48 named blocks are contractual, not technical. OpenAI alone has a licence.</td>
+              <td data-label="Freshness">10-second edge TTL on the homepage; articles rarely revised after publication (<code>dateModified</code> equalled <code>datePublished</code> on the sampled story).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">~33 distinct photos per article page, each in up to 8 crop variants, on <code>conteudo.imguol.com.br</code>.</td>
+              <td data-label="Best legitimate path">JSON-LD <code>image</code> array (3 canonical crops) and <code>media:content</code> in RSS; sitemap <code>image:image</code> on the <code>toca</code> archive only.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Photos are mostly agency and club credited (<code>media:credit</code>); redistribution needs per-photo rights review, not a site-wide licence.</td>
+              <td data-label="Freshness">Published with the article; crop set fixed at publication.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">UOL Play is a reseller storefront for Max, NBA and Champions League — licensed third-party catalogue, not UOL-owned video.</td>
+              <td data-label="Best legitimate path">No legitimate bulk path: the advertised sitemap 504s and the page is a JS-only shell.</td>
+              <td data-label="Auth &amp; quota">Paid subscription behind <code>assine.uol.com.br</code>.</td>
+              <td data-label="License / display">Third-party rights; nothing UOL can sublicense.</td>
+              <td data-label="Freshness">Open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Audio / comments</td>
+              <td data-label="Objects &amp; est. count">A <code>/podcasts/</code> section exists but redirects into the Akamai-blocked subdomain; comment affordances appear in article markup with no threads rendered server-side. Counts open.</td>
+              <td data-label="Best legitimate path">No feed, no API, nothing in any sitemap for either.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">No documented reuse path.</td>
+              <td data-label="Freshness">Open.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Per article: <code>mediaId</code>, <code>mediaType</code> (news / column), author Person with a stable <code>/autor/</code> URL, single-level BreadcrumbList, publisher Organization, <code>isAccessibleForFree</code>.</td>
+              <td data-label="Best legitimate path">Inline JSON-LD plus the embedded payload; both reachable in the first 60KB via Range requests.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Metadata is factual; safe to index and display with attribution.</td>
+              <td data-label="Freshness">Fixed at publication.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where UOL differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The URL is a weak key — content lives on <code>www.uol.com.br</code> and on section subdomains with different availability. The strong key is the embedded <code>mediaId</code>: unique per article and self-dating, since its last eight characters are the publication date. Use it, not the slug, for dedup.</p>
+        </div>
+        <div>
+          <h4>The extension is a licence tier</h4>
+          <p>UOL splits articles across two extensions and prices them differently. <code>.ghtm</code> was free in all 346 sampled cases; <code>.htm</code> mixes free, paywalled and unstructured pages. Google-Extended's carve-out grants AI training rights over exactly the <code>.ghtm</code> set — a filename suffix doing the work of a rights field.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The article, keyed by <code>mediaId</code>, with <code>mediaType</code> carried as a first-class field: <code>column</code> means paywalled opinion, <code>news</code> means free reporting. An index that flattens the two will serve snippets of content the reader cannot open.</p>
+        </div>
+        <div>
+          <h4>Discovery ceiling</h4>
+          <p>The sitemaps are a ~70-hour rolling window covering eight lifestyle and sport verticals. Hard news, politics and economy have no sitemap at all. A sitemap-only crawler sees roughly three days of the softest part of the portal and none of the archive.</p>
+        </div>
+        <div>
+          <h4>Two edges, two policies</h4>
+          <p><code>www</code> sits behind CloudFront and tolerated the session's full volume; the Akamai-fronted content subdomains cut over to a sticky 403 for all agents, robots.txt included. A crawler that cannot read robots.txt must treat that subdomain as disallowed, so aggressive crawling here locks you out of the very file that would have authorised you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> article, keyed by <code>mediaId</code>, with <code>mediaType</code>, <code>isAccessibleForFree</code> and the URL extension stored as access-tier fields.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>mediaId</code> → canonical URL → author <code>/autor/</code> URL → image base (crop suffix stripped) → section from the breadcrumb.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) the eight news sitemaps, polled every 6h — free, complete for those verticals, but only ~3 days deep. 2) <code>rss.home.uol.com.br/index.xml</code> — 112 items with images and credits, catches front-page items the sitemaps miss. 3) Range-limited fetches (first 60KB) of every discovered URL for JSON-LD and <code>mediaId</code> at ~4% of full cost. 4) Full-body fetch only for <code>.ghtm</code> and for <code>.htm</code> pages marked free. 5) Hard news and economy — no sitemap; needs link-following from the homepage, against Akamai-fronted subdomains.</li>
+        <li><strong>Recrawl cadence:</strong> sitemaps 6-hourly; homepage hourly (10s edge TTL means it genuinely moves); article bodies once, since <code>dateModified</code> tracked <code>datePublished</code>; the <code>toca</code> monthly archive quarterly.</li>
+        <li><strong>Derivatives to generate:</strong> crop-variant collapse on the image base (8:1 on the sampled lead photo), pt-BR embeddings, and an entity pass over football club and player names, which dominate the corpus by volume.</li>
+        <li><strong>Demo to build:</strong> a Range-request classifier — walk the news sitemaps, pull only the first 60KB of each URL, and emit a JSONL index of <code>mediaId</code>, tier and access flag, reporting the bytes saved against a full crawl.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The policy wall can become a real one overnight.</strong> Today's 48 <code>Disallow: /</code> rules are unenforced (Probe Log), so an index built on generic crawling is running on a courtesy that costs UOL nothing to withdraw.</li>
+        <li><strong>Volume triggers a sticky block that hides the rules.</strong> The Akamai 403 covered <code>/robots.txt</code> itself, leaving no compliant way to re-derive permission. Rate-limit per subdomain, not per site.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Crawl policy tracks commercial deals, so it will keep moving.</strong> <em>Basis:</em> UOL names 49 crawler groups and no OpenAI agent, while sibling Folha grants five OpenAI agents an explicit <code>Allow: /</code> and blocks ClaudeBot — both observed 2026-09-20, both consistent with the May 2026 OpenAI licence and with no other AI licensee existing.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The paywalled tier will grow.</strong> <em>Basis:</em> subscription revenue fell 19.5% in FY2024 while advertising rose 18.4% (Verified Metrics), and the paywall already maps onto the columnist franchise — 78 of 79 paid URLs under <code>/colunas/</code>. Pressure to convert runs toward metering more of the free <code>.ghtm</code> tier.</li>
+        <li><strong>Sitemap coverage is a policy choice, not an accident.</strong> Eight lifestyle and sport verticals are listed; hard news is not. If that list shrinks further, sitemap-driven ingestion degrades without any error to alert on.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.libex.org.br/pdf/uol/uol-2024.pdf">Universo Online S.A. e Controladas, financial statements for FY2024</a>, published in Folha de S.Paulo Oct 1 2025 — parent and consolidated net revenue, revenue-by-nature note 26, PagBank consolidation.</li>
+        <li><a href="https://openai.com/index/grupo-folha-grupo-uol-partnership/">OpenAI: Grupo Folha and Grupo UOL partnership</a> — the content licence announcement (May 2026).</li>
+        <li><a href="https://latamjournalismreview.org/news/openai-signs-first-brazilian-content-licensing-deals-with-folha-and-uol/">LatAm Journalism Review, May 26 2026</a> — real-time news feed into ChatGPT, summaries with links back, undisclosed terms, and the settlement of Folha's 2025 lawsuit.</li>
+        <li><a href="https://sobreuol.noticias.uol.com.br/">Sobre UOL</a> — company audience and subscriber claims, carrying no date.</li>
+        <li>Local probes on 2026-09-20 against robots.txt (UOL and Folha), headers, the nine sitemaps, 674 article URLs by Range request, the RSS directory, <code>play.uol.com.br</code> and the content subdomains — full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>UOL expresses its OpenAI licence by omission rather than by an explicit allowance. <em>Basis:</em> zero matches for <code>gptbot</code>, <code>oai-</code>, <code>chatgpt</code> or <code>openai</code> in a robots.txt that names 49 other crawler groups, against Folha's explicit <code>Allow: /</code> for five OpenAI agents in the same group's estate, both observed 2026-09-20.</li>
+        <li>The <code>.ghtm</code> suffix marks the rights-cleared free tier. <em>Basis:</em> 346 of 346 <code>.ghtm</code> URLs returned <code>isAccessibleForFree: true</code>, and Google-Extended's only allowance in the file is <code>Allow: /*.ghtm$</code>.</li>
+        <li>The 48 crawler blocks are contractual signalling, not access control. <em>Basis:</em> ClaudeBot and GPTBot user agents both received byte-identical 606,053-byte article bodies.</li>
+        <li>The Akamai 403 is volume-triggered rather than UA-based. <em>Basis:</em> the same subdomains served 200 to four different user agents earlier in the session and then 403'd all of them, including Googlebot, after ~700 requests.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total archive size back to 1996 — no sitemap covers it; closeable with a <code>site:</code> count per section or a UOL-supplied figure.</li>
+        <li>Audited current audience — UOL's 114M/7.4B claims carry no date; closeable with a dated Comscore Brazil release or UOL's media kit.</li>
+        <li>Whether hard-news and economy sections have unlisted sitemaps — five guessed paths all 404'd; closeable by asking UOL or by inspecting Search Console-visible properties.</li>
+        <li>Podcast corpus size and whether any audio has an RSS feed — <code>/podcasts/</code> redirected into the Akamai-blocked subdomain; closeable by retrying from an unthrottled address.</li>
+        <li>Whether comments are rendered client-side and how many exist per article — no threads appeared in server HTML; closeable by rendering an article in a headless browser and watching XHR.</li>
+        <li>FY2025 figures — <code>uol-2025.pdf</code> was not yet published at the same path as of 2026-09-20.</li>
+        <li>Whether the OpenAI licence covers the paywalled <code>/colunas/</code> tier or only free articles — terms are undisclosed; closeable only by a statement from either party.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
