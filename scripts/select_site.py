@@ -60,6 +60,11 @@ AGGREGATED_HOSTS = {
         "match_suffixes": (),
         "note": "The storefront (store.steampowered.com) is analyzed together as Steam.",
     },
+    "telegram.org": {
+        "match_hosts": ("web.telegram.org",),
+        "match_suffixes": (),
+        "note": "The web client (web.telegram.org) is analyzed together as Telegram.",
+    },
 }
 
 
