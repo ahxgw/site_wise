@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gov.uk Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-09-28</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>gov.uk</h1>
+      <p class="lede">GOV.UK is the rare top site that wants to be indexed: OGL-licensed, no AI blocks, 870K sitemap URLs, and a keyless Content API.</p>
+      <div class="tag-row">
+        <span class="tag">Government</span>
+        <span class="tag">Public information</span>
+        <span class="tag">Open licence</span>
+        <span class="tag">Public API</span>
+        <span class="tag">United Kingdom</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>GOV.UK is the UK government's single website. It launched on 17 October 2012, replacing Directgov and Business Link, and now also hosts the publishing of every ministerial department and most agencies (<a href="https://en.wikipedia.org/wiki/Gov.uk">Wikipedia</a>). The Government Digital Service (GDS), part of the Department for Science, Innovation and Technology, runs it. It has no business model: it is taxpayer-funded, carries no advertising and exists to deflect phone calls and paper forms onto digital guidance and services. For an index builder it is the opposite of the usual top site. Content is Crown copyright under the Open Government Licence v3.0, which allows commercial reuse with attribution. Robots.txt blocks almost nothing. And the same JSON that renders every page is published as a documented, keyless Content API. The hard part is not access but shape. The corpus is dominated by long-tail legal and administrative records (tribunal decisions, HMRC manuals, permit notices), not the roughly 80K pages of citizen guidance people actually search for. Sitemap <code>lastmod</code> also tracks internal republishing, not real change.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>gov.uk</code> 301s to <code>www.gov.uk</code> (Varnish on Fastly)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.gov.uk/">https://www.gov.uk/</a></dd></div>
+        <div><dt>Category</dt><dd>National government information and services portal</dd></div>
+        <div><dt>Related hosts</dt><dd><code>assets.publishing.service.gov.uk</code> (attachments and images); <code>content-api.publishing.service.gov.uk</code> (API docs); <code>docs.publishing.service.gov.uk</code> (developer docs); transactional services on <code>*.service.gov.uk</code>, which are out of scope</dd></div>
+        <div><dt>Owner</dt><dd>Government Digital Service, UK Government</dd></div>
+        <div><dt>Founded / launched</dt><dd>2012-10-17 (<a href="https://en.wikipedia.org/wiki/Gov.uk">Wikipedia</a>)</dd></div>
+        <div><dt>Business model</dt><dd>None; publicly funded. Content reuse is under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>.</dd></div>
+        <div><dt>Scale anchor</dt><dd>1B visits and 2.3B page views in 2025 (<a href="https://insidegovuk.blog.gov.uk/2026/01/28/how-people-used-gov-uk-in-2025/">Inside GOV.UK, 2026-01-28</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Usage figures are GDS's own. Corpus figures come from Site Wise probes on 2026-09-28.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Website traffic</dt>
+          <dd>1B visits and 2.3B page views in calendar 2025, averaging 85M visits a month. These count only users who consent to Google Analytics cookies, so they are a lower bound. <a href="https://insidegovuk.blog.gov.uk/2026/01/28/how-people-used-gov-uk-in-2025/">Inside GOV.UK</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Traffic mix</dt>
+          <dd>In December 2025, 61% of visits were on mobile, 38% on desktop and 1% on tablet. About two-thirds of visits arrive from external search engines. Referrals from AI assistants are rising, and ChatGPT is the largest of them. <a href="https://insidegovuk.blog.gov.uk/2026/01/28/how-people-used-gov-uk-in-2025/">Inside GOV.UK</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>GOV.UK app &amp; Chat</dt>
+          <dd>The app had 316K downloads by the end of December 2025, after its public beta in July 2025 (<a href="https://insidegovuk.blog.gov.uk/2026/01/28/how-people-used-gov-uk-in-2025/">Inside GOV.UK</a>). GOV.UK Chat, a question-answering assistant grounded in "80,000 pages of guidance", soft-launched in the app on 2026-03-26. It handled more than 15K questions before its official launch on 2026-05-14 (<a href="https://gds.blog.gov.uk/2026/05/14/gov-uk-chat-launches/">GDS blog</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd><strong>870,053</strong> URLs (869,962 unique) across 35 child sitemaps of 20K–25K each. All but one carry <code>lastmod</code>. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Search-index corpus</dt>
+          <dd><strong>711,698</strong> documents in 137 document types from 1,475 tagged organisations. That is 81.8% of the sitemap count (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Corpus composition</dt>
+          <dd>The largest types are employment tribunal decisions (134.3K, 18.9%), HMRC internal manual sections (85.6K, 12.0%), news stories (50.9K) and press releases (46.3K). Research-for-development outputs number 37.2K and guidance 25.3K. Shares calculated by Site Wise. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Historic &amp; old content</dt>
+          <dd>130.8K documents (18.4%) are flagged <code>is_historic</code>, meaning published under a previous government. 139.9K (19.7%) have a public timestamp before 2015. Shares calculated by Site Wise. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Publishing rate</dt>
+          <dd>2,180 documents were published or publicly updated in the 7 days to 2026-09-28, 6,961 in 30 days and 86,157 in 12 months. That is about 236 a day on the 12-month average, 311 a day in the latest week (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>HTML publications</dt>
+          <dd>106,991 sitemap URLs are child pages of a publication (<code>/government/{publications|statistics|consultations}/{slug}/{child}</code>, excluding statistics announcements). These are <code>html_publication</code> attachments, which search does not list as separate documents. They account for most of the sitemap–search gap (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Attachment density</dt>
+          <dd>26 of 30 randomly sampled publications or statistics pages have attachments: 75 in all, about 2.5 per document. Of these, 29 are PDFs, 7 are ODF or XLSX files, 33 are HTML attachments and 6 are external links. The file sizes that were reported have a median of 236KB. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-28 from a sandbox egress with UA <code>SiteWise research</code> or desktop Chrome, paced at ≤2 requests per second. The DNS probe was skipped because DNS in this sandbox is unreliable; CDN claims come from response headers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-09-28</td><td><code>curl -sI https://www.gov.uk/</code></td><td>200 with an 85KB page, <code>cache-control: max-age=300, public</code> and <code>x-cache: HIT</code> from Fastly POP <code>cache-pao</code>. <code>via: 1.1 router, 1.1 varnish</code> points to a Rails <code>frontend</code> behind Varnish. There is a strict CSP with a nonce; its only third parties are Google Analytics/GTM, YouTube and SpeedCurve. The apex 301 has HSTS <code>max-age=63072000; preload</code>. There was no challenge for curl or a custom UA.</td></tr>
+            <tr><td>2026-09-28</td><td><code>curl -s https://www.gov.uk/robots.txt</code></td><td><code>*</code> disallows only <code>/*/print$</code> and <code>/search/all*</code>. <strong>No GPTBot, ClaudeBot or Google-Extended groups.</strong> <code>meta-externalagent</code> is kept off site search only, with a comment that it "results in timeouts from Vertex". AhrefsBot gets <code>Crawl-delay: 10</code>; deepcrawl and <code>MS Search 6.0 Robot</code> are fully disallowed. There is one <code>Sitemap:</code> line. <code>/llms.txt</code> returns 404.</td></tr>
+            <tr><td>2026-09-28</td><td>Sitemap census, <code>/sitemap.xml</code> plus 35 children</td><td>The index lists 35 children, all with <code>lastmod 2026-09-27T02:50Z</code> (regenerated nightly). All 35 returned 200, each 0.8–0.9MB. The count was 870,053 <code>&lt;loc&gt;</code>. <code>priority</code> takes 8+ values (0.5 on 543K). There are no <code>.cy</code> Welsh URLs and no hreflang in the sitemap. The largest prefixes are <code>/government/publications</code> 278K, <code>/employment-tribunal-decisions</code> 134K, <code>/government/news</code> 121K, <code>/hmrc-internal-manuals</code> 86K and <code>/government/statistics</code> 61K.</td></tr>
+            <tr><td>2026-09-28</td><td>Sitemap <code>lastmod</code> semantics</td><td>72% of URLs (627K) have a <code>lastmod</code> in August–September 2026 (calculated by Site Wise). <code>/vat-rates</code> shows lastmod 2026-09-25, but Content API <code>public_updated_at</code> is 2014-12-12 while <code>updated_at</code> is 2026-09-25. A 2025-02 news story shows <code>updated_at</code> 2026-09-10. So lastmod follows internal republishing, not substantive change.</td></tr>
+            <tr><td>2026-09-28</td><td><code>GET /api/content/vat-rates</code></td><td>200 JSON with <code>access-control-allow-origin: *</code>, <code>max-age=300</code> and a weak ETag. Fields: <code>content_id</code> (UUID), <code>base_path</code>, <code>document_type</code>, <code>schema_name</code>, <code>locale</code>, <code>first_published_at</code>, <code>public_updated_at</code>, <code>updated_at</code>, <code>publishing_app</code>, <code>withdrawn_notice</code>, <code>details.body</code> (HTML), and <code>links</code> to organisations, taxons, parent, browse pages, translations and related items. The docs state a limit of <strong>10 requests per second per client</strong>. No rate headers were sent.</td></tr>
+            <tr><td>2026-09-28</td><td><code>GET /api/search.json?count=0&amp;facet_*</code></td><td>Total 711,698, with 137 <code>content_store_document_type</code> values and 1,475 <code>organisations</code>. The response carries an <code>es_cluster</code> key, so this is the legacy Elasticsearch search-api, not the Vertex-backed site search. GOV.UK labels it "unsupported".</td></tr>
+            <tr><td>2026-09-28</td><td>Search pagination limits</td><td><code>count=1500</code> returns 1,500 results (293KB, 1.9s). <code>count=1501</code> returns 422. <code>start=711000</code> still returns results, so there is <strong>no deep-paging cap</strong>. The whole index can be listed in 475 requests (calculated by Site Wise). <code>filter_locale</code> is rejected with a 422.</td></tr>
+            <tr><td>2026-09-28</td><td>Search filters for freshness</td><td><code>filter_public_timestamp=from:</code> gives 2,180 for 7 days, 6,961 for 30 days and 86,157 for 12 months. <code>to:2015-01-01</code> gives 139,860. <code>is_historic=true</code> gives 130,797. <code>is_withdrawn=true</code> returns 0, which suggests withdrawn items are excluded from this index. <code>order=-public_timestamp</code> works, and the newest item was stamped 2026-09-27T23:01Z.</td></tr>
+            <tr><td>2026-09-28</td><td>Structured data, 12 pages (6 random from search, 6 hand-picked)</td><td>10 of 10 live pages carry JSON-LD. Two hand-picked URLs were 404s and were replaced. The types seen: <code>NewsArticle</code> (news), <code>Article</code> (tribunal decisions, publications), <code>Dataset</code> (statistics), <code>FAQPage</code> (answers, guidance), <code>GovernmentOrganization</code>, <code>GovernmentService</code> (passport) and <code>BreadcrumbList</code> everywhere. HMRC manual and browse pages had breadcrumbs only. Every page carries 12–19 <code>govuk:*</code> meta tags, including <code>content-id</code>, <code>format</code>, <code>primary-publishing-organisation</code> and <code>public-updated-at</code>.</td></tr>
+            <tr><td>2026-09-28</td><td>Attachments, 30 publications via the Content API</td><td><code>details.attachments[]</code> includes <code>content_type</code>, <code>file_size</code>, <code>number_of_pages</code>, <code>isbn</code>, <code>command_paper_number</code>, <code>accessible</code> and <code>url</code>. The files are on <code>assets.publishing.service.gov.uk/media/{24-hex}/{filename}</code>. A sample PDF returned 200, 536KB, <code>max-age=1800</code>, with <code>x-amz-server-side-encryption</code> (S3 origin) and a <code>last-modified</code> date. Assets <code>robots.txt</code> is a 404, so everything is allowed.</td></tr>
+            <tr><td>2026-09-28</td><td>HTML publication check</td><td>A sitemap URL of the form <code>/government/publications/{slug}/{child}</code> resolves in the Content API as <code>document_type: html_publication</code>. <code>filter_link</code> on that path in search returns 0.</td></tr>
+            <tr><td>2026-09-28</td><td>Feeds</td><td>Atom works on finders and organisations: <code>/search/news-and-communications.atom</code> and <code>/government/organisations/hm-revenue-customs.atom</code> each return 20 entries. There is no per-page Atom feed (<code>/vat-rates.atom</code> returns 404).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">For each modality: what exists, the best legitimate path to it, what it costs, what a third-party UI may show, and how fast it changes.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Pages (text + structured)</td>
+              <td>870K sitemap URLs; 712K searchable documents</td>
+              <td>Content API <code>/api/content{base_path}</code>, keyed from the sitemap. It returns body HTML plus the link graph.</td>
+              <td>No key; 10 requests per second per client. A full pass takes about 24 hours (calculated by Site Wise).</td>
+              <td>OGL v3.0: full-text reuse with attribution. Some content is marked "except where otherwise stated".</td>
+              <td>About 236 public updates a day; select by <code>public_updated_at</code>.</td>
+            </tr>
+            <tr>
+              <td>Document metadata &amp; facets</td>
+              <td>712K records; 137 types; 1,475 organisations</td>
+              <td>Search API <code>/api/search.json</code>: 1,500 per page, no deep-paging cap</td>
+              <td>No key. "Unsupported", so it may change without notice.</td>
+              <td>OGL.</td>
+              <td>Sort by <code>-public_timestamp</code>; poll page 1 for new items.</td>
+            </tr>
+            <tr>
+              <td>Documents (PDF, ODF, XLSX, CSV)</td>
+              <td>About 2.5 attachments per publication, sampled; total open</td>
+              <td>URLs in <code>details.attachments[]</code>, then direct GET from the assets host</td>
+              <td>None; the assets host has no robots.txt.</td>
+              <td>OGL unless the attachment says otherwise. Maps and third-party data may carry other terms.</td>
+              <td>Fixed per media ID; replacements get a new ID.</td>
+            </tr>
+            <tr>
+              <td>HTML publications</td>
+              <td>107K child pages</td>
+              <td>Sitemap plus Content API. Search does not list them, so join each one to its parent through <code>links.parent</code>.</td>
+              <td>Same as pages.</td>
+              <td>OGL.</td>
+              <td>As the parent publication.</td>
+            </tr>
+            <tr>
+              <td>Legal decisions</td>
+              <td>134K employment tribunal, 18K property tribunal, 2.6K employment appeal tribunal decisions</td>
+              <td>Search API with <code>filter_format</code>; PDFs through attachments</td>
+              <td>None.</td>
+              <td>OGL, but the documents name private individuals. Treat them as personal data in the display layer.</td>
+              <td>Append-only; new decisions every day.</td>
+            </tr>
+            <tr>
+              <td>Images &amp; video</td>
+              <td>Lead images on news; YouTube embeds</td>
+              <td>Image URLs in the Content API on the assets host; videos through YouTube oEmbed</td>
+              <td>None.</td>
+              <td>Crown copyright images fall under OGL. Photos credited to third parties do not.</td>
+              <td>Fixed per asset.</td>
+            </tr>
+            <tr>
+              <td>Welsh-language content</td>
+              <td><code>.cy</code> translations; count open</td>
+              <td><code>links.available_translations</code> in the Content API</td>
+              <td>None.</td>
+              <td>OGL.</td>
+              <td>open</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where gov.uk differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Every default is inverted</h4>
+          <p>No login and no personalisation on content pages. No AI-crawler blocks. The licence explicitly permits reuse, and GOV.UK's <a href="https://www.gov.uk/help/reuse-govuk-content">reuse page</a> invites scraping within robots.txt. The only curated sliver is the Vertex-backed site search at <code>/search/all</code>, which is disallowed, and that is an output, not a source. The API and the rendered page share one JSON source, so there is no gap between what a crawler sees and what a user sees.</p>
+        </div>
+        <div>
+          <h4><code>content_id</code> is the join key</h4>
+          <p>Each document has a UUID <code>content_id</code> that is stable across URL changes. It appears in the Content API, the search index and a <code>govuk:content-id</code> meta tag on every HTML page. Translations share the <code>content_id</code> and differ by <code>locale</code>. Organisations, taxons and people are themselves content items, so the <code>links</code> hash gives a typed graph (publisher → document → topic) without any NLP.</p>
+        </div>
+        <div>
+          <h4>Use <code>public_updated_at</code>, not <code>lastmod</code></h4>
+          <p>72% of sitemap entries were "modified" in the last two months, because <code>lastmod</code> follows internal <code>updated_at</code>, which moves on template and schema republishes. Recrawling on lastmod means refetching about 600K unchanged pages. Instead, diff on <code>public_updated_at</code> through the Search API, and read <code>details.change_history</code> for the publisher's own change notes.</p>
+        </div>
+        <div>
+          <h4>Rank the head, not the corpus</h4>
+          <p>Employment tribunal decisions and HMRC manual sections alone are 31% of searchable documents, and 20% predate 2015 (calculated by Site Wise). Citizen queries ("vat rates", "renew passport", "ETA") land on a much smaller set of mainstream answer, guide, transaction and guidance pages. GDS itself grounds Chat on about 80K guidance pages. Weight on <code>document_type</code> and <code>content_purpose_supergroup</code>, and demote <code>is_historic</code>. Historic items are still live and are labelled on the page as published under a previous government.</p>
+        </div>
+        <div>
+          <h4>The search index hides some objects</h4>
+          <p>HTML publications (107K) and withdrawn items do not appear in <code>/api/search.json</code>, and the search index cannot filter by locale. An index built from search alone will miss about 18% of the sitemap (calculated by Site Wise). Use the sitemap for coverage and search for metadata and change detection.</p>
+        </div>
+        <div>
+          <h4>Query profile</h4>
+          <p>Short, task-shaped UK English queries ("tax disc", "council tax band", "universal credit login"), often pointing at a service on a different <code>*.service.gov.uk</code> host. The GOV.UK start page is the indexable object; the service behind it is not. Traffic spikes follow events such as budgets, storms and conflicts. Travel advice pages went from 1.5K to 54K weekly visits during the India–Pakistan tensions in May 2025, per the 2025 usage post.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the content item: <code>content_id</code> + <code>locale</code>, with body text, type, publishing organisation, taxons and dates. Attachments are child documents keyed by attachment <code>id</code> and media URL, with page count and ISBN where present.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>content_id</code> ↔ <code>base_path</code> ↔ <code>links.organisations</code>/<code>taxons</code>/<code>parent</code>. HTML publications join to their parent through <code>links.parent</code>. Tribunal decisions carry case numbers in the slug and title.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The Search API full listing (475 calls, about 15 minutes) for metadata and <code>public_timestamp</code>. 2) The sitemap for the 107K items search omits. 3) The Content API for bodies and links at ≤10 requests per second, about 24 hours for the full corpus. 4) Attachments from the assets host, PDFs first. 5) Atom feeds per organisation as a low-latency trigger.</li>
+        <li><strong>Recrawl cadence:</strong> poll search <code>order=-public_timestamp</code> every 15 minutes, since there are about 300 changes a day. Take the sitemap nightly to detect additions and deletions only. Re-fetch mainstream pages on <code>public_updated_at</code> change. Leave tribunal decisions and manuals effectively immutable after ingest.</li>
+        <li><strong>Derivatives to generate:</strong> PDF text and tables (statistics attachments are the main source of numeric facts); a type-aware quality prior; PII redaction or down-ranking for tribunal decisions; Welsh–English parallel pairs from <code>available_translations</code>.</li>
+        <li><strong>Demo to build:</strong> a "what changed in government this week" feed. Diff <code>public_updated_at</code> through the Search API, show each item's <code>change_history</code> note, and group by organisation. It uses only documented, OGL-licensed endpoints.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The Search API is labelled unsupported.</strong> Site search has already moved to <a href="https://github.com/alphagov/search-api-v2">search-api-v2 on Vertex AI Search</a>. If the legacy Elasticsearch index is retired, the fast metadata listing and <code>public_timestamp</code> diffing go with it. Keep the sitemap plus Content API path working on its own.</li>
+        <li><strong>Personal data in legal records.</strong> The 150K+ tribunal decisions name claimants and respondents. The OGL does not cover personal data, so an index needs a policy for name queries and for removal requests.</li>
+        <li><strong>Mixed licensing inside attachments.</strong> OGL applies "except where otherwise stated". Ordnance Survey maps, third-party photos and externally hosted attachments (for example <code>digital.nhs.uk</code> or <code>ons.gov.uk</code> links) need their own checks before display or redistribution.</li>
+        <li><strong>Authority is also a liability.</strong> Answers drawn from GOV.UK are read as official. Stale or historic pages must be served with their dates and <code>withdrawn_notice</code>, or the index will confidently give out superseded rules. Tax thresholds, for example, change every April.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://insidegovuk.blog.gov.uk/2026/01/28/how-people-used-gov-uk-in-2025/">Inside GOV.UK: How people used GOV.UK in 2025</a> (2026-01-28). Visits, page views, device mix, search share, AI referrers, app downloads.</li>
+        <li><a href="https://gds.blog.gov.uk/2026/05/14/gov-uk-chat-launches/">GDS blog: GOV.UK Chat launches in the GOV.UK app</a> (2026-05-14). Launch dates, question count, the 80K guidance pages.</li>
+        <li><a href="https://content-api.publishing.service.gov.uk/">GOV.UK Content API documentation</a>. Scope and the 10 requests per second limit.</li>
+        <li><a href="https://www.gov.uk/help/reuse-govuk-content">Reuse GOV.UK content</a>. OGL conditions, APIs, scraping policy, schema.org use.</li>
+        <li><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a> (The National Archives).</li>
+        <li><a href="https://github.com/alphagov/search-api-v2">alphagov/search-api-v2</a>. Site search on Vertex AI Search (Discovery Engine).</li>
+        <li><a href="https://en.wikipedia.org/wiki/Gov.uk">Wikipedia: GOV.UK</a>. Launch date and predecessors.</li>
+        <li>Local probes on 2026-09-28: headers, robots.txt, llms.txt, full sitemap census, Content API, Search API (facets, filters, paging), a 12-page structured-data sample, a 30-publication attachment sample and Atom feeds. Full results are in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Sitemap <code>lastmod</code> reflects system republishing, not editorial change. <em>Basis:</em> <code>/vat-rates</code> lastmod 2026-09-25 matches Content API <code>updated_at</code> while <code>public_updated_at</code> is 2014-12-12, and 72% of all lastmods fall in August–September 2026.</li>
+        <li>The public <code>/api/search.json</code> is still the legacy Elasticsearch index, separate from the Vertex-backed site search. <em>Basis:</em> the response carries an <code>es_cluster</code> key, and search-api-v2's README describes itself as powering only the <code>/search/all</code> finder.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>The total number of attachment files and their bytes. Could be closed by walking <code>details.attachments</code> for every publication-type content item (about 245K parent publications, statistics and consultations in the sitemap, so about 7 hours at 10 requests per second; calculated by Site Wise) and summing <code>file_size</code>.</li>
+        <li>How many Welsh <code>.cy</code> translations exist. The sitemap has none and search rejects <code>filter_locale</code>. Could be closed by counting <code>available_translations</code> with <code>locale: cy</code> during the Content API pass.</li>
+        <li>How many withdrawn items exist and whether they stay fetchable. Could be closed by diffing the sitemap against search and checking <code>withdrawn_notice</code> in the Content API for the residual URLs that are not HTML publications (about 51K).</li>
+        <li>Whether the 10 requests per second limit is enforced by 429 or by queueing. The docs say requests "won't be processed" and no rate headers were seen. Could be closed with a controlled burst test at 12–15 requests per second for 60 seconds.</li>
+        <li>Whether GOV.UK exposes a public bulk export or change stream, such as Publishing API events, as an alternative to polling. Could be closed by reviewing <code>docs.publishing.service.gov.uk</code> and asking GDS through the API support contact.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
