@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>chromewebstore.google.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-09-29</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>chromewebstore.google.com</h1>
+      <p class="lede">The Chrome Web Store is a 368K-listing long tail whose pages embed each extension's full manifest, and every package is downloadable without a key.</p>
+      <div class="tag-row">
+        <span class="tag">App store</span>
+        <span class="tag">Browser extensions</span>
+        <span class="tag">Code packages</span>
+        <span class="tag">Google</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>The Chrome Web Store is Google's catalogue of extensions, themes and the remaining Chrome apps. It opened on 7 December 2010 (<a href="https://en.wikipedia.org/wiki/Chrome_Web_Store">Wikipedia</a>) and moved from <code>chrome.google.com/webstore</code> to its own host with a redesign in November 2023 (<a href="https://9to5google.com/2023/11/20/google-chrome-web-store-redesign-preview/">9to5Google</a>). The old paths now 301 to the new host. It is not a revenue line in itself: the store sells nothing and carries no ads. Its job is to control what code runs inside Chrome. For an index builder it is unusual in two ways. First, the listing page is a thin shell over a rich record. The SSR payload carries the full <code>manifest.json</code> (permissions, host access, content-script matches), exact rating averages and counts, creation and update timestamps, the developer's trader status and privacy disclosures. Second, the object itself, the CRX package, can be fetched through Chrome's public update protocol, so the corpus includes executable code as well as metadata. The hard part is the shape of the catalogue. Most listings have single-digit users, zero ratings and are less than two years old, so ranking matters more than coverage.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>chromewebstore.google.com</code>, served by Google Front End (<code>server: ESF</code>)</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>https://chromewebstore.google.com/detail/{slug}/{32-char id}</code>; the slug is decorative</dd></div>
+        <div><dt>Category</dt><dd>Browser extension and theme store</dd></div>
+        <div><dt>Related hosts</dt><dd><code>clients2.google.com/service/update2/crx</code> (update protocol); <code>clients2.googleusercontent.com/crx/blobs/</code> (packages); <code>lh3.googleusercontent.com</code> (icons, screenshots); legacy <code>chrome.google.com/webstore</code> (301)</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC (Alphabet)</dd></div>
+        <div><dt>Founded / launched</dt><dd>2010-12-07; new host 2023-11</dd></div>
+        <div><dt>Business model</dt><dd>None directly. It is a distribution and safety gate for the Chrome platform, funded by Google.</dd></div>
+        <div><dt>Scale anchor</dt><dd>221,717 published extensions as of 2026-06-30, per third-party estimator Exstats (<a href="https://exstats.com/blog/state-of-browser-extensions-q2-2026">Exstats Q2 2026</a>). Google publishes no catalogue count.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Google publishes almost nothing about the store. Corpus figures come from Site Wise probes on 2026-09-29. Sample shares carry wide error bars: ±7 points at n=194 (calculated by Site Wise).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd><strong>368,367</strong> unique <code>/detail/</code> URLs across 44 shards. There are no category, developer or collection URLs and no <code>lastmod</code>. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Dead listings in the sitemap</dt>
+          <dd>6 of 200 sampled IDs (3%) render a soft-404 (<code>/detail/empty-title/{id}</code>, HTTP 200). That puts the live corpus at about 357K (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Item mix</dt>
+          <dd>Of the 194 live samples, 42 (22%) are themes, which puts them at about 80K (calculated by Site Wise). 143 of the 152 non-themes are Manifest V3. The 9 MV2 items are mostly legacy Chrome apps with no category. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>User distribution</dt>
+          <dd>The median is 9.5 users. 76% show fewer than 100, 94% fewer than 1,000 and 1% have 10K or more. 27% show no user count at all. Exstats puts the median Chrome extension at 14 users (<a href="https://exstats.com/blog/state-of-browser-extensions-q2-2026">Exstats</a>). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Ratings coverage</dt>
+          <dd>59% of sampled listings have zero ratings. An earlier study found no meaningful difference between the median ratings of benign and malicious extensions (<a href="https://arxiv.org/html/2406.12710">Hsu, Tran &amp; Fass 2024</a>). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Churn</dt>
+          <dd>42% of sampled listings were created in the last 12 months and 52% were updated in that time. 12% have not been updated for more than 4 years. Exstats counted a net +43,418 extensions in Q2 2026 alone (<a href="https://exstats.com/blog/state-of-browser-extensions-q2-2026">Exstats</a>). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Package availability</dt>
+          <dd>Of 1,000 random sitemap IDs sent to the update endpoint, 979 returned a CRX and 21 returned <code>noupdate</code>. The 4 we checked were all MV2 listings. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Package bytes</dt>
+          <dd>The median CRX is 228KB, the 90th percentile 3.7MB and the mean 1.9MB. The full package corpus is about <strong>684GB</strong> (368K × 97.9% × mean; calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Localization</dt>
+          <dd>87% of sitemap entries list a single <code>hreflang</code>, and 86% of sampled listings declare one language. The sitemap uses 69 locale codes in all. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Security-noteworthy installs</dt>
+          <dd>More than 346M users installed a malicious, policy-violating or vulnerable extension in the study window (July 2020 to May 2023). Malware stayed in the store a median of about 380 days. Only about 60% of extensions were still listed a year after publication. <a href="https://arxiv.org/html/2406.12710">Hsu, Tran &amp; Fass 2024</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-29 from a sandbox egress with a desktop Chrome UA, paced at about 1 request per second. The DNS probe was skipped because DNS in this sandbox is unreliable; hosting claims come from response headers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe"><code>curl -sI https://chromewebstore.google.com/</code></td><td data-label="Observation">200, <code>server: ESF</code>, <code>cache-control: no-cache, no-store</code>. There is a nonce CSP with Trusted Types, and the report URI names the app <code>ChromeWebStoreConsumerFeUi</code>. It sets a <code>NID</code> cookie on <code>.google.com</code> and <code>x-frame-options: DENY</code>. There was no challenge for curl. <code>chrome.google.com/webstore/detail/{id}</code> returns a 301 to the new host.</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe"><code>curl -s …/robots.txt</code></td><td data-label="Observation">There is one <code>*</code> group. It disallows <code>/search</code> and the detail sub-pages <code>/reviews</code>, <code>/privacy</code>, <code>/support</code>, <code>/related</code>, <code>/preview</code> and <code>/report</code>, plus detail URLs carrying <code>utm_*</code>, <code>authuser</code>, <code>q</code> and similar parameters. <strong>No AI-crawler groups.</strong> There is one <code>Sitemap:</code> line. <code>/llms.txt</code> and <code>/feed</code> return 404.</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe">Sitemap census, <code>/sitemap</code> plus <code>?shard=0…43</code></td><td data-label="Observation">The index has 44 shards, each with <code>lastmod 2026-09-28</code> (regenerated daily). All 44 returned 200: about 6.2MB raw each, 20.4MB gzip for shards 1–43. Shards hold 7,968–9,031 URLs (the last one 209), so IDs are spread across shards by hash. The count was 368,367 <code>&lt;url&gt;</code>, all unique <code>/detail/{slug}/{id}</code>. IDs match <code>[a-p]{32}</code>. Each entry carries <code>xhtml:link</code> alternates (<code>?hl=</code>) only for the listing's own locales.</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe">Detail page, <code>/detail/ublock-origin-lite/ddkj…mpfh</code></td><td data-label="Observation">200, 725KB, fully server-rendered. The visible text shows 21,000,000 users, 4.5 from 3.6K ratings, version 2026.926.2202, updated September 26, 2026, a 9.31MiB size, 60 languages, a developer email, "Non-trader", privacy declarations and 12 related items. The OG tags are title, description and a 128px icon. <strong>No JSON-LD.</strong> The canonical is <code>?hl=en</code>.</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe"><code>AF_initDataCallback ds:0</code> blob</td><td data-label="Observation">83KB of positional JSON. It holds the ID, name, exact rating (4.5014) and count (3,612), user count, category path (<code>make_chrome_yours/privacy</code>), creation epoch (2022-09-08), update epoch, screenshot URLs, full description, developer email, name and an opaque developer ID, a support URL, a privacy-policy URL, locale codes, and <strong>the complete <code>manifest.json</code> as a string</strong> (<code>permissions</code>, <code>host_permissions: [&lt;all_urls&gt;]</code>, MV3). The 12 related items each carry their own manifest.</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe">Structured-data sample, 200 random sitemap IDs</td><td data-label="Observation">All returned 200. 194 parsed and 6 were soft-404s. <strong>0 of 194 had JSON-LD.</strong> 22% were themes. 13 were Featured and 50 declared themselves traders. The median had 2 media items, and 18 included a YouTube video. The median description was 551 characters. The median page was 637KB, so a full HTML crawl is about 235GB (calculated by Site Wise). 15 of the 194 request <code>&lt;all_urls&gt;</code>. Distribution figures are in Verified Metrics.</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe">Update protocol, <code>clients2.google.com/service/update2/crx?response=updatecheck&amp;x=id%3D…</code></td><td data-label="Observation">Keyless XML. For each app ID it returns <code>version</code>, <code>size</code>, <code>hash_sha256</code>, a <code>codebase</code> URL to <code>clients2.googleusercontent.com/crx/blobs/…/{ID}_{version}.crx</code> and a <code>_esbAllowlist</code> flag. <code>response=redirect</code> issues a 302 straight to the blob. <strong>100 IDs per request worked</strong> (10 requests for 1,000 IDs, all 200). An unknown ID returns <code>error-unknownApplication</code>.</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe">Update-protocol census, 1,000 random IDs</td><td data-label="Observation">979 returned <code>ok</code> with a package and 21 returned <code>noupdate</code>. <code>_esbAllowlist="true"</code> on 674, <code>false</code> on 313, absent on 13. Size figures are in Verified Metrics. A full metadata pass over 368K IDs would take about 3.7K requests (calculated by Site Wise).</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe">MV2 residue check, 4 <code>noupdate</code> IDs</td><td data-label="Observation">All 4 detail pages still return 200 with full listings (for example "TYPO", "Snake"). Their manifests are <code>manifest_version: 2</code> and they were last updated between 2017 and 2019. The removed classic uBlock Origin (<code>cjpal…iagm</code>) returns <code>noupdate</code> and a soft-404 page instead.</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe">Reviews page, <code>/detail/{slug}/{id}/reviews</code></td><td data-label="Observation">The bare-ID form returns a 301 to the slugged URL, and the slugged URL returns 200 and server-renders the <strong>20 most recent reviews</strong>: reviewer name, date, text and helpful votes. There are sort and language controls. More reviews load through the internal RPC. The whole path is robots-disallowed.</td></tr>
+            <tr><td data-label="Date">2026-09-29</td><td data-label="Probe">Category and search pages</td><td data-label="Observation"><code>/category/extensions/productivity/tools</code> server-renders 32 items and <code>/category/themes</code> 20. <code>/search/ublock</code> (disallowed) renders 9. Neither is in the sitemap, and deeper pages are loaded by the internal RPC.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">For each modality: what exists, the best legitimate path to it, what it costs, what a third-party UI may show, and how fast it changes.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Listing records (text + structured)</td>
+              <td data-label="Objects &amp; est. count">368K sitemap IDs; about 357K live</td>
+              <td data-label="Best legitimate path">Sitemap, then the detail page, parsing <code>ds:0</code> (the visible text alone lacks exact ratings and dates)</td>
+              <td data-label="Auth &amp; quota">No key. About 235GB of HTML for one pass (calculated by Site Wise); rate limit open</td>
+              <td data-label="License / display">Developer-authored copy under Google ToS. Snippets and links are safe; mirroring full descriptions needs review.</td>
+              <td data-label="Freshness">No <code>lastmod</code>. About 50% updated each year; ratings refreshed "daily".</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Code packages (CRX)</td>
+              <td data-label="Objects &amp; est. count">About 361K packages, about 684GB (calculated by Site Wise)</td>
+              <td data-label="Best legitimate path">Update protocol, 100 IDs per call, then a blob GET</td>
+              <td data-label="Auth &amp; quota">No key. A rate limit is open.</td>
+              <td data-label="License / display">The code belongs to each developer and many are closed source. Index derived features (permissions, hashes, endpoints); do not redistribute packages.</td>
+              <td data-label="Freshness"><code>version</code> and <code>hash_sha256</code> give exact change detection.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Manifests &amp; permissions</td>
+              <td data-label="Objects &amp; est. count">One per listing</td>
+              <td data-label="Best legitimate path">Embedded in <code>ds:0</code>, or unpacked from the CRX</td>
+              <td data-label="Auth &amp; quota">As above.</td>
+              <td data-label="License / display">Factual metadata; low risk.</td>
+              <td data-label="Freshness">Changes with each version.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images &amp; video</td>
+              <td data-label="Objects &amp; est. count">Icon, tile, and a median of 2 screenshots per listing; YouTube promos on about 9% of listings (sampled)</td>
+              <td data-label="Best legitimate path"><code>lh3.googleusercontent.com</code> URLs from <code>ds:0</code>, resized by the <code>=sNNN</code> suffix; YouTube oEmbed for the promos</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">The developer's marketing assets. Display them as thumbnails linked to the listing.</td>
+              <td data-label="Freshness">Replaced with new versions of the listing.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Reviews</td>
+              <td data-label="Objects &amp; est. count">About 40% of listings have at least one rating (sampled); review total open</td>
+              <td data-label="Best legitimate path"><strong>No legitimate bulk path.</strong> <code>/reviews</code> is robots-disallowed. The aggregate rating and count are on the allowed detail page.</td>
+              <td data-label="Auth &amp; quota">n/a</td>
+              <td data-label="License / display">User content with reviewer names. Store the aggregate only.</td>
+              <td data-label="Freshness">Recent reviews now weigh more in the rating (<a href="https://developer.chrome.com/blog/cws-review-updates-2026">CWS blog, 2026-08-20</a>).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Developer entities</td>
+              <td data-label="Objects &amp; est. count">Opaque developer ID, email, website, trader flag; count open</td>
+              <td data-label="Best legitimate path">Fields in <code>ds:0</code>. There are no developer pages in the sitemap.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Emails are personal data for non-traders. Do not surface them in bulk.</td>
+              <td data-label="Freshness">Rarely changes.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Publisher API</td>
+              <td data-label="Objects &amp; est. count">Only items the caller owns</td>
+              <td data-label="Best legitimate path"><a href="https://developer.chrome.com/docs/webstore/api">Chrome Web Store API v2</a>, which is for publishing and status</td>
+              <td data-label="Auth &amp; quota">OAuth or a service account</td>
+              <td data-label="License / display">n/a: no catalogue read access.</td>
+              <td data-label="Freshness">n/a</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where chromewebstore.google.com differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Open by default, sub-pages walled</h4>
+          <p>Unlike most Google properties, the store has no AI-crawler blocks, no login wall and no JavaScript gate. The whole SEO surface is the detail page. The walls are narrow and deliberate: reviews, privacy, support, related and search are disallowed, which keeps user text and query pages out of third-party indexes while leaving every listing open.</p>
+        </div>
+        <div>
+          <h4>The ID is a public key hash</h4>
+          <p>The 32-character <code>[a-p]</code> ID is derived from the developer's signing key, so it is stable for the life of the item and across Chrome, enterprise policies and the update protocol. The slug in the URL changes with the name and is ignored. Canonicalize to <code>/detail/{id}</code>. Removed items keep resolving with HTTP 200 to <code>/detail/empty-title/{id}</code>, so test for that slug rather than the status code.</p>
+        </div>
+        <div>
+          <h4>The manifest is the authoritative field</h4>
+          <p>Titles and descriptions are SEO-tuned, often keyword-stuffed ("YouTube AdBlock – …"). The manifest declares what the item can actually do: <code>permissions</code>, <code>host_permissions</code>, <code>content_scripts.matches</code>, <code>externally_connectable</code>. It is exposed without downloading the package. Retrieval for "extensions that can read my Gmail" should rank on manifest host patterns, not on description text.</p>
+        </div>
+        <div>
+          <h4>Change detection through the update protocol</h4>
+          <p>The sitemap has no <code>lastmod</code>, but the update endpoint returns <code>version</code> and <code>hash_sha256</code> for 100 IDs per call. A daily sweep of the whole catalogue costs about 3.7K requests (calculated by Site Wise), and only changed IDs need their detail pages re-fetched. User counts and ratings drift without a version bump, so re-fetch pages on a slower schedule.</p>
+        </div>
+        <div>
+          <h4>The trust signal lives off the page</h4>
+          <p>With a median of about 10 users and 59% of listings unrated, engagement signals are absent for most of the corpus. Two usable priors: the <code>Featured</code> flag (7% of the sample), which Google says is being retired later in 2026; and <code>_esbAllowlist</code> in the update response (67%). <span class="evidence inferred">inferred</span> <em>Basis:</em> <code>_esbAllowlist</code> is Enhanced Safe Browsing's trusted-extension flag, because it is <code>true</code> on established items such as uBlock Origin Lite and Twitch Adblock and is <code>false</code> on a third of random IDs.</p>
+        </div>
+        <div>
+          <h4>Query profile</h4>
+          <p>Queries are functional and brand-led: "ad blocker", "dark mode", "grammarly", "json viewer", "pdf editor". The long tail is enterprise kiosk apps and single-school tools (for example "ccsd iready kiosk app"), with anime and game themes making up most of the theme corpus (the top sitemap slugs are theme names). Search needs strong deduplication of clones: the related list for uBO Lite alone contains several near-identical "AdGuard" and "uBlock" variants.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the item version: <code>id</code> + <code>version</code>. It carries the listing text, the category, users, the exact rating and count, timestamps, the developer ID and trader flag, the manifest, and CRX hash and size. Screenshots and the promo video are attached media.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>id</code> ↔ CRX <code>hash_sha256</code> ↔ developer ID. Manifest <code>host_permissions</code> and <code>content_scripts.matches</code> give a join from each extension to the sites it touches, which is a cross-site edge no other store exposes. Clone detection works by hashing the files inside the CRX.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The sitemap nightly (44 shards, about 20MB gzip) for the ID universe and additions or deletions. 2) An update-protocol sweep (about 3.7K calls) for version and hash change detection. 3) Detail pages for changed IDs only, parsing <code>ds:0</code>; the first pass is about 235GB. 4) CRX downloads for items above a user threshold (at 1K users that is about 6% of the corpus from the sample), for code features. 5) Category pages for Google's editorial ordering.</li>
+        <li><strong>Recrawl cadence:</strong> the sitemap and the update sweep daily. Detail pages on version change, plus a 30-day refresh for users and ratings. Themes and pre-2022 items quarterly.</li>
+        <li><strong>Derivatives to generate:</strong> a permission-risk score from the manifest; a site→extension graph from host patterns; code-level similarity clusters over CRX contents; OCR of screenshots for UI-described features; and embeddings of descriptions deduplicated by cluster.</li>
+        <li><strong>Demo to build:</strong> a "which extensions can touch this site" lookup. Enter a domain and get every listed extension whose manifest host patterns match it, ranked by users, built entirely from sitemap plus <code>ds:0</code> manifests.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The positional <code>ds:0</code> schema is undocumented.</strong> Field indexes such as <code>[14]</code> for users and <code>[18]</code> for the manifest can shift with any front-end release. Validate field types on every run, and fall back to the visible-text parse and the CRX manifest.</li>
+        <li><strong>The update protocol is Chrome's plumbing, not a data API.</strong> It is keyless now, but bulk use by a non-browser could be throttled or require client attestation. Keep request volume near what a single Chrome profile with many extensions would generate, and cache hashes.</li>
+        <li><strong>The corpus is being reshaped by policy.</strong> MV2 listings were due to be removed on 2026-08-31 (<a href="https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline">MV2 timeline</a>), yet MV2 residue is still listed. A new default cap of 2 published extensions per developer and the retirement of the Featured badge were announced on 2026-08-20 (<a href="https://developer.chrome.com/blog/cws-review-updates-2026">CWS blog</a>). Expect deletions in bulk and a slower rate of new items; keep tombstones.</li>
+        <li><strong>Malicious items are a retrieval-safety problem.</strong> Malware has stayed listed for about a year on median (Verified Metrics). Ranking on ratings or users alone surfaces it. Removed items vanish into soft-404s, so the index must propagate deletions within a day.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://arxiv.org/html/2406.12710">Hsu, Tran &amp; Fass, "What is in the Chrome Web Store?"</a> (arXiv 2406.12710, 2024). Security-noteworthy installs, malware dwell time, lifespans, rating distributions.</li>
+        <li><a href="https://exstats.com/blog/state-of-browser-extensions-q2-2026">Exstats: Browser Extension Market Q2 2026</a>. A third-party estimator of catalogue count, quarterly growth and median users.</li>
+        <li><a href="https://developer.chrome.com/blog/cws-review-updates-2026">Chrome for Developers: Chrome Web Store updates</a> (2026-08-20). The publication limit, Featured retirement and rating recency.</li>
+        <li><a href="https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline">Manifest V2 support timeline</a>. MV2 disabled in Chrome 138 (2025-07-24) and store removal on 2026-08-31.</li>
+        <li><a href="https://developer.chrome.com/docs/webstore/api">Chrome Web Store API</a>. Publisher-only; v2 is current and v1 was deprecated in October 2025.</li>
+        <li><a href="https://9to5google.com/2023/11/20/google-chrome-web-store-redesign-preview/">9to5Google: the Chrome Web Store redesign is live</a> (2023-11-20).</li>
+        <li><a href="https://en.wikipedia.org/wiki/Chrome_Web_Store">Wikipedia: Chrome Web Store</a>. Launch date and history.</li>
+        <li>Local probes on 2026-09-29: headers, robots.txt, llms.txt, a full 44-shard sitemap census, a detail-page and <code>ds:0</code> field map, a 200-page structured-data sample, a 1,000-ID update-protocol census, an MV2 residue check, and reviews, category and search pages. Full results are in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The 21 <code>noupdate</code> items are MV2 packages Google has stopped serving while leaving their listings up. <em>Basis:</em> all 4 checked have <code>manifest_version: 2</code> in <code>ds:0</code> and live 200 detail pages, while MV3 items in the same batch return packages.</li>
+        <li>Sitemap shards are assigned by ID hash, not by category or date. <em>Basis:</em> 43 shards hold 7,968–9,031 URLs each, with themes and extensions mixed in every shard.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>The rate limit on detail pages and the update protocol. Could be closed by a controlled ramp from 1 to 5 requests per second over 10 minutes on each host, watching for 429s or CAPTCHA pages.</li>
+        <li>The exact theme, extension and app split, and the total count of reviews. Could be closed by a full <code>ds:0</code> pass (manifest <code>theme</code> key, category path, rating count per ID); the review text total is not reachable without the disallowed path.</li>
+        <li>Whether the MV2 residue (about 2% of IDs) will be deleted. Could be closed by re-running the update-protocol census on the same 1,000 IDs monthly and diffing <code>noupdate</code> and soft-404 counts.</li>
+        <li>How many unlisted or private items exist outside the sitemap. Could be closed by feeding IDs from public sources (GitHub <code>update_url</code> references, enterprise policy docs) into the update protocol and counting <code>ok</code> responses for IDs not in the sitemap.</li>
+        <li>What <code>_esbAllowlist</code> means precisely. Could be closed by matching it against Chrome's Enhanced Safe Browsing "not trusted" install warning on a set of true and false IDs in a real Chrome profile.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
