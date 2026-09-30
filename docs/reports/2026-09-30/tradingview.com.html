@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tradingview.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-09-30</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>tradingview.com</h1>
+      <p class="lede">TradingView exposes a 1M-instrument entity graph keyed by ISIN and FIGI, and 24M community charts and scripts, but its terms forbid processing the market data.</p>
+      <div class="tag-row">
+        <span class="tag">Finance</span>
+        <span class="tag">Market data</span>
+        <span class="tag">Charts</span>
+        <span class="tag">Social trading</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>TradingView is a browser charting platform with a social network attached. It was founded in 2011 and went through Techstars in 2013. It raised $37M in 2018 and $298M at a $3B valuation in October 2021 (<a href="https://en.wikipedia.org/wiki/TradingView">Wikipedia</a>, <a href="https://www.prnewswire.com/news-releases/tradingview-hits-3-billion-valuation-with-298-million-investment-301400502.html">PR Newswire</a>). For an index builder it is three corpora on one host. The first is an instrument catalogue: about 1M symbol pages, each with schema.org <code>FinancialProduct</code> JSON-LD that carries ISIN, CUSIP and FIGI. That makes it a free cross-exchange join table. The second is a user-generated layer of ideas (annotated charts with prose) and Pine Script indicators, which share one numeric ID sequence that has passed 23.8M. The third is a licensed newswire mirror. Most of it is server-rendered and crawlable. The binding constraint is contractual: the terms license all content and market data for "display-only use" and forbid "any processing of TradingView's content".</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.tradingview.com</code>; the apex returns a 301. Served through CloudFront, <code>server: tv</code>.</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/symbols/{EXCHANGE}-{TICKER}/</code>, <code>/chart/{SYMBOL}/{uuid8}-{slug}/</code> (ideas), <code>/script/{uuid8}-{slug}/</code>, <code>/news/{provider-id}:{hash}:0-{slug}/</code></dd></div>
+        <div><dt>Category</dt><dd>Financial charting, market data and a trader social network</dd></div>
+        <div><dt>Grouped hosts</dt><dd>20 locale hosts (<code>in.</code>, <code>de.</code>, <code>jp.</code>, <code>br.</code>, <code>cn.</code> and others), each with its own sitemap; <code>s3.tradingview.com</code> (chart images, BunnyCDN); backends <code>scanner.</code>, <code>symbol-search.</code>, <code>news-mediator.</code>, <code>pine-facade.</code>, <code>mcp.</code></dd></div>
+        <div><dt>Owner</dt><dd>TradingView, Inc. (private). CEO Oleg Mukhanov since 2024 (<a href="https://en.wikipedia.org/wiki/TradingView">Wikipedia</a>).</dd></div>
+        <div><dt>Founded / launched</dt><dd>2011</dd></div>
+        <div><dt>Business model</dt><dd>Freemium subscriptions, broker partnerships, ads, B2B widgets and charting libraries</dd></div>
+        <div><dt>Scale anchor</dt><dd>"The platform used by 100 million traders", per the pricing page as read on 2026-09-30 (<a href="https://www.tradingview.com/pricing/">TradingView pricing</a>). This is a self-reported, undated marketing claim.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from Site Wise probes on 2026-09-30. Shares from the 60-page symbol sample carry wide error bars: about ±13 points at n=60 (calculated by Site Wise).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Symbol sitemap corpus</dt>
+          <dd><strong>1.04M</strong> unique <code>/symbols/</code> URLs (1,052,466 entries, of which 11K are duplicates) across 27 shards of 40K. There is no <code>lastmod</code> and there are no image extensions. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Symbol mix</dt>
+          <dd>There are 228 exchange prefixes. FINRA alone is 227K (22%): TRACE bonds and short-volume series. CFTC COT series are 71K (7%) and <code>ECONOMICS</code> is 15K. 195K (19%) have no prefix; these are crypto pairs, on-chain metrics and aggregates (calculated by Site Wise). In the page sample, bonds are 26 of 60 and stocks 9 of 60. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Live-scannable universe</dt>
+          <dd>The scanner's <code>global</code> market reports <code>totalCount</code> 456K. By market: bond 169K, crypto 64K, futures 53K, america 20K, economics 15K, forex 6.3K. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Identifier coverage</dt>
+          <dd>All 60 sampled symbol pages carry <code>FinancialProduct</code> JSON-LD. 41 of 60 (68%) include an ISIN and 39 (65%) a FIGI. Indices, COT series and crypto carry only <code>tickerSymbol</code>. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Idea and script ID sequence</dt>
+          <dd>ID 5.87M was created 2019-04-07 and ID 23.84M on 2026-09-30. That is an average of <strong>6.6K IDs per day</strong> (calculated by Site Wise). Overnight UTC on 2026-09-30 the rate was 455 IDs in 2.5h, about 4.4K per day. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Public share of IDs</dt>
+          <dd>22 English ideas were listed against 455 IDs consumed in the same window, so about 5% of IDs surface on <code>www</code> (calculated by Site Wise). Listings stop at a <code>total</code> of 12,000 (500 pages). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>UGC in sitemaps</dt>
+          <dd>Only 5,443 idea URLs and 735 script URLs appear in the <code>www</code> sitemaps; <code>jp.</code> lists 2,853 ideas. That is under 0.1% of the ID space (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>News velocity</dt>
+          <dd>The English news flow held 200 stories in 1.9h, about 2.5K per day (calculated by Site Wise). 66% are flagged <code>paywall</code>. Reuters (75) and Dow Jones (40) lead. The news sitemap holds only 35 URLs, 29 of them TradingView-authored. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Page weight</dt>
+          <dd>The median random symbol page is 236KB decoded, so one HTML pass over the symbol sitemap is about <strong>245GB</strong> (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Official MCP server</dt>
+          <dd>The server at <code>mcp.tradingview.com/mcp</code> is in beta and uses OAuth 2.1. It is limited to about 100 tool calls per minute per user, requires Essential or above, and exposes tool groups for market data, screener, news, fundamentals, documents and calendars (<a href="https://www.tradingview.com/mcp/docs">MCP docs</a>). It was announced on 2026-09-16 (<a href="https://www.hokanews.com/2026/09/tradingview-launches-official-mcp.html">Hokanews</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-09-30 from a sandbox egress with a desktop Chrome UA, paced at about 1 request per second (around 150 requests in all, with no 403 or 429). The DNS probe was skipped because DNS in this sandbox is unreliable; hosting claims come from response headers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe"><code>curl -sI https://www.tradingview.com/</code></td><td data-label="Observation">200, 1.26MB. <code>server: tv</code>, <code>x-cache: Hit from cloudfront</code>, <code>cache-control: max-age=120</code>, <code>vary: Cookie</code>. HSTS preload is set. There was no bot challenge for curl on any page.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe"><code>curl -s …/robots.txt</code></td><td data-label="Observation">The <code>*</code> group disallows <code>/search/</code>, <code>/widgetembed/</code>, <code>/embed-widget/</code>, <code>/accounts/</code>, <code>/options/chain/</code> and popup or mobile-app variants. One shared group of 16 AI agents (ClaudeBot, Google-Extended, OAI-SearchBot and others) is disallowed only from UGC paths: <code>/ideas/*</code>, <code>/script(s)/*</code>, <code>/chart/*</code>, <code>/u/*</code>, <code>/symbols/*/minds/*</code>, <code>/chat/*</code> and similar. <strong>Symbol and news pages stay open to them. GPTBot is not named.</strong> Bingbot gets <code>Crawl-delay: 5</code>, Yandex 10. <code>/llms.txt</code> returns 404.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">Sitemap census, <code>/sitemap.xml</code> plus 35 children</td><td data-label="Observation">All 35 children returned 200. There are 1,065,021 <code>&lt;loc&gt;</code> entries, of which 1,053,928 are unique. Symbols: 27 shards named by offset (<code>sitemap-symbols.40000.xml</code> …), 40K each and 12,466 in the last. Also categories 3,027, support 2,504, broker comparisons 528, tags 163, base 120, ideas 5,443, scripts 735 and a news sitemap of 35. <strong>No <code>lastmod</code>, hreflang or image entries anywhere.</strong></td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">Symbol page, <code>/symbols/NASDAQ-AAPL/</code></td><td data-label="Observation">200, 567KB, server-rendered. The JSON-LD holds <code>FinancialProduct</code> (description, <code>category</code>, ticker, ISIN, CUSIP and FIGI identifiers), plus <code>Dataset</code> (creator NASDAQ, publisher TradingView), <code>BreadcrumbList</code> (sector and industry) and a <code>FAQPage</code> whose answers embed the live price (329.40 USD). There are 20 <code>hreflang</code> alternates to the locale hosts. The <code>/ideas/</code> sub-tab canonicalizes back to the symbol page, while <code>/news/</code> keeps its own canonical.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">Structured-data sample, 60 random symbol sitemap URLs</td><td data-label="Observation">All 60 returned 200 and all have <code>FinancialProduct</code>. By category: Bond 26, Index 13, Stock 9, Financial Instrument 5, Crypto 3, Futures 2, ETF 2. FAQ blocks appear only on stock and ETF pages (10). The median page is 236KB. A matured FINRA bond outside the sample (<code>FINRA-AAPL5000369</code>) returned a real 404.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">Idea page, <code>/chart/BTCUSD/7GCqPZBy-…/</code></td><td data-label="Observation">200, 468KB. <strong>No JSON-LD</strong>; OG tags only. The <code>prs.init-data+json</code> block <code>ssrIdeaData</code> holds a numeric <code>id</code> (5868771), <code>uuid</code>, name, full description and an AST version of it, interval, direction (long/short), <code>pro_symbol</code>, author, <code>created_at</code>/<code>updated_at</code>, likes/comments/views (355/75/50K), moderation flags (<code>is_reviewed</code>, <code>is_picked</code>, <code>hidden_by</code>), 4 preview-image sizes, and <strong>the complete chart state as JSON</strong> (panes, drawings, indicators). Comment text is not server-rendered; only the count is.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">Script page and <code>pine-facade.tradingview.com</code></td><td data-label="Observation">The <code>/script/lut7sBgG-…</code> page SSRs the same record plus <code>script_id_part</code> (<code>PUB;…</code>), <code>script_access</code>, version and type. With no key, <code>pine-facade/get/{PUB id}/last</code> returns JSON containing <code>scriptAccess: open_no_auth</code> and the <strong>full Pine source</strong>, which carries its own license header (MPL 2.0 here). <code>/translate/…</code> returns only compiled IL.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">Recent listings, <code>/ideas/?sort=recent</code> and <code>/scripts/?sort=recent</code></td><td data-label="Observation">Each returns a 301 to <code>sort=recent_extended</code> and SSRs 24 items with <code>id</code>, <code>created_at</code>, counts, <code>is_picked</code>, <code>is_hot</code> and <code>reputation</code>. Pagination reads <code>total: 12000</code>. The newest ID was 23,842,942 at 02:39 UTC. Ideas and scripts interleave in one ID sequence, and ID 23,837,777 (created 18h earlier) sits among the newest ones.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">Scanner, <code>POST scanner.tradingview.com/{market}/scan</code></td><td data-label="Observation">Keyless, and accepts a browser <code>Origin</code>. It returns chosen columns (<code>name</code>, <code>close</code>, <code>market_cap_basic</code>, <code>isin</code>) plus <code>totalCount</code> per market. Counts are in Verified Metrics. <code>options</code> requires an <code>underlying_symbol</code> filter.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">Symbol search, <code>symbol-search.tradingview.com/symbol_search/v3/?text=AAPL</code></td><td data-label="Observation">Keyless. Each hit carries <code>isin</code>, <code>cusip</code>, <code>cik_code</code> (0000320193), <code>provider_id: ice</code>, <code>is_primary_listing</code>, <code>country</code> and <code>typespecs</code>. <code>symbols_remaining: 188</code> for AAPL counts every listing and derivative sharing the ticker.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">News flow, <code>news-mediator…/news-flow/v2/news?filter=lang:en</code></td><td data-label="Observation">Keyless JSON, 200 items with <code>id</code>, <code>published</code>, <code>provider</code>, <code>paywall</code>, <code>permission</code> (<code>headline</code> for Reuters, <code>provider</code> for Dow Jones, <code>preview</code> for Trading Economics) and <code>storyPath</code>. Symbol-filtered calls add <code>relatedSymbols</code>.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">News story pages, 4 providers</td><td data-label="Observation">All returned 200 with <code>NewsArticle</code> JSON-LD but no <code>articleBody</code>. The story object in the init-data has an <code>ast_description</code> of 551 characters for Reuters, 617 for Dow Jones, 885 for Trading Economics and 1,745 for a TradingView-authored story, plus a <code>copyright</code> line and tags. <strong>Dow Jones pages carry <code>&lt;meta name="robots" content="noindex"&gt;</code></strong>. Reuters pages are indexable.</td></tr>
+            <tr><td data-label="Date">2026-09-30</td><td data-label="Probe">Media host and locale sitemaps</td><td data-label="Observation"><code>s3.tradingview.com/7/7GCqPZBy.png</code>: 200, PNG, 181KB, <code>server: BunnyCDN</code>, <code>last-modified</code> matching the idea's creation second. The <code>jp.</code>, <code>in.</code> and <code>de.</code> sitemap indexes each list 8 children, with a single symbols file instead of 27 shards.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">For each modality: what exists, the best legitimate path to it, what it costs, what a third-party UI may show, and how fast it changes. The terms' display-only clause applies to every row (Risks).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Instrument entities</td>
+              <td data-label="Objects &amp; est. count">1.04M symbol pages; 456K scanner-live</td>
+              <td data-label="Best legitimate path">Symbol sitemap, then JSON-LD on each page</td>
+              <td data-label="Auth &amp; quota">None. About 245GB for one HTML pass (calculated by Site Wise).</td>
+              <td data-label="License / display">The identifiers (ISIN, FIGI, CUSIP) are public facts. Company descriptions are TradingView or vendor copy: link, don't mirror.</td>
+              <td data-label="Freshness">No <code>lastmod</code>. Bonds mature into 404s; new listings are added continuously.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Prices &amp; fundamentals</td>
+              <td data-label="Objects &amp; est. count">Every symbol; values change by the tick</td>
+              <td data-label="Best legitimate path"><strong>No legitimate bulk path.</strong> The official MCP server serves a paying user's own session.</td>
+              <td data-label="Auth &amp; quota">MCP: OAuth, Essential plan, about 100 calls per minute</td>
+              <td data-label="License / display">"Display-only", with non-display and processing prohibited. Do not store values.</td>
+              <td data-label="Freshness">Real-time. The FAQ JSON-LD snapshot is stale by the time it is crawled.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Ideas (text, chart, video)</td>
+              <td data-label="Objects &amp; est. count">A 23.8M ID space shared with scripts, including video ideas (<code>is_video</code>); the public share is open</td>
+              <td data-label="Best legitimate path">Detail pages parsed through <code>ssrIdeaData</code>. Discovery by listing pages (capped at 12K), symbol tabs and profiles. The sitemap holds only 5.4K.</td>
+              <td data-label="Auth &amp; quota">None for Googlebot-class crawlers. <strong>Robots-disallowed for AI agents.</strong></td>
+              <td data-label="License / display">User content under TradingView ToS and House Rules. Title, snippet and thumbnail with a link.</td>
+              <td data-label="Freshness">About 6.6K new IDs per day. <code>updated_at</code> changes on edits.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Pine scripts (code)</td>
+              <td data-label="Objects &amp; est. count">Share of the same ID space; count open</td>
+              <td data-label="Best legitimate path">Script page for the metadata; <code>pine-facade/get</code> for the source of open scripts</td>
+              <td data-label="Auth &amp; quota">No key for open scripts. Protected and invite-only scripts expose IL only.</td>
+              <td data-label="License / display">Each open script carries its own license header (MPL 2.0 is common). Respect it per script.</td>
+              <td data-label="Freshness">Versioned (<code>version_maj</code>), with <code>/last</code> always resolving the latest.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Chart images</td>
+              <td data-label="Objects &amp; est. count">4 sizes per idea or script on <code>s3.tradingview.com</code></td>
+              <td data-label="Best legitimate path">URLs from <code>preview_image_urls</code>, keyed by uuid</td>
+              <td data-label="Auth &amp; quota">None; BunnyCDN</td>
+              <td data-label="License / display">A rendering of licensed market data plus user drawings. Thumbnail with a link only.</td>
+              <td data-label="Freshness">Immutable per version (<code>?v=</code> cache-buster).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">News</td>
+              <td data-label="Objects &amp; est. count">About 2.5K English stories per day, 66% paywalled</td>
+              <td data-label="Best legitimate path">The news-flow JSON for discovery; story pages for the ~0.5–1.7K-character preview</td>
+              <td data-label="Auth &amp; quota">No key. Full paywalled text needs a paid plan.</td>
+              <td data-label="License / display">Copyright of Reuters, Dow Jones and other providers. Headline and link only; <strong>Dow Jones pages are noindex.</strong></td>
+              <td data-label="Freshness">Minutes. Headline value decays within hours.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments &amp; social</td>
+              <td data-label="Objects &amp; est. count">Counts on every idea; texts, Minds and chat open</td>
+              <td data-label="Best legitimate path">No SSR text. Minds and chat are robots-disallowed for AI agents and chat is disallowed for all.</td>
+              <td data-label="Auth &amp; quota">n/a</td>
+              <td data-label="License / display">User content. Store aggregates only.</td>
+              <td data-label="Freshness">Continuous.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where tradingview.com differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>AI blocks guard the community, not the catalogue</h4>
+          <p>Most platforms block AI crawlers wholesale. TradingView blocks 16 named agents only from ideas, scripts, profiles, Minds and chat, and leaves symbol, market, news and support pages open. The line it draws is user-authored versus TradingView-authored, which tells an index which half of the corpus the owner will defend.</p>
+        </div>
+        <div>
+          <h4>The symbol key needs a crosswalk</h4>
+          <p>The URL key is <code>{EXCHANGE}-{TICKER}</code>; APIs use <code>EXCHANGE:TICKER</code>, and tickers contain <code>!</code> (continuous futures, 8.5K of them), <code>.P</code> (perpetuals) and <code>/</code>. One issuer fans out to hundreds of symbols: AAPL search reports 188 more. Normalize to ISIN or FIGI when present (about two thirds of pages) and keep <code>is_primary_listing</code> from symbol search to collapse cross-listings. For indices, COT and on-chain series the ticker is the only key.</p>
+        </div>
+        <div>
+          <h4>The retrieval unit is the idea, not the page</h4>
+          <p>An idea is prose plus a chart state plus a symbol plus a direction and timeframe. The <code>content</code> JSON holds the exact drawings and indicators, so "head-and-shoulders on BTC weekly" can be matched structurally instead of via OCR of the PNG. Symbol <code>/ideas/</code> tabs canonicalize to the symbol page, so crawl them for discovery and index only the detail pages.</p>
+        </div>
+        <div>
+          <h4>The sitemap is a showcase, not an inventory</h4>
+          <p>UGC sitemaps list about 6K evergreen hits (the 2019 BTC fractal, the GME squeeze) against a 23.8M ID space. Listing pages stop at 12K. Coverage has to come from graph expansion: symbol tabs, author profiles, tag pages (163 in the sitemap) and the recent stream polled faster than 12K items accumulate. An ID sweep also works, since IDs are dense and numeric, but the UUID in the URL is not derivable from the ID (open).</p>
+        </div>
+        <div>
+          <h4>Quality signals are exposed</h4>
+          <p>Every idea record carries <code>is_picked</code> (Editors' Pick), <code>is_reviewed</code>, <code>is_hot</code>, an author <code>reputation</code>, <code>is_platinum_broker_idea</code> and a views, likes and comments triple. The spam vectors are broker-account ideas and self-promoting signatures (Telegram links in <code>user_signature_socials</code>). Down-rank on signature links and posting bursts (one account posted 4 ideas in 12 minutes).</p>
+        </div>
+        <div>
+          <h4>Query profile</h4>
+          <p>Queries are ticker-first ("NVDA", "XAUUSD", "BTC dominance"), then pattern and strategy terms ("SMC order block", "Elliott wave count"), then indicator names ("Range Filter", "Supertrend"). On-site symbol search is strong, but ideas search (<code>/ideas/search/</code>) is robots-disallowed, which leaves room for external retrieval.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the instrument (identifiers, name, type, exchange, sector path, description link), and the idea or script (<code>id</code> + <code>uuid</code>: title, description, symbol, interval, direction, author, timestamps, flags, counts, chart-state features, thumbnail). News is headline-level only.</li>
+        <li><strong>Primary keys &amp; joins:</strong> ISIN, FIGI and CUSIP ↔ <code>EXCHANGE:TICKER</code> ↔ CIK (from symbol search), which joins to SEC EDGAR. Idea <code>pro_symbol</code> links to the instrument. Idea <code>id</code> is the primary key, with <code>uuid</code> the URL key. Script <code>script_id_part</code> is the source key. News <code>relatedSymbols</code> links to instruments.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The symbol sitemap weekly (27 shards) plus JSON-LD extraction, for about 1.04M entities; roughly 245GB for the first pass. 2) The recent-ideas and scripts streams polled every 15–30 minutes, with detail pages parsed through <code>ssrIdeaData</code>. 3) Graph expansion over symbol tabs, profiles and tag pages for the back catalogue. 4) <code>pine-facade/get</code> for open-script source. 5) The news-flow JSON for headline and symbol links. No price or fundamental values are stored, only the entity graph.</li>
+        <li><strong>Recrawl cadence:</strong> the symbol sitemap weekly, with the diff giving listings and delistings. Ideas: new ones within 30 minutes; counters at 1, 7 and 30 days, then quarterly. Scripts on a version change. News: headline polling every 5 minutes.</li>
+        <li><strong>Derivatives to generate:</strong> pattern and indicator features parsed from the chart-state JSON; embeddings of idea prose keyed to symbol and timeframe; an outcome label, joining idea <code>direction</code> and <code>created_at</code> against later price. That label is computed locally for research only, and it touches market data, so it needs a licensed price source other than TradingView. For Pine source: AST and code embeddings for indicator similarity.</li>
+        <li><strong>Demo to build:</strong> an identifier crosswalk. Enter an ISIN, FIGI or CIK and get every TradingView symbol URL for that security, grouped by exchange, with the primary listing flagged. It would be built from sitemap plus JSON-LD plus symbol search, using no market-data values.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The terms bar processing, not just redistribution.</strong> Section 3 licenses all "content and market data" for "display-only use" and prohibits "any processing of TradingView's content" and building products on it (<a href="https://www.tradingview.com/policies/">Terms of Use</a>). Identifiers are facts, but ideas, descriptions and prices fall inside the clause. Treat the index as a link-and-snippet discovery layer, and get legal review before any embedding or derivative of UGC.</li>
+        <li><strong>The UGC half is closed to AI agents by robots.</strong> A crawler identifying as an AI agent must skip ideas and scripts entirely. A search crawler may fetch them, but its output then must not feed model training. Keep crawl identity and downstream use aligned.</li>
+        <li><strong>Keyless backends are internal plumbing.</strong> Scanner, symbol-search, news-mediator and pine-facade answer anonymous calls today. The paid MCP server (2026-09-16) is now the sanctioned programmatic path, which makes lockdown of the anonymous ones more likely. Treat them as optional.</li>
+        <li><strong>Licensed news can disappear by provider.</strong> Per-story <code>noindex</code> (Dow Jones) and <code>permission</code> tiers show the contracts vary by provider. A license change can remove a provider's back catalogue at once; store provider-level tombstones.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.tradingview.com/policies/">TradingView Terms of Use</a>, read 2026-09-30. Section 3 covers display-only use and the non-display and processing ban.</li>
+        <li><a href="https://www.tradingview.com/mcp/docs">TradingView MCP Server docs</a>, read 2026-09-30. Endpoint, OAuth 2.1, rate limit, plan gate and tool groups.</li>
+        <li><a href="https://www.hokanews.com/2026/09/tradingview-launches-official-mcp.html">Hokanews: TradingView launches official MCP server</a> (September 2026). Announcement date.</li>
+        <li><a href="https://www.tradingview.com/pricing/">TradingView pricing</a>, read 2026-09-30. The "100 million traders" claim and plan limits.</li>
+        <li><a href="https://en.wikipedia.org/wiki/TradingView">Wikipedia: TradingView</a>. Founding, Techstars, the 2018 round and the CEO.</li>
+        <li><a href="https://www.prnewswire.com/news-releases/tradingview-hits-3-billion-valuation-with-298-million-investment-301400502.html">PR Newswire: TradingView hits $3 billion valuation</a> (2021-10). The $298M round.</li>
+        <li>Local probes on 2026-09-30, listed in full in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>About 95% of new IDs never reach the public English stream: they are private or unpublished charts, other locales, or moderated-out posts. <em>Basis:</em> 455 IDs consumed against 22 listed ideas in the same 2.5h window, <code>is_public</code>/<code>is_visible</code> flags in every record, and separate locale sitemaps with their own idea lists.</li>
+        <li>Recent listings are ordered by publication or moderation time, not ID. <em>Basis:</em> ID 23,837,777 (created 2026-09-29 07:57) is interleaved with IDs from 18h later, and records carry <code>is_reviewed</code>.</li>
+        <li>FINRA bond pages leave the site at maturity as hard 404s rather than soft redirects. <em>Basis:</em> <code>FINRA-AAPL5000369</code> returned a 404 while 60 of 60 current sitemap URLs returned 200.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many ideas and scripts are public in total, and in which languages. Could be closed by sampling 1,000 random IDs in the 1–23.8M range through an ID-resolving endpoint, if one exists, or by counting via each locale's listing and profile pages.</li>
+        <li>Whether a numeric ID can be resolved to its <code>uuid</code> URL without a listing. Could be closed by testing <code>/chart/?id=</code>-style and internal JSON endpoints observed in the idea page's JS bundles.</li>
+        <li>The split of the script corpus between open, protected and invite-only. Could be closed by calling <code>pine-facade/get</code> on 500 script IDs collected from listings and tallying <code>scriptAccess</code>.</li>
+        <li>The rate limits on symbol pages and the keyless backends. Could be closed by a controlled ramp from 1 to 5 requests per second per host over 10 minutes, watching for 429, 403 or CloudFront blocks.</li>
+        <li>How much of the symbol corpus is duplicated across the 20 locale hosts beyond the <code>hreflang</code> set. Could be closed by a census of each locale's symbol sitemap and a diff of symbol IDs against <code>www</code>.</li>
+        <li>An independent, dated user or MAU figure. Could be closed by a primary disclosure (funding press release or regulatory filing) or a named third-party panel.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
