@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nfl.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-10-01</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>nfl.com</h1>
+      <p class="lede">NFL.com sitemaps 339K URLs: 161K full-text news stories since 2007 and 164K clips. It server-renders play-by-play for 5.6K games, but its terms forbid compiling databases.</p>
+      <div class="tag-row">
+        <span class="tag">Sports</span>
+        <span class="tag">League media</span>
+        <span class="tag">Video</span>
+        <span class="tag">Stats</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>NFL.com is the league's own publication. It carries news written by an in-house staff (Around the NFL, NFL Network reporters), short-form video, game centers, player and team pages, and draft coverage. On 2026-02-01 ESPN closed its acquisition of NFL Network, linear RedZone and NFL Fantasy, and the NFL took a 10% stake in ESPN valued at $3B. <strong>The league kept NFL.com</strong>, along with NFL Films, NFL+, the podcast network and the 32 club sites (<a href="https://www.thewrap.com/industry-news/deals-ma/espn-nfl-network-acquisition-closes/">TheWrap</a>). For an index builder the site is unusual in three ways. First, a sports publisher exposes its whole archive: complete news and video sitemaps reach back to 2007. Second, every news page ships the full article text in JSON-LD. Third, game pages embed structured play-by-play and box scores in the server render. robots.txt names no AI crawler. The constraint is contractual: the terms prohibit "systematic retrieval … to create or compile … a collection, compilation, database, or directory".</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.nfl.com</code>; the apex returns a 301. Served by Fastly (Varnish <code>x-served-by: cache-*</code>) in front of Istio/Envoy in <code>us-east-1</code>.</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/news/{slug}</code>, <code>/videos/{slug}</code>, <code>/games/{away}-at-{home}-{season}-{pre|reg|post|pro}-{week}</code>, <code>/players/{slug}/</code>, <code>/teams/{slug}/</code>, <code>/prospects/{slug}/{uuid}</code></dd></div>
+        <div><dt>Category</dt><dd>League-owned sports news, video, scores and stats</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>static.www.nfl.com</code> (images, Cloudinary origin), <code>api.nfl.com</code> (token-gated), <code>nextgenstats.nfl.com</code>, <code>id.nfl.com</code>, plus <code>/mundo/</code>, <code>/uk/</code>, <code>/de/</code> and <code>/ca/</code> sections on the same host</dd></div>
+        <div><dt>Owner</dt><dd>NFL Enterprises LLC, per the terms preamble (<a href="https://www.nfl.com/legal/terms/">NFL Terms</a>)</dd></div>
+        <div><dt>Business model</dt><dd>Advertising (GPT and IMA pre-roll on every video), funnels to NFL+ subscriptions, tickets and shop, and sponsor placements</dd></div>
+        <div><dt>Scale anchor</dt><dd>NFL gross national revenue was about $14.5B for the 2025 season, per Sportico as relayed on 2026-07-21 (<a href="https://bleacherreport.com/articles/25456995-nfl-revenue-2025-revealed-teams-made-more-money-nba-mlb-nhl-clubs-combined">Bleacher Report</a>). This is a league figure, not a site figure.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from Site Wise probes on 2026-10-01. Shares from the 30-news and 20-video page sample carry wide error bars: about ±18 points at n=30 (calculated by Site Wise).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd><strong>339.5K</strong> unique URLs across 76 child sitemaps. That breaks down as 163.8K video, 161.1K news (including about 800 <code>/mundo/noticias/</code>), 5.7K draft-tracker, 5.6K game, 801 prospect and 1.6K evergreen pages. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>News archive depth</dt>
+          <dd>The archive runs from 2007-07-16 to now. Annual volume peaked at 18.6K in 2012 and fell to 4.9K in 2025, about 13 per day (calculated by Site Wise). The fast-changing sitemap held 100 stories over 6 days, about 16 per day. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Video archive</dt>
+          <dd>163.6K clips carry a duration, totalling <strong>7.3K hours</strong>. The median clip is 63s (calculated by Site Wise). 99.6% are dated 2018 or later: only 669 clips predate 2018-08. There were 18.7K new clips in 2025, and the fast-changing sitemap shows about 40 per day in game week. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Video asset ID rate</dt>
+          <dd>The numeric <code>mcpID</code> rose from 2.19M (2025-01-19) to 2.69M (2026-10-01), about <strong>800 IDs per day</strong>, while the sitemap gained about 51 clips per day. Only around 6% of media IDs therefore become public <code>/videos/</code> pages (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>News full-text coverage</dt>
+          <dd>All 30 random news pages returned 200 with <code>NewsArticle</code> JSON-LD carrying the full <code>articleBody</code>. The median body is 1.8K characters and the maximum 13.7K. 18 of 30 name a <code>Person</code> author with an author URL. <strong>5 of 30 end "Copyright … by The Associated Press"</strong> (2007–2014). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Migration watermark</dt>
+          <dd>12 of 30 news pages have <code>dateModified</code> 2023-02-28 despite publish dates from 2015 to 2022, so <code>dateModified</code> is not an edit signal for back-catalogue stories. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Game corpus</dt>
+          <dd>The games sitemap holds 5,591 games, from the 2010 season to 2026, about 333 per season (270 in 2020, when no preseason was played). 3 of 3 sampled games, from 2010, 2025 and 2026, ship 158–176 plays in the server-rendered drive chart. That puts the ceiling near <strong>0.9M play descriptions</strong> (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Page weight</dt>
+          <dd>Decoded HTML medians are 694KB for news and 321KB for video, and game pages run 0.9–1.2MB. One HTML pass over the sitemap is about <strong>170GB</strong> (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Images</dt>
+          <dd>Video thumbnails resolve to 1920×1080 JPEG originals on Cloudinary through <code>static.www.nfl.com</code>. URL transforms work: <code>w_200</code> returns 9KB against 111KB at <code>t_q-best</code>. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-01 from a sandbox egress with a desktop Chrome UA, paced at about 1 request per second (around 150 requests, with no 403 or 429). The DNS probe was skipped because DNS in this sandbox is unreliable; hosting claims come from response headers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-10-01</td><td><code>curl -sI https://www.nfl.com/</code></td><td>200, <strong>3.56MB</strong> uncompressed. <code>server: istio-envoy</code>, <code>origin-site: us-east-1</code>, three Varnish hops, <code>cache-control: public, max-age=5</code>, and Next.js preload links. <code>x-nfl-geo: country_code=US</code> and <code>x-nfl-dma: 807</code> (Nielsen market) are echoed back with <code>vary: x-nfl-geo</code>. HSTS preload is set. The apex 301s to <code>www</code>.</td></tr>
+            <tr><td>2026-10-01</td><td><code>curl -s …/robots.txt</code></td><td>13 lines. <code>*</code> disallows only <code>/_ctv/</code>, <code>/_fantasy-app/</code>, <code>/_mobile-app/</code>, <code>/_mobileview/</code>, <code>/_phs/</code>, <code>/_sponsors/</code>, <code>/_libraries/</code>, <code>/account/</code>, <code>/nfl-films-beta/</code> and <code>/search/</code>. <code>Mediapartners-Google</code> (AdSense) is barred from <code>/stats/player-stats/*</code>. <strong>No AI crawler is named.</strong> ClaudeBot and GPTBot UAs got the same 200 pages. <code>/llms.txt</code> returns 404.</td></tr>
+            <tr><td>2026-10-01</td><td>Sitemap census, <code>/sitemap-index.xml</code> plus 76 children</td><td>All 76 returned 200. There are 339,559 <code>&lt;loc&gt;</code> entries, of which 339,536 are unique. 33 news-archive shards of 5K carry <code>news:</code> extensions, and 33 video-archive shards of 5K carry <code>video:</code> (title, description, duration, tags, thumbnail). <strong>There is no <code>content_loc</code> or <code>player_loc</code></strong>. Only the two fast-changing files (100 entries each) carry <code>lastmod</code>. The episode sitemap is empty.</td></tr>
+            <tr><td>2026-10-01</td><td>Sitemap freshness</td><td>Archive shard 1 ends on 2026-08-31 for both news and video. Fast-changing news <code>lastmod</code> spans 2026-09-25 to 10-01 and video spans 09-29 to 10-01. <strong>Stories from 2026-09-01 to 09-24 appear in no sitemap.</strong> Shards are ordered newest first, so shard numbering shifts as the archive grows.</td></tr>
+            <tr><td>2026-10-01</td><td>News page, <code>/news/steelers-trading-cb-joey-porter-jr-…</code></td><td>200, 711KB, Next.js App Router (RSC flight data). <code>NewsArticle</code> JSON-LD has the full <code>articleBody</code>, <code>author[]</code> with author URLs (<code>/author/kevin-patra-0ap1000000236291</code>), <code>articleSection</code>, <code>keywords</code>, images and publish and modify timestamps. The canonical is self-referencing and there is no robots meta.</td></tr>
+            <tr><td>2026-10-01</td><td>Structured-data sample, 30 news and 20 video URLs drawn at random from the sitemaps</td><td>50 of 50 returned 200 with no redirects, including 2007 stories. The news results (full text, authors, AP share, migration date) are in Verified Metrics. All 20 videos are served by the older "pocket" stack (RequireJS, <code>compiledassets/</code>). Their JSON-LD is typed <code>NewsArticle</code>, <strong>not <code>VideoObject</code></strong>, with HTML in <code>description</code>.</td></tr>
+            <tr><td>2026-10-01</td><td>Video page, <code>/videos/rams-vs-eagles-week-4-preview-nfl-daily</code></td><td>The <code>video-config-{uuid}</code> JSON holds a playlist of 25 items, each with <code>id</code>/<code>entityId</code> (UUID), <code>mcpID</code> (2689283), slug, title, description, poster image, <code>campaignId</code> (show), and tags carrying team UUIDs. <code>duration</code> is 0 on the page; it is only present in the sitemap. There is no stream URL in the HTML. The player (<code>rnMediaPlayer</code>) loads an <code>NFLToken</code> module from <code>p.nfltags.com</code>.</td></tr>
+            <tr><td>2026-10-01</td><td><code>api.nfl.com/football/v2/teams</code> and <code>/experience/v1/games</code></td><td>Both return 401 without a bearer token. There is no oEmbed endpoint (<code>/oembed</code> returns 404), <code>/rss/rsslanding</code> 301s to <code>/</code>, and no <code>&lt;link rel="alternate"&gt;</code> feed is advertised.</td></tr>
+            <tr><td>2026-10-01</td><td>Game centers: <code>steelers-at-packers-2010-post-4</code>, a 2025 week-10 game, <code>panthers-at-cardinals-2026-pre-0</code></td><td>All three returned 200 at 0.9–1.2MB. The dehydrated React Query state holds <code>driveChartProps</code> (drives with result, plays, yards and time of possession; each play has clock, down and distance and a full description such as "A.Rodgers pass short middle to J.Nelson to GB 29 for 9 yards") and <code>boxScoreProps</code>. Play counts were 160, 158 and 176. Legacy game IDs encode the date (<code>10012011-0206-…</code> for Super Bowl XLV on 2011-02-06); 2026 IDs are UUIDv1.</td></tr>
+            <tr><td>2026-10-01</td><td>Player and team pages, <code>/players/patrick-mahomes/</code>, <code>/teams/kansas-city-chiefs/roster</code></td><td>The player page JSON-LD is <code>SportsTeam</code>, then <code>OrganizationRole</code> (start year, position), then <code>Person</code> (birth date, height, weight, college, headshot). Its <code>url</code> leaks an internal host, <code>league-frontend.pocket.nfl.com</code>. <code>/stats/career</code> renders an HTML table (YEAR, TEAM, G, ATT …). The roster lists 78 player links. <strong>No sitemap lists <code>/players/</code></strong>, and <code>/players/active/all</code> shows only 15 featured players. Retired players such as <code>/players/joe-montana/</code> still resolve.</td></tr>
+            <tr><td>2026-10-01</td><td>Prospect IDs, <code>sitemap-nflprospects.xml</code></td><td>425 current and 376 from 2021. The IDs are GSIS-style UUIDs: <code>3200</code> followed by ASCII hex of the last name's first 3 letters (Jeanty is <code>4a4541</code>, "JEA"; Carter is <code>434152</code>, "CAR"), so they are partly guessable and stable across draft and career.</td></tr>
+            <tr><td>2026-10-01</td><td>Image host, <code>static.www.nfl.com/image/upload/t_q-best/league/{id}</code></td><td>200 JPEG. <code>server: Cloudinary</code> behind Fastly. <code>server-timing</code> exposes the original size (1920×1080, 132KB) and creation epoch. <code>cache-control: max-age=31536000</code>. Ad hoc <code>w_200</code> transforms are allowed.</td></tr>
+            <tr><td>2026-10-01</td><td>Terms, <code>/legal/terms/</code></td><td>Last updated 2024-05-16. §1.3 permits only "individual non-commercial and informational purposes" and bans "systematic retrieval … to create or compile … a collection, compilation, database, or directory". It also bans spiders and robots used "to harvest … for any commercial purpose".</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">For each modality: what exists, the best legitimate path to it, what it costs, what a third-party UI may show, and how fast it changes. The terms' anti-compilation clause applies to every row (Risks).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>News text</td>
+              <td>161K stories, 2007 to now</td>
+              <td>News sitemaps, then <code>articleBody</code> from JSON-LD; one fetch per story</td>
+              <td>None. About 112GB of HTML for one pass (calculated by Site Wise).</td>
+              <td>NFL copyright. AP wire copy (about 1 in 6 sampled) is AP's. Headline, snippet and link.</td>
+              <td>About 13–16 per day. The fast-changing sitemap covers about 6 days and the archives lag up to a month.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>164K clips, 7.3K hours</td>
+              <td>The video sitemap for metadata. Playback only through the official player on the page.</td>
+              <td>Streams are token-gated (<code>NFLToken</code>), with pre-roll ads</td>
+              <td>League footage, the NFL's most guarded asset. Link to the page, show the thumbnail and title only.</td>
+              <td>About 40–50 per day in season. Old clips are re-saved (6 of 20 modified 2025-09-29 to 10-01).</td>
+            </tr>
+            <tr>
+              <td>Play-by-play &amp; box scores</td>
+              <td>5.6K games, about 0.9M plays (2010 to now)</td>
+              <td>Game-center SSR state (<code>driveChartProps</code>, <code>boxScoreProps</code>)</td>
+              <td>None for HTML. <code>api.nfl.com</code> requires a token.</td>
+              <td>Facts, but the terms bar compiling them into a database. Store per-game summaries with a link.</td>
+              <td>Live during games, final after. The back catalogue is static.</td>
+            </tr>
+            <tr>
+              <td>Player &amp; team entities</td>
+              <td>32 teams; players open (rosters of about 78, plus retired)</td>
+              <td>Team roster pages, then player pages (JSON-LD <code>Person</code> plus career stats table)</td>
+              <td>None</td>
+              <td>Bio facts. Headshots are NFL images: link only.</td>
+              <td>Rosters change weekly in season. Bios are stable.</td>
+            </tr>
+            <tr>
+              <td>Draft prospects</td>
+              <td>801 prospect pages plus a 5.7K-URL tracker</td>
+              <td>Prospect sitemaps; the GSIS-style UUID is the key</td>
+              <td>None</td>
+              <td>Scouting text is NFL copy. Snippet and link.</td>
+              <td>Spring-heavy. A new class is added each year.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Thumbnails on every story and clip, plus headshots and logos</td>
+              <td>URLs from JSON-LD and the sitemap; Cloudinary transforms for size</td>
+              <td>None</td>
+              <td>NFL or Getty-sourced photography. Thumbnail with a link only.</td>
+              <td>Immutable per public ID.</td>
+            </tr>
+            <tr>
+              <td>Audio (podcasts)</td>
+              <td>18 <code>/podcasts/</code> pages; episodes open</td>
+              <td>The show pages; external podcast RSS (not observed)</td>
+              <td>n/a</td>
+              <td>NFL Podcast Network. Link out.</td>
+              <td>Weekly.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where nfl.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Open robots, closed terms</h4>
+          <p>Most platforms in this series block AI crawlers in robots.txt. NFL.com blocks none, and serves full text to any UA. The restriction lives entirely in §1.3 of the terms. The crawl-policy signal and the contractual signal point opposite ways, so the index should follow the stricter one.</p>
+        </div>
+        <div>
+          <h4>The sitemap is an inventory, with a lag</h4>
+          <p>Unlike most media sites, the sitemaps enumerate the full back catalogue: 2007 news and 2018-onward video, with no evident pruning, since 50 of 50 sampled URLs resolved. The weak point is the middle. The archives were last cut on 2026-08-31 and the fast-changing files hold only 100 items, so September 2026 stories exist in neither. Poll the fast-changing sitemaps at least daily, and treat archive shards as unstable: they are newest first, so shard N's contents move.</p>
+        </div>
+        <div>
+          <h4>Video is metadata-only by design</h4>
+          <p>Video sitemaps give title, description, duration and tags but no media URL, the page JSON-LD claims <code>NewsArticle</code>, and the stream URL needs a token. A full-modal index gets text-about-video (title, description, show, team tags), thumbnails and a deep link. It does not get frames, ASR or captions. The <code>campaignId</code> (show) and team-UUID tags are the best facets.</p>
+        </div>
+        <div>
+          <h4>Game pages are structured data in disguise</h4>
+          <p>Each game center ships its drive chart and box score as JSON inside the RSC payload. Every play carries clock, down and distance, field position and a natural-language description with player names. The retrieval unit can be the play ("Rodgers to Nelson 9 yards, Super Bowl XLV"), joined to highlight clips through team UUIDs and the game date. No other surface on the site is this granular.</p>
+        </div>
+        <div>
+          <h4>Two frontends, two schemas</h4>
+          <p>News and games run on a Next.js App Router stack; video, player and team pages run on an older RequireJS "pocket" stack that leaks <code>league-frontend.pocket.nfl.com</code> into JSON-LD URLs. Use two parsers, and rewrite the leaked host to <code>www.nfl.com</code> before deduplicating.</p>
+        </div>
+        <div>
+          <h4>Geo is in the response, not the URL</h4>
+          <p>Responses vary on <code>x-nfl-geo</code> and echo a Nielsen DMA code, so a crawl from one market sees that market's local-broadcast and ways-to-watch modules. Article bodies were identical across the sample. Pin one US egress and treat the "how to watch" modules as non-indexable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the news story (headline, full body, authors, section, keywords, timestamps); the video clip (title, description, duration, show, team tags, thumbnail, <code>mcpID</code>); the game (teams, season, week, final score) with its plays as sub-units; and the player and prospect entities.</li>
+        <li><strong>Primary keys &amp; joins:</strong> URL slug (no numeric ID in news URLs); video <code>entityId</code> UUID plus <code>mcpID</code>; team UUIDs (<code>10403900-…</code> for PIT) shared across video tags, game centers and rosters; game ID (legacy date-encoded or UUIDv1) plus the game slug's season, type and week; GSIS-style player and prospect UUIDs; and author URLs carrying legacy <code>0ap…</code> IDs.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The fast-changing news and video sitemaps every 30 minutes on game days and every 2 hours otherwise. 2) A one-time backfill over the 66 archive shards: 325K pages, about 165GB. 3) Game centers from the games sitemap for play-by-play, re-fetched after each game's final. 4) Team roster pages weekly, then player pages, since no player sitemap exists. 5) Prospect sitemaps each spring.</li>
+        <li><strong>Recrawl cadence:</strong> news at 1 hour and 1 day after publish, then never, since the 2023-02-28 migration re-save makes <code>dateModified</code> useless as a change signal. Video metadata monthly. Game pages live during games, then final. Rosters weekly in season.</li>
+        <li><strong>Derivatives to generate:</strong> named-entity links from play descriptions ("A.Rodgers" to a player UUID through the roster); story-to-game joins by team UUID and date window; an AP-wire flag from the copyright trailer, to exclude that copy from any snippet store; and thumbnail embeddings at <code>w_400</code>.</li>
+        <li><strong>Demo to build:</strong> play search. Type "fourth-down conversion Mahomes 2023 playoffs" and get matching plays from game-center drive charts, each linked to the game page and the nearest highlight clip by team and date. It would be built for local research only, under the terms constraint below.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The terms ban compilation outright.</strong> §1.3 prohibits systematic retrieval to build "a collection, compilation, database, or directory" without written consent (<a href="https://www.nfl.com/legal/terms/">NFL Terms</a>). That covers exactly what a play-by-play or news index is. Treat the public index as headline, snippet and link discovery, and get consent or a data licence before storing bodies or plays.</li>
+        <li><strong>Third-party copyright inside first-party pages.</strong> AP wire stories (5 of 30 sampled, 2007–2014) and Getty-style photography sit under the NFL's URLs but belong to their owners. Detect the AP trailer and exclude those bodies.</li>
+        <li><strong>Ownership churn moves surfaces.</strong> The 2026-02-01 ESPN deal moved NFL Fantasy and NFL Network off the league. NFL Network-branded video and Fantasy pages could migrate to ESPN hosts and leave 301s or 404s. Store a tombstone and redirect target per URL.</li>
+        <li><strong>Sitemap lag hides recent news.</strong> If the fast-changing poll misses a window, stories from that window stay undiscoverable until the next archive regeneration. Back the sitemap poll with team and section listing pages.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.nfl.com/legal/terms/">NFL.com Terms and Conditions</a>, last updated 2024-05-16 and read 2026-10-01. §1.3 covers permitted uses and systematic retrieval, and the preamble names the operator as NFL Enterprises LLC.</li>
+        <li><a href="https://www.thewrap.com/industry-news/deals-ma/espn-nfl-network-acquisition-closes/">TheWrap: ESPN Closes NFL Network Acquisition</a> (2026-02-01). Which assets went to ESPN and which the NFL kept, and the 10% stake valued at $3B.</li>
+        <li><a href="https://bleacherreport.com/articles/25456995-nfl-revenue-2025-revealed-teams-made-more-money-nba-mlb-nhl-clubs-combined">Bleacher Report, citing Sportico</a> (2026-07-21). About $14.5B in 2025 national revenue.</li>
+        <li>Local probes on 2026-10-01, listed in full in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The archive sitemaps are regenerated about monthly, not continuously. <em>Basis:</em> both archive shard 1 files end exactly on 2026-08-31, while the fast-changing files start on 2026-09-25 (news) and 2026-09-29 (video).</li>
+        <li>Most <code>mcpID</code>s are internal media assets (game feeds, club clips, ad and promo cuts) that never get a <code>/videos/</code> page. <em>Basis:</em> about 800 IDs per day against about 51 sitemap clips per day over the same 620 days, and an <code>is-league-video</code> flag in the player markup.</li>
+        <li>The video library was rebuilt around August 2018 and most earlier clips were dropped. <em>Basis:</em> 669 clips dated before 2018-08 against 15.0K from 2018-08 to year-end, and the lowest sampled <code>mcpID</code> (254K) dated 2018-08-30.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many player pages exist, including retired players. Could be closed by crawling all 32 <code>/teams/{slug}/roster</code> pages and historical roster or stat leader pages, and deduplicating player slugs.</li>
+        <li>Whether play-by-play coverage is complete for every game from 2010 to 2026 or thins out in early seasons and preseason. Could be closed by sampling 5 games per season from the games sitemap and counting <code>play-</code> keys.</li>
+        <li>Whether NFL Network-branded video and NFL Fantasy URLs are migrating to ESPN hosts. Could be closed by re-checking 200 <code>/videos/</code> URLs tagged NFL Network shows monthly for redirects.</li>
+        <li>Whether captions or transcripts exist for clips. Could be closed by inspecting the authorized player manifest in a browser session for WebVTT tracks.</li>
+        <li>Rate limits on page fetches. Could be closed by a controlled ramp from 1 to 5 requests per second over 10 minutes, watching for 429 or Fastly blocks.</li>
+        <li>An official, dated NFL.com traffic or digital-audience figure. Could be closed by the league's annual digital-audience press release or a named third-party panel.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
