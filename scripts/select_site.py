@@ -40,6 +40,11 @@ AGGREGATED_HOSTS = {
         "match_suffixes": (".pornhub.com",),
         "note": "Locale subdomains (es., it., etc.) are analyzed together as Pornhub.",
     },
+    "xhamster.com": {
+        "match_hosts": ("xhamster.desi",),
+        "match_suffixes": (),
+        "note": "The xhamster.desi mirror serves the same video ID space and xhcdn.com assets, so it is analyzed together as xHamster.",
+    },
     "yelp.com": {
         "match_hosts": ("m.yelp.com",),
         "match_suffixes": (),
