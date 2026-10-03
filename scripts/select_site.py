@@ -65,6 +65,11 @@ AGGREGATED_HOSTS = {
         "match_suffixes": (),
         "note": "The storefront (store.steampowered.com) is analyzed together as Steam.",
     },
+    "blocksite.co": {
+        "match_hosts": ("user.blocksite.co",),
+        "match_suffixes": (),
+        "note": "The web dashboard (user.blocksite.co) is analyzed together with the marketing domain as BlockSite.",
+    },
     "telegram.org": {
         "match_hosts": ("web.telegram.org",),
         "match_suffixes": (),
