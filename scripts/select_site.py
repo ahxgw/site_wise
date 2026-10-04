@@ -70,6 +70,11 @@ AGGREGATED_HOSTS = {
         "match_suffixes": (),
         "note": "The web dashboard (user.blocksite.co) is analyzed together with the marketing domain as BlockSite.",
     },
+    "rakuten.co.jp": {
+        "match_hosts": ("search.rakuten.co.jp",),
+        "match_suffixes": (),
+        "note": "Ichiba product search (search.rakuten.co.jp) is analyzed together with the mall as Rakuten.",
+    },
     "telegram.org": {
         "match_hosts": ("web.telegram.org",),
         "match_suffixes": (),
