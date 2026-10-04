@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mayoclinic.org Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-10-04</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>mayoclinic.org</h1>
+      <p class="lede">Mayo Clinic sitemaps 42K pages in four languages, keyed by stable 8-digit IDs. Akamai blocks datacenter fetches, and the terms forbid scraping.</p>
+      <div class="tag-row">
+        <span class="tag">Health</span>
+        <span class="tag">Medical reference</span>
+        <span class="tag">Multilingual</span>
+        <span class="tag">Video</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Mayo Clinic is a nonprofit academic health system. Its website does two jobs: it is a consumer medical reference (Diseases &amp; Conditions, Symptoms, Tests &amp; Procedures, Drugs &amp; Supplements, Healthy Lifestyle) and it sells Mayo care (appointments, doctor bios, departments). In January 2014 Mayo merged mayoclinic.com, mayo.edu and mayoclinic.org onto one Sitecore platform, about 60K pages at the time (<a href="https://web.archive.org/web/20240416043020/https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-announces-next-evolution-of-web-presence/">Mayo News Network, 2014-01-24</a>). The site makes money indirectly: through referrals to clinical care, display ads, and licensing the same content by API through Mayo Clinic Global Business Solutions (<a href="https://gbs.mayoclinic.org/">GBS</a>). For an index builder, three things stand out. The reference corpus is small, editor-written and fully translated, with stable IDs. The site is moving from Sitecore to a new stack one section at a time. And there are two walls: Akamai bot management at the edge, and terms that ban all automated access.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.mayoclinic.org</code>; the apex 301s to it (BigIP). Akamai sits in front of two origins: Sitecore on IIS, and a Next.js/AEM app on Google Cloud.</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/{section}/{slug}/{tab}/{type}-{8 digits}</code>, e.g. <code>/diseases-conditions/diabetes/symptoms-causes/syc-20371444</code>. Translations live under <code>/es/</code>, <code>/ar/</code> and <code>/zh-hans/</code> with the same ID.</dd></div>
+        <div><dt>Category</dt><dd>Consumer medical reference plus a hospital's patient-acquisition site</dd></div>
+        <div><dt>Grouped hosts</dt><dd>Not grouped. Out of scope: <code>newsnetwork.mayoclinic.org</code>, <code>connect.mayoclinic.org</code> (patient community), <code>mcpress.mayoclinic.org</code> and <code>mayoclinichealthsystem.org</code>. Video lives on Kaltura partner 1825021.</dd></div>
+        <div><dt>Owner</dt><dd>Mayo Clinic (Rochester, Minnesota), a nonprofit</dd></div>
+        <div><dt>Business model</dt><dd>Care referrals, display ads ("Advertising revenue supports our not-for-profit mission", page footer), and B2B content licensing</dd></div>
+        <div><dt>Scale anchor</dt><dd>$21.5B operating revenue and $1.5B income in 2025, with almost 85K employees (<a href="https://www.mprnews.org/story/2026/03/05/mayo-clinic-posts-15b-profit-in-2025-charity-care-remains-below-average">MPR News, 2026-03-05</a>). These are figures for the whole health system, not the site.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from the Site Wise sitemap census and page sample run on 2026-10-04. Mayo's edge blocked direct fetches (Probe Log), so the inputs are Wayback Machine captures dated 2026-05-01 to 2026-10-03. With n=26, sample shares carry about ±19 points of error (calculated by Site Wise).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd><strong>41.9K</strong> unique URLs across the 32 sitemaps declared in robots.txt. By language: 14.5K English, 9.2K Simplified Chinese, 9.2K Spanish and 9.0K Arabic. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>English content by type</dt>
+          <dd>Counted by URL ID prefix: 4.0K doctor bios (<code>bio</code>), 2.6K drug monographs (<code>drg</code>), 1.3K diagnosis-and-treatment pages (<code>drc</code>), 1.2K symptoms-and-causes pages (<code>syc</code>), 1.1K videos (<code>vid</code>), 525 recipes (<code>rcp</code>), 463 care-at-Mayo pages (<code>mac</code>), 462 expert answers (<code>faq</code>), 388 procedure pages (<code>pac</code>) and 264 symptom pages (<code>sym</code>). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Translation depth</dt>
+          <dd>Spanish and Arabic each mirror about 1.2K <code>syc</code>, 1.3K <code>drc</code>, 1.2K <code>ddc</code> and all 525 recipes under the same IDs. They carry about 650 of the 1.1K videos and none of the 2.6K drug monographs. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Unsitemapped classes</dt>
+          <dd>No sitemap lists an <code>art-</code> (in-depth article) URL. Wayback's 2026 captures alone show <strong>662 distinct <code>art-</code> IDs</strong>, plus 899 <code>img-</code> (slideshow image) and 330 <code>pdc-</code> (procedure doctors) IDs. These are lower bounds. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Two stacks</dt>
+          <dd>Of the 26 sampled pages, <strong>9 came from the GCP/Next.js origin</strong> (<code>mayo-origin-source: gcp</code>, 1.2–1.4MB of HTML, of which 360–420KB is <code>__NEXT_DATA__</code>) and 17 from Sitecore on IIS (570–680KB). Pages in the same section were served by different stacks in captures from the same week. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured data</dt>
+          <dd>8 of 8 condition and procedure pages carry <code>MedicalWebPage</code> JSON-LD, with <code>about.MedicalCondition</code> and <code>signOrSymptom</code>. Doctor bios carry <code>Physician</code> (2 of 2). Recipe pages have no <code>Recipe</code> schema (0 of 2), video pages no <code>VideoObject</code> (0 of 3), and drug pages only a bare <code>WebPage</code> (3 of 3). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Drug content is licensed</dt>
+          <dd>All 2.8K drug sitemap entries have a 2025 <code>lastmod</code>. Every sampled monograph ends "Drug information provided by: Merative, Micromedex … may not be sold, redistributed or otherwise used for commercial purposes". Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Video captions</dt>
+          <dd>3 of 3 sampled Kaltura entries have English captions in both WebVTT and SRT. Kaltura's public view counters range from 3.1K to 1.5M; the 1.5M is a 2015 proton-beam explainer. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Traffic (third party)</dt>
+          <dd>Similarweb's August 2026 page shows 52.3M visits, 66.8% of them from the US. Organic search brings 72% of desktop visits. These are estimator figures, and the page does not make the measurement window clear (<a href="https://www.similarweb.com/website/mayoclinic.org/">Similarweb</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-04, run from a sandbox datacenter egress at 1 request per 1–4 seconds. Direct fetches were refused, so every page-level probe reads Wayback <code>id_</code> captures (raw bytes, with the original headers kept as <code>x-archive-orig-*</code>). DNS was skipped because DNS in this sandbox is unreliable.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe"><code>curl -s https://www.mayoclinic.org/robots.txt</code> with five UAs (Chrome, curl, ClaudeBot, a named research UA, empty)</td><td data-label="Observation">All five got <strong>403</strong> "Access Denied" from <code>AkamaiGHost</code> (an edgesuite reference), including on robots.txt itself. The same 403 came back for a condition page and from WebFetch.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Sibling-host robots.txt</td><td data-label="Observation">403 from <code>newsnetwork.</code>, <code>connect.</code>, <code>mcpress.</code>, <code>mayoclinichealthsystem.org</code> and <code>www.mayo.edu</code>. 200 from <code>college.mayo.edu</code>, <code>diet.mayoclinic.org</code> (Cloudflare) and <code>mayoclinicproceedings.org</code> (Cloudflare). The block covers the Akamai-fronted properties only.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">robots.txt via Wayback (capture of 2026-09-15)</td><td data-label="Observation">40 lines. <code>*</code> gets <code>Allow: /</code> and disallows only <code>/edu/</code>, <code>*.model.json</code>, <code>/static/chunks/*</code> and <code>/api/*</code>. <strong>No AI crawler is named.</strong> There are 32 <code>sitemap:</code> lines, split by content type (condition, procedure, organization, FAQ, recipe, video, web, drug, biography, symptoms, London) and language. There is no sitemap index.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Sitemap census: all 32 files via Wayback</td><td data-label="Observation">All 32 retrieved; 13 needed a retry after Wayback throttled. The files are served gzipped under a <code>.xml</code> name. Totals: 42.2K <code>&lt;loc&gt;</code> entries, 41.9K unique, all with <code>lastmod</code>. Each content URL carries <code>xhtml:link</code> alternates for en, es, ar and zh-hans. The drug sitemap repeats 241 URLs. The English condition file lists <code>syc</code>, <code>drc</code> and <code>mac</code> but not <code>ddc</code>: <strong>1,174 English <code>ddc</code> pages appear only as hreflang alternates</strong> in the translated files.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Wayback CDX, 2026 captures with status 200, prefixes <code>/healthy-lifestyle/</code>, <code>/diseases-conditions/</code>, <code>/tests-procedures/</code>, <code>/drugs-supplements/</code>, <code>/symptoms/</code></td><td data-label="Observation">50.9K distinct capture URLs. Unique IDs by prefix: 1,385 <code>syc</code>, 1,160 <code>drc</code>, 1,020 <code>ddc</code>, 2,107 <code>drg</code>, <strong>662 <code>art</code></strong>, 899 <code>img</code>, 809 <code>hlv</code> (topic landing pages), 642 <code>rcp</code> and 330 <code>pdc</code>. That is more <code>syc</code> than the sitemap's 1,198, so the sitemap does not list every condition either. The whole-host CDX query timed out after 205 rows.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Structured-data sample: 26 random English sitemap URLs, stratified by type, via Wayback</td><td data-label="Observation">26 of 26 returned 200. Stack split and schema coverage are in Verified Metrics. Condition pages carry a "By Mayo Clinic Staff" byline, a review date and a reference list with "Accessed" dates. In <code>MedicalWebPage</code>, the GCP stack writes <code>signOrSymptom</code>; Sitecore writes it with a typo, <code>signORsymptom</code>. Both stacks set a self-referencing canonical and an empty <code>robots</code> meta.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Next.js page state: <code>art-20546860</code> and <code>drg-20060700</code></td><td data-label="Observation"><code>pageProps.type</code> is <code>mayoclinic/components/structure/spapage</code>, an Adobe AEM SPA component, which fits the robots rule against <code>*.model.json</code>. <code>metadataValues</code> carries <code>pocId</code> (<code>ART-20546860</code>), a <code>workId</code> DID (<code>did:mcid:…</code>) and <code>publishDate</code> (empty). <code>adTargeting</code> carries <code>sseSubjectId</code> and related subject IDs. <code>schemaValues.medicalWebPage</code> is <code>{}</code> on the article.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Edge and origin headers, from Wayback <code>x-archive-orig-*</code></td><td data-label="Observation">The Akamai Bot Manager cookies <code>_abck</code> and <code>bm_sz</code> are set on content pages. The <code>server-timing</code> header shows <code>cdn-cache; desc=HIT</code>. Cache policy differs by stack: GCP sends <code>public, no-cache</code> (drug pages <code>max-age=17763</code>) and Sitecore sends <code>no-cache, no-store</code>. <code>MAYO_CLINIC_USER_GEO</code> echoes the visitor's country (seen: US, CA, AT, FI).</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Video pages: <code>vid-20084704</code>, <code>vid-20453585</code>, <code>vid-20138076</code></td><td data-label="Observation">The Sitecore HTML has a Kaltura player (<code>partnerId 1825021</code>, an entry ID such as <code>1_wcoi7xz5</code>) and a reference list, but <strong>no transcript text</strong> and no <code>VideoObject</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Kaltura public API: <code>session.startWidgetSession?widgetId=_1825021</code>, then <code>media.get</code>, <code>caption_captionasset.list</code> and <code>getUrl</code></td><td data-label="Observation">An anonymous widget session works. <code>media.get</code> returns name, description, duration (47–243s), <code>createdAt</code> (2013–2019), plays and views, and <strong><code>referenceId: VID-20084704</code></strong>, the page ID. Captions come as en VTT plus SRT, with an <code>accuracy</code> value of 94. The VTT downloads (1.6KB). <code>media.list</code> with no filter returns 0, but <code>filter:referenceIdEqual=VID-…</code> resolves. Entries are tagged <code>3play_processed</code>, and <code>creatorId</code> exposes a staff email. Thumbnails at <code>/p/1825021/thumbnail/entry_id/{id}</code> come back as 640×360 JPEG.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Terms of use via Wayback (capture of 2026-09-22)</td><td data-label="Observation">Updated 2024-04-12. Users may not "use any scraper, crawler, spider, robot, or other automated means of any kind to access or copy data on the Site, <strong>deep-link to any feature or content</strong>, or bypass our robot exclusion headers". The only permitted use is a single personal, noncommercial copy.</td></tr>
+            <tr><td data-label="Date">2026-10-04</td><td data-label="Probe">Common Crawl index, <code>CC-MAIN-2026-39</code> and <code>-34</code></td><td data-label="Observation">Both returned 504 from the index server, so it is still unknown whether CCBot gets past Akamai (Open Questions).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">For each modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it changes. The terms ban automated access to every row that lives on mayoclinic.org (Risks).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Condition reference</td>
+              <td data-label="Objects &amp; est. count">About 1.2–1.4K conditions, each with up to four tabs (<code>syc</code>, <code>drc</code>, <code>ddc</code>, <code>mac</code>); ×4 languages</td>
+              <td data-label="Best path">Licensed GBS content API. Otherwise the sitemaps plus page fetches, which are blocked from datacenter IPs.</td>
+              <td data-label="Auth &amp; quota">GBS: commercial contract. Web: Akamai Bot Manager, no published allowance.</td>
+              <td data-label="License / display">© Mayo. Terms allow only a personal copy and ban deep-linking. Title and link at most without a licence.</td>
+              <td data-label="Freshness">Pages are re-reviewed every few years (references show "Accessed" dates from 2017 to 2025). <code>lastmod</code> spreads across 2018–2026.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Articles &amp; expert answers</td>
+              <td data-label="Objects &amp; est. count">462 <code>faq</code> sitemapped; at least 662 <code>art</code> not sitemapped</td>
+              <td data-label="Best path">Topic landing pages (<code>hlv-</code>) link to <code>art</code>. Only a crawl from an allowed egress can enumerate them.</td>
+              <td data-label="Auth &amp; quota">As above</td>
+              <td data-label="License / display">© Mayo</td>
+              <td data-label="Freshness">Bylines carry dates (e.g. 2023-06-30); refreshes are infrequent</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Drug monographs</td>
+              <td data-label="Objects &amp; est. count">2.6K English only</td>
+              <td data-label="Best path">License from Merative (Micromedex) directly, not from Mayo</td>
+              <td data-label="Auth &amp; quota">Merative contract</td>
+              <td data-label="License / display">Merative copyright; "may not be sold, redistributed". Exclude from any snippet store.</td>
+              <td data-label="Freshness">Vendor refresh; every <code>lastmod</code> is in 2025, while page dates read 2025-08 to 2026-03</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video &amp; captions</td>
+              <td data-label="Objects &amp; est. count">1.1K <code>vid</code> pages, 47s–4min clips</td>
+              <td data-label="Best path">Kaltura widget API, keyed by <code>referenceId</code> = page ID: metadata, captions, thumbnails</td>
+              <td data-label="Auth &amp; quota">Anonymous widget session; no stated quota</td>
+              <td data-label="License / display">Playback only in Mayo's embedded player. Caption text is Mayo copyright, so use it for retrieval features, not display.</td>
+              <td data-label="Freshness">Mostly 2013–2019 uploads; the back catalogue is static</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Hero and illustration images on content pages; at least 899 <code>img</code> slideshow pages</td>
+              <td data-label="Best path">URLs from page state (<code>/-/media/…</code>, <code>/content/dam/…</code>)</td>
+              <td data-label="Auth &amp; quota">Behind the same edge</td>
+              <td data-label="License / display">Medical illustrations are Mayo copyright. Link only.</td>
+              <td data-label="Freshness">Immutable per media path</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Recipes</td>
+              <td data-label="Objects &amp; est. count">525 ×4 languages</td>
+              <td data-label="Best path">Recipe sitemaps; ingredients and nutrition only in the HTML</td>
+              <td data-label="Auth &amp; quota">As above</td>
+              <td data-label="License / display">© Mayo</td>
+              <td data-label="Freshness">Static</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Physicians &amp; departments</td>
+              <td data-label="Objects &amp; est. count">4.0K bios; 1.1K department pages ×4 languages</td>
+              <td data-label="Best path">Biography and organization sitemaps; <code>Physician</code> JSON-LD</td>
+              <td data-label="Auth &amp; quota">As above</td>
+              <td data-label="License / display">Factual directory data (name, department, location)</td>
+              <td data-label="Freshness">Bios churn with staffing; 924 have a 2025 <code>lastmod</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where mayoclinic.org differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>One ID, every language</h4>
+          <p>Each content object has a type prefix and an 8-digit ID (<code>syc-20371444</code>). The ID is identical across en, es, ar and zh-hans, and it reappears as <code>pocId</code> in page state and as Kaltura's <code>referenceId</code>. Deduplicate on prefix plus ID, not on the slug: the drug sitemap lists the same ID up to three times, and slugs differ by language. That makes it a parallel corpus of about 9K aligned pages per language.</p>
+        </div>
+        <div>
+          <h4>The concept is the unit, tabs are facets</h4>
+          <p>A condition is split across tabs that have different IDs but the same slug: <code>syc</code> (symptoms and causes), <code>drc</code> (diagnosis and treatment), <code>ddc</code> (doctors and departments) and <code>mac</code> (care at Mayo). Only the first two are reference text. <code>ddc</code> and <code>mac</code> are patient-acquisition pages, so index them as entity links to departments rather than as answers. Join tabs on the shared slug under <code>/diseases-conditions/{slug}/</code>.</p>
+        </div>
+        <div>
+          <h4>The sitemap is not the inventory</h4>
+          <p>The sitemaps leave out every in-depth article (<code>art</code>), the slideshow images, and the English <code>ddc</code> pages, which appear only as hreflang targets. Wayback also shows more <code>syc</code> IDs than the sitemap lists. To find the full set, harvest the hreflang alternates, crawl the <code>hlv-</code> topic landing pages, and fill gaps from CDX.</p>
+        </div>
+        <div>
+          <h4>Two schemas mid-migration</h4>
+          <p>The same URL family can come from Sitecore (IIS, about 600KB) or from AEM on Next.js (GCP, about 1.3MB, full content in <code>__NEXT_DATA__</code>). The parsers differ: Sitecore misspells <code>signORsymptom</code>, the GCP stack leaves <code>datePublished</code> empty on articles, and only the GCP stack exposes <code>workId</code>, <code>sseSubjectId</code> and related-subject IDs. Both stacks keep the URLs, so key on the URL and record which stack served each page.</p>
+        </div>
+        <div>
+          <h4>Video text lives at the video host</h4>
+          <p>Video pages ship no transcript and no <code>VideoObject</code>. But Kaltura's widget API returns duration, views and human-quality captions (3Play-processed, VTT and SRT), keyed back to the page by <code>referenceId</code>. That gives the full-modal join (page, video entry, caption cues, thumbnail) with no ASR needed.</p>
+        </div>
+        <div>
+          <h4>Authority field</h4>
+          <p>Unlike crowd-sourced health sites, every reference page is staff-written and cites its sources, with "Accessed" dates. Use the newest reference-access date as the evidence-freshness signal. <code>lastmod</code> and <code>datePublished</code> are unreliable: they are empty on the GCP stack and bulk-stamped in the drug sitemap.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the condition concept, built from its <code>syc</code> and <code>drc</code> sections (Symptoms, Causes, Risk factors, Diagnosis, Treatment) and carrying the four language versions. The other units are the article or expert answer, the video (Kaltura entry plus caption cues), the recipe, and the physician entity. Drug monographs get title-and-link stubs only.</li>
+        <li><strong>Primary keys &amp; joins:</strong> type prefix plus 8-digit ID (shared across languages and equal to <code>pocId</code> and Kaltura's <code>referenceId</code>); the condition slug, which joins the four tabs; <code>MedicalWebPage.about</code> names, for linking to external vocabularies (SNOMED or MeSH by string match); <code>sseSubjectId</code> for topic clusters (GCP stack only); and the department slug, which joins <code>ddc</code> pages to physician bios.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) A GBS content licence. It is the only path the terms allow, and it covers text and translations. 2) The Kaltura widget API for video metadata and captions, one <code>referenceIdEqual</code> call for each of the 1.1K <code>vid</code> IDs (about 2.2K calls in total). 3) Sitemaps plus hreflang harvest for URL discovery and <code>lastmod</code> (the files are small, about 25MB uncompressed in all). 4) Wayback or Common Crawl captures for research-only gap analysis. Never bulk-fetch the live site against the terms and the bot manager.</li>
+        <li><strong>Recrawl cadence:</strong> sitemaps weekly, diffing <code>lastmod</code>; condition pages on a <code>lastmod</code> change; the video catalogue quarterly; bios monthly.</li>
+        <li><strong>Derivatives to generate:</strong> section-level chunks (Symptoms, Causes and so on) with language-aligned embeddings; caption-cue windows that link back to the page; and a symptom-to-condition graph from <code>signOrSymptom</code> plus the <code>sym</code> pages, which list possible causes.</li>
+        <li><strong>Demo to build:</strong> a cross-lingual symptom lookup. A query such as "dolor de rodilla e hinchazón" retrieves the English <code>syc</code> section through the shared ID and shows the matching Kaltura caption cue. It would run locally on the sample only.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The terms ban crawling and even deep-linking.</strong> Since the 2024-04-12 revision, any automated access and deep-linking are prohibited (<a href="https://web.archive.org/web/20260922235817/https://www.mayoclinic.org/about-this-site/terms-conditions-use-policy">Terms of use</a>). robots.txt allows everything, so the permissive signal and the contractual one disagree; the stricter one governs. Mayo's paid GBS syndication is the obvious alternative.</li>
+        <li><strong>Edge blocking is IP-based and silent.</strong> Every UA got the same 403, including on robots.txt, so a crawler cannot even read the crawl policy from a blocked egress. An index fed from datacenter IPs would see a dead site rather than an error page with content.</li>
+        <li><strong>The migration will reshape the HTML.</strong> As more sections move from Sitecore to AEM/Next.js, extractors tuned to the Sitecore DOM will break page by page. Watch the share of <code>mayo-origin-source</code> values in the headers.</li>
+        <li><strong>Third-party licensed content sits inside first-party URLs.</strong> The Merative drug monographs (2.6K pages) belong to another rights holder and need their own exclusion rule.</li>
+              </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://web.archive.org/web/20240416043020/https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-announces-next-evolution-of-web-presence/">Mayo Clinic News Network, "Mayo Clinic Announces Next Evolution of Web Presence"</a> (2014-01-24). The three-site consolidation, about 60K pages, about 50M monthly uniques at the time, and Sitecore, Avanade and TopQuadrant as vendors.</li>
+        <li><a href="https://www.mprnews.org/story/2026/03/05/mayo-clinic-posts-15b-profit-in-2025-charity-care-remains-below-average">MPR News</a> (2026-03-05). 2025 revenue, income and headcount.</li>
+        <li><a href="https://gbs.mayoclinic.org/">Mayo Clinic Global Business Solutions</a>, read 2026-10-04. Licensable content "available for mass syndication via API".</li>
+        <li><a href="https://www.similarweb.com/website/mayoclinic.org/">Similarweb, mayoclinic.org</a>, August 2026 page, read 2026-10-04. A third-party estimate.</li>
+        <li><a href="https://web.archive.org/web/20260922235817/https://www.mayoclinic.org/about-this-site/terms-conditions-use-policy">Mayo Clinic Terms and conditions of use</a>, updated 2024-04-12, read through Wayback.</li>
+        <li>Local probes on 2026-10-04, listed in full in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The Sitecore-to-AEM migration is incremental and per page, not per section. <em>Basis:</em> in captures from 2026-10-01/02, <code>syc-20353004</code> came from <code>gcp</code> while <code>syc-20369950</code>, <code>-20374343</code> and <code>-20361694</code> came from <code>sitecore</code>. Page state also shows an AEM <code>spapage</code> component, and robots.txt disallows <code>*.model.json</code>.</li>
+        <li>The 403 is an IP-reputation block, not a UA rule. <em>Basis:</em> five different UAs, including an empty one, got byte-identical 386-byte 403s on robots.txt, while Wayback captures from other egresses got 200 on the same paths in the same week.</li>
+        <li>Video captions are produced by 3Play Media, a human-verified captioning vendor. <em>Basis:</em> the Kaltura tag <code>3play_processed</code> on 3 of 3 entries, and SRT assets carrying an <code>accuracy</code> field.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Whether Akamai serves Common Crawl, Googlebot or AI crawlers on mayoclinic.org. Could be closed by querying the CC index for <code>www.mayoclinic.org/*</code> status codes once it responds, and by repeating the robots probe from a residential egress.</li>
+        <li>The true size of the unsitemapped classes (<code>art</code>, <code>img</code>, <code>hlv</code>, and <code>syc</code> beyond the sitemap). Could be closed by a paged full-host CDX export and hreflang-alternate harvest, deduplicated by ID.</li>
+        <li>The Kaltura library size and caption coverage. Could be closed by resolving all 1.1K sitemap <code>vid</code> IDs through <code>referenceIdEqual</code> and counting caption assets and languages.</li>
+        <li>What the GBS licence covers and costs: corpus breadth, languages, whether search-index use is allowed. Could be closed by a GBS sales enquiry or published licence terms.</li>
+        <li>The migration's progress. Could be closed by sampling 200 sitemap URLs monthly through Wayback and tracking the <code>gcp</code> share of <code>mayo-origin-source</code>.</li>
+        <li>A current first-party traffic figure (the last official one is the 2014 figure of 50M monthly uniques). Could be closed by a Mayo annual report or a digital-strategy statement.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
