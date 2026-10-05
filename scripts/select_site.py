@@ -15,6 +15,11 @@ TOP_SITE_PATH = ROOT / "top_site.jsonl"
 TEMPLATE_PATH = ROOT / "reports" / "template.html"
 REPORTS_DIR = ROOT / "reports"
 AGGREGATED_HOSTS = {
+    "clevelandclinic.org": {
+        "match_hosts": ("my.clevelandclinic.org",),
+        "match_suffixes": (),
+        "note": "The patient-facing content host (my.clevelandclinic.org) is analyzed together with the apex as Cleveland Clinic.",
+    },
     "facebook.com": {
         "match_hosts": ("m.facebook.com", "mbasic.facebook.com", "touch.facebook.com"),
         "match_suffixes": (),
