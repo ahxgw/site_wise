@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>clevelandclinic.org Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-10-05</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>clevelandclinic.org</h1>
+      <p class="lede">Cleveland Clinic sitemaps 11K Health Library pages and lets AI crawlers in, but its terms ban RAG grounding outright.</p>
+      <div class="tag-row">
+        <span class="tag">Health</span>
+        <span class="tag">Medical reference</span>
+        <span class="tag">Podcasts</span>
+        <span class="tag">Headless CMS</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Cleveland Clinic is a nonprofit academic health system founded in 1921. Its site <code>my.clevelandclinic.org</code> does two jobs. It is a consumer medical reference (the Health Library: diseases, drugs, treatments, tests, symptoms, anatomy), and it is a patient-acquisition funnel (care pages, locations, doctor search, appointments). A sister host, Health Essentials, runs the wellness blog. The site earns indirectly, through care referrals and display ads ("Advertising on our site helps support our mission", on every Health Library page). For an index builder, the site differs from yesterday's Mayo Clinic in three ways. The edge lets every crawler in, AI bots included. The front end is being rebuilt as Next.js on a public Sanity dataset, so the podcast catalogue, with transcripts and SNOMED CT codes, can be read as JSON. And the contract is the strictest seen so far: the terms name retrieval-augmented generation as a prohibited use.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>my.clevelandclinic.org</code> (the apex 302s to <code>www.</code>, which redirects to <code>my.</code>). All hosts sit behind Cloudflare. Next.js edge runtime serves <code>/health/*</code> and podcasts; legacy Sitecore still serves clinical trials, locations and unmatched routes.</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/health/{type}/{id}-{slug}</code>, e.g. <code>/health/diseases/23431-atherosclerosis-of-aorta</code>. Newer pages drop the numeric ID (<code>/health/diseases/costello-syndrome</code>).</dd></div>
+        <div><dt>Category</dt><dd>Consumer medical reference plus a hospital system's patient-acquisition site</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>clevelandclinic.org</code> + <code>my.clevelandclinic.org</code> (selection aggregates them). Covered as satellites: <code>health.</code> (Health Essentials blog), <code>providers.</code> (Kyruus doctor directory). Out of scope: <code>consultqd.</code> (clinician news), <code>newsroom.</code>, <code>clevelandclinicabudhabi.ae</code>, <code>clevelandcliniclondon.uk</code>.</dd></div>
+        <div><dt>Owner</dt><dd>The Cleveland Clinic Foundation, Cleveland, Ohio (nonprofit)</dd></div>
+        <div><dt>Scale anchor</dt><dd>$18.3B operating revenue, $913M operating income, 83K caregivers and 15.9M patient encounters in 2025 (<a href="https://my.clevelandclinic.org/-/scassets/files/org/about/who-we-are/facts-figures-2025.pdf?la=en">2025 Facts + Figures</a>). These are system figures, not site figures.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from the Site Wise sitemap census, a 20-page sample and Sanity API queries, all run on 2026-10-05. With n=15 Health Library pages, sample shares carry about ±25 points of error (calculated by Site Wise).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Main sitemap corpus</dt>
+          <dd><strong>27.7K</strong> unique URLs on <code>my.</code> across two child sitemaps (<code>site.xml</code> 27.4K, <code>page.xml</code> 13.8K, which adds 347 URLs not in <code>site.xml</code>). Every entry has a <code>lastmod</code>; 18.1K of the 27.4K in <code>site.xml</code> are dated 2026. English only. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Health Library by type</dt>
+          <dd><strong>11.0K</strong> pages (calculated by Site Wise): 4.1K drugs, 4.0K diseases, 859 treatments, 541 articles, 505 body (anatomy), 471 diagnostics, 413 symptoms, 232 procedures. 77% of disease URLs carry a numeric ID (3.0K of 4.0K); the highest seen is 25252. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Other sitemapped classes</dt>
+          <dd>8.3K <code>/staff/</code> URLs (2 of 2 sampled 301 to the provider directory), 2.4K podcast URLs, 527 clinical trials, and about 1.5K department, location and regional pages. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Satellite corpora</dt>
+          <dd>Health Essentials: 5.2K posts (4.7K with a 2026 <code>lastmod</code>). Provider directory: 9.4K URLs, 8.8K of them <code>/provider/{slug}/{7-digit id}</code> pages; 7.5K share the <code>lastmod</code> 2026-10-02. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured data</dt>
+          <dd>12 of 12 non-drug Health Library pages carry <code>MedicalWebPage</code> JSON-LD with <code>datePublished</code> and <code>dateModified</code>, but no <code>about</code>, no <code>reviewedBy</code> and a literal string as <code>@id</code> (<code>"MedicalCondition"</code>). Drug pages carry a bare <code>WebPage</code> (3 of 3). Clinical-trial and location pages (Sitecore) carry none (0 of 2). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Two dates, years apart</dt>
+          <dd>On 12 of 12 non-drug pages the visible "Medically Reviewed. Last updated on" date is older than JSON-LD <code>dateModified</code>; the median gap is <strong>813 days</strong> (range 122–1,954; calculated by Site Wise). <code>dateModified</code> equals sitemap <code>lastmod</code> on 15 of 15. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Drug content is licensed</dt>
+          <dd>3 of 3 drug pages carry "Copyright ©2026 Elsevier Inc. All Rights Reserved", with a note that only the introduction and extra Q&amp;A are Cleveland Clinic's. The drug section is 4.1K pages, 37% of the Health Library (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Public CMS dataset</dt>
+          <dd>Sanity project <code>r78pcm0h</code>, dataset <code>cc-production</code>, answers anonymous GROQ queries: <strong>7.4K documents</strong>, including 1.4K <code>podcastEpisodePage</code>, 2.9K <code>reviewer</code>, 683 <code>orgContentPage</code>, 532 <code>carePage</code>, 223 <code>patientStory</code> and 31 <code>watchPage</code>. Only 4 <code>hlArticle</code> documents: the Health Library itself is not in this dataset. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Podcast transcripts</dt>
+          <dd>All 1,427 episodes carry a Kaltura entry ID; 1,426 carry a SNOMED CT primary term; 1,295 (91%, calculated by Site Wise) carry a transcript of at least 20 Portable Text blocks. Episodes span 22 shows, with air dates from 2023 to 2026. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Traffic (third party)</dt>
+          <dd>Similarweb's August 2026 page shows 64.4M visits, 66.95% from the US, 72.59% from organic search and a global rank of #950. The page is unclear whether the visit figure is monthly or a 3-month total (<a href="https://www.similarweb.com/website/clevelandclinic.org/">Similarweb</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-05 from a sandbox datacenter egress, paced at the 10-second <code>Crawl-delay</code> for page fetches. DNS was skipped because DNS in this sandbox is unreliable; CDN comes from response headers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe"><code>curl -sI</code> on apex and <code>my.</code></td><td data-label="Observation">The apex 302s to <code>www.</code>; <code>my.</code> answers HEAD with <strong>405</strong> (<code>allow: GET</code>) after a 103 Early Hints. <code>server: cloudflare</code> with a <code>__cf_bm</code> bot cookie, HSTS preload, <code>x-frame-options: DENY</code>. Health Library pages add <code>x-edge-runtime: 1</code> and <code>x-matched-path: /health/[type]/[...slug]</code> (Next.js).</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">robots.txt on <code>my.</code>, <code>health.</code>, <code>consultqd.</code></td><td data-label="Observation">Each "Updated 11/11/2025". <code>*</code> is allowed everywhere except search, <code>?q=/?date=/?view=</code> parameters and a list of Sitecore JSON endpoints, with <strong><code>Crawl-delay: 10</code></strong>. No AI crawler is named. The only named agent is <code>AmazonAdBot</code>, confined on <code>my.</code> to <code>/health/</code> and <code>/watch/</code>, "areas where we show advertisements".</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">robots.txt on <code>providers.</code></td><td data-label="Observation">An allowlist: Googlebot, Bingbot, Slurp, DuckDuckBot, <strong>ClaudeBot, Claude-SearchBot, ClaudeBot-user, GPTBot, OAI-SearchBot, ChatGPT-user, PerplexityBot, Meta-ExternalFetcher</strong> may crawl (minus <code>/book</code>, <code>Crawl-delay: 5</code>); <code>*</code> gets <code>Disallow: /</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">One disease page fetched with six UAs (Chrome, ClaudeBot, GPTBot, CCBot, empty, <code>curl/8.7.1</code>)</td><td data-label="Observation">Five got <strong>200</strong> with the full article. Only the default <code>curl/</code> UA got a 1.7KB Cloudflare <strong>403</strong>. The edge filters on a tooling-UA rule, not on AI-bot identity or IP.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">Sitemap census: <code>my.</code>, <code>health.</code>, <code>providers.</code></td><td data-label="Observation"><code>my.</code> and <code>health.</code> serve a sitemap index generated on request (index <code>lastmod</code> equals fetch time) with children <code>site.xml</code>, <code>page.xml</code> and, on <code>health.</code>, <code>post.xml</code>. Counts are in Verified Metrics. The two <code>my.</code> children overlap heavily (11 duplicates within <code>site.xml</code>). <code>providers.</code> has one flat urlset. No hreflang, no image or video sitemap extensions.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">Structured-data sample: 20 stratified sitemap URLs (15 Health Library, 2 staff, 1 podcast, 1 trial, 1 location)</td><td data-label="Observation">18 returned 200, 2 staff URLs 301 to <code>providers.clevelandclinic.org/provider/{slug}/{id}</code>. Health Library HTML is 217–390KB, 1.1K–2.8K visible words, delivered as RSC streams (<code>self.__next_f</code>, 32–54 chunks), no <code>__NEXT_DATA__</code>. Every page has a self canonical, 5–6 OG tags, no robots meta. Each also embeds a site-wide <code>MedicalOrganization</code> block claiming <code>numberOfEmployees: 65000</code>, against 83K in the 2025 facts sheet.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">Visible text of the 15 Health Library pages</td><td data-label="Observation">Non-drug pages show "Medically Reviewed. Last updated on MM/DD/YYYY" and a "References" list of 9–36 citations. Drug pages show the Elsevier notice instead and no references. RSC props expose <code>sectionTitles</code> (e.g. Overview, Symptoms and Causes, Diagnosis and Tests, Management and Treatment, Outlook / Prognosis, Prevention, Living With) and a breadcrumb array; no CMS document ID, reviewer name or SNOMED code.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">Medical illustration <code>/-/scassets/images/org/health/articles/24773-intragastric-balloon</code></td><td data-label="Observation">5 of 15 pages embed an illustration under this Sitecore-era path, named with the same numeric page ID. The sampled file is an 800×889 JPEG whose EXIF copyright reads "© 2023 The Cleveland Clinic Foundation. All Rights Reserved." <code>cache-control: public</code>, <code>last-modified</code> 2026-04-09.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">JS bundles of a Health Library page (15 chunks)</td><td data-label="Observation">Bundles name Algolia app <code>NLI34IG0X3</code> with a browser search key and indices <code>mycc_sanity_prod</code>, <code>he_sanity_prod</code>, <code>cqd_sanity_prod</code>, <code>newsroom_sanity_prod</code>, <code>locations_prod</code>, <code>medical_personnel_prod</code>, plus <code>@sanity/client</code>. One test query on <code>mycc_sanity_prod</code> returned "Index does not exist"; no further Algolia calls were made. Doctor typeahead goes to Kyruus.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">Sanity public API: <code>r78pcm0h.apicdn.sanity.io/v2021-10-21/data/query/cc-production</code></td><td data-label="Observation">Anonymous GROQ works: <code>count(*)</code> = 7,404 and a type histogram (Verified Metrics); <code>drafts.**</code> = 0, so only published docs are exposed. Seven guessed dataset names (e.g. <code>production</code>, <code>health-library</code>) returned 404. An episode document carries <code>canonicalUrl</code>, <code>airdate</code>, <code>hostGuests</code> (guest links to provider IDs), <code>podcastMedia.kaltura.kalturaId</code>, <code>snomedPrimaryTerm</code> / <code>snomedSecondaryTerm</code> (<code>{id, term}</code>, e.g. 226887002 "Cooking oil"), Bynder asset IDs and <code>contentBlock</code>: the transcript as Portable Text, speaker turns styled <code>h4</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">Kaltura widget API, partner <code>2207941</code> (from the podcast page player)</td><td data-label="Observation">An anonymous widget session works. <code>media.get</code> on <code>1_pzy7ps81</code> returns a video of 1,260s, 315 views, tags, the category "Video Podcasts 2.0, On YouTube - Do not add", a <code>referenceId</code> naming the master file, and a staff email as <code>creatorId</code>. <strong>0 caption assets</strong>; an unfiltered <code>media.list</code> returns 0.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">Health Essentials: <code>/wp-json/</code>, <code>/feed</code>, a post page</td><td data-label="Observation">No WordPress API (404) and no feed (404); <code>my.</code> <code>/feed</code> redirects to a Sitecore <code>notfound.aspx</code>. The post page is Next.js with <code>MedicalWebPage</code> JSON-LD carrying <code>lastReviewed</code> and a generic author, "Cleveland Clinic medical professional".</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe"><code>/llms.txt</code> on <code>my.</code> and <code>health.</code></td><td data-label="Observation"><code>my.</code>: 200, 3.2KB, 17 links (provider search, locations, Health Library, appointments, billing, podcasts). <code>health.</code>: 404.</td></tr>
+            <tr><td data-label="Date">2026-10-05</td><td data-label="Probe">Terms of use, reprints &amp; licensing, editorial policy</td><td data-label="Observation">Terms "Last updated: 05/14/2025". Besides a ban on crawlers "except as expressly permitted", users may not use the Services "to develop, create, train, fine tune, or <strong>ground (including through a retrieval-augmented generation (RAG) model)</strong>" any AI model, or include "or summariz[e] any portion" in model output. The reprint policy allows one personal print copy. The editorial policy says every article is reviewed by a Cleveland Clinic expert, and AI tools may assist writers.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">For each modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it changes. The terms reach every row (Risks).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Health Library reference</td>
+              <td data-label="Objects &amp; est. count">7.0K CC-written pages (diseases, treatments, tests, symptoms, body, procedures, articles)</td>
+              <td data-label="Best path">Sitemap plus HTML fetch at 10s delay; the RSC payload holds section titles</td>
+              <td data-label="Auth &amp; quota">None at the edge for browser-like or bot UAs; <code>Crawl-delay: 10</code> means about 19 hours for one pass</td>
+              <td data-label="License / display">© Cleveland Clinic. Terms ban crawling without permission and any RAG grounding or summarizing. Title and link at most.</td>
+              <td data-label="Freshness">Medical review every ~2 years (visible date); CMS <code>lastmod</code> moves far more often</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Drug monographs</td>
+              <td data-label="Objects &amp; est. count">4.1K pages</td>
+              <td data-label="Best path">License from Elsevier, not from the site</td>
+              <td data-label="Auth &amp; quota">Elsevier contract</td>
+              <td data-label="License / display">Elsevier copyright; exclude from any snippet store</td>
+              <td data-label="Freshness">Vendor refresh; <code>dateModified</code> stamped in batches (2 of 3 sampled on 2026-02-27)</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Podcasts (audio/video + transcript)</td>
+              <td data-label="Objects &amp; est. count">1.4K episodes, 22 shows; 1.3K with transcripts</td>
+              <td data-label="Best path">Sanity public GROQ (metadata, transcript, SNOMED); Kaltura widget API for duration and thumbnails</td>
+              <td data-label="Auth &amp; quota">Anonymous; Sanity API CDN, no stated quota</td>
+              <td data-label="License / display">Transcript text is CC copyright; use for retrieval features, link to the episode page. Playback only in CC's player or YouTube.</td>
+              <td data-label="Freshness">About 300–390 new episodes a year</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Wellness articles (Health Essentials)</td>
+              <td data-label="Objects &amp; est. count">5.2K posts</td>
+              <td data-label="Best path"><code>health.</code> sitemap plus HTML; no feed, no WP API</td>
+              <td data-label="Auth &amp; quota">As Health Library</td>
+              <td data-label="License / display">Same terms</td>
+              <td data-label="Freshness">4.7K posts carry a 2026 <code>lastmod</code></td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Illustrations</td>
+              <td data-label="Objects &amp; est. count">Per-page anatomy and procedure art (5 of 15 pages)</td>
+              <td data-label="Best path">URL derived from page ID under <code>/-/scassets/images/org/health/articles/</code></td>
+              <td data-label="Auth &amp; quota">Open, cacheable</td>
+              <td data-label="License / display">EXIF "All Rights Reserved"; link only</td>
+              <td data-label="Freshness">Immutable per ID</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Physicians</td>
+              <td data-label="Objects &amp; est. count">8.8K provider profiles</td>
+              <td data-label="Best path"><code>providers.</code> sitemap; pages are a Kyruus client-rendered shell, so a JS render is needed</td>
+              <td data-label="Auth &amp; quota">robots allowlist only (search and AI bots named); <code>*</code> disallowed</td>
+              <td data-label="License / display">Factual directory data; ratings are Kyruus-hosted</td>
+              <td data-label="Freshness">Sitemap restamped in bulk (7.5K on 2026-10-02)</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Care, locations, trials</td>
+              <td data-label="Objects &amp; est. count">532 care pages, 527 trials, ~1.5K department and location pages</td>
+              <td data-label="Best path">Sanity GROQ for care pages; HTML for Sitecore trials and locations</td>
+              <td data-label="Auth &amp; quota">Anonymous</td>
+              <td data-label="License / display">Same terms</td>
+              <td data-label="Freshness">Trials change with enrolment status</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where clevelandclinic.org differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Open door, closed contract</h4>
+          <p>Unlike the default, robots.txt names no AI crawler and the edge serves ClaudeBot, GPTBot and CCBot the same 200 as Chrome; the provider host goes further and allowlists them by name. The restriction lives entirely in the terms, which ban RAG grounding and AI summarization specifically. A crawler that obeys robots.txt alone will ingest content it may not use for answers.</p>
+        </div>
+        <div>
+          <h4>Use the visible review date, not <code>dateModified</code></h4>
+          <p>JSON-LD <code>dateModified</code> and sitemap <code>lastmod</code> track CMS edits (ad slots, layout migrations) and run a median 813 days ahead of the "Medically Reviewed. Last updated on" date. <code>datePublished</code> is also unreliable: one page shows a 2021 review date but a 2023 <code>datePublished</code>, which looks like a migration import date. Parse the visible review date for clinical freshness and use <code>lastmod</code> only as a recrawl trigger.</p>
+        </div>
+        <div>
+          <h4>Numeric ID is optional</h4>
+          <p>About a quarter of disease URLs and most procedure URLs have no numeric ID, and the ID is never exposed in JSON-LD or RSC props. Key on the canonical URL path; when the ID exists it also names the illustration file, which gives a free page-to-image join.</p>
+        </div>
+        <div>
+          <h4>The CMS is the cleanest feed, for part of the site</h4>
+          <p>The public Sanity dataset returns structured JSON for podcasts, care pages, patient stories and video pages, with SNOMED CT codes already attached: a coded concept join that no other health site profiled here has exposed. The Health Library and Health Essentials articles are not in it, so they still need HTML parsing.</p>
+        </div>
+        <div>
+          <h4>Transcripts sit in the CMS, not at the video host</h4>
+          <p>Mayo's video text was in Kaltura captions. Here Kaltura holds 0 captions, while Sanity holds speaker-segmented transcripts. The full-modal join is Sanity episode → <code>kalturaId</code> (duration, thumbnail) → transcript blocks → SNOMED terms → guest provider IDs.</p>
+        </div>
+        <div>
+          <h4>Two stacks, one URL space</h4>
+          <p>Next.js on the edge serves <code>/health/*</code>, podcasts and Health Essentials; Sitecore serves trials, locations and the <code>/-/scassets/</code> media path. Sitecore pages carry no JSON-LD and are about 40KB. Use <code>x-matched-path</code> to tell the stacks apart and route each to its own parser.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the Health Library page split into its named sections (from RSC <code>sectionTitles</code>), carrying the visible review date and reference list. Other units: the podcast episode (transcript windows of speaker turns), the Health Essentials post, and the provider entity. Drug pages get title-and-link stubs only.</li>
+        <li><strong>Primary keys &amp; joins:</strong> canonical URL path; numeric page ID where present (equals the illustration filename); Sanity <code>_id</code> and <code>canonicalUrl</code> for CMS-backed pages; <code>kalturaId</code> for media; SNOMED CT concept IDs for topic joins to external vocabularies; the Kyruus 7-digit provider ID, which <code>/staff/</code> redirects and podcast <code>hostGuests</code> links both resolve to.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Written permission or a licence from Cleveland Clinic. The terms require it for any automated access and forbid RAG use without it. 2) Sanity GROQ for podcast and care-page JSON: one paged query replaces about 2K page fetches. 3) Sitemaps for discovery and change detection, a few MB in total. 4) HTML at <code>Crawl-delay: 10</code> for Health Library text, only under the permission in 1. Exclude the 4.1K Elsevier drug pages.</li>
+        <li><strong>Recrawl cadence:</strong> sitemaps daily (they are generated on request); refetch a page only when <code>lastmod</code> changes; Sanity <code>_updatedAt</code> diffs daily; providers weekly.</li>
+        <li><strong>Derivatives to generate:</strong> section chunks with review-date metadata; transcript windows linked to the episode URL; a SNOMED-coded topic graph that joins podcast episodes to Health Library pages by concept; image-to-page links from the shared ID.</li>
+        <li><strong>Demo to build:</strong> a SNOMED-keyed "listen and read" lookup. A query such as "prediabetes diet" resolves to a SNOMED concept, returns the matching transcript window from the Sanity episode and links the Health Library page on the same concept. Local, over a sample only.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The terms forbid the use case itself.</strong> Since 2025-05-14, grounding any AI model on the site "including through a retrieval-augmented generation (RAG) model", or summarizing it in model output, is prohibited (<a href="https://my.clevelandclinic.org/about/website/terms-of-use">Terms of use</a>). The permissive robots.txt and edge do not override this. Without a licence, an answer engine can at most link to the site.</li>
+        <li><strong>The open CMS may close without notice.</strong> Anonymous Sanity reads depend on a dataset visibility setting the owner can flip. Snapshot rather than depend on it live, and fall back to HTML.</li>
+        <li><strong>Third-party content inside first-party URLs.</strong> 37% of the Health Library is Elsevier drug content and needs its own exclusion rule.</li>
+        <li><strong>The migration will keep reshaping HTML.</strong> Sections moving from Sitecore to Next.js change size (40KB to 300KB+), schema and media paths; extractors must branch on <code>x-matched-path</code>.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://my.clevelandclinic.org/-/scassets/files/org/about/who-we-are/facts-figures-2025.pdf?la=en">Cleveland Clinic 2025 Year-End Facts + Figures</a> (statistics as of 2025-12-31). Revenue, income, caregivers and encounters.</li>
+        <li><a href="https://my.clevelandclinic.org/about/website/terms-of-use">Cleveland Clinic Website Terms of Use</a>, last updated 2025-05-14, read 2026-10-05.</li>
+        <li><a href="https://my.clevelandclinic.org/about/website/reprints-licensing">Reprints &amp; Licensing</a> and <a href="https://my.clevelandclinic.org/about/website/editorial-policy">Editorial Policy</a>, read 2026-10-05.</li>
+        <li><a href="https://www.similarweb.com/website/clevelandclinic.org/">Similarweb, clevelandclinic.org</a>, August 2026 page, read 2026-10-05. A third-party estimate.</li>
+        <li>Local probes on 2026-10-05, listed in full in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The Cloudflare 403 is a tooling-UA rule, not an AI-bot block. <em>Basis:</em> same URL, same egress, same minute: <code>curl/8.7.1</code> got 403 while ClaudeBot, GPTBot, CCBot and an empty UA got the same 200 page as Chrome.</li>
+        <li><code>dateModified</code> reflects CMS touches, not clinical review. <em>Basis:</em> it is later than the visible review date on 12 of 12 pages, matches sitemap <code>lastmod</code> on 15 of 15, and two unrelated drug pages share the same <code>dateModified</code> (2026-02-27).</li>
+        <li>Video podcasts are also published on YouTube, which may carry captions Kaltura lacks. <em>Basis:</em> the Kaltura category "On YouTube - Do not add" on the sampled entry.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Where the Health Library and Health Essentials article bodies live (another Sanity project or dataset, or a separate API). Could be closed by tracing the network calls of a client-side navigation between two <code>/health/</code> pages.</li>
+        <li>Whether Kyruus provider pages are server-rendered for allowlisted bots. Could be closed by fetching a provider URL with a Googlebot UA and checking for the doctor's name in the HTML.</li>
+        <li>Caption coverage of the YouTube copies of video podcasts. Could be closed by matching episode titles to the Cleveland Clinic YouTube channel and listing caption tracks with the YouTube Data API.</li>
+        <li>Whether Cleveland Clinic licenses Health Library content for search or AI use, and on what terms. Could be closed by an enquiry through the reprints and licensing contact.</li>
+        <li>A first-party web traffic figure. Could be closed by a State of the Clinic report or marketing disclosure that states site visits.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
