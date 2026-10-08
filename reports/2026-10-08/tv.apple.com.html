@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tv.apple.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-10-08</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>tv.apple.com</h1>
+      <p class="lede">Apple TV sitemaps about 4.3M titles and episodes across 171 storefronts, but only 3.6K are Apple Originals. The rest is a where-to-watch guide.</p>
+      <div class="tag-row">
+        <span class="tag">Streaming</span>
+        <span class="tag">Video catalogue</span>
+        <span class="tag">Where-to-watch</span>
+        <span class="tag">Geo-split edge</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p><code>tv.apple.com</code> is the web front end of the Apple TV app. It does two jobs. First, it sells and plays Apple's subscription service, which was called Apple TV+ until Apple dropped the "+" on 2025-10-13. The service carries Apple Originals, MLS and, from 2026, Formula 1 in the US. Second, it is a catalogue of third-party film and TV that points viewers to Peacock, Prime Video, Globoplay and other apps. The catalogue is far bigger than the service: in the sitemap, Originals are under 0.1% of titles and episodes (Verified Metrics). For an index builder, the site has three useful properties. One opaque ID (<code>umc.cmc.*</code>) holds steady across about 170 storefronts and every language. Every title page carries typed JSON-LD. And Apple's own trailers stream anonymously over HLS with WebVTT subtitles in dozens of languages. The constraints: the site's edge depends on DNS geography, its sitemaps carry no <code>lastmod</code>, and Apple's Media Services terms ban automated measurement and AI training.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>tv.apple.com</code>, served by Apple's <code>daiquiri</code> front end through Akamai (rest of world) or a China CDN edge (Probe Log)</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/{storefront}/{type}/{localized-slug}/{umc id}</code>, e.g. <code>/us/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx</code>. Types: <code>show</code>, <code>movie</code>, <code>episode</code> (plus <code>?showId=</code>), <code>clip</code>, <code>sporting-event</code> (<code>umc.cse.*</code>), <code>person</code> (<code>umc.cpc.*</code>), <code>channel</code> (<code>tvs.sbd.*</code>), <code>room</code> (<code>edt.item.*</code>). A non-default language adds <code>?l=</code>.</dd></div>
+        <div><dt>Category</dt><dd>Subscription streaming plus a multi-provider film and TV guide</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>tv.apple.com</code>. Covered as satellites: <code>tv.apple.com/api/uts/v3</code> (catalogue JSON), <code>play-edge.itunes.apple.com</code> and <code>vod-*.tv.apple.com</code> (trailer HLS), <code>is1-ssl.mzstatic.com</code> (artwork). Siblings in earlier reports: <a href="../2026-06-16/apple.com.html">apple.com</a>, <a href="../2026-08-06/apps.apple.com.html">apps.apple.com</a>.</dd></div>
+        <div><dt>Owner</dt><dd>Apple Inc. (NASDAQ: AAPL)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Apple TV+ launched 2019-11-01 (<code>/llms.txt</code>, Probe Log); renamed Apple TV on 2025-10-13</dd></div>
+        <div><dt>Business model</dt><dd>Subscription ($14.99/month in the US from 2026-08-28), plus transactional iTunes, channel add-ons and sports passes</dd></div>
+        <div><dt>Scale anchor</dt><dd>Apple Services net sales were $109.2B in FY2025, ended 2025-09-27 (<a href="https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm">FY2025 10-K</a>). Apple does not disclose Apple TV subscribers or revenue.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from the Site Wise sitemap census on 2026-10-08. Six families were counted in full. Movies and episodes were counted in 25 of the 250 ID-hash buckets and scaled ×10 (calculated by Site Wise). "URLs" means storefront-specific <code>&lt;loc&gt;</code> entries; "titles" means distinct <code>umc</code> IDs.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Sitemap shape</dt>
+          <dd><strong>9</strong> index files, <strong>4,355</strong> gzipped child sitemaps (episode 2,561, movie 781, original-episode 509, show 250, original-show 153, original-movie 89, clip 10, sporting-event 1, staticUrl 1). Children are named <code>{type}_{bucket 1–250}_{part}</code>. <strong>No <code>lastmod</code></strong> at any level, and no image or video extensions. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Catalogue titles</dt>
+          <dd><strong>143.6K</strong> shows (full census) and about <strong>355K</strong> movies (35.5K in the 25-bucket sample, calculated by Site Wise). About <strong>3.8M</strong> episodes (384K in sample, calculated by Site Wise). Plus 11.2K clips and 701 sporting events. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Apple Originals</dt>
+          <dd><strong>237</strong> shows, <strong>111</strong> movies, <strong>3,273</strong> episodes (full census). None of these IDs appear in the general <code>show</code>/<code>movie</code> families, which hold only third-party titles. Originals are 0.08% of the roughly 4.3M titles and episodes (calculated by Site Wise). Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Storefront URL volume</dt>
+          <dd>About <strong>23.1M</strong> storefront URLs (calculated by Site Wise): 18.1M episode, 3.6M movie, 660K show, 517K original-episode, 160K clip. Originals list in up to 170–171 storefronts; third-party shows and episodes in 140. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap byte cost</dt>
+          <dd>About <strong>2.2GB</strong> gzipped for the full set (calculated by Site Wise from the measured families). The 3,273 original episodes alone take 376MB, because each URL carries about 165 <code>hreflang</code> alternates (85.1M links across 517K URLs). Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured data</dt>
+          <dd>11 of 11 sampled pages carry a typed entity: <code>TVSeries</code> 3/3, <code>Movie</code> 4/4, <code>Episode</code> 2/2, <code>VideoObject</code> (sporting event) 1/1, <code>Clip</code> 1/1. All also carry an <code>Organization</code> block, and 10 of 11 carry a <code>BreadcrumbList</code>. None carries <code>offers</code>, <code>aggregateRating</code> or a <code>WatchAction</code>. 11 of 11 have a self canonical and no robots meta. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Wikidata join coverage</dt>
+          <dd>Wikidata SPARQL probe: properties P9586 (movie), P9751 (show), P9750 (episode) and P14436 (person) have 50.5K, 2.9K, 501 and 256 uses; P9586 mixes <code>umc</code> suffixes with legacy numeric IDs. They match 74% of Original shows (176/237) and 58% of Original movies (64/111), but only 13.5% of sampled movies and 1.7% of third-party shows (calculated by Site Wise). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Subscription price</dt>
+          <dd>US monthly price rose from $9.99 to $12.99 on 2025-08-21 (<a href="https://www.cnbc.com/2025/08/21/apple-tv-subscription-12-99.html">CNBC</a>), then to $14.99 (annual $119) on 2026-08-28 for new subscribers (<a href="https://9to5mac.com/2026/08/28/apple-announces-price-increase-for-apple-tv-and-apple-one-subscriptions/">9to5Mac</a>, which says Apple confirmed it). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Rebrand and sports rights</dt>
+          <dd>"Apple TV+ is now simply Apple TV" on 2025-10-13 (<a href="https://www.apple.com/tv-pr/news/2025/10/apple-original-films-blockbuster-feature-f1-the-movie-from-joseph-kosinski-to-make-global-streaming-debut-on-friday-december-12-2025/">Apple TV Press</a>). The exclusive five-year US Formula 1 deal for 2026–2030 was announced 2025-10-17 (<a href="https://www.cnbc.com/2025/10/17/apple-f1-media-deal-streaming.html">CNBC</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Traffic (third party)</dt>
+          <dd>Similarweb's September 2026 page shows 54.9M visits over 3 months; 38.9% from the US, then UK 6.59% and Brazil 5.34%. Direct is the top desktop source at 45.32%, with organic search second. No global rank is shown (<a href="https://www.similarweb.com/website/tv.apple.com/">Similarweb</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-08. The sandbox egresses through a CONNECT proxy whose public IP geolocates to San Francisco, but DNS for the proxy's tunnel is resolved locally. For tv.apple.com this mattered; see the first two rows. Page fetches were paced at 1 request every 2 seconds.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-10-08</td><td><code>curl</code> GET/HEAD on <code>/</code>, <code>/us</code>, <code>/gb</code>, a show and a movie, 7 UAs</td><td>All returned <strong>404 with an empty body</strong> (<code>server: nginx</code>, <code>x-via: PS-WUH… / PS-WNZ…</code>). Only <code>robots.txt</code> and the sitemaps returned 200. <code>dig</code> gave <code>tv-cdn.itunes-apple.com.akadns.net → tv-china… → tv.apple.com.qtlcdn.com</code> on the local resolver and <code>tv-cdn-row… → akamaiedge.net</code> on 1.1.1.1.</td></tr>
+            <tr><td>2026-10-08</td><td>Same URLs with <code>--connect-to</code> the rest-of-world Akamai IP</td><td><strong>200</strong>, 640KB, <code>server: daiquiri/5</code>, <code>x-cache: TCP_MEM_HIT</code> from Akamai, <code>cache-control: public, max-age=3582</code>, <code>vary: X-Apple-Store-Front, Cookie</code>, CSP <code>frame-ancestors 'none'</code>. The empty 404 is the China edge, not the content.</td></tr>
+            <tr><td>2026-10-08</td><td>UTS <code>configurations</code> with <code>sf=143465</code> (China)</td><td><code>400</code> "China is not a supported storefront". With <code>sf=143441</code>: <code>tvAppEnabledInStorefront: true</code>, locales <code>en_US</code> and <code>es_MX</code>.</td></tr>
+            <tr><td>2026-10-08</td><td>UA matrix on the Akamai edge: Googlebot, GPTBot, ClaudeBot, CCBot, <code>curl/8.7.1</code>, empty UA</td><td>All got <strong>200</strong> with an identical 642KB body. No bot wall and no UA-dependent rendering.</td></tr>
+            <tr><td>2026-10-08</td><td><code>curl -sL https://tv.apple.com/robots.txt</code></td><td>A single <code>User-agent: *</code> group with no AI-crawler rules. It disallows <code>/api</code>, <code>/uts/</code>, <code>*/search?</code>, the trailers/related/bonus-content/clubs/spotlight collections, six MLS studio shows and <code>uts.cvs.pp.umc.cmc</code> paths. Nine <code>Sitemap:</code> lines, one per family.</td></tr>
+            <tr><td>2026-10-08</td><td>Sitemap census: all 9 indexes, every child in 6 families, 25 random buckets for movie and episode (1,351 gz files, 610MB)</td><td>No fetch failed or came back empty (each body checked for <code>&lt;urlset</code>). Each <code>&lt;url&gt;</code> lists one storefront page plus <code>xhtml:link</code> alternates for every storefront carrying the title. The same <code>umc</code> ID appears under localized slugs, e.g. <code>/do/show/tu-tambien-lo-harias/…</code> and <code>/dm/show/you-would-do-it-too/…</code>, and <code>/cz/…?l=cs</code>. Clips list each storefront as a separate <code>&lt;url&gt;</code> with no alternates. No <code>/cn/</code> URLs. Counts are in Verified Metrics.</td></tr>
+            <tr><td>2026-10-08</td><td>Structured-data sample: 11 US pages (3 show, 4 movie, 2 episode, 1 sporting event, 1 clip) taken from sitemaps</td><td>HTML is 166–437KB, of which 105–244KB is a <code>serialized-server-data</code> JSON blob. Visible text is 625–1.2K words, mostly shelf titles. JSON-LD fields: name, description, image, datePublished, and actor/director where known; episodes add <code>partOfSeason</code>, <code>episodeNumber</code>, <code>duration</code>. The <code>Clip</code> block's <code>identifier</code> is the parent sporting-event ID, not the clip's. The site <code>Organization</code> block's <code>sameAs</code> points to Wikidata Q270285, which is the Apple TV <em>hardware</em> item.</td></tr>
+            <tr><td>2026-10-08</td><td>Provider block in <code>serialized-server-data</code> on the 6 third-party pages</td><td>6 of 6 name one provider with a logo: Peacock, Prime Video (3), Globoplay, Qello Concerts. None of this reaches JSON-LD or meta tags. Apple-owned pages carry channel <code>tvs.sbd.4000</code> (Apple TV); purchasable films add <code>tvs.sbd.9001</code> (iTunes).</td></tr>
+            <tr><td>2026-10-08</td><td>Page bootstrap: <code>serialized-server-data</code> <code>UtsConfigureIntent</code></td><td>Embeds an ES256 developer JWT (issuer <code>O7NINZX510</code>, issued 2026-10-01, expires 2026-12-10, origin <code>apple.com</code>) and a <code>utsk</code> session key with <code>expirationInSeconds: 7200</code>. The same <code>utsk</code> is returned in the <code>x-apple-utsk</code> header of the anonymous <code>configurations</code> call.</td></tr>
+            <tr><td>2026-10-08</td><td>Public API sample: <code>/api/uts/v3/shows/{id}</code>, <code>/shows/{id}/episodes</code>, <code>/movies/{id}</code> (3 calls)</td><td>Without <code>utsk</code>: 400 "Missing required param: utsk". With it: 200, 207–287KB JSON, no login. Fields include <code>releaseDate</code> (epoch ms), <code>rating</code> (system and value), <code>genres</code> (<code>umc.gnr.*</code>), <code>countriesOfOrigin</code>, <code>originalSpokenLanguages</code>, <code>commonSenseMedia</code> scores, <code>rolesSummary.castDetails</code> (<code>umc.cpc.*</code> person IDs), <code>seoNoIndex</code>, and per-playable <code>channelId</code>, <code>externalId</code> and <code>closedCaptionedLocales</code>. Episodes come with <code>showId</code>, <code>seasonId</code>, <code>duration</code> (s) and <code>totalEpisodeCount</code> (19 for Severance).</td></tr>
+            <tr><td>2026-10-08</td><td><code>og:video</code> HLS master for Severance, then its English subtitle playlist</td><td>The anonymous master is 490KB with 468 variants up to 3840×2160, 10 audio languages and <strong>42 subtitle languages</strong>. The English track is a 32-second WebVTT file (on <code>vod-ap-aoc.tv.apple.com</code>) with real dialogue cues. <code>og:video</code> appeared on 3 of 11 sampled pages (the 2 episodes and 1 Original movie).</td></tr>
+            <tr><td>2026-10-08</td><td><code>/llms.txt</code>; Apple Media Services terms</td><td><code>llms.txt</code>: 200, 11.5KB, "Last updated: July 2026", marketing copy only, claims "100+ countries and regions". The <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html">Media Services terms</a> (last updated 2026-09-14) forbid any automated process "to scrape, copy, or perform measurement, analysis, or monitoring of" the Content or Services, and any use "to train, fine-tune, or improve any artificial intelligence model".</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">For each modality: what exists, the best legitimate path, what it costs, what a third-party UI may show, and how fast it changes. "UTS" is the <code>/api/uts/v3</code> JSON API, which robots.txt disallows. The terms reach every row (Risks).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Title metadata (text)</td>
+              <td>~499K shows and movies, ~3.8M episodes; synopsis, cast, genre, rating</td>
+              <td>Sitemap → HTML JSON-LD (allowed by robots); UTS JSON for full fields</td>
+              <td>None at the Akamai edge; HTML is cacheable for an hour. UTS needs a 2-hour <code>utsk</code>; quota is open.</td>
+              <td>Apple and licensor synopses; titles, facts and a link are the safe display</td>
+              <td>No <code>lastmod</code>; change is invisible without a recrawl</td>
+            </tr>
+            <tr>
+              <td>Artwork (images)</td>
+              <td>Poster, wide hero, logo, person headshots, all templated <code>{w}x{h}</code></td>
+              <td><code>og:image</code> / JSON-LD <code>image</code>; UTS <code>images</code></td>
+              <td>Anonymous mzstatic CDN</td>
+              <td>Studio key art; thumbnails with a link only</td>
+              <td>Swaps on season or marketing changes</td>
+            </tr>
+            <tr>
+              <td>Trailers (video + audio)</td>
+              <td>Apple-hosted previews; present on 3 of 11 sampled pages</td>
+              <td><code>og:video</code> HLS master</td>
+              <td>Anonymous; up to 2160p</td>
+              <td>No embed is allowed (<code>frame-ancestors 'none'</code>); link out, never rehost</td>
+              <td>Fixed per asset; new trailers per season</td>
+            </tr>
+            <tr>
+              <td>Subtitles (text over time)</td>
+              <td>WebVTT tracks inside trailer HLS, 42 languages on the sampled one</td>
+              <td>Subtitle playlist URLs in the HLS master</td>
+              <td>Anonymous</td>
+              <td>Dialogue copyright belongs to the studio; use only for retrieval features</td>
+              <td>Fixed per asset</td>
+            </tr>
+            <tr>
+              <td>Full episodes and films</td>
+              <td>Apple Originals (3.6K) and sports</td>
+              <td>None for an indexer; FairPlay DRM behind a subscription</td>
+              <td>Paid account</td>
+              <td>Playback only in Apple's apps</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Where-to-watch</td>
+              <td>Provider and channel per title (Peacock, Prime Video, Globoplay …)</td>
+              <td>HTML <code>serialized-server-data</code> Provider block; UTS <code>playables</code>/<code>channels</code></td>
+              <td>As above; varies by storefront</td>
+              <td>Facts; provider logos are trademarks</td>
+              <td>Moves whenever licensing windows shift</td>
+            </tr>
+            <tr>
+              <td>Sports</td>
+              <td>701 sporting events, 11.2K highlight clips (mostly MLS)</td>
+              <td>Sitemap → JSON-LD <code>VideoObject</code> / <code>Clip</code></td>
+              <td>Anonymous HTML; full games require a subscription</td>
+              <td>League rights; titles and scores only</td>
+              <td>Daily in season; clips arrive in bursts after each match</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Person (<code>umc.cpc</code>), genre (<code>umc.gnr</code>), channel (<code>tvs.sbd</code>), room (<code>edt.item</code>)</td>
+              <td>UTS cast and genre arrays; Wikidata for QIDs</td>
+              <td>Wikidata CC0; UTS as above</td>
+              <td>Wikidata freely reusable; Apple IDs are facts</td>
+              <td>Persons are stable; rooms are editorial and short-lived</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where tv.apple.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Key everything on the <code>umc</code> ID. Storefront (about 170), slug language and <code>?l=</code> are presentation only, so 23.1M storefront URLs collapse to about 4.3M objects. Episode URLs add <code>?showId=</code> and clip URLs add <code>targetId</code>/<code>targetType</code>; strip both. <code>showId</code> and <code>seasonId</code> are on the episode record.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Visible page text is mostly shelf labels and related-title lists, so it makes poor body text. Index the JSON-LD and synopsis instead (Indexing Plan).</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p><code>umc</code> joins page, artwork, trailer HLS (via <code>og:video</code>), cast (<code>umc.cpc</code>) and Wikidata. Through Wikidata a title reaches IMDb or TMDb IDs. That bridge is strong for Originals (58–74%) and thin for the third-party long tail (1.7–13.5%). <code>playables[].externalId</code> carries provider-side or iTunes IDs (e.g. <code>1813006619</code> on the iTunes channel), which is a possible join into iTunes Search.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Use JSON-LD <code>description</code> and <code>name</code>. <code>og:title</code> adds "Watch … - Show - Apple TV", and the meta description adds marketing copy ("winner of two Emmy® awards"). JSON-LD <code>datePublished</code> is the premiere date, not a page date. Do not trust the site-level <code>sameAs</code> to Q270285, which is the hardware.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>With no sitemap <code>lastmod</code>, change detection means diffing ID sets between censuses. Provider availability moves fastest; synopses and cast barely move.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Search is excluded from crawl (<code>*/search?</code>) and needs the UTS API, so on-site search is not an index path. <span class="evidence inferred">inferred</span> The third-party catalogue exists mainly to rank in web search for "where to watch X". <em>Basis:</em> 143.6K third-party show pages carry indexable JSON-LD and a single Provider block, while Similarweb lists organic search as the second-largest source.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> one record per <code>umc</code> title. Children: episodes (for shows), availability by storefront and provider, cast, artwork, and the trailer with its subtitle tracks.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>umc.cmc</code> and <code>umc.cse</code> as primary keys. Use <code>umc.cpc</code> for people and Wikidata P9586/P9751/P9750 to reach external film IDs. The storefront is a dimension, not an identity.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The sitemap index for the ID inventory: about 2.2GB gzipped per full pass, and robots-sanctioned. Sample the US storefront to keep it small. 2) HTML JSON-LD from the Akamai edge at about 1 request/s, which is enough for Originals and sports daily and the long tail monthly. Pin the rest-of-world edge, or a China-resolving fleet sees only 404s. 3) Wikidata SPARQL dumps for the external-ID bridge (CC0, free). 4) The UTS API only if a licence is agreed: it is robots-disallowed and covered by the measurement ban.</li>
+        <li><strong>Recrawl cadence:</strong> sporting events and clips daily in season. Originals weekly, plus on Apple TV Press release dates. Third-party availability monthly. Full ID-set diff of the sitemaps monthly.</li>
+        <li><strong>Derivatives to generate:</strong> embeddings from trailer subtitle text (multilingual, aligned by timestamp), keyframes from trailer HLS for the 3.6K Originals only, and storefront-coverage vectors per title from the <code>hreflang</code> sets.</li>
+        <li><strong>Demo to build:</strong> a "where is this title available" matrix. For a seed set of <code>umc</code> IDs, read the <code>hreflang</code> storefront set from the sitemap and the provider from HTML, then show how availability differs by country, using only robots-allowed paths.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Silent geo-split edge:</strong> DNS from mainland China resolves to an edge that answers every page with an empty 404 while serving robots.txt and sitemaps normally (Probe Log). A crawler would log 23M dead URLs, not a block. Detect it by checking that a known-good page returns 200 before each crawl.</li>
+        <li><strong>The contract is stricter than robots.txt:</strong> robots allows bots, AI crawlers included, on all title pages, but the Media Services terms ban automated measurement and AI training, and the website terms ban spiders. Any index needs a legal position on that conflict.</li>
+        <li><strong>Sitemap cost and blindness:</strong> with no <code>lastmod</code> and about 165 alternates per Original URL, each full pass costs about 2.2GB. The sitemap cannot be polled incrementally.</li>
+        <li><strong>Session-key API:</strong> the UTS shape (developer JWT plus a 2-hour <code>utsk</code>) can change without notice; the JWT in the page expires 2026-12-10. Anything built on it is brittle as well as disallowed.</li>
+        <li><strong>Brand collision:</strong> "Apple TV" now names the service, the app and the hardware. Since the 2025-10-13 rebrand, entity resolution has to separate them; the site's own JSON-LD already conflates them.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li>Local probes on 2026-10-08: <code>curl</code> on robots.txt, headers through both edges, the UA matrix, the full sitemap index plus 1,351 child sitemaps, 11 sample pages, the UTS configurations/shows/movies endpoints, trailer HLS and WebVTT, <code>/llms.txt</code>, and Wikidata SPARQL. Results are in the Probe Log.</li>
+        <li><a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html">Apple Media Services Terms</a> (updated 2026-09-14) and <a href="https://www.apple.com/legal/internet-services/terms/site.html">Apple Website Terms of Use</a> (2009, bans robots and spiders).</li>
+        <li><a href="https://www.apple.com/tv-pr/news/2025/10/apple-original-films-blockbuster-feature-f1-the-movie-from-joseph-kosinski-to-make-global-streaming-debut-on-friday-december-12-2025/">Apple TV Press, 2025-10-13</a>: the rebrand.</li>
+        <li><a href="https://www.cnbc.com/2025/10/17/apple-f1-media-deal-streaming.html">CNBC, 2025-10-17</a>: F1 deal. <a href="https://www.cnbc.com/2025/08/21/apple-tv-subscription-12-99.html">CNBC, 2025-08-21</a> and <a href="https://9to5mac.com/2026/08/28/apple-announces-price-increase-for-apple-tv-and-apple-one-subscriptions/">9to5Mac, 2026-08-28</a>: prices.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm">Apple FY2025 Form 10-K</a>: Services net sales.</li>
+        <li><a href="https://www.similarweb.com/website/tv.apple.com/">Similarweb: tv.apple.com</a>: September 2026 visits, countries and sources (estimator).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The China edge's empty 404 is a deliberate block of an unsupported market, not an outage. <em>Basis:</em> the <code>tv-china</code> CNAME, the UTS reply "China is not a supported storefront", and no <code>/cn/</code> URL in any sitemap.</li>
+        <li>The third-party catalogue is built for search acquisition (Retrieval Notes). <em>Basis:</em> robots-allowed pages with JSON-LD and a provider for 143.6K non-Apple shows, plus organic search as Similarweb's second source.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Exact movie and episode counts. Close it with a full census of all 781 movie and 2,561 episode children (about 1.7GB gzipped) and a per-bucket variance check on the ×10 scaling.</li>
+        <li>How fast the catalogue churns, since there is no <code>lastmod</code>. Close it by diffing two full ID-set censuses taken a week apart.</li>
+        <li>What share of third-party titles have no live provider (dead catalogue entries). Close it by reading the Provider block on a random sample of 200 sitemap titles.</li>
+        <li>How common <code>og:video</code> trailers are across Originals and the long tail. Close it by sampling 100 Original and 100 third-party pages.</li>
+        <li>The UTS rate limit and whether <code>utsk</code> is bound to an IP. Close it by reading the published limit if Apple ever documents one; probing for it would breach the terms.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
