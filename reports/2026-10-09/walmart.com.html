@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>walmart.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-10-09</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>walmart.com</h1>
+      <p class="lede">Walmart lists about 500M items but sitemaps at most 21M, walls every uncached URL behind PerimeterX, and serves review text through a signed affiliate API.</p>
+      <div class="tag-row">
+        <span class="tag">Ecommerce</span>
+        <span class="tag">Marketplace</span>
+        <span class="tag">Retail media</span>
+        <span class="tag">Edge bot wall</span>
+        <span class="tag">Affiliate API</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>walmart.com is the US online store of the world's largest retailer. It combines first-party retail, a fast-growing third-party marketplace and store-fulfilled pickup and delivery. Ads (Walmart Connect) and Walmart+ memberships are earned against the same product graph. For an index builder, Walmart is the opposite of <a href="../2026-06-10/amazon.com.html">Amazon</a> in two ways. First, its robots.txt names no AI crawler at all, yet its edge bot manager blocks every client that reaches origin, Googlebot UA included (Probe Log). Second, its official Affiliate API returns <strong>review bodies</strong>, a paginated <strong>full-catalog</strong> feed and UPC/GTIN lookup, which Amazon's PA-API does not. <span class="evidence inferred">inferred</span> Walmart sets its crawl policy at the edge, not in robots.txt. <em>Basis:</em> robots.txt has no user-agent group for any AI crawler, but ClaudeBot, GPTBot, Googlebot and browser UAs all got the same 307 to <code>/blocked</code> on 2026-10-09.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.walmart.com</code> via Akamai (<code>cdn-wal.net</code> → <code>edgekey.net</code>)</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/ip/{slug}/{usItemId}</code> for items, <code>/reviews/product/{usItemId}</code>, <code>/c/kp/{keyword}</code>, <code>/browse/{path}/{catIds}/{base64 facet}</code>, <code>/cp/{slug}/{catId}</code>, <code>/store/{no}-{city}-{st}</code>, <code>/global/seller/{id}</code></dd></div>
+        <div><dt>Category</dt><dd>Ecommerce marketplace, omnichannel grocery and retail media</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>walmart.com</code>. Satellites: <code>i5.walmartimages.com</code> (images, Cloudflare), <code>i5-richmedia.walmartimages.com</code> (product video, Akamai), <code>developer.api.walmart.com</code> (Affiliate API), <code>walmart.io</code> (API docs). Sibling in an earlier report: <a href="../2026-07-26/flipkart.com.html">flipkart.com</a>.</dd></div>
+        <div><dt>Owner</dt><dd>Walmart Inc. (NASDAQ: WMT), CEO John Furner</dd></div>
+        <div><dt>Founded / launched</dt><dd>Walmart Inc. founded 1962. walmart.com has been archived since at least 2000-11-09 (a <code>sitemap.gsp</code> capture in the Wayback CDX).</dd></div>
+        <div><dt>Business model</dt><dd>Retail margin + marketplace commissions and Walmart Fulfillment Services + advertising + Walmart+ membership</dd></div>
+        <div><dt>Scale anchor</dt><dd>$713.2B total revenue in FY2026, ended 2026-01-31 (<a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000032/earningsreleasefy26q4.htm">Q4 FY26 release, SEC</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from the Site Wise sitemap census of Wayback Machine copies (the live sitemaps are walled; see the Probe Log). Children usually hold exactly 50,000 URLs (25,000 for <code>hi_*</code> families), so per-family figures are <strong>ceilings</strong> (children × cap, calculated by Site Wise).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Revenue and ads, FY2026</dt>
+          <dd>$713.2B total revenue; Walmart U.S. net sales $483.0B; global advertising "nearly $6.4B", +46% including VIZIO. As of 2026-01-31. <a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000032/earningsreleasefy26q4.htm">Q4 FY26 release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Latest quarter, Q2 FY27</dt>
+          <dd>Revenue $187.9B (+5.9%). eCommerce +23% globally, +24% at Walmart U.S. Advertising +38%, Walmart Connect +43% excluding VIZIO. As of 2026-07-31. <a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000145/earningsreleasefy27q2.htm">Q2 FY27 release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Marketplace</dt>
+          <dd>Roughly <strong>500M</strong> items listed (CFO John David Rainey, J.P. Morgan retail conference, April 2026, <a href="https://talkbusiness.net/2026/04/walmart-cfo-bullish-on-e-commerce-growth-marketplace-potential/">Talk Business &amp; Politics</a>). U.S. marketplace sales +52% in Q2 FY27 (<a href="https://www.fool.com/earnings/call-transcripts/2026/08/27/walmart-wmt-q2-2027-earnings-call-transcript/">earnings call, 2026-08-20</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Reach</dt>
+          <dd>About 280M weekly customers and members, 10,900+ stores, 19 countries. As of 2026-08-20. <a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000145/earningsreleasefy27q2.htm">Q2 FY27 release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap shape</dt>
+          <dd>robots.txt points to <strong>34</strong> sitemap files. Wayback holds a 200 capture of 29 of them (captured 2026-01-16 to 2026-10-02). Those contain <strong>1,145</strong> child sitemaps plus 4 flat files. There are no image, video or <code>hreflang</code> extensions. <code>lastmod</code> is identical within each index, so families are regenerated as a batch. Sitemap census (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>URL ceiling by family</dt>
+          <dd>Item pages <code>/ip/</code> ≤<strong>21.4M</strong>: <code>itp</code> 213 children ≤10.65M, <code>hi_mp</code> 430 × 25K ≤10.75M, overlap unmeasured. Browse facet pages ≤12.6M (252 children). Keyword/topic pages <code>/c/kp</code>, <code>/c/brand</code>, <code>/c/auto</code> ≤4.5M. Review pages ≤2.25M (45 children). Seller pages ≤400K. Store and store-department pages about 430K. All told, ≤<strong>42M</strong> URLs (calculated by Site Wise). Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Item sitemap coverage</dt>
+          <dd>Sitemapped item URLs are at most <strong>4.3%</strong> of the ~500M listed items (21.4M ÷ 500M, calculated by Site Wise). Item IDs in the sampled children run from 4 to 11 digits (1,523 to 20.16B). Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Item lastmod freshness</dt>
+          <dd><code>itp</code> children carry per-URL <code>lastmod</code>, unlike the index level. In <code>itp_01_1</code> (captured 2026-04-01), 10.5% of 50K URLs were modified in the last month and 48% in the last six. In <code>itp_02_1</code> (2026-05-01), 6.7% were modified in the last month. The oldest date in both is 2024-04-11. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured data</dt>
+          <dd>10 of 11 archived item pages carry <code>Product</code> JSON-LD. Each has <code>gtin13</code>, <code>sku</code>, <code>offers</code>, <code>aggregateRating</code> and up to 10 embedded <code>review</code> objects; 1 of 11 is a <code>ProductGroup</code> with variants. The one exception, a marketplace listing, has only <code>WebPage</code>. Both <code>/c/kp</code> pages carry <code>CollectionPage</code> + <code>ItemList</code>, and one also has <code>FAQPage</code>. All 15 pages carry a self canonical, <code>INDEX,FOLLOW</code> and <code>SpeakableSpecification</code>. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Affiliate API shape</dt>
+          <dd>Product lookup takes up to <strong>20</strong> IDs per call, by itemId, UPC, GTIN or sellerId. Search pages 25 items at a time to a maximum of the top <strong>1,000</strong> results. Catalog Product paginates a whole category (the doc's example <code>nextPage</code> for category 3944 shows <code>remainingHits=5,113,478</code>). Reviews returns <code>reviewText</code>, title, rating, votes and the rating distribution. Docs as read 2026-10-09: <a href="https://walmart.io/apidocs/affiliates/product-lookup">product lookup</a>, <a href="https://walmart.io/apidocs/affiliates/search">search</a>, <a href="https://walmart.io/apidocs/affiliates/catalog-product">catalog</a>, <a href="https://walmart.io/apidocs/affiliates/reviews">reviews</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sparky (AI assistant)</dt>
+          <dd>Sparky users +70% YoY, spending 40% more per order (<a href="https://www.fool.com/earnings/call-transcripts/2026/08/27/walmart-wmt-q2-2027-earnings-call-transcript/">Q2 FY27 call</a>). Walmart left OpenAI Instant Checkout and put Sparky inside ChatGPT (<a href="https://www.paymentsdive.com/news/walmart-sparky-chatgpt-instant-checkout/816002/">Payments Dive, 2026-03-27</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-09. Desktop Chrome UA unless noted. Archived pages were fetched as Wayback <code>id_</code> (raw) captures.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-10-09</td><td><code>dig +short www.walmart.com</code>, <code>i5.walmartimages.com</code></td><td><code>www</code> → <code>cdn-wal.net</code> → <code>edgekey.net</code> → <code>akamaiedge.net</code>. Images → <code>cdn.cloudflare.net</code>. Response headers confirm both: <code>akavpau_p2</code> cookie and <code>ak_p</code> timing on <code>www</code>; <code>server: cloudflare</code> and <code>cf-cache-status: HIT</code> on images.</td></tr>
+            <tr><td>2026-10-09</td><td><code>curl -i https://www.walmart.com/</code></td><td>200 from edge cache (<code>cache-status: Hit</code>), HSTS 1 year, <code>isoLoc</code> geo cookie. 335KB Next.js page. Build <code>production_20261006T020342577Z</code>, 211KB <code>__NEXT_DATA__</code>. JSON-LD: <code>Organization</code> + <code>WebSite</code> with <code>SearchAction</code> → <code>/search?q=</code>. Runtime config names PerimeterX app <code>PXu6b0qd2S</code>. No item links in the cached shell.</td></tr>
+            <tr><td>2026-10-09</td><td><code>curl https://www.walmart.com/robots.txt</code></td><td>119 lines, 34 <code>Sitemap:</code> lines, one <code>*</code> group. Disallows <code>/search</code>, <code>/api/</code>, <code>/es/</code>, <code>/sp/*</code>, <code>/feeds/*</code>, <code>/c/kp/*/page/*</code>. Explicitly allows <code>/reviews/product/</code> and <code>/reviews/seller/</code>. <strong>No AI-crawler groups.</strong> Only Slurp is named (<code>Crawl-delay: 5</code>). <code>sitemap_sp.xml</code> lists 406 <code>/shop/</code> URLs, a different path from the disallowed <code>/sp/*</code>.</td></tr>
+            <tr><td>2026-10-09</td><td>UA matrix on <code>/sitemap_category.xml</code></td><td>Chrome, Googlebot, bingbot, curl, ClaudeBot and GPTBot UAs all got 307 → <code>/blocked?url={base64 path}&amp;uuid=…&amp;g=b</code>, a 15KB "Robot or human?" page. The very first sitemap request was blocked, before any burst. The same 307 applies to <code>/ip/5113174</code>, <code>/cp/…</code>, <code>/browse/…</code> and <code>/llms.txt</code>. Only the cached homepage and robots.txt return 200.</td></tr>
+            <tr><td>2026-10-09</td><td>Wayback CDX, sitemap index files</td><td>Latest 200 captures exist for 29 of 34 indexes. <code>brp_04</code>, <code>gm</code>, <code>hi_bp</code>, <code>hi_ip</code> and <code>product_03</code> have none. Archivers hit the wall too: 20 of the first 48 <code>sitemap_brp_02_*</code> children in the CDX were archived as 307s (captured around 2023-05-29).</td></tr>
+            <tr><td>2026-10-09</td><td>Child-sitemap sample (19 children, Wayback)</td><td>Families: <code>itp</code>/<code>hi_mp</code> → <code>/ip/</code>; <code>rp</code> → <code>/reviews/product/</code>; <code>brp</code> → <code>/browse/…/{base64 facet}</code> (<code>YnJhbmQ6…</code> = <code>brand:…</code>); <code>tp_*</code> → <code>/c/kp|brand|auto/</code>; <code>slp</code> → sellers. <code>itp</code> children are about 2.2MB gzipped (8.4MB raw) per 50K URLs.</td></tr>
+            <tr><td>2026-10-09</td><td>Structured-data sample, 15 archived pages (2026-01 to 2026-10)</td><td>11 <code>/ip/</code>, 2 <code>/reviews/product/</code>, 2 <code>/c/kp/</code> (results in Verified Metrics). Review pages carry only <code>BreadcrumbList</code> JSON-LD, with review bodies and photos in <code>__NEXT_DATA__</code>. One pie has 6.4K reviews.</td></tr>
+            <tr><td>2026-10-09</td><td><code>__NEXT_DATA__</code> on item pages</td><td>Four ID layers: <code>usItemId</code> (numeric, in URL), <code>productId</code> (12-char, e.g. <code>2CGGJZAK3XKT</code>), <code>offerId</code> (32 hex), <code>sellerId</code> (32 hex; Walmart.com = <code>F55CDC31…</code> or <code>"0"</code>). Plus <code>upc</code>, <code>specifications</code>, <code>fulfillmentType</code> (<code>FC</code>/<code>STORE</code>/<code>MARKETPLACE</code>), a review <code>summary</code> and review <code>aspects</code> with <code>snippetCount</code>. Video: 1 MP4 on 3 of 11 item pages, <code>captions: null</code>.</td></tr>
+            <tr><td>2026-10-09</td><td><code>curl developer.api.walmart.com/…/affil/product/v2/items/5113174</code></td><td>403 JSON from service <code>affil-product</code> v2.0.0: "Request is missing required security headers". <code>/v2/reviews/{id}</code> also returns 403 without headers. It needs an RSA-signed <code>WM_SEC.AUTH_SIGNATURE</code> with a 180s TTL (<a href="https://walmart.io/apidocs/affiliates/additional-headers">docs</a>).</td></tr>
+            <tr><td>2026-10-09</td><td><code>curl -I</code> on media CDNs</td><td>An image on <code>i5.walmartimages.com</code> returned 200, <code>max-age=30758400</code> (~356 days), with Cloudflare resizing headers. A product video on <code>i5-richmedia.walmartimages.com/asr-rm/…mp4</code> returned 200, 11MB, <code>X-CDN: AK</code>. Neither needs cookies or a challenge.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Affiliate API = <a href="https://walmart.io/apidocs/affiliates/introduction">Walmart I/O Affiliate Marketing API</a>: walmart.io key pair, links attributed to an Impact publisher ID. Live crawl paths are walled (Probe Log); "archive" means Wayback / Common Crawl copies.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Item title, short/long description, specifications. ~500M items listed; ≤21.4M in sitemaps.</td>
+              <td>Affiliate API Catalog Product (paginated by category) + lookup (20 IDs/call). Archived HTML for JSON-LD.</td>
+              <td>Signed key pair; quota not published (open).</td>
+              <td>Affiliate display with <code>productTrackingUrl</code> link-back; some categories excluded, unnamed.</td>
+              <td>Per-URL <code>lastmod</code>: 7–10% of item URLs changed in the last month (2 sampled children).</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>~5–50 images per item page (sample); <code>thumbnailImage</code>/<code>mediumImage</code>/<code>largeImage</code> + <code>imageEntities</code> in the API.</td>
+              <td>API image URLs; CDN is anonymous.</td>
+              <td>None for the CDN.</td>
+              <td>Hotlink for affiliate display; no rights to copy.</td>
+              <td>Immutable URLs, ~1-year cache.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Merchant product videos (1 on 3 of 11 sampled items); no captions.</td>
+              <td>MP4 URL from page <code>__NEXT_DATA__</code> only. Not in the API field list or the sitemaps.</td>
+              <td>Page access is walled; the MP4 itself is anonymous.</td>
+              <td>No documented reuse path.</td>
+              <td>Static per asset.</td>
+            </tr>
+            <tr>
+              <td>Reviews</td>
+              <td>≤2.25M review pages in sitemaps; per-item counts in the thousands (6.4K on one pie).</td>
+              <td>Affiliate API <code>/v2/reviews/{itemId}</code> (paged text) — robots also allows <code>/reviews/product/</code>.</td>
+              <td>Same signed key.</td>
+              <td>"Free to showcase" with link-back (<a href="https://walmart.io/apidocs/affiliates/reviews">docs</a>).</td>
+              <td>Append-mostly; review families were last regenerated between 2026-03-26 and 2026-09-26.</td>
+            </tr>
+            <tr>
+              <td>Offers / price</td>
+              <td>Offer per item × seller (<code>offerId</code>); <code>salePrice</code>, <code>stock</code>, <code>sellerInfo</code>, ship rates.</td>
+              <td>Affiliate lookup, optionally by <code>zipCode</code>; <code>storeId</code> needs extra business approval.</td>
+              <td>Signed key; per-store pricing gated.</td>
+              <td>Displayed price must come from a live call.</td>
+              <td>Real-time; San Bruno ZIP is the default.</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>Taxonomy (3 levels), brands (8.3K brand-shop + ≤850K <code>/c/brand</code>), ≤400K sellers, about 4.2K stores × 101 department pages, UPC/GTIN.</td>
+              <td>Affiliate Taxonomy and Stores APIs; archived sitemaps for brand, seller and store URL lists.</td>
+              <td>Signed key.</td>
+              <td>Affiliate terms.</td>
+              <td>Taxonomy stable; the seller sitemap was last regenerated on 2025-12-12.</td>
+            </tr>
+            <tr>
+              <td>SEO surfaces</td>
+              <td>≤12.6M facet pages + ≤3.2M <code>/c/kp</code> keyword pages (with <code>ItemList</code>/<code>FAQPage</code>).</td>
+              <td>Archive only; these are Walmart's stand-in for the disallowed <code>/search</code>.</td>
+              <td>—</td>
+              <td>Page content; no reuse grant.</td>
+              <td>Batch-regenerated (<code>tp_kp</code> lastmod 2026-03-15).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Walmart differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The key is the numeric <code>usItemId</code> at the end of <code>/ip/</code>. The slug is cosmetic: archived captures show item 13035281 under both <code>Stanley-1000-Amp-…</code> and <code>Stanley-J5C09-500A-…</code>. Strip <code>athena</code>/<code>ath*</code> (on-site recommendation tracking) and Impact parameters (<code>clickid</code>, <code>irgwc</code>, <code>wmlspartner</code>, <code>campaign_id=9383</code>), which fill archive captures. Group variants by the 12-char <code>productId</code>; <code>primaryUsItemId</code> names the family head.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>As with Amazon, there are three units: the <strong>product family</strong> (<code>productId</code>) for search, the <strong>offer</strong> (<code>offerId</code> = item × seller) for price and fulfillment, and the <strong>review</strong> for text. Walmart adds a fourth: the <strong>review aspect</strong> (e.g. "Battery Life", 89 snippets), a ready-made facet for opinion retrieval.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p><code>gtin13</code> in JSON-LD and <code>upc</code> in the API join Walmart to Amazon (via PA-API ExternalIds) and to any GTIN-keyed catalogue. Images and video join on <code>usItemId</code> only through page or API payloads; their CDN paths are opaque UUIDs.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p><code>specifications</code> (name/value pairs) beat the title. Marketplace titles are SEO-stuffed (sitemap slugs run past 150 characters). <span class="evidence inferred">inferred</span> The review <code>summary</code> and <code>aspects</code> are machine-generated derivatives, not customer text. <em>Basis:</em> the summary is one synthesized paragraph ("Customers praise … However, some users …"), and each aspect carries a <code>snippetCount</code>, not an author.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Use the per-URL <code>lastmod</code> in <code>itp</code> children; the index-level dates are batch stamps. Families regenerate on different clocks: <code>rp_01</code> on 2026-09-26, <code>itp_02</code> on 2026-04-30, <code>brp</code> on 2025-11-18. Price and stock have to come from the API, which reprices by ZIP code.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Seller provenance matters. Item payloads mix <code>Walmart.com</code> and third-party sellers, and <code>fulfillmentType</code> separates Walmart-fulfilled (<code>FC</code>/<code>STORE</code>) from <code>MARKETPLACE</code>. The API's <code>soldByWmt</code>, <code>fulfilledByWalmart</code> and <code>proSellerItems</code> filters give a trust tier for free.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><code>/search</code> is disallowed. Walmart publishes ≤3.2M <code>/c/kp/{keyword}</code> landing pages and ≤12.6M facet pages instead, encoding facet filters in base64 path segments. An external index sees Walmart's keyword choices, not its search engine.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> product family (<code>productId</code>) with child items (<code>usItemId</code>). Offers, review text and review aspects are attached as sub-records.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>usItemId</code>; family = <code>productId</code>; offer = <code>offerId</code> (item × <code>sellerId</code>); UPC/GTIN-13 for cross-store joins; taxonomy path IDs (<code>1334134_5899871_…</code>) for category.</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>Affiliate API Catalog Product, walking the taxonomy category by category. This is the only bulk text path, but it skips unnamed categories and has no published quota.</li>
+            <li>Affiliate lookup and reviews for refresh. Lookup takes 20 IDs per call; reviews come back as paged text with display rights.</li>
+            <li>Archived sitemaps (Wayback / Common Crawl) as the URL and ID frontier: ≤42M URLs, about 470MB gzipped for the item families alone (calculated by Site Wise from 213 × ~2.2MB).</li>
+            <li>Archived HTML for JSON-LD and video URLs.</li>
+          </ol>
+          A live crawl is not a path: every uncached URL hits the bot wall.</li>
+        <li><strong>Recrawl cadence:</strong> offers daily through lookup, for priority items only. Item text when the item's <code>lastmod</code> changes (7–10% a month in the sample). Reviews weekly for high-volume items. Taxonomy and stores monthly.</li>
+        <li><strong>Derivatives to generate:</strong> ASR on merchant videos (captions are null); image embeddings to dedupe marketplace copies of the same GTIN; a GTIN concordance with Amazon ASINs.</li>
+        <li><strong>Demo to build:</strong> a sitemap ↔ API reconciliation. Take one archived <code>itp</code> child (50K IDs), resolve it through the Affiliate lookup in batches of 20, and report how many resolve, are excluded, or are stale. That answers both API category exclusion and sitemap staleness.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The archive path is eroding:</strong> Wayback has no capture for 5 of 34 sitemap indexes, and archived child fetches already hit 307s in 2023 (Probe Log). Frontier discovery depends on third-party archives that the same wall degrades.</li>
+        <li><strong>Category exclusions are undisclosed:</strong> the API docs say several categories are excluded and "we can not list them here". Coverage gaps will not announce themselves.</li>
+        <li><strong>Agentic distribution may replace open retrieval:</strong> Sparky now runs inside ChatGPT (Verified Metrics). <span class="evidence inferred">inferred</span> Walmart prefers delivering its catalogue through its own agent over being crawled by others. <em>Basis:</em> robots.txt is silent on AI crawlers while the edge blocks them all (Probe Log), and Walmart chose to keep checkout and cart control in its exit from Instant Checkout (<a href="https://www.paymentsdive.com/news/walmart-sparky-chatgpt-instant-checkout/816002/">Payments Dive</a>).</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000032/earningsreleasefy26q4.htm">Walmart Q4 FY26 earnings release (SEC)</a>: FY2026 revenue, Walmart U.S. net sales, advertising.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000145/earningsreleasefy27q2.htm">Walmart Q2 FY27 earnings release (SEC)</a>: quarter revenue, eCommerce and advertising growth, reach figures.</li>
+        <li><a href="https://www.fool.com/earnings/call-transcripts/2026/08/27/walmart-wmt-q2-2027-earnings-call-transcript/">Q2 FY27 earnings call transcript</a>: marketplace +52%, Sparky usage.</li>
+        <li><a href="https://talkbusiness.net/2026/04/walmart-cfo-bullish-on-e-commerce-growth-marketplace-potential/">Talk Business &amp; Politics, April 2026</a>: CFO's 500M items remark.</li>
+        <li><a href="https://www.paymentsdive.com/news/walmart-sparky-chatgpt-instant-checkout/816002/">Payments Dive, 2026-03-27</a>: Instant Checkout exit, Sparky in ChatGPT.</li>
+        <li><a href="https://walmart.io/apidocs/affiliates/introduction">Walmart I/O Affiliate API docs</a> (static fragments under <code>/apidocs/affiliates/</code>; <code>/docs/</code> is a JS shell): endpoints, parameters, review display terms, category exclusion note.</li>
+        <li>Local probes on 2026-10-09: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Crawl policy is set at the edge, not in robots.txt. <em>Basis:</em> no AI user-agent groups in robots.txt; identical 307 → <code>/blocked</code> for AI, search-engine and browser UAs on 2026-10-09.</li>
+        <li>Review summary and aspects are machine-generated. <em>Basis:</em> single synthesized <code>summary</code> paragraph and <code>aspects[].snippetCount</code> fields in <code>__NEXT_DATA__</code>.</li>
+        <li>Walmart prefers agent-mediated distribution to open crawl. <em>Basis:</em> edge blocks all AI UAs despite permissive robots.txt; Sparky deployed in ChatGPT after an exit from Instant Checkout reported as being about checkout control.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Overlap between the <code>itp</code> and <code>hi_mp</code> item families (and so the true sitemapped item count). Closeable by downloading both families from the archive (~3.7GB raw, calculated by Site Wise: 213 × 8.4MB + 430 × 4.5MB) and deduping <code>usItemId</code>s.</li>
+        <li>Contents of the 5 unarchived indexes (<code>product_03</code>, <code>hi_ip</code>, <code>hi_bp</code>, <code>gm</code>, <code>brp_04</code>). Needs a Common Crawl robots/sitemap lookup or a future Wayback capture.</li>
+        <li>Affiliate API quota and the excluded categories. Closeable with a provisioned key: sweep the Taxonomy, sum Catalog Product <code>remainingHits</code> per category, and compare with sitemap ID counts.</li>
+        <li>Whether real Googlebot passes the wall (via IP verification) when a spoofed UA does not. Closeable with Google's URL Inspection or Rich Results Test on a walmart.com item URL.</li>
+        <li>Share of items with video, and whether any video carries captions. Closeable by sampling ~200 archived item pages' <code>__NEXT_DATA__</code>.</li>
+        <li>Walmart+ member count. Walmart reports only growth rates; it needs a company disclosure.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
