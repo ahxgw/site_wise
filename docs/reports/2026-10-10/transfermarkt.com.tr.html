@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>transfermarkt.com.tr Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-10-10</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>transfermarkt.com.tr</h1>
+      <p class="lede">Transfermarkt's Turkish edition is one of 27 localized skins over one football database, with no sitemap, ~1.44M enumerable player IDs and a tight rate limit.</p>
+      <div class="tag-row">
+        <span class="tag">Sports data</span>
+        <span class="tag">Football</span>
+        <span class="tag">Community valuations</span>
+        <span class="tag">Multi-ccTLD</span>
+        <span class="tag">No sitemap</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Transfermarkt is the Hamburg-based football database best known for its community-set player <strong>market values</strong>, plus transfers, rumours, squads, fixtures, injuries and a large forum. <code>transfermarkt.com.tr</code> is the Turkish edition: the same entity database rendered in Turkish, with its own Turkish news desk and machine-translated copies of other editions' forum threads. Revenue is advertising. For an index builder, the site is an <strong>entity graph, not a document collection</strong>. Players, clubs, competitions, matches and transfers carry stable numeric IDs shared by all 27 editions, so one crawl of one edition gets the graph and the other editions only add labels and local news. The catch is access. There is no sitemap, the clean JSON backend is closed by robots.txt, the terms ban bots and AI training, and the origin rate-limits at a few dozen pages a minute (Probe Log).</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.transfermarkt.com.tr</code> (apex 301s to <code>www</code>) behind CloudFront, nginx origin</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/{slug}/profil/spieler/{id}</code> (player), <code>/{slug}/startseite/verein/{id}</code> (club), <code>/{slug}/startseite/wettbewerb/{code}</code> (competition, e.g. <code>TR1</code>), <code>/{slug}/index/spielbericht/{id}</code> (match), <code>/{slug}/view/news/{id}</code>, <code>/{slug}/thread/forum/{board}/thread_id/{id}</code></dd></div>
+        <div><dt>Category</dt><dd>Football statistics, transfers and market-value database with news and forum</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>transfermarkt.com.tr</code> only in the candidate list. The <code>hreflang</code> set names 27 sibling editions (<code>.de</code>, <code>.com</code>, <code>.co.uk</code>, <code>.es</code>, <code>.it</code>, <code>.world</code> for Russian, …). Satellites: <code>img.a.transfermarkt.technology</code> (images), <code>tmssl</code>/<code>tmsi.akamaized.net</code> (JS, static), <code>tmapi.transfermarkt.technology</code> (JSON API).</dd></div>
+        <div><dt>Owner</dt><dd>Transfermarkt GmbH &amp; Co. KG: Axel Springer Deutschland 51%, Balumba GmbH (founder Matthias Seidel) 39%, E-quadrat communications 10%. Managing directors Thomas Lintz and Simon Torrico. (<a href="https://www.transfermarkt.de/intern/impressum">imprint</a>, read 2026-10-10)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Transfermarkt founded May 2000 by Matthias Seidel (<a href="https://en.wikipedia.org/wiki/Transfermarkt">Wikipedia</a>). The earliest Wayback capture of <code>transfermarkt.com.tr</code> is from 2010-08-04.</dd></div>
+        <div><dt>Business model</dt><dd>Display and programmatic advertising (the Turkish section of <code>ads.txt</code> is tagged <code>#TR #BANNER #Archon</code>). No paid API or data product is published.</dd></div>
+        <div><dt>Scale anchor</dt><dd>60M+ monthly users, 1M+ player profiles, 2,000 competitions, ~2M match reports (<a href="https://www.contentstadium.com/event-sports-media-insights-day/">Content Stadium event page, 2024-11-15</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <dl class="fact-list">
+        <div>
+          <dt>Reach (company figures)</dt>
+          <dd>60M+ monthly users across all editions, as of 2024-11 (<a href="https://www.contentstadium.com/event-sports-media-insights-day/">Content Stadium</a>). Earlier: 39M unique monthly visitors and 680K registered users in 2021 (<a href="https://en.wikipedia.org/wiki/Transfermarkt">Wikipedia</a>). No per-edition split for Turkey is published. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Database size (company figures)</dt>
+          <dd>1M+ player profiles, 2,000 competitions, ~2M match reports, as of 2024-11. <a href="https://www.contentstadium.com/event-sports-media-insights-day/">Content Stadium</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Player ID ceiling</dt>
+          <dd>Highest live player ID <strong>1,611,357</strong> on 2026-10-10. IDs 1,611,358, 1,611,400 and 1,611,600 redirect away; all 7 sampled IDs from 1,609,000 to 1,611,357 resolve. Probe Log (binary search) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Live player profiles</dt>
+          <dd><strong>~1.44M</strong> (95% interval ~1.35M–1.54M): 86 of 96 random IDs across eight bands of 1–1.61M resolve to a profile, i.e. 90% density (calculated by Site Wise). Density is flat by band (8–12 of 12), so there is no dead early range. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Edition count</dt>
+          <dd><strong>27</strong> distinct edition hosts in 42 <code>hreflang</code> tags on the homepage, player, club, competition, match and forum pages. News articles carry only their own language's editions (1 tag on a Turkish article, 4 on a German one). Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>News rate and Turkish share</dt>
+          <dd>News IDs are one global sequence: 488,551 at 2026-10-08 16:23 and 488,680 at 2026-10-09 18:06 CEST, about <strong>120 articles/day</strong> across editions (calculated by Site Wise). Turkish holds 10 of those 130 IDs (~8%, ~9/day). In 40 consecutive IDs, Turkish had 6, German 11 and other editions 23. RSS + ID probe (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Match ID range</dt>
+          <dd>Match IDs reach <strong>4.89M</strong> (homepage links to 4,893,393–5, a Serie A match dated 2026-10-12), against the ~2M "match reports" claimed. The ID space includes scheduled fixtures and unplayed games. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Market-value history depth</dt>
+          <dd>Sample player 401923 (Osimhen): <strong>29</strong> dated valuations from 2017-02-07 to 2026-09-30, each with <code>clubId</code>, <code>age</code> and a <code>determined</code> date. The current €65M value replaced €75M (2026-05-21). Probe Log (<code>tmapi</code> sample) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Image sizes</dt>
+          <dd>Portraits top out at <strong>320×418</strong> (<code>original</code>, 29KB). The other variants are <code>big</code> 300×390, <code>header</code> 139×181, <code>medium</code> 100×130 and <code>small</code> 28×36. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-10 with a desktop Chrome UA. Per-request pacing is noted where it matters.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe"><code>curl -sI https://www.transfermarkt.com.tr/</code></td><td data-label="Observation">200, <code>x-cache: Miss from cloudfront</code>, <code>server: nginx</code>, <code>x-host: prod-tm-server-web-1138</code> (origin node leaked). <code>cache-control: max-age=120</code> on home, 600 on player pages. <code>access-control-allow-origin: *</code>, <code>x-frame-options: DENY</code>. Apex 301s to <code>www</code>. (Sandbox <code>dig</code> returned the same CloudFront IP for every edition, so CDN attribution rests on the headers.)</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe"><code>curl https://www.transfermarkt.com.tr/robots.txt</code></td><td data-label="Observation">11 lines, byte-identical on <code>.de</code>, <code>.com</code> and <code>.co.uk</code>. <code>User-agent: *</code> → <code>Allow: /</code>. Only <code>wget</code> is disallowed and <code>Slurp</code> gets <code>Crawl-delay: 2</code>. <strong>No AI-crawler groups and no <code>Sitemap:</code> line.</strong></td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe">Sitemap / feed discovery</td><td data-label="Observation"><code>/sitemap.xml</code>, <code>/sitemap_index.xml</code>, <code>/sitemap/…</code>, <code>/llms.txt</code> and <code>/.well-known/tdmrep.json</code> all return 404. The Wayback CDX shows <code>/sitemap.xml</code> as 404 in 2011 (<code>.de</code>) and 2014–15 (<code>.com.tr</code>), so there has never been a sitemap. RSS: <code>/rss/news</code> on 10 editions (listed at <code>/intern/rssguide</code>), with no other feed types.</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe"><code>/rss/news</code> (Turkish)</td><td data-label="Observation">RSS 2.0 with the last <strong>10</strong> items, spanning 2026-10-08 14:15 to 2026-10-10 03:37. Title, link and <code>pubDate</code> only: no <code>content:encoded</code>, no media enclosures.</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe">Player page <code>/x/profil/spieler/401923</code></td><td data-label="Observation">301 to the canonical slug, so any slug works. 113KB page with a self canonical, og/twitter tags and <strong>no JSON-LD</strong>. Data widgets are 22 Svelte custom elements (<code>&lt;tm-market-value-development-graph-integrated&gt;</code>, <code>&lt;tm-player-transfer-history&gt;</code>, …) loaded from <code>tmsi.akamaized.net</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe">Svelte bundles → <code>tmapi.transfermarkt.technology</code></td><td data-label="Observation">Bundles read <code>body[data-api-domain]</code>, defaulting to <code>tmapi</code>. Anonymous 200 JSON from <code>/player/{id}</code>, <code>/player/{id}/market-value-history</code>, <code>/player/{id}/absence</code>, <code>/transfer/history/player/{id}</code>, <code>/club/{id}</code> and <code>/competition/{code}</code>, with batch forms <code>/players?ids[]=</code>. However <code>tmapi</code>'s own <strong>robots.txt is <code>Disallow: /</code></strong> and <code>/doc</code> returns 401. Error messages leak the internal host <code>tmapi.ham.tmnet.zone</code>. The forum widget uses a separate <code>/ceapi/PlayerDiscussions/list/{id}</code> on the site host.</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe">News pages, same ID on <code>.com.tr</code> vs <code>.de</code></td><td data-label="Observation">News 488,680 is 200 on <code>.com.tr</code> but redirects to the homepage on <code>.de</code>. 488,679 is the reverse. <code>NewsArticle</code> JSON-LD has <code>headline</code>, <code>description</code>, <code>keywords</code> and <code>datePublished</code>/<code>dateModified</code> without a timezone, but <code>author.name</code> is a blank space and <code>image.url</code> is double-prefixed (<code>https://www.transfermarkt.com.tr/https://img.a…</code>).</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe">Club, competition, match pages (Galatasaray 141, <code>TR1</code>, match 4,893,393)</td><td data-label="Observation">All three have a self canonical, 42 <code>hreflang</code> tags and <strong>no JSON-LD</strong> (no <code>SportsTeam</code> or <code>SportsEvent</code>). Widgets again pull from <code>tmapi</code>. The match page exists two days before kick-off.</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe">Forum thread 1,207,306 via <code>.com.tr</code></td><td data-label="Observation">Title machine-translated into Turkish (<code>&lt;tm-board-translate&gt;</code>), but the posts stay German and the <strong>canonical points to <code>transfermarkt.de</code></strong>. The <code>hreflang</code> set reuses the Turkish slug on every edition. <code>DiscussionForumPosting</code> JSON-LD per post (3 on page 1) has author and <code>datePublished</code>, but <code>dateModified: 1970-01-01</code> and a broken <code>mainEntityOfPage</code> query URL.</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe">Player ID census</td><td data-label="Observation">Binary search plus 96 random IDs in 8 bands (results in Verified Metrics). Missing IDs 302 to <code>/spieler-statistik/wertvollstespieler/marktwertetop</code>, not 404, so a crawler must treat that redirect as "not found".</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe">Rate-limit behaviour</td><td data-label="Observation">An unpaced burst of about 75 page requests in 8 minutes produced <strong>empty-body 403s</strong> from the origin (<code>x-cache: Error from cloudfront</code>, <code>x-user: 1</code>). The block covered <code>.de</code> too, so the limit is shared across editions; edge-cached pages still returned 200 and the block lifted within about a minute. Re-paced to one request every ~3s, the census was still blocked 7 times in about 12 minutes. <code>tmapi</code> kept answering throughout.</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe"><code>curl -I</code> on <code>img.a.transfermarkt.technology</code></td><td data-label="Observation">200 without cookies, <code>max-age≈345600</code> (4 days). The filename is <code>{playerId}-{unix upload time}.jpg</code> (401923-1737730981 = 2025-01-24). <code>tmapi</code> labels the source <code>portraitUrlSource: IMAGO</code>, and news photos carry <code>imago{id}</code> in the filename.</td></tr>
+            <tr><td data-label="Date">2026-10-10</td><td data-label="Probe">Terms (<code>/intern/anb</code>, English)</td><td data-label="Observation">§11.1: no access "using bots, spiders, screen scraping or other automated processes", no use "for the training or development of artificial intelligence", and text and data mining under §44b UrhG "expressly reserved". The reservation lives only in prose: robots.txt allows everything.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"HTML crawl" means robots-allowed page fetches, paced under the origin limit. The terms prohibit automated access and reserve TDM, so every path below needs licence review before reuse (Risks).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">~1.44M players; clubs, 2,000 competitions, coaches, agents, stadiums (counts open). Market values, contracts, positions, nationalities.</td>
+              <td data-label="Best legitimate path">HTML crawl of profile pages by ID enumeration; no sitemap, no JSON-LD. <code>tmapi</code> is cleaner but robots-disallowed.</td>
+              <td data-label="Auth &amp; quota">None, but the origin 403s at roughly 20 requests/min.</td>
+              <td data-label="License / display">Database rights asserted (§3.2); scraping banned (§11.1).</td>
+              <td data-label="Freshness">Market values move in batches (Osimhen: 29 updates in 9.5 years); squads change at transfer windows.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Transfers &amp; rumours</td>
+              <td data-label="Objects &amp; est. count">Transfer records with fee, market value, contract end and source/destination club and coach; rumour threads (board 154, thread IDs ~1.2M).</td>
+              <td data-label="Best legitimate path">HTML crawl of player transfer pages and rumour boards.</td>
+              <td data-label="Auth &amp; quota">Same limit.</td>
+              <td data-label="License / display">Same terms.</td>
+              <td data-label="Freshness">Spikes in summer and January windows.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Matches &amp; stats</td>
+              <td data-label="Objects &amp; est. count">Match IDs to 4.89M (fixtures included); ~2M reports claimed; lineups, events, per-player performance.</td>
+              <td data-label="Best legitimate path">HTML crawl of <code>spielbericht</code> pages, found through competition schedules.</td>
+              <td data-label="Auth &amp; quota">Same limit.</td>
+              <td data-label="License / display">Same terms; league fixture data may carry third-party rights.</td>
+              <td data-label="Freshness">Pages exist before kick-off and fill in live.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Text: news</td>
+              <td data-label="Objects &amp; est. count">~120 articles/day across editions, ~9/day Turkish; global IDs to 488.7K.</td>
+              <td data-label="Best legitimate path">RSS <code>/rss/news</code> (10 items) for discovery, then fetch the article for <code>NewsArticle</code> JSON-LD.</td>
+              <td data-label="Auth &amp; quota">None for RSS.</td>
+              <td data-label="License / display">Headline + link; dpa copy is explicitly no-redistribution (imprint).</td>
+              <td data-label="Freshness">Hourly; the RSS window is only ~1.5 days, so poll at least daily.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments / forum</td>
+              <td data-label="Objects &amp; est. count">Forum threads and posts with author and date; Turkish pages are translated copies of German threads.</td>
+              <td data-label="Best legitimate path">Crawl the canonical (<code>.de</code>) thread only; take <code>DiscussionForumPosting</code> JSON-LD per post.</td>
+              <td data-label="Auth &amp; quota">Same limit.</td>
+              <td data-label="License / display">User content under Transfermarkt's terms.</td>
+              <td data-label="Freshness">Append-only; active threads change daily.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">Player portraits (≤320×418), club crests, news photos.</td>
+              <td data-label="Best legitimate path">Image URLs from pages; CDN is anonymous.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Agency-licensed (IMAGO); hotlink or link-back only.</td>
+              <td data-label="Freshness">Upload time is encoded in the filename; versions change via <code>?lm=</code>.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video / audio</td>
+              <td data-label="Objects &amp; est. count">None found on sampled pages (no embeds or MP4 links).</td>
+              <td data-label="Best legitimate path">—</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">—</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Transfermarkt differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Entity IDs are shared by every edition: <code>/x/profil/spieler/401923</code> 301s to the right slug on any of the 27 hosts. Key on (type, ID) and drop the host and slug. News IDs are global too, but each article lives on one language group; a wrong-edition ID redirects to the homepage. Missing players 302 to a "most valuable players" page, so check the redirect target before counting a 200.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The <strong>entity profile</strong> (player, club, competition), with time series attached: market-value history, transfer history, absences and season performance. For questions like "how much was X worth when he moved to Y", the useful unit is the <strong>transfer event</strong>. It joins two clubs, two coaches, a fee, a market value and a contract end on one date (fields from the <code>tmapi</code> transfer sample).</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Player ID ↔ portrait filename prefix ↔ news <code>keywords</code> (player names, not IDs) ↔ forum board per player (<code>&lt;tm-player-discussions-widget playerId&gt;</code>). Competition codes (<code>TR1</code>, <code>IT1</code>) are human-readable and stable. There is no external ID (Wikidata, FIFA) in page markup. <span class="evidence inferred">inferred</span> Cross-site joins will rest on Wikidata's Transfermarkt player-ID property, not on anything Transfermarkt publishes. <em>Basis:</em> none of the 7 sampled page types and none of the <code>tmapi</code> player fields contain an external identifier.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Market values are Transfermarkt's own editorial and community estimate, not a price, and every edition shows them in EUR. On Turkish forum pages the translated title is a derivative; the German post body and the <code>.de</code> canonical are the originals. JSON-LD is unreliable as a source: blank authors, malformed image URLs and 1970 <code>dateModified</code> values (Probe Log).</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Without sitemaps or <code>lastmod</code>, change detection has to come from Transfermarkt's own list pages (latest transfers, market-value updates, the <code>neuestetransfers</code> and <code>marktwertetop</code> lists) and from RSS for news. Origin caching is short (120–600s), so the cost is the rate limit, not cache staleness. New player IDs appear at the top of the sequence; poll above the last known ceiling.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>On-site search (<code>/schnellsuche</code>) is name lookup. External search is the main way in: "{player} transfermarkt" is a navigational query and the slug carries the name. Each edition ranks for its own language, so the Turkish host exists mainly to win Turkish-language queries on the shared database.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> entity profile (player / club / competition) with attached time series; transfer events and matches as first-class records; news articles and forum posts as text satellites linked by entity.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>player:{id}</code>, <code>club:{id}</code>, <code>competition:{code}</code>, <code>match:{id}</code>, <code>transfer:{id}</code>, <code>news:{id}</code>, <code>thread:{id}</code>. The edition host is only a label locale.</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>A licence agreement with Transfermarkt for the entity database. The terms forbid bots and reserve TDM, so this is the only clean route at scale.</li>
+            <li>For permitted, low-volume use: a paced HTML crawl of one edition by ID enumeration. 1.61M player IDs at ~20 requests/min is about <strong>56 days</strong> for one pass of player profiles alone (calculated by Site Wise). Other editions are fetched only for localized names.</li>
+            <li>RSS on all 10 feed editions for news discovery, plus article fetches.</li>
+            <li>Wikidata's Transfermarkt ID property as an external seed and join table, so no enumeration is needed for notable players.</li>
+          </ol>
+          <code>tmapi</code> is not a path: robots.txt disallows it, even though it answers anonymously.</li>
+        <li><strong>Recrawl cadence:</strong> news daily (the RSS window is ~1.5 days). Transfer and market-value list pages daily during windows, weekly otherwise. Match pages after full time. The full player pass yearly, given the rate limit.</li>
+        <li><strong>Derivatives to generate:</strong> a per-player valuation time series and transfer graph (club → club edges with fee and value); Turkish ↔ German ↔ English entity-name aliases from the shared IDs. No ASR or OCR targets: there is no video, and images are small agency photos.</li>
+        <li><strong>Demo to build:</strong> the cross-edition alias table. Fetch one player ID on all 27 hosts at a polite pace, collect the localized title and slug, and measure how many editions add a distinct name form. That tests whether multi-edition crawling earns anything beyond multilingual labels.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Contract over robots:</strong> robots.txt allows all crawlers, but §11.1 bans automated access and AI use and reserves TDM. An index that relies on robots.txt alone is out of compliance with the terms. Under §44b UrhG a machine-readable reservation is what counts, and the prose reservation's legal weight is open.</li>
+        <li><strong>Silent rate-limit corruption:</strong> the 403 has an empty body and also hits pages that exist. A naive crawler records live entities as missing; in this session the first density pass came back almost all 403s. Treat every 403 as "retry later", never as absent.</li>
+        <li><strong>Backend churn:</strong> the page widgets moved data out of the HTML into Svelte components backed by <code>tmapi</code>. <span class="evidence inferred">inferred</span> More profile data may leave server-rendered HTML over time, shrinking the robots-allowed surface. <em>Basis:</em> 22 custom elements on a player page, and the market-value chart and transfer history now come from <code>tmapi</code> JSON rather than page markup.</li>
+        <li><strong>Image rights:</strong> portraits and news photos come from the IMAGO agency (Probe Log). Thumbnails in a third-party UI need a separate licence.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.transfermarkt.de/intern/impressum">Transfermarkt imprint</a>: legal entity, shareholders, managing directors, dpa copyright notice.</li>
+        <li><a href="https://www.transfermarkt.co.uk/intern/anb">Transfermarkt terms (English)</a>: §3.2 database rights, §11.1 bots/AI/TDM clause.</li>
+        <li><a href="https://www.contentstadium.com/event-sports-media-insights-day/">Content Stadium, Sports Media Insights Day (2024-11-15)</a>: 60M monthly users, 1M+ players, 2,000 competitions, ~2M match reports.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Transfermarkt">Wikipedia: Transfermarkt</a>: founding, 2008 Axel Springer stake, 2021 audience figures.</li>
+        <li>Local probes on 2026-10-10: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Cross-site joins will rest on Wikidata, not on Transfermarkt markup. <em>Basis:</em> no external identifier in 7 sampled page types or in <code>tmapi</code> player fields.</li>
+        <li>Profile data is migrating from HTML to the robots-disallowed API. <em>Basis:</em> 22 Svelte widgets on a player page whose data comes from <code>tmapi</code> endpoints.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Turkish edition traffic share. Needs a company per-edition figure or a panel estimate with the estimator named.</li>
+        <li>Counts of clubs, coaches, agents and transfers. Closeable with the same paced ID-density method on <code>/startseite/verein/{id}</code> and other ID families (~100 samples each).</li>
+        <li>New-player creation rate. Closeable by re-running the ID ceiling search on a later date and diffing against 1,611,357.</li>
+        <li>The exact rate-limit window and threshold. Closeable with a controlled ramp (5, 10, 15 requests/min, each for 10 minutes) and logging the first 403.</li>
+        <li>Whether Transfermarkt licenses its database commercially, and on what terms. Needs direct contact; no data product is published.</li>
+        <li>Whether real Googlebot is exempt from the origin limit. Closeable with Search Console crawl stats on a verified test property, or Google's URL Inspection on a deep profile URL.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
