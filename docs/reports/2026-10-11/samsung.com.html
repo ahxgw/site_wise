@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>samsung.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-10-11</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>samsung.com</h1>
+      <p class="lede">Samsung's 90-locale site sitemaps 3.1M URLs, 81% of them support pages for 466K model codes, and welcomes AI crawlers while robots-blocking its manual PDFs.</p>
+      <div class="tag-row">
+        <span class="tag">Consumer electronics</span>
+        <span class="tag">Manufacturer D2C</span>
+        <span class="tag">Product support</span>
+        <span class="tag">AI-crawler open</span>
+        <span class="tag">llms.txt</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>samsung.com is the consumer web presence of Samsung Electronics: one host, with a directory per country or language (<code>/uk/</code>, <code>/be_fr/</code>, <code>/levant_ar/</code>). Each directory combines a direct-to-consumer store, a B2B catalogue under <code>/business/</code> and a support tree. For an index builder, it is a <strong>manufacturer's source of truth</strong>. Model codes are the spine, and the same code appears in product URLs, support URLs, review widgets, manual filenames and the product API. Samsung is also the most crawler-friendly big host in this series so far. robots.txt puts GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot and Google-Extended in the <em>same group</em> as <code>*</code>, so AI crawlers get exactly the access everyone else has. Samsung also publishes <code>llms.txt</code> guides (Probe Log). The gaps are elsewhere: manuals sit on a separate host that disallows all crawlers, and the US site runs a different URL scheme that is barely sitemapped.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.samsung.com</code> via Akamai (<code>akadns.net</code> → <code>edgekey.net</code>); bare <code>/</code> 301s to a geo-chosen locale (<code>/us/</code> from this probe)</dd></div>
+        <div><dt>Canonical URL</dt><dd>Product: <code>/{site}/{category}/{series}/{slug}-{modelcode}/</code> (US: <code>…-sku-{modelcode}/</code>). Support: <code>/{site}/support/model/{MODELCODE}/</code>. Help article: <code>/{site}/support/{area}/{slug}/</code></dd></div>
+        <div><dt>Category</dt><dd>Manufacturer store, product catalogue and support knowledge base</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>samsung.com</code>. Satellites: <code>images.samsung.com</code> (Scene7 images, video, 3D), <code>image-us.samsung.com</code>, <code>downloadcenter.samsung.com</code> (manuals, firmware), <code>searchapi.samsung.com</code> (product API), <code>news.samsung.com</code>, <code>semiconductor.samsung.com</code></dd></div>
+        <div><dt>Owner</dt><dd>Samsung Electronics Co., Ltd. (KRX: 005930), Suwon, Korea</dd></div>
+        <div><dt>Founded</dt><dd>Samsung Electronics founded 1969</dd></div>
+        <div><dt>Business model</dt><dd>Device sales (phones, TVs, appliances) through retail, carriers and its own store. The web is a sales and support channel; Samsung's profit is mostly memory chips.</dd></div>
+        <div><dt>Scale anchor</dt><dd>Q3 2026 guidance: KRW 195T sales, KRW 107.4T operating profit (<a href="https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026">Samsung Newsroom, 2026-10-08</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from the Site Wise sitemap census (Probe Log): every <code>Sitemap:</code> line in robots.txt followed recursively, 1,113 files fetched, 0 errors.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Company, Q3 2026 (guidance)</dt>
+          <dd>Sales about KRW 195T (Q3 2025: 86.06T); operating profit about KRW 107.4T (Q3 2025: 12.17T). As of 2026-10-08. <a href="https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026">Samsung Newsroom</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Device businesses, Q2 2026</dt>
+          <dd>MX &amp; Networks (phones) KRW 33.2T revenue with a KRW 0.7T operating loss. Visual Display &amp; Digital Appliances KRW 14.5T revenue, slight loss. Chips (DS) KRW 127.5T. Total KRW 171.5T. As of 2026-07-30. <a href="https://news.samsungsemiconductor.com/global/samsung-electronics-announces-second-quarter-2026-results/">Q2 2026 results</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd><strong>3.10M</strong> URLs in 933 URL sets, under 95 robots.txt roots covering 90 locale directories plus <code>/global/</code>. 1.48GB of uncompressed XML, inflated by <strong>8.1M</strong> <code>xhtml:link</code> hreflang entries. No image or video sitemap extensions. Sitemap census (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Corpus by family</dt>
+          <dd>Support model pages <code>/support/model/</code> <strong>2.52M</strong> (81%, calculated by Site Wise). B2B <code>/business/</code> 114K. Mobile and IT products (<code>im</code>) 115K. Help articles 90.8K. Misc. (offers, news, campaign pages) 67.8K. TV and monitor products (<code>vd</code>) 52.5K. Locale top pages 48.1K. Appliances (<code>da</code>) 35.0K. Memory 5.6K. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Model-code universe</dt>
+          <dd><strong>465.6K</strong> distinct model codes across 88 locale support sitemaps. Locales carry 0 to 71K model pages each; the median is about 26K. Codes include regional suffixes (<code>SM-G900F<u>ZBA3IE</u></code>, <code>LS32CG552E<u>UXEN</u></code>), so one handset spans dozens of codes. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Locale skew</dt>
+          <dd>Largest: <code>nl</code> 77K, <code>uk</code> 75K, <code>ae</code> 73K URLs. The US has only <strong>8.0K</strong>, with no <code>support/model</code> pages in its sitemaps. Korea (<code>/sec/</code>) has 17.2K, with CDATA-wrapped <code>&lt;loc&gt;</code> values that naive parsers read as zero. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Protocol violations</dt>
+          <dd><strong>15</strong> locale <code>support/sitemap.xml</code> files exceed the 50K-URL cap in the <a href="https://www.sitemaps.org/protocol.html">sitemap protocol</a>. The largest is <code>nl</code> with 71,346 URLs in 9.0MB. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Freshness signal</dt>
+          <dd>UK support sitemap: per-URL <code>lastmod</code> spans 159 distinct months from 2010-12 on; 38% (24.8K of 64.8K) changed in 2026-10-01..10. The UK <code>im</code> product file spans 58 months. <code>top_sitemap</code> stamps every URL with the generation day. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Hreflang fan-out</dt>
+          <dd>In <code>uk/top_sitemap.xml</code>, each URL carries a median of 105 and a maximum of 168 <code>hreflang</code> alternates (167 distinct language-region codes on the first URL). Rendered pages carry none: 0 of 13 sampled pages had a <code>hreflang</code> link tag. Sitemap census and structured-data sample <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured data</dt>
+          <dd>6 of 6 sampled product pages carry <code>Product</code> JSON-LD with <code>sku</code> = model code. None has <code>gtin</code> or <code>mpn</code>. 4 of 6 have <code>Offer</code>, 3 have <code>FAQPage</code>, 2 have <code>VideoObject</code>, 1 has <code>3DModel</code>. Reviews appear as a second <code>Product</code> node with <code>aggregateRating</code> + <code>review</code> (19 on the DE TV). 5 of 6 support/help pages carry only <code>WebPage</code> + <code>BreadcrumbList</code>; the US help page has none. Probe Log <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-11, desktop Chrome UA unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe"><code>dig</code> + <code>curl -I</code> on <code>/</code>, <code>/us/</code>, a UK product page</td><td data-label="Observation"><code>www</code> → <code>akadns.net</code> → <code>edgekey.net</code>. <code>HEAD /</code> returns 403; <code>GET /</code> returns 301 → <code>/us/</code>. Akamai <code>ak_p</code> server-timing, <code>cdn-cache; desc=HIT</code>, HSTS 1 year. Geo cookies <code>country_region</code> and <code>country_codes</code> are set on every response. Product HTML is 0.7–1.7MB.</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe"><code>curl /robots.txt</code></td><td data-label="Observation">348 lines. The first group lists <code>*</code>, Googlebot, AdsBot-Google, Googlebot-Image, OAI-SearchBot, GPTBot, ChatGPT-User, PerplexityBot and Google-Extended together. It disallows <code>/*/search/</code>, <code>/*/ai-search/</code>, <code>/*/multistore/*</code> (with 15 Allow exceptions), <code>/*/common/review/</code> and <code>/us/api/</code>. ClaudeBot is not named, so it falls under <code>*</code>. A Yandex group disallows 81 locale directories, leaving <code>ru</code>, <code>ua</code>, <code>kz</code>, <code>uz</code>, <code>az</code>, <code>tr</code>, <code>pl</code>, <code>fi</code> and <code>mk</code>, and lists 75 <code>Clean-param</code> rules. 95 <code>Sitemap:</code> lines.</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe">UA matrix on a UK product page</td><td data-label="Observation">Chrome, GPTBot, ClaudeBot, PerplexityBot and <code>curl</code> UAs all got 200 (1.2MB, identical bytes). A <strong>spoofed Googlebot UA got 403</strong> (480 bytes).</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe"><code>/llms.txt</code></td><td data-label="Observation">200, 4.6KB. Describes the locale scheme and links 13 regional guides (<code>/uk/llms.txt</code> is 6.3KB), the Newsroom, IR and other Samsung domains. <code>/llms-full.txt</code> returns 404.</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe">Sitemap census (recursive, 3 concurrent, retry on empty)</td><td data-label="Observation">1,107 files plus 6 Korean children re-parsed for CDATA. Each locale index has 5–7 children: <code>b2c-sitemap</code> → <code>da</code>/<code>im</code>/<code>vd</code>/<code>memory</code>/<code>assorted</code>, plus <code>top_sitemap</code>, <code>business/*</code>, <code>support/sitemap</code> and <code>support/help_content_sitemap</code>. 11 support/business <code>top</code> files are empty (152 bytes) in small locales (<code>az</code>, <code>bd</code>, <code>jp</code>, <code>mn</code>, …). Results in Verified Metrics.</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe">Structured-data sample, 13 pages</td><td data-label="Observation">6 product pages (UK ×2, DE, US ×2, IN), 3 <code>support/model</code>, 3 help articles, 1 B2B accessory. All returned 200. 2 of 13 canonicalize to a sibling variant: UK 512GB tablet → 256GB, and a band colour → another colour. The US help page has no JSON-LD.</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe">Support model page contents (<code>/uk/support/model/SM-G900FZBA3IE/</code>)</td><td data-label="Observation">Links 4 user-manual PDFs via <code>org.downloadcenter.samsung.com/…ContentsFile.aspx?…&amp;CttFileID=5668641&amp;CDCttType=UM</code>. That URL 302s to <code>downloadcenter.samsung.com/content/UM/201404/…pdf</code>, which is 200, 14MB, <code>Last-Modified</code> 2014-04-21.</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe"><code>robots.txt</code> on media hosts</td><td data-label="Observation"><code>downloadcenter.samsung.com</code> and <code>org.downloadcenter…</code>: <code>User-agent: * Disallow: /</code>; only <code>Swiftbot</code> is allowed. <code>images.samsung.com</code>: groups only for Googlebot and Googlebot-image, both allowed; with no <code>*</code> group, other bots are unrestricted.</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe"><code>curl -I</code> 3D asset</td><td data-label="Observation"><code>images.samsung.com/is/content/samsung/p6pim/de/gq75qef1auxzg/gallery/…546208900.glb</code>: 200, 6.0MB, <code>model/gltf-binary</code>, <code>AkamaiNetStorage</code>. A matching <code>.usdz</code> is listed in the same <code>3DModel</code> node. Product <code>VideoObject</code>s are short MP4 loops on the same host (3–7s) or YouTube watch URLs.</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe"><code>searchapi.samsung.com/v6/front/b2c/product/finder/newhybris?type=01010000&amp;siteCode=uk</code></td><td data-label="Observation">200 JSON with no key or cookie: <code>totalRecord</code> 54 smartphone families, 403KB for 12 families. Family → <code>modelList</code>, with <code>modelCode</code>, <code>price</code>, <code>ratings</code>, <code>reviewCount</code> (e.g. 203 for the Galaxy S26 FE), <code>pdpUrl</code>, <code>galleryImage</code>, <code>usp</code>, <code>energyFileUrl</code>, <code>ficheFileUrl</code> and <code>repairabilityIndexPdfUrl</code>, plus facet <code>navGroups</code>. The sibling <code>/product/card/detail/</code> endpoint returns an Akamai 403.</td></tr>
+            <tr><td data-label="Date">2026-10-11</td><td data-label="Probe">Review vendor fingerprint</td><td data-label="Observation">Bazaarvoice per-locale deployments (<code>apps.bazaarvoice.com/deployments/samsung-en_gb/…/bv.js</code>, display code 20553). Widget <code>productId</code> = model code (<code>SM-X946BZAREUB</code>). Pages also carry a <code>reevooUseYN</code> flag, so the vendor may vary by locale.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"Finder API" = the anonymous <code>searchapi.samsung.com/v6</code> product-finder endpoint the site's own listing pages call; it is undocumented, not a published API.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Product text</td>
+              <td data-label="Objects &amp; est. count">Product pages: 115K <code>im</code> + 52K <code>vd</code> + 35K <code>da</code> + 5.6K memory, across 90 locales.</td>
+              <td data-label="Best legitimate path">Sitemap → HTML crawl; JSON-LD <code>Product</code> + <code>usp</code>/specs in HTML. Finder API for family and model lists per category.</td>
+              <td data-label="Auth &amp; quota">None; AI crawlers allowed by robots.txt.</td>
+              <td data-label="License / display">Samsung copyright; no reuse grant. Snippet and link-back.</td>
+              <td data-label="Freshness">Per-URL <code>lastmod</code>; product files span 58 months (UK).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Support pages</td>
+              <td data-label="Objects &amp; est. count">2.52M <code>support/model</code> pages, 465.6K model codes, including discontinued devices (Galaxy S5, 2014).</td>
+              <td data-label="Best legitimate path">Support sitemaps (15 exceed 50K URLs; parse them whole).</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">As above.</td>
+              <td data-label="Freshness">38% of UK URLs touched in the first 10 days of October.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Help articles</td>
+              <td data-label="Objects &amp; est. count">90.8K how-to/troubleshooting articles (<code>help_content_sitemap</code>); US uses <code>TSG</code>/<code>TIP</code> IDs.</td>
+              <td data-label="Best legitimate path">Sitemap → HTML.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">As above.</td>
+              <td data-label="Freshness">Per-URL <code>lastmod</code>.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Documents (PDF)</td>
+              <td data-label="Objects &amp; est. count">User manuals, safety sheets, firmware; EU energy labels, product fiches, repairability index PDFs. Count open.</td>
+              <td data-label="Best legitimate path">Links from support pages and the Finder API; the file host <strong>disallows all crawlers</strong>.</td>
+              <td data-label="Auth &amp; quota">No auth, but robots-blocked.</td>
+              <td data-label="License / display">Link to the file; do not mirror without permission.</td>
+              <td data-label="Freshness">Immutable per file (<code>Last-Modified</code> 2014 on a sampled manual).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images &amp; 3D</td>
+              <td data-label="Objects &amp; est. count">Scene7 gallery images per model; GLB + USDZ models on some products (1 of 6 sampled).</td>
+              <td data-label="Best legitimate path">URLs from JSON-LD <code>image</code>/<code>3DModel</code> and the Finder API <code>galleryImage</code>.</td>
+              <td data-label="Auth &amp; quota">None; robots allows all.</td>
+              <td data-label="License / display">Hotlink for display only.</td>
+              <td data-label="Freshness">Path keyed by locale + model code.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Feature loops (3–7s MP4) and YouTube embeds, as <code>VideoObject</code> on 2 of 6 product pages.</td>
+              <td data-label="Best legitimate path">JSON-LD <code>contentUrl</code>; for YouTube, the YouTube path.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">YouTube embed; MP4s are page assets.</td>
+              <td data-label="Freshness"><code>uploadDate</code> in JSON-LD.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Reviews</td>
+              <td data-label="Objects &amp; est. count">Bazaarvoice reviews per model (203 for one phone); 1–19 embedded in JSON-LD per page.</td>
+              <td data-label="Best legitimate path">JSON-LD <code>review</code> on product pages; counts and ratings from the Finder API.</td>
+              <td data-label="Auth &amp; quota">Bazaarvoice API needs a passkey (open).</td>
+              <td data-label="License / display">Customer content under Bazaarvoice terms.</td>
+              <td data-label="Freshness">Append-only.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Offers / price</td>
+              <td data-label="Objects &amp; est. count">Per model per locale: <code>price</code>, <code>promotionPrice</code>, trade-in, finance, stock.</td>
+              <td data-label="Best legitimate path">Finder API; JSON-LD <code>Offer</code> (4 of 6 pages).</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Show with a live timestamp.</td>
+              <td data-label="Freshness">Real-time; the US JSON-LD price was <code>undefined</code> on an out-of-stock TV.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Samsung differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The model code is the key everywhere. It is the uppercase path segment in <code>support/model/</code>, the lowercase trailing token in product slugs (<code>…-sm-x946bzareub/</code>, <code>…-sku-qn77s85hdexza/</code>), <code>sku</code> in JSON-LD, the Bazaarvoice <code>productId</code> and the Finder <code>modelCode</code>. Its suffix encodes colour, storage and region. Strip it to the base (<code>SM-X946B</code>) to group a device worldwide; the Finder <code>modelName</code> (<code>SM-S741B/DS</code>) does this already. Variant pages may canonicalize to a sibling (2 of 13 sampled pages), so dedup on canonical, then on the base code.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Index two units: the <strong>device family</strong> (Finder <code>familyId</code>), with its locale product pages and specs, and the <strong>support model page</strong>, with its manuals and help articles. Support outnumbers commerce about 12:1 in URLs (2.52M vs 208K product URLs, calculated by Site Wise). Most of the corpus is support for devices that are no longer sold.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>One model code joins page text, gallery images (<code>p6pim/{site}/{modelcode}/</code>), GLB/USDZ, manual PDFs (<code>ModelName=</code> in the download link), reviews and price. Across locales, sitemap hreflang clusters (up to 168 alternates) join translations. Use the sitemaps for this, not the HTML. No GTIN is exposed, so joins to retailer catalogues (<a href="../2026-06-10/amazon.com.html">Amazon</a>, <a href="../2026-10-09/walmart.com.html">Walmart</a>) must go through the model code in their titles or specs.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Samsung is the manufacturer, so its spec sheets and manuals outrank any retailer copy of the same facts. EU locales add regulated fields that retailers rarely carry: energy class, fiche and repairability index, each linked as a PDF from the Finder record.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Per-URL <code>lastmod</code> is real in the support, <code>im</code>, <code>vd</code> and <code>da</code> files (dates back to 2010) and is a generation stamp only in <code>top_sitemap</code>. All indexes regenerate daily (index <code>lastmod</code> 07:07 KST). <span class="evidence inferred">inferred</span> Support <code>lastmod</code> is bumped in bulk by template or firmware changes, not by manual edits. <em>Basis:</em> 24.8K UK support URLs (38%) share October 2026 dates, while pages like the 2014 Galaxy S5 support page are still listed.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><code>/search/</code> and <code>/ai-search/</code> are disallowed. The Finder API, which powers category listings, is the only structured view of the catalogue: family, model, price, rating and facets, with no key required.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> device family (base model code), with child locale model codes; support model page and help article as separate records linked by code.</li>
+        <li><strong>Primary keys &amp; joins:</strong> full model code (<code>SM-X946BZAREUB</code>); base code (<code>SM-X946B</code>); Finder <code>familyId</code>; site code (<code>uk</code>, <code>be_fr</code>); Bazaarvoice <code>productId</code> = model code; manual <code>CttFileID</code>.</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>Sitemaps: 3.10M URLs and ~1.5GB of XML (calculated by Site Wise), regenerated daily. Diff per-URL <code>lastmod</code> to schedule fetches. Parse CDATA (Korea) and over-cap files whole.</li>
+            <li>HTML crawl of product and support pages. robots.txt allows AI crawlers; pace it, since pages are 0.4–1.7MB each.</li>
+            <li>Finder API per locale × category for family/model structure, price and ratings. It is undocumented, so treat it as fragile.</li>
+            <li>Manual/regulatory PDFs: robots-blocked on the file host. Record the links and titles; fetch only with permission.</li>
+          </ol></li>
+        <li><strong>Recrawl cadence:</strong> price and stock daily via the Finder API for current models; product pages when <code>lastmod</code> changes; support pages weekly by <code>lastmod</code> diff; locale top pages and campaign pages (<code>offer/</code>, <code>cdm/</code>) can be dropped or crawled rarely.</li>
+        <li><strong>Derivatives to generate:</strong> a base-code entity table (base code → locale codes → marketing names); ASR on product videos; manual text, if access is granted; image embeddings keyed by base code.</li>
+        <li><strong>Demo to build:</strong> a "one device, every locale" card. Take one base code (e.g. <code>SM-S741B</code>), fan it out through the sitemap hreflang cluster and the Finder API in each locale, and show price, rating, energy label and support-page coverage side by side.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The document layer is robots-blocked:</strong> manuals, firmware and regulatory PDFs, the highest-value support content, sit behind <code>downloadcenter.samsung.com</code>'s <code>Disallow: /</code> (Probe Log). A compliant index gets the support page but not the manual it links.</li>
+        <li><strong>The US is a different site:</strong> 8.0K sitemapped URLs and no <code>support/model</code> pages, compared with up to 77K in other locales. US coverage needs HTML link discovery, not sitemaps.</li>
+        <li><strong>Verified-bot gating:</strong> a spoofed Googlebot UA is refused while other UAs pass (Probe Log). <span class="evidence inferred">inferred</span> Akamai validates crawler identity, so a crawler claiming to be an allowed bot from an unverified IP can be blocked even where robots.txt allows it. <em>Basis:</em> 403 for the Googlebot UA alone, with identical 200s for GPTBot, ClaudeBot and curl from the same IP.</li>
+        <li><strong>The Finder API is undocumented:</strong> its sibling <code>card/detail</code> endpoint already returns 403 to direct calls. Price and rating ingestion could close without notice.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026">Samsung Newsroom, Q3 2026 earnings guidance (2026-10-08)</a>: sales and operating profit, year-earlier comparison.</li>
+        <li><a href="https://news.samsungsemiconductor.com/global/samsung-electronics-announces-second-quarter-2026-results/">Samsung, Q2 2026 results (2026-07-30)</a>: division revenue and profit.</li>
+        <li><a href="https://www.sitemaps.org/protocol.html">sitemaps.org protocol</a>: the 50K-URL-per-file limit.</li>
+        <li>Local probes on 2026-10-11: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Support <code>lastmod</code> is bumped in bulk. <em>Basis:</em> 38% of UK support URLs dated within October 1–10, 2026, alongside entries for decade-old devices.</li>
+        <li>Akamai validates crawler identity. <em>Basis:</em> the Googlebot UA alone got a 403 in the UA matrix; all other UAs got the same 200.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Number of manual/firmware files. Closeable by extracting all <code>downloadcenter</code> links from a sample of ~1K support model pages and extrapolating per code, or from Common Crawl's copy of <code>downloadcenter</code> URLs.</li>
+        <li>Product families and models per locale from the Finder API. Needs the category <code>type</code> code list (from the site's category pages) and a sweep of <code>totalRecord</code> per locale × type.</li>
+        <li>Distinct base devices behind the 465.6K model codes. Closeable by normalizing codes per product line (strip colour/region suffixes) and deduping.</li>
+        <li>Whether US support model pages exist at scale outside the sitemaps. Closeable by crawling <code>/us/support/</code> category trees and counting model links.</li>
+        <li>Review API access: whether a public Bazaarvoice passkey is embedded per locale, and what it allows. Closeable by inspecting a product page's network calls in a browser.</li>
+        <li>samsung.com traffic split by locale and by store vs support. Needs a third-party panel (Similarweb) or Samsung disclosure; not available here.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
