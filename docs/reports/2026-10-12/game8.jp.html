@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>game8.jp Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-10-12</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>game8.jp</h1>
+      <p class="lede">Japan's largest game-guide wiki: 430K live guide pages across 305 games, a complete sitemap, image-heavy tables, and a robots.txt with no catch-all group.</p>
+      <div class="tag-row">
+        <span class="tag">Game guides</span>
+        <span class="tag">Japanese</span>
+        <span class="tag">Editorial wiki</span>
+        <span class="tag">Image-heavy</span>
+        <span class="tag">Complete sitemap</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Game8 (ゲームエイト) publishes walkthrough "wikis" for mobile and console games. Each game gets its own slug (<code>/genshin</code>, <code>/monst</code>), and under it sit hundreds to thousands of numbered articles: tier lists, character pages, gacha evaluations and event guides. These are written by an in-house "攻略班" (strategy team), not by users. Readers add comments, Q&amp;A and board posts. Revenue is advertising (the <code>ads.txt</code> is 49.7KB) plus a newer direct-payment store business. For an index builder, Game8 is a <strong>dense, entity-rich, Japanese-language reference corpus</strong> for game facts that publishers do not publish in structured form. Most of the facts sit in HTML tables of image icons, not in prose. Game8 is unusually easy to enumerate: one global article-ID space, a per-game sitemap that our probe found to be complete, and the same bytes served to every UA. Its owner calls game guides "AI-resistant" content, while robots.txt blocks training crawlers and lets AI search agents in.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>game8.jp</code> on CloudFront → Rails origin; images on <code>img.game8.jp</code> (S3 + CloudFront)</dd></div>
+        <div><dt>Canonical URL</dt><dd>Article: <code>/{game-slug}/{article-id}</code>. Game hub: <code>/{game-slug}</code>. Gacha: <code>/{slug}/gatchas/{id}</code>. Q&amp;A: <code>/{slug}/qa/{hex16}</code>. Board post: <code>/{slug}/boards/{n}/posts/{hex16}</code>. ID resolver: <code>/archives/{id}</code> → 301 to the canonical slug</dd></div>
+        <div><dt>Category</dt><dd>Game walkthrough / strategy media (Japanese)</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>game8.jp</code>; satellites <code>img.game8.jp</code>, <code>assets.game8.jp</code>, <code>nx-img.game8.jp</code>, <code>tracking.game8.jp</code>, <code>platform.game8.jp</code>. English sister <code>game8.co</code> is a separate site with its own robots and sitemap (not profiled here).</dd></div>
+        <div><dt>Owner</dt><dd>株式会社ゲームエイト (Game8 Inc.), a consolidated subsidiary of Gunosy Inc. (TSE: 6047) (<a href="https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260715/20260715594095.pdf">FY2026 決算短信</a>)</dd></div>
+        <div><dt>Founded</dt><dd>August 2014 (<a href="https://prtimes.jp/main/html/rd/p/000000001.000058021.html">PR TIMES, 2020-05-12</a>)</dd></div>
+        <div><dt>Business model</dt><dd>Display advertising on guide pages. A "Store and Commerce" business sells in-game items outside app stores following Japan's smartphone-software competition act (fully in force 2025-12-18).</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from the Site Wise sitemap census (Probe Log): 1 index + 309 child files, 0 errors, 66.7MB of uncompressed XML.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Owner segment, FY ended May 2026</dt>
+          <dd>Gunosy consolidated revenue ¥6.44B (+5.6%). Media segment, which includes Game8 alongside the Gunosy news apps, ¥5.47B (−9.6%) with segment profit ¥1.16B. The filing says Game8's game-guide media still grew revenue year on year because overseas PVs "greatly exceeded" plan. Game8 revenue is not broken out. As of 2026-07-15. <a href="https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260715/20260715594095.pdf">Gunosy 決算短信</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Traffic (last official figure)</dt>
+          <dd>500M monthly page views and 42M monthly unique users, for April 2020. This is the only first-party traffic figure found, and it is six years old. <a href="https://prtimes.jp/main/html/rd/p/000000001.000058021.html">PR TIMES, 2020-05-12</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd><strong>431.8K</strong> URLs: <strong>429.9K</strong> in 305 per-game files, 310 game hubs (<code>game.xml</code>), 1,329 Battle Cats board URLs, 297 Q&amp;A URLs and 3 image pages. No file exceeds 50K URLs; per-game files range from 2 to 16.2K (median 685). Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Article count &amp; ID space</dt>
+          <dd><strong>425.3K</strong> numbered articles plus 4.5K gacha pages. Article IDs run from 12.7K to 829.9K in one global sequence shared by all games, so about 51% of the ID range is live (calculated by Site Wise). Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap completeness</dt>
+          <dd>In a sample of 160 random IDs resolved via <code>/archives/{id}</code>, 84 of 84 sitemapped IDs resolved and 0 of 76 unsitemapped IDs did (all 404). The sitemap is therefore the full live article set, within sampling error. ID probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Concentration</dt>
+          <dd>The top 10 games hold 117.9K articles, 27% of the per-game URLs (calculated by Site Wise): eFootball 16.1K, Yu-Gi-Oh! Master Duel 15.0K, Tsum Tsum 14.9K, Hoshidora 14.6K, FFXIV 13.4K, Othellonia 9.8K, Monster Strike 9.2K, Puzzle &amp; Dragons 8.8K, DQ Walk 8.2K, Battle Cats 8.0K. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Lastmod distribution</dt>
+          <dd><strong>53%</strong> of per-game URLs (228.2K) carry a <code>lastmod</code> of 2025-11-20 or 2025-11-21. No URL is dated before 2025-11. <strong>22%</strong> (95.5K) were modified in September–October 2026, and about 10.5K per day in early October. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Structured data</dt>
+          <dd>Article pages (10 of 10 sampled): <code>Article</code> + <code>BreadcrumbList</code> JSON-LD, with <code>datePublished</code>, <code>dateModified</code>, Organization author (<code>原神攻略@Game8</code>), one <code>image</code>. <code>dateModified</code> equals the sitemap <code>lastmod</code> in 10 of 10. Gacha pages (2 of 2) have breadcrumbs only. Q&amp;A pages have <code>QAPage</code> with <code>acceptedAnswer</code>; boards have <code>CollectionPage</code>. No <code>VideoGame</code>, <code>hreflang</code> or <code>VideoObject</code> on any sampled page. Structured-data sample <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Image density</dt>
+          <dd>Sampled articles reference <strong>34–146</strong> distinct <code>img.game8.jp</code> image IDs each, with 5–17 <code>&lt;table&gt;</code>s. The Genshin hub has 751 images and 79 tables. The highest image ID observed was 13.07M. Structured-data sample <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Page weight</dt>
+          <dd>Article HTML is 313–509KB decompressed (the Genshin character list is 1.0MB; the hub is 794KB). Sitemap XML totals 66.7MB. Structured-data sample <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-12, desktop Chrome UA unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe"><code>dig</code> + <code>curl -I /</code></td><td data-label="Observation">A records in the 99.84/3.169/18.155 ranges (CloudFront). <code>x-cache: Miss from cloudfront</code>, <code>cache-control: private, must-revalidate</code>. Rails fingerprints: <code>x-runtime</code>, <code>x-request-id</code>, <code>_session_id</code> cookie, <code>csrf-param authenticity_token</code>. <code>vary: User-Agent</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe"><code>curl /robots.txt</code></td><td data-label="Observation">There is <strong>no <code>User-agent: *</code> group</strong>. The Googlebot group disallows pagination params, <code>/*/comments</code>, <code>/*/forums/</code>, <code>/*/search</code>, <code>/users/</code> (except numeric IDs) and Battle Cats filter params. <code>Disallow: /</code> for GPTBot, dotbot and a 40-UA training group (ClaudeBot, CCBot, Applebot-Extended, Bytespider, meta-externalagent, …). AI search/user agents (OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot, Meta-WebIndexer, DuckAssistBot, …) are blocked only from <code>/tsumtsum</code>. One <code>Sitemap:</code> line.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe">UA matrix on <code>/genshin/343529</code></td><td data-label="Observation">Chrome, GPTBot, ClaudeBot, a spoofed Googlebot and <code>curl</code> all got 200 with identical bytes (1.0MB, same MD5). robots.txt is a request only; the server does not enforce it by UA.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe"><code>/llms.txt</code>, <code>/sitemap.xml</code>, feeds</td><td data-label="Observation"><code>llms.txt</code> 404. <code>/sitemap.xml</code> 404. <code>/feed</code>, <code>/rss</code>, <code>/rss.xml</code>, <code>/feed.xml</code> 404; <code>/genshin/rss</code> 403. No feed <code>&lt;link&gt;</code> in page heads. <code>ads.txt</code> 200, 49.7KB.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe">Sitemap census</td><td data-label="Observation"><code>/sitemaps/sitemap.xml.gz</code> 301s to <code>s3-ap-northeast-1.amazonaws.com/sitemap-game8/…</code> (S3 <code>Last-Modified</code> 00:36 UTC on the probe day). The index lists 309 children: <code>game_{n}.xml.gz</code> ×305 (one per game, numbered by internal game ID), plus <code>game</code>, <code>qa</code>, <code>image</code> and <code>battlecats_boards</code>. All index <code>lastmod</code>s fall within 00:34–00:36 UTC, so the set regenerates daily. Fetched 3-concurrent with retry-on-empty; 0 empty files. Results in Verified Metrics.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe">ID resolver</td><td data-label="Observation"><code>/archives/427772</code> → 301 <code>/yugioh-masterduel/427772</code>. The wrong slug (<code>/genshin/427772</code>) returns 404, so the slug is validated. <code>/720/images/2631653</code> → 301 <code>/kh3/images/2631653</code>: image pages use the same pattern, keyed by game ID.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe">Random ID census (160 IDs in 1–829.9K, ~1.4 req/s)</td><td data-label="Observation">Sitemapped: 83 × 200, 1 × 301. Unsitemapped: 76 × 404. No throttling or 403.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe">Structured-data sample, 14 pages</td><td data-label="Observation">10 random articles from 8 games, 2 gacha pages, 1 game hub, 1 board, 1 Q&amp;A. All returned 200, and all self-canonicalize. 4 of 10 articles carry the 2025-11-20/21 <code>dateModified</code>; the oldest <code>datePublished</code> is 2022-02-05 among sampled articles and 2020-07-22 for the Genshin hub.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe">Comments page (<code>/genshin/343529/comments</code>)</td><td data-label="Observation">200, <code>&lt;meta name="robots" content="noindex,nofollow"&gt;</code>, "289件中 1-20件" (289 comments, 20 per page). Comments are indexable by nobody who honours meta robots.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe"><code>curl -I</code> image + <code>img.game8.jp/robots.txt</code></td><td data-label="Observation">Image URL pattern <code>img.game8.jp/{image-id}/{md5}.{ext}/{original|thumb|show}</code>. Sample PNG: 200, 290KB, <code>server: AmazonS3</code>, <code>Last-Modified</code> 2020-09-26, CloudFront <code>RefreshHit</code>. <code>robots.txt</code> on the image host returns an S3 <code>AccessDenied</code> XML, so there are no rules there.</td></tr>
+            <tr><td data-label="Date">2026-10-12</td><td data-label="Probe"><code>game8.co/robots.txt</code> (English sister)</td><td data-label="Observation">24 lines; different policy from <code>.jp</code>: GPTBot, Google-Extended and dotbot get <code>Disallow: /</code>, and the training-crawler list is absent (ClaudeBot and CCBot unrestricted). Its sitemap index did not parse on a single fetch and was not censused.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"AI search agents" = the robots.txt group that is blocked only from <code>/tsumtsum</code>. "Training crawlers" = the <code>Disallow: /</code> groups. Unnamed crawlers fall under no group at all.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Guide articles</td>
+              <td data-label="Objects &amp; est. count">425.3K articles, 305 games; 27% in the top 10.</td>
+              <td data-label="Best legitimate path">Per-game sitemap → HTML. <code>Article</code> JSON-LD for title, dates and lead image; body and tables from HTML.</td>
+              <td data-label="Auth &amp; quota">None. Allowed for search agents (except Tsum Tsum); <code>Disallow: /</code> for training crawlers.</td>
+              <td data-label="License / display">Game8 copyright; no reuse grant. Snippet and link.</td>
+              <td data-label="Freshness">~10.5K <code>lastmod</code> changes/day in October 2026.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Game hubs</td>
+              <td data-label="Objects &amp; est. count">310 hub pages (one per game, plus a few corporate URLs).</td>
+              <td data-label="Best legitimate path"><code>game.xml</code> → HTML; the hub is the game's table of contents (751 image links on Genshin).</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">As above.</td>
+              <td data-label="Freshness">Stamped daily.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Gacha / banner records</td>
+              <td data-label="Objects &amp; est. count">4.5K banner pages across 53 games (DQ Tact 393, Monster Strike 387).</td>
+              <td data-label="Best legitimate path">Sitemap → HTML; breadcrumbs only, no <code>Article</code> JSON-LD.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">As above.</td>
+              <td data-label="Freshness">New page per banner; event-driven.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">34–146 per article; ID ceiling ≥13.07M. Character art, icons, screenshots, mostly of publisher-owned IP.</td>
+              <td data-label="Best legitimate path">URLs from article HTML (<code>data-image-url</code>, <code>&lt;img&gt;</code>); the image sitemap lists only 3 pages.</td>
+              <td data-label="Auth &amp; quota">None; the image host has no robots.txt.</td>
+              <td data-label="License / display">Mostly game publishers' copyright, screenshotted by Game8. Thumbnail and link only.</td>
+              <td data-label="Freshness">Immutable per ID (<code>Last-Modified</code> 2020 on a sample).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Comments</td>
+              <td data-label="Objects &amp; est. count">Per-article threads (289 on one Genshin list). Total open.</td>
+              <td data-label="Best legitimate path"><code>/{slug}/{id}/comments</code>: <code>noindex,nofollow</code> and robots-disallowed for Googlebot.</td>
+              <td data-label="Auth &amp; quota">None, but opted out of indexing.</td>
+              <td data-label="License / display">Anonymous user content; do not index.</td>
+              <td data-label="Freshness">Append-only.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Q&amp;A</td>
+              <td data-label="Objects &amp; est. count">297 URLs, all Tsum Tsum (<code>QAPage</code> + <code>acceptedAnswer</code>).</td>
+              <td data-label="Best legitimate path"><code>qa.xml</code> → HTML JSON-LD.</td>
+              <td data-label="Auth &amp; quota">Search agents blocked (under <code>/tsumtsum</code>).</td>
+              <td data-label="License / display">User content.</td>
+              <td data-label="Freshness"><code>datePublished</code> per question.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Board posts</td>
+              <td data-label="Objects &amp; est. count">1,329 Battle Cats team-composition posts.</td>
+              <td data-label="Best legitimate path"><code>battlecats_boards.xml</code> → HTML.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">User content.</td>
+              <td data-label="Freshness">Per-URL <code>lastmod</code>.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">Occasional YouTube embeds (1 of 14 sampled pages).</td>
+              <td data-label="Best legitimate path">YouTube path.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">YouTube embed.</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Game8 differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Crawl policy is name-based and unenforced</h4>
+          <p>The default assumption is that AI crawlers get blocked. Game8 splits them by purpose: 41 training UAs are blocked, while 11 search/user-fetch agents get the whole site except Tsum Tsum. With no <code>*</code> group, any crawler not named is unrestricted, including on the paths Googlebot is told to avoid. The server ignores UA entirely (identical bytes to GPTBot), so compliance is up to the crawler. A new crawler should adopt the Googlebot group's exclusions voluntarily, since they mark the low-value URL space (pagination, comments, search).</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The article ID is global and stable. <code>/archives/{id}</code> resolves any ID to its canonical game slug, and every sampled page self-canonicalizes, so dedup is trivial: key on the ID. The sitemap file number is the internal game ID (<code>game_5</code> = Puzzle &amp; Dragons), and image pages use the same ID (<code>/720/images/…</code> → <code>/kh3/…</code>). That gives a ready game-ID ↔ slug map.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The article is too coarse: one tier list holds dozens of entities. The useful unit is the <strong>table row</strong> (character / card / weapon × stats × rating), with its icon image. Article titles follow a fixed pattern, <code>【{game}】{entity}の評価とおすすめ…</code>, so entity-page type is recoverable from the title alone. Text is Japanese, with game-specific romanization in slugs (<code>pazudora</code>, <code>monst</code>), so entity linking to English sources (wikis, <code>game8.co</code>) needs an alias table.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Image IDs are global and appear in both <code>&lt;img&gt;</code> and <code>data-image-url</code>. Each icon sits in the table cell next to its entity name, which yields a large set of (Japanese entity name ↔ official game art) pairs. The JSON-LD <code>image</code> is the article's lead image only.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p><code>lastmod</code> and <code>dateModified</code> are the same field, and both carry a bulk stamp. <span class="evidence inferred">inferred</span> Every article untouched since a November 2025 site-wide re-save was restamped 2025-11-20/21, so for those 228K URLs the date means "not edited since then", not "edited then". <em>Basis:</em> 53% of URLs share two consecutive days and no URL predates them, while sampled <code>datePublished</code> values go back to 2020. After the stamp, <code>lastmod</code> moves in step with editorial activity (~10.5K/day in October), so diffing the daily index is a cheap incremental feed.</p>
+        </div>
+        <div>
+          <h4>Corpus follows the release calendar</h4>
+          <p>The corpus tracks game launches and live-service events, not a back catalogue. Gunosy reported no major domestic title releases in FY2026, and growth came from overseas PVs (Verified Metrics). Expect new <code>game_{n}</code> files to appear as titles launch; detecting a new sitemap child is the "new game" signal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> article (keyed by global ID), split into table-row entity records with icon images; gacha banner page; game hub as the per-game ToC.</li>
+        <li><strong>Primary keys &amp; joins:</strong> article ID; game ID (sitemap file number) ↔ game slug; image ID; Q&amp;A / board-post hex16 IDs; breadcrumb path for the article's place in the game's hierarchy.</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>Daily sitemap index (S3) → diff the 309 children's <code>lastmod</code> → fetch changed per-game files only. Full set 66.7MB; the census is complete.</li>
+            <li>HTML fetch of changed articles (~10.5K/day). Respect the Googlebot-group exclusions and the <code>/tsumtsum</code> carve-out for AI-search use. Pages are 0.3–1MB, so the daily delta is about 4GB (calculated by Site Wise at ~400KB/page).</li>
+            <li>Image fetch keyed by image ID, deduped globally; thumbnails (<code>/thumb</code>) for embeddings, not originals.</li>
+          </ol></li>
+        <li><strong>Recrawl cadence:</strong> active-game files daily by <code>lastmod</code> diff; gacha pages on creation; game hubs weekly; skip comments (noindex).</li>
+        <li><strong>Derivatives to generate:</strong> table → structured entity rows (name, rarity, role, rating); a Japanese↔English entity alias table joined to <code>game8.co</code>; image embeddings for icon → entity lookup; per-game freshness profile from the <code>lastmod</code> series.</li>
+        <li><strong>Demo to build:</strong> "screenshot → entity": embed the icon images from one game's tier lists, so that a user's screenshot of a character icon retrieves the Game8 row with its rating and the article it came from.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Most of the image layer is not Game8's to license:</strong> character art and screenshots belong to the game publishers. A display index can show thumbnails with a link; an image-model training use needs publisher rights, not Game8's.</li>
+        <li><strong>Training is opted out:</strong> 41 named training UAs are disallowed site-wide. An index that feeds a model must use a search-agent identity and stay in that use, and must honour <code>/tsumtsum</code>.</li>
+        <li><strong>Dates mislead:</strong> half the corpus carries a synthetic 2025-11 modification date in both sitemap and JSON-LD (Retrieval Notes). A freshness-ranked index would treat stale guides as recent.</li>
+        <li><strong>Facts expire with patches:</strong> tier ratings change with each balance update, so the same URL can hold contradictory claims over time. Keep revision snapshots by <code>lastmod</code>, not only the latest version.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260715/20260715594095.pdf">Gunosy, 2026年5月期 決算短信 (2026-07-15)</a>: consolidated and Media-segment results, Game8 overseas PV commentary, SC business, "AI-resistant" framing.</li>
+        <li><a href="https://prtimes.jp/main/html/rd/p/000000001.000058021.html">PR TIMES, "Game8.jp 月間5億PV、4,200万UU突破" (2020-05-12)</a>: April 2020 traffic, founding date.</li>
+        <li>Local probes on 2026-10-12: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The 2025-11-20/21 <code>lastmod</code> is a bulk re-save stamp. <em>Basis:</em> 228K URLs on two consecutive days, none earlier, while sampled <code>datePublished</code> values reach back to 2020.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Current game8.jp traffic. The last first-party figure is from April 2020; needs a Gunosy IR deck with Game8 KPIs or a third-party panel (Similarweb), named as such.</li>
+        <li>Game8's own revenue. Gunosy reports it only inside the Media segment; the quarterly 決算説明資料 may chart it and would close this.</li>
+        <li>Total comment volume. Closeable by sampling ~500 article <code>/comments</code> pages for the "N件" count and extrapolating per game.</li>
+        <li>Total images. The ID ceiling is ≥13.07M, but the share belonging to game8.jp (vs <code>game8.co</code> or deleted) is unknown; closeable by sampling random image IDs on <code>img.game8.jp</code> at a polite rate.</li>
+        <li>Overlap with <code>game8.co</code>: whether English articles are translations keyed to <code>.jp</code> IDs. Closeable by censusing its sitemap and matching games and titles.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
