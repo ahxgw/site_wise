@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>turkiye.gov.tr Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-10-13</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>turkiye.gov.tr</h1>
+      <p class="lede">Türkiye's e-Government Gateway: 9.2K services from 1,113 institutions, mostly login-gated stubs, behind a sitemap that is 31% dead and lists a third of the catalog.</p>
+      <div class="tag-row">
+        <span class="tag">Government portal</span>
+        <span class="tag">Turkish</span>
+        <span class="tag">Service catalog</span>
+        <span class="tag">Login-gated</span>
+        <span class="tag">Open robots.txt</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>e-Devlet Kapısı (the "e-Government Gateway") is the single sign-on front door to Turkish public services. Ministries, universities, municipalities, water utilities and some regulated private firms (electricity and gas distributors, telecoms, insurers) plug their services into it. A citizen logs in once with an e-Devlet password, mobile signature, e-signature, ID-card chip or internet banking, and then queries their own records: social-security service history, traffic fines, tax debt, court files, vehicles. It has no business model: it is state infrastructure, run by the Presidency's Cyber Security Directorate and built and operated by the state-owned Türksat A.Ş. For an index builder, nearly all of the value is personal records that must never be indexed. What can be indexed is a <strong>catalog of ~9K service descriptors</strong> (one page per service: what it does, which agency, how to authenticate), a directory of ~1.1K institutions, a small set of anonymous public-record query forms, and an unusually good official statistics series. The interesting problem is entity resolution — "which agency, which service, which URL" — and that is harder here than it looks, because the sitemap is both stale and incomplete.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.turkiye.gov.tr</code> (apex serves the same page). Static assets on <code>cdn.e-devlet.gov.tr</code>; login on <code>giris.turkiye.gov.tr</code>.</dd></div>
+        <div><dt>Canonical URL</dt><dd>Service: <code>/{agency-prefix}-{service-slug}</code>, sometimes with a numeric suffix (<code>/disisleri-bakanligi-cki-7890</code>). Institution: <code>/{institution-slug}</code>. Category: <code>/{topic}-hizmetleri</code>. Search: <code>/arama?aranan={q}</code>. No <code>rel=canonical</code> anywhere.</dd></div>
+        <div><dt>Category</dt><dd>National e-government portal / public-service catalog (Turkish)</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>turkiye.gov.tr</code>; satellites <code>giris.turkiye.gov.tr</code> (auth), <code>cdn.e-devlet.gov.tr</code> (assets, statistics downloads)</dd></div>
+        <div><dt>Owner</dt><dd>Republic of Türkiye: managed by the Presidency Cyber Security Directorate (Cumhurbaşkanlığı Siber Güvenlik Başkanlığı), developed and operated by Türksat A.Ş. (site footer and "Hakkımızda" page, Probe Log)</dd></div>
+        <div><dt>Launched</dt><dd>2008, with 22 services and 9 institutions in its first year (<a href="https://www.turkiye.gov.tr/official-statistics-program?y=2025">official statistics tables</a>)</dd></div>
+        <div><dt>Business model</dt><dd>None (public service, no ads). The homepage carousel does promote a TSK Foundation donation campaign.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Platform figures come from the gateway's own Official Statistics Programme page and its downloadable table workbook (<code>e_devlet_kapisi_istatistik_2025_tablo.xlsx</code>, 11 sheets, source line "Türksat e-Devlet Kapısı veritabanı", file <code>Last-Modified</code> 2026-10-09). Corpus figures come from the Site Wise probes.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Registered users</dt>
+          <dd><strong>68.2M</strong> (+2.2% on 2024's 66.8M), of which 33.2M female and 35.0M male. As of year-end 2025. <a href="https://www.turkiye.gov.tr/official-statistics-program?y=2025">e-Devlet statistics 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Logins</dt>
+          <dd><strong>4.04B</strong> in 2025, down from 4.23B in 2024 and a 4.40B peak in 2023. 97.9% used the e-Devlet password; e-signature logins rose to 34.6M (calculated by Site Wise from the method sheet). As of 2025. <a href="https://www.turkiye.gov.tr/official-statistics-program?y=2025">e-Devlet statistics 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Services</dt>
+          <dd><strong>9,170</strong> in 2025 (8,309 in 2024; 22 in 2008). By institution type, web services number 7,312 (municipalities 4,125, central government 1,579, private 820, universities 548, water utilities 240) and mobile-app services 5,905 (both summed by Site Wise from the type sheets). As of 2025. <a href="https://www.turkiye.gov.tr/official-statistics-program?y=2025">e-Devlet statistics 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Institutions</dt>
+          <dd><strong>1,113</strong>: 543 municipalities, 206 universities, 205 central public institutions, 129 private institutions and 30 water/sewerage administrations. As of 2025. <a href="https://www.turkiye.gov.tr/official-statistics-program?y=2025">e-Devlet statistics 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Usage concentration</dt>
+          <dd>The top 10 services account for 50% of all service use. Within the top 10, SGK's service-history statement (<em>SGK Tescil ve Hizmet Dökümü</em>) alone is 23.0%, so about 11.5% of all use (calculated by Site Wise), followed by traffic-fine lookup (11.1%) and tax-debt query (10.9%). All ten require login. As of 2025. <a href="https://www.turkiye.gov.tr/official-statistics-program?y=2025">e-Devlet statistics 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd><strong>5,297</strong> URLs in one flat <code>urlset</code> (792KB): 5,069 slug pages, 97 on-site search result URLs, 24 A–Z institution-index pages and assorted contact/info pages. 2,262 URLs (43%) are municipal. No <code>lastmod</code>; every URL says <code>changefreq daily</code>. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap staleness</dt>
+          <dd>Of 300 random sitemap URLs, <strong>92 (31%)</strong> 302 to <code>/404.html</code>. Municipal URLs are dead at 61% (74 of 122), others at 10% (18 of 178). 5 URLs carry a stray leading dot (<code>/.konak-belediyesi-…</code>) and get a WAF <code>406</code>. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap coverage</dt>
+          <dd>The 14 topic category pages link <strong>3,364</strong> distinct service slugs; only <strong>1,083 (32%)</strong> are in the sitemap. 6 of 6 sampled unsitemapped slugs returned 200. Sitemap slugs plus category links give a union of 7,350 slugs, close to the official 7,312 web services (calculated by Site Wise). Category crawl <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Page anatomy</dt>
+          <dd>Of the 205 live pages in the census, 160 (78%) are login-gated service stubs, 27 institution pages, 10 anonymous query forms and 8 other content (category, info, weather). Median page 16.5KB. In a 24-page sample: 0 JSON-LD, 0 <code>rel=canonical</code>, 0 <code>hreflang</code>, 4 Open Graph tags each, and 8 of 19 live pages carry the site-wide default meta description instead of their own. Sitemap census and structured-data probe <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-13 via an egress proxy outside Türkiye, desktop Chrome UA unless noted. Requests paced at ~1 req/s; no blocks seen.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-10-13</td><td><code>curl -sI /</code></td><td>200 for both <code>www</code> and the apex. <code>cache-control: no-store</code>, <code>expires: Thu, 19 Nov 1981 08:52:00 GMT</code>, cookies <code>TURKIYESESSIONID</code>, <code>language=tr_TR.UTF-8</code>, <code>theme=izmir</code> and <code>TS015d3f68</code>. A permissive CSP (<code>default-src 'self' … https:</code>, <code>unsafe-eval</code>). Time to first byte ~1.0s on 3 tries.</td></tr>
+            <tr><td>2026-10-13</td><td><code>curl /robots.txt</code></td><td>70 bytes: <code>User-agent: *</code> / <code>Allow: /</code> / one <code>Sitemap:</code> line. No AI-crawler groups, no disallows.</td></tr>
+            <tr><td>2026-10-13</td><td>UA matrix on <code>/kusadasi-belediyesi-arsa-rayic</code></td><td>Chrome, Googlebot, GPTBot, ClaudeBot, <code>curl</code> and an empty UA all got 200 with bodies of 19,438–19,440 bytes (differences are per-request tokens). No UA-based gating.</td></tr>
+            <tr><td>2026-10-13</td><td>Static host</td><td><code>cdn.e-devlet.gov.tr</code> CNAMEs to <code>img-edevlet.mncdn.com</code>; response headers <code>server: MNCDN-102143</code>, <code>x-cache-status: Edge : MISS, Midcache : HIT</code>.</td></tr>
+            <tr><td>2026-10-13</td><td>Sitemap census (<code>/sitemap.xml</code>)</td><td>One flat <code>urlset</code>, 5,297 unique URLs, all on <code>www</code>. Priority tiers: 1.00 ×1, 0.85 ×58, 0.69 ×1,043, 0.56 ×4,155, 0.46 ×40. 1,077 slugs end in a numeric suffix and often have Turkish letters dropped rather than transliterated (<code>…atksu-artma-tesisi…-2229</code> for "atıksu arıtma"). Results in Verified Metrics.</td></tr>
+            <tr><td>2026-10-13</td><td>Random sitemap census (300 URLs, seed 42)</td><td>205 × 200, 92 × 302 → <code>/404.html</code>, 2 × 302 → contact page, 1 × 406 (dot-prefixed path). A gated stub is ~16KB and says "Henüz kimliğinizi doğrulamadınız…", then lists the 5 login methods; all 160 gated pages accept all 5. The first pass stalled on one hung request and was resumed with a 20s timeout.</td></tr>
+            <tr><td>2026-10-13</td><td>Category crawl (14 <code>/{topic}-hizmetleri</code> pages)</td><td>Pages are 33KB–1.0MB; <code>kisisel-bilgiler-hizmetleri</code> alone links 1,677 slugs. Union 3,364 distinct service slugs, 1,083 in the sitemap. Unsitemapped samples (<code>kgm-ebys</code>, <code>emniyet-ozel-guvenlik-izni-basvurusu</code>, …) all 200.</td></tr>
+            <tr><td>2026-10-13</td><td>Institution pages (20 random)</td><td>Non-municipal pages list services as relative <code>href</code>s (71 links on 6 pages, 18 in the sitemap). Municipal pages render their service list client-side: the HTML has only category counters ("Arsa ve İmar 1 Hizmet") and no service links. Both <code>/milli-savunma-bakanligi</code> and <code>/mill-savunma-bakanligi</code> return 200 with the same content; only the second is in the sitemap. <code>?lang=en_US</code> 302s back to the Turkish page for an anonymous client.</td></tr>
+            <tr><td>2026-10-13</td><td>Feeds and discovery files</td><td><code>/rss</code> 200, 3 items (newly added services) with a malformed <code>pubDate</code> (<code>am, 13 b 2026 09:39:21 4Oct+03</code>). OpenSearch description on the CDN, template <code>/arama?aranan={searchTerms}</code>. <code>/llms.txt</code>, <code>/humans.txt</code>, <code>/.well-known/security.txt</code> return a soft 404 (200, 7.4KB "404 Sayfa Bulunamadı"), unlike removed services, which 302 to <code>/404.html</code>.</td></tr>
+            <tr><td>2026-10-13</td><td>On-site search (<code>/arama?aranan=adli sicil</code>)</td><td>200 in 1.1s, server-rendered: facet counts (e-Hizmetler 5, Kurum Portalları 1, …) and 7 results, each as "Institution/Service" plus URL. Three of the 5 e-Hizmet hits are not in the sitemap. One result points off-site (<code>adlisicil.adalet.gov.tr</code>).</td></tr>
+            <tr><td>2026-10-13</td><td>Statistics page + workbook</td><td><code>/official-statistics-program?y=2025</code> and <code>?y=2024</code> 200 (English text). The 121.8KB workbook on the CDN holds 11 sheets: a 2008–2025 time series, institutions and services by type (web and mobile), users by age, gender and registration method, logins by method, and the top 10 services. The 2025 page's "Metaveri" link points to the <em>2024</em> metadata PDF.</td></tr>
+            <tr><td>2026-10-13</td><td>Policy page (<code>/bilgilendirme?konu=gizlilik</code>)</td><td>The "Telif Hakları" clause claims copyright in the gateway's design and in "information and materials that provide the Gateway a competitive advantage", except for third-party materials. No open-data or reuse licence.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">All public paths are anonymous HTML; there is no public API. "Personal records" are listed so that the boundary is explicit.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Service descriptors</td>
+              <td>9,170 services (7,312 web); ~7.35K slugs discoverable.</td>
+              <td>Category pages ∪ sitemap → HTML stub: title, agency breadcrumb, meta description, accepted login methods.</td>
+              <td>None; robots allows all.</td>
+              <td>State copyright clause; facts (name, agency, URL) and a snippet with a link.</td>
+              <td>+861 services in 2025 vs 2024; municipal ones churn (Verified Metrics).</td>
+            </tr>
+            <tr>
+              <td>Institution directory</td>
+              <td>1,113 institutions; 434 institution-type slugs in the sitemap; 24 A–Z index pages.</td>
+              <td><code>/kurumlar?kurumHarf={A–Z}</code> → institution page: website, phone, address, service list.</td>
+              <td>None. Municipal service lists need JS rendering.</td>
+              <td>Public contact data; display with a link.</td>
+              <td>Grows ~3–6% a year.</td>
+            </tr>
+            <tr>
+              <td>Anonymous query forms</td>
+              <td>A minority of live pages (Verified Metrics): land values, pharmacy rotas, weather, accreditation, livestock ear tags, document verification.</td>
+              <td>Form HTML exposes the option lists (neighbourhoods, years); results need a POST with a session token.</td>
+              <td>None, but per-query and form-driven.</td>
+              <td>Agency data shown by the gateway; query at request time, do not bulk-harvest.</td>
+              <td>Agency-dependent.</td>
+            </tr>
+            <tr>
+              <td>Personal records</td>
+              <td>Nearly all usage: the top 10 services, all gated.</td>
+              <td>No legitimate third-party path.</td>
+              <td>Citizen login (5 methods).</td>
+              <td>Personal data under KVKK; never index.</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Statistics (structured)</td>
+              <td>1 yearly workbook, 11 sheets, 2008–2025.</td>
+              <td>Statistics page → <code>.xlsx</code> on the CDN.</td>
+              <td>None.</td>
+              <td>Official statistics; cite with source.</td>
+              <td>Yearly; page per <code>?y=</code>.</td>
+            </tr>
+            <tr>
+              <td>Announcements</td>
+              <td>RSS of newly added services (3 items on probe day); homepage carousel.</td>
+              <td><code>/rss</code>, plus the <code>/yeni-eklenen-hizmetler</code> list sorted by date added.</td>
+              <td>None.</td>
+              <td>Snippet and link.</td>
+              <td>Daily; <code>pubDate</code> unparseable.</td>
+            </tr>
+            <tr>
+              <td>Images / video</td>
+              <td>Logos, theme graphics, one OG share image; video only as a link to a YouTube channel.</td>
+              <td>Not worth indexing.</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where e-Devlet differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Open door, empty room</h4>
+          <p>Unlike most platforms profiled here, nothing is withheld from crawlers: robots.txt allows everything, every UA gets the same bytes, and pacing at 1 req/s drew no blocks. The wall is the login, not the crawl policy. The anonymous surface is a catalog <em>about</em> the services, and the top 10 services, which carry half of all usage, are all gated. An index answers "where do I check my traffic fines?", never "what are my fines?".</p>
+        </div>
+        <div>
+          <h4>Sitemap is not the corpus</h4>
+          <p>The sitemap is a poor seed in both directions: a large share of its URLs are dead municipal services, and it lists only a third of the services the category pages link (Verified Metrics). Discovery should come from the 14 category pages and the A–Z institution index, with the sitemap used only as a cross-check. The sitemap gives no <code>lastmod</code>, so change detection has to come from re-crawling the category pages.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>No canonical tags and no numeric service ID in the URL (suffixes like <code>-7890</code> appear on only some slugs). Duplicate institution slugs exist (<code>milli-</code> vs <code>mill-savunma-bakanligi</code>). <span class="evidence inferred">inferred</span> The numeric suffixes are IDs from an upstream service inventory, attached when a slug was generated automatically. <em>Basis:</em> the suffixed slugs are the ones with dropped Turkish letters (<code>bavurusu</code> for "başvurusu"), a pattern consistent with machine slugging, while hand-made slugs transliterate correctly. Dedup key: (agency, normalized service title), not URL.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The service descriptor: title, agency, one-paragraph description, login methods, and whether it is single-step ("tek aşamalı") or multi-step. Gated stubs often have <em>only</em> the title and agency: their meta description falls back to the site-wide default. The search result line "Agency/Service" is the cleanest label pair the site emits.</p>
+        </div>
+        <div>
+          <h4>Duplicated services across municipalities</h4>
+          <p>Municipal services are templated: the same "Arsa Rayiç Değeri Sorgulama" (land value query) or "Borç Sorgulama" (debt query) exists once per municipality, with the municipality name prefixed to the slug and often to the title. 43% of sitemap URLs are municipal. A retrieval system should collapse them into one service type × N municipalities and route by the user's location; otherwise one query returns hundreds of near-duplicates.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Queries are task names in Turkish ("adli sicil belgesi", "vergi borcu", "ne zaman emekli olabilirim"), often colloquial and often with the agency left implicit. On-site search answers them well and is server-rendered with facets, so it can serve as a relevance oracle: compare its ranked results with an external index for the same query.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> service descriptor (agency, title, description, auth methods, gated/open, single/multi-step, URL); institution record (name, type, website, phone, address, service list).</li>
+        <li><strong>Primary keys &amp; joins:</strong> slug (dedup by agency + normalized title); institution slug ↔ official website domain (from the institution page) to join e-Devlet services with the agency's own site; municipality ↔ province from the breadcrumb ("Aydın Belediyeleri").</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>14 category pages (~3.9MB total) → 3,364 service slugs, then fetch each stub (~16KB). A full pass is ~7.4K pages ≈ 120MB, about 2 hours at 1 req/s (calculated by Site Wise).</li>
+            <li>A–Z institution index → 1.1K institution pages; JS-render the municipal ones to recover their service lists.</li>
+            <li>Sitemap as a cross-check only; drop URLs that 302 to <code>/404.html</code>.</li>
+            <li>Statistics workbook once a year.</li>
+          </ol></li>
+        <li><strong>Recrawl cadence:</strong> category pages and <code>/yeni-eklenen-hizmetler</code> daily (cheap, catches additions); stubs monthly; institution pages quarterly; a full re-verification of live/dead status quarterly, given municipal churn.</li>
+        <li><strong>Derivatives to generate:</strong> service-type clusters across municipalities; a Turkish task-phrase → service mapping (from search queries and titles); an English gloss for each service type, since the site offers no anonymous English version.</li>
+        <li><strong>Demo to build:</strong> "Which service, which agency?": a Turkish/English task finder over the deduplicated catalog, returning the service type, whether it needs login, which login methods it accepts, and the user's municipality's own URL. Score it against on-site <code>/arama</code> results for the same queries.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Dead links in the seed:</strong> following the sitemap alone would publish a large share of dead links, mostly municipal. Verify status before display, and treat <code>302 → /404.html</code> and the soft-404 template as "gone".</li>
+        <li><strong>Personal-data boundary:</strong> anonymous forms include document verification (barcode → document) and per-person lookups. Bulk-querying them would harvest personal data under KVKK. Index the form's existence, never its results.</li>
+        <li><strong>Phishing adjacency:</strong> a public index of e-Devlet service URLs is a high-value target for look-alike domains. Show only <code>turkiye.gov.tr</code> URLs and verify the host before display.</li>
+        <li><strong>Silent re-slugging:</strong> with no canonicals and no IDs in most URLs, a renamed service looks like one deletion plus one addition. Match on agency + title to carry history across.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.turkiye.gov.tr/official-statistics-program?y=2025">e-Devlet Kapısı Official Statistics, 2025</a> and its workbook <a href="https://cdn.e-devlet.gov.tr/downloads/resmi-istatistik/e_devlet_kapisi_istatistik_2025_tablo.xlsx">e_devlet_kapisi_istatistik_2025_tablo.xlsx</a> (Türksat database): users, logins, services, institutions, top 10.</li>
+        <li><a href="https://www.turkiye.gov.tr/bilgilendirme?konu=siteHakkinda">e-Devlet "Hakkımızda"</a>: 2008 launch, operator roles.</li>
+        <li><a href="https://www.turkiye.gov.tr/bilgilendirme?konu=gizlilik">Gizlilik, Kullanım ve Telif Hakları</a>: copyright clause.</li>
+        <li>Local probes on 2026-10-13: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The numeric slug suffixes are upstream inventory IDs on machine-generated slugs. <em>Basis:</em> they co-occur with dropped Turkish letters, while unsuffixed slugs transliterate correctly.</li>
+        <li><span class="evidence inferred">inferred</span> The origin is PHP behind an F5 BIG-IP application firewall. <em>Basis:</em> <code>expires: Thu, 19 Nov 1981 08:52:00 GMT</code> is PHP's session no-cache default; the <code>TS</code>+hex cookie is F5 ASM's naming, and the dot-prefixed path drew a <code>406</code> rather than the site's own 302/soft-404.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>The exact count of anonymous (ungated) services. Closeable by fetching all ~7.35K discovered stubs and counting the absence of the "Henüz kimliğinizi doğrulamadınız" gate.</li>
+        <li>Why the slug union (7,350) and the official web-service count (7,312) are close but not identical: dead slugs vs services listed only on municipal (JS-rendered) pages. Closeable by JS-rendering the 543 municipal pages and reconciling.</li>
+        <li>Whether the English interface (<code>?lang=en_US</code>) serves translated descriptors once the cookie is set. Closeable by setting <code>language=en_US</code> and re-fetching a sample.</li>
+        <li>Monthly traffic. The gateway publishes logins (4.04B/yr), not visits or pageviews; a third-party panel such as Similarweb would be needed, named as such.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
