@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>amazon.de Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-10-15</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>amazon.de</h1>
+      <p class="lede">amazon.de serves product pages, review text and video manifests to plain HTTP, then captcha-walls the client within fourteen requests and prices in the visitor's currency.</p>
+      <div class="tag-row">
+        <span class="tag">Ecommerce</span>
+        <span class="tag">Marketplace</span>
+        <span class="tag">Germany / DACH</span>
+        <span class="tag">Multilingual</span>
+        <span class="tag">ASIN Graph</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>amazon.de is Amazon's German storefront and its largest outside the US. It went live 28 years ago today, on 15 October 1998, when Amazon renamed telebuch.de, the shop of the Regensburg-based ABC Bücherdienst it had bought that April. It also serves Austria (<code>amazon.at</code> 302s here), and its language switcher offers Czech and Danish shoppers their own interfaces. Unlike India, Amazon may hold first-party inventory here, so retail and third-party offers compete for one Buy Box. That Buy Box is now under a German competition order (Risks). For an index builder, amazon.de sits between the two Amazon postures profiled so far. Like amazon.in it serves full detail pages to an unauthenticated client, but it closes that surface at the IP level after a short burst. Its pages carry more than amazon.in's: full review bodies, HLS product-video manifests and "bought in the last month" counters all ship in the raw HTML (Probe Log). All three Amazon reports agree on one thing: there is still no sitemap and no JSON-LD.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>amazon.de</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.amazon.de/">https://www.amazon.de/</a></dd></div>
+        <div><dt>Category</dt><dd>Ecommerce marketplace, retail ads platform</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>amazon.at</code> (redirect), <code>m.media-amazon.com</code> (shared media CDN), <code>sellercentral.amazon.de</code>, <code>partnernet.amazon.de</code> (Associates)</dd></div>
+        <div><dt>Owner</dt><dd>Amazon.com, Inc. (NASDAQ: AMZN); EU retail entity Amazon EU S.à r.l., Luxembourg</dd></div>
+        <div><dt>Founded / launched</dt><dd>Launched 1998-10-15 from telebuch.de; first item shipped was the textbook <em>Mastering Simulink 2</em> (<a href="https://www.aboutamazon.de/wer-wir-sind/25-jahre-deutschland">About Amazon DE</a>)</dd></div>
+        <div><dt>Business model</dt><dd>First-party retail + marketplace commissions + FBA fulfilment + advertising + Prime</dd></div>
+        <div><dt>Scale anchor</dt><dd>$45.9B of Germany-attributed net sales in FY2025 (<a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm">Amazon 10-K</a>)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. The live ASIN count, seller count and Buy Box share are in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Germany net sales</dt>
+          <dd>$45.9B in FY2025, up from $40.9B in FY2024 and $37.6B in FY2023: 6.4% of Amazon's $716.9B total and +12.3% YoY (both ratios calculated by Site Wise). Attribution is by country-focused store, with AWS counted by selling entity, so the figure includes some German AWS revenue. <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm">10-K filed 2026-02-06</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>DSA monthly active recipients, Germany</dt>
+          <dd>52.8M average for H1 2026 (2026-01-01 to 06-30), which is 27.2% of the Amazon Store's 193.9M EU total. Austria adds 5.2M. Recipients are counted by the user's member state across all Amazon stores, not by host. <a href="https://trustworthyshopping.aboutamazon.com/eu-transparency-report-amazon-jan-jun-2026">EU Store DSA report, file <code>10_AMAR.csv</code></a> <span class="evidence verified">verified</span>; share calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Share of German online retail</dt>
+          <dd>~60% of German online retail sales go through Amazon, and ~60% of goods sold on amazon.de come from independent third-party sellers. These are the competition authority's figures as of 2026-02-05. <a href="https://www.bundeskartellamt.de/SharedDocs/Meldung/EN/Pressemitteilungen/2026/02_05_26_Amazon.html">Bundeskartellamt</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Shopping languages</dt>
+          <dd>7 on the site (de_DE, en_GB, nl_NL, pl_PL, tr_TR, cs_CZ, da_DK), versus 6 valid languages in the Creators API DE locale, which lacks Danish. Only EUR is listed as a valid API currency. As of 2026-10-15, from the <code>/customer-preferences/edit</code> probe and the <a href="https://affiliate-program.amazon.com/creatorsapi/docs/en-us/locale-reference/germany">Creators API DE locale reference</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Crawl-permitted languages</dt>
+          <dd>3 of 7: unprefixed German plus <code>/-/en/</code> and <code>/-/da/</code>. robots.txt line 99 is <code>Disallow: /-/</code> and lines 100–102 re-open only those two. As of 2026-10-15 (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>robots.txt named-agent bans</dt>
+          <dd>99 unique named user agents at <code>Disallow: /</code> (100 groups; ClaudeBot is listed twice) in a 416-line file. The agent list is identical to amazon.com's. As of 2026-10-15 (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Detail-page yield</dt>
+          <dd>Across 3 sampled ASINs: 2.6–3.0MB of HTML each, 231–342 unique CDN image IDs, 13 full review bodies, and 2–4 HLS <code>.m3u8</code> video manifests. As of 2026-10-15 (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Cross-border reviews on DE pages</dt>
+          <dd>12 of 38 review headers (32%) on the 3 sampled pages read "Bewertet in" another country: Italy, France, Belgium, Sweden, South Africa or Egypt. As of 2026-10-15 (Probe Log) <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Search result ceiling</dt>
+          <dd>The query <code>laptop</code> reports "1-16 von mehr als 9.000 Ergebnissen" and the page carries 27 unique <code>data-asin</code> values, sponsored slots included. As of 2026-10-15 (Probe Log) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Creators API catalogue scope (DE)</dt>
+          <dd>43 search indexes, from <code>All</code> through <code>Watches</code>, including the DE-specific <code>ForeignBooks</code> index. As of 2026-10-15. <a href="https://affiliate-program.amazon.com/creatorsapi/docs/en-us/locale-reference/germany">DE locale reference</a> <span class="evidence verified">verified</span>, counted by Site Wise</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-15 (01:10–01:25 UTC) from a US-geolocated client with a desktop Chrome user agent, unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-10-15</td><td><code>dig +short</code> apex, <code>www</code>, <code>NS</code></td><td>The apex returns AWS EU-West addresses (3.253.x). Local DNS sent <code>www</code> through <code>tp.abe2c2f23-frontier.amazon.de</code> to an Akamai <code>edgekey</code> name, yet every HTTP response came via CloudFront. Sandbox DNS is known to be unreliable, so CDN claims here rest on headers. NS records are <code>awsdns-*</code>.</td></tr>
+            <tr><td>2026-10-15</td><td><code>curl -sI https://www.amazon.de/</code></td><td>HTTP/2 200: HEAD is accepted, whereas amazon.in answered 405. HSTS <code>max-age=47474747; includeSubDomains; preload</code>, <code>via: CloudFront</code>, pop SFO53-P8.</td></tr>
+            <tr><td>2026-10-15</td><td><code>curl https://www.amazon.de/</code> (Chrome and Googlebot UAs)</td><td>HTTP 202, zero-byte body, <code>x-amzn-waf-action: challenge</code>, for both user agents. The homepage is WAF-challenged, the same as on amazon.in.</td></tr>
+            <tr><td>2026-10-15</td><td><code>curl https://www.amazon.de/robots.txt</code></td><td>416 lines. The <code>*</code> group does not block <code>/dp/</code>, <code>/s?k=</code> or <code>/gp/bestsellers</code>, but it does block <code>/gp/offer-listing</code>, <code>/gp/customer-images</code>, reviewer leaderboards and <code>/gp/video/search</code>. Line 99 <code>Disallow: /-/</code> is followed by <code>Allow: /-/en/</code>, <code>/-/da/</code> and <code>/-/en$</code>. A second <code>*</code> group (line 236) adds <code>Disallow: /aaut/*</code>. The named-agent list diffs empty against amazon.com's. No Sitemap directive.</td></tr>
+            <tr><td>2026-10-15</td><td><code>curl /gp/bestsellers/</code>, <code>/s?k=laptop</code>, <code>/-/en/</code>, <code>/-/da/</code></td><td>All HTTP 200: bestsellers 650KB with 36 ASINs, search 1.3MB with 27 ASINs, and the English and Danish homepages at 830KB and 558KB, which are genuinely translated (<code>lang="da-dk"</code>, Danish title) and each self-canonical. None carries <code>application/ld+json</code>.</td></tr>
+            <tr><td>2026-10-15</td><td><code>curl /dp/{B008YETL18, B000GPI7Y0, B001BEAWZM}</code></td><td>HTTP 200, 2.6–3.0MB each, server-rendered. Title, rating (4.8 / 4.7 / 4.4) and review count (170K / 13.7K / 65.3K) are present. One page shows "5000+ Mal im letzten Monat gekauft". Each page has 0 OpenGraph tags, 0 <code>hreflang</code>, 0 JSON-LD, and a slugged <code>rel=canonical</code>.</td></tr>
+            <tr><td>2026-10-15</td><td>Review markup on the same 3 pages</td><td>13 <code>data-hook="reviewText"</code> blocks per page with full review bodies, reviewer names, dates and variant attributes. Review headers break down as 26 "Bewertet in Deutschland" and 12 from 6 other countries. <code>/product-reviews/B008YETL18</code> returns HTTP 404 "Seite wurde nicht gefunden".</td></tr>
+            <tr><td>2026-10-15</td><td>Price fields on the same pages</td><td>Hidden inputs read <code>countryCode=US</code> and <code>currencyOfPreference=USD</code>, and prices render as e.g. "31,37 USD". Re-fetching with cookie <code>i18n-prefs=EUR</code> flips the preference to EUR and prices to "18,69 €". The country code stays US, so delivery-dependent fields still reflect a US address.</td></tr>
+            <tr><td>2026-10-15</td><td><code>/-/{en,da,nl,pl,tr,cs,fr}/dp/B008YETL18</code></td><td>All returned HTTP 200 with a 3.8KB "Weiter shoppen" interstitial posting to <code>/errors_page/validateCaptcha</code>. The block started at roughly request 14, about two minutes into the session, and then covered unprefixed <code>/dp/</code> too. It still held at 01:23 UTC after re-tries paced 8–10s apart.</td></tr>
+            <tr><td>2026-10-15</td><td>Captcha and 404 HTML comments</td><td>Both still direct automated access to <code>api-services-support@amazon.com</code> and to the PA-API page at <code>partnernet.amazon.de/gp/advertising/api/…</code>. That API was retired in May 2026 (Risks).</td></tr>
+            <tr><td>2026-10-15</td><td><code>/sitemap.xml</code>, <code>/llms.txt</code>, <code>/gp/rss/bestsellers/books</code></td><td>The first two return HTTP 404 with the 2.3KB Amazon error page. The RSS path also 404s. There is no sitemap, feed or LLM surface.</td></tr>
+            <tr><td>2026-10-15</td><td><code>curl https://amazon.at/</code></td><td>HTTP 302 to <code>https://www.amazon.de/</code>: Austria has no separate store host.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"Creators API" is the <a href="https://affiliate-program.amazon.com/creatorsapi/docs/en-us/paapiv5-deprecation">successor to PA-API 5.0</a>; SP-API is the <a href="https://developer-docs.amazon.com/sp-api/">Selling Partner API</a>. Eligibility and quota terms match the amazon.com and amazon.in profiles and are not repeated here.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Text</td>
+              <td>Titles, bullets and descriptions in German; translated UI and titles in up to 6 other languages. Live ASIN count: open.</td>
+              <td>Crawl of <code>/dp/</code>, <code>/s?k=</code> and <code>/gp/bestsellers</code> in the German, <code>/-/en/</code> and <code>/-/da/</code> trees, at a rate below the captcha trigger. Creators API for six languages (no Danish).</td>
+              <td>None for crawl, but IP-throttled (Probe Log). The API uses the Creators sales gate.</td>
+              <td>Crawling grants no reuse licence. Associates terms bind display.</td>
+              <td>Slow; seller-editable.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>231–342 CDN image IDs per sampled detail page, in the shared <code>m.media-amazon.com</code> namespace.</td>
+              <td>URLs from the crawlable HTML; the API returns sized variants.</td>
+              <td>As for text.</td>
+              <td>Hotlinking only, for Associates.</td>
+              <td>Changes on listing edit.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Product and review videos: 2–4 HLS manifests per sampled page.</td>
+              <td>Manifest URLs are in the detail-page HTML. No API resource. Prime Video catalogue search is disallowed in robots.txt (<code>/gp/video/search</code>).</td>
+              <td>As for text.</td>
+              <td>Open: no documented reuse path for product video.</td>
+              <td>Static per listing.</td>
+            </tr>
+            <tr>
+              <td>Reviews</td>
+              <td>13 full review bodies per detail page; complete review counts reach 170K on one ASIN. About a third of those shown were written in other marketplaces.</td>
+              <td>The top-13 sample on <code>/dp/</code> is the only surface. <code>/product-reviews/</code> 404s, and the API carries no review text.</td>
+              <td>Crawl only.</td>
+              <td>Review bodies are not licensable. Rating and count may be displayed under Associates terms.</td>
+              <td>Append-mostly; the top-13 selection rotates.</td>
+            </tr>
+            <tr>
+              <td>Offers / price</td>
+              <td>Buy Box plus other offers per ASIN; purchase-velocity badges ("5000+ im letzten Monat").</td>
+              <td>Creators API Offers V2 for EUR prices. A crawl needs the <code>i18n-prefs=EUR</code> cookie, or a non-US exit, to see EUR. <code>/gp/offer-listing</code> is robots-disallowed.</td>
+              <td>Creators sales gate; SP-API for sellers' own offers.</td>
+              <td>Displayed prices must stay fresh (Associates terms).</td>
+              <td>Minutes. Buy Box rules change by 2026-11-05 (Risks).</td>
+            </tr>
+            <tr>
+              <td>Structured entities</td>
+              <td>ASINs, browse nodes across 43 search indexes, brands, sellers and variation families.</td>
+              <td>Creators API (SearchItems, GetItems, GetVariations, GetBrowseNodes); SP-API Catalog Items.</td>
+              <td>As above.</td>
+              <td>Associates terms.</td>
+              <td>Browse tree stable.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where amazon.de differs from the <a href="../../docs/methodology.html">default assumptions</a> and from the <a href="../2026-06-10/amazon.com.html">amazon.com</a> and <a href="../2026-08-02/amazon.in.html">amazon.in</a> profiles.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Price is a function of the fetcher</h4>
+          <p>Without a currency cookie, a crawler outside the eurozone indexes converted prices, such as "31,37 USD" on a German page. The conversion uses whatever rate applied at fetch time. Pin <code>i18n-prefs=EUR</code>, store the currency with every price, and treat <code>countryCode</code> as part of the fetch context, because availability and delivery text follow the inferred address, not the marketplace.</p>
+        </div>
+        <div>
+          <h4>Review provenance</h4>
+          <p>The review module mixes in reviews written on other EU and EMEA stores, about a third of the sample. Key each review on its source marketplace as well as the ASIN. Otherwise a pan-EU index will store the same review once per storefront that displays it.</p>
+        </div>
+        <div>
+          <h4>Language trees</h4>
+          <p>The pattern differs from amazon.in: the alternate languages here are interface-plus-title translations for neighbouring markets without their own Amazon store (Denmark, Czechia). Dutch, Polish and Turkish shoppers have their own stores (<code>.nl</code>, <code>.pl</code>, <code>.com.tr</code>), and robots.txt closes those trees on .de. Canonicalise on <code>(DE, ASIN)</code> as on amazon.in, and keep the German page as the source of truth.</p>
+        </div>
+        <div>
+          <h4>Crawl budget is per IP, not per path</h4>
+          <p>Once the captcha trips, it applies to every product path, whatever the user agent, cookie or locale prefix (Probe Log). It persisted beyond ten minutes of slower re-tries. Liveness checks should hit a detail page, since <code>/</code> is always challenged, and must treat a 3.8KB 200 response as a block, not as content.</p>
+        </div>
+        <div>
+          <h4>Signals absent elsewhere</h4>
+          <p>"X+ Mal im letzten Monat gekauft" is a public, bucketed sales-velocity signal in the HTML. It is the closest thing to demand data on any Amazon surface profiled so far, and it is useful for ranking and for recrawl prioritisation.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Expect German compound nouns ("Entkalkungsdosen", "Kaffeevollautomaten") in both queries and titles. Decompounding is mandatory for lexical recall. The canonical slugs show that Amazon itself strips umlauts inconsistently: <code>Entkalkungsvorg%C3%A4nge</code> keeps the ä percent-encoded, while <code>DeLonghi</code> drops the apostrophe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> product = <code>(DE, ASIN)</code>. Reviews are child documents keyed <code>(source marketplace, review ID)</code>. Offers are a fast-refresh sub-record keyed <code>(ASIN, seller, currency)</code>.</li>
+        <li><strong>Join keys:</strong> the ASIN parsed from the path, never the slugged canonical; media ID for images; manifest URL for video. Austria and Danish/Czech shoppers collapse into the same DE records.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) A low-rate distributed crawl of the German <code>/dp/</code> tree, seeded from <code>/gp/bestsellers</code> and the 43 browse indexes, with an EUR cookie and an EU exit. 2) Creators API Offers V2 for authoritative EUR prices. 3) The <code>/-/en/</code> tree for English titles where they exist. Danish, Czech and full review history: no bulk path.</li>
+        <li><strong>Recrawl cadence:</strong> offers daily, and again around 2026-11-05 when the Buy Box rules change. Titles and media weekly. Reviews monthly, since only the rotating top 13 is reachable. Velocity badges weekly, as a recrawl-priority signal.</li>
+        <li><strong>Derivatives:</strong> a DOM attribute extractor (no JSON-LD), a German decompounder, HLS keyframe and ASR extraction for product video, and per-review language ID to tag cross-border reviews.</li>
+        <li><strong>Demo to build:</strong> a "same ASIN, four fetch contexts" diff. Fetch from a US exit without a cookie, a US exit with the EUR cookie, the <code>/-/en/</code> tree, and the <code>/-/da/</code> tree, then show which fields move (currency, availability, title language) and which stay fixed (rating, count, image set).</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Buy Box rules change on a set date.</strong> On 2026-02-05 the Bundeskartellamt banned the price-control mechanisms that pulled high-priced seller offers out of the Buy Box or off the marketplace. It set a nine-month compliance window, ending 2026-11-05, and ordered €59M disgorged (<a href="https://www.bundeskartellamt.de/SharedDocs/Meldung/EN/Pressemitteilungen/2026/02_05_26_Amazon.html">Bundeskartellamt</a>; deadline per <a href="https://www.twobirds.com/en/insights/2026/germany/germany-bundeskartellamt-bans-amazons-marketplace-price-control-mechanisms--eur-59-million-disgorgem">Bird &amp; Bird</a>). Amazon said it would challenge the decision (<a href="https://retail-news.de/amazon-wehrt-sich-kartellamt-preiskontrolle/">retail-news.de</a>). Any Buy Box-winner time series recorded before and after that date measures a policy change, not market behaviour.</li>
+        <li><strong>The API pointer embedded in the site is dead.</strong> The PA-API 5 locale page now redirects to a deprecation notice, and calls return <code>AccessDenied … Please migrate to Creators API</code> (<a href="https://affiliate-program.amazon.com/creatorsapi/docs/en-us/paapiv5-deprecation">notice</a>). The captcha page still advertises the old Partnernet API URL (Probe Log). Integrations that follow Amazon's own in-page pointer will fail.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The crawl surface is open by policy but closed by rate.</strong> <em>Basis:</em> robots.txt permits <code>/dp/</code> and the first ~14 requests returned full pages, but the same client was then captcha-walled on every product path for 10+ minutes (Probe Log). Throughput, not legality, is the binding constraint, which makes a single-IP crawl of a catalogue this size impractical.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The DSA gives regulators data that no indexer can see.</strong> <em>Basis:</em> the H1 2026 transparency ZIP reports recipients per member state plus notice and moderation counts (<code>10_AMAR.csv</code>, <code>8_automated_means.csv</code>), but it has no catalogue or listing-removal count per store. Delisted ASINs therefore surface only as 404s on recrawl.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm">Amazon FY2025 10-K</a>: net sales by country, and the note on how sales are attributed to countries.</li>
+        <li><a href="https://trustworthyshopping.aboutamazon.com/eu-transparency-report-amazon-jan-jun-2026">Amazon EU Store DSA Transparency Report, Jan–Jun 2026</a>: served as a ZIP of harmonised-template CSVs; the recipient figures are in <code>10_AMAR.csv</code>.</li>
+        <li><a href="https://www.bundeskartellamt.de/SharedDocs/Meldung/EN/Pressemitteilungen/2026/02_05_26_Amazon.html">Bundeskartellamt press release, 2026-02-05</a>: price-control ban, €59M disgorgement, ~60% share figures.</li>
+        <li><a href="https://www.twobirds.com/en/insights/2026/germany/germany-bundeskartellamt-bans-amazons-marketplace-price-control-mechanisms--eur-59-million-disgorgem">Bird &amp; Bird</a>: the nine-month compliance window. <a href="https://retail-news.de/amazon-wehrt-sich-kartellamt-preiskontrolle/">retail-news.de</a>: Amazon's stated intent to challenge.</li>
+        <li><a href="https://www.aboutamazon.de/wer-wir-sind/25-jahre-deutschland">About Amazon DE, "25 Jahre"</a>: launch date, ABC Bücherdienst, first product.</li>
+        <li><a href="https://affiliate-program.amazon.com/creatorsapi/docs/en-us/locale-reference/germany">Creators API DE locale reference</a> and <a href="https://affiliate-program.amazon.com/creatorsapi/docs/en-us/paapiv5-deprecation">PA-API 5 deprecation notice</a>.</li>
+        <li>Local probes on 2026-10-15, 01:10–01:25 UTC: <code>dig</code>, and <code>curl</code> against robots.txt, the homepage, the bestsellers, search, locale homepage, product, review, sitemap, llms.txt, RSS and amazon.at paths, plus a robots.txt diff against amazon.com and amazon.in.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The crawl surface is rate-closed rather than policy-closed. <em>Basis:</em> robots.txt permits <code>/dp/</code>, and the captcha onset followed request volume, not path. Identical paths returned 200 with full content before onset and the interstitial after it.</li>
+        <li>The Danish and Czech trees exist to serve shoppers in markets without their own Amazon store. <em>Basis:</em> the language picker offers exactly the languages of the .de neighbours, and robots.txt re-opens Danish (no Amazon store) but not Dutch, Polish or Turkish (each with its own store).</li>
+        <li>No indexer-visible per-store catalogue or removal count exists. <em>Basis:</em> the DSA CSV set covers recipients, notices and moderation by member state, but no file breaks catalogue size or listing removals down by store host.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Live ASIN count on amazon.de. Closeable by summing Creators API <code>SearchItems</code> result counts across the 43 search indexes' browse nodes, or by a paced crawl of bestseller pagination.</li>
+        <li>The captcha's exact trigger and decay: request count, window and cooldown. Closeable by a controlled run from a fresh IP at 1, 0.5 and 0.2 requests per second, recording the first interstitial and the first clean response afterwards.</li>
+        <li>Whether an EU-geolocated client sees different markup or rate limits. Closeable by repeating the Probe Log from a German exit.</li>
+        <li>Whether Amazon appealed to the Federal Court of Justice, and whether the 2026-11-05 compliance date holds. Closeable from the Bundeskartellamt case page or Amazon's Q3 10-Q legal-proceedings note.</li>
+        <li>Buy Box share of first-party retail versus third-party sellers before and after the deadline. Closeable by sampling Buy Box seller IDs on a fixed ASIN panel weekly from October to December 2026.</li>
+        <li>Whether the Creators API returns Czech titles, and whether it exposes review velocity ("im letzten Monat gekauft"). Closeable with one <code>GetItems</code> call using <code>LanguagesOfPreference=cs_CZ</code> against a DE credential.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
