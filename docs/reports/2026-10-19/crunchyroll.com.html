@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>crunchyroll.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-10-19</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>crunchyroll.com</h1>
+      <p class="lede">Every HTML page and sitemap is behind a Cloudflare challenge, but an anonymous web token opens the 2,161-title, 47K-episode catalog API.</p>
+      <div class="tag-row">
+        <span class="tag">Streaming / SVOD</span>
+        <span class="tag">Anime</span>
+        <span class="tag">Sony</span>
+        <span class="tag">Cloudflare challenge</span>
+        <span class="tag">Open catalog API</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Crunchyroll is Sony's anime streaming service. Founded in 2006 in San Francisco, it was bought from AT&amp;T in August 2021 for $1.175B, and Funimation, Wakanim and VRV were folded into it in March 2022. The free ad-supported tier ended on 2025-12-31, so since 2026 every episode needs a paid Fan, Mega Fan or Ultimate Fan plan. Public comments were removed in July 2024. For an index builder, Crunchyroll is a <strong>licensed-video catalog</strong>. The useful objects are structured records: series, season and episode metadata, dub and sub language matrices, maturity descriptors, key art, and star ratings. The video, audio and subtitle files sit behind a paywall and DRM, so they are out of reach. The interesting fact is the access split: the HTML front end challenges every client, while the catalog JSON that the web app needs is served to an anonymous token.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.crunchyroll.com</code>; the apex 301s to <code>www</code>. Cloudflare in front of everything. The API is on <code>beta-api.crunchyroll.com</code>, images on <code>imgsrv.crunchyroll.com</code>, playback on <code>cr-play-service.prd.crunchyrollsvc.com</code>.</dd></div>
+        <div><dt>Canonical URL</dt><dd>Series: <code>/series/{GUID}/{slug}</code>. Episode: <code>/watch/{GUID}/{slug}</code>. Locale prefixes: <code>/de/</code>, <code>/pt-br/</code>, <code>/es-es/</code> and others.</dd></div>
+        <div><dt>Category</dt><dd>Subscription video on demand (anime)</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>/news/</code> (a separate Next.js app), <code>store.crunchyroll.com</code>, <code>expo.crunchyroll.com</code> and <code>/games/</code> are linked but not profiled.</dd></div>
+        <div><dt>Owner</dt><dd>Sony Group, through Sony Pictures Entertainment and Aniplex (<a href="https://en.wikipedia.org/wiki/Crunchyroll">Wikipedia</a>).</dd></div>
+        <div><dt>Founded</dt><dd>2006-05-14, by Kun Gao, James Lin, Brandon Ooi and Vu Nguyen (<a href="https://en.wikipedia.org/wiki/Crunchyroll">Wikipedia</a>).</dd></div>
+        <div><dt>Business model</dt><dd>Paid subscriptions only since 2026-01-01, plus a store, games and events (<a href="https://dailydot.com/crunchyroll-ending-free-ad-supported-streaming-service">Daily Dot</a>).</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from Site Wise probes on 2026-10-19 (Probe Log), from a US-IP anonymous token. The episode sample is 30 random titles from the full browse list (617 episodes).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Paid subscribers</dt>
+          <dd><strong>21M+</strong> as of March 2026, up from 17M in May 2025. The same release claims "more than 50,000 episodes" and "more than 200 countries and territories". Press release 2026-05-08. <a href="https://www.animenewsnetwork.com/press-release/2026-05-08/crunchyroll-reaches-21-million-subscribers/.237189">ANN press release</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Traffic (third-party estimate)</dt>
+          <dd><strong>177.7M visits</strong> over the three months to September 2026, about 59M per month (calculated by Site Wise). Global rank #230, month-on-month change −10.95%. Direct traffic is 66.4%. Countries: US 34.8%, Brazil 9.0%, Germany 4.9%. Engagement: 4.26 pages and 15m13s per visit. Estimator: Similarweb, September 2026. <a href="https://www.similarweb.com/website/crunchyroll.com/">Similarweb</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Catalog size (US)</dt>
+          <dd><code>discover/browse</code> reports a total of <strong>2,161 titles</strong>. Filtering by type splits this into 1,932 series and 229 movie listings, although every returned object is typed <code>series</code>. 2,117 are <code>available</code> and 44 <code>unavailable</code>. API probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Episodes &amp; runtime</dt>
+          <dd>Summing <code>episode_count</code> over all 2,161 titles gives <strong>47.3K canonical episodes</strong> in 3,009 seasons. The median title has 12 episodes; the largest has 1,436. Sample mean runtime is 21.6 minutes, which puts the catalog at about <strong>17K hours</strong> (calculated by Site Wise). This matches the "50,000+ episodes" claim, which presumably counts other regions. API probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Dub versions</dt>
+          <dd>Every dub is a separate episode GUID with its own <code>/watch/</code> URL. The 617 sampled episodes carry 1,343 version GUIDs, or <strong>2.18 per episode</strong>. Scaled up, that is about 103K watch URLs (calculated by Site Wise). At title level, 1,190 of 2,161 are dubbed, and 1,027 have only one audio track. API probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Language matrix</dt>
+          <dd>Audio: ja-JP on 2,063 titles, en-US 1,074, es-419 337, pt-BR 328, de-DE 255, hi-IN 167. Subtitles: en-US 1,986, es-419 1,639, pt-BR 1,633, fr-FR 1,336; median 8 subtitle locales per title. <code>closed_captions_available</code> is false on 617 of 617 sampled episodes. API probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Catalog age</dt>
+          <dd><code>series_launch_year</code> by decade: 2020s 1,069; 2010s 844; 2000s 181; before 2000, 66. So 49% of titles launched in 2020 or later (calculated by Site Wise). <code>last_public</code> falls in 2026 for 316 titles. API probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Paywall coverage</dt>
+          <dd><strong>617 of 617</strong> sampled episodes are <code>is_premium_only: true</code> with <code>availability_status: premium_only</code>. 600 still carry <code>ad_breaks</code> offsets from the retired free tier. API probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Ratings</dt>
+          <dd>Star-rating totals for the 30 sampled titles: median <strong>2.2K</strong>, ranging from 3 to 99K; median average 4.3 of 5. <em>JUJUTSU KAISEN</em> had 836,992 ratings in archived JSON-LD on 2026-09-27 and 846,399 in the API on 2026-10-19: +9.4K in 22 days (calculated by Site Wise). API and Wayback probes <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Text depth</dt>
+          <dd>Title descriptions: median 63 words; <code>extended_description</code> is empty on all 2,161. Episode descriptions: median 31 words, empty on 2 of 617. API probe <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-19, from a US IP with a desktop Chrome UA unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe"><code>dig</code> (1.1.1.1)</td><td data-label="Observation">The apex and <code>www</code> resolve to 104.18.34.202 and 172.64.153.54 (Cloudflare).</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe"><code>curl -I /</code></td><td data-label="Observation">The apex 301s to <code>www</code>. <code>www/</code> returns <strong>403 with <code>cf-mitigated: challenge</code></strong>, a 5.7KB "Just a moment…" page and <code>critical-ch</code> client-hint demands. HSTS is 7 days.</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe"><code>curl /robots.txt</code></td><td data-label="Observation">200, 39 lines, served without a challenge. There is one <code>*</code> group of 35 Disallows (<code>/search</code>, <code>/user</code>, <code>*/watchlist</code>, <code>*/history</code>, <code>/vilos/</code>, <code>/ajax/</code> and others) and <strong>no AI-crawler groups</strong>. <code>Sitemap:</code> lines point to <code>/sitemap.xml</code> and <code>/sitemap</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe">UA matrix: Chrome, Googlebot, Bingbot, GPTBot, curl, facebookexternalhit, Twitterbot</td><td data-label="Observation">All 14 requests to <code>/sitemap.xml</code> and a series page returned 403 <code>challenge</code>. The sitemap that robots.txt advertises is unreachable for every UA, including Googlebot spoofed from a non-Google IP.</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe">Path survey</td><td data-label="Observation">Not challenged: <code>/news/*</code> (200, a 3.5KB S3/CloudFront app shell that is the same for every path, including <code>/news/sitemap.xml</code>) and the 404 page (66KB, which carries <code>cxApiParams</code> with <code>anonClientId: "cr_web"</code>). Challenged: <code>/build/_next/static/*.js</code> chunks, <code>/content/v2/*</code> and <code>/auth/v1/token</code> on <code>www</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe">Anonymous token on <code>beta-api</code></td><td data-label="Observation"><code>POST /auth/v1/token</code> with client <code>cr_web</code> and <code>grant_type=client_id</code> returns a 1-hour JWT: <code>status: ANONYMOUS</code>, <code>country: US</code>, <code>maturity: M2</code>, scopes <code>account content mp offline_access</code>. No challenge on this host.</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe">Browse census, 23 pages at ~1 req/s</td><td data-label="Observation"><code>/content/v2/discover/browse?n=100&amp;sort_by=alphabetical</code> returned 2,161 distinct titles, equal to <code>total</code>. Each carries <code>series_metadata</code>: episode and season counts, audio and subtitle locales, maturity and content descriptors, <code>tenant_categories</code>, launch year, plus 13 localized key-art roles. <code>seasonal_tags</code> lists 72 seasons; fall-2026 has 51 titles. The <code>locale=ja-JP</code> total is also 2,161.</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe">Episode sample: 30 titles → seasons → episodes</td><td data-label="Observation">617 episodes, all in the US region and premium-only. Each record holds GUID, <code>identifier</code> (<code>{series}|{season}|E{n}</code>), air date, <code>duration_ms</code>, <code>ad_breaks</code>, <code>versions[]</code> (audio, GUID, <code>media_guid</code>), subtitle locales, maturity and an 8-size thumbnail set up to 1920×1080. Counts are in Verified Metrics. Two dub seasons are titled "(undefined Dub)".</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe">Playback &amp; reviews</td><td data-label="Observation">The play service, on both <code>cr-play-service</code> and <code>www/playback/v2</code>, returns 403 <code>"the current subscription does not have access to this content"</code>. <code>content-reviews/v2/rating/series/{id}</code> returns a 200 star histogram. The review list endpoint returns <code>{"items":[],"total":0}</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe">Image server</td><td data-label="Observation"><code>imgsrv.crunchyroll.com/cdn-cgi/image/width=480,format=auto/…/keyart/T00002169-base_asset_2x3-en-US</code> returned a 64KB JPEG with <code>max-age=86400</code>, resized by Cloudflare (<code>cf-resized</code>). Key art is keyed <code>T{8 digits}-{role}-{locale|ZXX}</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe">Wayback CDX + <code>id_</code>, sitemap</td><td data-label="Observation">Latest index capture: 2026-05-01, 172 children. They break down as 101 episode files (paged, at most 1,000 URLs each), 27 series files (A–Z and #), 40 news files across 8 locales, plus <code>videos.xml</code> (312 genre listing URLs), <code>simulcasts.xml</code> (70 seasons), <code>static_routes</code> and <code>extras</code>. No <code>lastmod</code>, <code>changefreq: daily</code>, 9 hreflang alternates per URL. 19 captured series files hold 1,424 URLs; 4 captures are empty.</td></tr>
+            <tr><td data-label="Date">2026-10-19</td><td data-label="Probe">Wayback <code>id_</code>, series page</td><td data-label="Observation">A 2026-09-27 capture of <code>/series/GRDV0019R/jujutsu-kaisen</code> (391KB, gzip) is fully server-rendered. It has JSON-LD <code>TVSeries</code> with <code>aggregateRating</code> and <code>WatchAction</code>, 5 <code>BreadcrumbList</code> blocks (one per genre), a canonical, OG <code>video.tv_show</code>, 110 <code>/watch/</code> links, and a boilerplate meta description. Wayback went "Temporarily Offline" twice during the probe.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Title records</td>
+              <td data-label="Objects &amp; est. count">2,161 titles (US).</td>
+              <td data-label="Best legitimate path"><code>beta-api</code> <code>discover/browse</code>, 23 calls of 100.</td>
+              <td data-label="Auth &amp; quota">Anonymous <code>cr_web</code> token (1 hour). The HTML equivalent is challenged.</td>
+              <td data-label="License / display">Metadata is factual. Synopses are Crunchyroll or licensor copy: snippet and link.</td>
+              <td data-label="Freshness">Seasonal: 51 titles in fall 2026. Diff <code>last_public</code>.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Episode records</td>
+              <td data-label="Objects &amp; est. count">47.3K canonical episodes; about 103K version GUIDs.</td>
+              <td data-label="Best legitimate path"><code>cms/series/{id}/seasons</code> → <code>cms/seasons/{id}/episodes</code>, or batched <code>cms/objects/{ids}</code>.</td>
+              <td data-label="Auth &amp; quota">Anonymous token. About 5.2K calls for the full tree.</td>
+              <td data-label="License / display">Titles and short synopses; link to <code>/watch/</code>.</td>
+              <td data-label="Freshness">Weekly during simulcast seasons; back catalog static.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Key art &amp; thumbnails</td>
+              <td data-label="Objects &amp; est. count">13 art roles per title; 8 sizes per episode thumbnail, up to 1920×1080.</td>
+              <td data-label="Best legitimate path">URLs in the API records; <code>imgsrv</code> resizes on request.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Licensor art. Thumbnail with link only.</td>
+              <td data-label="Freshness">Localized per locale (<code>-en-US</code> vs <code>-ZXX</code>).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video &amp; audio</td>
+              <td data-label="Objects &amp; est. count">About 17K hours × 2.18 audio versions.</td>
+              <td data-label="Best legitimate path">None for third parties: play service 403s without a subscription; DRM-protected.</td>
+              <td data-label="Auth &amp; quota">Paid subscription.</td>
+              <td data-label="License / display">Licensed content. Link out only.</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Subtitles</td>
+              <td data-label="Objects &amp; est. count">Median 8 locales per title; closed captions on 0 of 617.</td>
+              <td data-label="Best legitimate path">None: delivered with the stream.</td>
+              <td data-label="Auth &amp; quota">Paid subscription.</td>
+              <td data-label="License / display">Licensed translations. Out of scope.</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Ratings</td>
+              <td data-label="Objects &amp; est. count">A 1–5 star histogram per title; median 2.2K ratings.</td>
+              <td data-label="Best legitimate path"><code>content-reviews/v2/rating/series/{id}</code>, or JSON-LD <code>aggregateRating</code> on cached pages.</td>
+              <td data-label="Auth &amp; quota">Anonymous token.</td>
+              <td data-label="License / display">Aggregate facts; display with attribution.</td>
+              <td data-label="Freshness">Hot titles gain thousands of ratings a week.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Reviews &amp; comments</td>
+              <td data-label="Objects &amp; est. count">0 returned; comments removed in July 2024.</td>
+              <td data-label="Best legitimate path">None.</td>
+              <td data-label="Auth &amp; quota">—</td>
+              <td data-label="License / display">—</td>
+              <td data-label="Freshness">—</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">News articles</td>
+              <td data-label="Objects &amp; est. count">8 locales, 9 category feeds (2026-05 sitemap).</td>
+              <td data-label="Best legitimate path">Wayback captures of the news sitemaps. The live <code>/news/</code> HTML is a client-rendered shell.</td>
+              <td data-label="Auth &amp; quota">None, but a JS render is needed.</td>
+              <td data-label="License / display">Crunchyroll editorial copyright: snippet and link.</td>
+              <td data-label="Freshness">Daily (20 en-US items on the "latest" page).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where crunchyroll.com differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The SEO track is closed to everyone, the API track is open to everyone</h4>
+          <p>This inverts the default two-track split. robots.txt blocks no AI crawler and advertises sitemaps, but every UA, including Googlebot, is challenged on those sitemaps and on all pages. Meanwhile the catalog API answers an anonymous token without a challenge. <span class="evidence inferred">inferred</span> Verified search-engine IPs probably bypass the challenge. <em>Basis:</em> the Wayback crawler got a fully server-rendered series page with JSON-LD on 2026-09-27, while every UA from our IP was challenged. For an index, the API is both the more complete and the cheaper path: 23 calls list the whole catalog.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>GUIDs are 9–12 characters (<code>G4PH0WJZN</code>, <code>GMTE00251166</code>, <code>GT00383995</code>); the prefix reflects the source system. Every audio dub is its own episode GUID and <code>/watch/</code> URL, so the sitemap's ~101K episode URLs collapse to 47K episodes. Group by <code>versions[]</code>, keep the <code>original: true</code> GUID as canonical, and attach dubs as language variants. <code>identifier</code> (<code>series|season|E{n}</code>) is a stable composite key. <code>external_id</code> (<code>SRZ.272111</code>, <code>EPI.942493</code>) carries the legacy pre-2022 numeric ID.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Use the API record. The HTML meta description is a single boilerplate paragraph ("Stream X on Crunchyroll and experience…") repeated on every series. The JSON-LD <code>name</code> is prefixed with "Watch". Only the API <code>description</code> and episode <code>title</code> carry real text. Dub seasons are separate season objects whose titles end in "(English Dub)" or, on bad data, "(undefined Dub)". Strip that suffix before matching.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Series GUID → seasons → episodes → <code>versions[].media_guid</code> (the stream key, unusable without a subscription). Art joins by the <code>T{id}</code> key-art ID. <code>linked_guid</code> on series links pre-merger Funimation and Crunchyroll records. Outside joins go by title plus <code>series_launch_year</code> to AniList, MyAnimeList and Wikidata. Crunchyroll exposes no external entity IDs.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>No <code>lastmod</code> anywhere. Each simulcast season adds about 50–60 titles (fall 2026: 51; summer 2026: 59) and weekly episodes. The anonymous token is pinned to the requester's country (US here), and <code>eligible_region</code> is per episode, so availability is regional. Licenses expire: 44 titles are already <code>unavailable</code>, and their records persist as tombstones.</p>
+        </div>
+        <div>
+          <h4>Mature content gating</h4>
+          <p>The anonymous token is maturity <code>M2</code>, yet browse still returns 84 <code>M3</code> titles flagged <code>mature_blocked: true</code>. Metadata is visible; playback would not be. Carry <code>content_descriptors</code> (Violence, Nudity, Sexual Violence and others) into the index for safe-search filtering.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> one canonical episode, carrying its series and season context, title, synopsis, air date, runtime, original audio, dub language set, subtitle locales, maturity descriptors and a 1920×1080 thumbnail. Titles are a second unit with synopsis, genres, launch year, key art and the rating histogram.</li>
+        <li><strong>Primary keys &amp; joins:</strong> series, season and episode GUIDs; the <code>identifier</code> composite; <code>versions[].guid</code> for dub URLs; the key-art <code>T{id}</code>; title plus year for external anime databases.</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>Anonymous <code>beta-api</code>: browse (23 calls), then seasons and episodes (about 5.2K calls), at 1 req/s, which takes about 90 minutes. The coverage ceiling is one country per egress IP.</li>
+            <li>Wayback <code>id_</code> of the sitemaps for URL lists and news articles, which is the only non-API path to news. The latest captures are from May 2026 and some come back empty.</li>
+            <li>Repeat path 1 from egress points in other countries to build the per-region availability matrix.</li>
+          </ol></li>
+        <li><strong>Recrawl cadence:</strong> browse daily during a season (new titles, <code>last_public</code>). Fetch the current season's episodes weekly and ratings weekly for the top 200 titles. Re-sweep the back catalog monthly to catch license expiries.</li>
+        <li><strong>Derivatives to generate:</strong> image embeddings of key art and episode thumbnails, a normalized genre and demographic set from <code>tenant_categories</code>, a dub-availability facet, and entity links to AniList and Wikidata. No ASR or OCR: the source media is not accessible.</li>
+        <li><strong>Demo to build:</strong> "where can I watch X dubbed in Y": answer language and dub availability queries from the version and locale matrix, which no public search engine exposes at episode level.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Undocumented API:</strong> <code>beta-api</code> and the <code>cr_web</code> client are internal web-app infrastructure with no published terms for third-party use. The anonymous grant could be closed or challenged at any time, as already happened on <code>www</code>.</li>
+        <li><strong>Region-scoped truth:</strong> the token carries the requester's country, so one crawl shows one region's catalog. Treating it as global misstates availability.</li>
+        <li><strong>License churn:</strong> titles go <code>unavailable</code> when licenses lapse. An index must keep tombstones and stop linking to them.</li>
+        <li><strong>Sitemap blind spot:</strong> the advertised sitemaps are challenged, and the Wayback copies are months old and partly empty, so a sitemap-first crawler would undercount the catalog.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.animenewsnetwork.com/press-release/2026-05-08/crunchyroll-reaches-21-million-subscribers/.237189">Crunchyroll press release via ANN, 2026-05-08</a>: 21M+ paid subscribers, 50K+ episodes, 200+ countries and territories.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Crunchyroll">Wikipedia, "Crunchyroll"</a> (read 2026-10-19): founding, the 2021 Sony acquisition, the 2022 Funimation consolidation, comment removal on 2024-07-08.</li>
+        <li><a href="https://dailydot.com/crunchyroll-ending-free-ad-supported-streaming-service">Daily Dot, 2025-12-15</a>: the free ad-supported tier ended on 2025-12-31.</li>
+        <li><a href="https://www.similarweb.com/website/crunchyroll.com/">Similarweb, crunchyroll.com (September 2026)</a>: visits, rank, countries, channels, engagement. A third-party estimate.</li>
+        <li><a href="https://web.archive.org/web/20260501004650/https://www.crunchyroll.com/sitemap.xml">Wayback capture of the sitemap index, 2026-05-01</a>, and of the JUJUTSU KAISEN series page, 2026-09-27.</li>
+        <li>Local probes on 2026-10-19: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Verified search-engine crawlers bypass the HTML challenge. <em>Basis:</em> the 2026-09-27 Wayback capture is a full SSR page with JSON-LD, while all 7 UAs from the probe IP were challenged.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How does the catalog differ by country? Closeable by repeating the 23-call browse census from egress IPs in Brazil, Germany, India and Japan, then diffing GUID sets.</li>
+        <li>How many news articles exist, and what is their publication rate? Closeable by fetching all 40 archived news sitemap children from Wayback, or by rendering <code>/news/latest</code> pages in a headless browser.</li>
+        <li>What is the exact count of episode version GUIDs? Closeable by walking all 3,009 seasons through <code>cms/seasons/{id}/episodes</code> and counting <code>versions[]</code>.</li>
+        <li>Are the "50,000+ episodes" counted globally or with dubs? Closeable by the per-country census above plus the version count.</li>
+        <li>What are the terms for third-party use of <code>beta-api</code>? Not published; it would need Crunchyroll's developer or partner terms, if any exist.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
