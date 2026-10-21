@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rule34.xxx Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-10-21</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>rule34.xxx</h1>
+      <p class="lede">An adult fan-art booru with 10.5M+ tagged posts, 3.5M AI-generated, behind an image CAPTCHA, a keyed API and a Wayback exclusion.</p>
+      <div class="tag-row">
+        <span class="tag">Adult</span>
+        <span class="tag">Image booru</span>
+        <span class="tag">Gelbooru-style DAPI</span>
+        <span class="tag">Tag = query language</span>
+        <span class="tag">CAPTCHA wall</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>rule34.xxx is an anonymous, user-uploaded imageboard ("booru") for explicit fan art of characters from games, anime, cartoons and other media. Every post is an image, GIF or video file plus a flat list of community-maintained tags: characters, copyrights, artists, and many descriptive tags. Search is the product, and a tag query is the whole query language. The operator is unnamed. TorrentFreak described the site in 2021 as having about 100M monthly visitors, and as fighting a Google delisting of its homepage that it blamed on bogus complaints. Revenue is display advertising plus a merch store. The API terms ban ads and paywalls on any third party that serves the site's files. For an index builder it is the largest public <strong>tag-labelled adult illustration corpus</strong>: millions of images with dense human tags and live per-tag counts. But every bulk path is now closed or keyed, and the corpus mixes in AI output and real-person content that need filtering.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>rule34.xxx</code> (site, image CAPTCHA), <code>api.rule34.xxx</code> (DAPI + docs), <code>api-cdn.rule34.xxx</code> / <code>wimg.rule34.xxx</code> (images, Cloudflare), <code>ws-cdn-video</code> / <code>api-cdn-mp4.rule34.xxx</code> (video, origin-direct in NL).</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>rule34.xxx/index.php?page=post&amp;s=view&amp;id={post id}</code>; listings at <code>?page=post&amp;s=list&amp;tags={query}</code>.</dd></div>
+        <div><dt>Category</dt><dd>Adult user-generated image and video board</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>rule34.xxx</code>, <code>api.rule34.xxx</code>, <code>*.rule34.xxx</code> media hosts</dd></div>
+        <div><dt>Owner</dt><dd>Undisclosed operator (open)</dd></div>
+        <div><dt>Business model</dt><dd>Ads on the site; a merch store (<code>kanako.store</code>, linked from the API page's nav).</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Tag counts come from the open autocomplete endpoint on 2026-10-21 (Probe Log). A post can carry many tags, so the counts overlap and are lower bounds, not a post total.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Traffic (2021)</dt>
+          <dd>About 100M monthly visitors, as relayed from the operator. As of 2021-09. <a href="https://torrentfreak.com/massive-adult-site-rule-34-prepares-legal-action-to-fight-bogus-homepage-delisting-210911/">TorrentFreak (2021-09-11)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Corpus floor</dt>
+          <dd>The largest tag, <code>female</code>, is on <strong>10.55M</strong> posts, so the live corpus is at least that size. Next are <code>breasts</code> 8.61M and <code>male</code> 6.56M. Autocomplete probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>AI share</dt>
+          <dd><code>ai_generated</code> is on <strong>3.55M</strong> posts and <code>ai_assisted</code> on 239K. That makes AI output at least <strong>~34%</strong> of the corpus floor (3.55M ÷ 10.55M, calculated by Site Wise; the true denominator is larger, so this is an upper estimate of the share). Autocomplete probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Modality tags</dt>
+          <dd><code>animated</code> 752K, <code>video</code> 536K, <code>sound</code> 289K, <code>mp4</code> 116K, <code>animated_gif</code> 56K, <code>webm</code> 15K; <code>3d</code> 1.49M; <code>comic</code> 455K. Text-in-image: <code>english_text</code> 995K, <code>japanese_text</code> 174K. Autocomplete probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Tag debt</dt>
+          <dd><code>tagme</code> (needs tagging) is on 2.39M posts; <code>tagme_(artist)</code> 32K, <code>tagme_(character)</code> 14K. Autocomplete probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Real-person content</dt>
+          <dd><code>real_person</code> 21K, <code>cosplay</code> 65K, <code>photo</code> 12K posts. Autocomplete probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Tag-count velocity</dt>
+          <dd>Over 33.5 minutes (02:28 → 03:01Z, 2026-10-21), <code>female</code> rose by 159 (≈285/hour, or ~6.8K/day if sustained) and <code>ai_generated</code> by 79. That is about <strong>50%</strong> of the net new <code>female</code> count, against 34% in the stock (calculated by Site Wise; counts also move on tag edits, and one half-hour window is not a daily average). Autocomplete probe <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-21 through a US egress (Cloudflare SJC colo), desktop Chrome UA unless noted. No media files were downloaded; probes touched headers, text and JSON only.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-10-21</td><td><code>curl -I /</code> and post page</td><td>403 with <code>cf-mitigated: challenge</code>, a 77KB page titled "Rule34.xxx CAPTCHA" ("Please enter the CAPTCHA to continue"), with an inline PNG image CAPTCHA rather than a JS check. COOP <code>same-origin</code>, COEP <code>require-corp</code>, CORP <code>same-origin</code>. The same response comes back for <code>/sitemap.xml</code>, <code>?page=post&amp;s=view&amp;id=1</code> and <code>?page=dapi</code> on the main host.</td></tr>
+            <tr><td>2026-10-21</td><td>UA matrix on <code>/</code></td><td>Chrome, spoofed Googlebot, spoofed bingbot, GPTBot and <code>curl</code>: all 403 with the same CAPTCHA (77.0–77.3KB). There is no separate page for crawler UAs, unlike sites that serve their own blocked page.</td></tr>
+            <tr><td>2026-10-21</td><td><code>curl /robots.txt</code></td><td>Two lines: <code>User-agent: *</code>, <code>Disallow: /public/remove.php</code>. No AI-crawler group, no <code>Sitemap:</code> line. <code>/sitemap.xml</code> is behind the CAPTCHA; <code>/ads.txt</code> and <code>/llms.txt</code> return 404 without a challenge.</td></tr>
+            <tr><td>2026-10-21</td><td>API landing page <code>api.rule34.xxx/</code></td><td>200, 8.6KB, no challenge. It documents <code>dapi</code> for posts (<code>limit</code> ≤ 1,000, <code>pid</code>, <code>tags</code>, <code>cid</code> change-time in Unix seconds, <code>id</code>, <code>json=1</code>, <code>fields=tag_info</code>), deleted posts (<code>deleted=show&amp;last_id</code>), comments and tags. Keys are per user (<code>user_id</code> + <code>api_key</code>, one per person), and an "unlimited key" is available for large public projects. Terms: no ads or paywalls by anyone using the API or serving the CDN. A banner reads "rule34.xxx is currently being censored on Google, which is why you may have landed on api.rule34.xxx."</td></tr>
+            <tr><td>2026-10-21</td><td>Public API sample: <code>dapi</code> post, tag, comment, deleted</td><td>All four return 200 with <code>Missing authentication. Go to api.rule34.xxx for more information</code> (XML, or a JSON string with <code>json=1</code>). Other web routes on the API host (<code>?page=post&amp;s=list</code>, <code>s=view</code>, wiki, tags) return 200 with an empty body.</td></tr>
+            <tr><td>2026-10-21</td><td>Autocomplete <code>api.rule34.xxx/autocomplete.php?q=</code> (≈60 prefixes, ~1 req/s)</td><td>200 JSON, no key, no challenge, <code>cf-cache-status: DYNAMIC</code>. Returns 10 <code>{label: "tag (count)", value}</code> per prefix, ranked by count, with no tag type. 36 one-character prefixes gave 467 distinct tags. The counts are live and move between calls minutes apart. Junk tags with CR/LF inside them and zero counts are present. No throttling observed.</td></tr>
+            <tr><td>2026-10-21</td><td>Autocomplete timed pair</td><td>Readings at 02:28:01Z, 02:31:18Z and 03:01:29Z for five tags. <code>female</code> 10,546,151 → 10,546,172 → 10,546,310; <code>ai_generated</code> 3,549,348 → 3,549,359 → 3,549,427; <code>tagme</code> +37, <code>video</code> +12, <code>3d</code> +21 over the full window. All counts only rose.</td></tr>
+            <tr><td>2026-10-21</td><td>Media hosts (root and <code>/robots.txt</code>, headers only)</td><td><code>api-cdn.rule34.xxx</code>: Cloudflare, 200 "Welcome to our img server ;)". <code>wimg.rule34.xxx</code>: Cloudflare, root challenged but <code>/robots.txt</code> a plain 404, so the challenge is path-scoped. <code>ws-cdn-video.rule34.xxx</code> resolves (via 1.1.1.1 DoH) to 190.2.152.235 (WorldStream, NL) and <code>api-cdn-mp4.rule34.xxx</code> to 50.7.47.218 (FDCservers, NL); both answer <code>server: nginx</code> with no Cloudflare. The local resolver returned different, unrelated IPs, so the DoH answers were used.</td></tr>
+            <tr><td>2026-10-21</td><td>Wayback CDX and availability API</td><td>CDX for <code>rule34.xxx</code> returns 403; <code>archive.org/wayback/available</code> returns no snapshots; <code>/web/2024/https://rule34.xxx/</code> returns 403. The domain is excluded from the Wayback Machine, so archives offer no fallback.</td></tr>
+            <tr><td>2026-10-21</td><td>Common Crawl index (CC-MAIN-2026-25 → 39)</td><td>CC-MAIN-2026-25 holds the homepage as a 403 (a crawldiagnostics record, 2026-06-15). A CC-MAIN-2026-39 prefix query returned wiki and forum pages captured with <strong>status 200</strong> on 2026-09-06, so CCBot gets past the CAPTCHA at least some of the time. After that, larger prefix queries returned 504s, then empty replies (even for <code>example.com</code>) for over 20 minutes of paced retries. No post-page records were retrieved.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"Keyed" = the per-user <code>user_id</code> + <code>api_key</code> pair, created in account options; limits are unpublished.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Post metadata</td>
+              <td>≥10.55M posts (tag floor).</td>
+              <td>DAPI <code>s=post</code>, 1,000 per page; walk with <code>id:&gt;N</code>-style tag queries or <code>cid</code> for changes.</td>
+              <td>Keyed; one key per person; "unlimited" key on request for public projects.</td>
+              <td>Uploader-submitted third-party art, no license grant. API terms forbid ads and paywalls.</td>
+              <td>Live; <code>cid</code> exposes edits.</td>
+            </tr>
+            <tr>
+              <td>Tags &amp; counts</td>
+              <td>Large tag vocabulary (total open); per-tag counts.</td>
+              <td>Autocomplete (open, top 10 per prefix); DAPI <code>s=tag</code> (keyed) for full lists and types.</td>
+              <td>Autocomplete none observed; DAPI keyed.</td>
+              <td>Facts; low reuse risk.</td>
+              <td>Live counters.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>The majority of posts; 1.49M <code>3d</code>, 995K with English text.</td>
+              <td><code>file_url</code>/<code>sample_url</code>/<code>preview_url</code> from DAPI, on the Cloudflare image hosts.</td>
+              <td>Keyed metadata; file hosts unauthenticated.</td>
+              <td>Third-party artists' works, often copyrighted characters. Link out; no mirroring.</td>
+              <td>Immutable per post.</td>
+            </tr>
+            <tr>
+              <td>Video &amp; audio</td>
+              <td>536K <code>video</code>, 289K <code>sound</code>.</td>
+              <td>DAPI <code>file_url</code> → NL video origins.</td>
+              <td>Keyed metadata.</td>
+              <td>As images.</td>
+              <td>Immutable.</td>
+            </tr>
+            <tr>
+              <td>Text in images</td>
+              <td>455K <code>comic</code>; 995K <code>english_text</code>; 77K <code>translated</code>.</td>
+              <td>OCR on fetched previews (derivative).</td>
+              <td>As images.</td>
+              <td>Derivative of copyrighted works; index only.</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Comments, notes, wiki, forum</td>
+              <td>Counts open.</td>
+              <td>DAPI <code>s=comment</code> (keyed); wiki and forum HTML only behind the CAPTCHA.</td>
+              <td>Keyed / CAPTCHA.</td>
+              <td>User text; personal data. Wiki only for tag definitions.</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Deletions</td>
+              <td>Deleted-post feed.</td>
+              <td>DAPI <code>deleted=show&amp;last_id=N</code>.</td>
+              <td>Keyed.</td>
+              <td>Required for takedown propagation.</td>
+              <td>Incremental by ID.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where rule34.xxx differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>No crawler track at all</h4>
+          <p>The default picture has an SEO sliver for approved crawlers. Here the CAPTCHA page is served to spoofed Googlebot and bingbot alike, robots.txt lists no sitemap, and the API page says Google is not ranking the main host. <span class="evidence inferred">inferred</span> Search engines see little of the post corpus. <em>Basis:</em> the API-page banner about Google, no <code>Sitemap:</code> line, and a sitemap URL that returns the CAPTCHA. The only designed machine path is the keyed DAPI.</p>
+        </div>
+        <div>
+          <h4>The opposite of an AI block</h4>
+          <p>robots.txt names no AI crawler and disallows only the removal form. The terms that matter live on the API page: one key per person, no ads, no paywalls. Policy is enforced by keys and CAPTCHA, not by robots, so robots-based compliance tooling reads this site as fully open when it is not.</p>
+        </div>
+        <div>
+          <h4>Tags are the schema</h4>
+          <p>There is no title, caption or description: the tag set <em>is</em> the document. Tags are underscore-joined, lower-case, and disambiguated with a parenthetical qualifier such as <code>natsuki_(doki_doki_literature_club)</code>. That makes the corpus a ready supervised dataset for image-to-tag retrieval, and the tag vocabulary is shared with other boorus. Normalize away the junk: autocomplete returned tags containing CR/LF and zero-count entries. Variant spellings coexist (<code>absurd_res</code> 1.03M vs <code>absurdres</code> 413K; <code>ai_generated</code> vs <code>ai-generated</code>), so the alias table is part of the index.</p>
+        </div>
+        <div>
+          <h4>AI share is first-order</h4>
+          <p>At least 3.55M posts are tagged <code>ai_generated</code>, plus 239K <code>ai_assisted</code>. For any image index that values human-made art, this is the most important filter on the site. The label is community-applied, so treat untagged recent posts as unknown rather than human-made.</p>
+        </div>
+        <div>
+          <h4>Media on two networks</h4>
+          <p>Images sit on Cloudflare hosts; video comes from two origin servers in the Netherlands with no CDN headers. Video fetch throughput and availability are governed by those origins, not Cloudflare. Plan per-host rate limits.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the post (file + tag set + rating + score + source URL), keyed by numeric post ID. Tag pages are derived listings, not units.</li>
+        <li><strong>Primary keys &amp; joins:</strong> post ID; file MD5 (booru convention, carried in file names) for cross-booru dedup; <code>source</code> URLs → artist pages on other platforms; character/copyright tags → franchise entities (for example, the pixpedia tag layer in the 2026-10-20 report).</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>A single DAPI key, or an "unlimited key" request framed as a public search project. Backfill by ID ranges at 1,000 posts per call: 10.55M posts ≥ 10.6K calls (calculated by Site Wise). Then poll by <code>cid</code> for edits and <code>deleted=show</code> for removals.</li>
+            <li>Open autocomplete for a tag-count census and trend series. It needs no key, but it covers only the top 10 tags per prefix.</li>
+            <li>Common Crawl captures of post pages for a key-free sample (coverage open).</li>
+          </ol></li>
+        <li><strong>Recrawl cadence:</strong> new posts continuously by ID; tag edits by <code>cid</code> daily; deletions daily (required); tag counts weekly.</li>
+        <li><strong>Derivatives to generate:</strong> CLIP-style embeddings from previews; a tag alias/implication table; an AI-vs-human classifier trained on the <code>ai_generated</code> label; OCR for comics.</li>
+        <li><strong>Demo to build:</strong> a key-free tag trend board. Poll autocomplete hourly for a fixed list of franchise and character tags, and chart per-tag growth and the AI-tag share over time.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Keyed and revocable:</strong> the DAPI is the only bulk path, with one key per person and the right to "disable or deny any key". No archive fallback exists, because Wayback excludes the domain.</li>
+        <li><strong>Illegal and non-consensual content risk:</strong> the site has faced CSAM complaints from Russia's regulator and through Cloudflare (2021), and hosts 21K <code>real_person</code> posts. Drawn sexual depictions of minors are illegal in several jurisdictions. Any ingest needs hash matching (NCMEC/IWF-style lists), real-person exclusion, deletion-feed propagation and jurisdiction-aware filtering before anything is stored.</li>
+        <li><strong>Copyright:</strong> uploads are third-party art of copyrighted characters, posted without a license grant. Store metadata and embeddings; display at most a linked thumbnail.</li>
+        <li><strong>Display terms:</strong> the no-ads/no-paywall API rule rules out monetizing any surface that serves rule34 files.</li>
+        <li><strong>Label noise:</strong> 2.39M <code>tagme</code> posts and community-applied AI tags limit tag-based filtering. Pair tags with classifiers.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://torrentfreak.com/massive-adult-site-rule-34-prepares-legal-action-to-fight-bogus-homepage-delisting-210911/">TorrentFreak, "Massive Adult Site 'Rule34' Prepares Legal Action to Fight Bogus Homepage Delisting" (2021-09-11)</a>: traffic, Google delisting, CSAM complaints.</li>
+        <li><a href="https://api.rule34.xxx/">rule34.xxx API documentation page</a> (read 2026-10-21): endpoints, key policy, API terms.</li>
+        <li><a href="https://github.com/mikf/gallery-dl/issues/8202">gallery-dl issue #8202 (opened 2025-09-12)</a>: users already referring to the API key requirement by that date.</li>
+        <li>Local probes on 2026-10-21: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Search engines see little of the post corpus. <em>Basis:</em> the API-page banner about Google, no sitemap in robots.txt, and the CAPTCHA on <code>/sitemap.xml</code> and to crawler UAs.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total post count and the current maximum post ID. Closeable with one keyed DAPI call (<code>limit=1</code>, which returns <code>count</code> and the newest <code>id</code>).</li>
+        <li>Operator identity and jurisdiction. Closeable from the site's terms/contact pages (behind the CAPTCHA) or a WHOIS/legal filing.</li>
+        <li>Current traffic. Closeable with a named third-party panel; the only figure found is the operator's 2021 claim.</li>
+        <li>DAPI rate limits for a standard key and when the key requirement started (users cite it by 2025-09). Closeable by registering a key and running a paced backfill, or from the site's forum announcement.</li>
+        <li>Post-page structured data (OG, JSON-LD, rating and source fields in markup). Closeable from Common Crawl WARC records of post pages.</li>
+        <li>Share of posts with a <code>source</code> URL, and which platforms dominate. Closeable with a keyed sample of ~1,000 posts.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
