@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nintendo.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-10-22</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>nintendo.com</h1>
+      <p class="lede">Nintendo's global storefront and news domain: ~317K sitemap URLs, two open search backends, and a robots.txt that bans AI everywhere except Direct transcripts.</p>
+      <div class="tag-row">
+        <span class="tag">Games</span>
+        <span class="tag">Official storefront</span>
+        <span class="tag">Multi-origin, one domain</span>
+        <span class="tag">Open Algolia + Solr</span>
+        <span class="tag">TDM opt-out</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>nintendo.com is now the single web domain for Nintendo's regional companies. Japan moved from <code>nintendo.co.jp</code>, Europe from country domains such as <code>nintendo.co.uk</code>, and Australia followed; the old domains redirect. Each region still runs its own stack behind one Fastly front door: the Americas store is a Next.js app, Europe an older AEM/AngularJS site, Australia a Next.js app on Vercel, and Japan, Korea and Hong Kong static pages on S3. The site sells digital Switch and Switch 2 software (the eShop catalog), plus hardware and merchandise in the US, and publishes news, Nintendo Direct pages and support articles. For an index builder it is the <strong>authoritative game-catalog entity source</strong>: every eShop title has a stable 14-digit <code>nsuid</code>, ratings, publisher, genres, prices and trailer files. Both regional search backends answer anonymous queries. Against that, robots.txt carries a formal text-and-data-mining opt-out and blocks every named AI crawler.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.nintendo.com</code> (apex 301s to <code>/us/</code>); media on <code>assets.nintendo.com</code> (Cloudinary) and <code>www.nintendo.com/eu/media/</code>; search on Algolia app <code>U3B6GR4UA3</code> and <code>searching.nintendo-europe.com</code>.</dd></div>
+        <div><dt>Canonical URL</dt><dd>Americas: <code>/{locale}/store/products/{urlKey}/</code>, where <code>urlKey</code> is a title slug plus platform suffix, sometimes with the <code>nsuid</code> inside. Europe: <code>/en-gb/Games/{system}/{Title}-{fs_id}.html</code>.</dd></div>
+        <div><dt>Category</dt><dd>Games: publisher storefront, news and support</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>nintendo.com</code>, <code>nintendo.co.jp</code>, <code>nintendo.co.uk</code> and other legacy regional domains (redirect)</dd></div>
+        <div><dt>Owner</dt><dd>Nintendo Co., Ltd. (Kyoto), operated per region by Nintendo of America, Nintendo of Europe SE, Nintendo Australia and others.</dd></div>
+        <div><dt>Business model</dt><dd>First-party store for digital and physical goods; marketing for Nintendo hardware and software.</dd></div>
+        <div><dt>Scale anchor</dt><dd>Net sales ¥2,313.0B in the year to 2026-03-31 (Verified Metrics).</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus counts come from probes on 2026-10-22 (Probe Log); company figures from Nintendo IR.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Company net sales</dt>
+          <dd>¥2,313.0B for the year to 2026-03-31, up 98.6%; 76.9% from outside Japan. <a href="https://www.nintendo.co.jp/ir/pdf/2026/260508e.pdf">Nintendo earnings release (2026-05-08)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Digital sales</dt>
+          <dd>¥407.6B for the same year, up 25.0%. These are downloads, add-on content and Nintendo Switch Online: the transactions this storefront and the console eShop serve. <a href="https://www.nintendo.co.jp/ir/pdf/2026/260508e.pdf">Nintendo earnings release (2026-05-08)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Installed base</dt>
+          <dd>Switch 2: 23.68M units, 58.17M software units. Switch: 156.59M units, 1,561.95M software units. Life-to-date as of 2026-06-30. <a href="https://www.nintendo.co.jp/ir/en/finance/hard_soft/index.html">Nintendo IR, Dedicated Video Game Sales Units</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd><strong>316,740</strong> unique URLs across 49 sitemaps listed in robots.txt (summed per sitemap; calculated by Site Wise). Store product pages across nine Americas locales make up <strong>286,860</strong> of them, or 90.6% (calculated by Site Wise). The largest is <code>/us/store/</code> with 38,783 URLs. Sitemap probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>US catalog</dt>
+          <dd><code>store_all_products_en_us</code> holds <strong>36,949</strong> objects: 34,557 games (including DLC records), 600 merchandise, 267 hardware. By platform: Switch 34,467, Switch 2 1,918, iOS/Android 5. DLC: 10,926 individual, 3,725 ROM bundles, 784 bundles. Algolia facet probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>US catalog shape</dt>
+          <dd>Prices: 14,006 items at $0–4.99 and 1,441 at $40 or more. Ratings: E 15,300, T 10,689, E10 6,842, M 3,355. Top publisher by count is REDDEER.GAMES with 1,755; Nintendo has 518. Algolia facet probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Americas locale sizes</dt>
+          <dd>en_ca 34,399; fr_ca 34,189; es_mx 35,259; pt_br 29,165; es_ar 26,723; es_cl 27,159; es_co 27,192; es_pe 27,235 objects. Algolia probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Europe index</dt>
+          <dd><strong>42,122</strong> documents in the English index: 23,616 games (every Nintendo system back to NES releases), 10,383 DLC, 4,142 news, 2,166 support, 964 interviews (the "Iwata Asks" archive), 257 figures (amiibo). The German index has 42,398 and the French 41,718. Solr probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>US news cadence</dt>
+          <dd><code>/us/whatsnew/</code> lists 2,065 articles. By lastmod year: 2023 681, 2024 423, 2025 354, 2026 369 (to 2026-10-22). Sitemap probe <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-22 from a US egress (Fastly PAO/BFI POPs). Desktop Chrome UA unless noted; ~1–2 req/s; one trailer file fetched by HEAD only.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-10-22</td><td><code>curl -sI https://www.nintendo.com/</code></td><td>301 to <code>/us/</code> from <code>server: Varnish</code> on Fastly (<code>x-served-by: cache-pao-…</code>). HSTS is set; no CSP header. Apex <code>nintendo.com</code> returns an Apache 301.</td></tr>
+            <tr><td>2026-10-22</td><td>Regional stack fingerprint (headers on 10 paths)</td><td>All paths go through the same Fastly chain, but origins differ. <code>/us/</code>: Next.js, origin shield at BFI. <code>/au/</code>: <code>server: Vercel</code>, <code>x-powered-by: Next.js</code>, shield at SYD. <code>/kr/</code>, <code>/hk/</code> and <code>/jp/nintendo-direct/description/</code>: <code>server: AmazonS3</code>. <code>/en-gb/</code> and <code>/de-de/</code>: 2.3MB AEM/AngularJS pages, shield at FRA. <code>nintendo.co.uk</code> 301s to <code>/en-gb/</code>; <code>nintendo.co.jp</code> (AkamaiGHost) lands on <code>/jp/index.html</code>.</td></tr>
+            <tr><td>2026-10-22</td><td><code>curl /robots.txt</code></td><td><code>Allow: /</code> for <code>*</code>, then <code>Disallow: /</code> for 16 named bots, including CCBot, Bytespider, Diffbot, FacebookBot, PetalBot and AI2Bot. Eight AI crawlers (GPTBot, Claude-Web, ClaudeBot, Google-Extended, Applebot-Extended, Meta-ExternalAgent, cohere-ai, cohere-training-data-crawler) get <code>Disallow: /</code> with one exception: <code>Allow: /jp/nintendo-direct/description/</code>. A closing comment block reserves all rights and prohibits AI training, scraping and TDM, citing Article 4(3) of EU Directive 2019/790. 49 <code>Sitemap:</code> lines, none for Europe. <code>/llms.txt</code> and <code>/ads.txt</code> return 404.</td></tr>
+            <tr><td>2026-10-22</td><td>UA matrix on a US product page</td><td>Chrome, Googlebot, GPTBot, ClaudeBot, CCBot and <code>curl</code> all get 200 with an identical 258,036-byte body. The AI ban is policy in robots.txt only, with no edge enforcement and no crawler-specific rendering.</td></tr>
+            <tr><td>2026-10-22</td><td>Sitemap census (all 49 robots.txt sitemaps, recursing indexes)</td><td>All 200, none empty except <code>/us/sitemap.xml</code> and <code>/pt-br/sitemap.xml</code> (valid but empty <code>urlset</code>). Each <code>*/news/sitemap.xml</code> holds one URL. US store lastmods are all <code>2026-10-22T00:29:54.1xxZ</code>, which is the generation time, not edit time. Whatsnew lastmods are real dates. Southeast Asia sitemaps (sg/th/my/ph) contain 10–13% duplicate locs.</td></tr>
+            <tr><td>2026-10-22</td><td>Europe sitemap search</td><td><code>/en-gb/sitemap.xml</code>, <code>/sitemap_index.xml</code>, <code>/sitemap/0.xml</code>, <code>/en-gb/robots.txt</code> and <code>/de-de/sitemap.xml</code>: all return a 30KB HTML 404. No crawl-side manifest for Europe was found.</td></tr>
+            <tr><td>2026-10-22</td><td>Structured-data sample: US product page (BotW)</td><td>JSON-LD <code>@graph</code> containing <code>["VideoGame","Product"]</code> with <code>sku</code>, <code>gamePlatform</code>, <code>contentRating</code>, <code>playMode</code>, an <code>Offer</code> (USD 59.99) and seller Nintendo of America, plus <code>ImageObject</code>/<code>VideoObject</code> gallery items with <code>uploadDate</code>. <code>__NEXT_DATA__</code> carries an Apollo cache of <code>Product</code> records with <code>nsuid</code>, <code>releaseDate</code>, publisher, feature tags and Cloudinary <code>publicId</code>s. OG and Twitter cards are present.</td></tr>
+            <tr><td>2026-10-22</td><td>Trailer asset HEAD (<code>assets.nintendo.com</code>)</td><td>The JSON-LD <code>VideoObject.contentUrl</code> (an <code>/image/upload/…/Video/{hash}</code> path) returns <strong>404</strong> with <code>x-cld-error: Resource not found</code>. The same <code>publicId</code> under <code>/video/upload/….mp4</code> returns 200: H.264 at 1280×720, 30.03s, 8.33MB, from <code>server: Cloudinary</code> with Akamai timing and <code>access-control-allow-origin: *</code>.</td></tr>
+            <tr><td>2026-10-22</td><td>Public API sample: Algolia</td><td>A search-only key (<code>a29c69…e721c9</code>) for app <code>U3B6GR4UA3</code> sits in <code>_app-*.js</code>. Anonymous queries to <code>store_all_products_{locale}</code> and <code>store_game_en_us</code> return hits with 59 fields and facets. <code>browse</code> returns 403 for this key; pagination stops at 1,000 hits per query. <code>en_gb</code> and <code>ja_jp</code> indexes do not exist.</td></tr>
+            <tr><td>2026-10-22</td><td>Public API sample: Europe Solr</td><td><code>searching.nintendo-europe.com/{lang}/select</code> answers anonymous Solr queries with faceting, <code>fq</code>, <code>fl</code> and sort, behind Fastly with an Apache/Amazon Linux origin. Game docs carry 53 fields, including <code>fs_id</code>, <code>change_date</code>, <code>publisher</code>, <code>age_rating_*</code>, <code>system_type</code>, <code>excerpt</code> and image URLs. <code>rows=2000</code> was capped at 1,000 docs. <code>fq=nsuid_txt:*</code> matches 19,896 game docs.</td></tr>
+            <tr><td>2026-10-22</td><td>Public price API</td><td><code>api.ec.nintendo.com/v1/price?country=US&amp;lang=en&amp;ids={nsuid,…}</code> returns JSON <code>regular_price</code>, <code>sales_status</code> and gold-point fields per <code>title_id</code> without auth.</td></tr>
+            <tr><td>2026-10-22</td><td>Direct text versions (<code>/jp/nintendo-direct/description/</code>)</td><td>The sitemap lists four pages: the 2026-09-08 and 2026-09-09 Directs, each in <code>ja-JP</code> and <code>en-US</code>. The 9-8 English page is a full 3,091-word transcript with section headings (Miyamoto's opening, live-action film, Ocarina of Time…), linking to the US Direct page. The US page embeds YouTube <code>A0WX-jsir94</code> through <code>youtube-nocookie.com</code>.</td></tr>
+            <tr><td>2026-10-22</td><td>Common Crawl CC-MAIN-2026-39 index</td><td><code>www.nintendo.com/us/store/products/*</code> returned "No Captures found". Wider page-count queries returned 504.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"Open" means anonymous and unmetered in our probes; no published quotas exist for any of these endpoints. All rows are under the robots.txt TDM reservation (Risks).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Catalog entities (Americas)</td>
+              <td>36,949 US objects; 26.7K–35.3K per other locale.</td>
+              <td>Sitemaps for URL discovery, then product pages (JSON-LD + <code>__NEXT_DATA__</code>). Algolia facet queries for counts and partitions.</td>
+              <td>Open; Algolia capped at 1,000 hits per query, no browse.</td>
+              <td>Facts (title, rating, price, publisher) are low risk; descriptions and art are publisher copyright.</td>
+              <td>Prices and sales daily; new releases weekly.</td>
+            </tr>
+            <tr>
+              <td>Catalog entities (Europe)</td>
+              <td>23,616 games, 10,383 DLC, 257 amiibo (en).</td>
+              <td>Solr <code>select</code>, partitioned by <code>fq</code> or by <code>change_date</code>.</td>
+              <td>Open; 1,000 rows per request.</td>
+              <td>As above; PEGI and USK ratings included.</td>
+              <td><code>change_date</code> per doc.</td>
+            </tr>
+            <tr>
+              <td>Prices</td>
+              <td>Per <code>nsuid</code> per country.</td>
+              <td><code>api.ec.nintendo.com/v1/price</code>, batched by ID.</td>
+              <td>Open; batch size limit open.</td>
+              <td>Facts.</td>
+              <td>Sale windows change daily.</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Box art, screenshots and galleries for every product.</td>
+              <td>Cloudinary <code>publicId</code> from page data, then <code>assets.nintendo.com/image/upload/…</code> (transform URLs, CORS <code>*</code>).</td>
+              <td>Open.</td>
+              <td>Nintendo and publisher copyright; thumbnails with links only.</td>
+              <td>Immutable per hash.</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>Trailers in product galleries (count open); Directs on YouTube.</td>
+              <td>Trailers: <code>/video/upload/{publicId}.mp4</code>, not the broken JSON-LD URL. Directs: YouTube embed and Data API.</td>
+              <td>Open; YouTube API quota.</td>
+              <td>Copyright; use the official YouTube embed for display.</td>
+              <td>Immutable.</td>
+            </tr>
+            <tr>
+              <td>Transcripts</td>
+              <td>4 Direct text versions in the sitemap (2 events × ja/en).</td>
+              <td>Fetch the <code>/jp/nintendo-direct/description/</code> pages.</td>
+              <td>Open, and the only path robots.txt allows for AI crawlers.</td>
+              <td>Rights reserved; the allowance signals a tolerated retrieval surface, not a license.</td>
+              <td>New page per Direct.</td>
+            </tr>
+            <tr>
+              <td>News &amp; articles</td>
+              <td>US 2,065; JP topics 3,456; Europe 4,142 news + 964 interviews; other locales ~900–1,900 each.</td>
+              <td>Sitemaps (Americas, JP, AU, Asia); Solr <code>fq=type:NEWS</code>/<code>INTERVIEW</code> for Europe.</td>
+              <td>Open.</td>
+              <td>Nintendo copyright; snippet and link.</td>
+              <td>US ~1.2 articles/day in 2026 (369 ÷ 295 days, calculated by Site Wise).</td>
+            </tr>
+            <tr>
+              <td>Support articles</td>
+              <td>AU 1,584; Europe 2,166; Americas on <code>en-americas-support.nintendo.com</code> (count open).</td>
+              <td>AU sitemap; Europe Solr <code>type:SUPPORT</code>.</td>
+              <td>Open.</td>
+              <td>Snippet and link.</td>
+              <td>Slow.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where nintendo.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>One domain, four corpora</h4>
+          <p>The domain merge is cosmetic for an indexer. Americas, Europe, Japan/Asia and Australia have different URL grammars, IDs, schemas and discovery paths. Europe publishes no sitemap at all; its open Solr index is the manifest. Treat each region as a separate source and join the regions on <code>nsuid</code>.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p><code>nsuid</code> (14 digits) is the platform key, and its prefix encodes the object class. In US slugs, <code>7005…</code> appears exactly 10,926 times, matching the Algolia count of individual DLC; <code>7007…</code> (831) marks bundles and passes; <code>7001…</code> marks games. In the Americas it appears in <code>nsuid</code>, as the last 10 digits of <code>sku</code>, in Cloudinary paths, and in 11,814 of the 38,783 US slugs. Slugs collide across editions (<code>…-switch</code>, <code>…-us</code>, <code>…-switch-2</code>), so key on <code>nsuid</code>/<code>sku</code>, never the slug. Europe adds its own <code>fs_id</code> and the original platform code (<code>playable_on_txt: HAC</code>). 19,896 of its 23,616 game docs also carry <code>nsuid_txt</code>; the rest are mostly pre-Switch titles.</p>
+        </div>
+        <div>
+          <h4>Crawler policy vs. reality</h4>
+          <p>robots.txt is the strictest we have logged for a storefront: a blanket AI and CCBot ban plus a written TDM reservation. Yet the edge serves every UA the same 200, and both search backends are anonymous. The barrier is legal, not technical. Common Crawl honors the CCBot block (no store captures in 2026-39), so there is no third-party bulk copy to lean on.</p>
+        </div>
+        <div>
+          <h4>An AI-readable channel by design</h4>
+          <p>The single <code>Allow</code> for AI crawlers covers Nintendo Direct text versions: complete, bilingual transcripts of the company's main announcement format. <span class="evidence inferred">inferred</span> Nintendo intends AI assistants to answer "what was announced" from its own transcript rather than third-party summaries. <em>Basis:</em> the <code>Allow: /jp/nintendo-direct/description/</code> line repeated in all eight AI-crawler groups, next to a dedicated sitemap for those pages.</p>
+        </div>
+        <div>
+          <h4>Structured data is good but buggy</h4>
+          <p>US product JSON-LD is unusually complete (VideoGame + Product + Offer + gallery). But the sampled <code>VideoObject.contentUrl</code> points to the image pipeline and 404s, and the description is SEO boilerplate ("Shop … at Nintendo Store"). Take the real description and trailer URLs from the Apollo <code>Product</code> record in <code>__NEXT_DATA__</code>.</p>
+        </div>
+        <div>
+          <h4>Shovelware skews the catalog</h4>
+          <p>38% of US objects cost under $5, and the top publishers by count are low-cost volume publishers, not Nintendo (518). <span class="evidence inferred">inferred</span> A count-weighted catalog index will be dominated by low-quality titles. <em>Basis:</em> the <code>priceRange</code> and <code>softwarePublisher</code> facet distributions. Use <code>popularityRank</code> / <code>trendingRank</code> (exposed in Algolia) and Europe's <code>hits_i</code> as quality priors.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the title entity, keyed by <code>nsuid</code>. It merges the per-region product records, attaches DLC (via parent), prices per country, ratings per board (ESRB, PEGI, CERO), media and Direct mentions.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>nsuid</code> ↔ <code>sku</code> ↔ Cloudinary <code>publicId</code> ↔ Europe <code>fs_id</code> (via <code>nsuid_txt</code> where present, otherwise title + date). Direct transcript headings → title entities by name. YouTube video ID → Direct page.</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>Sitemaps (316,740 URLs), then product pages for the 9 Americas locales: ~287K page fetches at ~250KB each, about 72GB raw (calculated by Site Wise). Alternatively fetch only <code>/us/</code> + <code>/es-mx/</code> + <code>/pt-br/</code> and use the price API for the remaining countries.</li>
+            <li>Europe Solr partitioned below 1,000 rows (by <code>type</code> × <code>system_type</code> × year): 42K docs in roughly 50–100 requests.</li>
+            <li>Algolia facet counts as a completeness check against the sitemaps. The US gap is 38,783 sitemap URLs vs 36,949 index objects; reconcile it.</li>
+          </ol>
+          All three run against a written TDM opt-out. Treat this plan as requiring a rights decision (Risks) before any training-adjacent use.</li>
+        <li><strong>Recrawl cadence:</strong> prices daily via the batched price API; new products and lastmod-dated news daily; full catalog weekly (US store lastmod is useless, so diff the URL set); Direct transcripts on each Direct.</li>
+        <li><strong>Derivatives to generate:</strong> ASR is unnecessary for Directs (official transcripts exist); trailer keyframes and embeddings from the 720p MP4s; OCR is not needed.</li>
+        <li><strong>Demo to build:</strong> a cross-region price and availability board. Join US Algolia <code>nsuid</code>s to the price API for the 9 Americas countries and to Europe Solr, and flag titles missing from a region.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Explicit TDM reservation:</strong> the robots.txt comment invokes Article 4(3) of the EU DSM Directive and covers "web scraping … or any form of text or data mining". In the EU this is the machine-readable opt-out the law recognizes. Search indexing for retrieval and AI training need separate legal treatment, and Nintendo is a famously litigious rights holder.</li>
+        <li><strong>Open backends can close without notice:</strong> the Algolia key ships in client JS and the Solr endpoint is undocumented. Either can be re-keyed or restricted by referrer at any time. Keep the sitemap and page path as the durable fallback.</li>
+        <li><strong>Europe has no discovery fallback:</strong> no sitemap and no Common Crawl copy. If Solr closes, Europe falls back to link-crawling an AngularJS site.</li>
+        <li><strong>Delistings:</strong> titles leave the eShop (Europe's <code>eshop_removed_b</code> flag). The index must keep tombstones, since removed titles stay notable as entities.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.nintendo.co.jp/ir/pdf/2026/260508e.pdf">Nintendo, Consolidated Financial Highlights, year ended 2026-03-31 (2026-05-08)</a>: net sales, overseas share, digital sales.</li>
+        <li><a href="https://www.nintendo.co.jp/ir/en/finance/hard_soft/index.html">Nintendo IR, Dedicated Video Game Sales Units (as of 2026-06-30)</a>: installed base.</li>
+        <li><a href="https://www.perfectly-nintendo.com/?p=604393">Perfectly Nintendo, "Nintendo switches to global domain (nintendo.com) for its Japanese and European websites"</a>: the domain consolidation and redirects.</li>
+        <li><a href="https://www.nintendo.com/robots.txt">nintendo.com/robots.txt</a> (read 2026-10-22).</li>
+        <li>Local probes on 2026-10-22: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Nintendo intends AI assistants to read Direct transcripts. <em>Basis:</em> the identical <code>Allow</code> line in every AI-crawler group, plus a dedicated sitemap.</li>
+        <li>A count-weighted catalog index skews toward low-quality titles. <em>Basis:</em> the US <code>priceRange</code> and <code>softwarePublisher</code> facets.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Why the US sitemap (38,783) exceeds the Algolia index (36,949). Closeable by diffing sitemap <code>urlKey</code>s against a facet-partitioned Algolia export.</li>
+        <li>Number of trailer videos across the catalog. Closeable by counting <code>resourceType: video</code> in <code>productGallery</code> over a partitioned Algolia export.</li>
+        <li>Rate limits on the Solr, Algolia and price endpoints, and the price API's batch size. Closeable with a paced ramp test, stopping at the first 429.</li>
+        <li>Whether older Direct transcripts exist beyond the four in the sitemap. Closeable by probing earlier date stems under <code>/jp/nintendo-direct/description/</code> or via Wayback CDX.</li>
+        <li>Site traffic. Closeable with a named third-party panel; Nintendo publishes none.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
