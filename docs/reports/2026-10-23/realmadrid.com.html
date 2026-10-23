@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>realmadrid.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-10-23</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>realmadrid.com</h1>
+      <p class="lede">Real Madrid's official club site: 77K sitemap URLs in seven locales, an Angular front end over an anonymous AEM GraphQL API, and no AI-crawler blocks.</p>
+      <div class="tag-row">
+        <span class="tag">Sports</span>
+        <span class="tag">Football club</span>
+        <span class="tag">Headless AEM</span>
+        <span class="tag">Open persisted GraphQL</span>
+        <span class="tag">Opta-keyed entities</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>realmadrid.com is the official site of Real Madrid C.F., the member-owned Madrid club that runs men's and women's football, a basketball section and a large academy. The site publishes club news (about a dozen Spanish articles a day), fixtures and match reports, squad and academy rosters, a legends archive, the fan-club (peña) directory, and sells stadium tours and VIP hospitality. Tickets, the shop, membership and the RM Play video service live on separate subdomains. The front end is Angular 21 with server-side rendering. Content is authored in Adobe Experience Manager as a Cloud Service and served as JSON through persisted GraphQL queries on <code>publish.realmadrid.com</code>, which answer anonymously. For an index builder the site is the <strong>authoritative source for one club's sports entities</strong>: every match and player record carries Opta IDs, so it joins cleanly to league and stats data. It also holds a 2021-onward news archive with downloadable original video. Unlike most large sites logged so far, robots.txt does not block AI crawlers.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.realmadrid.com</code> (apex 301s to www). API on <code>publish.realmadrid.com</code> (Fastly); config on <code>config.realmadrid.com</code> (Akamai); images on <code>assets.realmadrid.com</code> (Adobe Dynamic Media).</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/{locale}/{section}/…/{slug}</code>. Path words are translated per locale (<code>/es-ES/futbol/partidos/</code> vs <code>/en-US/football/games/</code>); the slug is not. Match slugs end in <code>DD-MM-YYYY</code>.</dd></div>
+        <div><dt>Category</dt><dd>Sports: official club site</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>realmadrid.com</code>; <code>/zh-CN</code> 301s to <code>realmadrid.cn</code> (not covered)</dd></div>
+        <div><dt>Owner</dt><dd>Real Madrid Club de Fútbol, a members' association (not a company)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Club 1902; the site's news archive in the sitemap starts at 2009 but is dense only from 2021 (Verified Metrics)</dd></div>
+        <div><dt>Business model</dt><dd>The site is a marketing and sales surface for stadium, tour, hospitality, sponsorship and membership revenue; it shows sponsor banners and ad slots.</dd></div>
+        <div><dt>Scale anchor</dt><dd>Operating revenue €1,221M in 2025/26 (Verified Metrics).</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus counts come from probes on 2026-10-23 (Probe Log); club figures from the club's own accounts release.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Club revenue</dt>
+          <dd>Operating revenue before player transfers €1,221M for the year to 2026-06-30, up 3.1%: stadium €363M, marketing €539M, TV and international competitions €319M. EBITDA €287.4M. <a href="https://www.realmadrid.com/en-US/news/club/latest-news/el-real-madrid-cierra-la-temporada-2025-2026-con-los-mayores-ingresos-y-el-mayor-ebitda-de-su-historia-28-07-2026">Real Madrid, 2025-26 accounts (2026-07-28)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Revenue rank</dt>
+          <dd>First in the Deloitte Football Money League 2026 with €1,161M for 2024/25, the third year running. <a href="https://www.realmadrid.com/en-US/news/club/latest-news/real-madrid-informe-2026-01-01-2026">Real Madrid summary of the Deloitte report (2026-01)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd><strong>77,652</strong> URL entries across 114 <code>urlset</code> files under 7 locale indexes; <strong>77,432</strong> unique (calculated by Site Wise). By type: news 50,667, matches 12,763, legends 3,316, players 2,875, fan clubs 2,347, tickets 1,636, foundation 1,291, other 3,077. Sitemap probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Locale skew</dt>
+          <dd>es-ES 29,612 URLs, en-US 11,925, fr/ar/de/ja/pt 6,971–7,468 each. News: es-ES 19,618, en-US 8,764, others 4,399–4,625. Spanish alone carries 2,283 fan clubs (en-US 58), 1,277 legends (others ~340) and most academy rosters. Sitemap probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>News cadence</dt>
+          <dd>es-ES news by <code>lastmod</code> year: 2020 136, 2021 2,475, 2022 2,789, 2023 3,271, 2024 3,488, 2025 3,819, 2026 3,348 (to 2026-10-22). October 2026 so far: 272, about 12.4 a day (calculated by Site Wise). Sitemap probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap images</dt>
+          <dd>45,847 <code>image:loc</code> tags pointing to 14,035 unique files: 7,556 on the raw AEM host <code>publish-p47754-e237306.adobeaemcloud.com</code>, 5,278 on <code>assets.realmadrid.com</code>, 1,201 on <code>publish.realmadrid.com</code>. Sitemap probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>News record shape</dt>
+          <dd>Random sample of 40 es-ES articles via the API: all 40 resolved; median body 132 words; 27 carry a video, 6 a photo gallery; 0 link to a translation in <code>seoHrefLang</code>. News sample probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Fixture diary</dt>
+          <dd>The home page's <code>diaryV2</code> response lists 276 matches between 2026-10-23 and 2027-01-21 across football and basketball, first team and academy; 96 carry an Opta ID and 24 an AVET ID. Home-page transfer-state probe <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-23 from a US egress (Fastly BUR POP). Desktop Chrome UA unless noted; about 1 request per second; video files checked by HEAD only. No credentials were used.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe"><code>curl -sI https://www.realmadrid.com/</code></td><td data-label="Observation">Apex 301s to www. www returns 200 with Helmet-style headers (CSP, COOP, <code>x-download-options</code>, <code>origin-agent-cluster</code>), a weak ETag and <code>max-age=66</code>: an Express server rendering Angular. No CDN-identifying header on www; <code>config.realmadrid.com</code> returns Akamai <code>server-timing: ak_p</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe"><code>curl /robots.txt</code> (www)</td><td data-label="Observation">324 bytes. One <code>User-agent: *</code> group: disallows <code>/landings/ciudad-real-madrid/</code>, <code>/*.json$</code> and <code>/content/dam/portals/</code>; allows DAM images and PDFs; one <code>Sitemap:</code>. <strong>No named-bot groups at all</strong>: GPTBot, ClaudeBot, CCBot and the rest fall under <code>*</code>. No <code>llms.txt</code> was linked.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe"><code>curl /robots.txt</code> (publish)</td><td data-label="Observation"><code>publish.realmadrid.com</code>: <code>Disallow: /</code> for everyone, then <code>Allow:</code> for <code>*.json*</code>, images, CSS and <code>*.mp4*</code>. The GraphQL API (<code>/graphql/execute.json/…</code>) and the video masters are therefore crawl-permitted.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Sitemap census (index → 7 locales → 105 children → 16 news parts)</td><td data-label="Observation">All 200, retried on empty; only <code>sitemap_fans_routes</code> for ja-JP and pt-PT are empty <code>urlset</code>s. News parts split at a ~5 MiB byte cap, not a URL count (5,242,xxx bytes each). Match and legend entries carry <code>xhtml:link</code> hreflang to all 7 locales; news entries carry none. <code>sitemap-latest-news-*</code> uses Google News tags with real <code>publication_date</code>s. Fixtures are listed months ahead with a <code>lastmod</code> from the season-schedule load.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Unlisted locales</td><td data-label="Observation"><code>/hi-IN</code> and <code>/it-IT</code> return a 12.5KB Spanish error page (404) although the URL config lists <code>hi-IN</code>; <code>/zh-CN</code> 301s to <code>www.realmadrid.cn</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">UA matrix on a news article</td><td data-label="Observation">Chrome, Googlebot, GPTBot, ClaudeBot and <code>curl</code> all receive 200 and a byte-identical 91,714-byte body (same MD5). The front-end config holds a <code>botTokens</code> list of ~70 crawler substrings (including <code>gptbot</code>, <code>claudebot</code>, <code>curl</code>), but it only changes client-side behavior.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Angular transfer state (<code>&lt;script id="ng-state"&gt;</code>)</td><td data-label="Observation">The home page embeds 1.8MB of cached API responses, each with its source URL. These name the backend: AEM persisted queries under <code>publish.realmadrid.com/graphql/execute.json/realmadridmastersite/</code>, a tag servlet (<code>news-tags.json</code>), a dictionary servlet, and JSON config files on <code>config.realmadrid.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Public API sample: persisted GraphQL</td><td data-label="Observation"><code>newsBySlugV2;alang=…/es-es/news/;slug={slug}</code> returns 200 JSON anonymously, with <code>cache-control: public, s-maxage=300</code> via Fastly. Fields: <code>title</code>, <code>intro</code>, <code>bodyList[].html</code>, <code>date</code>, <code>lastmod</code>, <code>tag</code>, <code>redactor</code>, <code>photographer</code>, <code>gallery</code>, <code>videoList</code>, <code>match</code>, <code>relatedContent</code>, <code>seoHrefLang</code>. The bundle names 18 queries, including <code>matchBySlugV2</code>, <code>matchByIDV2</code>, <code>squadV2</code>, <code>squadMemberBySlugV2</code>, <code>legendaryPlayerBySlugV2</code>, <code>diaryV2</code> and <code>seasonById</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Structured-data sample (6 page types)</td><td data-label="Observation">News: <code>NewsArticle</code> JSON-LD with <code>datePublished</code>, <code>dateModified</code> and gallery images; description is title + SEO boilerplate. Match: <code>LiveBlogPosting</code> with coverage times. Legend: <code>Person</code> + <code>BreadcrumbList</code>; player: <code>Person</code> with <code>birthDate</code> and an <code>award</code> list. Section landings have none. Canonical on all; OG on article and entity pages. Page HTML has no hreflang links.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Section-less news slugs</td><td data-label="Observation">376 sitemap URLs (280 in es-ES) have the form <code>/{locale}/noticias/{slug}</code> with no section path. 3 of 3 sampled return 200 with the generic news landing page, not the article: soft-404s inside the sitemap.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Match and player records</td><td data-label="Observation"><code>matchBySlugV2</code> for Real Madrid–Sevilla (2026-10-18) gives <code>optaId</code> (25-char UUID), <code>optaLegacyId</code> 2650849, <code>avetId</code> <code>20262027#1#9</code>, <code>monterosaExternalId</code>, score, scorers with minutes, venue and competition (each with Opta IDs), broadcaster, and <code>relatedNews</code> pointing to the match report. <code>squadMemberBySlugV2</code> gives <code>optaCode</code>, birth data, height, weight, <code>statistics</code>, <code>trophyList</code> and <code>history</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Video HEAD checks</td><td data-label="Observation">Pre-2024 news video: <code>descargawebrealmadrid.akamaized.net/StaticFiles/ltvideo/…_1000k.mp4</code>, 60.5MB, <code>server: AmazonS3</code>. 2025+ news video: <code>MultimediaRef</code> to an MP4 master in the AEM DAM, one youth clip 366.5MB, also reachable on <code>assets.realmadrid.com/is/content/</code>. Real Madrid TV live: HLS master on <code>rmtv.akamaized.net</code> (es and en, 180p–720p, <code>access-control-allow-origin: *</code>, no token).</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Client bundle secrets</td><td data-label="Observation"><code>main-*.js</code> ships an Azure API Management subscription key and a value shaped like an Azure AD client secret for <code>api-narm.realmadrid.com</code> (values redacted here; neither was used). RM Play (<code>play.realmadrid.com</code>) is an Endeavor DICE app on S3/CloudFront.</td></tr>
+            <tr><td data-label="Date">2026-10-23</td><td data-label="Probe">Common Crawl CC-MAIN-2026-39 index</td><td data-label="Observation"><code>showNumPages</code> answers (2 pages for <code>www.realmadrid.com/*</code>), but listing queries returned 502/504, so capture counts stay open.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"Open" means anonymous in our probes; no quotas are published for any endpoint. robots.txt places no AI-specific restriction on any row.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">News text</td>
+              <td data-label="Objects &amp; est. count">50,667 locale URLs; es-ES 19,618.</td>
+              <td data-label="Best legitimate path">Sitemaps for discovery, then <code>newsBySlugV2</code> JSON (clean body HTML, byline, tags) rather than the 90KB page.</td>
+              <td data-label="Auth &amp; quota">Open; Fastly-cached 5 min.</td>
+              <td data-label="License / display">Club copyright; snippet and link.</td>
+              <td data-label="Freshness">~12 es-ES articles a day; <code>latest-news</code> sitemap for the last ~24h.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Matches</td>
+              <td data-label="Objects &amp; est. count">12,763 locale URLs (4,479 es-ES), football and basketball, all teams.</td>
+              <td data-label="Best legitimate path"><code>matchBySlugV2</code> / <code>diaryV2</code> (date-range window).</td>
+              <td data-label="Auth &amp; quota">Open.</td>
+              <td data-label="License / display">Facts (scores, scorers, dates) are low risk.</td>
+              <td data-label="Freshness">Fixtures listed months ahead; results within hours (exact lag open).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">People entities</td>
+              <td data-label="Objects &amp; est. count">Players 2,875 and legends 3,316 locale URLs, presidents 127.</td>
+              <td data-label="Best legitimate path"><code>squadV2</code>, <code>squadMemberBySlugV2</code>, <code>legendaryPlayerBySlugV2</code>.</td>
+              <td data-label="Auth &amp; quota">Open.</td>
+              <td data-label="License / display">Facts low risk; bios and portraits are club copyright.</td>
+              <td data-label="Freshness">Squads per transfer window; legends static.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images</td>
+              <td data-label="Objects &amp; est. count">14,035 unique files in sitemaps; news galleries up to 26 photos.</td>
+              <td data-label="Best legitimate path">Dynamic Media URLs (<code>assets.realmadrid.com/is/image/…?wid=</code>) from the API records.</td>
+              <td data-label="Auth &amp; quota">Open, CORS <code>*</code>.</td>
+              <td data-label="License / display">Club and agency photo copyright; thumbnails with links only.</td>
+              <td data-label="Freshness">Immutable per asset.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video</td>
+              <td data-label="Objects &amp; est. count">On 27 of 40 sampled articles; total count open.</td>
+              <td data-label="Best legitimate path"><code>videoList</code> in the news record → direct MP4 (Akamai/S3 legacy, AEM DAM since ~2024).</td>
+              <td data-label="Auth &amp; quota">Open; masters can exceed 300MB.</td>
+              <td data-label="License / display">Club copyright; no embed or oEmbed path. Link to the article for display.</td>
+              <td data-label="Freshness">Immutable.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Live TV</td>
+              <td data-label="Objects &amp; est. count">Real Madrid TV, Spanish and English channels.</td>
+              <td data-label="Best legitimate path">HLS on <code>rmtv.akamaized.net</code>, as configured in the front end.</td>
+              <td data-label="Auth &amp; quota">Open, untokenized.</td>
+              <td data-label="License / display">Broadcast rights; live ASR or metadata only, no redistribution.</td>
+              <td data-label="Freshness">Continuous.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Fan clubs</td>
+              <td data-label="Objects &amp; est. count">2,283 peñas (es-ES).</td>
+              <td data-label="Best legitimate path">es-ES <code>fans_routes</code> sitemap, then pages.</td>
+              <td data-label="Auth &amp; quota">Open.</td>
+              <td data-label="License / display">Directory facts.</td>
+              <td data-label="Freshness">Slow.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where realmadrid.com differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The API is the crawl target</h4>
+          <p>Every page is an Angular shell plus a transfer-state copy of AEM JSON. Fetching the persisted query directly yields the same record at a fraction of the bytes (4.4KB vs 91.7KB for the sampled article) and without the 1.8MB home-page state. <code>publish.realmadrid.com/robots.txt</code> explicitly allows <code>*.json*</code>, while the www robots.txt disallows <code>/*.json$</code>; the API host is the one whose policy applies.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The slug is the cross-locale key for matches, players and legends: the sitemap lists the same slug under seven translated paths, tied together by hreflang. News is different. Translations get their own slugs and records, and none of the 40 sampled records link a translation, so cross-language news dedup needs content matching. Each news record has a stable AEM <code>_path</code> that encodes the creation date (<code>/news/generic/2022/02/22/…</code>); use it as the primary key. Drop the 376 section-less slugs, which are soft-404s.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Matches are the hub. One match record links the Opta match UUID and legacy ID, the LaLiga/AVET fixture code, the venue and competition (Opta IDs), scorers, broadcaster, and the slug of its match-report article. Players carry <code>optaCode</code>. That makes the site joinable to any Opta-licensed stats feed and to league sites without fuzzy name matching.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Use <code>bodyList[].html</code> and <code>date</code> from the API. The JSON-LD <code>description</code> and meta description are the title plus a fixed SEO sentence. The sitemap <code>lastmod</code> on news is edit time (a 2022 article shows 2024-03-20); <code>date</code> is publication.</p>
+        </div>
+        <div>
+          <h4>An unusually open crawl policy</h4>
+          <p>No named-bot groups, no edge UA filtering, and a <code>max-image-preview:large</code> robots meta. <span class="evidence inferred">inferred</span> The club treats reach as more valuable than control over AI reuse of its content. <em>Basis:</em> the 324-byte robots.txt with no AI-bot groups, the byte-identical response to GPTBot and ClaudeBot, and the <code>Allow: *.mp4*</code> line on the media host.</p>
+        </div>
+        <div>
+          <h4>Spanish is the master corpus</h4>
+          <p>es-ES has 2.2× the news of en-US and about 4.4× the average of the other five locales (calculated by Site Wise). Fan clubs, most legends and nearly all academy rosters exist only in Spanish. An English-only crawl misses most of the corpus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the news article (body, byline, tags, gallery, video) and the match record (teams, score, scorers, report link). Player and legend entities are attached by slug and Opta code.</li>
+        <li><strong>Primary keys &amp; joins:</strong> AEM <code>_path</code> for news; slug + Opta UUID for matches; <code>optaCode</code> for players; match <code>relatedNews.slug</code> → article; hreflang groups → locale variants for entities.</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>Sitemaps (77K URLs, 114 files, 97MB uncompressed) for discovery, then persisted queries per slug: ~77K API calls at ~4–15KB each, roughly 1GB (calculated by Site Wise). Open, cacheable, and robots-permitted on the API host.</li>
+            <li><code>diaryV2</code> with rolling 90-day windows to sweep fixtures and results, including academy matches.</li>
+            <li>HTML pages only for JSON-LD validation and as a fallback if the API closes.</li>
+          </ol></li>
+        <li><strong>Recrawl cadence:</strong> <code>latest-news</code> sitemaps hourly; <code>diaryV2</code> on match days; news and entity sitemaps daily, diffing URL sets; legends monthly.</li>
+        <li><strong>Derivatives to generate:</strong> ASR on news video (no transcripts or captions exist in the records); keyframes from the MP4s, with a size cap given 300MB+ masters; OCR is not needed.</li>
+        <li><strong>Demo to build:</strong> a match timeline. For one season, join <code>diaryV2</code> results to their match reports and video, keyed on Opta IDs, and answer "every Mbappé goal this season with the clip".</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Exposed credentials may trigger lockdown:</strong> the bundle ships an APIM key and a secret-shaped value for <code>api-narm</code>. If the club rotates them and hardens the front end, the anonymous GraphQL host could be put behind the same gateway. Keep the HTML transfer-state path, which carries identical JSON, as the fallback.</li>
+        <li><strong>Persisted-query names are versioned:</strong> <code>…V2</code> suffixes and coexisting <code>diary</code>/<code>diaryV2</code> show queries get replaced. Re-read the bundle for query names on each deploy rather than hard-coding them.</li>
+        <li><strong>Media rights:</strong> match footage is LaLiga/UEFA broadcast territory. Open MP4 URLs are not a license; restrict video use to ASR text and links.</li>
+        <li><strong>Sitemap quality:</strong> soft-404 slugs and fixture <code>lastmod</code>s set at schedule load mean the sitemap cannot be trusted as a change feed. Diff API records instead.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.realmadrid.com/en-US/news/club/latest-news/el-real-madrid-cierra-la-temporada-2025-2026-con-los-mayores-ingresos-y-el-mayor-ebitda-de-su-historia-28-07-2026">Real Madrid, 2025-26 annual accounts release (2026-07-28)</a>: revenue, mix, EBITDA. Read through the API on 2026-10-23.</li>
+        <li><a href="https://www.realmadrid.com/en-US/news/club/latest-news/real-madrid-informe-2026-01-01-2026">Real Madrid on the Deloitte Football Money League 2026</a>: rank and 2024/25 revenue.</li>
+        <li><a href="https://www.realmadrid.com/robots.txt">realmadrid.com/robots.txt</a> and <a href="https://publish.realmadrid.com/robots.txt">publish.realmadrid.com/robots.txt</a> (read 2026-10-23).</li>
+        <li>Local probes on 2026-10-23: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The club prefers reach over controlling AI reuse. <em>Basis:</em> no AI-bot groups in robots.txt, identical responses across bot UAs, and <code>Allow: *.mp4*</code> on the media host.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total news videos and their combined size. Closeable by running <code>newsBySlugV2</code> over all es-ES slugs and summing HEAD <code>content-length</code>s of <code>videoList</code> URLs.</li>
+        <li>How quickly results and match reports appear after full time. Closeable by polling <code>matchBySlugV2</code> and <code>latest-news</code> during one match day.</li>
+        <li>Rate limits on <code>publish.realmadrid.com</code>. Closeable with a paced ramp test that stops at the first 429 or 403.</li>
+        <li>Whether a persisted query lists news by folder or date (an incremental feed). Closeable by testing <code>newsByPath</code> and <code>news-section-detail-assembly</code> with folder paths.</li>
+        <li>Common Crawl coverage. Closeable by retrying the CC-MAIN-2026-39 index listing off-peak.</li>
+        <li>Site traffic. Closeable with a named third-party panel; the club publishes none.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
