@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>chaturbate.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-10-24</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>chaturbate.com</h1>
+      <p class="lede">An adult live-cam platform with 728K broadcasters in its sitemap and ~7.5K live rooms; open JSON describes every live room, but its terms ban crawling.</p>
+      <div class="tag-row">
+        <span class="tag">Adult</span>
+        <span class="tag">Live video</span>
+        <span class="tag">Ephemeral corpus</span>
+        <span class="tag">Open SPA JSON</span>
+        <span class="tag">Affiliate API</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Chaturbate is a free-to-watch adult webcam site. Independent broadcasters stream live from home, and viewers buy tokens to tip them, pay for private shows, or join fan clubs. It launched in February 2011 and is run by Multi Media, LLC of Irvine, California, which is named in its terms. For an index builder it inverts the usual problem. The main object, a live stream, exists only while it is on air: the median live room on 2026-10-24 had been live for 1.7 hours. Everything durable sits around the stream: broadcaster profiles, room titles with hashtags, thumbnails, photo sets, follower counts and satisfaction votes. The site exposes all of this as unauthenticated JSON to every user agent, including AI crawlers. But its terms forbid "any automated means to scrape … including … crawlers", so the sanctioned third-party path is the affiliate program, not the open endpoints. The live corpus is also heavily concentrated: 43% of live rooms list Colombia as their country.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>chaturbate.com</code> (Django app behind Cloudflare and a Google load balancer); media on <code>*.mmcdn.com</code> (<code>thumb.live</code>, <code>edgeN-{region}.live</code> HLS) and <code>s3pv.highwebmedia.com</code> (signed photo URLs).</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>chaturbate.com/{username}/</code>; 11 language subdomains (<code>de.</code>, <code>es.</code>, <code>ja.</code>, <code>ko.</code>, <code>ru.</code>, …) declared as hreflang alternates.</dd></div>
+        <div><dt>Category</dt><dd>Adult live streaming / creator tipping</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>chaturbate.com</code> and its language subdomains</dd></div>
+        <div><dt>Owner</dt><dd>Multi Media, LLC (<a href="https://chaturbate.com/terms/">Terms, last modified 2026-01-14</a>) <span class="evidence verified">verified</span></dd></div>
+        <div><dt>Founded / launched</dt><dd>2011-02-26, per the WHOIS record cited by <a href="https://en.wikipedia.org/wiki/Chaturbate">Wikipedia</a> <span class="evidence verified">verified</span></dd></div>
+        <div><dt>Business model</dt><dd>Token sales (tips, private and spy shows, fan clubs, bio-page purchases); an affiliate program paid per referral.</dd></div>
+        <div><dt>Scale anchor</dt><dd>728K broadcaster URLs in the sitemap (generated 2026-08-19; Probe Log).</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Live counts are one snapshot, 03:33–03:37Z on Saturday 2026-10-24 (evening in the Americas), taken through a US egress. Cam traffic follows the clock, so treat them as one point on a daily curve.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Traffic (third-party)</dt>
+          <dd>467M visits in January 2026, average visit 12:52, as estimated by Semrush (page updated 2026-02-12). <a href="https://www.semrush.com/website/chaturbate.com/overview/">Semrush</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap broadcasters</dt>
+          <dd><strong>728K</strong> profile URLs in 15 files (14 × 50K + 28.3K), plus 337 other URLs: 110 cam lists, 100 top tags, 100 apps and 27 static pages. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Live rooms</dt>
+          <dd><strong>7.48K</strong> public rooms listed, against an <code>all_rooms_count</code> of 8.71K. About 1.2K rooms (14%) are live but missing from the public list (calculated by Site Wise; presumably private or hidden shows, unconfirmed). Room-list walk probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Concurrent viewers</dt>
+          <dd><code>num_users</code> sums to <strong>1.00M</strong> across the 7.48K rooms. Median 9 per room; the top 10 rooms hold 51% and the top 1% (74 rooms) hold 83% (calculated by Site Wise). 242 rooms had zero viewers. Room-list walk probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Gender split (live)</dt>
+          <dd>Female 5.12K (68%), male 1.25K (17%), trans 758 (10%), couple 355 (5%) (calculated by Site Wise). Room-list walk probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Country concentration</dt>
+          <dd>Colombia (<code>CO</code>) 3.19K rooms, or <strong>43%</strong> of live rooms but only <strong>10%</strong> of viewers. No country given for 2.37K; US 669, Philippines 459, Kenya 143 (shares calculated by Site Wise). Room-list walk probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Session length</dt>
+          <dd>Time since <code>start_timestamp</code> for rooms on air: median 1.7h, p90 5.6h (calculated by Site Wise; a snapshot of uncompleted sessions, not finished durations). Room-list walk probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Hashtag vocabulary</dt>
+          <dd>898 hashtags in use live (tag-table <code>total</code>); 873 distinct tags across the walked rooms. 90% of rooms carry tags, 4.3 on average. Tag-table and walk probes <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Age-verified flag</dt>
+          <dd><code>is_age_verified</code> is true for 7.44K of 7.48K live rooms (99.4%). Room-list walk probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap dormancy</dt>
+          <dd>Of 80 random sitemap broadcasters: 73 bios readable, 6 blocked to the probe's region, 1 banned. Of the 73, 11 (15%) had broadcast in the last 30 days and 10 had no last-broadcast value; the oldest last broadcast was 2025-09-09. Bio sample <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap lag</dt>
+          <dd>6.09K of the 7.48K live broadcasters (81%) appear in the sitemap; 19% are missing from the 2026-08-19 snapshot (calculated by Site Wise). Walk × sitemap join <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Texas age-check penalty</dt>
+          <dd>$675K paid under a settlement with the Texas Attorney General (2024-04). Age verification went live on 2024-03-21. <a href="https://www.texasattorneygeneral.gov/news/releases/texas-secures-settlement-operator-major-pornography-website-ensuring-compliance-texas-law">Texas OAG</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-24 (03:30–03:55Z) through a US egress (Cloudflare SJC colo), desktop Chrome UA unless noted. No stream segments, photos or thumbnails were downloaded; probes touched headers, HTML and JSON only.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-10-24</td><td><code>curl /robots.txt</code></td><td>274 bytes. <code>User-agent: *</code> disallows only six paths (<code>/contest/log_presence/</code>, <code>/next/</code>, <code>/agegate/</code>, <code>/push_service/room_history/</code>, …). The only named group is <code>ia_archiver: Disallow: /</code>. No AI-crawler group. One <code>Sitemap:</code> line.</td></tr>
+            <tr><td>2026-10-24</td><td><code>curl -I /</code></td><td>200; <code>server: cloudflare</code>, <code>via: 1.1 google</code>, <code>cf-cache-status: DYNAMIC</code>, Django <code>csrftoken</code> cookie, HSTS preload, <code>vary: Cookie, Accept-Language</code>. The CSP lists the media and partner estate: <code>*.mmcdn.com</code>, <code>*.highwebmedia.com</code>, the S3 buckets <code>cbphotovideo</code> and <code>wowdvr</code>, Ably realtime websockets, Incode and Jumio ID-verification forms, and <code>devportal.cb.dev</code>.</td></tr>
+            <tr><td>2026-10-24</td><td>Sitemap census (index + 27 children, retries on empty)</td><td>The index lists 27 children; no child came back empty. 15 <code>sitemap-broadcasters-N.xml</code> files hold 728,340 unique <code>/{username}/</code> locs, each about 4.8MB uncompressed. Every broadcaster entry has the same <code>lastmod</code> (2026-08-19T19:55–19:56Z): it is the generation time, not a profile update time. No hreflang. The index's own <code>lastmod</code>s lag their children (accounts 08-19 in the index, 10-21 in the child).</td></tr>
+            <tr><td>2026-10-24</td><td>Room-list walk: <code>/api/ts/roomlist/room-list/?limit=90&amp;offset=N</code></td><td>200 JSON, no cookie or key, returning <code>total_count</code> 7,480, <code>all_rooms_count</code> 8,711 and 90 rooms per page with 23 fields (username, gender, country, location, <code>room_subject</code>, tags, <code>num_users</code>, <code>num_followers</code>, <code>start_timestamp</code>, show prices, <code>is_age_verified</code>, thumbnail URL). About 84 pages at 1 req/s; <strong>429 Too Many Requests</strong> began after about 40 requests and recurred every 3–4 calls, each clearing after a 5s backoff. Ended with 7,484 unique rooms in 3m52s.</td></tr>
+            <tr><td>2026-10-24</td><td>Hashtag table <code>/api/ts/hashtags/tag-table-data/?sort=-vc</code></td><td>200 JSON, <code>total</code> 898, 40 per page. Each entry has <code>room_count</code>, <code>viewer_count</code> and 3–4 top rooms. The <code>genders=</code> filter on the room list also works anonymously.</td></tr>
+            <tr><td>2026-10-24</td><td>Room page HTML (live room)</td><td>200, 202KB, no JSON-LD. The title is generic ("Chaturbate - 100% Free Chat &amp; Webcams"); the per-room text is in OG (<code>og:title</code>, <code>og:description</code> = room subject, a 360×270 <code>og:image</code> thumbnail). It carries an RTA label meta, a self-canonical and 13 hreflang alternates. <code>initialRoomDossier</code> is an escaped JSON string with 77 keys, including <code>room_uid</code>/<code>broadcaster_uid</code> (7-character ID), <code>hls_source</code> (an <code>edge10-sea.live.mmcdn.com</code> m3u8 for an anonymous viewer), <code>edge_region</code>, <code>satisfaction_score</code> (up/down votes), <code>apps_running</code>, <code>allow_show_recordings</code> and <code>tips_in_past_24_hours</code>.</td></tr>
+            <tr><td>2026-10-24</td><td>UA matrix on the same room page</td><td>Chrome, Googlebot, bingbot, GPTBot, ClaudeBot and <code>curl</code>: all 200, 53.7–54.2KB compressed, all with the dossier and <code>hls_source</code>. No robots meta. Crawlers get no separate page.</td></tr>
+            <tr><td>2026-10-24</td><td>24 random sitemap room pages (3s pacing)</td><td>All 200. 23 dossiers show <code>room_status: offline</code>; one is empty (the page renders but the dossier is blank). <code>og:description</code> falls back to a template ("{User}'s live sex show…") when offline. Only 3 of 23 had a non-null <code>start_timestamp</code> (all in the past 3 days).</td></tr>
+            <tr><td>2026-10-24</td><td>Bio API <code>/api/biocontext/{user}/</code>, 80 random sitemap users</td><td>73 × 200, with 24 fields: <code>last_broadcast</code>, <code>time_since_last_broadcast</code>, <code>follower_count</code>, <code>sex</code>/<code>subgender</code>, <code>location</code>, HTML <code>about_me</code> and <code>wish_list</code>, <code>photo_sets</code> (ID, name, cover URL), <code>social_medias</code>. The other 7 returned 401 <code>access-denied</code>: 6 "not available to your region or gender" and 1 "has been banned". Counts in the sample: about-me text 23, photo sets 17, social links 14. <code>sex</code>: men 38, women 22, couples 9, trans 4. No 429s at 2.5s pacing.</td></tr>
+            <tr><td>2026-10-24</td><td>Stats API docs <code>/statsapi/documentation/</code>; affiliate docs</td><td>Stats API: <code>/statsapi/?username=&amp;token=</code>, with a 24-character token the broadcaster generates themselves; refreshed every 5 minutes. It returns token balance, tips in the last hour, 90-day votes, last broadcast, time online, followers, and viewers split into registered and token-holding (docs last updated 2018-10-16). The affiliate feed <code>/api/public/affiliates/onlinerooms/</code> returns <code>wm: This field is required</code> without a campaign code, and an empty result for an invalid one. <code>/affiliates/promotools/api_usersonline/</code> 302s to login.</td></tr>
+            <tr><td>2026-10-24</td><td><code>/terms/</code></td><td>Last modified 2026-01-14. Users "may not use any automated means to scrape, download or otherwise collect any data or content from the Platform including … robots/bots, crawlers, or data mining tools." Private shows "are recorded by default" for the buyer, and broadcasters can opt out.</td></tr>
+            <tr><td>2026-10-24</td><td>Wayback availability + CDX; <code>/llms.txt</code>, <code>/ads.txt</code></td><td>Despite the <code>ia_archiver</code> disallow, Wayback serves a 2026-10-23 homepage snapshot, and CDX lists status-200 captures dated 2026-01-01. <code>/llms.txt</code> and <code>/ads.txt</code> both 301 with no body. No RSS or OpenSearch link found.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"Open JSON" = the SPA endpoints in the Probe Log: anonymous, with 429s at about 1 req/s, and covered by the terms' anti-scraping clause. "Affiliate" = the <code>wm</code>-keyed affiliate feed, which needs a program account.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Broadcaster profiles</td>
+              <td>728K in the sitemap; about 15% active in the last 30 days (sample).</td>
+              <td>Sitemap for URLs; affiliate feed for live ones. Bio JSON is open but falls under the anti-scraping clause.</td>
+              <td>Sitemap none; affiliate <code>wm</code>.</td>
+              <td>Performer personal data; some rooms are geo-blocked by region. Link out only.</td>
+              <td>Sitemap regenerated about every 2 months (inferred below).</td>
+            </tr>
+            <tr>
+              <td>Live room state</td>
+              <td>7.5K–8.7K rooms at the snapshot.</td>
+              <td>Affiliate online-rooms feed (embed/link with campaign code).</td>
+              <td>Affiliate <code>wm</code>; limits open.</td>
+              <td>Affiliate display is the sanctioned reuse.</td>
+              <td>Minutes; median session 1.7h.</td>
+            </tr>
+            <tr>
+              <td>Room text</td>
+              <td>One subject per live room (goal text + hashtags); 898 hashtags.</td>
+              <td>Same feed; OG description on the room page.</td>
+              <td>As above.</td>
+              <td>User text; mostly emoji, prices and goals.</td>
+              <td>Changes per tip goal, within minutes.</td>
+            </tr>
+            <tr>
+              <td>Thumbnails</td>
+              <td>One rolling JPEG per live room (<code>thumb.live.mmcdn.com/riw/{user}.jpg?{ts}</code>).</td>
+              <td>URL from the feed; hotlink, don't store.</td>
+              <td>Unauthenticated CDN.</td>
+              <td>Explicit imagery of identifiable people. Store no pixels.</td>
+              <td>Refreshed while live (the <code>?ts</code> cache-buster advances).</td>
+            </tr>
+            <tr>
+              <td>Live video &amp; audio</td>
+              <td>One HLS stream per live room.</td>
+              <td>None for third-party indexing. Affiliates embed the player.</td>
+              <td>The m3u8 is exposed to anonymous viewers.</td>
+              <td>Performer consent covers the platform, not recording by third parties. Do not capture.</td>
+              <td>Ephemeral.</td>
+            </tr>
+            <tr>
+              <td>Photo sets</td>
+              <td>23% of sampled bios list sets; total open.</td>
+              <td>Bio JSON (names, cover URLs); covers on signed S3 URLs.</td>
+              <td>Many sets are token-gated.</td>
+              <td>Paid creator content. Metadata only.</td>
+              <td>Rarely edited.</td>
+            </tr>
+            <tr>
+              <td>Chat</td>
+              <td>Per-room message stream.</td>
+              <td>None (websocket on Ably/mmcdn).</td>
+              <td>Session-bound.</td>
+              <td>Viewer messages; personal data.</td>
+              <td>Ephemeral.</td>
+            </tr>
+            <tr>
+              <td>Structured signals</td>
+              <td>Followers, viewers, satisfaction votes, prices, apps, age-verified flag.</td>
+              <td>Affiliate feed (subset); Stats API for a broadcaster's own account.</td>
+              <td>Stats API: owner-issued token.</td>
+              <td>Facts; low reuse risk in aggregate.</td>
+              <td>5-minute refresh (Stats API docs).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where chaturbate.com differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Open to crawlers, closed by contract</h4>
+          <p>The default picture is a curated crawler sliver plus metered APIs. Here every UA, AI crawlers included, gets the same full page and dossier. robots.txt names only <code>ia_archiver</code>, and the room-list JSON needs no key. The restriction lives entirely in the terms' blanket anti-scraping clause and in 429 rate limits. Robots-based compliance tooling will read the site as permissive, so production ingestion should go through the affiliate feed or a written grant.</p>
+        </div>
+        <div>
+          <h4>The index is a presence index</h4>
+          <p>The stream, the reason people visit, cannot be indexed after the fact. The useful retrieval question is "who matching X is live now", answered from a feed polled every few minutes. The durable layer is the broadcaster entity: name, gender, location, chat language, about-me, follower count, satisfaction score and broadcast history. Room subjects are a poor text field. They are tip-goal strings ("Goal 9: tip 350 … [5440 left]"); only 60% are pure ASCII, and emoji and token prices run through them. Hashtags are the real query vocabulary.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The username is the URL key, and a separate 7-character <code>room_uid</code>/<code>broadcaster_uid</code> sits in the dossier. Key on the UID so the entity survives a rename. Language subdomains are hreflang alternates of the same room, so collapse them. The username is also the thumbnail key, which joins any feed row to its image without another call.</p>
+        </div>
+        <div>
+          <h4>Sitemap = lagging active-broadcaster roster</h4>
+          <p>The 728K list is a dated snapshot, not a full account dump. Its per-URL <code>lastmod</code> is the generation time, it misses 19% of today's live broadcasters, and about 85% of sampled entries had not broadcast in 30 days. Use it as a seed of known entities, never as a freshness signal. Join it with the live feed to classify entities as active, dormant or gone (401 banned).</p>
+        </div>
+        <div>
+          <h4>Skew changes ranking</h4>
+          <p>Viewers follow a power law (top 1% of rooms = 83%), while supply is geographically concentrated (Colombia = 43% of rooms, 10% of viewers). Ranking by viewer count surfaces a few dozen rooms. A diversity-aware index needs supply-side features (country, language, tags, newness: 206 rooms carried <code>is_new</code>) rather than popularity alone. Note that <code>country</code> and <code>location</code> are self-declared free text ("Antioquia, Colombia", "Europe") and blank for 32% of rooms.</p>
+        </div>
+        <div>
+          <h4>Geo and identity gates</h4>
+          <p>Broadcasters can block regions: 6 of 80 sampled bios returned "not available to your region or gender" from a US egress. Room lists and bios therefore differ by egress country, and an index built from one region silently drops region-blocked creators. Run feed polling from each target market.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the broadcaster entity (UID, username, gender, location, preferred chat language from the dossier, about-me text, tags seen, follower count, satisfaction score, last broadcast), plus a live-session record (start timestamp, subject, tags, viewers) that expires when the room goes offline.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>broadcaster_uid</code> → username → thumbnail and room URL; hashtag → tag-table room and viewer counts; <code>social_medias</code> links → the same creator on fan platforms (cross-site entity resolution); photo-set ID → set metadata.</li>
+        <li><strong>Ingestion paths, ranked:</strong>
+          <ol>
+            <li>Affiliate online-rooms feed with a program <code>wm</code> code: the sanctioned live-state path. Coverage ceiling = all public rooms; rate limits open.</li>
+            <li>The sitemap (no auth, 15 files, about 70MB uncompressed) as the entity seed, re-fetched when the index's <code>lastmod</code> moves.</li>
+            <li>Bio and dossier JSON per entity only with written permission. Technically open, but the terms prohibit automated collection, and the room list 429s at 1 req/s. A full bio pass over 728K entities at the 2.5s pacing that avoided 429s would take about 21 days from one IP (calculated by Site Wise).</li>
+          </ol></li>
+        <li><strong>Recrawl cadence:</strong> live feed every 2–5 minutes; tag table every 15 minutes; entity bios for recently live broadcasters daily; the full sitemap roster monthly. Ban and region-block status on each touch.</li>
+        <li><strong>Derivatives to generate:</strong> tag normalization (the tag table gives canonical lower-case forms); language ID on subjects and about-me text; per-entity activity histograms from session start times. No visual derivatives (no stored frames or thumbnails).</li>
+        <li><strong>Demo to build:</strong> a supply-versus-demand board. Snapshot the room list hourly for a week and chart live rooms against viewers by country and hashtag, to show when Colombian supply peaks relative to US demand. Metadata only, no media.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Contract over code:</strong> the open JSON is not a licence. The terms ban automated collection outright, so the defensible footprint is the affiliate feed plus link-outs. Assume the SPA endpoints can change or gain auth without notice; they are undocumented internals.</li>
+        <li><strong>Identifiable people in explicit content:</strong> performers are real, often pseudonymous, and their location fields and social links make re-identification possible. Store no images or video. Honour bans and region blocks, and make deletion propagation cover entities that disappear from both the feed and the sitemap.</li>
+        <li><strong>Age and jurisdiction rules:</strong> age-verification laws (Texas HB 1181 and similar state laws) apply to anything that displays this content to users. A search surface over it inherits the same age-gating duties as the site.</li>
+        <li><strong>Region-dependent corpus:</strong> creator-side geo-blocks mean no single crawl location sees the whole live set. Missing that skews any "complete" index.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://chaturbate.com/terms/">Chaturbate Terms &amp; Conditions (last modified 2026-01-14)</a>: operator, anti-scraping clause, private-show recording.</li>
+        <li><a href="https://chaturbate.com/statsapi/documentation/">Chaturbate Stats API documentation (updated 2018-10-16)</a>: token-scoped broadcaster and affiliate statistics.</li>
+        <li><a href="https://www.texasattorneygeneral.gov/news/releases/texas-secures-settlement-operator-major-pornography-website-ensuring-compliance-texas-law">Texas Attorney General, settlement with Multi Media LLC (2024-04)</a> and <a href="https://www.404media.co/chaturbate-texas-ordered-to-pay-age-verification-law/">404 Media (2024-04-26)</a>: $675K penalty, age verification.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Chaturbate">Wikipedia: Chaturbate</a> (read 2026-10-24): launch date, headquarters.</li>
+        <li><a href="https://www.semrush.com/website/chaturbate.com/overview/">Semrush overview for chaturbate.com (updated 2026-02-12)</a>: third-party traffic estimate.</li>
+        <li>Local probes on 2026-10-24: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The broadcaster sitemap is a trailing activity roster (about one year of broadcasters), regenerated every few months. <em>Basis:</em> one generation timestamp (2026-08-19) on all 728K entries; the oldest sampled last broadcast is 2025-09-09, with none earlier; 19% of today's live broadcasters are missing.</li>
+        <li>The roughly 1.2K gap between <code>all_rooms_count</code> and the public list is rooms in private, hidden or password shows. <em>Basis:</em> every walked room had <code>current_show: public</code> and <code>has_password: false</code>, while the counter counts more rooms than the list returns.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total registered broadcasters and viewers (official). Closeable with a company disclosure or a DSA Article 24(2) EU active-recipient statement, if one is published (none found linked from the homepage).</li>
+        <li>Affiliate feed rate limits, fields and display terms. Closeable by joining the affiliate program and reading the <code>api_usersonline</code> docs behind the login.</li>
+        <li>Daily curve of live rooms and viewers. Closeable with hourly room-list snapshots for 7 days (the demo above).</li>
+        <li>Rename frequency (username changes under a stable UID). Closeable by re-joining sitemap snapshots on <code>broadcaster_uid</code> across two generations.</li>
+        <li>How the live set differs by egress country. Closeable by running the room-list walk from EU and Latin American egresses and diffing usernames.</li>
+        <li>Photo-set count and free/paid split. Closeable with a larger bio sample (≥1K) counting sets and their access flags.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
