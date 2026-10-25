@@ -85,6 +85,11 @@ AGGREGATED_HOSTS = {
         "match_suffixes": (),
         "note": "The web client (web.telegram.org) is analyzed together as Telegram.",
     },
+    "chiebukuro.yahoo.co.jp": {
+        "match_hosts": ("detail.chiebukuro.yahoo.co.jp",),
+        "match_suffixes": (),
+        "note": "Thread pages and sitemaps (detail.chiebukuro.yahoo.co.jp) are analyzed together with the top host as Yahoo!知恵袋.",
+    },
 }
 
 
