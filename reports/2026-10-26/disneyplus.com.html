@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>disneyplus.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-10-26</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>disneyplus.com</h1>
+      <p class="lede">Disney's streaming storefront: 13.4K titles across 89 locales in open sitemaps and SSR JSON. AI crawlers are allowed; the terms forbid AI scraping.</p>
+      <div class="tag-row">
+        <span class="tag">Subscription streaming</span>
+        <span class="tag">89 locales</span>
+        <span class="tag">The Walt Disney Company</span>
+        <span class="tag">AI crawlers allowed, video walled</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Disney+ is The Walt Disney Company's flagship subscription video service: films and series from Disney, Pixar, Marvel, Star Wars and National Geographic, plus Hulu content, ESPN content in some markets, and licensed titles. It launched on 2019-11-12 on technology from BAMTech, the former MLB Advanced Media spin-off, which is why its image and API hosts still sit under <code>bamgrid.com</code>. Revenue is subscription fees plus ads on the ad-supported tiers in the US, Canada and some Latin American and European markets. Video plays only to paying, logged-in subscribers under DRM. What is open is the marketing layer on www.disneyplus.com: a localized detail page for every title (synopsis, credits, genres, rating, runtime, artwork, episodes) and an editorial "Explore" article section. That layer is unusually open to machines. Every page is server-rendered, the same data is exposed as Next.js JSON, the sitemaps list every title in every region where it is offered, and robots.txt explicitly allows named AI crawlers. For an index builder this is a clean catalogue of a major studio library with region-availability signals. The constraint is legal, not technical: Disney's terms of use ban automated extraction for AI tools or datasets.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd>www.disneyplus.com (apex 301s to www); artwork on disney.images.edge.bamgrid.com</dd></div>
+        <div><dt>Canonical URL</dt><dd>Title: <code>/{lang-region}/browse/entity-{uuid}</code> (US has no prefix; <code>/en-us/…</code> 308s to it); article: <code>/{lang-region}/explore/articles/{slug}</code></dd></div>
+        <div><dt>Category</dt><dd>Subscription video on demand (SVOD)</dd></div>
+        <div><dt>Grouped hosts</dt><dd>89 locale paths on www.disneyplus.com; hulu.com and espn.com are separate hosts, not censused here</dd></div>
+        <div><dt>Owner</dt><dd>The Walt Disney Company (operating entity Disney DTC LLC per the terms of use)</dd></div>
+        <div><dt>Founded / launched</dt><dd>2019-11-12 (US, Canada, Netherlands)</dd></div>
+        <div><dt>Business model</dt><dd>Monthly/annual subscriptions, bundles with Hulu, ESPN and HBO Max, and ad-supported tiers</dd></div>
+        <div><dt>Scale anchor</dt><dd>About 132M paid Disney+ subscribers as of 2025-09-27 (Disney 10-K)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures come from the Site Wise sitemap census in the Probe Log. Disney publishes no title counts.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Paid subscribers</dt>
+          <dd>About 132M paid Disney+ subscribers and about 64M paid Hulu subscribers as of 2025-09-27. <a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm">Disney 10-K FY2025, filed 2025-11-13</a> <span class="evidence verified">verified</span>. In the same quarter there were 196M Disney+ and Hulu subscriptions combined (+12.4M quarter on quarter), and Direct-to-Consumer operating income was $352M. <a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448925000154/fy2025_q4xprxex991.htm">Q4 FY2025 earnings release, 2025-11-13</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Streaming margin</dt>
+          <dd>The Entertainment SVOD operating margin (Disney+ plus Hulu SVOD) was 13% in fiscal Q3 2026 (quarter ended 2026-06-27), and SVOD advertising revenue was up 3%. The release gives no subscriber count. <a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm">Q3 FY2026 earnings release, 2026-08-05</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap corpus</dt>
+          <dd>334,079 title-page URLs in 183 child files (2026-10-26), covering 13,351 distinct entity UUIDs in 89 lang-region paths across 47 regions. Each file holds about 1,800 URLs. Exact count from a full download of every child (3.06GB uncompressed). <a href="#probe-log">Sitemap census</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Region fan-out</dt>
+          <dd>Titles per number of locales: 2,658 titles (19.9%) appear in 1 locale and 3,534 (26.5%) in 2, the typical single-region pair such as ko-kr + en-kr. 1,713 appear in 80+ locales, essentially worldwide, and 961 in all 89 (calculated by Site Wise). <a href="#probe-log">Sitemap census</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Catalogue by region</dt>
+          <dd>US (unprefixed path): 7,466 titles, of which 4,095 are listed only for the US (with or without es-us). en-gb 4,586, de-de 4,558, fr-fr 3,928, es-mx 3,593, pt-br 3,360, ja-jp 3,097, ko-kr 2,972, tr-tr 2,878. 303 titles are Japan-only and 131 Korea-only (calculated by Site Wise). <a href="#probe-log">Sitemap census</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap growth</dt>
+          <dd>The sitemap index had 155 children on 2026-01-20, 173 on 2026-05-02, 176 on 2026-09-19 and 184 on 2026-10-26. <a href="#probe-log">Wayback probe</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Editorial corpus</dt>
+          <dd><code>static-pages.xml</code> lists 2,125 URLs: 1,766 article URLs (557 distinct slugs across the US and 7 other locales), 58 welcome pages and the rest plan, help and landing pages. <a href="#probe-log">Sitemap census</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Title metadata coverage</dt>
+          <dd>14 random titles: 14 of 14 returned 200 with content, a synopsis (20–1,344 characters), genres, release year and runtime. Credits were present on 12, a content rating on 10, and Movie JSON-LD on 14. All 14 were films (calculated by Site Wise). <a href="#probe-log">Structured-data probe</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Terms of use</dt>
+          <dd>The terms ban accessing or extracting Disney Products "using a robot, spider, script, or other automated means", including for "creating or developing any AI Tool" or any dataset. The only exception is "a public search engine's use of spiders for creating search indices to the extent not disallowed by Disney" via robots.txt or NOINDEX. Last updated 2024-05-24. <a href="https://disneytermsofuse.com/english/">Disney Terms of Use</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card" id="probe-log">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-26 from a US (SFO/LAX CloudFront POPs) egress, desktop Chrome UA unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-10-26</td><td><code>curl -sI</code> / (headers)</td><td>200, <code>cache-control: no-cache, no-store</code>, and app headers <code>X-solo-application: disneyplus-nexus</code>, <code>region: us</code>, <code>physical-location: US</code>. No CDN fingerprint on HTML. The apex 301s to www. Sitemaps and artwork are served by CloudFront (<code>X-Amz-Cf-Pop</code>) from S3 (<code>x-amz-version-id</code>).</td></tr>
+            <tr><td>2026-10-26</td><td><code>curl /robots.txt</code></td><td>124 lines. <code>User-agent: *</code> / <code>Disallow: /</code>. One shared group of named agents gets <code>Allow: /</code>: search, SEO-tool, social and ad bots, plus 18 AI agents (GPTBot, ChatGPT-User, OAI-SearchBot, Google-Extended, ClaudeBot, Claude-User, Claude-SearchBot, PerplexityBot, Applebot-Extended, Meta-ExternalAgent, Amazonbot, CCBot, GrokBot, DeepSeekBot and others). That group disallows <code>/home</code>, <code>/watch</code>, <code>/episode</code>, <code>/search</code>, <code>/account</code> and <code>/billing</code> (with and without locale prefix). One <code>Sitemap:</code> line.</td></tr>
+            <tr><td>2026-10-26</td><td>UA matrix on a title page</td><td>Chrome, Googlebot, GPTBot, ClaudeBot and curl all got 200 with byte-identical 95,466-byte HTML. No bot wall, and no UA-dependent rendering on title pages.</td></tr>
+            <tr><td>2026-10-26</td><td>UA matrix on a geo-mismatched article</td><td><code>/en-au/explore/articles/new-to-disney-plus</code> from a US IP: Chrome UA gets 307 to the <code>en-us</code> path, while Googlebot, Bingbot, GPTBot, ClaudeBot, curl and a custom UA all get 200. The page also carries a <code>langRegionRedirect</code> script that skips client-side redirects for a list of search bots, and a <code>botDetect</code> script that sets <code>data-bot</code> for 81 crawler UA substrings, AI agents included.</td></tr>
+            <tr><td>2026-10-26</td><td>Feeds &amp; discovery</td><td><code>/llms.txt</code> and <code>/.well-known/security.txt</code>: 404 (styled HTML). <code>/ads.txt</code> 200 (<code>OWNERDOMAIN=disney.com</code>, Google line, modified 2026-09-17). No RSS/Atom.</td></tr>
+            <tr><td>2026-10-26</td><td>Sitemap index</td><td><code>/sitemap.xml</code>: 184 children, <code>static-pages.xml</code> + <code>d-sitemap-1…183.xml</code>, all lastmod 2026-10-25T11:11:29-07:00; S3 Last-Modified 2026-10-25 18:11 UTC. The children carry no lastmod, priority or image/video extensions, only &lt;loc&gt; plus xhtml:link hreflang alternates.</td></tr>
+            <tr><td>2026-10-26</td><td>Sitemap census</td><td>Downloaded all 183 <code>d-sitemap-N.xml</code> children at 1 request per second: 183 × 200, no throttling. CloudFront served 82 of them gzip-encoded (about 150KB each) and 101 uncompressed (16–17MB each) for the same <code>Accept-Encoding: gzip</code>, so transfer was 1.7GB. Each &lt;url&gt; repeats the title's full hreflang group, which makes the files about 99% redundant alternates. Every &lt;loc&gt; is a <code>/browse/entity-{uuid}</code> title page; there are no episode, person or collection URLs. <code>static-pages.xml</code> (5.4MB) holds 2,125 editorial and landing URLs. Totals in Verified Metrics.</td></tr>
+            <tr><td>2026-10-26</td><td>Wayback CDX on sitemap.xml</td><td>12 captures since 2026-01-20; child counts from three <code>id_</code> snapshots are in Verified Metrics. No restriction on archive.org (<code>ia_archiver</code> is in the allow group).</td></tr>
+            <tr><td>2026-10-26</td><td>Next.js data route</td><td><code>/_next/data/893067ee/{path}.json</code> returns the same <code>pageProps</code> as the HTML's <code>__NEXT_DATA__</code> (62KB vs 95KB HTML). The build ID comes from any page. Page content is a "stitch document" of typed components: <code>DetailEntityHero</code>, <code>MediaDetails</code>, <code>Episodes</code>, <code>Metadata</code>.</td></tr>
+            <tr><td>2026-10-26</td><td>Structured-data sample (14 + 1)</td><td>14 random entity IDs, each fetched in its first sitemap locale at 1 request per 2s. All were films; fields in Verified Metrics. JSON-LD (Movie/TVSeries + BreadcrumbList) sits only in the page data and is injected client-side: 0 <code>ld+json</code> script tags in the server HTML for any UA. The JSON-LD <code>description</code> is the short tagline, not the synopsis. A KR-only title requested under <code>en-gb</code> returned a soft 404: 200, <code>hasContent: false</code>, no &lt;title&gt;.</td></tr>
+            <tr><td>2026-10-26</td><td>Series page</td><td>American Horror Story (US): <code>Episodes</code> component with 13 season IDs and 12 episode cards (episode UUID, title, one-line summary, still) for the default season only. TVSeries JSON-LD <code>containsSeason</code> lists 4 seasons and 51 episodes, with wrong season numbers ("Murder House", season 1, is labelled <code>seasonNumber: 13</code>).</td></tr>
+            <tr><td>2026-10-26</td><td>Top 10 rail</td><td>US title pages embed "Top 10 in the US Today": 10 <code>TopRankedCard</code> entity links (2026-10-26: Moana, The Nightmare Before Christmas, Hocus Pocus, …). The container's base64 info block holds a generation timestamp (2026-10-26T01:45:45Z) and an internal schema-registry URL.</td></tr>
+            <tr><td>2026-10-26</td><td>Artwork CDN</td><td><code>disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/{imageId}/compose?format=webp&amp;width=N</code>: 200 to curl, CloudFront, <code>max-age=2592000</code> (30 days), resized on the fly. New image IDs are UUIDv7 (for example, <code>019ebab7-2a6c…</code> decodes to 2026-06-12); entity IDs are random UUIDv4.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"Sitemap" = the open sitemap index. "Page JSON" = the Next.js <code>/_next/data/</code> route or the <code>__NEXT_DATA__</code> blob in the HTML. The playback and catalogue APIs on <code>*.bamgrid.com</code> need a device token and a subscription, and were not exercised.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Title metadata</td>
+              <td>13,351 distinct titles (334K locale URLs); 7,466 in the US.</td>
+              <td>Sitemap for IDs and locales, then page JSON per locale.</td>
+              <td>None; no rate limit hit at 1 request per 1–2s.</td>
+              <td>Facts (title, year, cast, genre) are indexable. Synopses are Disney copy: snippet plus link. Terms bar automated collection outside search indexing.</td>
+              <td>Index regenerated daily (around 18:11 UTC).</td>
+            </tr>
+            <tr>
+              <td>Episodes</td>
+              <td>Per series: season list plus the default season's episode cards; JSON-LD covers a subset of seasons.</td>
+              <td>Page JSON <code>Episodes</code> component. Other seasons load from the authenticated client API.</td>
+              <td>Full episode lists need the subscriber API.</td>
+              <td>Episode titles and one-line summaries: snippet plus link. Episode pages (<code>/episode</code>) are robots-disallowed.</td>
+              <td>Updates with new episodes (cadence open).</td>
+            </tr>
+            <tr>
+              <td>Artwork</td>
+              <td>Hero, logo ("title visual"), tile and episode stills per title; about 13 image refs per film page.</td>
+              <td>Image IDs from page JSON, rendered from the ripcut CDN at any width.</td>
+              <td>None; CDN serves curl.</td>
+              <td>Studio key art under copyright: thumbnails plus link.</td>
+              <td>Image IDs change when art is swapped (UUIDv7 dates the swap).</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>The full streaming library; no trailers in the sampled public pages.</td>
+              <td>None open. Playback is <code>/watch</code> (robots-disallowed), DRM, subscriber-only.</td>
+              <td>Paid account plus device token.</td>
+              <td>Not indexable; deep-link to the title page.</td>
+              <td>n/a</td>
+            </tr>
+            <tr>
+              <td>Region availability</td>
+              <td>Per title: the set of lang-region paths in its hreflang group.</td>
+              <td>Sitemap hreflang; a soft 404 (<code>hasContent: false</code>) confirms absence.</td>
+              <td>None.</td>
+              <td>Fact; safe to display as "available in".</td>
+              <td>Daily sitemap diff.</td>
+            </tr>
+            <tr>
+              <td>Popularity</td>
+              <td>"Top 10 in the US Today" on every US title page.</td>
+              <td>Page JSON <code>TopRankedCard</code> slider; one fetch a day.</td>
+              <td>None.</td>
+              <td>Ranking is Disney's own; attribute it.</td>
+              <td>Daily (timestamped).</td>
+            </tr>
+            <tr>
+              <td>Editorial text</td>
+              <td>557 distinct article slugs (1,766 locale URLs): monthly "new on Disney+" lists, guides and franchise explainers.</td>
+              <td><code>static-pages.xml</code>, then page JSON. Article JSON-LD carries <code>datePublished</code>/<code>dateModified</code>; articles link to dozens of entity pages (96 in one sample).</td>
+              <td>None; browser UAs get geo-redirected, crawler UAs do not.</td>
+              <td>Disney copyright; snippet plus link.</td>
+              <td>Monthly release lists, updated mid-month.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site differs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Crawl posture</h4>
+          <p>The reverse of the default. robots.txt names 18 AI agents and allows them alongside search engines, and every page serves crawlers the same SSR HTML, unwalled. The block for unnamed agents (<code>User-agent: *</code> / <code>Disallow: /</code>) and the terms of use are the only gates. A generic crawler must identify as one of the named agents, and the terms still exclude non-search uses.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The <code>entity-{uuid}</code> is global: the same UUID appears under every lang-region path where the title is offered. Dedup on UUID; keep per-locale titles and synopses as language variants (the de-at pages carry German titles and labels). Episodes and seasons have their own UUIDs in page JSON but no public URLs.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The title entity (film or series), with locale variants and region availability attached. For series, episodes are child records (title, summary, still) but are incomplete from the public surface.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Use <code>MediaDetails.summary</code> (full synopsis) and <code>credits</code>. The meta/JSON-LD description is a one-line tagline, and the JSON-LD name carries "Watch … | Disney+". Season numbers in JSON-LD are unreliable; take season order from the <code>Episodes.seasons</code> list.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>No per-URL lastmod, so change detection means diffing entity IDs and hreflang sets between daily sitemap pulls. Additions show up as new UUIDs; licensing exits show up as a locale dropping out of a title's hreflang group.</p>
+        </div>
+        <div>
+          <h4>Region &amp; language</h4>
+          <p>Browser UAs from the "wrong" country are 307-redirected on articles, but title pages answer any locale from a US IP. Missing region/title pairs return 200 soft 404s, so check <code>hasContent</code>, not the status code.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> title entity (UUID) with locale variants, region set, credits, genres, rating, runtime, artwork IDs; series carry season IDs and the episode cards visible publicly.</li>
+        <li><strong>Primary keys &amp; joins:</strong> entity UUID ↔ lang-region URLs (hreflang) ↔ image IDs (ripcut) ↔ article links (editorial mentions). Cast and crew are display strings only, with no person IDs, so join to external knowledge bases by title + year + director.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The daily sitemap pull: 183 files list every title UUID and its region set. Send <code>Accept-Encoding: gzip</code> and retry files that come back uncompressed: at about 150KB per gzip file, a full pass would be about 28MB instead of 3GB (calculated by Site Wise). 2) Page JSON for one locale per language per new or changed UUID. About 62KB per fetch; one locale per UUID is about 13.4K fetches, or roughly 0.8GB, for the whole catalogue (calculated by Site Wise). 3) Static-pages sitemap plus article JSON for editorial text and its entity links.</li>
+        <li><strong>Recrawl cadence:</strong> sitemap daily (regenerated about 18:11 UTC); Top 10 daily from one US page; title JSON on first sight and then monthly; articles monthly; artwork on first sight (IDs change when the art does).</li>
+        <li><strong>Derivatives to generate:</strong> image embeddings of key art and title logos for visual search; a cross-locale synopsis set as a parallel corpus; a region-availability matrix per title as a "where can I stream X" answer source.</li>
+        <li><strong>Demo to build:</strong> a daily "what's new / what's leaving Disney+ by country" feed from consecutive sitemap diffs, joined to title metadata.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li>Terms vs robots.txt: robots.txt allows AI agents, but the terms bar automated collection for AI tools or datasets and carve out only search-engine indexing. Index as a search engine, keep display to snippet plus link, and get legal review before any training or dataset use.</li>
+        <li>The public catalogue is a marketing artifact. Series episode lists are incomplete, JSON-LD season numbers are wrong, and anything behind <code>/watch</code>/<code>/episode</code> (playback, full episodes, continue-watching) is out of reach.</li>
+        <li>The Hulu integration and the Star-to-Hulu rebrand (Wikipedia: Star phased out 2025-10-08) are still moving content between brands and hosts, so title UUIDs and region sets may churn more than a stable library would.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm">Disney 10-K, fiscal 2025</a>: subscriber counts, service description, ad-tier markets.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448925000154/fy2025_q4xprxex991.htm">Disney Q4 FY2025 earnings release</a>: combined subscriptions, DTC operating income.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm">Disney Q3 FY2026 earnings release</a>: SVOD margin, Hulu integration statement.</li>
+        <li><a href="https://disneytermsofuse.com/english/">Disney Terms of Use (US)</a>: automated-access clause.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Disney%2B">Wikipedia: Disney+</a> (read 2026-10-26): launch date, BAMTech origin, Star phase-out.</li>
+        <li>Local probes on 2026-10-26: full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The sitemap lists the full public title catalogue per region, not a curated slice. <em>Basis:</em> 14 of 14 randomly sampled UUIDs resolved with content, the hreflang sets match regional storefront splits (KR-only and DACH-only titles), and the KR-only title returns a soft 404 outside its region group.</li>
+        <li>The geo-redirect keys on browser-like user agents, not crawler identity. <em>Basis:</em> on the same URL from the same IP, Chrome got a 307 while curl and an arbitrary custom UA got 200, the same as Googlebot.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>The size of the full subscriber-visible catalogue compared with the sitemap. Closeable by comparing a logged-in collection crawl for one region with that region's sitemap entity set.</li>
+        <li>Daily title churn per region. Closeable by diffing two consecutive daily sitemap pulls (UUID and hreflang sets).</li>
+        <li>Whether non-US title pages also carry a localized Top 10 rail. Closeable by fetching one title page per region from in-region egress.</li>
+        <li>Episode coverage on the public surface. Closeable by comparing <code>Episodes.seasons</code> and JSON-LD episode counts against official episode counts for about 20 sampled series.</li>
+        <li>Whether non-US terms of use differ on automated access. Closeable by fetching the regional terms pages (EU, JP, KR) and diffing the clause.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
