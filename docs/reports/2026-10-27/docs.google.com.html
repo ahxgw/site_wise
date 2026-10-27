@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>docs.google.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-10-27</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>docs.google.com</h1>
+      <p class="lede">Google's editor host for billions of user files: anyone with a link can export them, but every view tells every crawler noindex.</p>
+      <div class="tag-row">
+        <span class="tag">User-generated documents</span>
+        <span class="tag">Docs · Sheets · Slides · Forms</span>
+        <span class="tag">Google LLC</span>
+        <span class="tag">noindex everywhere, no sitemap</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>docs.google.com is where Google Docs, Sheets, Slides, Forms and Drawings run. The product grew out of Writely, which Google acquired on 2006-03-09 and relaunched on 2006-10-10. It is free for consumers and paid through Google Workspace seats for organizations. Unlike every other host in this series, it publishes no catalogue at all. The objects are private user files, and the public ones are public only because owners set sharing to "anyone with the link" or used "Publish to the web." Nobody announces those files: they surface when a school site, forum or form invitation links to them. For an index builder, this host is the largest open store of operational documents on the web: syllabi, handbooks, staff directories, schedules, sign-up forms, price lists. Every file has an anonymous plain-text, Markdown, CSV or PDF export. Google itself tells every crawler not to index any of it. Discovery depends entirely on outlinks from other sites, and indexing it runs against the host's own robots signal.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd>docs.google.com; exports redirect to <code>doc-*.googleusercontent.com</code>, and thumbnails are served from <code>lh7-*.googleusercontent.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/{document|spreadsheets|presentation|forms|drawings}/d/{fileId}/{action}</code>; published: <code>/{type}/d/e/{2PACX-…|1FAIpQL…}/{pub|pubhtml|viewform}</code>; Workspace domains: <code>/a/{domain}/…</code></dd></div>
+        <div><dt>Category</dt><dd>Cloud office suite; user-generated document store</dd></div>
+        <div><dt>Grouped hosts</dt><dd>None. drive.google.com (file viewer) is a separate host and not censused here; workspace.google.com and mail.google.com have their own reports</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC (Alphabet Inc.)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Writely 2005-08; Google acquisition 2006-03-09; Google Docs &amp; Spreadsheets 2006-10-10; renamed Google Docs 2012-10</dd></div>
+        <div><dt>Business model</dt><dd>Free consumer tier (15GB shared Google storage); Workspace per-seat subscriptions; Google One storage upgrades</dd></div>
+        <div><dt>Scale anchor</dt><dd>Google Workspace: 3B+ users and 13M+ customers as of 2026-04-22 (Google Workspace blog)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Google publishes no file counts for Docs. The corpus figures below are from the Site Wise census of the Common Crawl index in the Probe Log, a measure of outlinked public files, not of the store.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Workspace scale</dt>
+          <dd>Over 3B users and more than 13M customers as of 2026-04-22. <a href="https://workspace.google.com/blog/product-announcements/10-more-announcements-workspace-at-next-2026">Google Workspace blog, Next '26</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Common Crawl footprint</dt>
+          <dd>CC-MAIN-2026-39 (crawled September 2026) holds 37 index blocks for the host, roughly 110K captures. By type: Docs 21.4K captures, Sheets 8.9K, Slides 5.0K, Forms at least 52.6K, uploaded-file viewer 0.4K and Drawings 0.1K (counted from the per-prefix index; Forms is a lower bound because one index page came back truncated). <a href="#probe-log">CC index census</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Distinct public files in the crawl</dt>
+          <dd>Distinct IDs that returned 200: 17.9K Docs, 7.2K Sheets, 4.2K Slides and 33.4K Forms, about 62.7K files in total (calculated by Site Wise). <a href="#probe-log">CC index census</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Edit link vs. published link</dt>
+          <dd>85% of Docs captures are <code>/d/{id}/edit</code> share links and 6.5% are <code>/d/e/2PACX…/pub</code> published pages. For Sheets, 74% are <code>/edit</code> and 16% are <code>pubhtml</code>. For Forms, 79% of captures are published <code>/d/e/1FAIpQL…</code> links (calculated by Site Wise). <a href="#probe-log">CC index census</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Status mix at crawl time</dt>
+          <dd>Docs: 85.7% returned 200, 4.7% 401 (no longer shared) and 2.6% 410 (deleted). Sheets: 84.2%, 4.3% and 4.2%. Slides: 86.0%, 3.1% and 3.5%. Forms: 66.3% returned 200, and 18.4% returned 302, mostly to <code>closedform</code> (calculated by Site Wise). <a href="#probe-log">CC index census</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Forms closed and abuse-blocked</dt>
+          <dd>Of the Forms captures that resolved to a form view, 12.0% were <code>closedform</code> (no longer accepting responses). 418 captures (0.8%) were <code>/abuse</code> takedown links (calculated by Site Wise). <a href="#probe-log">CC index census</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Survival after about 7 weeks</dt>
+          <dd>40 of 40 sampled files that had returned 200 to Common Crawl (12 Docs, 8 Sheets, 8 Slides, 12 Forms) still returned 200 on 2026-10-27. 6 of 6 sampled 401 and 410 captures still returned the same status. <a href="#probe-log">Live recheck</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Official API quota</dt>
+          <dd>Docs API: 3,000 reads per minute per project and 300 per minute per user. Sheets API: 300 reads per minute per project and 60 per user. As of 2026-10-27. <a href="https://developers.google.com/workspace/docs/api/limits">Docs API limits</a>, <a href="https://developers.google.com/workspace/sheets/api/limits">Sheets API limits</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Terms of service</dt>
+          <dd>Google's terms prohibit "using automated means to access content from any of our services in violation of the machine-readable instructions on our web pages (for example, robots.txt files that disallow crawling, training, or other activities)". Effective 2026-07-30. <a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card" id="probe-log">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-27 from a US egress, plain curl with a generic browser UA unless noted. File IDs come from the Common Crawl index; no file was discovered by guessing IDs.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe"><code>curl /robots.txt</code></td><td data-label="Observation">38 lines, one <code>User-agent: *</code> group with <code>Crawl-delay: 1</code>. It allows the file paths (<code>/document</code>, <code>/spreadsheet</code> (prefix also matches <code>/spreadsheets</code>), <code>/presentation</code>, <code>/forms</code>, <code>/drawings</code>, <code>/file</code>, <code>/viewer</code>, <code>/a/</code>, <code>/templates</code>…), disallows <code>/templateabuse</code>, and ends with <code>Disallow: /</code>. There are no named AI-agent groups and no <code>Sitemap:</code> line.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe"><code>curl -sI /</code></td><td data-label="Observation">302 to accounts.google.com ServiceLogin. <code>server: ESF</code>, HSTS, nonce CSP (reporting to <code>/_/DocsHomeRedirectHttp/cspreport</code>), <code>cache-control: no-store</code>. Bare <code>/document/</code>, <code>/spreadsheets/</code> and <code>/presentation/</code> 302 to the www.google.com marketing pages.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Discovery files</td><td data-label="Observation"><code>/sitemap.xml</code>, <code>/llms.txt</code> and <code>/.well-known/security.txt</code> all return 404. There is no feed and no enumeration surface of any kind.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">CC index census</td><td data-label="Observation"><code>index.commoncrawl.org/CC-MAIN-2026-39-index?url=docs.google.com/{type}/*</code>, all pages, with retries: the index server returned 502/504 or truncated pages about half the time. 88K capture records across the six type prefixes, classified by type, action suffix, status and distinct ID. Totals in Verified Metrics.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Robots header matrix</td><td data-label="Observation">Every view returns <code>x-robots-tag: noindex, nofollow, nosnippet</code>: <code>/edit</code>, <code>/preview</code>, <code>/mobilebasic</code>, Docs <code>/pub</code>, Sheets <code>/pubhtml</code>, Slides <code>/pub</code>, Forms <code>/viewform</code>, every <code>/export</code> redirect, and <code>gviz/tq</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">UA matrix</td><td data-label="Observation">Googlebot, Bingbot and GPTBot UAs on one <code>/edit</code> and one <code>/pub</code> URL: 200 for all, each with the same noindex header. No UA is exempt, Google's own crawler included.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Live recheck (40 files)</td><td data-label="Observation">Random 200-status IDs from the CC census, fetched at 1 request per 2s: 12/12 Docs, 8/8 Sheets, 8/8 Slides and 12/12 Forms returned 200 with real titles. <code>/edit</code> HTML is 0.2–2.1MB. The document model is inlined as <code>DOCS_modelChunk</code> (10 chunks in one doc), so the text is in the server HTML without running JS. Three CC 410s still returned 410 ("Page Not Found"), and three 401s still returned 401.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Metadata sample</td><td data-label="Observation">28 of 28 editor pages have <code>og:title</code>, <code>og:url</code> and <code>og:image</code> (a first-page render on <code>lh7-*.googleusercontent.com</code>). Docs and Slides also carry <code>og:description</code> with about the first 300 characters of body text; Sheets do not. JSON-LD: 0 of 28. Titles end in " - Google Docs/Sheets/Slides". 4 of the 5 sampled 33-character IDs had titles ending in .xlsx or .pptx; native IDs are 44 characters.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Anonymous export</td><td data-label="Observation"><code>/document/d/{id}/export?format=txt|md|docx</code>, <code>/spreadsheets/d/{id}/export?format=csv</code> and <code>/presentation/d/{id}/export/txt|pdf</code> 307 to a signed <code>doc-*-{docstext|sheets|slides}.googleusercontent.com/export/…</code> URL, then 200. The Markdown export keeps hyperlinks (one 804B text file became 1.8KB of Markdown). The signed path embeds the request time in ms and a 21-digit numeric ID that is identical across formats of the same file and differs between files.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Sheets gviz endpoint</td><td data-label="Observation"><code>/spreadsheets/d/{id}/gviz/tq?tqx=out:json</code> returns typed JSON (column ids and types, cell values) with no key, served as a <code>json.txt</code> attachment. The sampled public sheet was a school staff directory with names and email addresses.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Forms blob</td><td data-label="Observation">12 random open Forms: all 12 carry <code>FB_PUBLIC_LOAD_DATA_</code>; 11 hold 4–46 items each and question type codes 0–9 (short answer, paragraph, multiple choice, checkboxes, dropdown, scale, grid, date, time). The twelfth had an empty item list. Sampled languages: English, Spanish and Japanese.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Published pages</td><td data-label="Observation">Docs <code>/pub</code> pages are 0.2–0.6MB of static HTML with the footer "Published using Google Docs". 2 of the 3 sampled published pages contained no 44-character source file ID.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Official APIs, keyless</td><td data-label="Observation"><code>docs.googleapis.com/v1/documents/{id}</code> returns 401 UNAUTHENTICATED (OAuth expected). <code>googleapis.com/drive/v3/files/{id}</code> returns 403 "unregistered callers… use API Key". This is the same public file whose web export returned 200 anonymously.</td></tr>
+            <tr><td data-label="Date">2026-10-27</td><td data-label="Probe">Wayback CDX</td><td data-label="Observation">The <code>web.archive.org/cdx</code> prefix query returned "Internet Archive: Temporarily Offline". No archive cross-check today.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"Seed" = a file URL learned from an outlink (Common Crawl, a partner's own web crawl, or a link the user supplies). Counts are the CC-MAIN-2026-39 footprint, not the store size. Every web path below returns the noindex header from the Probe Log.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Document text</td>
+              <td data-label="Objects &amp; est. count">17.9K Docs in one CC crawl; true public count open.</td>
+              <td data-label="Best legitimate path">Docs API <code>documents.get</code> with the user's OAuth, or a seed plus <code>export?format=md</code>.</td>
+              <td data-label="Auth &amp; quota">API: OAuth, 3K reads/min/project. Export: none observed; robots asks 1s crawl delay.</td>
+              <td data-label="License / display">The owner's copyright, and noindex/nosnippet on all views: no snippets unless the owner opts in.</td>
+              <td data-label="Freshness">Live-edited; published copies refresh within minutes.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Tables</td>
+              <td data-label="Objects &amp; est. count">7.2K Sheets (1.4K published as <code>pubhtml</code>).</td>
+              <td data-label="Best legitimate path">Sheets API with OAuth; seed plus <code>export?format=csv</code> or <code>gviz/tq</code> JSON.</td>
+              <td data-label="Auth &amp; quota">API: 300 reads/min/project. gviz and CSV: keyless.</td>
+              <td data-label="License / display">Owner's data; contains PII (directories, rosters).</td>
+              <td data-label="Freshness">Live-edited; some sheets are live dashboards.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Slides &amp; images</td>
+              <td data-label="Objects &amp; est. count">4.2K Slides; one first-page <code>og:image</code> per file.</td>
+              <td data-label="Best legitimate path">Slides API (OAuth); seed plus <code>export/pdf</code> or <code>export/txt</code>; embedded images via export.</td>
+              <td data-label="Auth &amp; quota">OAuth for API; export keyless.</td>
+              <td data-label="License / display">Owner's copyright; many are teaching material containing third-party images.</td>
+              <td data-label="Freshness">Low churn after a class or event ends.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Forms (structured)</td>
+              <td data-label="Objects &amp; est. count">33.4K Forms; 12% closed.</td>
+              <td data-label="Best legitimate path">Seed plus the <code>viewform</code> <code>FB_PUBLIC_LOAD_DATA_</code> blob (title, description, questions, options). Forms API for owned forms only.</td>
+              <td data-label="Auth &amp; quota">None for the blob; responses need owner OAuth.</td>
+              <td data-label="License / display">Form text is the owner's. Responses are never public unless the owner shares the linked Sheet.</td>
+              <td data-label="Freshness">Short-lived: close dates follow events.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Uploaded files</td>
+              <td data-label="Objects &amp; est. count">0.4K <code>/file/d/</code> viewer captures plus Office files opened in the editors (33-character IDs).</td>
+              <td data-label="Best legitimate path">Drive API <code>files.get</code> with an API key for public files; the binaries are on drive.google.com.</td>
+              <td data-label="Auth &amp; quota">API key or OAuth.</td>
+              <td data-label="License / display">Owner's copyright.</td>
+              <td data-label="Freshness">Static once uploaded.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video / audio</td>
+              <td data-label="Objects &amp; est. count">Embedded in Slides (Drive or YouTube) only; no standalone media objects on this host.</td>
+              <td data-label="Best legitimate path">Follow the embed to YouTube or Drive.</td>
+              <td data-label="Auth &amp; quota">Per target host.</td>
+              <td data-label="License / display">Per target host.</td>
+              <td data-label="Freshness">n/a</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Templates</td>
+              <td data-label="Objects &amp; est. count">Google's own template gallery (<code>/templates</code>, robots-allowed).</td>
+              <td data-label="Best legitimate path">Crawl within the robots allow list.</td>
+              <td data-label="Auth &amp; quota">None.</td>
+              <td data-label="License / display">Google's content.</td>
+              <td data-label="Freshness">Rare updates.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this site differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Crawl posture</h4>
+          <p>This is a different pattern from the default two tracks. robots.txt allows the file paths to everyone with a 1s delay, but the response header forbids indexing, following links and snippets for every agent, including Googlebot, and there is no SEO sliver. Fetching is allowed; indexing is not. A compliant index can store a link and an owner-supplied title, but not the text.</p>
+        </div>
+        <div>
+          <h4>Discovery</h4>
+          <p>There is no sitemap, search or listing, and IDs are long random tokens, so the only discovery path is outlinks from other hosts. The reachable corpus equals the links an index already holds. Common Crawl's 62.7K distinct files per crawl is a floor set by its own crawl frontier.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The native file ID is 44 characters; Office uploads have 33. Published pages use a separate opaque ID (<code>2PACX-1v…</code> for Docs/Sheets/Slides, <code>1FAIpQL…</code> for Forms) that does not reveal the source file. The same file can appear as <code>/edit</code>, <code>/view</code>, <code>/preview</code>, <code>/copy</code>, <code>/mobilebasic</code>, <code>/a/{domain}/…</code> and <code>?usp=</code> variants. Canonicalize to <code>{type}/d/{id}</code>, and key published pages separately.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Use the export output (Markdown for Docs, CSV for Sheets, text or PDF for Slides). Editor HTML is 0.2–2MB of app shell around an inlined model, and Common Crawl's language tags read that UI chrome (97.7% "eng" for Docs, while 3 of 12 sampled Docs were Russian or Italian). The title suffix "- Google Docs" must be stripped.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Files are mutable in place, and the URL never changes when content does. Loss shows up as 401 (sharing revoked) or 410 (deleted); both persisted in the recheck. Forms move from <code>viewform</code> to <code>closedform</code> rather than disappearing.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; privacy</h4>
+          <p>The public corpus is heavily institutional: schools, clubs and small organizations (class schedules, booklists, staff directories, membership forms). "Anyone with the link" is not consent to discovery, and sheets routinely expose names and emails. Forms are a known phishing vector: about 0.8% of Forms captures were already abuse-blocked.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> a file (Doc, Sheet tab, deck, Form) keyed by type and ID, with Doc headings, Sheet rows and slides as sub-units. Index link metadata only (anchor text, linking page, title) unless the owner or linking site grants more.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>{type}/d/{id}</code> ↔ published ID (no public mapping: open) ↔ linking page URL (the strongest context signal) ↔ <code>og:image</code> thumbnail. A Form joins to its response Sheet only through the owner.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Drive/Docs/Sheets APIs with OAuth for files a user connects: full fidelity, quota-metered, consented. 2) Outlink seeds from the index's own web crawl, stored as link-only records (title from anchor text) that respect noindex. 3) Keyless export endpoints. They are technically open, but under the ToS clause their use for indexing needs legal review first.</li>
+        <li><strong>Recrawl cadence:</strong> link records: check status (200, 401 or 410) monthly. Connected-account files: use Drive API change notifications instead of polling. Forms: weekly while open.</li>
+        <li><strong>Derivatives to generate:</strong> for consented files only: Markdown and CSV normalisation, slide OCR from PDF export, a PII scan before any embedding.</li>
+        <li><strong>Demo to build:</strong> a "public-link exposure" auditor: given a domain, list the docs.google.com links its own pages publish, with live status and a PII-pattern flag. This turns the census into a defensive tool rather than a scraper.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li>The header <code>noindex, nofollow, nosnippet</code> combined with the ToS ban on automated access "in violation of machine-readable instructions" makes full-text indexing of third-party files a policy breach, even though robots.txt allows fetching. This is the main constraint on the whole host.</li>
+        <li>Privacy exposure: link-shared files were never meant to be found. Indexing directories, rosters or form contents creates personal-data liability independent of Google's terms.</li>
+        <li>Google can tighten anonymous export (a signed-URL redirect is already in place) or remove the gviz and <code>FB_PUBLIC_LOAD_DATA_</code> surfaces at any time. No documented contract covers them.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://workspace.google.com/blog/product-announcements/10-more-announcements-workspace-at-next-2026">Google Workspace blog, Next '26 (2026-04-22)</a>: 3B+ users, 13M+ customers.</li>
+        <li><a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service (effective 2026-07-30)</a>: automated-access clause.</li>
+        <li><a href="https://developers.google.com/workspace/docs/api/limits">Docs API usage limits</a> and <a href="https://developers.google.com/workspace/sheets/api/limits">Sheets API usage limits</a> (read 2026-10-27).</li>
+        <li><a href="https://support.google.com/docs/answer/183965?hl=en">Docs Editors Help: Make Google Docs, Sheets, Slides &amp; Forms public</a>: publish-to-web behavior, automatic updates.</li>
+        <li><a href="https://workspaceupdates.googleblog.com/2024/07/import-and-export-markdown-in-google-docs.html">Workspace Updates, 2024-07-16</a>: Markdown export.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Google_Docs">Wikipedia: Google Docs</a> (read 2026-10-27): Writely origin and launch dates.</li>
+        <li><a href="https://index.commoncrawl.org/">Common Crawl index server</a>, CC-MAIN-2026-39; local probes on 2026-10-27 in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>33-character IDs are Office files (.docx, .xlsx, .pptx) opened in the editors, and 44-character IDs are native files. <em>Basis:</em> 4 of the 5 sampled 33-character IDs had titles ending in .xlsx or .pptx; none of the 23 sampled 44-character IDs did.</li>
+        <li>The 21-digit number in the signed export path identifies the file owner, not the anonymous requester. <em>Basis:</em> it was identical for the txt and md exports of one Doc and for the txt and pdf exports of one deck, and it differed between the Doc, the Sheet and the deck, all requested in the same anonymous session.</li>
+        <li>noindex is applied to the whole host, not set per file by owners. <em>Basis:</em> 16 URL variants across 10 files (edit, preview, mobilebasic, pub, pubhtml, viewform, export, gviz) all returned the identical header, and the publish dialog in the help page offers no indexing option.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>The total count of link-shared and published files. Closeable only by Google disclosure. A lower-bound proxy is the union of distinct IDs across several Common Crawl releases.</li>
+        <li>Whether published IDs (<code>2PACX…</code>, <code>1FAIpQL…</code>) can be mapped to source file IDs. Closeable by publishing a test file from a Site Wise account and searching the published HTML and network responses for the source ID.</li>
+        <li>The rate limit on anonymous export endpoints. Closeable by a paced ramp on Site Wise-owned public files only, recording the first 429 or captcha.</li>
+        <li>How fast public files decay over months, not weeks. Closeable by rechecking the same 40-file sample on 2027-01-27 and comparing status counts.</li>
+        <li>Whether Google Search shows any docs.google.com results despite the header (for example, ones indexed before the header existed). Closeable by a sampled <code>site:docs.google.com</code> query set compared against fresh fetches.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
