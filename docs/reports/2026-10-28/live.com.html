@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>live.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-10-28</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>live.com</h1>
+      <p class="lede">live.com is a 301 to Outlook.com: no robots.txt, no public page; mailboxes open only through delegated Microsoft Graph OAuth.</p>
+      <div class="tag-row">
+        <span class="tag">Webmail</span>
+        <span class="tag">Auth-Walled</span>
+        <span class="tag">Microsoft Graph</span>
+        <span class="tag">Exchange Online</span>
+        <span class="tag">Zero-Crawl</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>live.com is the legacy domain of Microsoft's consumer mail and identity stack. Hotmail launched Jul 4 1996, Microsoft bought it in 1997, and Outlook.com replaced it in public preview on Jul 31 2012; today <code>live.com</code>, <code>hotmail.com</code> and <code>outlook.com</code> all 301 into the same Outlook web app, while <code>login.live.com</code> remains the Microsoft account sign-in page (Probe Log). Revenue is inbox advertising plus Microsoft 365 Consumer subscriptions, which Microsoft's FY2026 10-K ties directly to "demand for communication and storage through Outlook.com and OneDrive". For an index builder this host is a sibling of <a href="../2026-09-01/mail.yahoo.com.html">mail.yahoo.com</a> and <a href="../2026-07-27/mail.google.com.html">mail.google.com</a>: a giant private corpus with zero public surface. The delta is the access path. Consumer mailboxes run on the same Exchange Online fleet as business tenants, so they inherit its protocols (Graph, EWS, ActiveSync, IMAP) and its deprecation schedule. Microsoft has retired Basic auth, the Outlook REST API, and now EWS in two years, leaving Graph as the only durable path.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>live.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://outlook.live.com/mail/">https://outlook.live.com/mail/</a> (destination of the <code>live.com</code> 301 chain)</dd></div>
+        <div><dt>Category</dt><dd>Consumer webmail + Microsoft account identity; private-corpus platform</dd></div>
+        <div><dt>Related hosts</dt><dd><code>outlook.live.com</code>, <code>login.live.com</code>, <code>account.live.com</code>, <code>imap-mail.outlook.com</code>, <code>smtp-mail.outlook.com</code>, <code>pop-mail.outlook.com</code>, <code>eas.outlook.com</code>, <code>graph.microsoft.com</code>, <code>login.microsoftonline.com/consumers</code></dd></div>
+        <div><dt>Owner</dt><dd>Microsoft Corporation (NASDAQ: MSFT)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Hotmail Jul 4 1996; Outlook.com public preview Jul 31 2012</dd></div>
+        <div><dt>Business model</dt><dd>Inbox advertising (free tier) + Microsoft 365 Consumer subscriptions (ad-free, larger mailbox)</dd></div>
+        <div><dt>Scale anchor</dt><dd>89.0M Microsoft 365 Consumer subscribers at Jun 30 2025 — the last count Microsoft published (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. Mailbox counts and corpus size have no published figure and live once in Open Questions.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Microsoft 365 Consumer subscribers</dt>
+          <dd>89.0M at Jun 30 2025 (+8% YoY). <a href="https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm">MSFT FY2025 10-K</a> <span class="evidence verified">verified</span>. The FY2026 10-K (filed Jul 29 2026) says the metric "was removed" and reports only 7% subscriber growth; 89.0M × 1.07 ≈ 95.2M at Jun 30 2026, calculated by Site Wise. <a href="https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm">MSFT FY2026 10-K</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Mailbox storage</dt>
+          <dd>15 GB free, separate from cloud storage; Microsoft 365 subscribers capped at 100 GB. Attachments count against the shared 5 GB (free) cloud quota, and an over-quota mailbox cannot send or receive. Page observed Oct 28 2026. <a href="https://support.microsoft.com/office/storage-limits-in-outlook-com-7ac99134-69e5-4619-ac0b-2d313bba5e9e">Storage limits in Outlook.com</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Attachment and recipient limits</dt>
+          <dd>25 MB per attachment (2 GB via OneDrive link); subscribers 5,000 recipients/day, 500 per message, 1,000 non-relationship recipients/day; free-tier limits unpublished ("lower"). Observed Oct 28 2026. <a href="https://support.microsoft.com/office/sending-limits-in-outlook-com-279ee200-594c-40f0-9ec8-bb6af7735c2e">Sending limits in Outlook.com</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Graph Outlook throttle</dt>
+          <dd>Per app × mailbox: 10,000 requests per 10 minutes, 4 concurrent requests, 150 MB upload per 5 minutes; page updated Sep 17 2026. <a href="https://learn.microsoft.com/en-us/graph/throttling-limits">Microsoft Graph throttling limits</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Basic auth cutoff</dt>
+          <dd>Password (Basic) authentication stopped working for Outlook.com accounts on Sep 16 2024; OAuth required for IMAP, POP, SMTP and EAS. <a href="https://support.microsoft.com/en-us/topic/c5d65390-9676-4763-b41f-d7986499a90d">Microsoft support notice</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>EWS retirement (Exchange Online)</dt>
+          <dd>Phased disablement from Oct 1 2026; full, permanent retirement Apr 1 2027. Message published Feb 5 2026. <a href="https://mc.merill.net/message/MC1227454">MC1227454 (Message Center mirror)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Outlook REST API v2.0</dt>
+          <dd>Decommissioned Mar 31 2024, with calls answered 410 Gone for 60 days and then shut off progressively. <a href="https://devblogs.microsoft.com/microsoft365dev/?p=15235">Microsoft 365 Developer Blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Public crawlable surface</dt>
+          <dd>0 pages and no robots.txt on any of 6 <code>*.live.com</code> hosts tested; the only HTML that loads is the 32.7KB sign-in page, marked <code>robots: none</code>. Measured Oct 28 2026 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-10-28 with UA <code>SiteWise research</code>. Mail protocol probes are unauthenticated banner/capability calls only. No login was attempted and no mailbox was accessed.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-10-28</td><td data-label="Probe"><code>curl -sL https://{live.com, www.live.com, outlook.live.com, login.live.com, account.live.com, onedrive.live.com}/robots.txt</code></td><td data-label="Observation"><strong>No robots.txt anywhere.</strong> <code>live.com</code> 301 → <code>outlook.live.com/owa/</code>. <code>outlook.live.com/robots.txt</code> 302 → <code>/mail/?realm=robots.txt</code>: the router reads the path segment as a login realm (domain), not a file. <code>login.live.com</code> 404 with 0 bytes; <code>account.live.com</code> 302 to <code>error.aspx?e=404</code>; <code>onedrive.live.com</code> did not answer. <code>hotmail.com</code> 301 → <code>outlook.live.com/owa/</code>, and <code>outlook.com</code> 301 → <code>outlook.com/mail/</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-28</td><td data-label="Probe"><code>curl -sI https://live.com/</code> (followed) + <code>GET /mail/</code></td><td data-label="Observation">First hop is Azure Front Door (<code>x-msedge-ref</code>). <code>/owa/</code> answers <code>401</code> from <code>server: Microsoft-HTTPAPI/2.0</code> with <code>x-owa-resulttype: AuthError</code>, <code>x-responseorigin: OwaNetCore</code> and a backend target <code>*.namprd04.prod.outlook.com</code>. HSTS 1 year with <code>includeSubDomains</code>, no <code>preload</code>. <code>GET /mail/</code> from a non-browser client returns <strong><code>417 Expectation Failed</code>, 0 bytes</strong>; the identical <code>x-calculatedbetarget</code> naming as Exchange Online tenant mailboxes appears in the headers.</td></tr>
+            <tr><td data-label="Date">2026-10-28</td><td data-label="Probe">DoH lookups (<code>cloudflare-dns.com</code>)</td><td data-label="Observation"><code>outlook.live.com</code> CNAMEs to <code>outlook.cloud.microsoft</code> → <code>*.tm.svc.cloud.microsoft</code> → 40.104.x / 52.96.x, the same front door as Microsoft 365. MX for <code>live.com</code>, <code>outlook.com</code>, <code>hotmail.com</code> all point to <code>*-com.olc.protection.outlook.com</code>. <strong>DMARC is <code>p=none</code> on all three</strong> (<code>sp=quarantine</code> on live.com and outlook.com), unlike Yahoo's <code>p=reject</code>.</td></tr>
+            <tr><td data-label="Date">2026-10-28</td><td data-label="Probe">Structured-data sample, <code>login.live.com/</code></td><td data-label="Observation">200, 32,694 bytes. Title "Sign in to your Microsoft account"; <code>&lt;meta name="robots" content="none"&gt;</code>; 0 JSON-LD, 0 Open Graph tags, 4 anchors, no canonical.</td></tr>
+            <tr><td data-label="Date">2026-10-28</td><td data-label="Probe"><code>openssl s_client imap-mail.outlook.com:993</code> and <code>outlook.office365.com:993</code> → <code>CAPABILITY</code></td><td data-label="Observation">Byte-identical capability on both hosts: <code>IMAP4 IMAP4rev1 AUTH=XOAUTH2 LOGINDISABLED SASL-IR UIDPLUS MOVE ID UNSELECT CHILDREN IDLE NAMESPACE LITERAL+</code>. Password <code>LOGIN</code> disabled; <code>CONDSTORE</code>, <code>QRESYNC</code>, <code>OBJECTID</code> and <code>SPECIAL-USE</code> absent pre-auth. The bracketed banner token is base64 UTF-16LE for a backend hostname of the form <code>*.PROD.OUTLOOK.COM</code>, so consumer and business IMAP share one Exchange fleet.</td></tr>
+            <tr><td data-label="Date">2026-10-28</td><td data-label="Probe"><code>pop-mail.outlook.com:995 CAPA</code>; <code>smtp-mail.outlook.com:587</code> STARTTLS <code>EHLO</code></td><td data-label="Observation">POP: <code>TOP UIDL SASL PLAIN XOAUTH2 USER</code>, so <code>USER</code> and <code>PLAIN</code> are still advertised after the Basic auth cutoff. SMTP host <code>*.outlook.office365.com</code>: <code>SIZE 157286400</code> (150 MiB), <code>AUTH LOGIN XOAUTH2</code>, <code>BINARYMIME CHUNKING SMTPUTF8 DSN</code>. The advertised 150 MiB is six times the documented 25 MB attachment limit (Verified Metrics).</td></tr>
+            <tr><td data-label="Date">2026-10-28</td><td data-label="Probe"><code>outlook.office365.com/autodiscover/autodiscover.json?Email=someone@outlook.com&amp;Protocol=…</code></td><td data-label="Observation">Anonymous answers: <code>EWS</code> → <code>outlook.office365.com/EWS/Exchange.asmx</code>; <code>ActiveSync</code> → <code>eas.outlook.com</code>; <code>Rest</code> → <code>outlook.office.com/api</code> (still advertised although v2.0 was decommissioned). <code>Imap</code> is rejected with an error that lists <strong>37 supported protocol names</strong>, including <code>SubstrateSearchService</code>, <code>OutlookCopilotMailIntelligenceService</code> and <code>SydneyService</code>. Unauthenticated calls to the EWS, EAS and REST v2.0 endpoints all return 401, not 410.</td></tr>
+            <tr><td data-label="Date">2026-10-28</td><td data-label="Probe">Graph: <code>GET /v1.0/me/messages</code>, <code>GET /v1.0/$metadata</code>, consumers OIDC discovery</td><td data-label="Observation"><code>/me/messages</code> → 401 <code>InvalidAuthenticationToken</code>. <code>$metadata</code> is public: 1.84MB, 1,239 entity types. <code>message</code> has 26 own properties + 4 from <code>outlookItem</code> + <code>id</code>, including <code>conversationId</code>, <code>internetMessageId</code>, <code>internetMessageHeaders</code>, <code>uniqueBody</code>, <code>inferenceClassification</code> and <code>webLink</code>. Consumers issuer is tenant <code>9188040d-6c67-4c5b-b112-36a304b66dad</code>; <code>subject_types_supported: pairwise</code>; device-code flow endpoint published.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Every path except the last row needs a delegated OAuth grant from the mailbox owner (consumers tenant). Nothing here is a bulk corpus.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Text</td>
+              <td data-label="Objects &amp; est. count">Message bodies (HTML or text), headers, subjects. System-wide count is open; ≤15 GB per free mailbox.</td>
+              <td data-label="Best legitimate path">Graph <code>/me/mailFolders/{id}/messages/delta</code>; full MIME via <code>/messages/{id}/$value</code>.</td>
+              <td data-label="Auth &amp; quota">Delegated <code>Mail.ReadBasic</code> / <code>Mail.Read</code> on a personal-account app; 10K req/10 min, 4 concurrent per mailbox.</td>
+              <td data-label="License / display">User's own data under delegated consent; sender copyright travels with the message.</td>
+              <td data-label="Freshness">Seconds; per-folder delta tokens give incremental sync.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Images &amp; documents</td>
+              <td data-label="Objects &amp; est. count">Inline and attached files, each ≤25 MB; larger files are OneDrive links, not MIME parts.</td>
+              <td data-label="Best legitimate path">Graph <code>/messages/{id}/attachments</code> + <code>/$value</code>; OneDrive links need a separate <code>Files.Read</code> grant.</td>
+              <td data-label="Auth &amp; quota">Same grant; counts against the same per-mailbox throttle.</td>
+              <td data-label="License / display">Same as text.</td>
+              <td data-label="Freshness">Immutable once delivered; linked OneDrive files mutate independently.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Video &amp; audio</td>
+              <td data-label="Objects &amp; est. count">No first-party media product; clips and voice notes only as attachments under the 25 MB cap.</td>
+              <td data-label="Best legitimate path">Same as attachments.</td>
+              <td data-label="Auth &amp; quota">Same.</td>
+              <td data-label="License / display">Same.</td>
+              <td data-label="Freshness">Immutable.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Threads</td>
+              <td data-label="Objects &amp; est. count">Reply chains, the closest thing to comments.</td>
+              <td data-label="Best legitimate path">Graph <code>conversationId</code>; <code>uniqueBody</code> returns only the new text of each reply.</td>
+              <td data-label="Auth &amp; quota">Same grant.</td>
+              <td data-label="License / display">Same as text.</td>
+              <td data-label="Freshness">Grows for days, then goes cold.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured entities</td>
+              <td data-label="Objects &amp; est. count">Contacts, calendar events, To Do tasks.</td>
+              <td data-label="Best legitimate path">Graph personal-contacts, calendar and To Do APIs (same Outlook throttle bucket). No CalDAV/CardDAV.</td>
+              <td data-label="Auth &amp; quota">Delegated <code>Contacts.Read</code>, <code>Calendars.Read</code>, <code>Tasks.Read</code>.</td>
+              <td data-label="License / display">Same as text.</td>
+              <td data-label="Freshness">Contacts near-static; events mutate on RSVP.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Public web</td>
+              <td data-label="Objects &amp; est. count"><strong>Zero pages</strong> (Verified Metrics).</td>
+              <td data-label="Best legitimate path">None. Product documentation is off-host on <code>support.microsoft.com</code>.</td>
+              <td data-label="Auth &amp; quota">n/a; non-browser GETs to <code>/mail/</code> get 417 (Probe Log).</td>
+              <td data-label="License / display">n/a</td>
+              <td data-label="Freshness">n/a</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where Outlook.com departs from the <a href="../../methodology.html">default platform assumptions</a> and from the Yahoo/Gmail webmail reports.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Graph's default message <code>id</code> <strong>changes when the item moves folders</strong>. Send <code>Prefer: IdType="ImmutableId"</code> on every request, including delta and subscriptions, to get an ID that survives folder moves and changes only on archive or export/re-import. <code>translateExchangeIds</code> converts up to 1,000 legacy IDs per call. Key on <code>accountId + immutableId</code>. Use <code>internetMessageId</code> for cross-provider dedup.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>Index the message, present the thread, and promote each attachment to its own document, as on Yahoo. One addition: <code>uniqueBody</code> gives the reply without quoted history. Index <code>uniqueBody</code> for recall and keep <code>body</code> for display, so a 30-message thread is not indexed 30 times over.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Stable: immutable message ID → attachment ID → bytes; <code>conversationId</code> → messages. Microsoft adds a join that IMAP providers lack: OneDrive "attachments" are links into a second Graph resource (Files) under the same identity, so the mail and file indexes share one <code>user id</code> and one consent screen.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Do not trust the sender address on its own. With DMARC <code>p=none</code> on <code>outlook.com</code>, <code>hotmail.com</code> and <code>live.com</code> (Probe Log), spoofed mail claiming those domains is not rejected by policy. Index the <code>Authentication-Results</code> line from <code>internetMessageHeaders</code> as a trust feature, not the <code>From</code> line.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>This is the inverse of Yahoo. IMAP here also lacks <code>CONDSTORE</code>/<code>QRESYNC</code>, but Graph has per-folder <code>delta</code> with opaque tokens, documented for personal accounts at <code>Mail.ReadBasic</code>. Incremental sync is cheap on Graph and expensive on IMAP, so IMAP should not be used for anything except fallback.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Every message exposes <code>inferenceClassification</code> (<code>focused</code> / <code>other</code>), Microsoft's own relevance label, which the user can correct. It is a free per-message priority prior that IMAP providers do not expose; use it as a ranking feature, not a filter.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>The anonymous autodiscover list names <code>SubstrateSearchService</code> and <code>OutlookCopilotMailIntelligenceService</code> (Probe Log): Microsoft's own mail retrieval runs on the Substrate index behind Copilot, which is not offered to third parties. Graph <code>$search</code> on messages is the only public query interface.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> message (indexed on <code>uniqueBody</code>), thread for presentation, each attachment a sibling document.</li>
+        <li><strong>Primary keys &amp; joins:</strong> consumers-tenant <code>user id</code> + Graph immutable ID; <code>conversationId</code> groups; <code>internetMessageId</code> dedups across providers; OneDrive item IDs join linked attachments.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Microsoft Graph delegated (<code>Mail.Read</code> + <code>offline_access</code>), with an app registered for personal accounts. It is the only path with delta sync and immutable IDs; ceiling 10K requests per 10 min per mailbox. 2) Graph contacts/calendar/To Do under the same consent. 3) IMAP <code>XOAUTH2</code>: fallback only, no delta and no stable cross-folder ID pre-auth. 4) EWS and EAS: do not build. EWS is in phased shutdown on Exchange Online, and EAS is a device-sync protocol. 5) Public crawl: nothing exists.</li>
+        <li><strong>Recrawl cadence:</strong> Graph delta per folder every few minutes on Inbox and Sent, hourly on others; contacts/calendar daily. The 15 GB free cap and over-quota bounce (Verified Metrics) mean storage-pressure deletions show up as delta removals and must be honored.</li>
+        <li><strong>Derivatives to generate:</strong> attachment text extraction and OCR; thread summaries over <code>uniqueBody</code> chains; sender-trust features from <code>Authentication-Results</code>.</li>
+        <li><strong>Demo to build:</strong> on a mailbox the operator owns, sync one folder twice, once with default IDs and once with <code>ImmutableId</code>, then move 100 messages and measure how many default IDs break. Then compare indexed bytes between <code>body</code> and <code>uniqueBody</code> across long threads.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Protocol churn is Microsoft's pattern here.</strong> Outlook REST v2.0 was decommissioned Mar 31 2024, Basic auth for Outlook.com ended Sep 16 2024, and EWS on Exchange Online began phased disablement on Oct 1 2026 (Verified Metrics). Anything not on Graph has a published end date or is likely to get one.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Business-tenant changes reach consumer mailboxes.</strong> <em>Basis:</em> IMAP on <code>imap-mail.outlook.com</code> and <code>outlook.office365.com</code> returns byte-identical capabilities from <code>*.PROD.OUTLOOK.COM</code> backends; SMTP answers as <code>*.outlook.office365.com</code>; and OWA headers carry the same <code>x-calculatedbetarget</code> naming (Probe Log). Exchange Online throttling and deprecations should be assumed to apply here until shown otherwise.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Discovery documents advertise dead paths.</strong> <em>Basis:</em> anonymous autodiscover still maps <code>Rest</code> to <code>outlook.office.com/api</code> two and a half years after v2.0 was decommissioned, and POP still advertises <code>USER</code>/<code>PLAIN</code> after the Basic auth cutoff (Probe Log). A client that configures itself from autodiscover or CAPA alone will select endpoints that fail.</li>
+        <li><strong>Scale is getting less visible.</strong> Microsoft dropped the consumer subscriber count from its FY2026 10-K (Verified Metrics), removing the last official scale figure for this corpus.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm">Microsoft FY2025 10-K</a> — 89.0M Microsoft 365 Consumer subscribers, +8%.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm">Microsoft FY2026 10-K</a> — subscriber metric removed; 7% subscriber growth; Outlook.com named as a driver of consumer cloud revenue.</li>
+        <li><a href="https://support.microsoft.com/office/storage-limits-in-outlook-com-7ac99134-69e5-4619-ac0b-2d313bba5e9e">Storage limits in Outlook.com</a> and <a href="https://support.microsoft.com/office/sending-limits-in-outlook-com-279ee200-594c-40f0-9ec8-bb6af7735c2e">Sending limits in Outlook.com</a> — quotas and limits.</li>
+        <li><a href="https://support.microsoft.com/en-us/topic/c5d65390-9676-4763-b41f-d7986499a90d">Modern Authentication now needed for Outlook.com</a> — Sep 16 2024 Basic auth cutoff.</li>
+        <li><a href="https://mc.merill.net/message/MC1227454">MC1227454 — EWS retirement update</a> — Oct 1 2026 / Apr 1 2027 dates; scoped to Exchange Online.</li>
+        <li><a href="https://devblogs.microsoft.com/microsoft365dev/?p=15235">Outlook REST API v2.0 decommissioning update</a> — Mar 31 2024.</li>
+        <li><a href="https://learn.microsoft.com/en-us/graph/throttling-limits">Graph throttling limits</a>, <a href="https://learn.microsoft.com/en-us/graph/api/message-delta">message: delta</a> (personal-account delegated permissions), <a href="https://learn.microsoft.com/en-us/graph/outlook-immutable-id">immutable IDs</a>.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Outlook.com">Wikipedia — Outlook.com</a> — Hotmail Jul 4 1996 launch, 1997 Microsoft acquisition, Jul 31 2012 Outlook.com preview.</li>
+        <li>Local probes on 2026-10-28: robots.txt and header sweep across six <code>*.live.com</code> hosts; DoH lookups; IMAP/POP/SMTP capability calls; anonymous autodiscover; Graph <code>$metadata</code> parse. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Consumer Outlook.com mailboxes are Exchange Online mailboxes. <em>Basis:</em> identical IMAP capability strings and <code>*.PROD.OUTLOOK.COM</code> backend names on the consumer and Microsoft 365 IMAP hosts, SMTP greeting from <code>*.outlook.office365.com</code>, and <code>x-calculatedbetarget</code> backend headers on <code>/owa/</code> (2026-10-28).</li>
+        <li>Discovery metadata lags deprecations. <em>Basis:</em> autodiscover <code>Rest</code> → <code>outlook.office.com/api</code> and POP CAPA <code>USER</code>/<code>SASL PLAIN</code> observed 2026-10-28, against the Mar 31 2024 REST and Sep 16 2024 Basic auth retirements.</li>
+        <li>The 417 on <code>/mail/</code> is a client-type gate rather than an outage. <em>Basis:</em> the same request returned 0 bytes with <code>x-backendhttpstatus: 417,417</code> from a named backend, while <code>/owa/</code> on the same host answered a normal 401 AuthError (2026-10-28).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Active Outlook.com mailbox count and total stored corpus. Microsoft publishes neither; closeable only by a Microsoft disclosure.</li>
+        <li>Whether the Exchange Online EWS shutdown also blocks EWS on consumer mailboxes. Closeable by an EWS <code>FindItem</code> call with an OAuth token on an owned Outlook.com account, repeated after Apr 1 2027.</li>
+        <li>Post-authentication IMAP capabilities (<code>SPECIAL-USE</code>, <code>CONDSTORE</code>, <code>OBJECTID</code>). Closeable by an authenticated <code>CAPABILITY</code> on an owned mailbox.</li>
+        <li>Whether a multi-tenant app requesting <code>Mail.Read</code> from personal accounts needs publisher verification or extra review before broad consent. Closeable by registering an unverified test app and recording the consent screen.</li>
+        <li>Whether POP <code>USER</code>/<code>PLAIN</code> still accepts app passwords on 2FA accounts. Closeable by a test on an owned account.</li>
+        <li>Free-tier daily send and recipient limits, which Microsoft describes only as "lower". Closeable by a controlled send test on an owned account.</li>
+        <li>Whether the 417 on <code>/mail/</code> varies by client signature. Closeable by an authorized browser-session HAR comparison.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
