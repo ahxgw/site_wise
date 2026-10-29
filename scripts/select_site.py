@@ -90,6 +90,11 @@ AGGREGATED_HOSTS = {
         "match_suffixes": (),
         "note": "Thread pages and sitemaps (detail.chiebukuro.yahoo.co.jp) are analyzed together with the top host as Yahoo!知恵袋.",
     },
+    "indiatimes.com": {
+        "match_hosts": ("timesofindia.indiatimes.com",),
+        "match_suffixes": (),
+        "note": "The Times of India host (timesofindia.indiatimes.com) shares the Times Internet CMS msid space with the apex and is analyzed together as Indiatimes / Times of India.",
+    },
 }
 
 
