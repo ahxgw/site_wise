@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tripadvisor.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-11-01</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>tripadvisor.com</h1>
+      <p class="lede">Tripadvisor's English sitemaps list ~518M URLs, including 311M single-review permalinks with full Review JSON-LD — but its terms ban automated access.</p>
+      <div class="tag-row">
+        <span class="tag">Travel Reviews</span>
+        <span class="tag">Tripadvisor, Inc.</span>
+        <span class="tag">UGC</span>
+        <span class="tag">DataDome</span>
+        <span class="tag">Sitemap-on-S3</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p><code>tripadvisor.com</code> is the US/English edition of Tripadvisor, the travel-review platform founded in February 2000. IAC bought it in 2004 and spun it into Expedia in 2005, and Expedia spun it off as a public company in December 2011 (NASDAQ: TRIP). The company now calls itself "experiences-led": Viator tours drive growth, hotel metasearch shrinks, and TheFork (European restaurant bookings) is being sold to American Express for $700M. The site itself is the content engine: more than a billion reviews and opinions on over nine million places, served on 40+ country domains in 20+ languages. For an index builder the delta is the gap between crawlability and permission. HTML pages return 200 to an honest research UA and carry rich JSON-LD, including one permalink per review, and the sitemaps sit in a world-readable S3 bucket. Yet the terms of use forbid any robot or AI system from indexing the content. The only licensed path is the Terra partner API, whose own caching policy forbids storing or indexing anything but location IDs.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.tripadvisor.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.tripadvisor.com/">https://www.tripadvisor.com/</a> (the apex 301s to <code>www</code>)</dd></div>
+        <div><dt>Category</dt><dd>Travel reviews and planning: hotels, restaurants, attractions, tours, forums, cruises, airlines</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>tripadvisor.com</code>, <code>www.tripadvisor.com</code></dd></div>
+        <div><dt>Related hosts</dt><dd>48 hreflang locale domains (e.g. <code>tripadvisor.co.uk</code>, <code>.fr</code>, <code>.jp</code>); <code>tripadvisor-sitemaps.s3-website-us-east-1.amazonaws.com</code>; <code>media-cdn.tripadvisor.com</code> / <code>dynamic-media-cdn.tripadvisor.com</code> (photos); <code>terra.tripadvisor.com</code> (partner API); <code>viator.com</code></dd></div>
+        <div><dt>Owner</dt><dd>Tripadvisor, Inc., Needham MA (<a href="https://www.sec.gov/Archives/edgar/data/1526520/000119312526051281/trip-20251231.htm">10-K FY2025</a>)</dd></div>
+        <div><dt>Founded / launched</dt><dd>February 2000; public since Dec 21 2011 (same 10-K)</dd></div>
+        <div><dt>Business model</dt><dd>Experiences commissions (Viator and Tripadvisor tours), hotel metasearch click and B2B fees, display/media advertising, data licensing</dd></div>
+        <div><dt>Scale anchor</dt><dd>~518M URLs in the English sitemap set (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus counts are Site Wise measurements from 2026-11-01. Financial figures are continuing operations (TheFork is reported as discontinued from Q2 2026).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>English sitemap URLs</dt>
+          <dd>About 518.5M URLs in 10,392 child sitemaps under the 7 robots.txt indexes. Every part holds exactly 50,000 URLs except the newest of each type, so the total is (parts − 1) × 50K plus the counted last part. Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Corpus by object type</dt>
+          <dd>Review permalinks (<code>ShowUserReviews</code>) ~311.3M in 6,226 parts; photo permalinks (<code>LocationPhotoDirectLink</code>) ~168.4M in 3,369 parts; forum topics ~12.4M; restaurant pages 3.22M; hotel pages 2.55M; attraction pages 1.77M; bookable tours 465K. Everything else, including list pages, "near" pages and amenity facets, adds ~18M. Calculated by Site Wise from the same census (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Review velocity</dt>
+          <dd>The highest review ID in dated review sitemaps rose from 1,063,637,880 (part dated Jun 22 2026) to 1,082,213,996 (Oct 25 2026): ~149K IDs/day. The English review index added 25–32 parts a month in Jul–Oct 2026, ≈46K new English review URLs/day. Both calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Platform scale (company)</dt>
+          <dd>"More than one billion reviews and opinions covering over nine million destinations, points of interest, experiences, accommodations, restaurants, airlines, and cruises"; 40+ countries, 20+ languages. <a href="https://www.sec.gov/Archives/edgar/data/1526520/000119312526051281/trip-20251231.htm">10-K FY2025, filed Feb 13 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Q2 2026 revenue</dt>
+          <dd>$441.9M (−7% YoY). Experiences $278.6M (+3%), Hotels and Other $163.3M (−21%), within which hotels were $117.9M (−23%) and media and advertising $31.2M (−12%). Marketing spend was $215.4M, 48.7% of revenue. <a href="https://www.sec.gov/Archives/edgar/data/1526520/000119312526336666/trip-ex99_1.htm">Q2 2026 release (EX-99.1), Aug 6 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Experiences supply</dt>
+          <dd>~6.5M experience bookings in Q2 2026 (+5%), GBV ~$1.4B (same release). Over 425,000 experiences from more than 70,000 operators (<a href="https://www.sec.gov/Archives/edgar/data/1526520/000119312526051281/trip-20251231.htm">10-K FY2025</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>TheFork sale</dt>
+          <dd>$700M all-cash sale to American Express, agreed Jun 14 2026; equity purchase agreement signed Aug 2 2026; expected to close by end-2026. TheFork's trailing revenue was $232M. <a href="https://www.sec.gov/Archives/edgar/data/1526520/000119312526270351/d156418dex991.htm">8-K EX-99.1, Jun 15 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Terra API price</dt>
+          <dd>Discover package: 10 req/s and 10,000 calls/day; a one-time 1,000 free billable entities, then $0.015 down to $0.009 per location returned. Search and nearby endpoints are capped at 1 req/s on every package. Bulk daily JSON feeds require the Innovate or Transform package. <a href="https://docs.terra.tripadvisor.com/docs/rate-limits">Terra rate limits</a>, <a href="https://docs.terra.tripadvisor.com/docs/usage-based-pricing">pricing</a>, <a href="https://docs.terra.tripadvisor.com/docs/download-a-feed">feeds</a> (pages updated Jun–Sep 2026) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Perplexity licence</dt>
+          <dd>Announced Jan 2025: Tripadvisor supplies listings, review summaries, ratings, photos and Viator experiences to Perplexity's travel answers. <a href="https://skift.com/2025/01/14/tripadvisor-exec-explains-partnership-with-chatgpt-competitor-perplexity/">Skift, Jan 14 2025</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-11-01 from a US connection (CloudFront POP SFO53) with UA <code>SiteWise research (kunka@apitech.ai)</code>. About 20 requests in total went to Tripadvisor's own edge. A crawler-UA matrix was not run. The sitemap census read the S3 origin the site redirects to.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-11-01</td><td><code>curl -sI</code> on <code>/</code>, apex, <code>sitemap.xml</code>, <code>llms.txt</code></td><td><code>www</code> returns <strong>200</strong>; the apex 301s to <code>www</code>. CloudFront in front of Envoy. Headers include <code>x-datadome: protected</code> and a <code>datadome</code> cookie, a strict nonce CSP, HSTS for 1 year with subdomains, <code>accept-ch</code> asking for full UA client hints, and <code>cache-control: no-store</code>. <code>/sitemap.xml</code> and <code>/llms.txt</code> return 404.</td></tr>
+            <tr><td>2026-11-01</td><td><code>curl -sL /robots.txt</code></td><td>22.4KB, 727 lines, 617 <code>Disallow</code> rules in one big group shared by <code>*</code>, ChatGPT-User, OAI-SearchBot, Gemini-Deep-Research, PerplexityBot, bingbot, applebot and Baiduspider. <strong>15 agents get <code>Disallow: /</code></strong>: GPTBot, ClaudeBot, CCBot, Amazonbot, Applebot-Extended, Bytespider, Cohere-ai, Google-CloudVertexBot, meta-externalagent, Img2dataset, PetalBot and others. Google-Extended gets <code>Disallow: /</code> with a single <code>Allow</code> for the Dallas restaurants page. Per-agent extras: <strong>OpenAI's and Gemini's live agents lose <code>/*-g1875*</code> and <code>/*-g188*</code></strong>, geo-ID prefixes covering Madrid (g187514), Galicia and the Swiss, Dutch and Belgian geos. PerplexityBot loses the forums, bingbot loses photo permalinks, and Baiduspider loses photo and review permalinks.</td></tr>
+            <tr><td>2026-11-01</td><td>Sitemap indexes (8 <code>Sitemap:</code> lines)</td><td>Seven indexes on <code>www</code> return <strong>302 to <code>tripadvisor-sitemaps.s3-website-us-east-1.amazonaws.com</code></strong>, a public S3 website endpoint (bucket listing denied). The eighth, <code>/business/sitemap.xml</code>, is served directly: 3,844 URLs. The indexes list 687 + 3,369 photo + 6,226 review + 110 attraction child sitemaps = 10,392, all <code>.xml.gz</code>, with <code>lastmod</code> mostly Jul–Oct 2026. The main index splits into 34 page types: forum topics (249 parts), hotels-near (106), restaurant lists (86), restaurant reviews (65), hotel reviews (51) and so on.</td></tr>
+            <tr><td>2026-11-01</td><td>Child census: HEAD on all 10,392 parts and full fetch of 78 parts</td><td>All 10,388 sizes returned (4 HEADs failed). The full fetches covered the first, middle and newest part of every type, plus the smallest parts by byte size. <strong>Every non-newest part holds exactly 50,000 <code>loc</code> entries</strong>, including the smallest at 630KB, so byte size reflects slug length, not count. Entries carry <code>loc</code> plus an <code>android-app://</code> alternate; there is no <code>lastmod</code> per URL. The index-level total is 20.3GB compressed.</td></tr>
+            <tr><td>2026-11-01</td><td>Review-ID ranges in 7 dated review parts (Jun 22 – Oct 25 2026)</td><td>Each part covers a 0.6M–17M span of review IDs (parts are not strictly ID-ordered). The newest part (30,016 URLs) runs r1,080,692,821 – r1,082,213,996. Old parts begin around r438M (a 2017 part), and photo IDs run from i1.0M to i559.0M.</td></tr>
+            <tr><td>2026-11-01</td><td>French site <code>robots.txt</code> and review index</td><td><code>tripadvisor.fr</code> points to a newer <code>/sitemap/3/fr-FR/</code> pipeline served directly (200, no S3 redirect). It holds 823 review parts with <code>lastmod</code> Sep 29 – Oct 31 2026; a sampled part has 49,965 URLs, all on the <code>.fr</code> host. Each locale publishes its own review permalinks.</td></tr>
+            <tr><td>2026-11-01</td><td>Structured-data sample: <code>Hotel_Review-g494933-d6672003-…Wangyi_Hostel…</code></td><td>200, 90KB, no challenge. JSON-LD has <code>LodgingBusiness</code> with name, address, <strong>geo coordinates</strong>, <code>priceRange</code>, an <code>aggregateRating</code> of 4.9 from 44 reviews and ~25 <code>amenityFeatures</code>, plus BreadcrumbList (continent → country → region → city) and WebSite SearchAction. <strong>10 reviews are server-rendered</strong> with text, bubble rating, author and stay month, and they link to 10 <code>ShowUserReviews</code> permalinks. <code>og:description</code> says "44 traveler reviews, 75 candid photos … rated 4 of 5", which contradicts the JSON-LD 4.9. 49 hreflang alternates.</td></tr>
+            <tr><td>2026-11-01</td><td>Review permalink: <code>ShowUserReviews-g27704020-d6483969-r1082210433-…</code></td><td>200, 80KB. JSON-LD <code>Review</code> with title, full <code>reviewBody</code>, <code>reviewRating</code>, author screen name, <code>datePublished</code> "October 17, 2026", and an <code>itemReviewed</code> FoodEstablishment with address. No canonical or robots meta tag.</td></tr>
+            <tr><td>2026-11-01</td><td>Photo permalink: <code>LocationPhotoDirectLink-g40107-d4041178-i559008276-…</code></td><td>200, 63KB. Only BreadcrumbList JSON-LD; the title gives the caption ("Dog Park - Picture of Baton Rouge KOA"). Photo URLs use the <code>/media/photo-{size}/{hex path}/{name}.jpg</code> scheme, with size letters <code>s</code>/<code>f</code>/<code>w</code>/<code>o</code>.</td></tr>
+            <tr><td>2026-11-01</td><td><code>curl -sI</code> on <code>media-cdn</code> and <code>dynamic-media-cdn</code></td><td>Both 200, CloudFront, <code>max-age=2592000</code>, no DataDome. <code>photo-o</code> original 264KB; <code>dynamic-media-cdn</code> resizes on <code>?w=&amp;h=&amp;s=1</code> (400×300 → 32KB).</td></tr>
+            <tr><td>2026-11-01</td><td>Public API sample: <code>api.content.tripadvisor.com/api/v1/location/6672003/details</code> without a key</td><td><code>401 {"message":"Unauthorized"}</code>. The legacy Content API docs now say it is deprecated in favour of Terra. Terra's <code>llms.txt</code> lists Location, Reviews, Photos, Geo, an "Agentic Search" Recommendations endpoint, a Feed API and a docs MCP server.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Discovery is wide open: S3 sitemaps cover every object class, and HTML answers with full JSON-LD. Permission is closed. The terms of use bar robots and AI systems, and the paid Terra API bars caching and indexing. Every "best path" below beyond discovery therefore assumes a contract.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Places (entities)</td>
+              <td>~8.0M place pages in English (hotels 2.55M, restaurants 3.22M, attractions 1.77M, tours 465K); 9M+ per company.</td>
+              <td>Terra Feed API <code>location.json.gz</code> and <code>geo.json.gz</code>; sitemaps for ID discovery only.</td>
+              <td>Feeds need Innovate/Transform; Discover is $0.009–0.015 per location.</td>
+              <td>Caching forbidden except location IDs, unless the contract says otherwise.</td>
+              <td>Feeds regenerate daily and are kept for 12 days.</td>
+            </tr>
+            <tr>
+              <td>Reviews (text + rating)</td>
+              <td>~311M English permalinks; 1B+ reviews and opinions overall.</td>
+              <td>Terra <code>/locations/reviews</code> (a contract-fixed pool of the N most recent) or the daily <code>review{yyyyMMdd}.json.gz</code> feed.</td>
+              <td>Billed per location call; feed by contract.</td>
+              <td>Users grant Tripadvisor a sublicensable licence. Third-party scraping or indexing is barred by ToS (x).</td>
+              <td>~149K review IDs/day.</td>
+            </tr>
+            <tr>
+              <td>Photos</td>
+              <td>~168M English photo permalinks; image IDs up to i559M.</td>
+              <td><code>photo.json.gz</code> feed or <code>/locations/photos</code>; CDN URLs for display.</td>
+              <td>CDN is unauthenticated and cacheable for 30 days.</td>
+              <td>Uploaders can choose a "Restricted Licence"; no third-party reuse.</td>
+              <td>Immutable per image ID.</td>
+            </tr>
+            <tr>
+              <td>Forums (Q&amp;A text)</td>
+              <td>~12.4M topics (<code>ShowTopic</code>), 41.5K forums.</td>
+              <td>None licensed: forums are not among Terra's documented endpoints.</td>
+              <td>PerplexityBot is disallowed here; other agents are not.</td>
+              <td>User content under the same ToS.</td>
+              <td>Active; the newest topic IDs are ~k15.6M.</td>
+            </tr>
+            <tr>
+              <td>Bookable tours</td>
+              <td>465K <code>AttractionProductReview</code> pages; 425K+ experiences.</td>
+              <td>Viator's partner/affiliate API, for supply with prices.</td>
+              <td>Affiliate sign-up.</td>
+              <td>Commission-based display with a booking link.</td>
+              <td>Prices and availability are live.</td>
+            </tr>
+            <tr>
+              <td>Recommendations (answers)</td>
+              <td>Ranked places for a natural-language query.</td>
+              <td>Terra "Agentic Search" <code>/recommendations</code>.</td>
+              <td>Package-gated.</td>
+              <td>Display with Tripadvisor attribution.</td>
+              <td>Live.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where tripadvisor.com departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Every URL embeds typed integer keys: <code>g</code> = geo, <code>d</code> = location, <code>r</code> = review, <code>i</code> = image, <code>k</code> = forum topic. The slug is decoration. Key on <code>(type, id)</code>: the same <code>d6672003</code> appears on 49 locale domains (hreflang) and in Terra responses. Review and photo permalinks carry their parent <code>g</code> and <code>d</code>, so joins need no lookup.</p>
+        </div>
+        <div>
+          <h4>Sitemap origin outside the edge</h4>
+          <p>The DataDome and CloudFront edge 302s sitemap requests to a public S3 website endpoint, so the census never touches the protected host. Parts are fixed at 50K URLs, which means a HEAD-free count is <code>(parts − 1) × 50K</code> plus the last part. The French site moved to a newer <code>/sitemap/3/</code> pipeline served from its own domain, so expect the English set to migrate and the S3 path to disappear.</p>
+        </div>
+        <div>
+          <h4>Crawlable ≠ licensed</h4>
+          <p>Unlike most challenged sites in this series, the HTML is open: 200 with server-rendered reviews for an honest UA. The barrier is contractual. ToS clause (x) bans any "robot, spider, artificial intelligence (AI) system" that would "index any portion of the Services". Terra's caching policy bans storing or indexing even licensed content. A compliant index can hold IDs and links, plus whatever a feed contract grants.</p>
+        </div>
+        <div>
+          <h4>robots.txt as a geo-fence for AI agents</h4>
+          <p>ChatGPT-User, OAI-SearchBot and Gemini-Deep-Research are allowed the site except for two geo-ID prefixes covering parts of Spain, the Netherlands, Switzerland and Belgium. That looks like region-specific licensing or legal carve-outs (Inferences). Google-Extended's single allowed URL (Dallas restaurants) reads as a test or showcase. Diff this file monthly.</p>
+        </div>
+        <div>
+          <h4>Authoritative rating field</h4>
+          <p>Take ratings from JSON-LD <code>aggregateRating</code> (decimal, e.g. 4.9). The <code>og:description</code> template reported "rated 4 of 5" for the same property, so do not parse ratings from meta or snippet text. Review dates are prose ("October 17, 2026") and need locale-aware parsing on non-English domains.</p>
+        </div>
+        <div>
+          <h4>Locale fan-out</h4>
+          <p>Each locale publishes its own review permalinks: the English set holds 311M and the French set ~41M (823 parts × ~50K, calculated by Site Wise). Reviews appear on the domain of their language, so a full-modal index needs a per-locale census that collapses on <code>r</code>-ID, not on host.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the place (<code>d</code>-ID), with aggregate rating, geo point and amenity facets, plus its reviews (<code>r</code>) and photos (<code>i</code>) as child objects. Geos (<code>g</code>) act as hub objects.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>d</code>/<code>g</code>/<code>r</code>/<code>i</code>/<code>k</code> integers from URLs; BreadcrumbList for the geo hierarchy; JSON-LD <code>geo</code> to join with map and POI datasets; Viator product codes for tours.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Terra Feed contract (daily location, geo, photo and review files): the only path that permits storage. 2) S3 sitemaps, weekly, for the ID and URL graph and coverage counts, which are metadata only. 3) Terra Discover per-location calls for a small, display-time set, without caching. 4) Viator affiliate API for tours. HTML fetch is technically open but contractually barred; use it for single-page research samples only.</li>
+        <li><strong>Recrawl cadence:</strong> review sitemap index daily (about 1 new part/day); place indexes weekly; robots.txt monthly; feeds daily within their 12-day retention.</li>
+        <li><strong>Derivatives to generate:</strong> under a feed licence, per-place review-aspect summaries and multilingual review embeddings; a geo-ID → coordinates gazetteer from JSON-LD; photo embeddings from <code>photo-s</code> thumbnails.</li>
+        <li><strong>Demo to build:</strong> a "coverage atlas" that needs no content at all. Plot English review-permalink density per <code>g</code>-ID from the sitemap URLs alone, showing where Tripadvisor's 311M reviews concentrate and which cities gained the most reviews this quarter.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><span class="evidence inferred">inferred</span> <strong>Open HTML is not a stable entitlement.</strong> <em>Basis:</em> DataDome is already deployed on every response (<code>x-datadome: protected</code>, Probe Log) but did not challenge ~20 paced requests. Its thresholds are tunable, and the ToS already prohibits the access, so enforcement can tighten without notice.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Content value is being steered into licences.</strong> <em>Basis:</em> hotels revenue fell 23% YoY and the 10-K blames AI overviews and search changes, while the company built Terra (usage-priced API, daily feeds, an "Agentic Search" endpoint) and licensed data to Perplexity (Verified Metrics). Expect bulk review access to stay priced.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1526520/000119312526051281/trip-20251231.htm">Tripadvisor 10-K FY2025, filed Feb 13 2026</a> — corporate history, 1B+ reviews / 9M+ places, experiences supply, SEO and AI-overview risk.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1526520/000119312526336666/trip-ex99_1.htm">Q2 2026 earnings release (EX-99.1), Aug 6 2026</a> — revenue by segment, bookings, marketing spend.</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1526520/000119312526270351/d156418dex991.htm">TheFork sale release (EX-99.1), Jun 15 2026</a> and the <a href="https://www.sec.gov/Archives/edgar/data/1526520/000119312526330742/trip-20260802.htm">Aug 2 2026 8-K</a>.</li>
+        <li><a href="https://docs.terra.tripadvisor.com/llms.txt">Terra API docs</a> — <a href="https://docs.terra.tripadvisor.com/docs/rate-limits">rate limits</a>, <a href="https://docs.terra.tripadvisor.com/docs/usage-based-pricing">pricing</a>, <a href="https://docs.terra.tripadvisor.com/docs/caching-policy">caching policy</a>, <a href="https://docs.terra.tripadvisor.com/docs/download-a-feed">feeds</a>, <a href="https://docs.terra.tripadvisor.com/reference/locationreviewsget">Location Reviews</a>.</li>
+        <li><a href="https://tripadvisor.mediaroom.com/us-terms-of-use">Tripadvisor Terms of Use, effective Jul 15 2025</a> — prohibited activities (ii), (iii) and (x); user content licence and "Restricted Licence".</li>
+        <li><a href="https://skift.com/2025/01/14/tripadvisor-exec-explains-partnership-with-chatgpt-competitor-perplexity/">Skift, Jan 14 2025</a> — Perplexity data partnership.</li>
+        <li>Local probes on 2026-11-01: headers, robots.txt (.com and .fr), S3 sitemap census (10,392 HEADs, 78 full parts), French review index, three page samples, photo CDN headers, keyless API call. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The <code>g1875*</code>/<code>g188*</code> exclusions for OpenAI and Gemini agents are jurisdictional carve-outs rather than editorial choices. <em>Basis:</em> they apply only to live-answer AI agents (not to <code>*</code> or bingbot), and the matched IDs in sitemap Tourism pages resolve to Spanish, Dutch, Swiss and Belgian geos, not to a content type.</li>
+        <li>The English review sitemap is a subset of reviews, split by language. <em>Basis:</em> 311M English permalinks against "more than one billion" reviews and opinions company-wide, plus a separate 823-part French review set whose URLs sit on <code>.fr</code>.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Total review permalinks across all 49 locales. Closeable by reading each locale's robots.txt <code>Sitemap:</code> lines and counting review-index parts × 50K, then deduplicating on <code>r</code>-ID across a sample.</li>
+        <li>The DataDome threshold for a paced, self-identified client. Closeable only with explicit permission from Tripadvisor; not to be measured by trial.</li>
+        <li>Terra feed sizes and per-review fields (sub-ratings, trip type, owner response) under a contract. Closeable via the Feed API <code>files/list</code> response with an Innovate key.</li>
+        <li>Why <code>og:description</code> and JSON-LD disagree on rating. Closeable by comparing both fields across ~100 hotel pages from the sitemap set (with permission) or from Wayback captures.</li>
+        <li>Tripadvisor-brand traffic. The company reports no MAU figure in the FY2025 10-K or the Q2 2026 release. Closeable only by a company disclosure or a named estimator (Similarweb, Comscore).</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
