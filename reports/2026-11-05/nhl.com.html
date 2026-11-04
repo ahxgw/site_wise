@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nhl.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-11-05</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>nhl.com</h1>
+      <p class="lede">nhl.com is a league portal whose keyless content and stats APIs expose 275K stories, 375K videos and 75.7K games, joined by player ID.</p>
+      <div class="tag-row">
+        <span class="tag">Sports league</span>
+        <span class="tag">News &amp; video</span>
+        <span class="tag">Stats data</span>
+        <span class="tag">Deltatre FORGE</span>
+        <span class="tag">8 languages</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>NHL.com is the National Hockey League's official site. It hosts league news, video highlights, scores and stats, and since the 2023/24 relaunch on Deltatre's FORGE publishing platform it also serves a site for each of the 32 clubs, under paths like <code>/bruins/</code> (<a href="https://www.deltatre.com/streaming-and-digital/case-studies/nhl">Deltatre case study</a>). The site makes money from ads, the shop, tickets and app subscriptions. The league's main revenue is media rights, for example the C$11B Rogers deal that started with the 2026-27 season. For an index builder, nhl.com is unusual among top sites. Its HTML is thin and carries no JSON-LD, but the two backends the front end reads from are open without a key and paginate without a cap. One is a content API covering stories and videos in 8 languages. The other is a stats API that goes back to the 1917-18 season. Both share the same player and team IDs, so text, video and structured game data join cleanly. The terms of service still prohibit "unauthorized" scraping, so the open APIs are a technical path, not a licence.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>nhl.com</code> → <code>www.nhl.com</code> (301, Cloudflare)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.nhl.com/">https://www.nhl.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Professional sports league: news, video, scores, stats, club sites</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>forge-dapi.d3.nhle.com</code> (content API), <code>api-web.nhle.com</code> and <code>api.nhle.com/stats/rest</code> (stats), <code>media.d3.nhle.com</code> (images), <code>assets.nhle.com</code>, <code>players.brightcove.net</code> (video player, account 6415718365001)</dd></div>
+        <div><dt>Owner</dt><dd>National Hockey League (32 member clubs)</dd></div>
+        <div><dt>Founded / launched</dt><dd>League founded 1917; current FORGE-based site launched at the start of the 2023/24 season (<a href="https://www.deltatre.com/streaming-and-digital/case-studies/nhl">Deltatre</a>)</dd></div>
+        <div><dt>Business model</dt><dd>Site: ads (ad-slot map in page HTML), shop, tickets, NHL app. League: media rights, gate, sponsorship.</dd></div>
+        <div><dt>Scale anchor</dt><dd>275K English stories in the content API (Probe Log)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">The league publishes revenue only as round projections. Corpus counts come from the APIs themselves: binary search on <code>$skip</code> for content, and the <code>total</code> field for stats. All of them are Site Wise measurements on 2026-11-05.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>League revenue</dt>
+          <dd>$7.5–8B projected for 2025-26, in mixed US and Canadian dollars, against about $6.5B the season before. Commissioner Bettman gave the figure on 2026-06-03 (<a href="https://frontofficesports.com/nhl-projects-record-8b-in-revenue-sees-bigger-growth-ahead/">Front Office Sports</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Canadian media rights</dt>
+          <dd>C$11B over 12 years with Rogers, covering 2026-27 through 2037-38. Announced 2025-04-02 (<a href="https://www.nhl.com/news/nhl-rogers-announce-12-year-rights-deal">NHL.com</a>; <a href="https://amp.cbc.ca/lite/story/1.7499786">CBC</a>). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Editorial footprint</dt>
+          <dd>8 languages, 32 club sites, up to 370 active editors, per the vendor's case study, undated (<a href="https://www.deltatre.com/streaming-and-digital/case-studies/nhl">Deltatre</a>). The language switcher on the terms page shows the same 8: EN, FR, DE, FI, SV, CS, SK, ES. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>English stories</dt>
+          <dd>275K (275,003) in <code>/v2/content/en-us/stories</code>, as of 2026-11-05 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>English videos</dt>
+          <dd>375K (375,206) in <code>/v2/content/en-us/videos</code>, as of 2026-11-05 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Non-English stories</dt>
+          <dd>fr-ca 59K, sv-se 25K, fi-fi 23K, de-de 21K, es-us 11K, cs-cz 22K, sk-sk 16K. That totals 177K across 7 editions, or 64% of the English story count (sum and ratio calculated by Site Wise). Measured 2026-11-05 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Games in stats API</dt>
+          <dd>75.7K games from 1917-18 through the 2026-27 schedule: 66.6K regular season, 5.2K playoff, 2.2K preseason, and the rest exhibition or special types. As of 2026-11-05 (Probe Log; shares calculated by Site Wise). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Publishing rate</dt>
+          <dd>About 96 stories/day and 230 videos/day. These are calculated by Site Wise from the sitemaps, each of which holds the latest 100 items: stories span 25.2h and videos span 10.5h (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Static sitemap</dt>
+          <dd>9.5K URLs in <code>sitemap.xml</code>, with no <code>lastmod</code>. 2,973 of them (31%) are <code>/devils/info/game-day/…</code> play-by-play and roster pages; no other club publishes these (Probe Log; share calculated by Site Wise). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">Run on 2026-11-05 local time (2026-11-04 16:02–16:45 UTC) from a US exit with a desktop Chrome user agent. About 300 requests in total, at ≥1s spacing for the API census. There was no throttling, challenge or 429. A Brightcove Playback API call was not run in this session, so the video rendition and caption claims are in Open Questions. DNS was skipped because sandbox DNS is unreliable; the CDN claims come from response headers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-11-05</td><td><code>curl -sI https://nhl.com/</code>, <code>www.nhl.com/</code></td><td>Apex returns 301 to www. www returns 200 <code>text/html</code> with <code>server: cloudflare</code>, <code>cf-cache-status: HIT</code>, <code>cache-control: private, max-age=60</code>, HSTS with no preload, a permissive CSP, <code>service-worker-allowed: /</code> and a <code>__cf_bm</code> cookie. There was no challenge page.</td></tr>
+            <tr><td>2026-11-05</td><td><code>curl /robots.txt</code></td><td>16 lines, one <code>*</code> group: <code>Allow: /</code>, with <code>/js/</code>, <code>/css/</code>, <code>/errors</code>, <code>/redirect</code>, <code>/layouts</code>, <code>/templates</code>, <code>/views</code>, <code>/_*</code>, <code>/*/_*</code> and <code>/search</code> disallowed. There are <strong>no AI-crawler groups</strong>. One Sitemap line points to <code>/sitemap/sitemap-index.xml</code>.</td></tr>
+            <tr><td>2026-11-05</td><td><code>robots.txt</code> on the four <code>*.nhle.com</code> API and media hosts</td><td>Each serves the same 130-line Cloudflare-managed file: <code>Content-Signal: search=yes,ai-train=no,use=reference</code> for <code>*</code>, plus <code>Disallow: /</code> for 30 named bots, including GPTBot, ClaudeBot, CCBot, Google-Extended, GoogleOther, Applebot-Extended, meta-externalagent and Baiduspider.</td></tr>
+            <tr><td>2026-11-05</td><td>Sitemap index and its 3 children</td><td>The index lists 3 children and has no <code>lastmod</code>. <code>sitemap.xml</code>: 1.2MB, 9,478 URLs, all <code>changefreq daily</code>. <code>sitemap-stories.xml</code>: a Google News sitemap with exactly 100 entries (60 club, 40 league), all <code>en</code>, dated 2026-11-03 15:49 to 2026-11-04 17:00 UTC. The newest is an hour <em>after</em> the probe time, so it is a scheduled publish. <code>sitemap-videos.xml</code>: 100 entries dated 03:20 to 13:49 UTC, <code>uploader nhl</code>, all <code>family_friendly yes</code>.</td></tr>
+            <tr><td>2026-11-05</td><td>Story and video HTML (1 of each)</td><td>200 responses, 25.6KB and 30.2KB. Neither has JSON-LD. Both have OG tags (type, title, description, url, image), a self canonical and no meta robots. The video page embeds the Brightcove player <code>6415718365001/default_default</code> with a <code>videoId</code> equal to the slug's trailing 13 digits. Neither page has <code>__NEXT_DATA__</code>.</td></tr>
+            <tr><td>2026-11-05</td><td><code>GET forge-dapi…/v2/content/en-us/stories?$limit=N</code></td><td>200 JSON with no key, <code>access-control-allow-origin: *</code>, <code>max-age=20</code>. Pagination uses <code>nextUrl</code> with <code>$skip</code>, and <code>maxItems</code> is 100 per page. <code>$skip=200000</code> still returns an item. List items carry <code>_entityId</code>, <code>_translationId</code>, slug, title, headline, summary, <code>contentDate</code>, <code>lastUpdatedDate</code>, <code>createdBy</code>, <code>context</code> (club tag), typed <code>tags</code> and a thumbnail <code>templateUrl</code>.</td></tr>
+            <tr><td>2026-11-05</td><td><code>$skip</code> binary search (about 20 req per list, 1 req/s)</td><td>en-us stories: 275,003. en-us videos: 375,206. fr-ca 59,373; sv-se 24,534; fi-fi 22,649; de-de 21,297; es-us 11,377; cs-cz 21,728; sk-sk 15,970; fr-ca videos 191,655, whose oldest item has the same 1959-04-14 date as en-us, so this looks like a localized view of a shared video pool. The last items carry backdated <code>contentDate</code> values (1959–1960 en, 1994 fr-ca, 2016 de-de).</td></tr>
+            <tr><td>2026-11-05</td><td>Story detail <code>/stories/{slug}</code></td><td>Adds <code>parts</code>, <code>relations</code> and <code>references</code>. In the sample, the parts were markdown ×2, photo ×1 and external ×1. The external part is an X post embedded via oEmbed. The markdown inlines entities as <code>&lt;forge-entity code="player" slug="ryan-nugent-hopkins-8476454"&gt;</code>. Tags: <code>teamid-22</code> (team), <code>playerid-8476454</code> (player), plus season and taxonomy tags.</td></tr>
+            <tr><td>2026-11-05</td><td>Video item; <code>?tags.slug=playerid-8478402</code></td><td>Videos are <code>customentity</code> with <code>entityCode: video</code>. Their <code>fields</code> include <code>brightcoveId</code>, <code>brightcoveAccountId</code>, <code>duration</code>, <code>audioLanguage</code>, <code>longDescription</code> and <code>productionSource</code>. The tag filter returned only McDavid videos, and <code>api-web…/v1/player/8478402/landing</code> resolves the same ID to Connor McDavid.</td></tr>
+            <tr><td>2026-11-05</td><td><code>api.nhle.com/stats/rest/en/game</code>, <code>/skater/summary</code></td><td><code>/game</code>: 200, 1.26MB, all 75,698 games in one response, with IDs shaped <code>{season}{type}{nnnn}</code> (first is <code>1917020001</code>). <code>/skater/summary</code> for 2025-26 reports <code>total: 977</code>. <code>/team</code> lists historical franchises (Quebec Nordiques, Kansas City Scouts and others).</td></tr>
+            <tr><td>2026-11-05</td><td><code>api-web…/v1/gamecenter/{id}/play-by-play</code> by era</td><td>Plays per game, and how many have x/y coordinates: 1990-91 opener 15 / 0; 2005-06 63 / 0; 2010-11 305 / 267; 2025-26 361 / 294. <code>cache-control max-age=11</code>. <code>/v1/schedule/now</code> returns 307 to a dated week (<code>/schedule/2026-11-03</code>, 7 days, 50 games).</td></tr>
+            <tr><td>2026-11-05</td><td><code>media.d3.nhle.com</code> image</td><td>200 <code>image/jpeg</code>, <code>max-age=31536000</code>. <code>server-timing: cld-fastly</code> means Cloudinary is behind Cloudflare. It reports 1280×720 delivered from a 1920×1080 original. The bytes contain no EXIF, XMP, IPTC or C2PA. <code>t_original</code> returns 400, so only named transforms are served.</td></tr>
+            <tr><td>2026-11-05</td><td>Feeds; terms of service</td><td><code>/llms.txt</code>, <code>/news/rss</code> and <code>/feeds/news.xml</code> 302 to <code>/errors/not-found</code>. <code>/rss/news.xml</code> and <code>/.well-known/ai.txt</code> return a 2.5KB 403 page. ToS <a href="https://www.nhl.com/info/terms-of-service">last updated 2025-10-29</a>: it bans "unauthorized spidering, scraping, or harvesting", says embeds are non-commercial only and may be disabled at any time, and has no data or API licence clause.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Every API path below is keyless and is the same backend the nhl.com front end calls. None comes with a published developer licence, so treat them as an undocumented path governed by the ToS (see Risks).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Articles</td>
+              <td>275K en plus 177K in 7 other languages</td>
+              <td>forge-dapi <code>/stories</code> list, then <code>/stories/{slug}</code> for markdown parts; Google News sitemap for the last 24h</td>
+              <td>None; no throttle seen at 1 req/s</td>
+              <td>ToS: no reuse grant; link and snippet only</td>
+              <td>About 96/day; <code>lastUpdatedDate</code> per item</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>375K en items, each with a <code>brightcoveId</code></td>
+              <td>forge-dapi <code>/videos</code> for metadata; video sitemap; Brightcove player embed for display</td>
+              <td>None for metadata; playback through the embed</td>
+              <td>Embeds non-commercial only (ToS)</td>
+              <td>About 230/day</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Story, video and photo-part thumbnails; count open</td>
+              <td><code>templateUrl</code> + named transform on <code>media.d3.nhle.com</code></td>
+              <td>None</td>
+              <td><code>ai-train=no</code> signal; no embedded rights data</td>
+              <td>Immutable (1-year cache)</td>
+            </tr>
+            <tr>
+              <td>Games &amp; events</td>
+              <td>75.7K games; coordinate-level play-by-play from about 2010</td>
+              <td><code>api.nhle.com/stats/rest/en/game</code>, then <code>api-web…/gamecenter/{id}/play-by-play</code></td>
+              <td>None</td>
+              <td>No data licence in the ToS</td>
+              <td>Live: 11–14s cache</td>
+            </tr>
+            <tr>
+              <td>Players &amp; teams</td>
+              <td>977 skaters in 2025-26; all historical franchises</td>
+              <td><code>/stats/rest/en/skater|goalie/*</code>, <code>/v1/player/{id}/landing</code></td>
+              <td>None</td>
+              <td>Same as games</td>
+              <td>Season totals change per game played</td>
+            </tr>
+            <tr>
+              <td>Embedded social</td>
+              <td>Social posts inside story parts (X in the sample)</td>
+              <td><code>external</code> parts carry the oEmbed payload and the original URL</td>
+              <td>None</td>
+              <td>Each platform's own embed terms</td>
+              <td>Fixed at publish time</td>
+            </tr>
+            <tr>
+              <td>Club static pages</td>
+              <td>9.5K sitemap URLs (tickets, arena, community)</td>
+              <td><code>sitemap.xml</code> + HTML</td>
+              <td>None; robots.txt open</td>
+              <td>Link and snippet only</td>
+              <td>No <code>lastmod</code>; recrawl blind</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where nhl.com differs from the <a href="../../docs/methodology.html">default assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The API is the corpus; the sitemap is a 24-hour window</h4>
+          <p>The two content sitemaps each hold only the newest 100 items, and the static sitemap has no articles at all. A sitemap-driven crawler would see under 0.1% of the 650K stories and videos (calculated by Site Wise). forge-dapi has no depth cap, so the whole archive can be read in about 6.5K pages of 100 (calculated by Site Wise). That makes this the rare top site where a full metadata census costs hours, not a crawl.</p>
+        </div>
+        <div>
+          <h4>Two robots policies, split by host</h4>
+          <p><code>www.nhl.com</code> names no AI crawlers. The <code>nhle.com</code> data hosts carry Cloudflare's managed file, which says <code>ai-train=no</code>, <code>search=yes</code> and blocks 30 AI and secondary bots by name. This is the reverse of the usual pattern: the HTML is open and the structured backends are fenced. A search-only index fits the <code>search=yes,use=reference</code> signal. Record the signal per object and keep it out of any training export.</p>
+        </div>
+        <div>
+          <h4>Player ID is a cross-modal join key</h4>
+          <p>The <code>playerid-{n}</code> tags, the <code>forge-entity</code> slugs (<code>name-{n}</code>) inside story markdown, and the stats <code>playerId</code> are the same integer. <code>teamid-{n}</code> matches the stats team <code>id</code>. That joins articles, video clips, box scores and shot coordinates without NER. The game ID is the remaining gap: stories don't expose it as a tag in the sample, so tie highlights to games by date, team and player.</p>
+        </div>
+        <div>
+          <h4>Identifiers and translations</h4>
+          <p>The API slug equals the URL slug. League stories live at <code>/news/{slug}</code>, club stories at <code>/{club}/news/{slug}</code>, and video slugs end in the <code>brightcoveId</code>. Each locale item has its own <code>_translationId</code> and <code>_entityId</code>. Whether a French or German item shares an <code>_entityId</code> with an English original is open. The sampled non-English headlines were original local pieces, not translations, so treat each edition as its own corpus.</p>
+        </div>
+        <div>
+          <h4>Archive dates are editorial, not crawl-time</h4>
+          <p>The deepest items carry <code>contentDate</code> values from 1959–60 and 1994, decades before the site existed. These are backdated historical pieces and migrated archives. Use <code>contentDate</code> for "when it happened", <code>lastUpdatedDate</code> for recrawl, and never infer a site-launch date from item dates.</p>
+        </div>
+        <div>
+          <h4>Play-by-play fidelity is era-dependent</h4>
+          <p>The same endpoint returns 15 plays for a 1990 game and 361, 81% with rink coordinates, for 2025 (Probe Log; share calculated by Site Wise). Index the event table with an era-quality flag, so shot-location queries don't silently return only post-2010 results as if they covered all eras.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval units:</strong> the story (with its markdown parts as passages), the video clip (title, long description, duration, thumbnail, later its transcript), the game (with its play events) and the player season. Entity pages are synthesized as player → {stories, clips, games, stats}.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>_translationId</code> per item, with the slug and locale as URL keys. <code>brightcoveId</code> for video. <code>playerId</code> and team <code>id</code> as shared entity keys. Game ID <code>{season}{type}{nnnn}</code> for events.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) A forge-dapi list walk per locale and type: about 6.5K requests for the English stories and videos at 1 req/s, roughly 1.8h (calculated by Site Wise). Then detail fetches for parts, about 275K requests, so walk newest first and stop at an era cut-off. 2) The stats <code>/game</code> list in one call, then play-by-play per game for coordinate-era seasons. 3) The Google News and video sitemaps every 15 minutes, as the change feed. 4) The static sitemap monthly, for club pages.</li>
+        <li><strong>Recrawl cadence:</strong> live games every 15s while in progress. New stories and videos from the sitemaps every 15 minutes. Detail records re-fetched when <code>lastUpdatedDate</code> moves (sample with a daily list delta over the newest 1K). Historical games are frozen once <code>gameState</code> is <code>OFF</code>.</li>
+        <li><strong>Derivatives:</strong> ASR on clips: at 230/day of short highlights (sampled clip 1:41) this is cheap, if a licensed playback path exists. Entity linking is free from <code>forge-entity</code> markup. Shot-map images rendered from coordinates. Embeddings on headline, summary and markdown.</li>
+        <li><strong>Demo to build:</strong> "player timeline". Given a player ID, merge their stories, video clips and per-game events into a single chronology, so you can check whether the forge tags and the stats IDs really join without fuzzy matching.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The open APIs are undocumented and unlicensed.</strong> The ToS ban "unauthorized" automated harvesting and grant no data licence (Probe Log). Build to tolerate a key requirement appearing overnight, keep request rates browser-like, and keep a sitemap-only fallback.</li>
+        <li><strong>The vendor stack can change.</strong> FORGE (Deltatre), Brightcove and Cloudinary all sit under a single league contract. Pre-FORGE story URLs carried numeric suffixes; the 2016 relaunch announcement itself lives at <code>…-278049644</code> (<a href="https://www.nhl.com/news/nhl-to-launch-redesigned-site-apps-monday-278049644">NHL.com, 2016</a>), while current slugs have none. Store old URLs as aliases and key on <code>brightcoveId</code> and <code>playerId</code>, which outlive CMS swaps.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Cloudflare may extend its AI-bot policy from the API hosts to www.</strong> <em>Basis:</em> both host families are already on Cloudflare (<code>server</code> header, <code>__cf_bm</code>), and only the <code>nhle.com</code> hosts serve the managed Content-Signal robots file today. A one-toggle change would bring the HTML under the same 30-bot block, so watch www robots.txt for drift.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.deltatre.com/streaming-and-digital/case-studies/nhl">Deltatre NHL case study</a>: FORGE platform, 2023/24 relaunch, 32 club sites, 8 languages, 370 active editors.</li>
+        <li><a href="https://frontofficesports.com/nhl-projects-record-8b-in-revenue-sees-bigger-growth-ahead/">Front Office Sports, 2026-06-03</a>: $7.5–8B projected 2025-26 revenue.</li>
+        <li><a href="https://www.nhl.com/news/nhl-rogers-announce-12-year-rights-deal">NHL.com, 2025-04-02</a> and <a href="https://amp.cbc.ca/lite/story/1.7499786">CBC</a>: Rogers C$11B 12-year deal.</li>
+        <li><a href="https://www.nhl.com/news/nhl-to-launch-redesigned-site-apps-monday-278049644">NHL.com, 2016</a>: earlier relaunch and URL shape.</li>
+        <li><a href="https://www.nhl.com/info/terms-of-service">NHL Terms of Service</a>, last updated 2025-10-29, read 2026-11-05.</li>
+        <li>Local probes on 2026-11-05 (2026-11-04 16:02–16:45 UTC): www and apex headers; robots.txt on www and 4 <code>nhle.com</code> hosts; sitemap index and 3 children; 2 HTML pages; forge-dapi list, detail and tag filter; about 250 <code>$skip</code> probes across 10 lists; stats <code>/game</code>, <code>/team</code>, <code>/skater/summary</code>; 4 play-by-play games; 1 player landing; 2 image requests; 5 feed paths; Brightcove player config.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Cloudflare AI-bot policy could extend to www. <em>Basis:</em> the shared Cloudflare edge headers, and the managed robots file present on the <code>nhle.com</code> hosts only (Probe Log).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Brightcove renditions, caption tracks and geo restrictions per clip. Closeable with one Playback API call through the public player for a sampled <code>brightcoveId</code>, counting <code>sources</code>, <code>text_tracks</code> and <code>geo</code>.</li>
+        <li>Whether non-English items share <code>_entityId</code> with English originals. Closeable by fetching 50 fr-ca and de-de details and matching <code>_entityId</code> against en-us lookups.</li>
+        <li>Total photo and image count (<code>/v2/content/en-us/photos</code>) and per-club story split. Closeable with the same <code>$skip</code> binary search, and with <code>context.slug=teamid-N</code> filters.</li>
+        <li>Whether a documented, licensed data feed exists for third parties, and its terms. Closeable by asking NHL digital or partnerships, and checking the league's official data-distribution partner terms.</li>
+        <li>Whether the <code>/devils/info/game-day/</code> sitemap block (2,973 URLs) is a deliberate SEO experiment or a stray export. Closeable by diffing <code>sitemap.xml</code> weekly and checking whether other clubs' equivalent paths return 200.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
