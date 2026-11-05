@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>accounts.google.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-11-06</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>accounts.google.com</h1>
+      <p class="lede">Google's sign-in host lets every crawler in and hands it nothing; its corpus is protocol metadata (OIDC, JWKS, FedCM), not pages.</p>
+      <div class="tag-row">
+        <span class="tag">Identity provider</span>
+        <span class="tag">Zero-crawl</span>
+        <span class="tag">OAuth / OIDC</span>
+        <span class="tag">FedCM</span>
+        <span class="tag">Google</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>accounts.google.com is the sign-in and consent front end for every Google Account. Gmail, YouTube, Drive and other Google products redirect here to sign people in, and so does every third-party site that offers "Sign in with Google". Third-party sign-in has run on the Google Identity Services (GSI) SDK since its <a href="https://developers.googleblog.com/launching-our-new-google-identity-services-apis/">Aug 3 2021 launch</a>. The host earns nothing directly. Its value is that it is the gate to Google's logged-in products and the identity layer under millions of other sites. For an index builder it is the clearest case of a <strong>zero-corpus host</strong>. Unlike <code>mail.google.com</code>, which disallows everything in robots.txt, this host <em>allows</em> everything, yet every path either redirects into a sign-in flow or returns machine-facing JSON. What can be indexed here is the identity protocol itself: discovery documents, signing keys, FedCM configuration, the OAuth scope catalog, and the error and consent semantics a crawler hits whenever it follows a Google sign-in link. Those error and consent pages are worth recognising, because they are the pages an index should <em>exclude</em>.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>accounts.google.com</code></dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://accounts.google.com/">https://accounts.google.com/</a> → 302 to <code>/ServiceLogin</code> → <code>/v3/signin/identifier</code></dd></div>
+        <div><dt>Category</dt><dd>Identity provider: sign-in, account chooser, OAuth consent, FedCM IdP</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>oauth2.googleapis.com</code> (token, revoke, device code), <code>openidconnect.googleapis.com</code> (userinfo), <code>www.googleapis.com/oauth2/v3/certs</code> (JWKS), <code>myaccount.google.com</code> (settings), <code>google.com/.well-known/web-identity</code> (FedCM root)</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC / Alphabet Inc. (NASDAQ: GOOGL)</dd></div>
+        <div><dt>Business model</dt><dd>None directly; gatekeeper for Google's ad and subscription products and a free IdP for third parties</dd></div>
+        <div><dt>Scale anchor</dt><dd>Cross-Account Protection covers 2.4B accounts across 3.4M apps and sites (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Only metrics with an actual figure. The number of Google Accounts and the monthly volume of third-party sign-ins are open (Open Questions).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Cross-Account Protection reach</dt>
+          <dd>2.4B accounts across 3.4M apps and sites — as of May 2 2024. <a href="https://blog.google/technology/safety-security/google-passkeys-update-april-2024/">Google blog</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Passkey adoption</dt>
+          <dd>400M+ Google Accounts, 1B+ passkey authentications — as of May 2 2024. <a href="https://blog.google/technology/safety-security/google-passkeys-update-april-2024/">Same post</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Passkey share of logins</dt>
+          <dd>28% of Google authentications used a passkey, Jul 2025–Jun 2026, measured on logins handled by Dashlane's password manager, a third-party estimator. Published Oct 13 2026. <a href="https://www.dashlane.com/blog/passkey-report-2026">Dashlane Passkey Power 20</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>OAuth scope catalog</dt>
+          <dd>445 distinct scopes across 279 API sections. 439 are on <code>www.googleapis.com/auth/</code>; the rest are <code>openid</code>, <code>email</code>, <code>profile</code>, <code>mail.google.com</code> and two on <code>www.google.com</code>. Counted on 2026-11-06 from the <a href="https://developers.google.com/identity/protocols/oauth2/scopes">scope reference</a> (page last updated 2026-09-14). <span class="evidence verified">verified</span>, calculated by Site Wise</dd>
+        </div>
+        <div>
+          <dt>Unverified-app cap</dt>
+          <dd>100 new users in total for an app that requests sensitive or restricted scopes before Google has verified it. <a href="https://support.google.com/cloud/answer/7454865">Google Cloud Help</a>, read 2026-11-06. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Restricted-scope reassessment</dt>
+          <dd>Apps that request restricted scopes must pass a third-party security assessment (Google's CASA program) at least once every 12 months. <a href="https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification">Restricted scope verification</a>, read 2026-11-06. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sign-in UI locales</dt>
+          <dd>83 language options in the sign-in page's picker, counted 2026-11-06 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>JWKS key rotation</dt>
+          <dd>43 distinct key IDs across 27 readable weekly snapshots between Jan 1 2025 and Oct 11 2026. In Jan–Jul 2025, when the snapshots are densest, a new key appeared about every 7 days (median gap), with 2 keys live at a time. From Jul 2026 the set grew to 4–5 keys. Key <code>943a3a…</code> has been present from 2026-07-19 through the 2026-11-06 probe (110+ days) and is now the only key. Calculated by Site Wise from Wayback snapshots (Probe Log). <span class="evidence verified">verified</span>, calculated</dd>
+        </div>
+        <div>
+          <dt>Common Crawl footprint</dt>
+          <dd>2 captures in CC-MAIN-2026-43, both <code>/robots.txt</code>, and no HTML at all, as of 2026-11-06 (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-11-06 (local time; some response headers show 2026-11-05 UTC). Default curl UA throughout.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>curl -s https://accounts.google.com/robots.txt</code></td><td data-label="Observation">Eight lines. <code>User-agent: *</code>, six <code>Disallow</code> entries for legacy endpoints (<code>/ClientLogin</code>, <code>/ClientAuth</code> and their <code>/accounts/</code> variants, <code>/AccountDisavow?</code>, <code>/ReportBug</code>), then <code>Allow: /</code>. No <code>Sitemap:</code> line and no AI-crawler section. Gmail's host is the opposite: it disallows <code>/</code>.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>curl -sI https://accounts.google.com/</code></td><td data-label="Observation">302 to <code>/ServiceLogin?passive=1209600</code>. <code>server: GSE</code>, HSTS 1 year with <code>includeSubDomains</code>, <code>x-frame-options: DENY</code>, nonce-based CSP with <code>report-uri /cspreport</code>, <code>cache-control: private, max-age=0</code>. Sets a <code>__Host-GAPS</code> cookie that expires in 2 years, even on an anonymous request.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>curl -sL /ServiceLogin</code> → markup scan</td><td data-label="Observation">Lands on <code>/v3/signin/identifier?flowName=WebLiteSignIn</code> after 1 redirect. The page is 925KB and titled "Sign in - Google Accounts". It has no <code>rel=canonical</code>, no JSON-LD, no Open Graph tags, no hreflang, and no <code>noindex</code> in either meta tags or <code>X-Robots-Tag</code>. The language picker has 83 <code>&lt;option&gt;</code> values.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe">Sitemap / feed / well-known sweep</td><td data-label="Observation"><code>/sitemap.xml</code>, <code>/llms.txt</code>, <code>/.well-known/security.txt</code>, <code>/.well-known/passkey-endpoints</code> and <code>/.well-known/apple-app-site-association</code> all return 404. <code>/.well-known/change-password</code> 302s to <code>myaccount.google.com/signinoptions/password</code>. <code>/.well-known/assetlinks.json</code> returns 2 statements: <code>handle_all_urls</code> for the Play Store app, and <code>get_login_creds</code> shared with <code>workspace.google.com</code>.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>curl -s /.well-known/openid-configuration</code></td><td data-label="Observation">Issuer <code>https://accounts.google.com</code>. Only the authorization endpoint is on this host; token, revoke and device-code are on <code>oauth2.googleapis.com</code>. 8 response types, 3 scopes (<code>openid email profile</code>), 11 claims, RS256 only, <code>subject_types_supported: ["public"]</code>, PKCE <code>plain</code>+<code>S256</code>, 4 grant types including device code and JWT bearer.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>curl -sD - www.googleapis.com/oauth2/v3/certs</code></td><td data-label="Observation">One RSA key at probe time (<code>kid 943a3a5d…</code>, RS256, 2048-bit). <code>cache-control: public, max-age=22428, must-revalidate</code>, about 6.2h, with <code>expires</code> set to match. The cache lifetime is the rotation contract.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe">Wayback CDX + <code>id_</code> sample of the JWKS</td><td data-label="Observation">742 distinct JWKS digests captured since Jan 1 2025. Most digests differ only in key order, so digests overstate change. Sampling one capture per week through <code>id_</code> gave 73 picks; 46 failed under Wayback throttling and 27 parsed. Those 27 hold 43 distinct <code>kid</code>s. The timeline of key IDs is the rotation record.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>/gsi/fedcm.json</code> and <code>google.com/.well-known/web-identity</code></td><td data-label="Observation">Both open. The FedCM config lists 7 distinct endpoints under <code>/gsi/fedcm/</code> (issue, metrics, listaccounts, clientmetadata, signin, revoke) plus button/widget/active/passive modes and branding icons. Several keys are aliased under old and new spec names. <code>/gsi/fedcm/clientmetadata?client_id=…</code> returns 403 <code>{"error":"BROWSER_NOT_SUPPORTED"}</code> behind an XSSI prefix <code>)]}'</code>, so per-client metadata is not available to scripts.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>/gsi/client</code></td><td data-label="Observation">276KB JavaScript, <code>cache-control: private, max-age=1800</code>. This is the SDK every "Sign in with Google" button loads. Public client IDs appear in third-party login pages: 2 of 5 sampled (stackoverflow.com, figma.com) exposed a <code>…apps.googleusercontent.com</code> ID in their HTML.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>/o/oauth2/v2/auth</code> with a real client ID and a wrong <code>redirect_uri</code></td><td data-label="Observation">Lands on <code>/signin/oauth/error</code> (785KB). The page says "Access blocked: This app's request is invalid", with <code>data-error-code="redirect_uri_mismatch"</code> and the rejected <code>redirect_uri</code> echoed back. The app's name is <em>not</em> shown. <code>authError</code> is a base64 protobuf in the URL, so each error URL is unique.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>oauth2.googleapis.com/tokeninfo?id_token=abc</code></td><td data-label="Observation"><code>{"error":"invalid_token","error_description":"Invalid Value"}</code>. The validation endpoint is open with no key, but it only validates tokens the caller already holds.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe">Common Crawl CDX, CC-MAIN-2026-43, <code>accounts.google.com/*</code></td><td data-label="Observation">Repeated 504s, then the full result: 2 captures, both <code>/robots.txt</code>, <code>text/plain</code>, 200. Even with <code>Allow: /</code>, a major open crawler keeps no HTML from this host.</td></tr>
+            <tr><td data-label="Date">2026-11-06</td><td data-label="Probe"><code>risc.googleapis.com/.well-known/risc-configuration</code></td><td data-label="Observation">404. The discovery document for Cross-Account Protection (RISC) is not published at the standard well-known path; the endpoint is documented only in the developer guide.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">The "corpus" here is protocol metadata and the sign-in surfaces a crawler meets elsewhere. Account data itself is reachable only through a user's OAuth grant on the product APIs (see the mail.google.com report for that pattern).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects</th><th>Best path</th><th>Auth / quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Modality">Web pages</td>
+              <td data-label="Objects">Sign-in, account chooser, consent and error pages. Effectively one template per flow in 83 locales; URLs are unique per session (<code>dsh=</code>, <code>authError=</code>).</td>
+              <td data-label="Best path">None worth crawling. Detect and drop as a page class (Indexing Plan).</td>
+              <td data-label="Auth / quota">None; robots allows.</td>
+              <td data-label="License / display">Not content.</td>
+              <td data-label="Freshness">Per request.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Structured records</td>
+              <td data-label="Objects">OIDC discovery document, FedCM config, <code>web-identity</code>, <code>assetlinks.json</code>.</td>
+              <td data-label="Best path">Direct GET of the well-known URLs.</td>
+              <td data-label="Auth / quota">None.</td>
+              <td data-label="License / display">Public protocol metadata.</td>
+              <td data-label="Freshness">Changes rarely; diff on each fetch.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Signing keys</td>
+              <td data-label="Objects">JWKS (<code>v3/certs</code>, also PEM at <code>v1/certs</code>): 1–3 RSA keys at a time.</td>
+              <td data-label="Best path">GET and honour <code>max-age</code>; Wayback for history.</td>
+              <td data-label="Auth / quota">None.</td>
+              <td data-label="License / display">Public.</td>
+              <td data-label="Freshness">Rotated about weekly in 2025; slower since mid-2026 (Verified Metrics).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Scope catalog</td>
+              <td data-label="Objects">445 OAuth scopes across 279 APIs, each labelled with its API and a description.</td>
+              <td data-label="Best path">Developer docs page; per-API discovery documents carry the same scope strings.</td>
+              <td data-label="Auth / quota">None.</td>
+              <td data-label="License / display">Google developer-docs licence (CC BY 4.0 text, Apache 2.0 code samples).</td>
+              <td data-label="Freshness">Docs updated about monthly (page dated 2026-09-14).</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Identity claims</td>
+              <td data-label="Objects">The ID token: <code>sub</code>, <code>email</code>, <code>email_verified</code>, <code>name</code>, <code>picture</code>, given and family name.</td>
+              <td data-label="Best path">OIDC code flow with the user present; <code>userinfo</code> endpoint.</td>
+              <td data-label="Auth / quota">Per-user consent. <code>openid email profile</code> are non-sensitive scopes, so no verification is needed for them.</td>
+              <td data-label="License / display">Only for the signed-in user's own account. The <code>picture</code> URL points to <code>googleusercontent.com</code>.</td>
+              <td data-label="Freshness">Per sign-in.</td>
+            </tr>
+            <tr>
+              <td data-label="Modality">Security events</td>
+              <td data-label="Objects">Cross-Account Protection (RISC) events: sessions revoked, account disabled, credential change.</td>
+              <td data-label="Best path">Register a RISC receiver; Google pushes signed events (Security Event Tokens).</td>
+              <td data-label="Auth / quota">A Cloud project whose users signed in with Google.</td>
+              <td data-label="License / display">Only for your own users.</td>
+              <td data-label="Freshness">Push, near real time.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where this host differs from the <a href="../../methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Allow-all without content</h4>
+          <p>This breaks the usual crawl-policy model. The default assumption is that robots.txt marks the boundary between public and private. Here robots.txt opens the whole host, and the redirect into sign-in, plus the absence of indexable markup, does the closing. A crawler that treats <code>Allow: /</code> as a signal of public content will spend its budget on near-identical 0.8–0.9MB sign-in shells.</p>
+        </div>
+        <div>
+          <h4>Link sink</h4>
+          <p>Every Google sign-in link on the web (Gmail, Drive and Docs shares, YouTube actions, "Sign in with Google" buttons) resolves here. The URLs carry <code>continue=</code>, <code>followup=</code> and per-session <code>dsh</code>/<code>as</code> tokens, so URL dedup never collapses them. The useful signal is the <code>continue</code> target, which identifies the gated resource behind the link.</p>
+        </div>
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p><code>sub</code> is the stable Google Account ID (<code>subject_types_supported: public</code>), so it is the same for every relying party; email can change. Client IDs embed the Cloud project number as their numeric prefix, so one project's many client IDs group together. The error page does not map a client ID to an app name.</p>
+        </div>
+        <div>
+          <h4>Freshness</h4>
+          <p>The only objects here that change on a schedule are the signing keys. Fetch the JWKS no more often than its <code>max-age</code> allows; the overlap window between an old and a new key is what keeps cached keys valid. The FedCM config and the discovery document are effectively static, so a weekly diff is plenty.</p>
+        </div>
+        <div>
+          <h4>Bot gating</h4>
+          <p>The defences are browser checks, not UA or IP blocks. FedCM metadata answers <code>BROWSER_NOT_SUPPORTED</code> to scripts. The sign-in pages are served, but they are JavaScript-driven flows. Sending a crawler UA to test differential serving is not a legitimate probe on an authentication host, so this report did not do it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> none for content. Index this host as an <em>entity</em>, namely the Google identity provider, carrying its protocol documents as structured attributes: issuer, endpoints, algorithms, scopes, FedCM modes and current key IDs.</li>
+        <li><strong>Page-class rule:</strong> classify any URL on <code>accounts.google.com</code> that is not JSON as an auth interstitial, drop it from the document index, and record the decoded <code>continue=</code> target as an edge to the gated resource. Count these edges per target host; that count is a usable signal of how much of another site sits behind Google sign-in.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The well-known JSON (OIDC, FedCM, web-identity, assetlinks), fetched weekly. 2) JWKS on its <code>max-age</code>, with each new <code>kid</code> logged. 3) The scope reference plus API discovery documents, monthly, to keep a scope → API → sensitivity table. 4) Wayback for history. Crawling HTML yields nothing.</li>
+        <li><strong>Derivatives:</strong> a scope-sensitivity map (scope → API → whether it is restricted), so that an index of any Google-backed app can say what data that app could reach; and a timeline of signing-key changes.</li>
+        <li><strong>Demo to build:</strong> a "who sits behind Google sign-in" graph. Sample pages from a web crawl, extract GSI client IDs and <code>accounts.google.com</code> links, group client IDs by project-number prefix, and decode the <code>continue=</code> targets. It needs no authentication and shows the identity layer as a join key across sites.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Crawl-budget trap.</strong> Allow-all plus unique-per-session URLs plus pages near 1MB is the worst combination for a naive crawler. Without the page-class rule, every Google sign-in link on the web becomes a fetch.</li>
+        <li><strong>Probing an IdP is sensitive.</strong> Credential-flow endpoints (<code>/v3/signin/*</code>, token endpoints) must never be exercised with guesses, and UA spoofing on an authentication host can look like evasion. Keep to the documented public JSON.</li>
+        <li><strong>Verification gates bind reuse, not discovery.</strong> Any product built on Google account data runs into the 100-user cap and annual CASA reassessment (Verified Metrics). Plan for them before relying on Google-authenticated ingestion.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The sign-in surface is moving into the browser.</strong> <em>Basis:</em> the FedCM config defines four modes and Google publishes <code>web-identity</code> at the registrable domain (Probe Log); once sign-in happens in a browser dialog, fewer <code>accounts.google.com</code> redirect URLs appear in links, which weakens the link-sink signal over time.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li>Google: <a href="https://blog.google/technology/safety-security/google-passkeys-update-april-2024/">passkeys and Cross-Account Protection, May 2 2024</a>; <a href="https://developers.googleblog.com/launching-our-new-google-identity-services-apis/">GSI launch, Aug 3 2021</a>.</li>
+        <li>Developer docs: <a href="https://developers.google.com/identity/protocols/oauth2/scopes">OAuth 2.0 scopes</a>, <a href="https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification">restricted scope verification</a>, <a href="https://support.google.com/cloud/answer/7454865">unverified apps</a>.</li>
+        <li>Third party: <a href="https://www.dashlane.com/blog/passkey-report-2026">Dashlane Passkey Power 20, Oct 13 2026</a>.</li>
+        <li>Local probes on 2026-11-06: curl against robots.txt, headers, sign-in markup, well-known URLs, OIDC discovery, JWKS, FedCM, GSI client, the OAuth error page and tokeninfo; Common Crawl CDX; Wayback CDX and <code>id_</code> JWKS snapshots (full results in the Probe Log).</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The sign-in surface is moving into the browser. <em>Basis:</em> the four-mode FedCM config and the <code>google.com/.well-known/web-identity</code> file (Probe Log).</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>The total number of Google Accounts, and how many third-party apps use Sign in with Google each month. This needs a Google disclosure; a lower bound could come from counting distinct GSI client-ID project numbers across a Common Crawl segment.</li>
+        <li>A current, first-party passkey figure. Google's last count is from May 2024; it needs a newer Google post.</li>
+        <li>Where Google publishes the RISC discovery document, if anywhere. This could be closed by reading the Cross-Account Protection guide and fetching the URL it names.</li>
+        <li>Whether the mid-2026 move from weekly rotation to one long-lived key reflects a policy change or gaps in the snapshots. This could be closed by fetching the JWKS daily for 30 days and logging each <code>kid</code> and <code>expires</code>.</li>
+        <li>The share of web pages that link into <code>accounts.google.com</code>, and their top <code>continue=</code> targets. This could be measured with a WAT-file scan of one Common Crawl segment.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
