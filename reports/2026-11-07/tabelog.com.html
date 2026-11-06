@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tabelog.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-11-07</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>tabelog.com</h1>
+      <p class="lede">Tabelog's open sitemaps list 961K restaurants and 37M review permalinks, but Japanese detail pages return a 403 "busy" page to non-search crawlers.</p>
+      <div class="tag-row">
+        <span class="tag">Restaurant Reviews</span>
+        <span class="tag">Kakaku.com</span>
+        <span class="tag">Japan</span>
+        <span class="tag">UGC</span>
+        <span class="tag">Cloudflare</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p><code>tabelog.com</code> (食べログ) is Japan's dominant restaurant-review and reservation site, run by Kakaku.com, Inc. (TSE 2371), which also operates the price-comparison site 価格.com. Restaurants pay for reservation tools and listing ads, and that segment is now Kakaku's largest and most profitable. Ownership is changing: EQT-backed Kamgras 1 is running a recommended tender offer to take Kakaku private. The tender closes on Nov 12 2026, and the buyer's stated aim is a platform "not replaceable by AI", less dependent on SEO traffic. For an index builder the site is unusually legible. Every restaurant URL encodes prefecture, area code and a numeric ID, and the restaurant pages carry rich JSON-LD with geo coordinates, rating, price band and phone. A root <code>sitemap.xml</code>, unlisted in robots.txt, enumerates every restaurant and review. Access, however, is tiered by language and crawler. English and other inbound-language pages answer an honest research UA, but the Japanese originals, which hold the full address and review text, return a site-branded 403. Japanese copyright law (Art. 30-4) permits information analysis, but the terms of use prohibit storing site information without consent.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>tabelog.com</code> (<code>www</code> 301s to the apex)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://tabelog.com/">https://tabelog.com/</a>; language editions at <code>/en/</code>, <code>/cn/</code>, <code>/tw/</code>, <code>/kr/</code>, <code>/th/</code></dd></div>
+        <div><dt>Category</dt><dd>Restaurant reviews, rankings and reservations</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>tabelog.com</code>, <code>www.tabelog.com</code></dd></div>
+        <div><dt>Related hosts</dt><dd><code>tblg.k-img.com</code> (image and static CDN)</dd></div>
+        <div><dt>Owner</dt><dd>Kakaku.com, Inc., Tokyo; subject to the Kamgras 1 (EQT) tender offer (Verified Metrics)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Oldest review URL in the sitemaps has <code>lastmod</code> 2005-05-11 (Probe Log)</dd></div>
+        <div><dt>Business model</dt><dd>Restaurant-side fees: online-reservation commissions and paid listing/advertising plans</dd></div>
+        <div><dt>Scale anchor</dt><dd>91.53M monthly users, September 2026 (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus counts are Site Wise measurements from 2026-11-07. Financials are Kakaku.com IFRS figures for the half year Apr–Sep 2026 (FY ending Mar 2027).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Restaurant pages (Japanese)</dt>
+          <dd>~961K: 20 <code>sitemap_pc_rstdtl</code> parts, 19 full at 50,000 URLs plus 11,078 in the last. This includes overseas listings (Netherlands, Australia, Peru…). Calculated by Site Wise (Probe Log, sitemap census). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Restaurant pages (English)</dt>
+          <dd>~907K: 19 <code>sitemap_pc_en_rstdtl</code> parts, the last holding 6,785. Chinese (simplified and traditional), Korean and Thai each have 19 parts as well. Calculated by Site Wise (Probe Log, sitemap census). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Review permalinks</dt>
+          <dd>~37.3M: 457 <code>rvwdtl</code> parts (22.85M) plus 289 <code>mini_rvwdtl</code> parts (14.45M). All 8 parts fetched, including the newest of each family, held exactly 50,000 URLs. Two adjacent parts from the two families shared 1 of 150K review IDs, so the families are disjoint. Calculated by Site Wise (Probe Log, sitemap census). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Review velocity</dt>
+          <dd>~17K new review permalinks/day. <code>rvwdtl</code> grew 256 parts between parts whose earliest <code>lastmod</code> is 2023-01-18 and 2026-10-21 (≈9.3K/day). <code>mini_rvwdtl</code> grew 139 parts between 2024-06-08 and 2026-10-24 (≈8.0K/day). The highest review ID seen is B538,288,821. Calculated by Site Wise; a part's earliest <code>lastmod</code> stands in for its open date (Probe Log, sitemap census). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Monthly users</dt>
+          <dd>91.53M for Tabelog in September 2026, counted per browser. Kakaku's footnote says mechanical access by third-party automated collection programs is excluded. <a href="https://www2.jpx.co.jp/disc/23710/140120261030561912.pdf">Kakaku.com H1 FY2027/3 決算短信, Nov 4 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Tabelog segment, H1</dt>
+          <dd>Revenue ¥22.18B (+17.1% YoY), segment profit ¥12.90B (+18.8%), driven by growth in paid-plan restaurants and online reservations. The Tabelog segment is 42% of group revenue (¥52.51B), calculated by Site Wise. <a href="https://www2.jpx.co.jp/disc/23710/140120261030561912.pdf">Same 決算短信</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Take-private offer</dt>
+          <dd>Kamgras 1 (EQT): ¥3,683 per share after rounds of counter-bids from a Bain Capital and LINE Yahoo consortium. The tender runs May 13 – Nov 12 2026, and the result is due Nov 13. <a href="https://www.sc.mufg.jp/products/stock/tob/2371.html">MUFG Morgan Stanley TOB page</a>; rationale in <a href="https://www.watch.impress.co.jp/docs/news/2108381.html">Impress Watch, May 13 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Terms of use</dt>
+          <dd>§9(1)[1] prohibits copying, reproducing or <em>storing</em> information Tabelog provides without prior consent, "except where permitted by law". §6 [3] gives Kakaku a free, sublicensable licence to members' reviews for the full copyright term. Last revised Feb 17 2026. <a href="https://tabelog.com/help/rules/">tabelog.com/help/rules/</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-11-07 (JST; server clocks read Nov 6 16:13 GMT onward) from a US connection (Cloudflare POP SJC) with UA <code>SiteWise research (kunka@apitech.ai)</code>. About 45 requests went to <code>tabelog.com</code> HTML and sitemap files, plus 99 paced HEADs on sitemap parts. No browser or crawler UA was spoofed.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-11-07</td><td><code>curl -sI https://tabelog.com/</code></td><td><strong>200</strong>, Cloudflare (<code>cf-cache-status: DYNAMIC</code>, <code>__cf_bm</code> cookie), <code>vary: Accept-Encoding,User-Agent</code>, <code>cache-control: max-age=0</code>, and a Rails-style <code>_tabelog_session_id</code> plus a 20-year tracking cookie. There is no CSP or HSTS header. <code>www</code> 301s to the apex.</td></tr>
+            <tr><td>2026-11-07</td><td><code>curl -sL /robots.txt</code></td><td>2.8KB, 140 lines, <strong>no <code>Sitemap:</code> line</strong>. The <code>*</code> group disallows only <code>/ad_mobile/</code>, reviewer visit pages <code>/rvwr/*/visitdtl/</code>, booking flow, <code>/btb/</code> and <code>*_disallow_bot</code>. <code>Disallow: /</code> applies only to GPTBot, Google-Extended and five dead bots (psbot, Teoma, Ask Jeeves…). ClaudeBot, CCBot, PerplexityBot and Applebot-Extended are not named. Googlebot and Mediapartners-Google get their own group that drops the <code>*</code> rules but adds <code>/web-api/</code>, <code>/internal_api/</code>, <code>/contents/</code>, <code>/tpoint/</code>, <code>/badge/</code>. Bingbot and Baidu get <code>Crawl-delay</code> 5–10.</td></tr>
+            <tr><td>2026-11-07</td><td>Sitemap index <code>/sitemap.xml</code></td><td>200, 248KB, <strong>2,527 child sitemaps</strong> (<code>.xml.gz</code>, no <code>lastmod</code>). Largest families: 457 <code>rvwdtl</code> and 289 <code>mini_rvwdtl</code> (reviews), 20 <code>rstdtl</code> (restaurants), 19 parts each for en/cn/tw/kr/th <code>rstdtl</code>, 1,434 list and ranking parts (city/station/line/municipal × genre/condition), and 230 <code>seo_*</code> landing parts (46 genres × 5 page types). <code>/sitemap/sitemap.xml</code> returns a CF 403.</td></tr>
+            <tr><td>2026-11-07</td><td>Sitemap census: full fetch of 13 parts (first, middle and last of each key family)</td><td>Restaurant parts: <code>rstdtl_1</code> 50,000, <code>rstdtl_20</code> 11,078; <code>en_rstdtl_19</code> 6,785. Review parts <code>rvwdtl_1/200/456/457</code> and <code>mini_rvwdtl_1/150/289</code> all held exactly 50,000. URLs carry <code>lastmod</code>, <code>changefreq</code> and <code>priority</code> (restaurants 0.5, reviews 0.3, <code>recent_rstdtl</code> 1.0). Restaurant <code>lastmod</code> ranges 2010-11-12 – 2026-11-06; review <code>lastmod</code> starts 2005-05-11. <code>recent_rstdtl_1</code> lists 11,531 restaurants with <code>lastmod</code> ≥ 2026-09-07. A paced HEAD sweep of all parts was stopped after 99 HEADs (slow at ~1 req/s); every one returned 200.</td></tr>
+            <tr><td>2026-11-07</td><td>Japanese restaurant pages: <code>/tokyo/A1303/A130302/13003326/</code>, <code>/osaka/…/27126254/</code> (3 tries, 4–5s apart)</td><td><strong>403, 3.8KB, site-branded "現在アクセスが集中しています"</strong> ("access is concentrated, try later"), served by origin through Cloudflare without <code>cf-mitigated</code>. The same request minutes apart to <code>/</code>, <code>/tokyo/</code> and <code>/help/rules/</code> got 200. The "busy" page is a selective block, not load shedding.</td></tr>
+            <tr><td>2026-11-07</td><td>Review list and permalink: <code>…/13003326/dtlrvwlst/</code>, <code>…/dtlrvwlst/B11/</code></td><td><strong>403 Cloudflare managed challenge</strong> (<code>cf-mitigated: challenge</code>, "Just a moment…"). The review surface sits behind a JS challenge rather than the origin "busy" page.</td></tr>
+            <tr><td>2026-11-07</td><td><code>/llms.txt</code></td><td>301 to <code>/rstLst/llms/?format=txt</code>, which returns the <strong>CF managed challenge</strong>. An LLM-facing restaurant list exists but is not readable without JS.</td></tr>
+            <tr><td>2026-11-07</td><td>English page: <code>/en/tokyo/A1303/A130302/13003326/</code></td><td><strong>200</strong>, 19.7KB. JSON-LD <code>Restaurant</code> has name, <code>geo</code> (lat/long), <code>priceRange</code> "JPY 10,000～14,999", <code>servesCuisine</code>, an international telephone number and <code>aggregateRating</code> 3.59 from 302. <code>streetAddress</code> is <strong>empty</strong> and there is no <code>review</code> array. BreadcrumbList runs prefecture → genre → area → station. Six hreflang alternates (ja/en/ko/zh-CN/zh-TW/th). Three review snippets are labelled "automatically translated", with reviewer post and follower counts. Page counts: 302 reviews, 1,678 photos.</td></tr>
+            <tr><td>2026-11-07</td><td>Japanese page via Wayback <code>id_</code> (capture 2026-03-01)</td><td>200, 48KB. JSON-LD <code>Restaurant</code> carries the <strong>full street address</strong> (恵比寿南2-3-11 杉浦ビル 1F) and a <code>review</code> array of 3 full-text reviews (571–922 chars) with per-review <code>ratingValue</code> but no <code>datePublished</code>. A <code>FAQPage</code> block holds opening hours and access directions. Rating then was 3.61 from 297. The <code>og:image</code> uses the signed resize endpoint <code>/resize/640x640c/…?token=…&amp;api=v2</code>.</td></tr>
+            <tr><td>2026-11-07</td><td>Common Crawl index <code>CC-MAIN-2026-43</code>, prefix <code>tabelog.com/tokyo/A1303/A130302/*</code></td><td>12 captures, all from Oct 2026: <strong>8 × 403</strong> (4.7KB, the "busy" page size) and 4 × 301, with no 200. The block hits CCBot too, even though robots.txt allows it.</td></tr>
+            <tr><td>2026-11-07</td><td><code>curl -sI</code> on <code>tblg.k-img.com</code> images</td><td>200 through Cloudflare then CloudFront, <code>cache-control: max-age=31536000</code>, <code>last-modified</code> 2011. Path <code>/restaurant/images/Rvw/{bucket}/{id}.jpg</code>: the unsized original is 379KB, <code>640x640_rect_</code> 65KB; <code>1280x1280_rect_</code> 404s. Photo IDs are plain integers (e.g. 9102832).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Discovery is fully open: one root sitemap covers every object class. Content access splits by language. Inbound-language pages (en/cn/tw/kr/th) answer, while the Japanese originals and all review pages are blocked for non-search crawlers. No public API exists. The terms forbid storage without consent, so beyond discovery every row assumes either Art. 30-4 analysis-only use or a licence.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Restaurants (entities)</td>
+              <td>~961K JP pages; ~907K EN.</td>
+              <td>Sitemaps for IDs; <code>/en/</code> JSON-LD for geo, cuisine, price, rating, phone.</td>
+              <td>None for <code>/en/</code>; JP detail returns 403 "busy".</td>
+              <td>ToS §9 bars storage without consent; facts (geo, phone) are weakly protected.</td>
+              <td>Restaurant <code>lastmod</code> updates continuously; ~11.5K in <code>recent_rstdtl</code>.</td>
+            </tr>
+            <tr>
+              <td>Reviews (text + rating)</td>
+              <td>~37.3M permalinks; ~17K/day.</td>
+              <td>No open path: review pages are CF-challenged and JP detail returns 403. EN pages show 3 machine-translated snippets per restaurant.</td>
+              <td>Licence only.</td>
+              <td>Kakaku holds a sublicensable licence (ToS §6 [3]): the contract partner for any feed.</td>
+              <td>Append-mostly; old reviews' <code>lastmod</code> back to 2005.</td>
+            </tr>
+            <tr>
+              <td>Ratings (aggregate)</td>
+              <td>One 3.00–5.00 score per restaurant.</td>
+              <td>EN JSON-LD <code>aggregateRating</code>.</td>
+              <td>None.</td>
+              <td>Proprietary score; cite as Tabelog's.</td>
+              <td>Moves by hundredths over months (3.61 → 3.59, Mar → Nov 2026).</td>
+            </tr>
+            <tr>
+              <td>Photos</td>
+              <td>Per restaurant up to thousands (1,678 on the sample).</td>
+              <td><code>tblg.k-img.com</code> URLs from EN pages; signed <code>/resize/</code> for thumbnails.</td>
+              <td>Unauthenticated; 1-year cache.</td>
+              <td>User uploads under the same ToS; display needs a licence.</td>
+              <td>Immutable per photo ID.</td>
+            </tr>
+            <tr>
+              <td>List and ranking pages</td>
+              <td>1,434 list/ranking sitemap parts plus 230 SEO-landing parts.</td>
+              <td>Sitemaps for structure; facets derivable from restaurant JSON-LD instead.</td>
+              <td>Open (<code>/tokyo/</code> 200).</td>
+              <td>Same ToS.</td>
+              <td>Re-ranked continuously; low unique value.</td>
+            </tr>
+            <tr>
+              <td>Hours, access, menus</td>
+              <td>In JP <code>FAQPage</code> JSON-LD and page tabs.</td>
+              <td>No open path for JP; EN pages carry closed days and nearest station.</td>
+              <td>JP 403.</td>
+              <td>Facts; ToS still bars storage.</td>
+              <td>Restaurant-maintained; changes seasonally.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where tabelog.com departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Restaurant URLs are <code>/{pref}/{A-area}/{A-subarea}/{rst_id}/</code>; the integer <code>rst_id</code> is the key and its leading digits encode prefecture (13… Tokyo, 27… Osaka, 70… Netherlands). Language editions share the ID under <code>/en/</code>, <code>/kr/</code> and so on, with hreflang. Reviews are <code>…/{rst_id}/dtlrvwlst/B{review_id}/</code>, so every review carries its parent restaurant. Collapse on <code>(rst_id)</code> and <code>(B-id)</code>, never on language path.</p>
+        </div>
+        <div>
+          <h4>Language-tiered access</h4>
+          <p>The block is not site-wide. Inbound-language pages (built for tourists) answer at 200, while the Japanese originals return a branded 403 that impersonates an overload, even to CCBot (Probe Log). The inbound edition withholds the street address and full reviews. A non-Google index therefore gets a tourist-grade entity record: geo, cuisine, price, rating and phone, without the review corpus.</p>
+        </div>
+        <div>
+          <h4>Hidden sitemap</h4>
+          <p>robots.txt names no sitemap, yet <code>/sitemap.xml</code> is a 2,527-part index with per-URL <code>lastmod</code>. That makes it the cheapest complete census in this series: ~13 full fetches resolve both corpus totals, because review parts are published only when full (newest parts hold exactly 50K).</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Use JSON-LD over page text. The EN telephone is internationalized (+81) while JP is local, and EN <code>servesCuisine</code> is translated. Reviews on EN pages are machine translations labelled as such, so index the Japanese original as the authoritative text and the translation as a derivative.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Per-URL <code>lastmod</code> is real: restaurant dates span 2010–2026 rather than all reading "today". Diff the restaurant sitemaps weekly and the newest two review parts per family daily. The B-ID counter (~538M) runs far ahead of the 37M listed reviews, so the ID space is shared or sparse; do not estimate volume from IDs.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>Tabelog's 3.00–5.00 score sits on a different scale from Google or Tripadvisor stars (the sample has 3.59 labelled "Very good"). Treat the score as a Tabelog-specific signal. Do not merge it with Google or Tripadvisor stars.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the restaurant (<code>rst_id</code>), with geo point, cuisine list, price band, rating and phone, plus reviews (<code>B</code>-ID) and photos as children, if licensed.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>rst_id</code> across language editions; <code>geo</code> and phone to join with OSM, Google Places and Tripadvisor; area codes (<code>A1303</code>) and station IDs (<code>R1528</code>) from BreadcrumbList as a gazetteer.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) A Kakaku data licence for reviews, which is the only route to the 37M-review corpus; contract terms may shift under new ownership. 2) The root sitemap, weekly, for the full ID graph and <code>lastmod</code> (~2.5K files). 3) <code>/en/</code> detail pages, paced, for entity facts; storing them is a ToS question to clear first. 4) Wayback <code>id_</code> captures for one-off Japanese research samples.</li>
+        <li><strong>Recrawl cadence:</strong> newest review parts daily; restaurant parts weekly; robots.txt and the 403 behaviour monthly.</li>
+        <li><strong>Derivatives to generate:</strong> a restaurant gazetteer (ID → geo, area, station); multilingual entity embeddings from the five inbound editions; photo embeddings from 640px thumbnails, under licence only.</li>
+        <li><strong>Demo to build:</strong> a review-density map built from sitemap URLs alone. Count review permalinks per <code>rst_id</code> and plot them by prefecture code to show where Tabelog's 37M reviews concentrate, with no page fetches.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><span class="evidence inferred">inferred</span> <strong>Inbound pages may close next.</strong> <em>Basis:</em> the buyer's stated thesis is reducing SEO dependence toward a platform "not replaceable by AI" (Impress Watch), the review surface already sits behind a CF challenge, and <code>/llms.txt</code> exists but is challenged (Probe Log). The English edition is the last open content path.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>The block is UA- or reputation-based, so robots.txt does not predict access.</strong> <em>Basis:</em> CCBot and the research UA get 403 on JP detail pages while robots.txt allows both (Probe Log), and only Googlebot and Mediapartners have distinct robots groups.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www2.jpx.co.jp/disc/23710/140120261030561912.pdf">Kakaku.com 2027年3月期 第2四半期 決算短信 (IFRS), Nov 4 2026</a> — segment results, monthly users, footnote on bot exclusion, TOB costs.</li>
+        <li><a href="https://www.sc.mufg.jp/products/stock/tob/2371.html">MUFG Morgan Stanley Securities, Kakaku.com TOB page</a> — buyer, price, period, result date.</li>
+        <li><a href="https://www.watch.impress.co.jp/docs/news/2108381.html">Impress Watch, May 13 2026</a> — EQT acquisition announcement and AI/SEO rationale.</li>
+        <li><a href="https://tabelog.com/help/rules/">食べログ 利用規約, last revised Feb 17 2026</a> — §6 review licence, §9 prohibited acts.</li>
+        <li>Local probes on 2026-11-07: headers, robots.txt, sitemap index and 13-part census, JP and EN detail pages, review pages, llms.txt, Wayback capture, Common Crawl index, image CDN. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The "busy" 403 targets non-search clients rather than shedding load. <em>Basis:</em> it repeated on 3 tries 4–5s apart while <code>/</code>, <code>/tokyo/</code> and <code>/help/rules/</code> returned 200 in the same minutes, and Common Crawl recorded the same 4.7KB 403 across Oct 2026.</li>
+        <li>Review sitemap parts are published only when full. <em>Basis:</em> the highest-numbered part of both review families holds exactly 50,000 URLs, whereas the restaurant family's last part holds 11,078.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Whether the Kamgras 1 tender succeeds and what changes after delisting. Closeable from the Nov 13 2026 result notice on TDnet.</li>
+        <li>Total photo count. Closeable by summing the "Photos (N)" counter across a random sample of ~500 <code>/en/</code> restaurant pages and scaling by the 961K restaurant count.</li>
+        <li>Whether Googlebot receives the Japanese pages with full reviews. Closeable via Google's cache-free signals (Search Console URL inspection is owner-only), or by comparing Google snippet text with Wayback JP captures.</li>
+        <li>Contents of the challenged <code>/rstLst/llms/?format=txt</code>. Closeable by a JS-capable fetch with Tabelog's permission, or from a Wayback capture if one appears.</li>
+        <li>Whether Kakaku offers a commercial review-data licence. Closeable by a direct inquiry through the Tabelog business contact form.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
