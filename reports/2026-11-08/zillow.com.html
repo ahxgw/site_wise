@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zillow.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-11-08</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>zillow.com</h1>
+      <p class="lede">Zillow's open sitemaps enumerate ~133M home pages, but every home page and llms.txt returns a PerimeterX 403 to a declared research crawler.</p>
+      <div class="tag-row">
+        <span class="tag">Real Estate</span>
+        <span class="tag">Zillow Group</span>
+        <span class="tag">US</span>
+        <span class="tag">Listings</span>
+        <span class="tag">CloudFront + PerimeterX</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p><code>zillow.com</code> is the largest US home-search portal and is run by Zillow Group (NASDAQ: Z), which also owns Trulia, StreetEasy and HotPads. Revenue comes mostly from agents who buy buyer leads (Premier Agent), plus rentals advertising and Zillow Home Loans. For an index builder Zillow is unusual because it publishes a page for nearly every US housing unit, not just active listings. Each home page (HDP) is keyed by an integer <code>zpid</code> and carries a parcel ID, geo coordinates, the Zestimate, price and tax history, MLS attribution and up to dozens of photos. The site's own sitemaps list ~118M off-market homes beside ~2.8M active listings. Discovery is wide open, but content is not. Every HTML page goes through a PerimeterX check at the CloudFront edge, and the Terms of Use ban automated queries outright. The one licensed bulk path is aggregate market data, which Zillow publishes as CSVs with an attribution requirement. Listing-level data reaches third parties only through Zillow's approval-gated Bridge API. In Q3 2026 Zillow tightened how it excludes bots from its reported visits, recasting prior figures down ~5%.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.zillow.com</code> (apex 301s from an S3 origin)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.zillow.com/">https://www.zillow.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Real-estate listings, home valuations, rentals, mortgages</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>www.zillow.com</code>, <code>zillow.com</code></dd></div>
+        <div><dt>Related hosts</dt><dd><code>photos.zillowstatic.com</code> (listing photos), <code>files.zillowstatic.com</code> (research CSVs), <code>mortgageapi.zillow.com</code> (rate-page sitemap)</dd></div>
+        <div><dt>Owner</dt><dd>Zillow Group, Inc., Seattle (SEC CIK 1617640)</dd></div>
+        <div><dt>Business model</dt><dd>Agent lead fees (Residential), rentals advertising, mortgage origination</dd></div>
+        <div><dt>Scale anchor</dt><dd>215M average monthly unique users, Q3 2026 (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus counts are Site Wise measurements from 2026-11-08. Traffic and revenue figures are Zillow Group's for the quarter ended Sep 30 2026 and cover Zillow, Trulia and StreetEasy combined.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Off-market home pages</dt>
+          <dd>~117M: 5,000 <code>off-market</code> parts that read as hash buckets. Six sampled parts (0000, 0777, 1234, 2500, 3901, 4999) held 23,220–23,665 URLs each, mean 23,492. 5,000 × 23,492 = 117.5M, calculated by Site Wise (Probe Log, sitemap census). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Recently sold home pages</dt>
+          <dd>~12.5M: 254 parts in 5 shards (00–04), each with 50 or 51 parts. All sampled full parts held 50,000; the shard tails held 49,741, 47,350, 918, 4,059 and 1,291. Sale <code>lastmod</code> runs mostly 2023–2026. 248 × 50K + 103,359 = 12.50M, calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Active listing pages</dt>
+          <dd>~2.84M in all: for sale by agent 1.63M (33 parts, last 27,715), for rent ~998K (20 parts, last 47,561), new construction 163K, auction 27.4K, for sale by owner 24.5K, other 3.7K, pending 1.2K. Each family's <code>latest</code> file is a 50K subset of its parts, not an addition. Sums calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Building and apartment pages</dt>
+          <dd>~10.6M <code>/b/</code> building pages (3 shards × 71 parts; tails 46,852, 46,894, 42,441) plus ~348K <code>/apartments/</code> community pages (7 parts). Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Listing change rate</dt>
+          <dd>~20K URLs/day per active family. Each <code>latest</code> file's 50,000 <code>lastmod</code> values span 2.3–2.7 days ending 2026-11-07 07:59Z: for sale by agent ≈ 20K/day, recently sold ≈ 18.5K/day, for rent ≈ 21K/day. Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Traffic</dt>
+          <dd>2.31B visits in Q3 2026 (−5% YoY) and 215M average monthly unique users (−3%). From Q3 2026 Zillow excludes automated traffic at the visit level, using sign-in state, interaction depth, traffic source and network signals. The recast cut previously reported Q3 2025 visits by ~5%. <a href="https://www.sec.gov/Archives/edgar/data/1617640/000161764026000069/z-20260930.htm">Zillow Group 10-Q, Q3 2026</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Revenue</dt>
+          <dd>$724M in Q3 2026 (+7% YoY): Residential $419M (−4%, from fewer visits), Rentals $220M, Mortgages $70M. <a href="https://www.sec.gov/Archives/edgar/data/1617640/000161764026000069/z-20260930.htm">Same 10-Q</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Terms of use</dt>
+          <dd>Copying is allowed only "without the aid of any automated processes", and "automated queries (including screen and database scraping, spiders, robots, crawlers…)" are prohibited. Aggregate Data from Local-Info pages may be reused for non-personal analysis if every page cites "Data Provided by Zillow Group". Version dated Oct 28 2025, read from a <a href="https://web.archive.org/web/20260201010434/https://www.zillow.com/z/corp/terms/">Wayback capture of Feb 1 2026</a>. <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-11-08 (local; server clocks read Nov 7 16:51 GMT onward) from a US connection (CloudFront POP SFO53) with UA <code>SiteWise research (kunka@apitech.ai)</code>. About 75 requests went to Zillow hosts, mostly sitemap files paced 1.5–2s apart, plus 5 to the Wayback Machine. No browser or crawler UA was spoofed.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-11-08</td><td><code>curl -sI https://www.zillow.com/</code></td><td><strong>403</strong>, 5.8KB, <code>x-px-blocked: 1</code>, <code>x-cache: LambdaGeneratedResponse from cloudfront</code>. The PerimeterX check runs at the CloudFront edge (Lambda@Edge), before any origin. HSTS is set with preload. The apex 301s with <code>server: AmazonS3</code>. The block page names PX app <code>PXHYx10rg3</code>, whose first-party path <code>/HYx10rg3/*</code> robots.txt disallows.</td></tr>
+            <tr><td>2026-11-08</td><td><code>curl -sL /robots.txt</code></td><td>200, 19KB, 598 lines, 15 <code>Sitemap:</code> lines. The <code>*</code> group allows search-result roots (<code>/homes/for_sale/$</code>, <code>…/*_p/$</code> pagination) and disallows <code>/api/</code>, <code>/graphql/</code>, <code>/homes/</code>, <code>/*?searchQueryState=*</code>, 3D tours, floor plans and <code>/homemedia/</code>. <strong>Claude-User, ClaudeBot and Claude-SearchBot get their own group with the same rules as <code>*</code></strong>, so homedetails stay allowed. Applebot-Extended, Amazonbot, Meta-ExternalAgent, AI2Bot and YouBot get <code>Disallow: /</code> except editorial paths (<code>/research/</code>, <code>/blog/</code>, guides) with <code>Crawl-delay: 1</code>. GPTBot, CCBot, Google-Extended and PerplexityBot are not named.</td></tr>
+            <tr><td>2026-11-08</td><td>All 15 sitemap indexes (<code>/xml/indexes/us/…</code>)</td><td>All 200, gzip, <code>x-amz-server-side-encryption</code>, so they come from an S3 origin and <strong>skip the PX check</strong>. Child counts: <code>off-market</code> 5,000; <code>recently-sold</code> 254; <code>bdp/buildings</code> 213; <code>for-sale-by-agent</code> 34 (incl. <code>latest</code>); <code>for-rent</code> 21; <code>cdp</code> 54; <code>static</code> 22; <code>bdp/apartments</code> 7; <code>new-construction</code> 5; <code>srp/for-sale</code> 4; the rest 2. Index <code>last-modified</code> dates are Nov 6–7, so they are rebuilt daily.</td></tr>
+            <tr><td>2026-11-08</td><td>Sitemap census: full fetch of 39 child parts (first, middle, last of each family)</td><td>Full parts hold exactly 50,000, including 5 middle parts checked to rule out short fills. Off-market parts hold ~23.5K and have <strong>no <code>lastmod</code></strong>. All other HDP families carry per-URL <code>lastmod</code> (minute precision); <code>/b/</code> buildings date from 2017–2026. Over 975,736 distinct zpids sampled, the highest was <strong>2,146,999,910</strong>, 484K below the signed 32-bit maximum (2,147,483,647). <code>latest</code> overlapped the numbered parts (2,411 shared zpids with two parts).</td></tr>
+            <tr><td>2026-11-08</td><td>Home page <code>/homedetails/2114-S-Trumbull-Ave-Chicago-IL-60623/2146999031_zpid/</code>; <code>/llms.txt</code>; <code>/research/data/</code></td><td>All <strong>403 PerimeterX</strong> ("Access to this page has been denied", <code>x-px-blocked: 1</code>) on the first request. The block is not burst-triggered: the same session's sitemap fetches kept returning 200.</td></tr>
+            <tr><td>2026-11-08</td><td>Wayback <code>id_</code> of <code>/homedetails/W2005-Cth-M-White-Lake-WI-54491/340013913_zpid/</code> (capture 2026-05-30)</td><td>200, 2.0MB HTML. JSON-LD <code>["RealEstateListing","Product"]</code> carries address, <code>geo</code>, <code>floorSize</code>, bedrooms and an <code>Offer</code> price ($759K). The BreadcrumbList item IDs point to <strong><code>www.zillow.co/…</code></strong> (sic), not <code>.com</code>. <code>__NEXT_DATA__</code> (580KB) holds a <code>gdpClientCache</code> keyed <strong><code>ForSaleBotsQuery</code></strong> whose <code>property</code> object has 135 keys: <code>zpid</code>, <code>parcelId</code>, <code>zestimate</code> (744.8K), <code>rentZestimate</code>, 8-event <code>priceHistory</code> with MLS source, <code>attributionInfo</code> (agent name and phone, broker, MLS ID, <code>lastChecked</code>), 187 <code>resoFacts</code> fields, 71 <code>responsivePhotos</code>, <code>pageViewCount</code> 314, <code>favoriteCount</code> 10, schools, and walk/transit/bike scores.</td></tr>
+            <tr><td>2026-11-08</td><td><code>curl -sI</code> on <code>photos.zillowstatic.com/fp/{hash}-cc_ft_1536.jpg</code> and variants</td><td>200 without PX, <code>server: istio-envoy</code> behind CloudFront, <code>cache-control: max-age=1814400</code> (21 days). Photo IDs are 32-hex content hashes; size suffixes (<code>cc_ft_192…1536</code>, <code>o_a</code>, <code>uncropped_scaled_within_1536_1152.webp</code>) select renditions. 1536px JPEG is 232KB.</td></tr>
+            <tr><td>2026-11-08</td><td><code>curl -sI files.zillowstatic.com/research/public_csvs/zhvi/Metro_zhvi_…_month.csv</code></td><td>200, 4.5MB, <code>last-modified</code> 2026-10-16, no PX. Research CSVs are directly fetchable even though the <code>/research/data/</code> landing page that lists them is PX-blocked.</td></tr>
+            <tr><td>2026-11-08</td><td><code>api.bridgedataoutput.com/api/v2/zestimates_v2/zestimates</code> without token</td><td>403 JSON <code>AuthenticationError: Invalid access_token format</code>. Zillow's listing and Zestimate API (Bridge Interactive) answers only with an issued token.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Discovery rides an S3 path that skips the bot wall. Content rides the PX-gated HTML path, which the ToS closes to automated access for everyone outside Zillow's crawler allowlist. The only bulk content Zillow licenses openly is aggregate market data.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Homes (entities)</td>
+              <td>~133M HDP URLs: 117M off-market, 12.5M sold, 2.8M active.</td>
+              <td>Sitemaps for zpid, address slug and status; facts via Bridge API under contract.</td>
+              <td>Sitemaps open; HDP HTML 403 PX; Bridge needs a token.</td>
+              <td>ToS bars automated queries; addresses and parcels are public-record facts.</td>
+              <td>Active families ~20K changes/day each; off-market undated.</td>
+            </tr>
+            <tr>
+              <td>Listing text and facts</td>
+              <td>~2.8M active descriptions; 187 RESO fields per home.</td>
+              <td>No open path; Bridge API or the listing's MLS/IDX feed (Zillow redistributes MLS data).</td>
+              <td>MLS membership or Bridge approval.</td>
+              <td>MLS copyright plus attribution (<code>attributionInfo</code>) on display.</td>
+              <td>Minutes; <code>lastChecked</code> is per listing.</td>
+            </tr>
+            <tr>
+              <td>Photos</td>
+              <td>Dozens per listing (71 on the sample); total open.</td>
+              <td>No discovery path without HDP JSON; <code>photos.zillowstatic.com</code> is open once a hash is known.</td>
+              <td>No auth on the CDN.</td>
+              <td>Listing-agent or MLS copyright; no display right.</td>
+              <td>Immutable per hash; 21-day cache.</td>
+            </tr>
+            <tr>
+              <td>3D tours, floor plans, video</td>
+              <td>Count open (<code>richMedia</code>, <code>virtualTourUrl</code> fields).</td>
+              <td>None; <code>/view-3d-home</code>, <code>/view-imx/</code>, <code>/homemedia/</code> disallowed.</td>
+              <td>Not available.</td>
+              <td>Allowed only to facebookexternalhit, LinkedInBot and Twitterbot for previews.</td>
+              <td>Per listing.</td>
+            </tr>
+            <tr>
+              <td>Valuations (Zestimate, Rent Zestimate)</td>
+              <td>One per home in the HDP payload.</td>
+              <td>Bridge Zestimate API (token); aggregates via research CSVs.</td>
+              <td>Token-gated; CSVs open.</td>
+              <td>Proprietary model output; cite Zillow.</td>
+              <td>Revalued continuously; CSVs monthly.</td>
+            </tr>
+            <tr>
+              <td>Market aggregates</td>
+              <td>ZHVI, ZORI and similar series by metro, ZIP, city.</td>
+              <td><code>files.zillowstatic.com/research/public_csvs/…</code></td>
+              <td>None.</td>
+              <td>Reuse allowed with "Data Provided by Zillow Group" on every page.</td>
+              <td>Monthly (last 2026-10-16).</td>
+            </tr>
+            <tr>
+              <td>Buildings and communities</td>
+              <td>~10.6M <code>/b/</code>, ~348K <code>/apartments/</code>.</td>
+              <td>Sitemaps for IDs; content behind PX.</td>
+              <td>As homes.</td>
+              <td>As homes.</td>
+              <td><code>/b/</code> <code>lastmod</code> 2017–2026; slow.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where zillow.com departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The <code>zpid</code> is the key; the address slug before it is cosmetic and changes on re-geocoding. A zpid persists across status changes (sale → off-market → rent), so a home appears in different sitemap families over time; dedupe on zpid, not URL. Buildings (<code>/b/…-{6-char id}/</code>) and communities (<code>/apartments/…/{6-char id}/</code>) use short base-62 IDs instead. Store zpid as int64: the highest sampled value sits 0.02% below the int32 ceiling (Probe Log).</p>
+        </div>
+        <div>
+          <h4>Sitemaps as a status ledger</h4>
+          <p>The family a zpid sits in <em>is</em> its listing status, and the families are rebuilt daily. Diffing the family memberships each day yields a free national feed of new listings, pendings and sales at address level, without fetching any HTML. The off-market family is what makes the index a near-census of the US housing stock rather than of listings.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p><code>parcelId</code> plus county joins a home to assessor records. <code>mlsid</code> plus the MLS name in <code>priceHistory.source</code> joins it to the originating MLS listing. <code>geo</code> joins it to parcels and OSM buildings. Photo hashes are content-addressed, so the same image reused across relistings dedupes by URL.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>Use the <code>__NEXT_DATA__</code> <code>property</code> object, not JSON-LD. The JSON-LD drops history, Zestimate and attribution, and its BreadcrumbList IDs point at <code>zillow.co</code>. Listing facts are MLS-sourced and secondhand. When Zillow and the MLS disagree, the MLS wins, and <code>attributionInfo.lastChecked</code> dates Zillow's copy.</p>
+        </div>
+        <div>
+          <h4>Bot-specific render</h4>
+          <p>The archived HDP's data cache is keyed <code>ForSaleBotsQuery</code>, so crawlers that get through receive a distinct server-side query variant. Wayback captures show that variant and are the only open sample of the full payload.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Active-family <code>lastmod</code> is minute-precise and real: <code>latest</code> files cover only the last ~2.5 days. Off-market parts carry no <code>lastmod</code>, so recrawl them only on status-family transitions. Zestimates change without any <code>lastmod</code> signal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the home (<code>zpid</code>), with address, geo, parcel, status and status date from sitemaps. Listing text, facts, photos and Zestimate attach only under a licence.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>zpid</code>; <code>parcelId</code> + county FIPS to assessor data; <code>mlsid</code> + MLS to listing feeds; geo to parcels; region IDs to research CSVs.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Sitemaps: ~5.6K child files (~3.2GB gzip, 2.6GB of it the 5,000 off-market parts; calculated by Site Wise from sampled sizes) give the national address and status ledger, and the active families alone are ~0.4GB/day. Robots.txt allows this path; storing it is a ToS question to clear first. 2) Research CSVs, monthly, licensed with attribution. 3) Bridge API for listing content and Zestimates, if Zillow approves the use case. 4) MLS/IDX feeds directly, where the index can qualify, as the upstream of most listing content.</li>
+        <li><strong>Recrawl cadence:</strong> <code>latest</code> files every 6–12h; full active families daily; off-market and <code>/b/</code> monthly; robots.txt weekly, given the frequent named-bot changes.</li>
+        <li><strong>Derivatives to generate:</strong> a status-transition feed (listing → pending → sold) from daily sitemap diffs; address geocodes joined to parcels. No photo embeddings without rights.</li>
+        <li><strong>Demo to build:</strong> a daily US "new listings" counter by state and ZIP, built purely from diffs of the <code>for-sale-by-agent</code> and <code>recently-sold</code> <code>latest</code> files, validated against the research CSV inventory series.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><span class="evidence inferred">inferred</span> <strong>The sitemap side door may close.</strong> <em>Basis:</em> sitemaps are served from S3 and skip the PX check that guards every HTML path (Probe Log). Zillow's Q3 2026 visit methodology now hunts automated traffic "designed to resemble consumer activity" (10-Q). A one-line CloudFront behaviour change would gate them too.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>robots.txt does not predict access.</strong> <em>Basis:</em> ClaudeBot's group allows homedetails, yet a declared research UA gets 403 on the first HDP request while robots.txt and sitemaps return 200 (Probe Log). Access is decided by PX scoring, not by robots rules.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>zpid width may change.</strong> <em>Basis:</em> the highest sampled zpid is within 484K of 2<sup>31</sup>−1, and ~20K listing URLs change daily (Probe Log). Pipelines typed as int32 will break if Zillow keeps allocating upward.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1617640/000161764026000069/z-20260930.htm">Zillow Group Form 10-Q for the quarter ended Sep 30 2026, filed Nov 4 2026</a>: visits, unique users, the automated-traffic methodology change, revenue by line, the FTC/Redfin order.</li>
+        <li><a href="https://web.archive.org/web/20260201010434/https://www.zillow.com/z/corp/terms/">Zillow Terms of Use, updated Oct 28 2025 (Wayback capture Feb 1 2026)</a>: §C use of content and the Aggregate Data licence; prohibited automated queries.</li>
+        <li><a href="https://web.archive.org/web/20260530233849/https://www.zillow.com/homedetails/W2005-Cth-M-White-Lake-WI-54491/340013913_zpid/">Wayback capture of zpid 340013913, May 30 2026</a>: the structured-data sample.</li>
+        <li>Local probes on 2026-11-08: headers, robots.txt, 15 sitemap indexes, 39 child sitemaps, HDP/llms.txt/research pages, photo CDN, research CSV, Bridge API. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Off-market parts are hash buckets, not chronological fills. <em>Basis:</em> exactly 5,000 parts, all six samples within 23,220–23,665 URLs (±1%), and part 0000 already holds zpids above 2.146B.</li>
+        <li>Recently-sold shards 00–04 are parallel partitions, not years. <em>Basis:</em> every sampled part from every shard has the same 2023–2026 <code>lastmod</code> mix.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Whether Googlebot and Bingbot pass the PX check on HDPs, and whether they get the <code>ForSaleBotsQuery</code> render. Closeable by comparing Google's indexed snippet text for a sample of new zpids with the Wayback payload.</li>
+        <li>Total photo and 3D-tour counts. Closeable by summing <code>photoCount</code> and <code>richMedia</code> over a random sample of Wayback HDP captures, scaled by the active-listing count.</li>
+        <li>Bridge API terms for a search-index use case (fields, quota, display rights). Closeable by an access request through Bridge Interactive.</li>
+        <li>Whether off-market zpids are ever removed from sitemaps. Closeable by HEAD-diffing all 5,000 off-market parts a month apart (no <code>lastmod</code> exists to rely on).</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
