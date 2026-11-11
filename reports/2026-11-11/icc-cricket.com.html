@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>icc-cricket.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-11-11</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>icc-cricket.com</h1>
+      <p class="lede">The ICC serves its full 2008–2026 archive through a keyless FORGE API. Sitemaps list under 3% of it, and commercial reuse needs a licence.</p>
+      <div class="tag-row">
+        <span class="tag">Sport</span>
+        <span class="tag">Cricket</span>
+        <span class="tag">Deltatre FORGE</span>
+        <span class="tag">Open API</span>
+        <span class="tag">Akamai</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p><code>icc-cricket.com</code> is the official site of the International Cricket Council, the Dubai-based governing body of international cricket. It covers news, video, photos, rankings and stats for ICC events such as the World Cups, the Champions Trophy and the World Test Championship. The site is a promotional outlet. ICC money comes from selling media rights and sponsorship for its events, then passing the surplus to member boards. For an index builder, the site is a public window onto a Deltatre FORGE CMS. The Next.js front end reads a keyless distribution API (<code>dapi.icc-cricket.com</code>) that lists every story since 2008, every photo and every video record, with no depth cap. Stats and scorecards come from Sportz Interactive. The sitemaps expose only a 100-item window per tournament, while the terms forbid commercial use of site content without a licence.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.icc-cricket.com</code> (canonical; the apex 302s to it)</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://www.icc-cricket.com/">https://www.icc-cricket.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Sports governing body: editorial, video, rankings and match data</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>dapi.icc-cricket.com</code> (FORGE API), <code>images.icc-cricket.com</code> (Cloudinary), <code>media.icc-cricket.com</code> (Azure Blob MP4), <code>vod-i-01-icc-we.akamaized.net</code> (HLS), <code>assets-icc.sportz.io</code> (stats), <code>games.icc-cricket.com</code></dd></div>
+        <div><dt>Owner</dt><dd>The International Cricket Council Limited and its subsidiaries (<a href="https://images.icc-cricket.com/image/upload/prd/klgvpgpowkmqvas2qqfb.pdf">2025 consolidated financial statements</a>) <span class="evidence verified">verified</span></dd></div>
+        <div><dt>Business model</dt><dd>Media rights and sponsorship for ICC events. The site carries display ads, ticketing links and sponsor placements.</dd></div>
+        <div><dt>Scale anchor</dt><dd>55.7K stories and 47.6K videos in the FORGE API (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures are Site Wise measurements from 2026-11-11 (UTC), taken from the <code>en-gb</code> FORGE API by binary search on <code>$skip</code> (Probe Log).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Stories (articles)</dt>
+          <dd>55,688 (55.7K), with <code>contentDate</code> from 2008-08-28 to 2026-11-10. Migrated stories keep their original dates. 251 were published in the last 30 days (~8.4/day). Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Videos</dt>
+          <dd>47,625 (47.6K). The newest 1,000 span 2026-06-17 to 11-06 (~7/day). List positions 14,819–47,624 (~32.8K videos) carry <code>contentDate</code> values from October to 2023-11-29. Sampled slugs in that block reference events from 2014–2023, and one tail record is dated 2009. Records from position 10,026 onward (Oct 2024 and older) carry a numeric <code>providerId</code> and no <code>mezzanineUrl</code>. Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Photos and other types</dt>
+          <dd>325,305 photos (325K, since 2014), with ≥500 added in the last 30 days. Also 4,271 documents, 13,819 tags, 404 playlists, 294 selections, 266 promos and 89 albums. Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap coverage</dt>
+          <dd>1,234 distinct article URLs (2.2% of stories) and 1,610 distinct video URLs (3.4% of videos) across 34 article and 34 video sitemap files. Each file stops at 100 URLs. <code>sitemap.xml</code> adds 842 hub pages. Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Automated video share</dt>
+          <dd>688 of the newest 1,000 videos (69%) were created by <code>icc-forge-diva-connector-worker-client</code>. They are machine-cut wicket, six and highlight clips, plus 24 live "Event" entries. 93% of the newest 100 carry a <code>match-{id}</code> tag. Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Mezzanine video volume</dt>
+          <dd>77 of the newest 100 videos expose a <code>mezzanineUrl</code> MP4, totalling 23.3GB (median 226MB, about 0.30GB per clip). The size comes from the byte count prefixed to each filename, which a HEAD request confirmed (67,503,247 bytes for a 52-second clip). Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Getty share of photos</dt>
+          <dd>182 of the newest 500 photo records (36%) are titled <code>GettyImages-{id}</code>. Calculated by Site Wise (Probe Log). <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>ICC revenue, FY2025</dt>
+          <dd>Total revenue and other income USD 756.3M, including USD 706.1M from ICC events (2024: USD 728.5M). Net surplus USD 543.3M. <a href="https://images.icc-cricket.com/image/upload/prd/klgvpgpowkmqvas2qqfb.pdf">ICC Consolidated Financial Statements, 31 December 2025</a>, pp. 3 and 8 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Website terms</dt>
+          <dd>"You must not use any part of the content on our site for any commercial purposes without obtaining a licence to do so from us or our licensors." The page text contains no clause on automated access, scraping or AI training (searched 2026-11-11). <a href="https://www.icc-cricket.com/about/the-icc/legal-notices/website-terms-of-use">Website terms of use</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-11-11 (02:23–03:10 UTC) from a US connection with the generic UA <code>SiteWise research</code>. About 400 requests were paced 0.6–1s apart, and no crawler or browser UA was spoofed. DNS was not probed (unreliable in this sandbox); CDN claims come from response headers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-11-11</td><td><code>curl -sI https://www.icc-cricket.com/</code></td><td><strong>200</strong>, <code>x-powered-by: Next.js</code>, <code>x-nextjs-cache: HIT</code>, <code>s-maxage=60, stale-while-revalidate</code>. The <code>server-timing: ak_p</code> header shows Akamai, and HSTS includes subdomains. No bot challenge. The apex host returns a 302 to <code>www</code>.</td></tr>
+            <tr><td>2026-11-11</td><td><code>curl -s /robots.txt</code></td><td>843 bytes, one <code>User-agent: *</code> group, <code>Allow: /</code>. It disallows <code>/_libraries</code>, <code>/_mobileapp</code>, <code>/_test*</code>, <code>/media-zone</code> and <strong>8 named <code>/news/</code> integrity articles</strong> (anti-corruption, WADA list, online abuse). There are 3 <code>Sitemap:</code> lines. <strong>No AI crawler is named.</strong></td></tr>
+            <tr><td>2026-11-11</td><td>Sitemap census: <code>sitemap.xml</code>, the article and video indexes, then all 68 children</td><td><code>sitemap.xml</code>: 842 hub URLs (565 <code>/tournaments</code>, 102 <code>/about</code>, 28 <code>/media-zone</code>, which robots.txt disallows), with no <code>lastmod</code>. Each index lists 43 entries (34 unique, root plus <code>/sitemap/tournament-{id}/</code>), with index <code>lastmod</code> set to today. Children hold 0–100 <code>&lt;url&gt;</code>. The 6 zeros are valid empty <code>urlset</code>s, not throttled responses. The article root covers 10-28 → 11-10 with full <code>news:</code> and <code>image:</code> tags.</td></tr>
+            <tr><td>2026-11-11</td><td>Video sitemap fields across 1,595 entries</td><td>Every entry has title, description, thumbnail, duration (median 108s, max 3.5h) and <code>content_loc</code>. 1,591 point to an HLS <code>master.m3u8</code> on <code>vod-i-01-icc-we.akamaized.net</code>. The Akamai <code>hdnts</code> token in the URL starts at 2026-11-11 01:42 UTC, <strong>expires in 2126</strong> and grants <code>acl=/*</code>. 26 entries carry <code>restriction deny</code> (6 deny India only; 20 deny IN, PK, LK, US, CA and most of Latin America).</td></tr>
+            <tr><td>2026-11-11</td><td><code>dapi.icc-cricket.com/v2/content/en-gb/stories?$limit=1</code></td><td><strong>200 JSON</strong>, no key, <code>access-control-allow-origin: *</code>, <code>cache-control: private, max-age=120</code>. Pagination caps <code>maxItems</code> at 100 per page. A list item has <code>_entityId</code> (UUID), slug, title, tags, <code>contentDate</code>, <code>lastUpdatedDate</code>, <code>createdBy</code> and a thumbnail. The locales <code>en-us</code>, <code>hi-in</code>, <code>ar-ae</code>, <code>fr-fr</code> and <code>ur-pk</code> return 404, so <code>en-gb</code> is the only edition.</td></tr>
+            <tr><td>2026-11-11</td><td><code>$skip</code> binary search on 9 content types (about 35 requests each)</td><td><strong>No depth cap</strong>: <code>$skip=55687</code> still returns an item. The totals are in Verified Metrics. The tail of the story list holds 2008–2010 items created by <code>icc-forge-converter-client</code> (the legacy import). No 429 responses or rate-limit headers appeared.</td></tr>
+            <tr><td>2026-11-11</td><td>Story detail <code>/stories/{slug}</code></td><td><code>parts[]</code> mixes <code>markdown</code> (HTML-in-markdown body), <code>external</code> (embeds) and <code>customentity</code> (inline video records). Tags carry cricket entities in <code>extraData</code>: <code>player-59131</code> includes playerId, DOB, nationality, batting and bowling style; <code>tournament-{id}</code> includes the competition type.</td></tr>
+            <tr><td>2026-11-11</td><td>Video list: newest 1,000 and samples at <code>$skip</code> 5K–47.5K, plus a date boundary search</td><td>Recent <code>fields</code>: <code>videoId</code>, <code>offer</code> (77 Free / 23 Registered of 100), <code>type</code>, <code>videoDuration</code>, <code>mezzanineUrl</code> and <code>countryRestrictions</code> (on live Events). At 5K (Jan 2026), mezzanine files are SAS-signed Azure Blob URLs. From position 10,026 (2024-10-18) onward, records have <code>providerId</code> and no media URL. The Oct–Nov 2023 date block starts at position 14,819.</td></tr>
+            <tr><td>2026-11-11</td><td><code>curl -sI media.icc-cricket.com/video/67503247-…mp4</code>; Cloudinary <code>t_q-best</code> image</td><td>MP4: <strong>200</strong>, <code>Server: Windows-Azure-Blob</code>, <code>Content-Length</code> equal to the filename prefix, no auth. Image: <strong>200</strong>, <code>server: Cloudinary</code> behind Akamai. <code>server-timing</code> reports a 4521×3269 original of 2.6MB.</td></tr>
+            <tr><td>2026-11-11</td><td>Structured data on an article page, a video page and a 404</td><td>Article: 75KB SSR page with <code>NewsArticle</code>, <code>ImageObject</code>, <code>WebPage</code> and site-wide <code>Organization</code>/<code>WebSite</code> JSON-LD, full OG, and self-canonical. Video page: <code>VideoObject</code> plus OG. A made-up slug returns a true <strong>404</strong>.</td></tr>
+            <tr><td>2026-11-11</td><td>Page config (<code>PUBLIC_*</code> env in <code>__next_f</code>) and JS chunks</td><td>The config names <code>content-gateway.icc-prd.deltatre.digital</code>, a Deltatre account host <code>d3-scale.com</code>, the DIVA player settings host and <code>prd-api.icc-volt.com</code>. The chunks define Sportz Interactive endpoints (<code>/cricket/v1/game/scorecard</code>, <code>schedule</code>, <code>ranking</code>, <code>stats/records</code>, <code>/cricket/v2/player</code>), each keyed by a <code>client_id</code>. <strong>Calling that feed was declined by this session's safety classifier</strong>, so it was not probed.</td></tr>
+            <tr><td>2026-11-11</td><td><code>assets-icc.sportz.io/…/mens_international_teamlist.json</code>; <code>/llms.txt</code>, <code>/rss</code>, <code>/ads.txt</code></td><td>Team list: <strong>200</strong> JSON (4KB), <code>last_updated</code> 2026-11-10, with team IDs, ICC member status and short codes. <code>llms.txt</code> and RSS return <strong>404</strong>. <code>ads.txt</code> returns 200.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">The FORGE API serves the whole public catalog without a key. The sitemaps are a recency window for search engines. The terms allow viewing and personal use; commercial use of any content needs a licence (Verified Metrics).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>News text</td>
+              <td>55.7K stories, 2008–2026.</td>
+              <td>FORGE <code>/stories</code> list plus <code>/stories/{slug}</code> detail (markdown parts).</td>
+              <td>None; 100 per page; no observed throttle.</td>
+              <td>ICC copyright; commercial use needs a licence.</td>
+              <td>~8 per day; <code>lastUpdatedDate</code> tracks edits.</td>
+            </tr>
+            <tr>
+              <td>Video metadata</td>
+              <td>47.6K records; only ~14.8K have true dates.</td>
+              <td>FORGE <code>/videos</code>; video sitemap for the newest 100 per tournament.</td>
+              <td>None.</td>
+              <td>ICC and broadcast-partner rights.</td>
+              <td>~7 per day, 69% auto-clipped.</td>
+            </tr>
+            <tr>
+              <td>Video / audio streams</td>
+              <td>Recent clips (MP4 mezzanine plus HLS); live Events.</td>
+              <td>Watch page or DIVA player. MP4 and HLS URLs are exposed but are not a reuse grant.</td>
+              <td>23% "Registered" (login); geo-restricted Events.</td>
+              <td>Display through the ICC player only.</td>
+              <td>Pre-2024 archive has no media URL in the API.</td>
+            </tr>
+            <tr>
+              <td>Photos</td>
+              <td>325K; 36% of recent ones are Getty.</td>
+              <td>FORGE <code>/photos</code> to Cloudinary <code>templateUrl</code>.</td>
+              <td>None.</td>
+              <td>Getty-licensed images: no third-party reuse.</td>
+              <td>≥500 per 30 days.</td>
+            </tr>
+            <tr>
+              <td>Documents (PDF)</td>
+              <td>4,271, including annual reports and playing regulations.</td>
+              <td>FORGE <code>/documents</code>; Cloudinary <code>.pdf</code> URLs.</td>
+              <td>None.</td>
+              <td>ICC publications.</td>
+              <td>Event-driven.</td>
+            </tr>
+            <tr>
+              <td>Cricket entities</td>
+              <td>13.8K tags: players, matches, tournaments, teams.</td>
+              <td>FORGE <code>/tags</code> (<code>extraData</code>); static Sportz team lists.</td>
+              <td>None.</td>
+              <td>Facts (identity and biographical fields).</td>
+              <td>Created on demand per match.</td>
+            </tr>
+            <tr>
+              <td>Scores, stats, rankings</td>
+              <td>Scorecards, schedules, records, rankings.</td>
+              <td>Rendered rankings and fixtures pages; the Sportz feed is untested (Open Questions).</td>
+              <td>Feed keyed by a client ID.</td>
+              <td>Sportz-operated feed; terms unknown.</td>
+              <td>Live polling every 10s.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where icc-cricket.com departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The API is the catalog; the sitemap is a window</h4>
+          <p>Every sitemap child stops at 100 URLs, so the sitemaps show only the latest slice of each tournament. The FORGE list endpoints have no depth cap. About 3.4K list requests (calculated by Site Wise: 434K objects ÷ 100 per page) enumerate the whole corpus, against ~2.8K URLs from the sitemaps. This is the same FORGE pattern as nhl.com earlier in the series.</p>
+        </div>
+        <div>
+          <h4>Video dates are migration stamps</h4>
+          <p>About 32.8K archived videos carry <code>contentDate</code> values from October–November 2023. That is the migration date, not the match date: one sampled slug covers the 2014 World Cup Qualifier and is stamped 2023-11-15. Date these videos from their <code>match-{id}</code>/<code>tournament-{id}</code> tags or from the title, and never trust <code>contentDate</code> inside that block. Stories kept their original dates through the same migration.</p>
+        </div>
+        <div>
+          <h4>Identifiers &amp; joins</h4>
+          <p>FORGE gives two UUIDs: <code>_entityId</code> (stable across translations) and <code>_translationId</code>. Videos add a <code>videoId</code> UUID that appears in HLS paths. Cricket tags (<code>player-N</code>, <code>match-N</code>, <code>tournament-N</code>) use Sportz/ICC numeric IDs, so text, video and stats join on the same keys without entity resolution.</p>
+        </div>
+        <div>
+          <h4>Machine-generated video dominates</h4>
+          <p>69% of new videos are DIVA auto-clips with slugs like <code>{player}-wicket-{team}-vs-{team}</code>. They are short and near-duplicate, and they cluster under one match tag. Collapse them per match and ball event for the ranked index, and keep editor-made videos (named <code>createdBy</code>) as first-class objects.</p>
+        </div>
+        <div>
+          <h4>Exposed media URLs are not a grant</h4>
+          <p>The sitemaps publish HLS <code>content_loc</code> URLs with century-long, wildcard-path Akamai tokens, and recent API records expose full-quality mezzanine MP4s with no auth. These are delivery details meant for Google's video indexing and for the site's own player. Use the watch page as the display target and metadata as the index object; do not mirror media.</p>
+        </div>
+        <div>
+          <h4>robots versus sitemap conflict</h4>
+          <p>robots.txt disallows <code>/media-zone</code>, but <code>sitemap.xml</code> lists 28 <code>/media-zone</code> URLs. Honour robots. The 8 disallowed integrity articles remain reachable through the API, so check each API slug against robots before indexing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the story (markdown parts, with an inline video entity), the video (title, description, duration, match/player tags, watch URL), the photo (caption and credit) and the cricket entity tag. Matches are the hub objects.</li>
+        <li><strong>Primary keys &amp; joins:</strong> FORGE <code>_entityId</code> for each content object; <code>player-N</code>, <code>match-N</code> and <code>tournament-N</code> for cricket joins; <code>GettyImages-{id}</code> to link photos to Getty's own catalog.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) A content licence from the ICC for any commercial index (terms). 2) A one-time FORGE walk of all types at ≤1 req/s (~1 hour), honouring robots.txt per slug. 3) Daily incremental pulls of the first pages of each list, ordered by <code>contentDate</code>. 4) Sitemaps only as a cross-check of what Google sees.</li>
+        <li><strong>Recrawl cadence:</strong> every 15 minutes during ICC events (stories and DIVA clips arrive per match), daily otherwise, plus a monthly full walk with <code>lastUpdatedDate</code> to catch edits and deletions.</li>
+        <li><strong>Derivatives to generate:</strong> a per-match bundle of story, auto-clips, photos and scorecard link; corrected dates for migrated videos; and per-player timelines from <code>player-N</code> tags.</li>
+        <li><strong>Demo to build:</strong> "every wicket of a player". Query FORGE videos by <code>player-N</code> tag, order by match, and show clip titles with watch-page embeds. It runs from API metadata alone.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><span class="evidence inferred">inferred</span> <strong>The open API is incidental, not a product.</strong> <em>Basis:</em> <code>dapi</code> has no published docs, terms or key, and its CORS <code>*</code> and <code>private, max-age=120</code> caching match a front-end backend. The nhl.com FORGE deployment showed the same shape. A gateway change (the config already names <code>content-gateway.icc-prd.deltatre.digital</code>) could close it without notice, so keep a local mirror of the metadata.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Media URLs will rotate.</strong> <em>Basis:</em> mezzanine hosting moved from SAS-signed Azure URLs (Jan 2026 records) to <code>media.icc-cricket.com</code> (recent records), and the archive has none. Store <code>videoId</code> and the watch URL, not media links.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://images.icc-cricket.com/image/upload/prd/klgvpgpowkmqvas2qqfb.pdf">ICC Consolidated Financial Statements, 31 December 2025</a> — revenue and surplus (linked from the <a href="https://www.icc-cricket.com/about/the-icc/publications/annual-report">annual report page</a>).</li>
+        <li><a href="https://www.icc-cricket.com/about/the-icc/legal-notices/website-terms-of-use">ICC website terms of use</a> — commercial-use licence clause.</li>
+        <li>Local probes on 2026-11-11: headers, robots.txt, the full 71-file sitemap census, the FORGE API census and detail samples, media and image HEADs, structured data on 3 pages, page config and JS chunks, the Sportz team list and feed checks. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>The site runs on Deltatre's FORGE CMS and DIVA player. <em>Basis:</em> <code>createdBy</code> values <code>icc-forge-converter-client</code> and <code>icc-forge-diva-connector-worker-client</code>, plus the <code>deltatre.digital</code> and <code>d3-scale.com</code> hosts in the page config (Probe Log).</li>
+        <li>The ~32.8K videos dated October–November 2023 are a legacy archive migrated from an earlier video platform. <em>Basis:</em> they carry a 13-digit numeric <code>providerId</code> and no mezzanine URL. Their <code>contentDate</code> values fall about 1K per day from 11-06 to 11-21, while their slugs name events from 2014–2023 (CWCQ 2014, CWC19, U19 2022). <code>providerId</code> continues on new uploads until Oct 2024, when that platform was retired.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Scorecard, schedule and records feed: fields, depth of history and terms. This can be closed by asking Sportz Interactive or the ICC for feed terms, or by recording which <code>/cricket/v1/*</code> calls a rankings page makes in a browser's network panel.</li>
+        <li>Video-archive playability: whether pre-2024 videos still stream. This can be closed by opening 20 random watch pages from <code>$skip</code> ≥ 10,026 in a browser and noting playback or error states.</li>
+        <li>API rate limits. This can be closed by a paced ramp test (2, 5 and 10 req/s for one minute each) watching for 429s, done only with ICC consent given the terms.</li>
+        <li>Site traffic and audience split by country. This can be closed from ICC annual-report digital metrics (the 2025-26 report PDF on the annual report page) or a named panel estimate.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
