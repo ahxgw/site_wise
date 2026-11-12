@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>steamcommunity.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-11-13</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>steamcommunity.com</h1>
+      <p class="lede">Valve's community host has a five-line robots.txt and no sitemap: 3.8B shared UGC IDs, 546K market items and XML profiles, guarded by a per-IP 429.</p>
+      <div class="tag-row">
+        <span class="tag">Gaming</span>
+        <span class="tag">UGC</span>
+        <span class="tag">Marketplace</span>
+        <span class="tag">Valve</span>
+        <span class="tag">No sitemap</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Steam Community is the social and user-content side of Valve's Steam platform; the store lives on <code>store.steampowered.com</code> (covered in the <a href="../2026-06-26/steampowered.com.html">2026-06-26 Steam report</a>). The community host serves user profiles, groups, per-game hubs (discussions, reviews, screenshots, artwork, videos, guides), the Workshop for mods and in-game items, and the Community Market, where users sell tradable items for Steam Wallet funds. Valve earns from the market through a per-sale fee and from Workshop item sales through a revenue share. For an index builder, the important fact is that every UGC type lives in one numeric <code>publishedfileid</code> space at one URL pattern, <code>/sharedfiles/filedetails/?id=</code>. The host offers no sitemap and no structured data beyond OpenGraph. Its robots.txt allows almost everything, but a per-IP rate limit makes bulk crawling slow in practice. Several legacy XML and JSON endpoints still answer anonymously.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>steamcommunity.com</code> (no <code>www</code>); <code>/sitemap.xml</code> and <code>/llms.txt</code> 302 to the home page</dd></div>
+        <div><dt>Canonical URL</dt><dd><a href="https://steamcommunity.com/">https://steamcommunity.com/</a></dd></div>
+        <div><dt>Category</dt><dd>Gaming social network, UGC repository and item marketplace</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>images.steamusercontent.com</code> (UGC images and files), <code>avatars.akamai.steamstatic.com</code>, <code>community.akamai.steamstatic.com</code> (assets), <code>api.steampowered.com</code> (keyed Web API), <code>store.steampowered.com</code></dd></div>
+        <div><dt>Owner</dt><dd>Valve Corporation, private (<a href="https://steamcommunity.com/dev/apiterms">Steam Web API Terms</a>) <span class="evidence verified">verified</span></dd></div>
+        <div><dt>Launched</dt><dd>Community 2007; screenshots 2011-02-24; Workshop 2011; Market beta and Guides December 2012; user reviews 2013 (<a href="https://en.wikipedia.org/wiki/Steam_(service)">Wikipedia</a>)</dd></div>
+        <div><dt>Business model</dt><dd>Market transaction fees and Workshop item revenue share; the community supports store sales</dd></div>
+        <div><dt>Scale anchor</dt><dd>Highest observed <code>publishedfileid</code> is 3.84B (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Corpus figures are Site Wise measurements from the Probe Log (2026-11-13). Valve is private and publishes no community-specific KPIs.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Market item types</dt>
+          <dd>546,270 listed item types across all apps. By app: Steam (753, cards, backgrounds and emoticons) 325.7K, Team Fortress 2 44.4K, Counter-Strike 2 35.5K, Dota 2 34.6K, Rust 5.6K. From <code>market/search/render/?norender=1</code> <code>total_count</code>, probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Listing depth (one item)</dt>
+          <dd>The Dreams &amp; Nightmares Case (CS2) had 569,105 sell listings from $1.07; the Mann Co. Supply Crate Key (TF2) had 76,539. From the same market search probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Workshop items (5 apps)</dt>
+          <dd>Wallpaper Engine 2.95M, Garry's Mod 2.00M, Cities: Skylines 373K, Arma 3 175K, RimWorld 65.6K. These are the publicly browsable "ready-to-use" items, counted by the "N entries" figure on <code>/workshop/browse/?appid=…&amp;days=-1</code>, probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>UGC ID ceiling</dt>
+          <dd>Highest <code>publishedfileid</code> seen was 3,837,607,878, a Garry's Mod item posted 2026-11-10. The Workshop browse page of 2026-11-13 linked IDs from 3.835B to 3.838B. This ceiling bounds the number of IDs ever issued, not the live public items (see the ID sample in the Probe Log). Probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>UGC types in one ID space</dt>
+          <dd>Steamworks <code>EWorkshopFileType</code> has 17 values (Community, Microtransaction, Collection, Art, Video, Screenshot, WebGuide, IntegratedGuide, Merch, ControllerBinding, SteamVideo, GameManagedItem, and others). <code>ERemoteStoragePublishedFileVisibility</code> has 4 values: Public, FriendsOnly, Private, Unlisted. (<a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage">ISteamRemoteStorage docs</a>) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Largest group roster</dt>
+          <dd>Steam Universe: 1,952,560 members in the paged roster (1,953 pages of 1,000 SteamID64s), while <code>groupDetails/memberCount</code> in the same response says 1,813,164. From <code>memberslistxml</code>, probe. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Web API quota</dt>
+          <dd>100,000 calls per day per key, with Steam Data distributable to end users "for their personal use via your Application". The terms were last updated in July 2010. (<a href="https://steamcommunity.com/dev/apiterms">Steam Web API Terms of Use</a>) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Platform scale</dt>
+          <dd>Valve's 2025 Year in Review reported a 42M peak concurrent user count and more than 100 exabytes delivered in 2025, up from about 80EB in 2024. No MAU figure was given. (<a href="https://www.pcgamer.com/gaming-industry/valve-says-steam-users-downloaded-100-exabytes-of-games-in-2025-and-are-averaging-274-petabytes-of-installs-and-updates-every-day">PC Gamer</a>) <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Workshop creator payouts</dt>
+          <dd>More than $57M paid to over 1,500 creators in more than 75 countries from 2011 to January 2015, Valve's last public total. (<a href="https://www.pcgamer.com/steam-workshop-creators-have-made-over-57-million-since-2011">PC Gamer, 2015-01-29</a>) <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-11-13 (CST, UTC+8; 2026-11-12 16:14–16:46 UTC) from a US-geolocated exit (<code>steamCountry=US</code> cookie), using the generic UA <code>SiteWise research</code>. About 60 requests went to steamcommunity.com, paced 2–6s. No login, no spoofed UA. DNS was not probed (unreliable in this sandbox).</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-11-13</td><td><code>curl -sI https://steamcommunity.com/</code></td><td>200, <code>server: nginx</code>, <code>cache-control: no-cache</code>, no CDN header on HTML. Sets <code>sessionid</code> and a geo cookie, <code>steamCountry=US</code>. The CSP names <code>community.akamai.steamstatic.com</code>, <code>wss://community.steam-api.com/websocket/</code>, <code>steambroadcast.akamaized.net</code> and Steam China's <code>broadcast.st.dl.eccdnx.com</code>.</td></tr>
+            <tr><td>2026-11-13</td><td><code>curl -s …/robots.txt</code>; <code>/sitemap.xml</code>, <code>/sitemap_index.xml</code>, <code>/sitemap</code>, <code>/llms.txt</code></td><td>robots.txt is <strong>141 bytes</strong>: a single <code>User-agent: *</code> group with 5 Disallows (<code>/actions/</code>, <code>/linkfilter/</code>, <code>/tradeoffer/</code>, <code>/trade/</code>, <code>/email/</code>). It has <strong>no AI-crawler rules and no <code>Sitemap:</code> line</strong>. All four discovery paths return 302 to <code>/</code>.</td></tr>
+            <tr><td>2026-11-13</td><td><code>/market/search/render/?norender=1&amp;count=1[&amp;appid=N]</code></td><td>Anonymous JSON with <code>total_count</code> 546,270, plus per-app counts (Verified Metrics). Each result carries <code>hash_name</code>, <code>sell_listings</code>, <code>sell_price</code> in cents, and an <code>asset_description</code> with <code>classid</code>, <code>icon_url</code> hash, <code>tradable</code> and <code>commodity</code>.</td></tr>
+            <tr><td>2026-11-13</td><td>Workshop browse for 5 apps, <code>section=readytouseitems&amp;days=-1</code></td><td>Each 0.5–0.8MB SSR page shows "Showing 1-30 of N entries" (counts in Verified Metrics) and links items as <code>/sharedfiles/filedetails/?id=</code>.</td></tr>
+            <tr><td>2026-11-13</td><td>Workshop item <code>filedetails/?id=3837607878</code></td><td>200, 66KB. <strong>Only OpenGraph</strong> (<code>og:title</code> "Steam Workshop::[LVS] BT-42", <code>og:image</code> on <code>images.steamusercontent.com/ugc/…</code>). <strong>No JSON-LD and no canonical link.</strong> The stats block gives file size (46.8MB), posted and updated times (no year for the current year), and unique visitors, subscribers and favorites.</td></tr>
+            <tr><td>2026-11-13</td><td>Random-ID sample: 27 uniform IDs in 3.70B–3.838B via <code>filedetails/?id=</code></td><td>Public: 7 screenshots, 3 Workshop items, 1 video. Hidden: 4 pages read "marked as hidden or you do not have permission". <strong>12 returned HTTP 500</strong>, a bare "Steam Workshop" page. Every type renders on the same URL pattern, with the type only in the <code>&lt;title&gt;</code> ("Steam Community :: Screenshot", "… :: Video :: …", "Steam Workshop::…").</td></tr>
+            <tr><td>2026-11-13</td><td>Rate limit on the ID sample and market listing pages</td><td>After about 25 page requests in 6 minutes (2s, then 6s spacing), filedetails and <code>/market/listings/</code> returned <strong>429</strong> "You've made too many requests recently". The block was <strong>still in force about 23 minutes later</strong> (single probes at roughly 10 and 23 minutes returned 429 or timed out), so the market listing page and <code>priceoverview</code> were never read.</td></tr>
+            <tr><td>2026-11-13</td><td><code>/id/gabelogannewell/?xml=1</code></td><td>Anonymous XML: vanity → <code>steamID64</code> 76561197960287930, display name, avatar URLs (3 sizes), <code>privacyState friendsonly</code>, <code>vacBanned</code>, <code>tradeBanState</code>, <code>isLimitedAccount</code>. Private profiles return only this envelope.</td></tr>
+            <tr><td>2026-11-13</td><td><code>/groups/steamuniverse/memberslistxml/?xml=1</code></td><td>Anonymous XML with <code>groupID64</code>, headline, summary, online/in-game/in-chat counts, and <strong>1,000 member SteamID64s per page</strong> with a <code>nextPageLink</code>. The two member counts disagree (Verified Metrics).</td></tr>
+            <tr><td>2026-11-13</td><td><code>/app/730/discussions/</code> and one topic page</td><td>The forum reports "1 - 15 of <strong>1,573 active topics</strong>" (also a JSON <code>total_count</code>). Topic URLs are <code>/app/{appid}/discussions/{forum}/{18-digit gid}/</code>. The topic page's <code>og:description</code> holds the full first post (Russian here). No canonical link, no JSON-LD.</td></tr>
+            <tr><td>2026-11-13</td><td><code>/app/730/reviews/?browsefilter=toprated</code>; store <code>appreviews/730?json=1</code></td><td>The community hub renders 10 review cards per page. Each is keyed <code>/id|profiles/{user}/recommended/{appid}/</code> and shows a "Posted" date and a helpful count (2,259 and 2,458 on the top cards). The store's <strong><code>appreviews</code> JSON now 302s to the store home</strong>, with both the default curl UA and ours. It was open on 2026-06-26. <code>api/appdetails</code> still answers.</td></tr>
+            <tr><td>2026-11-13</td><td><code>api.steampowered.com</code> (GetServerInfo, GetPublishedFileDetails)</td><td>TLS never completed (code 000 at 5s, and a POST hung for more than 120s). The same failure was logged in the June report, so it is a network-path gap, not Valve's policy.</td></tr>
+            <tr><td>2026-11-13</td><td>Common Crawl <code>CC-MAIN-2026-43</code> index, <code>steamcommunity.com/*</code></td><td><code>showNumPages</code>: 3 pages, <strong>13 blocks</strong>. Page 0 returned 4,153 rows (2,005 <code>/app/</code>, 1,122 <code>/groups/</code>, 854 <code>/games/</code>; 441 were 302s). Pages 1 and 2 returned 504 on 4 retries each.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">No row has a bulk path. Each row is per-object HTTP under the shared per-IP 429 budget, or the keyed Web API capped at 100K calls per day. User content falls under the <a href="https://store.steampowered.com/subscriber_agreement/">Steam Subscriber Agreement</a>.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Workshop items (files + images)</td>
+              <td>Millions per large app; 5.6M across the 5 sampled apps (calculated by Site Wise).</td>
+              <td>Web API <code>IPublishedFileService/QueryFiles</code> by app; browse pages as a fallback.</td>
+              <td>Free key, 100K/day; HTML is 429-limited.</td>
+              <td>Creator-owned under the SSA; link plus preview image.</td>
+              <td>Continuous; <code>time_updated</code> per item.</td>
+            </tr>
+            <tr>
+              <td>Screenshots, artwork, videos</td>
+              <td>Most of the public ID sample; total open.</td>
+              <td>The same <code>publishedfileid</code> endpoints, filtered by file type.</td>
+              <td>As above; visibility enum hides many.</td>
+              <td>User-owned; thumbnail and link.</td>
+              <td>Many per minute (ID gaps).</td>
+            </tr>
+            <tr>
+              <td>Guides</td>
+              <td>Open (Open Questions).</td>
+              <td>Hub <code>/app/{appid}/guides/</code>, then <code>filedetails</code> HTML.</td>
+              <td>429 budget.</td>
+              <td>User-owned text; snippet only.</td>
+              <td>Edited in place.</td>
+            </tr>
+            <tr>
+              <td>Market items &amp; prices</td>
+              <td>546K item types; listing depth up to 569K per item.</td>
+              <td><code>market/search/render</code> JSON paged by <code>start</code>, then the listing page's price history.</td>
+              <td>Anonymous; strictest 429 bucket observed.</td>
+              <td>Item art belongs to the game owner; prices are facts.</td>
+              <td>Prices change by the minute.</td>
+            </tr>
+            <tr>
+              <td>Reviews</td>
+              <td>Per app; count open.</td>
+              <td>Community hub cards, or the keyed Web API.</td>
+              <td>Store JSON is now redirected; 429 budget.</td>
+              <td>User text under the SSA.</td>
+              <td>Append, plus edits.</td>
+            </tr>
+            <tr>
+              <td>Discussions</td>
+              <td>1,573 active topics in the CS2 General forum alone.</td>
+              <td>Forum list HTML, then topic HTML (first post in <code>og:description</code>).</td>
+              <td>429 budget.</td>
+              <td>User text; snippet and link.</td>
+              <td>Minutes on busy forums.</td>
+            </tr>
+            <tr>
+              <td>Profiles &amp; groups</td>
+              <td>SteamID64 space; group rosters up to 1.95M members.</td>
+              <td><code>?xml=1</code> profile and <code>memberslistxml</code>.</td>
+              <td>Anonymous; respects privacy flags.</td>
+              <td>Personal data: index public display names only, and honour privacy changes.</td>
+              <td>Volatile (names, avatars).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where steamcommunity.com departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>Open policy, closed rate</h4>
+          <p>This deviates from the default two-track pattern. robots.txt allows every crawler, AI crawlers included, and there is no curated SEO sliver: no sitemap, no JSON-LD. The real gate is an undocumented per-IP 429 that kicks in after a few dozen pages and lasts more than 20 minutes. A crawl budget has to be planned in requests per IP per hour, not in robots rules.</p>
+        </div>
+        <div>
+          <h4>One ID space, many object types</h4>
+          <p>Screenshots, Workshop mods, artwork, videos, guides and collections all share <code>publishedfileid</code> and one URL. The type appears only in <code>&lt;title&gt;</code> (HTML) or <code>file_type</code> (API). Sort objects by type before choosing an extractor. Most issued IDs are screenshots, so a naive ID walk spends its budget on low-value images.</p>
+        </div>
+        <div>
+          <h4>Identifiers &amp; joins</h4>
+          <p>The keys are <code>publishedfileid</code> (UGC), <code>appid</code> (game, shared with the store), <code>steamID64</code> (user; vanity <code>/id/</code> names change, <code>/profiles/{id64}</code> does not), <code>groupID64</code>, 18-digit discussion gids, and the market key <code>(appid, market_hash_name)</code> plus <code>classid</code>. Reviews have no public ID in the URL; key them on <code>(steamID64, appid)</code>.</p>
+        </div>
+        <div>
+          <h4>Dates need a year</h4>
+          <p>Stat blocks print current-year dates without a year ("Nov 10 @ 3:36pm"; every 2026 item in the sample). Parse them against the fetch date and pin <code>l=english</code>, or read Unix timestamps from the API.</p>
+        </div>
+        <div>
+          <h4>The store review JSON has closed</h4>
+          <p>The unauthenticated <code>appreviews</code> endpoint, which the June Steam report called the best review path, now redirects anonymous clients. Treat any open Valve JSON as revocable. The keyed Web API is the only surface with documented terms.</p>
+        </div>
+        <div>
+          <h4>The market is the freshest object</h4>
+          <p>Market listing counts and prices move by the minute, and the market has the tightest throttle. Index market items (name, game, item art, <code>classid</code>) as slow entities. Keep prices as a separate time series sampled for a short list of items, not refreshed across all 546K.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the published file (title, description, type, app, creator, preview image, tags, stats). Other units: the discussion topic (first post plus replies), the review <code>(steamID64, appid)</code>, the market item <code>(appid, market_hash_name)</code>, and the group.</li>
+        <li><strong>Primary keys &amp; joins:</strong> <code>publishedfileid</code>; <code>appid</code> joins everything to the store; <code>steamID64</code> joins creators, reviewers and group members; <code>classid</code> joins market items to inventory assets.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) The Steam Web API with a free key: <code>QueryFiles</code> per app (cursor), <code>GetPublishedFileDetails</code> in batches, within 100K calls per day. 2) <code>market/search/render</code> JSON per app for the item catalogue. 3) Hub HTML for discussions, reviews and guides at ≤1 request per 10s per IP. 4) Never walk raw IDs. The ID sample shows a sparse space dominated by screenshots and hidden items.</li>
+        <li><strong>Recrawl cadence:</strong> Workshop by <code>time_updated</code> daily for apps you track; discussion lists hourly on hot forums; the market catalogue weekly, with prices only for a watchlist; profiles only on demand.</li>
+        <li><strong>Derivatives to generate:</strong> type-routed extraction (images get embeddings; guides get passages); mod dependency graphs from collections; a market item-art image index keyed by <code>classid</code>.</li>
+        <li><strong>Demo to build:</strong> a per-app Workshop explorer that hydrates one app's items through the keyed API and shows its type and visibility mix and update cadence, with a live 429-budget meter.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>The throttle is the policy.</strong> The 429 window (Probe Log) is not documented and sanctions retries by extending the block. A shared-IP crawler can lock itself out of the whole host, market included, for more than 20 minutes.</li>
+        <li><span class="evidence inferred">inferred</span> <strong>Open endpoints are being closed one by one.</strong> <em>Basis:</em> the store <code>appreviews</code> JSON answered anonymously on 2026-06-26 and redirects on 2026-11-13 (Probe Log). The XML profile and market search endpoints are the same vintage and could follow.</li>
+        <li><strong>Privacy is per object and changes.</strong> The four visibility values (Verified Metrics) mean a public item can turn friends-only or private. Re-check visibility before display, and drop items that turn hidden.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://steamcommunity.com/dev/apiterms">Steam Web API Terms of Use</a>: 100K calls per day, end-user licence scope.</li>
+        <li><a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage">Steamworks ISteamRemoteStorage docs</a>: file-type and visibility enums.</li>
+        <li><a href="https://www.pcgamer.com/gaming-industry/valve-says-steam-users-downloaded-100-exabytes-of-games-in-2025-and-are-averaging-274-petabytes-of-installs-and-updates-every-day">PC Gamer on Steam Year in Review 2025</a> and <a href="https://www.pcgamer.com/steam-workshop-creators-have-made-over-57-million-since-2011">PC Gamer on Workshop payouts (2015)</a>.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Steam_(service)">Steam (service), Wikipedia</a>: feature launch dates.</li>
+        <li>Local probes on 2026-11-13: headers, robots.txt and discovery paths, market search for 6 scopes, Workshop browse for 5 apps, a Workshop item page, a 27-ID random sample, profile and group XML, discussions, reviews, the store review JSON, the Web API and the Common Crawl index. Full results in the Probe Log.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Screenshots are the bulk of newly issued <code>publishedfileid</code>s. <em>Basis:</em> 7 of the 11 public objects in the 27-ID sample were screenshots, against 3 Workshop items and 1 video. A small sample.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Live public UGC count by type. Measurement: Web API <code>IPublishedFileService/QueryFiles</code> with <code>totalonly=true</code> per <code>filetype</code> across top apps, from a network that reaches <code>api.steampowered.com</code>.</li>
+        <li>What the HTTP 500 "Steam Workshop" pages are (deleted, never issued, or a server error), which decides the true ID density. Measurement: re-fetch the 12 IDs after the 429 window clears, and batch them through <code>GetPublishedFileDetails</code> for a <code>result</code> code.</li>
+        <li>Guide and review totals. Measurement: <code>QueryFiles</code> with <code>filetype</code>=WebGuide; the store <code>appreviews</code> <code>query_summary</code> per app from a client that is not redirected.</li>
+        <li>The 429 threshold and penalty length. Measurement: a single-IP ramp at 1 request every 10, 20 and 30s on <code>filedetails</code>, logging the first 429 and the time to recovery.</li>
+        <li>Steam Community MAU or visit share. Measurement: none from Valve since the 2021 132M Steam MAU; a panel estimate (Similarweb) with the estimator named.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
