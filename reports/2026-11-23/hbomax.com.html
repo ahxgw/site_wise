@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hbomax.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-11-23</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>hbomax.com</h1>
+      <p class="lede">HBO Max's storefront: 11.9K titles in 124 country HTML sitemaps, with per-title licence windows in page JSON. ClaudeBot and CCBot get 403s.</p>
+      <div class="tag-row">
+        <span class="tag">Subscription streaming</span>
+        <span class="tag">124 countries</span>
+        <span class="tag">Skydance (ex-WBD)</span>
+        <span class="tag">Licence windows exposed</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>HBO Max is the subscription streaming service built on HBO, Warner Bros. film and TV, DC, Discovery's unscripted networks, CNN, TCM and live sports from TNT. It launched in the US on 2020-05-27, became "Max" on 2023-05-23 and took the HBO Max name back on 2025-07-09. Paramount Skydance closed its purchase of Warner Bros. Discovery on 2026-10-06, so the service now belongs to Skydance. Revenue comes from ad-supported and ad-free subscriptions, plus bundles such as Disney+/Hulu/HBO Max, which is linked from the homepage. For an index builder, the logged-out site is a server-rendered catalogue: every title page carries Movie or TVSeries JSON-LD and a full content record that includes the start and end of the title's licence window. There is no XML sitemap. Discovery runs through HTML sitemap pages per country and language. Playback, and the GraphQL API the pages are built from, are closed. Compare <a href="../2026-10-26/disneyplus.com.html">disneyplus.com</a>, which opens XML sitemaps and AI crawlers but hides availability dates.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.hbomax.com</code> (apex, <code>www.max.com</code> and <code>play.hbomax.com</code> all 301 to it)</dd></div>
+        <div><dt>Canonical URL</dt><dd>Title: <code>/movie/{uuid}</code>, <code>/show/{uuid}</code>; season <code>/show/{uuid}/s{n}</code>; episode <code>/show/{uuid}/s{n}/e{n}-{slug}/{uuid}</code>; other countries prefix <code>/{cc}/{lang}</code></dd></div>
+        <div><dt>Category</dt><dd>Subscription video on demand (SVOD) with live sports</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>beam-images.warnermediacdn.com</code> (artwork), <code>auth.hbomax.com</code> (sign-up), <code>graphql.prd.api.discomax.com</code> (server-side CMS API), <code>privacyportal-cdn.onetrust.com</code> (legal text)</dd></div>
+        <div><dt>Owner</dt><dd>Skydance (Paramount Skydance) since 2026-10-06; operating entity WarnerMedia Direct, LLC per the site footer</dd></div>
+        <div><dt>Founded / launched</dt><dd>2020-05-27 (US)</dd></div>
+        <div><dt>Business model</dt><dd>Monthly and annual subscriptions (Basic with Ads, Standard, Premium) and third-party bundles</dd></div>
+        <div><dt>Scale anchor</dt><dd>Over 140M subscribers in Q1 2026 (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Catalogue figures come from the Site Wise census in the Probe Log. HBO Max publishes no title counts.</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Subscribers</dt>
+          <dd>131.6M at the end of Q4 2025, and over 140M in Q1 2026 (almost 9M added in the quarter), with a target of 150M by the end of 2026. <a href="https://thestreamable.com/warner-bros-discovery-q1-2026-earnings">The Streamable, WBD Q1 2026 earnings</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Ownership change</dt>
+          <dd>Paramount Skydance's acquisition of WBD closed on 2026-10-06 at $31 per share in cash, about $110B in enterprise value. <a href="https://www.cnbc.com/2026/10/06/paramount-wbd-deal-timeline.html">CNBC, 2026-10-06</a> <span class="evidence verified">verified</span> WBD filed its 15-12G deregistration on 2026-10-16, after an 8-K on 2026-10-06 covering completion of the acquisition (item 2.01), delisting (3.01) and change in control (5.01). <a href="https://data.sec.gov/submissions/CIK0001437107.json">EDGAR submissions</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>US catalogue</dt>
+          <dd>2,324 movies and 2,030 shows (4,354 titles) on the US HTML sitemap pages as of 2026-11-23. Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Country catalogue census</dt>
+          <dd>11,946 distinct title UUIDs (7,495 movies, 4,451 shows) across 124 countries as of 2026-11-23. The US is largest at 4,354, and Latin American countries carry 4,083–4,087 each. The median country has 2,212. The 2026 European launches are small: UK 1,786, Germany 1,580, Italy 1,344. Ukraine has the fewest at 890 (calculated by Site Wise). Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Regional exclusivity</dt>
+          <dd>3,418 titles (29%) appear in exactly one country, and 1,714 of those are US-only, which is 39% of the US catalogue. Next come Turkey (393), Italy (194), Poland (185) and France (171). Only 147 titles are offered in all 124 countries (calculated by Site Wise, 2026-11-23). Sitemap census <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>US catalogue churn</dt>
+          <dd>Against the Wayback snapshot of 2025-07-10, the day after the HBO Max rename: movies went from 2,310 to 2,324, with 509 dropped (22%) and 523 added; shows went from 1,783 to 2,030, with 150 dropped and 397 added. Calculated by Site Wise. Wayback probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Licence windows</dt>
+          <dd>Rail cards across 33 fetched pages exposed windows for 414 distinct US titles. 18 (4.3%) end within 30 days, 37 more within 90 days, 75 within a year, 175 later, and 109 (26%) run to 2090 or beyond, mostly 2099-12-31 or 2101-01-01, which act as "no expiry". 15 started within the last 30 days. Calculated by Site Wise, 2026-11-23; the rails favour promoted titles. Structured-data probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Title metadata coverage</dt>
+          <dd>All 20 sampled movies returned 200 with Movie JSON-LD and a licence window. 12 of 20 named a trailer. Of 12 sampled shows, 11 had TVSeries JSON-LD and a full series record with a window; 5 of those 11 named a trailer. The odd one out, Creature Commandos, is a custom 68KB page with no JSON-LD (calculated by Site Wise, 2026-11-23). Structured-data probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Terms of use</dt>
+          <dd>The US terms prohibit "data mining, robots … or other data gathering and extraction tools", any extraction "for the purpose of training any artificial intelligence algorithm … or any large language or machine learning model", and using content "to construct any kind of database". The notice version is dated 2025-08-13. <a href="https://www.hbomax.com/terms-of-use/en-us">HBO Max Terms of Use (US)</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-11-23 from a US egress (CloudFront LAX, Akamai geolocated to San Francisco), desktop Chrome UA unless noted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-11-23</td><td><code>curl -sI</code> apex, www, max.com, play</td><td>The apex gets a CloudFront function 301 to www. <code>www.max.com</code> and <code>play.hbomax.com</code> get an Akamai 301 to <code>www.hbomax.com</code>. www is Akamai (<code>server-timing: ak_p</code>) in front of Next.js under <code>/dotcom/</code> (<code>x-powered-by: engage-v2</code>, build <code>build-id-22.1.0</code>), with <code>cache-control: public, max-age=120, s-maxage=270</code>, <code>vary: Cookie</code>, and geo cookies <code>countryCode</code>, <code>stateCode</code> and <code>city</code> set on every response.</td></tr>
+            <tr><td>2026-11-23</td><td><code>curl /robots.txt</code></td><td>Three lines: <code>User-agent: *</code>, <code>Disallow: /search/</code>, <code>Allow: /</code>. No Sitemap line and no named bots. <code>/search/</code> 302s to <code>/</code>. Wayback's only 200 capture of robots.txt is from 2017.</td></tr>
+            <tr><td>2026-11-23</td><td>Feeds &amp; discovery</td><td><code>/sitemap.xml</code>, <code>/sitemap_index.xml</code>, <code>/sitemap-index.xml</code>, <code>/sitemaps/sitemap.xml</code>, <code>/llms.txt</code> and <code>/.well-known/security.txt</code> all return a 30-byte JSON 404. No RSS or Atom. The footer links an HTML <code>/sitemap</code> with <code>/sitemap/movies</code>, <code>/sitemap/shows</code> and <code>/sitemap/genres</code>.</td></tr>
+            <tr><td>2026-11-23</td><td>UA matrix on a title page</td><td>Chrome, Googlebot, Bingbot, GPTBot, OAI-SearchBot, Claude-User, meta-externalagent and an invented <code>SiteWiseResearch/1.0</code> all got 200 with the same ~198KB HTML, so there is no crawler-specific rendering. ClaudeBot, PerplexityBot, CCBot, Bytespider, <code>curl/8.7.1</code> and <code>python-requests</code> got an Akamai 403 "Access Denied" (428 bytes). robots.txt mentions none of them.</td></tr>
+            <tr><td>2026-11-23</td><td>US HTML sitemap</td><td><code>/sitemap/movies</code> (334KB) lists 2,324 <code>/movie/{uuid}</code> links and <code>/sitemap/shows</code> (289KB) lists 2,030 <code>/show/{uuid}</code> links, unpaginated. <code>/sitemap/genres</code> lists 185 <code>/collections/</code> links. Each entry has title and UUID only. The embedded JSON repeats them with <code>hbomaxId</code> and <code>contentType</code> (Feature or Series).</td></tr>
+            <tr><td>2026-11-23</td><td>Country sitemap census</td><td>The page JSON <code>availableLocales</code> lists 182 locale paths in 124 countries. I fetched one per country (English where offered) for movies and shows: 246 pages, 277MB uncompressed, all 200, at about 7s per request including a 1.5s pause. One connection reset (curl 000) was retried successfully. Every country's page was served to a US IP without redirect; <code>/us/en/…</code> 301s to the unprefixed path. A title keeps the same UUID in every country.</td></tr>
+            <tr><td>2026-11-23</td><td>Wayback CDX + <code>id_</code></td><td>The CDX index holds <code>/sitemap/movies</code> and <code>/sitemap/shows</code> from 2025-07-10, and <code>/sitemap/feature</code> and <code>/sitemap/series</code> from 2022-12-07. In 2025 the links were <code>/movies/{slug}/{uuid}</code>; the same UUIDs now resolve as <code>/movie/{uuid}</code>, so the redesign kept IDs. Diff in Verified Metrics.</td></tr>
+            <tr><td>2026-11-23</td><td>Structured-data sample (20 movies + 12 shows)</td><td>Random sitemap IDs fetched at 1 request per 2s, all 200 and 196–248KB each. The server HTML holds one JSON-LD block (Movie or TVSeries, with name, image, genre, contentRating, description and actor) and og:type <code>video.movie</code>. <code>__NEXT_DATA__</code> carries the full CMS record: <code>offeringDates</code> {startDate, endDate}, <code>brand</code> (HBOTV, HBOM, WB, DC, TCM, DSC, CNN, BR, Magnolia and others), <code>credits</code>, <code>castAndCrew</code>, short and full <code>summary</code>, <code>releaseDate</code>, <code>localizedRating</code> (rating authority, classifier), quality flags, a <code>trailer</code> (<code>/video/watch/{uuid}</code>) and an image map. Coverage counts are in Verified Metrics.</td></tr>
+            <tr><td>2026-11-23</td><td>Series and season pages</td><td>All Rise (3 seasons): <code>/show/{id}</code> lists 21 episodes, for season 1 only, and <code>/show/{id}/s2</code> lists season 2's 17. Each episode carries a UUID, number, title, summary, three stills, its own <code>offeringDates</code> and <code>isWatchFree</code>. Episode pages are 200, about 119KB, og:type <code>video.tv_show</code>, but their JSON-LD is the parent TVSeries, not a TVEpisode.</td></tr>
+            <tr><td>2026-11-23</td><td>CMS datasource</td><td>Page config lists GraphQL datasources at <code>graphql.prd.api.discomax.com/graphql</code> (<code>featuresById</code>, <code>getSeriesById</code>, <code>getCollection</code>, <code>ContentByCredits</code>, <code>GetYouMayAlsoLike</code>, with <code>tenantId: max</code>). One anonymous POST of the page's own query returned an AWS ELB 403. It is a server-side API, and the page JSON already carries what it returns. Page <code>maxExpirationAge</code>: 86,400s.</td></tr>
+            <tr><td>2026-11-23</td><td>Trailer page</td><td><code>/video/watch/{uuid}</code>: 200, 30KB, title "The Usual Suspects Trailer | HBO Max", og:type <code>website</code>, no JSON-LD. The page embeds <code>@wbd/dotcom-component-player</code> with an <code>editId</code>. Playback was not exercised.</td></tr>
+            <tr><td>2026-11-23</td><td>Artwork CDN</td><td><code>beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/{titleId}/{imageId}?…&amp;w=N</code>: 200 to curl from <code>Akamai Image Manager</code>, with <code>max-age</code> about 15 days and <code>last-modified</code> set. <code>w=500</code> gives 36KB and <code>w=3840</code> gives 965KB, the same image resized on demand. Some image IDs are UUIDv1, whose timestamps decode to upload dates.</td></tr>
+            <tr><td>2026-11-23</td><td>Terms &amp; owner</td><td><code>/terms-of-use/en-us</code> renders client-side from a OneTrust notice JSON (47 language versions; en-us version timestamp 2025-08-13). EDGAR submissions JSON for CIK 1437107 fetched with a generic UA. The filing documents themselves need a declared-contact UA.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">"Sitemap" means the HTML sitemap pages. "Page JSON" means the <code>__NEXT_DATA__</code> blob on a title, season or episode page. Every path needs a browser-like or custom UA, because common crawler and library UAs get a 403 at the edge.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Title metadata</td>
+              <td>11,946 distinct titles (7,495 movies, 4,451 series) across 124 countries; 4,354 in the US</td>
+              <td>Sitemap for IDs, then the title page's JSON-LD plus page JSON</td>
+              <td>None. No throttling at 1 request per 2s (~35 requests) or during the census pass</td>
+              <td>Facts (title, year, cast, genre, rating) are indexable. Synopses are WBD copy: snippet plus link. Terms bar robots, AI training and database building</td>
+              <td>The CDN caches HTML for 270s; the page config expires after 24h</td>
+            </tr>
+            <tr>
+              <td>Episodes</td>
+              <td>Per season: every episode, with number, title, summary and stills</td>
+              <td>Season pages <code>/show/{id}/s{n}</code>; season count comes from the series record</td>
+              <td>None</td>
+              <td>Snippet plus link; episode stills are thumbnails</td>
+              <td>Each episode has its own window</td>
+            </tr>
+            <tr>
+              <td>Licence windows</td>
+              <td>Start and end per title and per episode, in UTC</td>
+              <td>Page JSON <code>offeringDates</code></td>
+              <td>None</td>
+              <td>A fact; safe to show as "leaving on" or "added on"</td>
+              <td>Changes when deals change; the window itself gives the expiry date to recrawl on</td>
+            </tr>
+            <tr>
+              <td>Artwork</td>
+              <td>Key art, horizontal and square covers, logos and backgrounds per title; stills per episode</td>
+              <td>Image URLs from page JSON, rendered by the Akamai Image Manager at any width</td>
+              <td>None; open to curl</td>
+              <td>Studio key art under copyright: thumbnails plus link</td>
+              <td>A new image ID when art is swapped</td>
+            </tr>
+            <tr>
+              <td>Trailers</td>
+              <td>A trailer is named for 12 of 20 sampled movies and 5 of 11 shows</td>
+              <td>Link or embed the <code>/video/watch/{uuid}</code> page. The stream sits behind the player SDK (open question)</td>
+              <td>Not tested</td>
+              <td>Promotional, but no embed licence is published: link out</td>
+              <td>Tied to the title</td>
+            </tr>
+            <tr>
+              <td>Full video &amp; audio</td>
+              <td>The streaming library, with audio-description, Atmos, Dolby Vision and UHD flags in page JSON</td>
+              <td>None open. Playback is at <code>play.hbomax.com</code>, DRM and subscriber-only</td>
+              <td>Paid account</td>
+              <td>Not indexable; deep-link to the title page. Index the flags as facets</td>
+              <td>n/a</td>
+            </tr>
+            <tr>
+              <td>Country availability</td>
+              <td>Country set per title, from 248 sitemap pages across 124 countries</td>
+              <td>Per-country sitemap pages <code>/{cc}/{lang}/sitemap/{movies|shows}</code></td>
+              <td>None; out-of-region requests are served</td>
+              <td>A fact</td>
+              <td>A daily diff of 248 pages</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <p class="muted">Only where HBO Max departs from the <a href="../../docs/methodology.html">default platform assumptions</a>.</p>
+      <div class="subgrid">
+        <div>
+          <h4>The edge, not robots.txt, sets crawler policy</h4>
+          <p>robots.txt allows everyone except <code>/search/</code>, but Akamai refuses ClaudeBot, PerplexityBot, CCBot, Bytespider and generic HTTP libraries by UA string, while GPTBot, OAI-SearchBot and Meta's agent get through (Probe Log). Googlebot passes without IP verification. The same page serves every UA, so there is no curated SEO sliver. Treat robots.txt as incomplete and record the UA you crawl as.</p>
+        </div>
+        <div>
+          <h4>The UUID outlives every rename</h4>
+          <p>One <code>hbomaxId</code> per title and per episode has survived HBO Max → Max → HBO Max and the 2025 URL change from <code>/movies/{slug}/{uuid}</code> to <code>/movie/{uuid}</code> (Wayback diff). Key on the UUID, discard slugs, and map <code>max.com</code>, <code>play.hbomax.com</code> and old slug paths onto it. The same UUID is used in every country path.</p>
+        </div>
+        <div>
+          <h4>Licence windows are a first-class signal</h4>
+          <p>Every title and episode states when it arrives and when it leaves, to the minute. This makes recrawling predictable: refetch at <code>endDate</code> to confirm removal, and at <code>startDate</code> for scheduled arrivals. It also supports queries other SVOD sites can't answer, such as "leaving HBO Max this month". End dates in 2099 or 2101 indicate owned or perpetual content (26% of the sample).</p>
+        </div>
+        <div>
+          <h4>Read the record, not the 200KB page</h4>
+          <p>About 95% of a title page is design tokens and shared rails, and the homepage is 2.3MB. The useful object is one JSON string in <code>mappedData</code> that begins <code>{"imageUrlLink"</code>. Rails also carry cards with windows for about 100 related titles, which is how 33 pages produced windows for 414 titles. The show page lists only the default season's episodes.</p>
+        </div>
+        <div>
+          <h4>Brand codes beat genres for provenance</h4>
+          <p>The <code>brand</code> array (HBOTV, HBOM, WB, DC, TCM, DSC, CNN, BR, Magnolia…) gives the producing network or licensor. It separates HBO originals from library and third-party titles better than genre does, and it predicts window length. Of the 61 sampled records that carry a brand, 6 of 8 Discovery-network titles (TLC, ID, Magnolia) have 2099+ end dates, against 0 of 10 WB and 0 of 5 TCM titles. A TCM film sampled had a three-month window (calculated by Site Wise).</p>
+        </div>
+        <div>
+          <h4>Country catalogues are not one corpus</h4>
+          <p>Only 147 of 11,946 titles are offered in all 124 countries, and 29% are in exactly one (Verified Metrics). Latin America shares one catalogue of about 4,085 titles, while the US catalogue has 1,714 titles found nowhere else. Index availability as title × country rows, never as one site-wide flag, and run "is X on HBO Max" queries against the user's country.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the title (movie or series), keyed by UUID, with seasons and episodes as children, each with its own window. A "title × country" availability row is a separate fact table.</li>
+        <li><strong>Primary keys &amp; joins:</strong> title UUID ↔ episode UUIDs ↔ trailer UUID ↔ image IDs under <code>BEAM_LWM_DELIVERABLES/{titleId}/</code>. People are plain names, with no person IDs. Join to external databases on title + release year + runtime. <code>brand</code> maps to a network entity.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) the 248 HTML sitemap pages for IDs and country sets (277MB uncompressed; about 30 minutes at 7s per request). 2) One title page per distinct UUID for the record and window: 11.9K pages, about 23 hours at 7s per request from one IP (calculated by Site Wise). 3) Season pages for series with more than one season. 4) Artwork from the image CDN at a fixed width.</li>
+        <li><strong>Recrawl cadence:</strong> a daily diff of the sitemap pages; title pages at their window boundaries plus a weekly sweep; episode lists weekly for airing series.</li>
+        <li><strong>Derivatives:</strong> embeddings of key art and stills; a licence-window timeline per title and country; normalized cast entities, since only names are given. ASR or OCR has no source here, because no open video or captions were found.</li>
+        <li><strong>Demo to build:</strong> a "leaving soon / arriving soon" calendar across countries, built from sitemap diffs plus <code>offeringDates</code> and checked against what actually disappears.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li><strong>Ownership churn.</strong> Skydance plans to bring HBO Max and Paramount+ together, with a bundle first (<a href="https://en.wikipedia.org/wiki/HBO_Max">Wikipedia</a>). A merged service could change host, IDs or catalogue overnight. Snapshot the UUID map now and watch <code>hbomax.com</code> redirects.</li>
+        <li><strong>The UA wall is selective and can widen.</strong> The bot list already excludes Anthropic's and Common Crawl's crawlers. Any crawler that has to present a browser UA to get through would conflict with the terms, so plan for licensed feeds rather than relying on the open path.</li>
+        <li><strong>Terms prohibit database building.</strong> Unlike Disney+, the HBO Max terms make no exception for search indexing. Store facts and links; mirroring synopses and art is a rights question.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/HBO_Max">Wikipedia: HBO Max</a>, read 2026-11-23: launch, rebrand and rename dates, current owner, and bundle plans.</li>
+        <li><a href="https://www.cnbc.com/2026/10/06/paramount-wbd-deal-timeline.html">CNBC, 2026-10-06</a>: deal close, price and value.</li>
+        <li><a href="https://thestreamable.com/warner-bros-discovery-q1-2026-earnings">The Streamable</a>: WBD Q4 2025 and Q1 2026 subscriber figures.</li>
+        <li><a href="https://data.sec.gov/submissions/CIK0001437107.json">SEC EDGAR submissions, WBD</a>: 8-K of 2026-10-06 and 15-12G of 2026-10-16.</li>
+        <li><a href="https://www.hbomax.com/terms-of-use/en-us">HBO Max Terms of Use (US)</a>, text via the OneTrust notice JSON.</li>
+        <li>Local probes on 2026-11-23: headers, robots.txt, a 14-UA matrix, 3 US and 246 country HTML sitemap pages, 35 title, season and episode pages, 1 trailer page, 1 GraphQL call, 2 image renditions, Wayback CDX plus 2 snapshots.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>End dates of 2099-12-31 or 2101-01-01 mean owned or open-ended rights, not real expiries. <em>Basis:</em> 97 of the 109 far-future windows in the 414-title sample use one of these two values, and the rest are round dates such as 2100-01-01 and 2222-02-03, not a spread of years, and they concentrate on Discovery networks that WBD owned outright (Retrieval Notes).</li>
+        <li>The edge blocklist is a curated UA list, not behavioural detection. <em>Basis:</em> identical request timing got 200 or 403 depending only on the UA string, and an invented UA passed.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>Whether trailers can be played anonymously, and whether they carry captions. Closeable by recording the network calls of one <code>/video/watch/{uuid}</code> page in a browser.</li>
+        <li>How accurate <code>offeringDates</code> are against real removals. Closeable by refetching the 18 titles ending within 30 days after their end dates (by 2026-12-23).</li>
+        <li>A current subscriber figure after the merger. Closeable from the first Skydance quarterly report that breaks out HBO Max.</li>
+        <li>Whether the Akamai blocklist is the same outside the US. Closeable by repeating the UA matrix from an EU or LATAM egress.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
