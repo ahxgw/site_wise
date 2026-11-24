@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>threads.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../docs/index.html">Site Wise</a>
+      <span>2026-11-24</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>threads.com</h1>
+      <p class="lede">Meta's text-first social network, 500M+ monthly users. Public HTML is meta-tags only, sitemaps are allowlist-only, and anonymous oEmbed returns no text.</p>
+      <div class="tag-row">
+        <span class="tag">Social / microblogging</span>
+        <span class="tag">Meta</span>
+        <span class="tag">Allowlist-only crawl</span>
+        <span class="tag">Shortcodes encode time</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../docs/methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>Threads is Meta's short-text conversation app, launched on 2023-07-05 and tied to Instagram accounts. Its web host moved from <code>threads.net</code> to <code>threads.com</code>; the old host now 301s to the new one (Probe Log). Meta says it has more than 500M monthly users and that it passed X on monthly actives, but gives no Threads revenue figure. Meta earns from ads across its apps. For an index builder, the logged-out web is a thin shell. Profile, post and tag pages return roughly 650KB of client app plus social-card meta tags, with no JSON-LD and no post bodies in the HTML. The robots.txt allowlists named search engines and social-preview bots and blocks everyone else, including all 17 sitemaps. Two things are open: the official oEmbed endpoint, which returns only a "View on Threads" card, and the post shortcode, which carries a decodable creation time. Compare <a href="../2026-06-08/instagram.com.html">instagram.com</a>, which shares the Meta stack.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd><code>www.threads.com</code> (apex 301s to www; <code>threads.net</code> 301s to <code>threads.com</code>)</dd></div>
+        <div><dt>Canonical URL</dt><dd>Profile <code>/@{username}</code>; post <code>/@{username}/post/{shortcode}</code>; embed permalink <code>/t/{shortcode}</code>; tag <code>/tag/{name}</code></dd></div>
+        <div><dt>Category</dt><dd>Microblogging social network</dd></div>
+        <div><dt>Grouped hosts</dt><dd><code>graph.threads.net</code> (official API and oEmbed), <code>scontent-*.cdninstagram.com</code> (avatars, media), <code>static.cdninstagram.com</code> (assets)</dd></div>
+        <div><dt>Owner</dt><dd>Meta Platforms</dd></div>
+        <div><dt>Founded / launched</dt><dd>2023-07-05 (the API keyword-search floor is <code>since=1688540400</code>, which is 2023-07-05 07:00 UTC, calculated by Site Wise)</dd></div>
+        <div><dt>Business model</dt><dd>Advertising within Meta's apps; Threads-specific revenue not disclosed</dd></div>
+        <div><dt>Scale anchor</dt><dd>500M+ monthly active users (Verified Metrics)</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <dl class="fact-list">
+        <div>
+          <dt>Monthly active users</dt>
+          <dd>More than 500M, reported with Meta's Q3 2026 results on 2026-10-21; Zuckerberg said Threads has passed X on monthly actives, with no new figure. Time spent per user grew over 20% year over year. <a href="https://www.socialmediatoday.com/news/meta-offers-insights-on-individual-platform-growth/833807">Social Media Today, 2026-10-22</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Third-party mobile DAU</dt>
+          <dd>Similarweb put Threads at 141.5M mobile daily actives against 125M for X, earlier in 2026. A third-party estimate, not an official figure. <a href="https://www.news4jax.com/business/2026/10/21/meta-q3-revenue-tops-estimates-and-zuckerberg-says-muse-accounts-have-topped-10-million/">News4Jax / AP, 2026-10-21</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Tag volume</dt>
+          <dd><code>/tag/ai</code> shows "329M threads" in its title and "1.8M recent threads" in its description, as of 2026-11-24. Tag page probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Profile counters</dt>
+          <dd><code>@instagram</code>: 38.1M followers, 1.5K threads. <code>@zuck</code>: 5.8M followers, 176 threads. Both read from og:description on 2026-11-24. Profile probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Sitemap inventory</dt>
+          <dd>17 sitemap files are named in robots.txt: 6 profile (base plus tiers 1–5), 5 US creator tiers, 3 post topic lists, 3 tag lists. All returned 403 on 2026-11-24, so entry counts are unknown. robots.txt probe <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Crawl policy size</dt>
+          <dd>8,626 bytes with 38 <code>User-agent</code> lines. 16 groups are fully disallowed (15 named plus <code>*</code>). Calculated by Site Wise from the robots.txt probe, 2026-11-24. <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Official API limits</dt>
+          <dd>250 API-published posts, 1,000 replies, 100 deletions and 500 location searches per rolling 24h per profile. Keyword search: 2,200 queries per rolling 24h, max 100 results per call, public posts only after permission approval. <a href="https://developers.facebook.com/docs/threads/overview">Threads API overview</a>, <a href="https://developers.facebook.com/docs/threads/keyword-search">keyword search</a>, read 2026-11-24 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Automated-collection terms</dt>
+          <dd>robots.txt states that automated collection is "prohibited unless you have express written permission from Threads" and points to Meta's Automated Data Collection Terms. Fetched 2026-11-24. robots.txt probe <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-11-24 from one US egress behind a proxy, using a plain <code>SiteWise-research/1.0</code> user agent unless noted. No UA spoofing was done.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td>2026-11-24</td><td><code>curl -sI</code> threads.com, www, threads.net</td><td>Apex 301s to <code>www.threads.com</code>; <code>www.threads.net</code> 301s <code>/robots.txt</code> to <code>www.threads.com</code>. www returns 200, <code>cache-control: private, no-cache, no-store</code>, <code>x-stack: www</code>, a long CSP naming only Meta, Instagram and fbcdn hosts, and a <code>csrftoken</code> cookie. Origin is Meta's own edge, not a third-party CDN. DNS was not probed because resolution is unreliable in this sandbox.</td></tr>
+            <tr><td>2026-11-24</td><td><code>curl -s /robots.txt</code></td><td>With the plain UA: 200, 8,626 bytes, <code>text/plain</code>. With a desktop-Chrome UA the same path returned the 287KB app shell, so a robots parser must send a bot-style UA. Groups with <code>Disallow: /</code>: <code>__usage_ai-training</code>, Amazonbot, Applebot-Extended, Brightbot, ClaudeBot, Google-Extended, GPTBot, PerplexityBot, PetalBot, Scrapy, uptimerobot, viberbot, YaK, Yandex, Yeti and <code>*</code>. Allowlisted with path limits: Applebot, Bingbot, Discordbot, DuckDuckBot, facebookexternalhit, Googlebot (plus Image, Video, News, InspectionTool), LinkedInBot, msnbot, Pinterestbot, Slurp, teoma, TelegramBot, Twitterbot, redditbot, seznambot and SEO crawlers (Screaming Frog, lumar, deepcrawl). Googlebot and Bingbot are barred from <code>/*/c/</code>, <code>/*/comments/</code>, <code>/*/liked_by/</code>, <code>/*/p/</code>, <code>/ajax/</code>, <code>/query/</code>, <code>/publicapi/</code> and nine more, but not <code>/post/</code>.</td></tr>
+            <tr><td>2026-11-24</td><td><code>curl</code> each of 17 <code>Sitemap:</code> URLs</td><td>All 17 returned 403 with an empty body. Names: <code>threads_profiles_sitemap</code> and <code>_tier_1</code> to <code>_tier_5</code>; <code>us_top_creators</code>, <code>us_emerging_creators</code>, <code>us_quality_tagged_tail</code>, <code>us_active_producers</code>, <code>us_micro_producers</code>; <code>threads_high_potential_posts_v2</code>, <code>threads_question_posts</code>, <code>threads_tech_posts</code>; <code>threads_tags_hashtag</code>, <code>threads_tags_gsc_bulk_keywords</code>, <code>threads_tags_typeahead</code>. <code>/sitemap.xml</code> and <code>/llms.txt</code> 302 to <code>/login</code>.</td></tr>
+            <tr><td>2026-11-24</td><td>Wayback CDX + <code>id_</code> fetch of sitemap captures</td><td>CDX lists 200 captures of <code>threads_profiles_sitemap.xml.gz</code> (2026-05-02, 40,300 bytes) and <code>/sitemap.xml</code> (2026-03-01). Fetching them with <code>id_</code> returned the 261KB and 292KB login app shell, not XML, so the archive holds no sitemap contents either.</td></tr>
+            <tr><td>2026-11-24</td><td><code>curl -s /@zuck</code>, <code>/@instagram</code></td><td>200, 683KB. Title <code>Mark Zuckerberg (@zuck) • Threads, Say more</code>; og:type <code>profile</code>, og:description with follower and thread counts and bio, og:image (avatar), <code>al:ios</code> and <code>al:android</code> deep links, canonical. Zero <code>application/ld+json</code> blocks, no <code>&lt;h1&gt;</code>, no post links or text in the HTML. <code>/@zuck/replies</code> carries <code>noindex</code>.</td></tr>
+            <tr><td>2026-11-24</td><td><code>curl -s</code> 3 post URLs from Wayback CDX</td><td>Posts from 2023-12 to 2024-02 return 200, about 653KB each. og:description holds the post text (e.g. "We're building a massive amount of infrastructure…"), truncated with "..." on a longer post. og:image is the author's avatar, not post media. No JSON-LD. A fabricated shortcode returned a 302 to <code>/?error=invalid_post</code>.</td></tr>
+            <tr><td>2026-11-24</td><td>Shortcode decode (Instagram base-64 alphabet, <code>id &gt;&gt; 23</code> + epoch 1314220021721 ms)</td><td><code>C01LXhDrCAM</code> decodes to 2023-12-14 10:57 UTC (text: "opening Threads to more countries in Europe"); <code>C2QB41_R2FA</code> to 2024-01-18; <code>C3QbjHUv-KO</code> to 2024-02-12. The first matches the known Europe launch date. Calculated by Site Wise.</td></tr>
+            <tr><td>2026-11-24</td><td><code>curl -s /tag/ai</code>, <code>/search?q=ai</code>, <code>/login</code></td><td><code>/tag/ai</code>: 200, title <code>ai · 329M threads</code>, description "1.8M recent threads", canonical set. <code>/search?q=ai</code>: 200 with the generic title <code>Search • Threads</code>, no description or canonical.</td></tr>
+            <tr><td>2026-11-24</td><td><code>curl -s graph.threads.net/oembed?url=…</code></td><td>Profile URL and post URLs both return 200 anonymously: JSON with <code>type: rich</code>, <code>provider_name</code>, <code>width: 658</code> and a ~3KB blockquote. Visible text is only "View on Threads"; there is no <code>author_name</code>, <code>title</code> or post text. The embed permalink is rewritten to <code>/t/{shortcode}</code>. <code>graph.facebook.com/oembed_post</code> returned error 100 without a token.</td></tr>
+            <tr><td>2026-11-24</td><td><code>curl -s graph.threads.net/v1.0/me</code></td><td>400, OAuth error 190, "Invalid OAuth 2.0 Access Token". Every data endpoint needs a user token.</td></tr>
+            <tr><td>2026-11-24</td><td>Wayback CDX <code>@zuck/post/</code> prefix, from=2026</td><td>400 URL keys (the query limit) captured in 2026, including real shortcodes (<code>C01LXhDrCAM</code> and others) and many junk keys such as <code>/post/apple.com.au</code>. The archive is a usable seed list of post IDs for one profile, but needs filtering.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects</th><th>Best path</th><th>Auth &amp; quota</th><th>License</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr><td>Post text</td><td>Count open. <code>/tag/ai</code> alone lists 329M.</td><td>Page og:description for single posts (truncated); official keyword search for public posts</td><td>Page: none, but robots blocks non-allowlisted UAs. API: user token, <code>threads_keyword_search</code> approval, 2,200 queries/24h, 100 per call</td><td>Automated collection needs written permission; API doc says displaying posts only to their creator</td><td>Real-time on page; <code>RECENT</code> search mode</td></tr>
+            <tr><td>Profiles</td><td>Count open (sitemaps closed). Counters in og:description.</td><td>Page meta; <code>us_*</code> and tiered profile sitemaps for allowlisted crawlers only</td><td>None for page; sitemaps 403</td><td>As above</td><td>Counters live; bio changes unknown</td></tr>
+            <tr><td>Images</td><td>Avatars only in page meta; post media not in HTML</td><td>og:image CDN URL</td><td>URL is signed (<code>oh=</code>, <code>oe=</code> params), so it expires</td><td>Not reusable by default</td><td>Link expires; re-fetch the page</td></tr>
+            <tr><td>Video</td><td>Open; no <code>og:video</code> on sampled pages</td><td>Official API (<code>media_type=VIDEO</code> search filter) only</td><td>Token plus approval</td><td>Not stated in sampled docs</td><td>Open</td></tr>
+            <tr><td>Audio</td><td>Open; no audio-specific object seen</td><td>Derive from video via ASR if licensed</td><td>n/a</td><td>n/a</td><td>n/a</td></tr>
+            <tr><td>Replies / comments</td><td>Open</td><td>Official API replies endpoints (own posts); <code>/@user/replies</code> is <code>noindex</code></td><td>Token; 1,000 replies/24h for writes</td><td>Blocked from Googlebot via <code>/*/comments/</code> and <code>/*/c/</code></td><td>Real-time</td></tr>
+            <tr><td>Tags / topics</td><td>Tag pages with volume in title (329M for <code>ai</code>)</td><td><code>/tag/{name}</code> page meta; three tag sitemaps (closed); API <code>search_mode=TAG</code></td><td>Page: none; API: approval</td><td>As above</td><td>"Recent" count changes by the hour</td></tr>
+            <tr><td>Structured entities</td><td>Zero JSON-LD on all 4 sampled profile and post pages; only OG, Twitter-card and <code>al:*</code> app-link meta</td><td>Meta tags</td><td>None</td><td>n/a</td><td>Live</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>Posts are keyed by an 11-character shortcode that decodes to a numeric ID whose high bits are a millisecond timestamp (Probe Log). Two URL forms name one post: <code>/@user/post/{code}</code> and the oEmbed permalink <code>/t/{code}</code>. Usernames can change, so key on the shortcode.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>One post, with author, tag and time attached. A page carries one post's text only in og:description, which is truncated on long posts.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Shortcode to creation time is stable and free. The avatar URL is signed and expires, so key it on username, not URL. The oEmbed permalink uses <code>/t/{code}</code>, which joins back to the post.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>og:description for text and the shortcode for time; the &lt;title&gt; is just "Say more". The og:image is never post media.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Counters and tag volumes move continuously. Post text is mostly static once published. Deletion rate is open.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>The sitemap names (<code>us_quality_tagged_tail</code>, <code>threads_high_potential_posts_v2</code>, <code>_tier_1</code>…<code>_tier_5</code>) imply an internal quality score that gates what reaches search engines. <span class="evidence inferred">inferred</span> <em>Basis:</em> the tier and "quality" tokens in the 17 sitemap filenames in robots.txt.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p><code>/search?q=ai</code> returns 200 with only a generic title and no canonical, so on-site search is not an indexable surface. External discovery runs through tag pages and the allowlisted sitemaps.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>The sitemap families include <code>threads_question_posts</code>, <code>threads_tech_posts</code> and <code>threads_tags_gsc_bulk_keywords</code>. <span class="evidence inferred">inferred</span> <em>Basis:</em> the "gsc_bulk_keywords" and "question" tokens in the sitemap filenames suggest Meta seeds pages from Google Search Console keyword data and targets question-style queries.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the post (shortcode), with username, tag list and decoded timestamp attached.</li>
+        <li><strong>Primary keys &amp; joins:</strong> shortcode (post and time), username (profile, mutable), tag name. Avatar and media URLs are signed and are never keys.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) the official keyword-search API, which needs a Meta app with <code>threads_keyword_search</code> approved and caps at 2,200 queries per 24h and 100 results per call (at most 220K posts per day, calculated by Site Wise). 2) A written-permission data agreement with Meta, which robots.txt names as the only route for automated collection. 3) Per-post page fetches for seed lists, limited to allowlisted UAs, so this is only available to an established search engine. No bulk path exists for a third party.</li>
+        <li><strong>Recrawl cadence:</strong> tag volumes daily; profile counters weekly; post text once, then on deletion checks.</li>
+        <li><strong>Derivatives to generate:</strong> time decoded from the shortcode; embeddings of og:description; ASR and OCR only for media obtained through the API.</li>
+        <li><strong>Demo to build:</strong> a shortcode-to-timestamp decoder plus a timeline of a profile's posts from Wayback seed IDs. It needs no Threads request beyond the seed list.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li>Sitemaps, robots rules and the UA gate are all enforced by Meta's own edge, so an allowlist change closes the only crawl path without notice.</li>
+        <li>The API's stated display limit ("solely to the person who created it") conflicts with showing third-party posts in a search UI; confirm the current terms before building.</li>
+        <li>Meta can add post text to oEmbed or remove it from og:description at any time; neither is a documented contract.</li>
+        <li>The <code>threads.net</code> to <code>threads.com</code> move means old indexed URLs need 301 following and canonical remapping.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.socialmediatoday.com/news/meta-offers-insights-on-individual-platform-growth/833807">Social Media Today, Meta Q3 2026 Threads remarks, 2026-10-22</a></li>
+        <li><a href="https://www.news4jax.com/business/2026/10/21/meta-q3-revenue-tops-estimates-and-zuckerberg-says-muse-accounts-have-topped-10-million/">News4Jax / AP, Meta Q3 2026, 2026-10-21</a></li>
+        <li><a href="https://developers.facebook.com/docs/threads/overview">Threads API overview</a></li>
+        <li><a href="https://developers.facebook.com/docs/threads/keyword-search">Threads keyword search</a></li>
+        <li><a href="https://www.threads.com/robots.txt">threads.com robots.txt</a></li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Meta's edge, not a third-party CDN, serves the site. <span class="evidence inferred">inferred</span> <em>Basis:</em> observed headers <code>x-stack: www</code> and <code>x-fb-debug</code>, and a CSP naming only Meta-owned hosts.</li>
+        <li>The browser-UA response for robots.txt is the app shell because the UA is treated as a user, not a bot. <span class="evidence inferred">inferred</span> <em>Basis:</em> the plain UA got <code>text/plain</code> on the same URL minutes apart.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many URLs do the 17 sitemaps list? Needs a crawl from an allowlisted UA (or a Meta data agreement); not attempted here.</li>
+        <li>Does an allowlisted crawler see post text, replies or media that the plain UA does not? Compare against Search Console data or a Googlebot-verified fetch log.</li>
+        <li>What is Threads' share of Meta ad revenue, and its daily active count? Neither is in Meta's Q3 2026 remarks; the next 10-K segment note may say.</li>
+        <li>How many posts exist in total? An ID-density sample across the shortcode timeline, using API <code>since/until</code> windows, would give an estimate.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
