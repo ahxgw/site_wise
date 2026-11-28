@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>drive.google.com Site Profile - Site Wise</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="report-shell">
+    <nav class="top-nav">
+      <a href="../../index.html">Site Wise</a>
+      <span>2026-11-28</span>
+    </nav>
+
+    <header class="report-hero">
+      <p class="eyebrow">Daily Site Profile</p>
+      <h1>drive.google.com</h1>
+      <p class="lede">Google's file-storage host exposes no catalogue: public PDFs and folders surface only through outlinks, each page marked noindex, with owner metadata inline.</p>
+      <div class="tag-row">
+        <span class="tag">Cloud file storage</span>
+        <span class="tag">User-generated files</span>
+        <span class="tag">Google LLC</span>
+        <span class="tag">noindex everywhere, no sitemap</span>
+      </div>
+      <p class="muted">Evidence: <span class="evidence verified">verified</span> <span class="evidence inferred">inferred</span> (must state basis) <span class="evidence open">open</span> — conventions in the <a href="../../methodology.html">methodology</a>.</p>
+    </header>
+
+    <section class="section-card">
+      <h2>Context</h2>
+      <p>drive.google.com is the web front end of Google Drive, where users store and share arbitrary files. Logged out, the host is a login redirect. The only public surface is what owners expose through "anyone with the link" sharing: a file viewer at <code>/file/d/{id}/view</code> and folder listings at <code>/drive/folders/{id}</code>. Nobody announces those links. They spread through school sites, shops, forum posts, QR codes and apps that call the Drive SDK, and that is how they reach crawlers. For an index builder this is a large open store of PDFs and office files (catalogues, forms, circulars, filings) that Google itself marks noindex on every response. The page HTML carries file name, MIME type, byte size and an extension inline, so a link census gives typed metadata without downloading a byte. The actual bytes sit on <code>drive.usercontent.google.com</code>, whose robots.txt disallows everything.</p>
+      <dl class="fact-list">
+        <div><dt>Host</dt><dd>drive.google.com</dd></div>
+        <div><dt>Canonical URL</dt><dd><code>/file/d/{fileId}/view</code> · <code>/drive/folders/{folderId}</code></dd></div>
+        <div><dt>Category</dt><dd>Cloud file storage; user-generated file store</dd></div>
+        <div><dt>Grouped hosts</dt><dd>None. docs.google.com (editors) and workspace.google.com have their own reports; <code>drive.usercontent.google.com</code> serves bytes; <code>lh3.googleusercontent.com</code> serves images</dd></div>
+        <div><dt>Owner</dt><dd>Google LLC (Alphabet Inc.)</dd></div>
+        <div><dt>Founded / launched</dt><dd>Not sourced in this report; see Open Questions <span class="evidence open">open</span></dd></div>
+        <div><dt>Business model</dt><dd>Free 15GB shared quota; paid storage and Workspace seats</dd></div>
+        <div><dt>Scale anchor</dt><dd>Over 1B users as of 2018-07 (<a href="https://techcrunch.com/2018/07/25/google-drive-will-hit-a-billion-users-this-week/amp">TechCrunch</a> <span class="evidence verified">verified</span>); stale, see Open Questions</dd></div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Verified Metrics</h2>
+      <p class="muted">Google publishes no file counts for Drive. The corpus figures are Site Wise measurements of the Common Crawl index (a measure of outlinked public files, not of the store).</p>
+      <dl class="fact-list">
+        <div>
+          <dt>Common Crawl footprint, files</dt>
+          <dd>CC-MAIN-2026-47 (crawled 2026-11-06 to 2026-11-19) holds 96,231 captures of <code>/file/d/*</code> covering 94,266 distinct IDs (counted from the per-prefix index, 33 pages, no gaps). Probe Log row 4 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Common Crawl footprint, folders</dt>
+          <dd>17,349 captures of <code>/drive/folders/*</code>, 17,056 distinct IDs (one index line unparsable). Probe Log row 4 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Status mix, file links</dt>
+          <dd>90.6% returned 200 (87,176), 4.5% 404, 3.4% 401, 1.1% 302 (calculated by Site Wise). Probe Log row 4 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Status mix, folder links</dt>
+          <dd>87.1% 200 (15,104), 7.3% 302, 5.2% 404 (calculated by Site Wise). Probe Log row 4 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Link shape</dt>
+          <dd>94.0% of file captures are <code>/view</code> (90,471), 3.8% <code>/preview</code>, 1.0% <code>/edit</code>. The <code>usp</code> source tag is <code>sharing</code> on 57.2%, <code>drive_link</code> on 17.8%, <code>share_link</code> 4.2%, <code>drivesdk</code> 1.7% (calculated by Site Wise). Probe Log row 4 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>ID generations</dt>
+          <dd>96.8% of file captures use a 33-character ID; 2,913 distinct legacy IDs start with <code>0B</code> (3.1% of distinct IDs; calculated by Site Wise). Probe Log row 4 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Live survival</dt>
+          <dd>27 of 27 sampled CC-200 files that still resolved to a file page returned 200 about 10 days after capture; 1 of 4 sampled legacy-ID files had turned 401. 6 of 6 sampled CC 401/404 captures returned the same status. As of 2026-11-28. Probe Log row 7 <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Official API quota</dt>
+          <dd>Drive API: 1,000,000 quota units per minute per project and 325,000 per user; download methods cost 200 units per request; 1 TiB per day egress cap described as not yet enforced. Quotas updated 2026-05-01. <a href="https://developers.google.com/workspace/drive/api/guides/limits">Drive API limits</a> <span class="evidence verified">verified</span></dd>
+        </div>
+        <div>
+          <dt>Terms of service</dt>
+          <dd>Prohibit "using automated means to access content from any of our services in violation of the machine-readable instructions on our web pages (for example, robots.txt files that disallow crawling, training, or other activities)". Effective 2026-07-30. <a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service</a> <span class="evidence verified">verified</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section-card">
+      <h2>Probe Log</h2>
+      <p class="muted">First-hand observations on 2026-11-28 from a US egress, plain curl with a generic browser UA, at one request per 2.5s or slower. File IDs come from the Common Crawl index; none were guessed. DNS probe skipped: <code>dig</code> returns implausible IPs in this sandbox, so hosting is sourced from response headers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Probe</th><th>Observation</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe"><code>curl -sL https://drive.google.com/robots.txt</code></td><td data-label="Observation">One <code>User-agent: *</code> group, <code>Crawl-delay: 1</code>, no <code>Sitemap:</code> line, no named AI-agent groups. It allows <code>/file</code>, <code>/folder</code>, <code>/drive/</code>, <code>/viewer</code>, <code>/fileview</code>, <code>/gview</code>, <code>/leaf</code>, <code>/videos</code>, <code>/images</code>, <code>/support/</code>, <code>/a/</code>; disallows <code>/open</code> and <code>/templateabuse</code>; and ends with <code>Disallow: /</code>. <code>/uc</code> and <code>/thumbnail</code> are not allowed, so they fall under the final disallow and were not fetched.</td></tr>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe"><code>curl -sI /</code>, <code>/drive/</code>, <code>/sitemap.xml</code>, <code>/llms.txt</code></td><td data-label="Observation"><code>/</code> and <code>/drive/*</code> return 302 to accounts.google.com ServiceLogin; <code>server: ESF</code>, HSTS, nonce CSP, <code>cache-control: no-store</code>, NID cookie set on the redirect. <code>/sitemap.xml</code>, <code>/llms.txt</code>, <code>/humans.txt</code>, <code>/.well-known/security.txt</code> all 404. No feed, no enumeration surface.</td></tr>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe"><code>curl -sI</code> on a public file and folder</td><td data-label="Observation">Both return 200 with <code>x-robots-tag: noindex, nofollow, nosnippet</code> and <code>cache-control: no-cache, no-store</code>. A well-formed but nonexistent file ID returns 404 with an 8KB page.</td></tr>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe">CC index census, <code>index.commoncrawl.org/CC-MAIN-2026-47-index?url=drive.google.com/{prefix}</code></td><td data-label="Observation">Per-prefix counts: <code>file/d/*</code> 96,231 captures; <code>drive/folders/*</code> 17,349; <code>viewer*</code> 443 (241 302, 141 200, 59 204); <code>folderview*</code> 265 (all 302); <code>drive/u/*</code> 1,096 (all 302). Zero captures for <code>open*</code>, <code>uc*</code>, <code>thumbnail*</code> and <code>embeddedfolderview*</code>, matching the robots disallow. Capture dates span 14 days. Every page fetched, no retries needed except one 502 on a bare <code>file/*</code> query.</td></tr>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe">Metadata sample (24 files, <code>/file/d/{id}/view</code>)</td><td data-label="Observation">24/24 returned 200, 138–139KB of HTML. 24/24 have <code>og:title</code> (the file name), <code>og:url</code>, <code>og:type=article</code>, <code>og:site_name="Google Docs"</code>. <code>og:description</code>: 0/24. <code>og:image</code>: 0/24. JSON-LD: 0/24. The og:url carries an <code>usp=embed_facebook</code> tag, a leftover from Facebook-era sharing.</td></tr>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe">Inline <code>itemJson</code> blob (27 files incl. 3 legacy IDs)</td><td data-label="Observation">Every file page embeds a positional array: name, MIME, byte size, extension, a <code>drive-viewer</code> render URL (<code>s1600</code>), a <code>drive.usercontent.google.com/uc?id=…</code> download URL (not fetched), a second 50-character <code>0B…</code> ID in a field next to the file ID, and an owner-email field populated on 25 of 27. All 27 were <code>application/pdf</code>, 56KB to 73MB, median 847KB. This is a sample drawn from CC-200 links and may skew toward PDFs. Owner values are deliberately not recorded here.</td></tr>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe">Live recheck</td><td data-label="Observation">Of 28 CC-200 file IDs fetched (24 modern, 4 legacy), 27 returned 200 and one legacy ID returned 401. Six CC 401/404 captures (3 each) returned the same status. The 0B alias ID from the blob returned 404 when fetched as <code>/file/d/{alias}/view</code>.</td></tr>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe">Folder sample (8 folders, <code>/drive/folders/{id}</code>)</td><td data-label="Observation">8/8 returned 200, 350–685KB. Each embeds a <code>window['_DRIVE_ivd']</code> blob, a JSON string with <code>\x</code> escapes, of 2 to 35 child rows (id, parent id, name, MIME, created ms, modified ms, size, extension). No continuation token appeared in the 8 blobs; whether larger folders page via XHR was not tested. Child MIME mix: mostly <code>application/*</code>, plus one folder with video and image.</td></tr>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe"><code>curl https://drive.usercontent.google.com/robots.txt</code></td><td data-label="Observation"><code>User-agent: *</code> / <code>Disallow: /</code>. The download host disallows all crawling, so no file bytes were fetched for this report.</td></tr>
+            <tr><td data-label="Date">2026-11-28</td><td data-label="Probe"><code>curl www.googleapis.com/drive/v3/files/{id}</code>, keyless, with and without a bogus parameter</td><td data-label="Observation">403 PERMISSION_DENIED (<code>ACCESS_DENIED</code>) for a public file ID both times. There is no keyless metadata path and the error does not leak a field list.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Access Matrix</h2>
+      <p class="muted">Drive hosts any file type; the rows below follow what the probes saw. Counts are from the Common Crawl link census, not the store.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modality</th><th>Objects &amp; est. count</th><th>Best legitimate path</th><th>Auth &amp; quota</th><th>License / display</th><th>Freshness</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Modality">Text (documents)</td><td data-label="Objects &amp; est. count">At least 94,266 distinct outlinked file IDs in one crawl (Probe Log row 4). Body text lives in the file bytes.</td><td data-label="Best legitimate path">File page for name, MIME and size; extracted text needs the bytes (<code>drive.usercontent.google.com</code>, robots-disallowed) or an owner-authorized Drive API export.</td><td data-label="Auth &amp; quota">Page: none. Bytes: blocked by robots. API: OAuth plus quota units (Verified Metrics).</td><td data-label="License / display">Owner's rights; Google marks every page noindex, nosnippet. Terms bar ignoring robots.</td><td data-label="Freshness">Files are static once shared; links die by 401 or 404.</td></tr>
+            <tr><td data-label="Modality">Images</td><td data-label="Objects &amp; est. count">Image files appear in folder listings (1 of 8 sampled folders); count open.</td><td data-label="Best legitimate path">Folder blob lists name, MIME, size. A <code>drive-viewer</code> render URL is inline on each file page.</td><td data-label="Auth &amp; quota">None for the page; render URLs not fetched.</td><td data-label="License / display">Third-party display needs owner rights; no oEmbed seen.</td><td data-label="Freshness">Static.</td></tr>
+            <tr><td data-label="Modality">Video</td><td data-label="Objects &amp; est. count">Video files appear in folders (3 of 4 rows in one folder). Count open.</td><td data-label="Best legitimate path">Metadata via folder blob only; playback and bytes are on the disallowed host.</td><td data-label="Auth &amp; quota">Not probed.</td><td data-label="License / display">Owner's rights.</td><td data-label="Freshness">Static.</td></tr>
+            <tr><td data-label="Modality">Audio</td><td data-label="Objects &amp; est. count">None observed in the sample. Count open.</td><td data-label="Best legitimate path">Same as video, if present.</td><td data-label="Auth &amp; quota">Not probed.</td><td data-label="License / display">Owner's rights.</td><td data-label="Freshness">Static.</td></tr>
+            <tr><td data-label="Modality">Comments / reviews</td><td data-label="Objects &amp; est. count">Not exposed to anonymous viewers in the probed pages. Not measured.</td><td data-label="Best legitimate path">None found.</td><td data-label="Auth &amp; quota">n/a</td><td data-label="License / display">n/a</td><td data-label="Freshness">n/a</td></tr>
+            <tr><td data-label="Modality">Structured entities</td><td data-label="Objects &amp; est. count">Folder tree: 17,056 distinct folder IDs; each folder blob holds 2–35 child rows in the sample.</td><td data-label="Best legitimate path">Parse <code>_DRIVE_ivd</code> from the HTML for id, parent, name, MIME, created and modified times, size, extension. The 8-folder sample used this path.</td><td data-label="Auth &amp; quota">No auth; pace at least 1 request per 2.5s (robots <code>Crawl-delay: 1</code>).</td><td data-label="License / display">Metadata only; noindex still applies.</td><td data-label="Freshness">Folder contents change when owners add or remove files; rate open.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Retrieval Notes (site-specific deltas)</h2>
+      <div class="subgrid">
+        <div>
+          <h4>Identifier &amp; dedup</h4>
+          <p>The fileId is the key. 96.8% of captures use a 33-character ID and 3.1% of distinct IDs are legacy <code>0B</code> IDs. IDs are case-sensitive (one case-fold collision among 94,266 distinct IDs), so do not lowercase them. The same file appears under different <code>usp=</code> tags and with <code>/view</code>, <code>/preview</code> and <code>/edit</code> suffixes; strip all of them. 822 captures also carry a <code>resourcekey</code>. The 0B alias in the blob did not resolve as a URL (Probe Log row 7), so its role is open.</p>
+        </div>
+        <div>
+          <h4>Retrieval unit</h4>
+          <p>The file, keyed by ID, with name, MIME, size and extension from the page. The unit is useful only once bytes are extracted by an authorized path.</p>
+        </div>
+        <div>
+          <h4>Cross-modal joins</h4>
+          <p>Folder rows join to files by fileId and to parents by parent ID, both stable. The owner-email field is the only author key and is personal data. The file-page <code>drive-viewer</code> URL is an opaque token, not a stable key.</p>
+        </div>
+        <div>
+          <h4>Authoritative content field</h4>
+          <p>The <code>itemJson</code> name and MIME beat the HTML title (which appends " - Google Drive"). The file name is user-chosen and often a bare scan name such as <code>9487.pdf</code>, so name alone is weak retrieval text.</p>
+        </div>
+        <div>
+          <h4>Freshness &amp; recrawl</h4>
+          <p>Shared files rarely change. The recheck found 27 of 28 live after ten days, so recrawl is about link death, not content change. Recheck links on a slow cycle; a 401 means access was withdrawn, a 404 means deleted or never valid.</p>
+        </div>
+        <div>
+          <h4>Quality &amp; spam</h4>
+          <p>No trust tier is exposed. Link spam via Drive shares is plausible but unmeasured.</p>
+        </div>
+        <div>
+          <h4>Internal vs external search</h4>
+          <p>Not applicable to anonymous users: there is no public search, and Google marks every page noindex, so even Google web search is told not to show them.</p>
+        </div>
+        <div>
+          <h4>User query profile</h4>
+          <p>Queries here are navigational, from someone who holds the link. Content queries ("2026 candle catalogue pdf") would target the file text, which only the owner-authorized path provides.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Indexing Plan</h2>
+      <ul>
+        <li><strong>Retrieval unit:</strong> the file, with the folder as grouping context.</li>
+        <li><strong>Primary keys &amp; joins:</strong> fileId (33-character, case-sensitive) and folderId; parent ID joins files to folders. Treat legacy 0B IDs as a separate keyspace until the alias is understood.</li>
+        <li><strong>Ingestion paths, ranked:</strong> 1) Common Crawl link census plus file-page and folder-blob metadata: no auth, ceiling roughly 94K files and 17K folders per crawl, no bytes. 2) Owner-authorized Drive API for the owner's own files: OAuth, 1M units per minute per project, full export. 3) Direct byte download: ruled out, <code>drive.usercontent.google.com</code> disallows all crawling and Google's terms bar ignoring robots.</li>
+        <li><strong>Recrawl cadence:</strong> links monthly with the crawl cycle; folder listings about monthly; files only on change signals from an authorized API.</li>
+        <li><strong>Derivatives to generate:</strong> none from public data alone, since no bytes are available. With owner authorization: text extraction and OCR for the PDF-heavy sample, thumbnails from the Drive-supplied render.</li>
+        <li><strong>Demo to build:</strong> a link-graph census that reports, per outlinking site, how many Drive files and folders it exposes, with file name, MIME and size from the page blob and no downloads.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Risks to the Index</h2>
+      <ul>
+        <li>Blanket noindex plus robots disallow on the download host: an index built from this host contradicts Google's own signals and its terms. Any plan needs owner authorization or a policy decision.</li>
+        <li>Personal data: 25 of 27 sampled file pages expose an owner-email field. An index should drop or hash it before storage.</li>
+        <li>Wall hardening: the host already returns 401 for withdrawn shares, and Google can change the inline blobs at any time; the parsers rely on positional fields.</li>
+        <li>Link rot: 3.4% of file captures were 401 and 5.2% of folder captures were 404 at crawl time, and one of four sampled legacy-ID files had lapsed within ten days.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Source Notes</h2>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://developers.google.com/workspace/drive/api/guides/limits">Drive API usage limits</a> <span class="evidence verified">verified</span>: quota units, egress cap, 2026-05-01 update.</li>
+        <li><a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service</a> <span class="evidence verified">verified</span>: automated-access clause, effective 2026-07-30.</li>
+        <li><a href="https://techcrunch.com/2018/07/25/google-drive-will-hit-a-billion-users-this-week/amp">TechCrunch, 2018-07-25</a> <span class="evidence verified">verified</span>: 1B user milestone.</li>
+        <li><a href="https://index.commoncrawl.org/CC-MAIN-2026-47-index?url=drive.google.com/file/d/*&amp;output=json">Common Crawl index, CC-MAIN-2026-47</a> <span class="evidence verified">verified</span>: the census in Probe Log row 4.</li>
+      </ul>
+      <h3>Inferences</h3>
+      <ul>
+        <li>Public Drive links spread mainly by being shared and outlinked, not announced. <span class="evidence inferred">inferred</span> <em>Basis:</em> no sitemap, no feed and a login redirect at <code>/</code> (Probe Log row 2), while 57.2% of captures carry <code>usp=sharing</code> and 17.8% <code>usp=drive_link</code>, both share-dialog tags.</li>
+        <li>The Common Crawl PDF skew in the live sample may reflect which links crawlers follow rather than the Drive mix. <span class="evidence inferred">inferred</span> <em>Basis:</em> 27 of 27 sampled files were <code>application/pdf</code> though the sample was drawn at random from 87K CC-200 IDs.</li>
+      </ul>
+      <h3>Open Questions</h3>
+      <ul>
+        <li>How many files and folders are publicly shared in total? Close with a second crawl (for example CC-MAIN-2026-43) and a capture-recapture overlap estimate against CC-MAIN-2026-47.</li>
+        <li>What is the 0B-prefixed ID next to the file ID in the blob, given the alias returned 404? Test with a sample of 100 file pages whose alias is compared against the legacy IDs seen in CC.</li>
+        <li>What is the real MIME mix of public files? Re-run the blob parse on 500 random CC-200 IDs.</li>
+        <li>Do large folders page through XHR or truncate? Open a folder with 100+ children (find via CC folder IDs with large pages) and inspect the network calls.</li>
+        <li>What is Drive's current user count and launch date as official figures? Find a Google Workspace or Cloud blog post newer than 2018-07 that states it.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
